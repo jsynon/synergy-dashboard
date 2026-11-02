@@ -164,7 +164,7 @@
       if(nameStart<cursor)continue;
       html+=escapeHtml(text.slice(cursor,nameStart));
       const member=memberByName.get(match[2].toLocaleLowerCase());
-      const rawMatch=text.slice(nameEnd).match(/^(?:\\s+[A-Za-z])?\\s*(@[A-Za-z0-9._-]+(?:#[A-Za-z0-9]+)?)/);
+      const rawMatch=text.slice(nameEnd).match(/^(?:\s+[A-Za-z])?\s*(@[A-Za-z0-9._-]+(?:#[A-Za-z0-9]+)?)/);
       const rawHandle=rawMatch?rawMatch[1]:'';
       const memberAccount=member?String(member.account||'').replace(/^@/,''):'';
       const sameAccount=Boolean(rawHandle&&memberAccount&&rawHandle.slice(1).toLocaleLowerCase()===memberAccount.toLocaleLowerCase());
