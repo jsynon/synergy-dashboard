@@ -72,7 +72,7 @@
   }
   function renderRecent(){
     const label={join:'Joined',exit:'Departed',rank:'Rank changed',other:'Guild event'};
-    $('recent-events').innerHTML=state.events.length?state.events.slice(0,7).map(e=>`<div class="event-row"><i class="event-dot ${e.kind}"></i><div><div class="event-copy">${escapeHtml(e.text)}</div><div class="event-type">${label[e.kind]||label.other}</div></div><time class="event-date" datetime="${e.date.toISOString()}">${formatDate(e.date,true)}</time></div>`).join(''):'<div class="empty-state">No published activity records are available.</div>';
+    $('recent-events').innerHTML=state.events.length?state.events.slice(0,15).map(e=>`<div class="event-row"><i class="event-dot ${e.kind}"></i><div><div class="event-copy">${escapeHtml(e.text)}</div><div class="event-type">${label[e.kind]||label.other}</div></div><time class="event-date" datetime="${e.date.toISOString()}">${formatDate(e.date,true)}</time></div>`).join(''):'<div class="empty-state">No published activity records are available.</div>';
   }
   function render(){renderStats();renderDirectoryFilters();renderRoster();renderActivityChart();renderRecent();}
   function loadSnapshot(snapshot){
