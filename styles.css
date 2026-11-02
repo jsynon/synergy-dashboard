@@ -201,3 +201,6 @@ thead { background:#111d29; }
 /* Room for more guild events before scrolling. */
 .recent-events { max-height:640px; }
 @media(max-width:620px) { .recent-events { max-height:500px; } }
+
+.account-name { color:var(--teal); white-space:nowrap; }
+table { min-width:700px; }
