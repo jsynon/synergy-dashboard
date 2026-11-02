@@ -2,8 +2,6 @@
 
 A static, single-page Neverwinter guild dashboard. Visitors see the latest published snapshot from `data/snapshot.json`.
 
-Part of the Synergy guild site: [Guild Roster](https://jsynon.github.io/synergy-dashboard/) · [Masterwork Forge](https://jsynon.github.io/synergy-craft/) · [Discord](https://discord.gg/eMzcD6wJzh)
-
 ## What the page shows
 
 - Character count, unique account count, and open account spots
