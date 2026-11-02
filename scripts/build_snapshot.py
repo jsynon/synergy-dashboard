@@ -60,22 +60,53 @@ def main():
     if activity_rows and "Text" not in activity_rows[0]:
         raise SystemExit(f"{ACTIVITY_PATH.name} is missing the Text column.")
 
-    members = []
+    # Carry forward the first verified account join date across snapshot refreshes.
+    # This keeps a brief leave/rejoin from resetting the tenure milestone.
+    account_join_dates = {}
+    if OUTPUT_PATH.exists():
+        try:
+            previous = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
+            account_join_dates = {
+                str(account).strip().casefold(): date
+                for account, date in previous.get("accountJoinDates", {}).items()
+                if str(account).strip() and date
+            }
+            for member in previous.get("roster", []):
+                account = str(member.get("account", "")).strip().casefold()
+                date = member.get("originalJoinDate") or member.get("joinDate")
+                if account and date:
+                    account_join_dates.setdefault(account, date)
+        except (OSError, json.JSONDecodeError, AttributeError):
+            account_join_dates = {}
+
+    account_current_dates = {}
     accounts = set()
     for row in roster_rows:
-        account = row.get("Account", "").strip().casefold()
+        account = row.get("Account", "").strip()
+        key = account.casefold()
         if account:
-            accounts.add(account)
+            accounts.add(key)
+            joined = parse_date(row.get("Guild join date", ""))
+            if joined and (key not in account_current_dates or joined < account_current_dates[key]):
+                account_current_dates[key] = joined
+    for key, date in account_current_dates.items():
+        account_join_dates.setdefault(key, date)
+
+    members = []
+    for row in roster_rows:
+        account = row.get("Account", "").strip()
+        key = account.casefold()
         match = re.match(r"^(\d+)", row.get("Guild Rank", ""))
         rank_order = int(match.group(1)) if match else 0
         members.append({
             "name": row.get("Name", "") or "Unknown",
-            "account": row.get("Account", ""),
+            "account": account,
             "rank": RANK_NAMES.get(rank_order, row.get("Guild Rank", "") or "Unranked"),
             "rankOrder": rank_order,
             "class": row.get("Class", "") or "Unknown",
             "level": row.get("Level", ""),
             "joinDate": parse_date(row.get("Guild join date", "")),
+            "originalJoinDate": account_join_dates.get(key),
             "lastOnline": parse_date(row.get("Last online date", "")),
             "onlineNow": bool(row.get("Location", "").strip()
                                and row.get("Location", "").strip().casefold() != "offline"),
@@ -86,13 +117,14 @@ def main():
         date = parse_date(row.get("Time", ""))
         if not date:
             continue
-        text = re.sub(r"\\s+", " ", row.get("Text", "")).strip()
+        text = re.sub(r"\s+", " ", row.get("Text", "")).strip()
         events.append({"date": date, "kind": event_kind(row), "text": text})
     events.sort(key=lambda event: event["date"], reverse=True)
 
     snapshot = {
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "accountCount": len(accounts),
+        "accountJoinDates": dict(sorted(account_join_dates.items())),
         "roster": members,
         "events": events,
     }

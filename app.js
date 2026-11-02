@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const state = { roster: [], events: [], accountCount: 0, generatedAt: null, sortBy: 'name', sortDirection: 1, rankFilter: '', classFilter: '' };
+  const state = { roster: [], events: [], accountCount: 0, accountJoinDates: {}, generatedAt: null, sortBy: 'name', sortDirection: 1, rankFilter: '', classFilter: '' };
   const $ = (id) => document.getElementById(id);
 
   const parseDate=(str)=>{
@@ -21,6 +21,47 @@
     const dateLabel=state.generatedAt?formatDate(state.generatedAt):null;
     $('roster-generated-date').textContent=dateLabel?`Roster snapshot generated on ${dateLabel}.`:'Roster snapshot date unavailable.';
     $('data-status').textContent=state.roster.length?`Published snapshot${dateLabel?` · generated ${dateLabel}`:''}`:'No published roster snapshot found';
+  }
+  function addCalendarMonths(date, months){
+    const year=date.getFullYear(), month=date.getMonth()+months, day=date.getDate();
+    const first=new Date(year,month,1);
+    const lastDay=new Date(first.getFullYear(),first.getMonth()+1,0).getDate();
+    return new Date(first.getFullYear(),first.getMonth(),Math.min(day,lastDay),date.getHours(),date.getMinutes(),date.getSeconds());
+  }
+  function renderPromotions(){
+    const rankNames={1:'Initiate',2:'Wayfarer',3:'Stalwart',4:'Veteran',5:'Elder'};
+    const monthsByRank={1:1,2:3,3:6,4:12};
+    const accounts=new Map();
+    for(const member of state.roster){
+      const key=(member.account||'').trim().toLocaleLowerCase();
+      if(!key)continue;
+      if(!accounts.has(key)){
+        const savedDate=state.accountJoinDates[key];
+        accounts.set(key,{key,account:member.account,rankOrder:0,characterCount:0,joinDate:asDate(savedDate)||member.originalJoinDate||member.joinDate});
+      }
+      const account=accounts.get(key);
+      account.rankOrder=Math.max(account.rankOrder,Number(member.rankOrder)||0);
+      account.characterCount++;
+      const savedDate=state.accountJoinDates[key];
+      const joinDate=asDate(savedDate)||member.originalJoinDate||member.joinDate;
+      if(joinDate&&(!account.joinDate||joinDate<account.joinDate))account.joinDate=joinDate;
+    }
+    const now=new Date();
+    const milestones=[...accounts.values()].filter(account=>monthsByRank[account.rankOrder]&&account.joinDate).map(account=>{
+      const eligibleDate=addCalendarMonths(account.joinDate,monthsByRank[account.rankOrder]);
+      return {...account,eligibleDate};
+    }).sort((a,b)=>a.eligibleDate-b.eligibleDate||a.account.localeCompare(b.account));
+    const upcoming=milestones.slice(0,5);
+    const count=upcoming.length;
+    $('promotion-list').innerHTML=count?upcoming.map(account=>{
+      const nextRank=account.rankOrder+1;
+      const stateLabel=account.eligibleDate<=now?'Eligible now':`Eligible ${formatDate(account.eligibleDate)}`;
+      return `<div class="promotion-row">
+        <div class="promotion-account"><a href="#roster" class="promotion-account-link" data-account-query="${escapeHtml(account.account)}">${escapeHtml(account.account)}</a><span>${account.characterCount} ${account.characterCount===1?'character':'characters'}</span></div>
+        <div class="promotion-path">${rankNames[account.rankOrder]} <span aria-hidden="true">→</span> ${rankNames[nextRank]}</div>
+        <time class="promotion-date" datetime="${account.eligibleDate.toISOString()}">${stateLabel}</time>
+      </div>`;
+    }).join(''):'<div class="empty-state">No promotion milestones are available in this snapshot.</div>';
   }
   function renderDirectoryFilters(){
     const rankCounts=new Map(),classCounts=new Map(),rankOrders=new Map();
@@ -93,10 +134,11 @@
     $('activity-results-count').textContent=query?`${count.toLocaleString()} of ${total.toLocaleString()} events match`:`${total.toLocaleString()} events`;
     $('recent-events').innerHTML=count?rows.map(({event,view})=>`<div class="event-row"><i class="event-dot ${event.kind}"></i><div><div class="event-copy">${view.html}</div><div class="event-type">${label[event.kind]||label.other}</div></div><time class="event-date" datetime="${event.date.toISOString()}">${formatDate(event.date,true)}</time></div>`).join(''):(query?'<div class="empty-state">No activity events match this search.</div>':'<div class="empty-state">No published activity records are available.</div>');
   }
-  function render(){renderSnapshotStatus();renderDirectoryFilters();renderRoster();renderRecent();}
+  function render(){renderSnapshotStatus();renderDirectoryFilters();renderRoster();renderRecent();renderPromotions();}
   function loadSnapshot(snapshot){
     if(!snapshot||!Array.isArray(snapshot.roster)||!Array.isArray(snapshot.events))throw new Error('Snapshot format is invalid.');
-    state.roster=snapshot.roster.map(m=>({...m,joinDate:asDate(m.joinDate),lastOnline:asDate(m.lastOnline)}));
+    state.accountJoinDates=Object.fromEntries(Object.entries(snapshot.accountJoinDates||{}).map(([account,date])=>[account.trim().toLocaleLowerCase(),date]));
+    state.roster=snapshot.roster.map(m=>({...m,joinDate:asDate(m.joinDate),originalJoinDate:asDate(m.originalJoinDate)||asDate(m.joinDate),lastOnline:asDate(m.lastOnline)}));
     state.events=snapshot.events.map(e=>({...e,date:asDate(e.date)})).filter(e=>e.date).sort((a,b)=>b.date-a.date);
     state.accountCount=Number(snapshot.accountCount)||0;state.generatedAt=asDate(snapshot.generatedAt);render();
   }
@@ -106,6 +148,14 @@
   }
   $('search').addEventListener('input',renderRoster);
   $('activity-search').addEventListener('input',renderRecent);
+  $('promotion-list').addEventListener('click',event=>{
+    const link=event.target.closest('.promotion-account-link');
+    if(!link)return;
+    event.preventDefault();
+    $('search').value=link.dataset.accountQuery||'';
+    state.rankFilter='';state.classFilter='';renderDirectoryFilters();renderRoster();
+    $('roster').scrollIntoView({behavior:'smooth',block:'start'});
+  });
   $('recent-events').addEventListener('click',event=>{
     const link=event.target.closest('.activity-member-link');
     if(!link)return;

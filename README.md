@@ -8,18 +8,19 @@ Part of the Synergy guild site: [Guild Roster](https://jsynon.github.io/synergy-
 
 - Member directory with character count, unique account count, character name, account name, rank, class, join date, and last-online date
 - Counted, clickable rank and class filters built into the directory
-- A scrollable list of all records from the activity log, newest first
+- A scrollable, searchable activity log with member links
+- Upcoming account promotion milestones, based on original verified account join dates
 - Links to the Masterwork Forge and Synergy Discord
 
 ## Refresh and publish guild data
 
 1. Export the roster and activity logs in Neverwinter.
 2. Double-click `update-dashboard.bat`. It finds the newest `GuildMembersListLogs*.csv` and `GuildActivityLogs.csv` in `C:\Program Files (x86)\Neverwinter_en\Neverwinter\Live\guildlogs`, copies them to the stable local names `data/roster.csv` and `data/activity.csv`, verifies the copies, and rebuilds `data/snapshot.json`. The script prints the selected source filename and source/destination sizes so you can confirm what it copied.
-3. Commit and push the changed `data/snapshot.json` to the GitHub Pages branch. The published page then shows the updated snapshot to every visitor.
+3. Commit and push the changed `data/snapshot.json` to the GitHub Pages branch. The published page then shows the updated snapshot to every visitor. The snapshot carries forward account-level original join dates so later exports do not reset tenure when a member leaves and returns.
 
 The batch file selects the most recently modified roster match, so timestamped filenames work. Raw CSVs are ignored by Git. The generated JSON includes character name, account name, rank, class, level, join date, last-online date, online status, account total, and activity summaries. It omits member/status/officer comments. Activity text retains account handles for searching and links matching character names to the current roster. The activity search matches character names, account names, and event text; selecting a linked member name filters and opens that member in the directory.
 
-The account total is calculated from case-insensitive unique values in the roster CSV's `Account` column. The supplied export has 374 character rows and 146 unique account names.
+The account total is calculated from case-insensitive unique values in the roster CSV's `Account` column. Promotion milestones use account-level tenure: 1 month for Initiate→Wayfarer, 3 months for Wayfarer→Stalwart, 6 months for Stalwart→Veteran, and 1 year for Veteran→Elder. The snapshot preserves the earliest known account join date across updates; new accounts start with the earliest join date in the roster export. These dates mark eligibility and do not trigger automatic promotions.
 
 ## Run locally
 
