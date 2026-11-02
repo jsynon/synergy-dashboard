@@ -17,7 +17,7 @@
     <header class="masthead">
       <div class="brand-mark" aria-hidden="true">✦</div>
       <div class="brand-copy"><div class="brand-name">SYNERGY</div><div class="brand-subtitle">A Neverwinter Guild</div></div>
-      <nav aria-label="Page sections"><a href="#overview">Overview</a><a href="#roster">Roster</a><a href="#activity">Activity</a><a href="https://jsynon.github.io/synergy-craft/">Masterwork Forge <span aria-hidden="true">↗</span></a></nav>
+      <nav aria-label="Page sections"><a href="#roster">Member Directory</a><a href="#activity">Recent Activity</a><a href="https://jsynon.github.io/synergy-craft/">Masterwork Forge <span aria-hidden="true">↗</span></a></nav>
       <a class="discord-link" href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">Join our Discord <span aria-hidden="true">↗</span></a>
     </header>
 
@@ -25,17 +25,11 @@
       <section class="hero" id="overview">
         <div class="eyebrow"><span class="live-dot"></span><span id="data-status">Loading published guild snapshot</span></div>
         <h1>Guild Roster</h1>
-        <p class="hero-copy">The people, ranks, and recent history of Synergy.</p>
-      </section>
-
-      <section class="stats-grid" aria-label="Guild overview">
-        <article class="stat-card"><div class="stat-icon">♙</div><div><div class="stat-value" id="stat-characters">—</div><div class="stat-label">Characters</div><div class="stat-note">Across the guild roster</div></div></article>
-        <article class="stat-card"><div class="stat-icon">⌖</div><div><div class="stat-value" id="stat-accounts">—</div><div class="stat-label">Unique accounts</div><div class="stat-note" id="stat-account-note">Guild membership</div></div></article>
-        <article class="stat-card"><div class="stat-icon">✧</div><div><div class="stat-value" id="stat-spots">—</div><div class="stat-label">Open spots</div><div class="stat-note">Guild account capacity</div></div></article>
+        <p class="hero-copy">Explore Synergy’s roster and recent guild activity.</p>
       </section>
 
       <section class="panel roster-panel" id="roster">
-        <div class="panel-heading roster-heading"><div><p class="kicker">Find your people</p><h2>Member directory</h2><p class="section-subtitle">Search characters, then narrow the roster by rank or class.</p></div><span class="count-pill" id="shown-count">0 characters</span></div>
+        <div class="panel-heading roster-heading"><div><p class="kicker">Roster export</p><h2>Member directory</h2><p class="section-subtitle">Search characters, then narrow the roster by rank or class.</p></div><span class="count-pill" id="directory-count">Loading roster totals</span></div>
         <div class="toolbar">
           <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search character names" autocomplete="off"></label>
         </div>
@@ -55,26 +49,13 @@
 
 
 
-      <section class="activity-grid" id="activity">
-        <article class="panel activity-chart-panel">
-          <div class="panel-heading"><div><p class="kicker">Guild history</p><h2>Monthly guild movement</h2><p class="section-subtitle">Character joins, departures, and rank changes recorded in the activity log.</p></div></div>
-          <div id="activity-chart" class="activity-chart"><div class="empty-state">No published activity snapshot is available.</div></div>
-          <div class="chart-legend"><span><i class="legend-dot join-color"></i>Joined</span><span><i class="legend-dot exit-color"></i>Departures</span><span><i class="legend-dot rank-color"></i>Rank changes</span><span><i class="legend-dot other-color"></i>Other</span></div>
-          <div class="chart-foot"><span id="activity-date-range"></span><span id="net-change-note"></span></div>
-        </article>
-        <article class="panel recent-panel">
-          <div class="panel-heading"><div><p class="kicker">Latest 15 records</p><h2>Recent activity</h2></div><span class="panel-mark">◷</span></div>
-          <div id="recent-events" class="recent-events"><div class="empty-state">No published activity snapshot is available.</div></div>
-        </article>
-      </section>
-
-      <section class="about-panel" id="about">
-        <div><p class="kicker">Adventurers welcome</p><h2>Find your place in Synergy</h2><p>We’re an active, friendly Neverwinter guild in the WANTED Alliance. Join us for dungeons and trials, build and progression advice, Synergy Academy, and the Masterwork Forge.</p></div>
-        <div class="about-links"><a class="gold-button" href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">Visit Synergy on Discord <span aria-hidden="true">↗</span></a><a class="craft-link" href="https://jsynon.github.io/synergy-craft/">Open the Masterwork Forge <span aria-hidden="true">↗</span></a></div>
+      <section class="panel recent-panel" id="activity">
+        <div class="panel-heading"><div><p class="kicker">Activity log export</p><h2>Recent activity</h2><p class="section-subtitle">The 15 newest events from the latest activity log.</p></div><span class="panel-mark">◷</span></div>
+        <div id="recent-events" class="recent-events"><div class="empty-state">No published activity snapshot is available.</div></div>
       </section>
     </main>
 
-    <footer><span>SYNERGY <i>✦</i> NEVERWINTER GUILD</span><span>Roster details reflect the latest published snapshot.</span></footer>
+    <footer><span>SYNERGY <i>✦</i> NEVERWINTER GUILD</span><span>Roster and activity reflect the latest published exports.</span></footer>
   </div>
 </body>
 </html>

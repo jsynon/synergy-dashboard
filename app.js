@@ -1,6 +1,5 @@
 (() => {
   'use strict';
-  const GUILD_CAPACITY = 150;
   const state = { roster: [], events: [], accountCount: 0, generatedAt: null, sortBy: 'name', sortDirection: 1, rankFilter: '', classFilter: '' };
   const $ = (id) => document.getElementById(id);
 
@@ -18,13 +17,8 @@
     if(!m.lastOnline)return '—';const days=Math.floor((new Date()-m.lastOnline)/86400000);
     if(days<1)return 'Today';if(days===1)return 'Yesterday';if(days<30)return `${days} days ago`;return formatDate(m.lastOnline);
   };
-  function renderStats(){
-    $('stat-characters').textContent=state.roster.length.toLocaleString();
-    $('stat-accounts').textContent=state.accountCount.toLocaleString();
-    $('stat-account-note').textContent=`of ${GUILD_CAPACITY} account capacity`;
-    $('stat-spots').textContent=Math.max(0,GUILD_CAPACITY-state.accountCount).toLocaleString();
-    const dates=state.events.map(e=>e.date).filter(Boolean).sort((a,b)=>a-b);
-    $('activity-date-range').textContent=dates.length?`${formatDate(dates[0])} – ${formatDate(dates.at(-1))}`:'No activity dates';
+  function renderSnapshotStatus(){
+    $('directory-count').textContent=`${state.roster.length.toLocaleString()} characters · ${state.accountCount.toLocaleString()} accounts`;
     const dateLabel=state.generatedAt?formatDate(state.generatedAt):null;
     $('data-status').textContent=state.roster.length?`Published snapshot${dateLabel?` · generated ${dateLabel}`:''}`:'No published roster snapshot found';
   }
@@ -49,32 +43,15 @@
     });
   }
   function renderRoster(){
-    const rows=getVisibleMembers();$('shown-count').textContent=`${rows.length.toLocaleString()} ${rows.length===1?'character':'characters'}`;$('table-summary').textContent=`Showing ${rows.length.toLocaleString()} of ${state.roster.length.toLocaleString()} character records`;
+    const rows=getVisibleMembers();$('table-summary').textContent=`Showing ${rows.length.toLocaleString()} of ${state.roster.length.toLocaleString()} character records`;
     $('roster-body').innerHTML=rows.length?rows.map(m=>`<tr><td class="member-name">${escapeHtml(m.name)}</td><td><span class="rank-tag"><i class="rank-dot rank-${m.rankOrder}"></i>${escapeHtml(m.rank)}</span></td><td class="class-name">${escapeHtml(m.class)}</td><td>${formatDate(m.joinDate)}</td><td title="${m.lastOnline?escapeHtml(formatDate(m.lastOnline,true)):''}">${displayStatus(m)}</td></tr>`).join(''):'<tr><td colspan="5" class="table-empty">No members match these filters.</td></tr>';
     document.querySelectorAll('.sort-button').forEach(b=>b.setAttribute('aria-sort',b.dataset.sort===state.sortBy?(state.sortDirection===1?'ascending':'descending'):'none'));
-  }
-  function renderActivityChart(){
-    const groups=new Map();
-    for(const event of state.events){
-      const key=`${event.date.getFullYear()}-${String(event.date.getMonth()+1).padStart(2,'0')}`;
-      if(!groups.has(key))groups.set(key,{join:0,exit:0,rank:0,other:0});
-      groups.get(key)[event.kind in groups.get(key)?event.kind:'other']++;
-    }
-    const months=[...groups.keys()].sort(),types=[['join','Joined'],['exit','Departures'],['rank','Rank changes'],['other','Other']];
-    const max=Math.max(1,...months.flatMap(key=>Object.values(groups.get(key))));
-    let totalJoins=0,totalExits=0;
-    for(const values of groups.values()){totalJoins+=values.join;totalExits+=values.exit;}
-    $('activity-chart').innerHTML=months.length?months.map(key=>{
-      const [year,month]=key.split('-').map(Number),date=new Date(year,month-1,1),values=groups.get(key),net=values.join-values.exit;
-      return `<div class="month-group"><div class="month-bars">${types.map(([type,label])=>{const n=values[type],height=n?Math.max(4,n/max*132):2;return `<div class="bar-item" title="${escapeHtml(label)}: ${n}"><span class="bar-count">${n||''}</span><i class="activity-bar ${type}-bar" style="height:${height}px"></i></div>`;}).join('')}</div><span class="month-label">${date.toLocaleDateString('en-US',{month:'short',year:'2-digit'})}</span><span class="month-net ${net<0?'negative':''}">Net ${net>0?'+':''}${net}</span></div>`;
-    }).join(''):'<div class="empty-state">No published activity snapshot is available.</div>';
-    $('net-change-note').textContent=`Logged net change: ${totalJoins-totalExits>0?'+':''}${totalJoins-totalExits} characters`;
   }
   function renderRecent(){
     const label={join:'Joined',exit:'Departed',rank:'Rank changed',other:'Guild event'};
     $('recent-events').innerHTML=state.events.length?state.events.slice(0,15).map(e=>`<div class="event-row"><i class="event-dot ${e.kind}"></i><div><div class="event-copy">${escapeHtml(e.text)}</div><div class="event-type">${label[e.kind]||label.other}</div></div><time class="event-date" datetime="${e.date.toISOString()}">${formatDate(e.date,true)}</time></div>`).join(''):'<div class="empty-state">No published activity records are available.</div>';
   }
-  function render(){renderStats();renderDirectoryFilters();renderRoster();renderActivityChart();renderRecent();}
+  function render(){renderSnapshotStatus();renderDirectoryFilters();renderRoster();renderRecent();}
   function loadSnapshot(snapshot){
     if(!snapshot||!Array.isArray(snapshot.roster)||!Array.isArray(snapshot.events))throw new Error('Snapshot format is invalid.');
     state.roster=snapshot.roster.map(m=>({...m,joinDate:asDate(m.joinDate),lastOnline:asDate(m.lastOnline)}));

@@ -6,11 +6,10 @@ Part of the Synergy guild site: [Guild Roster](https://jsynon.github.io/synergy-
 
 ## What the page shows
 
-- Character count, unique account count, and open account spots
-- A prominent searchable directory with character name, rank, class, join date, and last-online date
+- Member directory with character count, unique account count, character name, rank, class, join date, and last-online date
 - Counted, clickable rank and class filters built into the directory
-- Monthly grouped activity for character joins, departures, rank changes, and other logged events
-- Recent activity and a short introduction to Synergy with the Discord invite
+- A scrollable list of the 15 newest records from the activity log
+- Links to the Masterwork Forge and Synergy Discord
 
 ## Refresh and publish guild data
 
@@ -20,7 +19,7 @@ Part of the Synergy guild site: [Guild Roster](https://jsynon.github.io/synergy-
 
 The batch file selects the most recently modified roster match, so timestamped filenames work. Raw CSVs are ignored by Git. The generated JSON includes only character name, rank, class, level, join date, last-online date, online status, account total, and activity summaries. It omits member/status/officer comments and account handles. Activity text keeps character names but strips account handles.
 
-The account total is calculated from case-insensitive unique values in the roster CSV's `Account` column. The supplied export has 374 character rows and 146 unique account names. Guild capacity is currently 150 accounts.
+The account total is calculated from case-insensitive unique values in the roster CSV's `Account` column. The supplied export has 374 character rows and 146 unique account names.
 
 ## Run locally
 
