@@ -47,11 +47,15 @@
       if(joinDate&&(!account.joinDate||joinDate<account.joinDate))account.joinDate=joinDate;
     }
     const now=new Date();
-    const milestones=[...accounts.values()].filter(account=>monthsByRank[account.rankOrder]&&account.joinDate).map(account=>{
+    const startOfToday=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+    const endOfWindow=new Date(startOfToday);
+    endOfWindow.setDate(endOfWindow.getDate()+30);
+    endOfWindow.setHours(23,59,59,999);
+    const upcoming=[...accounts.values()].filter(account=>monthsByRank[account.rankOrder]&&account.joinDate).map(account=>{
       const eligibleDate=addCalendarMonths(account.joinDate,monthsByRank[account.rankOrder]);
       return {...account,eligibleDate};
-    }).sort((a,b)=>a.eligibleDate-b.eligibleDate||a.account.localeCompare(b.account));
-    const upcoming=milestones.slice(0,24);
+    }).filter(account=>account.eligibleDate>=startOfToday&&account.eligibleDate<=endOfWindow)
+      .sort((a,b)=>a.eligibleDate-b.eligibleDate||a.account.localeCompare(b.account));
     const count=upcoming.length;
     $('promotion-list').innerHTML=count?upcoming.map(account=>{
       const nextRank=account.rankOrder+1;
@@ -61,7 +65,7 @@
         <div class="promotion-path">${rankNames[account.rankOrder]} <span aria-hidden="true">→</span> ${rankNames[nextRank]}</div>
         <time class="promotion-date" datetime="${account.eligibleDate.toISOString()}">${stateLabel}</time>
       </div>`;
-    }).join(''):'<div class="empty-state">No promotion milestones are available in this snapshot.</div>';
+    }).join(''):'<div class="empty-state">No accounts are approaching a promotion milestone in the next 30 days.</div>';
   }
   function renderInactivityAlerts(){
     const limits={1:7,2:14,3:30,4:60,5:90};
