@@ -53,9 +53,45 @@
     $('roster-body').innerHTML=rows.length?rows.map(m=>`<tr><td class="member-name">${escapeHtml(m.name)}</td><td class="account-name">${escapeHtml(m.account||"")}</td><td><span class="rank-tag"><i class="rank-dot rank-${m.rankOrder}"></i>${escapeHtml(m.rank)}</span></td><td class="class-name">${escapeHtml(m.class)}</td><td>${formatDate(m.joinDate)}</td><td title="${m.lastOnline?escapeHtml(formatDate(m.lastOnline,true)):''}">${displayStatus(m)}</td></tr>`).join(''):'<tr><td colspan="6" class="table-empty">No members match these filters.</td></tr>';
     document.querySelectorAll('.sort-button').forEach(b=>b.setAttribute('aria-sort',b.dataset.sort===state.sortBy?(state.sortDirection===1?'ascending':'descending'):'none'));
   }
+  function activityMemberText(text){
+    const members=[...state.roster].filter(member=>member.name).sort((a,b)=>b.name.length-a.name.length);
+    const memberByName=new Map(members.map(member=>[member.name.toLocaleLowerCase(),member]));
+    const searchableHandles=new Map();
+    const names=members.map(member=>member.name.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
+    if(!names.length)return {html:escapeHtml(text),searchText:text};
+    const matcher=new RegExp('(^|[^A-Za-z0-9_])(' + names.join('|') + ')(?![A-Za-z0-9_])','gi');
+    let cursor=0, html='', searchText=text, match;
+    while((match=matcher.exec(text))){
+      const nameStart=match.index+match[1].length;
+      const nameEnd=nameStart+match[2].length;
+      if(nameStart<cursor)continue;
+      html+=escapeHtml(text.slice(cursor,nameStart));
+      const member=memberByName.get(match[2].toLocaleLowerCase());
+      const rawHandle=(text.slice(nameEnd).match(/^@[A-Za-z0-9._-]+(?:#[A-Za-z0-9]+)?/)||[])[0]||'';
+      let account=rawHandle||((member&&member.account)||'');
+      if(account&&!account.startsWith('@'))account='@'+account;
+      const suffix=rawHandle?rawHandle:account;
+      const label=match[2]+suffix;
+      const query=member?member.name:match[2];
+      html+=`<a class="activity-member-link" href="#roster" data-member-query="${escapeHtml(query)}">${escapeHtml(label)}</a>`;
+      if(member&&account)searchableHandles.set(member.name.toLocaleLowerCase(),account);
+      cursor=nameEnd+(rawHandle?rawHandle.length:0);
+      matcher.lastIndex=cursor;
+    }
+    html+=escapeHtml(text.slice(cursor));
+    if(searchableHandles.size){
+      searchText+=' '+[...searchableHandles.values()].join(' ');
+    }
+    return {html,searchText};
+  }
   function renderRecent(){
     const label={join:'Joined',exit:'Departed',rank:'Rank changed',other:'Guild event'};
-    $('recent-events').innerHTML=state.events.length?state.events.map(e=>`<div class="event-row"><i class="event-dot ${e.kind}"></i><div><div class="event-copy">${escapeHtml(e.text)}</div><div class="event-type">${label[e.kind]||label.other}</div></div><time class="event-date" datetime="${e.date.toISOString()}">${formatDate(e.date,true)}</time></div>`).join(''):'<div class="empty-state">No published activity records are available.</div>';
+    const query=$('activity-search').value.trim().toLocaleLowerCase();
+    const prepared=state.events.map(event=>({event,view:activityMemberText(event.text)}));
+    const rows=prepared.filter(item=>!query||item.view.searchText.toLocaleLowerCase().includes(query)||item.event.kind.toLocaleLowerCase().includes(query));
+    const count=rows.length, total=state.events.length;
+    $('activity-results-count').textContent=query?`${count.toLocaleString()} of ${total.toLocaleString()} events match`:`${total.toLocaleString()} events`;
+    $('recent-events').innerHTML=count?rows.map(({event,view})=>`<div class="event-row"><i class="event-dot ${event.kind}"></i><div><div class="event-copy">${view.html}</div><div class="event-type">${label[event.kind]||label.other}</div></div><time class="event-date" datetime="${event.date.toISOString()}">${formatDate(event.date,true)}</time></div>`).join(''):(query?'<div class="empty-state">No activity events match this search.</div>':'<div class="empty-state">No published activity records are available.</div>');
   }
   function render(){renderSnapshotStatus();renderDirectoryFilters();renderRoster();renderRecent();}
   function loadSnapshot(snapshot){
@@ -69,6 +105,15 @@
     catch(_){$('data-status').textContent='No published snapshot found';}
   }
   $('search').addEventListener('input',renderRoster);
+  $('activity-search').addEventListener('input',renderRecent);
+  $('recent-events').addEventListener('click',event=>{
+    const link=event.target.closest('.activity-member-link');
+    if(!link)return;
+    event.preventDefault();
+    $('search').value=link.dataset.memberQuery||'';
+    state.rankFilter='';state.classFilter='';renderDirectoryFilters();renderRoster();
+    $('roster').scrollIntoView({behavior:'smooth',block:'start'});
+  });
   document.querySelectorAll('.sort-button').forEach(b=>b.addEventListener('click',()=>{if(state.sortBy===b.dataset.sort)state.sortDirection*=-1;else{state.sortBy=b.dataset.sort;state.sortDirection=1;}renderRoster();}));
   $('clear-filters').addEventListener('click',()=>{$('search').value='';state.rankFilter='';state.classFilter='';renderDirectoryFilters();renderRoster();});
   autoLoad();

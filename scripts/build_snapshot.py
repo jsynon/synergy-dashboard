@@ -41,11 +41,6 @@ def parse_date(value: str):
     return None
 
 
-def strip_account_handles(text: str) -> str:
-    # Retain character names while omitting Neverwinter account handles from the public snapshot.
-    return re.sub(r"\s+", " ", re.sub(r"@[A-Za-z0-9._-]+(?:#[A-Za-z0-9]+)?", "", text)).strip()
-
-
 def event_kind(row):
     kind, text = row.get("Type", ""), row.get("Text", "").lower()
     if kind == "3" or "has joined the guild" in text:
@@ -91,7 +86,7 @@ def main():
         date = parse_date(row.get("Time", ""))
         if not date:
             continue
-        text = strip_account_handles(row.get("Text", ""))
+        text = re.sub(r"\\s+", " ", row.get("Text", "")).strip()
         events.append({"date": date, "kind": event_kind(row), "text": text})
     events.sort(key=lambda event: event["date"], reverse=True)
 
