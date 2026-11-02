@@ -10,6 +10,7 @@ Part of the Synergy guild site: [Guild Roster](https://jsynon.github.io/synergy-
 - Counted, clickable rank and class filters built into the directory
 - A scrollable, searchable activity log with member links
 - Upcoming account promotion milestones, based on original verified account join dates
+- A compact account-level inactivity alert card using each account’s most recent character activity; officers, guild leaders, protected accounts, and leave-of-absence accounts are excluded
 - Links to the Masterwork Forge and Synergy Discord
 
 ## Refresh and publish guild data

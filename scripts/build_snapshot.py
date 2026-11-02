@@ -23,10 +23,12 @@ def read_csv(path: Path):
         headers = [(header or "").strip() for header in next(reader, [])]
         records = []
         for values in reader:
-            # Some exports contain unquoted commas in comment fields; only the known
-            # leading columns are needed, so ignore overflow after the header columns.
-            records.append({header: (values[i] if i < len(values) else "").strip()
-                            for i, header in enumerate(headers)})
+            # Some exports contain unquoted commas in comment fields. Map the known
+            # columns normally and retain raw cells so leave-of-absence notes survive overflow.
+            record = {header: (values[i] if i < len(values) else "").strip()
+                      for i, header in enumerate(headers)}
+            record["_raw_values"] = values
+            records.append(record)
         return records
 
 
@@ -110,6 +112,15 @@ def main():
             "lastOnline": parse_date(row.get("Last online date", "")),
             "onlineNow": bool(row.get("Location", "").strip()
                                and row.get("Location", "").strip().casefold() != "offline"),
+            "leaveOfAbsence": bool(re.search(
+                r"\b(?:loa|leave of absence|on leave|leave pass|approved leave)\b",
+                " ".join(
+                    [row.get(field, "") for field in (
+                        "Member comments", "Status comments", "Officer comments"
+                    )] + row.get("_raw_values", [])[9:]
+                ),
+                re.IGNORECASE,
+            )),
         })
 
     events = []

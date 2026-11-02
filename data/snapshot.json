@@ -552,7 +552,8 @@
       "joinDate": "2025-05-20T19:27:19",
       "lastOnline": "2026-09-03T21:19:38",
       "onlineNow": false,
-      "originalJoinDate": "2025-05-20T19:27:19"
+      "originalJoinDate": "2025-05-20T19:27:19",
+      "leaveOfAbsence": true
     },
     {
       "name": "blink",

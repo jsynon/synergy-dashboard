@@ -54,6 +54,18 @@ a { color: inherit; }
 .promotion-path { color:var(--gold-bright); font:600 10px/1.35 var(--serif); white-space:nowrap; }
 .promotion-path span { padding:0 3px; color:var(--teal); }
 .promotion-date { grid-column:1/-1; color:var(--muted); font-size:10px; }
+.inactivity-panel { margin:0 0 12px; padding:10px 14px; }
+.inactivity-panel .panel-heading { align-items:flex-start; margin-bottom:8px; }
+.inactivity-panel .panel-heading h2 { font-size:16px; }
+.inactivity-panel .section-subtitle { font-size:11px; }
+.inactivity-list { display:grid; gap:5px; max-height:190px; overflow-y:auto; padding-right:5px; scrollbar-color:#80643b #171d21; scrollbar-width:thin; }
+.inactivity-row { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:8px 10px; border:1px solid rgba(240,138,82,.25); background:linear-gradient(110deg,rgba(45,25,21,.7),rgba(18,26,32,.8)); }
+.inactivity-account-link { color:var(--gold-bright); font-weight:700; text-decoration:none; overflow-wrap:anywhere; }
+.inactivity-account-link:hover,.inactivity-account-link:focus-visible { color:var(--teal); text-decoration:underline; text-underline-offset:3px; }
+.inactivity-rank,.inactivity-meta { color:var(--muted); font-size:10px; }
+.inactivity-meta { margin-top:2px; }
+.inactivity-age { color:var(--red); font-size:11px; white-space:nowrap; }
+.inactivity-empty { padding:6px 0; }
 .roster-panel,.recent-panel { padding:17px 19px; }
 .roster-panel { margin-bottom:14px; }
 .panel-heading { display:flex; justify-content:space-between; align-items:center; gap:14px; margin-bottom:14px; }
@@ -123,6 +135,7 @@ footer i { color:var(--gold); font-style:normal; }
   .hero::before { left:-7%; } .hero::after { right:-7%; }
   .hero::before,.hero::after { font-size:65px; }
   .promotions-panel,.roster-panel,.recent-panel { padding:13px 11px; }
+  .inactivity-panel { padding:10px 11px; }
   .promotions-panel .panel-heading { min-height:78px; }
   .promotion-list { grid-template-columns:1fr; height:390px; }
   .panel-heading h2 { font-size:16px; }

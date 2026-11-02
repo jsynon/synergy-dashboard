@@ -63,6 +63,39 @@
       </div>`;
     }).join(''):'<div class="empty-state">No promotion milestones are available in this snapshot.</div>';
   }
+  function renderInactivityAlerts(){
+    const limits={1:7,2:14,3:30,4:60,5:90};
+    const rankNames={1:'Initiate',2:'Wayfarer',3:'Stalwart',4:'Veteran',5:'Elder'};
+    const protectedAccounts=new Set(['@arkhybrid#75770']);
+    const accounts=new Map();
+    for(const member of state.roster){
+      const key=(member.account||'').trim().toLocaleLowerCase();
+      if(!key)continue;
+      if(!accounts.has(key))accounts.set(key,{key,account:member.account,rankOrder:0,lastActive:null,characterCount:0,onLeave:false});
+      const account=accounts.get(key);
+      account.rankOrder=Math.max(account.rankOrder,Number(member.rankOrder)||0);
+      account.characterCount++;
+      account.onLeave=account.onLeave||member.leaveOfAbsence===true;
+      // A blank last-online value means the character was online at snapshot time.
+      const lastActive=member.lastOnline||state.generatedAt;
+      if(lastActive&&(!account.lastActive||lastActive>account.lastActive))account.lastActive=lastActive;
+    }
+    const now=new Date();
+    const alerts=[...accounts.values()].filter(account=>{
+      if(!limits[account.rankOrder]||protectedAccounts.has(account.key)||account.onLeave||!account.lastActive)return false;
+      account.daysInactive=Math.max(0,Math.floor((now-account.lastActive)/86400000));
+      account.limitDays=limits[account.rankOrder];
+      return account.daysInactive>=account.limitDays;
+    }).sort((a,b)=>b.daysInactive-a.daysInactive||a.account.localeCompare(b.account));
+    $('inactivity-count').textContent=`${alerts.length} ${alerts.length===1?'alert':'alerts'}`;
+    $('inactivity-list').innerHTML=alerts.length?alerts.map(account=>`<div class="inactivity-row">
+      <div class="inactivity-details">
+        <div><a href="#roster" class="inactivity-account-link" data-account-query="${escapeHtml(account.account)}">${escapeHtml(account.account)}</a><span class="inactivity-rank"> · ${rankNames[account.rankOrder]}</span></div>
+        <div class="inactivity-meta">${account.daysInactive}-day limit · Last active ${formatDate(account.lastActive)}</div>
+      </div>
+      <strong class="inactivity-age">${account.daysInactive} ${account.daysInactive===1?'day':'days'}</strong>
+    </div>`).join(''):'<div class="empty-state inactivity-empty">No accounts currently meet their inactivity threshold.</div>';
+  }
   function renderDirectoryFilters(){
     const rankCounts=new Map(),classCounts=new Map(),rankOrders=new Map();
     for(const member of state.roster){
@@ -134,7 +167,7 @@
     $('activity-results-count').textContent=query?`${count.toLocaleString()} of ${total.toLocaleString()} events match`:`${total.toLocaleString()} events`;
     $('recent-events').innerHTML=count?rows.map(({event,view})=>`<div class="event-row"><i class="event-dot ${event.kind}"></i><div><div class="event-copy">${view.html}</div><div class="event-type">${label[event.kind]||label.other}</div></div><time class="event-date" datetime="${event.date.toISOString()}">${formatDate(event.date,true)}</time></div>`).join(''):(query?'<div class="empty-state">No activity events match this search.</div>':'<div class="empty-state">No published activity records are available.</div>');
   }
-  function render(){renderSnapshotStatus();renderDirectoryFilters();renderRoster();renderRecent();renderPromotions();}
+  function render(){renderSnapshotStatus();renderDirectoryFilters();renderRoster();renderRecent();renderPromotions();renderInactivityAlerts();}
   function loadSnapshot(snapshot){
     if(!snapshot||!Array.isArray(snapshot.roster)||!Array.isArray(snapshot.events))throw new Error('Snapshot format is invalid.');
     state.accountJoinDates=Object.fromEntries(Object.entries(snapshot.accountJoinDates||{}).map(([account,date])=>[account.trim().toLocaleLowerCase(),date]));
@@ -150,6 +183,14 @@
   $('activity-search').addEventListener('input',renderRecent);
   $('promotion-list').addEventListener('click',event=>{
     const link=event.target.closest('.promotion-account-link');
+    if(!link)return;
+    event.preventDefault();
+    $('search').value=link.dataset.accountQuery||'';
+    state.rankFilter='';state.classFilter='';renderDirectoryFilters();renderRoster();
+    $('roster').scrollIntoView({behavior:'smooth',block:'start'});
+  });
+  $('inactivity-list').addEventListener('click',event=>{
+    const link=event.target.closest('.inactivity-account-link');
     if(!link)return;
     event.preventDefault();
     $('search').value=link.dataset.accountQuery||'';
