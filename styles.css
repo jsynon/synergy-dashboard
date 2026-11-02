@@ -443,3 +443,32 @@ footer span:first-child { color:var(--gold-bright); font:600 .9rem var(--serif);
   .mobile-directory-sort { display:flex; align-items:center; justify-content:flex-end; gap:7px; margin:0 0 8px; }
   .mobile-directory-sort select { max-width:46%; }
 }
+
+
+/* Compact rank and class filters shown as paired dropdowns. */
+.directory-facets {
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:9px;
+  padding:11px;
+}
+.facet-select-field { display:grid; gap:5px; min-width:0; }
+.facet-select-field .facet-label { padding:0; }
+.facet-select-field select {
+  width:100%;
+  min-width:0;
+  min-height:42px;
+  padding:8px 30px 8px 10px;
+  border:1px solid rgba(89,201,232,.25);
+  border-radius:3px;
+  outline:none;
+  color:var(--text);
+  background:#101a24;
+  font: .78rem var(--body);
+}
+.facet-select-field select:focus { border-color:var(--teal); box-shadow:0 0 0 3px rgba(89,201,232,.12); }
+.facet-select-field option { background:#101a24; color:var(--text); }
+.facet-note { grid-column:1/-1; margin:0; }
+@media(max-width:620px) {
+  .directory-facets { grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; padding:9px; }
+  .facet-select-field select { min-height:40px; padding-left:8px; font-size:.72rem; }
+}

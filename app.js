@@ -108,10 +108,10 @@
     }
     const ranks=[...rankCounts.keys()].sort((a,b)=>(rankOrders.get(a)||0)-(rankOrders.get(b)||0)||a.localeCompare(b));
     const classes=[...classCounts.keys()].sort((a,b)=>classCounts.get(b)-classCounts.get(a)||a.localeCompare(b));
-    $('rank-facets').innerHTML=[`<button type="button" class="facet-chip${state.rankFilter===''?' active':''}" data-rank="">All <b>${state.roster.length}</b></button>`,...ranks.map(name=>`<button type="button" class="facet-chip${state.rankFilter===name?' active':''}" data-rank="${escapeHtml(name)}">${escapeHtml(name)} <b>${rankCounts.get(name)}</b></button>`)].join('');
-    $('class-facets').innerHTML=[`<button type="button" class="facet-chip${state.classFilter===''?' active':''}" data-class="">All <b>${state.roster.length}</b></button>`,...classes.map(name=>`<button type="button" class="facet-chip${state.classFilter===name?' active':''}" data-class="${escapeHtml(name)}">${escapeHtml(name)} <b>${classCounts.get(name)}</b></button>`)].join('');
-    document.querySelectorAll('[data-rank]').forEach(button=>button.addEventListener('click',()=>{state.rankFilter=button.dataset.rank;renderDirectoryFilters();renderRoster();}));
-    document.querySelectorAll('[data-class]').forEach(button=>button.addEventListener('click',()=>{state.classFilter=button.dataset.class;renderDirectoryFilters();renderRoster();}));
+    $('rank-facets').innerHTML=[`<option value="">All (${state.roster.length})</option>`,...ranks.map(name=>`<option value="${escapeHtml(name)}">${escapeHtml(name)} (${rankCounts.get(name)})</option>`)].join('');
+    $('class-facets').innerHTML=[`<option value="">All (${state.roster.length})</option>`,...classes.map(name=>`<option value="${escapeHtml(name)}">${escapeHtml(name)} (${classCounts.get(name)})</option>`)].join('');
+    $('rank-facets').value=state.rankFilter;
+    $('class-facets').value=state.classFilter;
   }
   function getVisibleMembers(){
     const query=$('search').value.trim().toLowerCase();
@@ -238,6 +238,8 @@
   document.querySelectorAll('.sort-button').forEach(b=>b.addEventListener('click',()=>{if(state.sortBy===b.dataset.sort)state.sortDirection*=-1;else{state.sortBy=b.dataset.sort;state.sortDirection=1;}renderRoster();}));
   $('mobile-sort').addEventListener('change',event=>{state.sortBy=event.target.value;state.sortDirection=1;renderRoster();});
   $('mobile-sort-direction').addEventListener('click',()=>{state.sortDirection*=-1;renderRoster();});
+  $('rank-facets').addEventListener('change',event=>{state.rankFilter=event.target.value;renderRoster();});
+  $('class-facets').addEventListener('change',event=>{state.classFilter=event.target.value;renderRoster();});
   $('clear-filters').addEventListener('click',()=>{$('search').value='';state.rankFilter='';state.classFilter='';renderDirectoryFilters();renderRoster();});
   autoLoad();
 })();
