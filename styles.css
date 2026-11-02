@@ -242,7 +242,11 @@ td { padding:10px 11px; }
 }
 
 /* Three clear stages: introduction, filters, directory. */
-.member-search-intro { display:block; margin:0 0 13px; }
+.member-search-intro { display:flex; align-items:flex-end; justify-content:space-between; gap:18px; margin:0 0 14px; }
+.member-search-intro .section-kicker { margin:0 0 3px; color:var(--teal); font-size:.69rem; letter-spacing:.19em; text-transform:uppercase; font-weight:700; }
+.member-search-intro h2 { margin:0; color:var(--gold-bright); font:600 clamp(1.35rem,3vw,1.75rem)/1.25 var(--serif); }
+.member-search-intro .section-intro { max-width:520px; margin:7px 0 0; color:var(--muted); font-size:.88rem; }
+@media(max-width:720px) { .member-search-intro { align-items:start; flex-direction:column; gap:3px; } }
 .search-panel { margin:0 0 14px; padding:17px 19px; }
 .filter-actions { display:flex; justify-content:flex-end; margin-top:10px; }
 .search-panel .directory-facets { margin-bottom:0; }
