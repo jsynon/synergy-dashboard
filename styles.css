@@ -204,3 +204,39 @@ thead { background:#111d29; }
 
 .account-name { color:var(--teal); white-space:nowrap; }
 table { min-width:700px; }
+
+/* Match the Masterwork Forge control scale and typography. */
+.panel-heading h2 { font:600 clamp(1.35rem,3vw,1.75rem)/1.25 var(--serif); }
+.section-subtitle { margin:7px 0 0; color:var(--muted); font:.88rem/1.5 var(--body); }
+.kicker { font-size:.69rem; }
+.toolbar { margin-bottom:14px; }
+.directory-search { flex:1; min-width:0; }
+.field label { display:block; margin:0 0 6px; color:var(--teal); font-size:.7rem; font-weight:700; letter-spacing:.09em; text-transform:uppercase; }
+.search-box { display:flex; align-items:center; flex:1; gap:10px; min-width:190px; height:44px; padding:0 12px; border:1px solid rgba(194,207,218,.24); border-radius:3px; background:#0d1824; color:var(--teal); font-size:20px; }
+.search-box:focus-within { border-color:var(--teal); box-shadow:0 0 0 3px rgba(89,201,232,.13); }
+.search-box input { width:100%; min-height:42px; padding:10px 0; border:0; outline:0; color:var(--text); background:transparent; font:14px var(--body); }
+.search-box input::placeholder { color:#91a1ae; }
+.count-pill { padding:6px 10px; font-size:.75rem; }
+.facet-label { font-size:.7rem; }
+.facet-chip { font:.75rem var(--body); }
+.facet-chip b { font-size:.7rem; }
+.facet-note { font-size:.72rem; }
+table { font-size:.84rem; }
+th { padding:9px 11px; font-size:.7rem; }
+td { padding:10px 11px; }
+.member-name,.account-name,.rank-tag,.class-name { font-size:.84rem; }
+.event-copy { font-size:.84rem; }
+.event-type { font-size:.65rem; }
+.event-date { font-size:.72rem; }
+@media(max-width:620px) {
+  .panel-heading h2 { font-size:1.2rem; }
+  .section-subtitle { font-size:.8rem; }
+  .search-box { height:44px; }
+  table { font-size:.78rem; }
+  th { font-size:.65rem; }
+  td { padding:8px 7px; }
+  .facet-chip { font-size:.7rem; }
+  .facet-note { font-size:.67rem; }
+  .event-copy { font-size:.78rem; }
+  .event-date { font-size:.65rem; }
+}
