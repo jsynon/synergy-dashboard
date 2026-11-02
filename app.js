@@ -72,7 +72,7 @@
       if(account&&!account.startsWith('@'))account='@'+account;
       const suffix=rawHandle?rawHandle:account;
       const label=match[2]+suffix;
-      const query=member?member.name:match[2];
+      const query=member?(member.account||member.name):match[2];
       html+=`<a class="activity-member-link" href="#roster" data-member-query="${escapeHtml(query)}">${escapeHtml(label)}</a>`;
       if(member&&account)searchableHandles.set(member.name.toLocaleLowerCase(),account);
       cursor=nameEnd+(rawHandle?rawHandle.length:0);
