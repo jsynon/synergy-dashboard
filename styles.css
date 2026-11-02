@@ -316,3 +316,5 @@ footer span:first-child { color:var(--gold-bright); font:600 .9rem var(--serif);
     padding:13px 11px 12px;
   }
 }
+/* Live character and account results below the roster search. */
+.search-results-count { margin:7px 0 0; color:var(--muted); font-size:.82rem; line-height:1.45; }
