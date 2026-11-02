@@ -14,7 +14,7 @@ Part of the Synergy guild site: [Guild Roster](https://jsynon.github.io/synergy-
 ## Refresh and publish guild data
 
 1. Export the roster and activity logs in Neverwinter.
-2. Double-click `update-dashboard.bat`. It finds the newest `GuildMembersListLogs*.csv` and the fixed `GuildActivityLogs.csv` in `C:\Program Files (x86)\Neverwinter_en\Neverwinter\Live\guildlogs`, copies them into the local `data` folder, and rebuilds `data/snapshot.json`.
+2. Double-click `update-dashboard.bat`. It finds the newest `GuildMembersListLogs*.csv` and `GuildActivityLogs.csv` in `C:\Program Files (x86)\Neverwinter_en\Neverwinter\Live\guildlogs`, copies them to the stable local names `data/roster.csv` and `data/activity.csv`, verifies the copies, and rebuilds `data/snapshot.json`. The script prints the selected source filename and source/destination sizes so you can confirm what it copied.
 3. Commit and push the changed `data/snapshot.json` to the GitHub Pages branch. The published page then shows the updated snapshot to every visitor.
 
 The batch file selects the most recently modified roster match, so timestamped filenames work. Raw CSVs are ignored by Git. The generated JSON includes only character name, rank, class, level, join date, last-online date, online status, account total, and activity summaries. It omits member/status/officer comments and account handles. Activity text keeps character names but strips account handles.
