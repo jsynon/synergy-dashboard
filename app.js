@@ -20,6 +20,7 @@
   function renderSnapshotStatus(){
     $('directory-count').textContent=`${state.roster.length.toLocaleString()} characters · ${state.accountCount.toLocaleString()} accounts`;
     const dateLabel=state.generatedAt?formatDate(state.generatedAt):null;
+    $('roster-generated-date').textContent=dateLabel?`Roster snapshot generated on ${dateLabel}.`:'Roster snapshot date unavailable.';
     $('data-status').textContent=state.roster.length?`Published snapshot${dateLabel?` · generated ${dateLabel}`:''}`:'No published roster snapshot found';
   }
   function renderDirectoryFilters(){
