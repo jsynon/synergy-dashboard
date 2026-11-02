@@ -55,7 +55,20 @@ a { color: inherit; }
 .promotion-path span { padding:0 3px; color:var(--teal); }
 .promotion-date { grid-column:1/-1; color:var(--muted); font-size:10px; }
 .inactivity-panel { margin:0 0 12px; padding:10px 14px; }
-.inactivity-rules-link { color:var(--teal); text-decoration:underline; text-decoration-style:dotted; text-underline-offset:2px; }
+.inactivity-rules-link { padding:0; border:0; background:none; color:var(--teal); font:inherit; text-decoration:underline; text-decoration-style:dotted; text-underline-offset:2px; cursor:pointer; }
+.inactivity-rules-dialog { width:min(460px,calc(100% - 28px)); max-width:460px; max-height:calc(100% - 32px); padding:18px; border:1px solid var(--gold); color:var(--text); background:linear-gradient(145deg,#18232c,#11171c); box-shadow:0 22px 70px rgba(0,0,0,.65); }
+.inactivity-rules-dialog::backdrop { background:rgba(0,0,0,.74); backdrop-filter:blur(2px); }
+.inactivity-rules-header { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom:12px; }
+.inactivity-rules-header h2 { margin:0; color:var(--gold-bright); font:600 19px/1.25 var(--serif); }
+.inactivity-rules-header .kicker { margin-bottom:4px; }
+.inactivity-dialog-close { width:30px; height:30px; border:1px solid var(--line); color:var(--muted); background:rgba(255,255,255,.03); font-size:21px; line-height:1; cursor:pointer; }
+.inactivity-dialog-close:hover,.inactivity-dialog-close:focus-visible { color:var(--gold-bright); border-color:var(--gold); }
+.inactivity-rules-list { display:grid; gap:5px; margin:0; padding:0; list-style:none; }
+.inactivity-rules-list li { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:8px 10px; border:1px solid rgba(190,160,103,.2); background:rgba(7,12,20,.54); }
+.inactivity-rules-list li span { color:var(--text); font-size:13px; }
+.inactivity-rules-list li small { margin-left:5px; color:var(--muted); font-size:10px; }
+.inactivity-rules-list li strong { color:var(--gold-bright); font-size:12px; white-space:nowrap; }
+.inactivity-rules-note { margin:12px 1px 0; color:var(--muted); font-size:11px; line-height:1.55; }
 .inactivity-rules-link:hover,.inactivity-rules-link:focus-visible { color:var(--gold-bright); }
 .inactivity-panel .panel-heading { align-items:flex-start; margin-bottom:8px; }
 .inactivity-list { display:grid; gap:5px; max-height:190px; overflow-y:auto; padding-right:5px; scrollbar-color:#80643b #171d21; scrollbar-width:thin; }

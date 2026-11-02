@@ -70,10 +70,26 @@
       </section>
 
       <section class="panel inactivity-panel" id="inactivity-alerts" aria-labelledby="inactivity-title">
-        <div class="panel-heading"><div><p class="kicker">Account activity</p><h2 id="inactivity-title">Inactivity alerts</h2><p class="section-subtitle">Accounts at or beyond their rank-based <a class="inactivity-rules-link" href="https://discord.gg/Qhupfy8VCu" target="_blank" rel="noopener noreferrer">inactivity limit</a>.</p></div><span class="count-pill" id="inactivity-count">—</span></div>
+        <div class="panel-heading"><div><p class="kicker">Account activity</p><h2 id="inactivity-title">Inactivity alerts</h2><p class="section-subtitle">Accounts at or beyond their rank-based <button type="button" class="inactivity-rules-link" id="show-inactivity-rules">inactivity limit</button>.</p></div><span class="count-pill" id="inactivity-count">—</span></div>
         <div id="inactivity-list" class="inactivity-list"><div class="empty-state">Alerts will appear when the roster snapshot loads.</div></div>
       </section>
 
+      <dialog class="inactivity-rules-dialog" id="inactivity-rules-dialog" aria-labelledby="inactivity-rules-title">
+        <div class="inactivity-rules-header">
+          <div><p class="kicker">Guild activity policy</p><h2 id="inactivity-rules-title">Inactivity limits</h2></div>
+          <button type="button" class="inactivity-dialog-close" id="close-inactivity-rules" aria-label="Close inactivity limits">×</button>
+        </div>
+        <ul class="inactivity-rules-list">
+          <li><span>Initiate <small>Rank 1</small></span><strong>7 days</strong></li>
+          <li><span>Wayfarer <small>Rank 2</small></span><strong>14 days</strong></li>
+          <li><span>Stalwart <small>Rank 3</small></span><strong>30 days</strong></li>
+          <li><span>Veteran <small>Rank 4</small></span><strong>60 days</strong></li>
+          <li><span>Elder <small>Rank 5</small></span><strong>90 days</strong></li>
+          <li><span>Officer <small>Rank 6</small></span><strong>Exempt</strong></li>
+          <li><span>Guild Leader <small>Rank 7</small></span><strong>Exempt</strong></li>
+        </ul>
+        <p class="inactivity-rules-note">Limits are evaluated at the account level using the most recent activity across its characters. Reaching a limit makes an account eligible for removal; it does not remove the account automatically.</p>
+      </dialog>
     </main>
 
     <footer><span>SYNERGY</span><span class="footer-credit" id="roster-generated-date">Roster snapshot date unavailable.</span></footer>
