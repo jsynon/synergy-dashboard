@@ -242,6 +242,7 @@ td { padding:10px 11px; }
 }
 
 /* Three clear stages: introduction, filters, directory. */
+.member-search-intro { display:block; margin:0 0 13px; }
 .search-panel { margin:0 0 14px; padding:17px 19px; }
 .filter-actions { display:flex; justify-content:flex-end; margin-top:10px; }
 .search-panel .directory-facets { margin-bottom:0; }
