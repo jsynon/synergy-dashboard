@@ -18,7 +18,6 @@
     if(days<1)return 'Today';if(days===1)return 'Yesterday';if(days<30)return `${days} days ago`;return formatDate(m.lastOnline);
   };
   function renderSnapshotStatus(){
-    $('directory-count').textContent=`${state.roster.length.toLocaleString()} characters · ${state.accountCount.toLocaleString()} accounts`;
     const dateLabel=state.generatedAt?formatDate(state.generatedAt):null;
     $('roster-generated-date').textContent=dateLabel?`Roster snapshot generated on ${dateLabel}.`:'Roster snapshot date unavailable.';
     $('data-status').textContent=state.roster.length?`Published snapshot${dateLabel?` · generated ${dateLabel}`:''}`:'No published roster snapshot found';
@@ -49,6 +48,7 @@
     const characterLabel=rows.length===1?'character':'characters';
     const accountLabel=matchingAccounts===1?'account':'accounts';
     $('search-results-count').textContent=`${rows.length.toLocaleString()} ${characterLabel} · ${matchingAccounts.toLocaleString()} ${accountLabel} found`;
+    $('directory-count').textContent=$('search-results-count').textContent;
     $('table-summary').textContent=`Showing ${rows.length.toLocaleString()} of ${state.roster.length.toLocaleString()} character records`;
     $('roster-body').innerHTML=rows.length?rows.map(m=>`<tr><td class="member-name">${escapeHtml(m.name)}</td><td class="account-name">${escapeHtml(m.account||"")}</td><td><span class="rank-tag"><i class="rank-dot rank-${m.rankOrder}"></i>${escapeHtml(m.rank)}</span></td><td class="class-name">${escapeHtml(m.class)}</td><td>${formatDate(m.joinDate)}</td><td title="${m.lastOnline?escapeHtml(formatDate(m.lastOnline,true)):''}">${displayStatus(m)}</td></tr>`).join(''):'<tr><td colspan="6" class="table-empty">No members match these filters.</td></tr>';
     document.querySelectorAll('.sort-button').forEach(b=>b.setAttribute('aria-sort',b.dataset.sort===state.sortBy?(state.sortDirection===1?'ascending':'descending'):'none'));
