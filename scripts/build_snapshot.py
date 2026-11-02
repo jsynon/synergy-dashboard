@@ -75,6 +75,7 @@ def main():
         rank_order = int(match.group(1)) if match else 0
         members.append({
             "name": row.get("Name", "") or "Unknown",
+            "account": row.get("Account", ""),
             "rank": RANK_NAMES.get(rank_order, row.get("Guild Rank", "") or "Unranked"),
             "rankOrder": rank_order,
             "class": row.get("Class", "") or "Unknown",

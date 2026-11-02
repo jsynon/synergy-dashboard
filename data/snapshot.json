@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-11-02T01:00:58+00:00",
+  "generatedAt": "2026-11-02T01:49:20+00:00",
   "accountCount": 146,
   "roster": [
     {
       "name": "Jeighsin",
+      "account": "@jsmith2500",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Rogue",
@@ -14,6 +15,7 @@
     },
     {
       "name": "SHROK",
+      "account": "@drumus",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Wizard",
@@ -24,6 +26,7 @@
     },
     {
       "name": "Rabeye Skywise",
+      "account": "@robtn",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Wizard",
@@ -34,6 +37,7 @@
     },
     {
       "name": "Jade Providance",
+      "account": "@mameye",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Cleric",
@@ -44,6 +48,7 @@
     },
     {
       "name": "Vicious Helltalon",
+      "account": "@hellscrye",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Fighter",
@@ -54,6 +59,7 @@
     },
     {
       "name": "Sirina",
+      "account": "@stayroforos",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Rogue",
@@ -64,6 +70,7 @@
     },
     {
       "name": "Greyhawk",
+      "account": "@mameye",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Fighter",
@@ -74,6 +81,7 @@
     },
     {
       "name": "Porcica",
+      "account": "@yamonisu",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Rogue",
@@ -84,6 +92,7 @@
     },
     {
       "name": "Patotoya",
+      "account": "@milvon351",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Fighter",
@@ -94,6 +103,7 @@
     },
     {
       "name": "OrKo",
+      "account": "@filamingom",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Rogue",
@@ -104,6 +114,7 @@
     },
     {
       "name": "Azazel",
+      "account": "@eatsomewaffles",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Barbarian",
@@ -114,6 +125,7 @@
     },
     {
       "name": "Thorhammern",
+      "account": "@thorhammern",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Fighter",
@@ -124,6 +136,7 @@
     },
     {
       "name": "Antilogic",
+      "account": "@zorlonix",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Ranger",
@@ -134,6 +147,7 @@
     },
     {
       "name": "Zarathud",
+      "account": "@zorlonix",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Barbarian",
@@ -144,6 +158,7 @@
     },
     {
       "name": "Wazzz",
+      "account": "@Tarab0stes",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Wizard",
@@ -154,6 +169,7 @@
     },
     {
       "name": "Carric Silentread",
+      "account": "@swish68",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Ranger",
@@ -164,6 +180,7 @@
     },
     {
       "name": "Zanros",
+      "account": "@swish68",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Fighter",
@@ -174,6 +191,7 @@
     },
     {
       "name": "crisem97",
+      "account": "@crisem97",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Wizard",
@@ -184,6 +202,7 @@
     },
     {
       "name": "Dara Moonshadow",
+      "account": "@robtn",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Warlock",
@@ -194,6 +213,7 @@
     },
     {
       "name": "Korvan",
+      "account": "@drumus",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Barbarian",
@@ -204,6 +224,7 @@
     },
     {
       "name": "MALK1N",
+      "account": "@wolfraan",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Fighter",
@@ -214,6 +235,7 @@
     },
     {
       "name": "Isiyel",
+      "account": "@ddv22",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Cleric",
@@ -224,6 +246,7 @@
     },
     {
       "name": "Vordon De'Ayyad",
+      "account": "@vordayn",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -234,6 +257,7 @@
     },
     {
       "name": "Pantomime",
+      "account": "@vaneth9",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Warlock",
@@ -244,6 +268,7 @@
     },
     {
       "name": "Nefalen",
+      "account": "@saguiars1980",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Warlock",
@@ -254,6 +279,7 @@
     },
     {
       "name": "Midir",
+      "account": "@eatsomewaffles",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Cleric",
@@ -264,6 +290,7 @@
     },
     {
       "name": "Nolanian",
+      "account": "@menofgods",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Fighter",
@@ -274,6 +301,7 @@
     },
     {
       "name": "Vickul Helltalon",
+      "account": "@hellscrye",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Paladin",
@@ -284,6 +312,7 @@
     },
     {
       "name": "Albrecht Tun",
+      "account": "@Bahnegork",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Paladin",
@@ -294,6 +323,7 @@
     },
     {
       "name": "Maiken Falnevakt",
+      "account": "@vansykle",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Paladin",
@@ -304,6 +334,7 @@
     },
     {
       "name": "Galactic Underwear",
+      "account": "@skatopsixos7",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Rogue",
@@ -314,6 +345,7 @@
     },
     {
       "name": "YggDaSill",
+      "account": "@kreatch",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Barbarian",
@@ -324,6 +356,7 @@
     },
     {
       "name": "Yggdrasil",
+      "account": "@kreatch",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Fighter",
@@ -334,6 +367,7 @@
     },
     {
       "name": "Mana Stickyfingers",
+      "account": "@redsmoke6",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Rogue",
@@ -344,6 +378,7 @@
     },
     {
       "name": "Mana the Holy",
+      "account": "@redsmoke6",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Paladin",
@@ -354,6 +389,7 @@
     },
     {
       "name": "Mana the Cruel",
+      "account": "@redsmoke6",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Wizard",
@@ -364,6 +400,7 @@
     },
     {
       "name": "Ammy lightstep",
+      "account": "@menofgods",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Barbarian",
@@ -374,6 +411,7 @@
     },
     {
       "name": "Mana the Merciless",
+      "account": "@redsmoke6",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Warlock",
@@ -384,6 +422,7 @@
     },
     {
       "name": "Davyd Bowie",
+      "account": "@redsmoke6",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Ranger",
@@ -394,6 +433,7 @@
     },
     {
       "name": "Navi GreenLight",
+      "account": "@menofgods",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Warlock",
@@ -404,6 +444,7 @@
     },
     {
       "name": "Blur",
+      "account": "@blur#5900",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Rogue",
@@ -414,6 +455,7 @@
     },
     {
       "name": "Amadeus",
+      "account": "@kyo#1079",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Cleric",
@@ -424,6 +466,7 @@
     },
     {
       "name": "Squishy",
+      "account": "@fatfack#4422",
       "rank": "Initiate",
       "rankOrder": 1,
       "class": "Rogue",
@@ -434,6 +477,7 @@
     },
     {
       "name": "Hallebooyah",
+      "account": "@kyo#1079",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Paladin",
@@ -444,6 +488,7 @@
     },
     {
       "name": "YumukluSucurta",
+      "account": "@filamingom",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Fighter",
@@ -454,6 +499,7 @@
     },
     {
       "name": "Alaemiga",
+      "account": "@Junsuda",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Ranger",
@@ -464,6 +510,7 @@
     },
     {
       "name": "blink",
+      "account": "@blacklisted24",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Wizard",
@@ -474,6 +521,7 @@
     },
     {
       "name": "tamuramaro",
+      "account": "@untetsu#8557",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Wizard",
@@ -484,6 +532,7 @@
     },
     {
       "name": "naori",
+      "account": "@culain#2764",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Ranger",
@@ -494,6 +543,7 @@
     },
     {
       "name": "psycho Wubble",
+      "account": "@necroforever#1834",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Barbarian",
@@ -504,6 +554,7 @@
     },
     {
       "name": "Tameika",
+      "account": "@necroforever#1834",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Warlock",
@@ -514,6 +565,7 @@
     },
     {
       "name": "Tuldar Wolvesbane",
+      "account": "@nagash#2154",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Ranger",
@@ -524,6 +576,7 @@
     },
     {
       "name": "pak long",
+      "account": "@untetsu#8557",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Cleric",
@@ -534,6 +587,7 @@
     },
     {
       "name": "Charlotte The Harlot",
+      "account": "@arrow#5683",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Paladin",
@@ -544,6 +598,7 @@
     },
     {
       "name": "Merlin",
+      "account": "@johann#8238",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Wizard",
@@ -554,6 +609,7 @@
     },
     {
       "name": "Odin",
+      "account": "@blur#5900",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Paladin",
@@ -564,6 +620,7 @@
     },
     {
       "name": "GabyTzzu",
+      "account": "@gheibriol",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Rogue",
@@ -574,6 +631,7 @@
     },
     {
       "name": "Durance Critus",
+      "account": "@kyo#1079",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Fighter",
@@ -584,6 +642,7 @@
     },
     {
       "name": "penyamun tarbus",
+      "account": "@untetsu#8557",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Rogue",
@@ -594,6 +653,7 @@
     },
     {
       "name": "Celeste Truthspeaker",
+      "account": "@jigoinane",
       "rank": "Initiate",
       "rankOrder": 1,
       "class": "Paladin",
@@ -604,6 +664,7 @@
     },
     {
       "name": "Graytan",
+      "account": "@graytan#8355",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Paladin",
@@ -614,6 +675,7 @@
     },
     {
       "name": "Fran Faithheart",
+      "account": "@jigoinane",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Cleric",
@@ -624,6 +686,7 @@
     },
     {
       "name": "d00fus",
+      "account": "@d00fus#2812",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Rogue",
@@ -634,6 +697,7 @@
     },
     {
       "name": "Sulva",
+      "account": "@sullivanwarmonk1#5131",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Rogue",
@@ -644,6 +708,7 @@
     },
     {
       "name": "Gotnoname",
+      "account": "@gotnoname4#9308",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Paladin",
@@ -654,6 +719,7 @@
     },
     {
       "name": "b00zer",
+      "account": "@d00fus#2812",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Paladin",
@@ -664,6 +730,7 @@
     },
     {
       "name": "Ebbs",
+      "account": "@culain#2764",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Cleric",
@@ -674,6 +741,7 @@
     },
     {
       "name": "Bae",
+      "account": "@drintot#4657",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Paladin",
@@ -684,6 +752,7 @@
     },
     {
       "name": "Fafnir",
+      "account": "@kreatch",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Rogue",
@@ -694,6 +763,7 @@
     },
     {
       "name": "SN00 SN00",
+      "account": "@d00fus#2812",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Barbarian",
@@ -704,6 +774,7 @@
     },
     {
       "name": "Victorinous",
+      "account": "@majere00#5813",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Wizard",
@@ -714,6 +785,7 @@
     },
     {
       "name": "Jade Vixen",
+      "account": "@mameye",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -724,6 +796,7 @@
     },
     {
       "name": "3tnA",
+      "account": "@cro3tna",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Ranger",
@@ -734,6 +807,7 @@
     },
     {
       "name": "LITTLE GRONK",
+      "account": "@hoopyt1357",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Barbarian",
@@ -744,6 +818,7 @@
     },
     {
       "name": "Kojii",
+      "account": "@lyyten#4513",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Ranger",
@@ -754,6 +829,7 @@
     },
     {
       "name": "Renids",
+      "account": "@richest11",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Barbarian",
@@ -764,6 +840,7 @@
     },
     {
       "name": "Brightwing",
+      "account": "@majere00#5813",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Paladin",
@@ -774,6 +851,7 @@
     },
     {
       "name": "Girth Quake",
+      "account": "@cdolph090102#2729",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Fighter",
@@ -784,6 +862,7 @@
     },
     {
       "name": "Ragnar OP",
+      "account": "@dokrahm#9634",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Paladin",
@@ -794,6 +873,7 @@
     },
     {
       "name": "Sensv",
+      "account": "@sensv#9513",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Barbarian",
@@ -804,6 +884,7 @@
     },
     {
       "name": "Dara TR",
+      "account": "@robtn",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Rogue",
@@ -814,6 +895,7 @@
     },
     {
       "name": "Emerald Acrux",
+      "account": "@wispling#1230",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Cleric",
@@ -824,6 +906,7 @@
     },
     {
       "name": "Dara HR",
+      "account": "@robtn",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Ranger",
@@ -834,6 +917,7 @@
     },
     {
       "name": "SkyriM",
+      "account": "@mata#8261",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Rogue",
@@ -844,6 +928,7 @@
     },
     {
       "name": "Regdar Windsailor",
+      "account": "@paw#4802",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -854,6 +939,7 @@
     },
     {
       "name": "Ruzzous",
+      "account": "@ruzzous#5067",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Ranger",
@@ -864,6 +950,7 @@
     },
     {
       "name": "Jamster",
+      "account": "@nagash#2154",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Cleric",
@@ -874,6 +961,7 @@
     },
     {
       "name": "Ivydora",
+      "account": "@reelapse#5586",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Wizard",
@@ -884,6 +972,7 @@
     },
     {
       "name": "Dara OP",
+      "account": "@robtn",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Paladin",
@@ -894,6 +983,7 @@
     },
     {
       "name": "Sir Perceval",
+      "account": "@polo910#9172",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Paladin",
@@ -904,6 +994,7 @@
     },
     {
       "name": "Yumuklu_heal",
+      "account": "@filamingom",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Warlock",
@@ -914,6 +1005,7 @@
     },
     {
       "name": "PeneloPe",
+      "account": "@stayroforos",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Paladin",
@@ -924,6 +1016,7 @@
     },
     {
       "name": "Clanker",
+      "account": "@whomid#7073",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Ranger",
@@ -934,6 +1027,7 @@
     },
     {
       "name": "Dyreth Galanodel",
+      "account": "@jyncat22",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Cleric",
@@ -944,6 +1038,7 @@
     },
     {
       "name": "GORO",
+      "account": "@polo910#9172",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Fighter",
@@ -954,6 +1049,7 @@
     },
     {
       "name": "Mytholoki",
+      "account": "@wotiiodin",
       "rank": "Initiate",
       "rankOrder": 1,
       "class": "Cleric",
@@ -964,6 +1060,7 @@
     },
     {
       "name": "Sir Rufus",
+      "account": "@badassleeroy#2335",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Ranger",
@@ -974,6 +1071,7 @@
     },
     {
       "name": "Yusarlig Greyforge",
+      "account": "@oldbattleaxe824#7235",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Fighter",
@@ -984,6 +1082,7 @@
     },
     {
       "name": "anreaal",
+      "account": "@culain#2764",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Rogue",
@@ -994,6 +1093,7 @@
     },
     {
       "name": "Sir LeeRoy",
+      "account": "@badassleeroy#2335",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Paladin",
@@ -1004,6 +1104,7 @@
     },
     {
       "name": "Огњен Црвени",
+      "account": "@nikolacreep15",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Cleric",
@@ -1014,6 +1115,7 @@
     },
     {
       "name": "Valkiria",
+      "account": "@morinela2#5008",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Rogue",
@@ -1024,6 +1126,7 @@
     },
     {
       "name": "Kimberley",
+      "account": "@johann#8238",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Rogue",
@@ -1034,6 +1137,7 @@
     },
     {
       "name": "crisemrogue",
+      "account": "@crisem97",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Rogue",
@@ -1044,6 +1148,7 @@
     },
     {
       "name": "crisemcleric",
+      "account": "@crisem97",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Cleric",
@@ -1054,6 +1159,7 @@
     },
     {
       "name": "crisempala",
+      "account": "@crisem97",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Paladin",
@@ -1064,6 +1170,7 @@
     },
     {
       "name": "Dominus",
+      "account": "@thorhammern",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Paladin",
@@ -1074,6 +1181,7 @@
     },
     {
       "name": "Rusher",
+      "account": "@rusherzs13",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Rogue",
@@ -1084,6 +1192,7 @@
     },
     {
       "name": "Yukki",
+      "account": "@x50calmulishax#9338",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Barbarian",
@@ -1094,6 +1203,7 @@
     },
     {
       "name": "Demetsch",
+      "account": "@thorhammern",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Warlock",
@@ -1104,6 +1214,7 @@
     },
     {
       "name": "Unknown Oath",
+      "account": "@betterorworse",
       "rank": "Initiate",
       "rankOrder": 1,
       "class": "Paladin",
@@ -1114,6 +1225,7 @@
     },
     {
       "name": "Eliza",
+      "account": "@leo#4323",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Paladin",
@@ -1124,6 +1236,7 @@
     },
     {
       "name": "Dara the Bard",
+      "account": "@robtn",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Bard",
@@ -1134,6 +1247,7 @@
     },
     {
       "name": "Eliza Idris",
+      "account": "@kingtraveler#4012",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Bard",
@@ -1144,6 +1258,7 @@
     },
     {
       "name": "abg busker",
+      "account": "@untetsu#8557",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Bard",
@@ -1154,6 +1269,7 @@
     },
     {
       "name": "The Blade",
+      "account": "@badassleeroy#2335",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Rogue",
@@ -1164,6 +1280,7 @@
     },
     {
       "name": "Cliate Citadel",
+      "account": "@kingtraveler#4012",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Fighter",
@@ -1174,6 +1291,7 @@
     },
     {
       "name": "Moxy",
+      "account": "@skorpntv#4972",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Ranger",
@@ -1184,6 +1302,7 @@
     },
     {
       "name": "ohnomypickle",
+      "account": "@angelbosszaragoza2004#06971",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Barbarian",
@@ -1194,6 +1313,7 @@
     },
     {
       "name": "Shinbikyn",
+      "account": "@thekatre",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Bard",
@@ -1204,6 +1324,7 @@
     },
     {
       "name": "LeviaTank",
+      "account": "@zgilos#0747",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Fighter",
@@ -1214,6 +1335,7 @@
     },
     {
       "name": "hEllena",
+      "account": "@ellenaro",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Fighter",
@@ -1224,6 +1346,7 @@
     },
     {
       "name": "Damar",
+      "account": "@damar9292",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Rogue",
@@ -1234,6 +1357,7 @@
     },
     {
       "name": "Amaya",
+      "account": "@lightray394#2720",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Warlock",
@@ -1244,6 +1368,7 @@
     },
     {
       "name": "iiiiGAIAiiii",
+      "account": "@gaia#9610",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Bard",
@@ -1254,6 +1379,7 @@
     },
     {
       "name": "oiiGAIAiio",
+      "account": "@gaia#9610",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Warlock",
@@ -1264,6 +1390,7 @@
     },
     {
       "name": "Alfie",
+      "account": "@morinela2#5008",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Warlock",
@@ -1274,6 +1401,7 @@
     },
     {
       "name": "Kira",
+      "account": "@morinela2#5008",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Barbarian",
@@ -1284,6 +1412,7 @@
     },
     {
       "name": "Andrushka",
+      "account": "@johann#8238",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Rogue",
@@ -1294,6 +1423,7 @@
     },
     {
       "name": "NIEDORTH",
+      "account": "@rm080481209#58515",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Fighter",
@@ -1304,6 +1434,7 @@
     },
     {
       "name": "Niedorth the Fallen",
+      "account": "@rm080481209#58515",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Warlock",
@@ -1314,6 +1445,7 @@
     },
     {
       "name": "Niedorth's Wisdom",
+      "account": "@rm080481209#58515",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -1324,6 +1456,7 @@
     },
     {
       "name": "Pathô",
+      "account": "@epc86#8640",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Fighter",
@@ -1334,6 +1467,7 @@
     },
     {
       "name": "Lethal Chaos",
+      "account": "@lethalsandbox#5505",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Wizard",
@@ -1344,6 +1478,7 @@
     },
     {
       "name": "Evilyn",
+      "account": "@morinela2#5008",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -1354,6 +1489,7 @@
     },
     {
       "name": "Emily",
+      "account": "@ormius111",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Paladin",
@@ -1364,6 +1500,7 @@
     },
     {
       "name": "Violeta",
+      "account": "@morinela2#5008",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Bard",
@@ -1374,6 +1511,7 @@
     },
     {
       "name": "Ruzzy",
+      "account": "@djscooter12#8602",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Wizard",
@@ -1384,6 +1522,7 @@
     },
     {
       "name": "Dalia Strongshield",
+      "account": "@jigoinane",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Fighter",
@@ -1394,6 +1533,7 @@
     },
     {
       "name": "Brax Brokenscale",
+      "account": "@jigoinane",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Barbarian",
@@ -1404,6 +1544,7 @@
     },
     {
       "name": "Jord Jaggedscale",
+      "account": "@jigoinane",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Rogue",
@@ -1414,6 +1555,7 @@
     },
     {
       "name": "Straag Sparklescale",
+      "account": "@jigoinane",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -1424,6 +1566,7 @@
     },
     {
       "name": "Upgrayedd",
+      "account": "@wizemonk#8095",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Wizard",
@@ -1434,6 +1577,7 @@
     },
     {
       "name": "The.Holy.Pickle",
+      "account": "@angelbosszaragoza2004#06971",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Paladin",
@@ -1444,6 +1588,7 @@
     },
     {
       "name": "Athena",
+      "account": "@wotiiodin",
       "rank": "Initiate",
       "rankOrder": 1,
       "class": "Paladin",
@@ -1454,6 +1599,7 @@
     },
     {
       "name": "Wonder Woman",
+      "account": "@wotiiodin",
       "rank": "Initiate",
       "rankOrder": 1,
       "class": "Fighter",
@@ -1464,6 +1610,7 @@
     },
     {
       "name": "TiTuS",
+      "account": "@mariotitosteam#12335",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Paladin",
@@ -1474,6 +1621,7 @@
     },
     {
       "name": "Belar Aeth'las",
+      "account": "@wolfsonge",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Ranger",
@@ -1484,6 +1632,7 @@
     },
     {
       "name": "Vitamin",
+      "account": "@Vitamin#72769",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -1494,6 +1643,7 @@
     },
     {
       "name": "Hero",
+      "account": "@TPSeloT#99053",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Paladin",
@@ -1504,6 +1654,7 @@
     },
     {
       "name": "TYE",
+      "account": "@arrow#5683",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Ranger",
@@ -1514,6 +1665,7 @@
     },
     {
       "name": "Zefrina",
+      "account": "@Zefrina#08174",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Rogue",
@@ -1524,6 +1676,7 @@
     },
     {
       "name": "Nightmare DC",
+      "account": "@gonnaeatu#7347",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Cleric",
@@ -1534,6 +1687,7 @@
     },
     {
       "name": "se7en",
+      "account": "@ninjabeast2",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Cleric",
@@ -1544,6 +1698,7 @@
     },
     {
       "name": "GuardianAngel",
+      "account": "@kenkenken.c83#62279",
       "rank": "Initiate",
       "rankOrder": 1,
       "class": "Rogue",
@@ -1554,6 +1709,7 @@
     },
     {
       "name": "Zilla",
+      "account": "@ritchano2001#9268",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Rogue",
@@ -1564,6 +1720,7 @@
     },
     {
       "name": "Silent",
+      "account": "@cheekiefemail",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Wizard",
@@ -1574,6 +1731,7 @@
     },
     {
       "name": "Nightmare OP",
+      "account": "@gonnaeatu#7347",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Paladin",
@@ -1584,6 +1742,7 @@
     },
     {
       "name": "ToneDeaf",
+      "account": "@cheekiefemail",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Bard",
@@ -1594,6 +1753,7 @@
     },
     {
       "name": "Luna",
+      "account": "@cheekiefemail",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Paladin",
@@ -1604,6 +1764,7 @@
     },
     {
       "name": "Tim The Enchanter",
+      "account": "@pompeyphil",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Warlock",
@@ -1614,6 +1775,7 @@
     },
     {
       "name": "Azki",
+      "account": "@arcadia#1099",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Bard",
@@ -1624,6 +1786,7 @@
     },
     {
       "name": "Merlina",
+      "account": "@cheekiefemail",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Cleric",
@@ -1634,6 +1797,7 @@
     },
     {
       "name": "Itzy-Bitzy",
+      "account": "@cheekiefemail",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Fighter",
@@ -1644,6 +1808,7 @@
     },
     {
       "name": "Zelda",
+      "account": "@d00fus#2812",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -1654,6 +1819,7 @@
     },
     {
       "name": "Elanor",
+      "account": "@zorlonix",
       "rank": "Guild Leader",
       "rankOrder": 7,
       "class": "Cleric",
@@ -1664,6 +1830,7 @@
     },
     {
       "name": "Gaia",
+      "account": "@gaia#9610",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Wizard",
@@ -1674,6 +1841,7 @@
     },
     {
       "name": "8Gaia8",
+      "account": "@gaia#9610",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Rogue",
@@ -1684,6 +1852,7 @@
     },
     {
       "name": "Stratocaster",
+      "account": "@nagash#2154",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -1694,6 +1863,7 @@
     },
     {
       "name": "Madelyn",
+      "account": "@LittleMix#84588",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Cleric",
@@ -1704,6 +1874,7 @@
     },
     {
       "name": "Rydark",
+      "account": "@zorlonix",
       "rank": "Guild Leader",
       "rankOrder": 7,
       "class": "Paladin",
@@ -1714,6 +1885,7 @@
     },
     {
       "name": "Madelynn",
+      "account": "@LittleMix#84588",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Paladin",
@@ -1724,6 +1896,7 @@
     },
     {
       "name": "Annabelle",
+      "account": "@deejaykreep#2384",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Rogue",
@@ -1734,6 +1907,7 @@
     },
     {
       "name": "Gaia.o",
+      "account": "@gaia#9610",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Fighter",
@@ -1744,6 +1918,7 @@
     },
     {
       "name": "Gaia Renegade",
+      "account": "@gaia#9610",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Ranger",
@@ -1754,6 +1929,7 @@
     },
     {
       "name": "Gaia Devolt",
+      "account": "@gaia#9610",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Cleric",
@@ -1764,6 +1940,7 @@
     },
     {
       "name": "Gaia a Barbara",
+      "account": "@gaia#9610",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Barbarian",
@@ -1774,6 +1951,7 @@
     },
     {
       "name": "Towa",
+      "account": "@arcadia#1099",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Fighter",
@@ -1784,6 +1962,7 @@
     },
     {
       "name": "Ayara",
+      "account": "@MrZenigata#08011",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Wizard",
@@ -1794,6 +1973,7 @@
     },
     {
       "name": "zzGaiazz",
+      "account": "@gaia#9610",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Paladin",
@@ -1804,6 +1984,7 @@
     },
     {
       "name": "Huuntaahh",
+      "account": "@thorhammern",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Ranger",
@@ -1814,6 +1995,7 @@
     },
     {
       "name": "Val",
+      "account": "@cheekiefemail",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Warlock",
@@ -1824,6 +2006,7 @@
     },
     {
       "name": "sora",
+      "account": "@standingkotabear",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Rogue",
@@ -1834,6 +2017,7 @@
     },
     {
       "name": "Norman",
+      "account": "@MrZenigata#08011",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Fighter",
@@ -1844,6 +2028,7 @@
     },
     {
       "name": "Silverbead",
+      "account": "@n00b#52235",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Paladin",
@@ -1854,6 +2039,7 @@
     },
     {
       "name": "crisembard",
+      "account": "@crisem97",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Bard",
@@ -1864,6 +2050,7 @@
     },
     {
       "name": "crisemfighter",
+      "account": "@crisem97",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Fighter",
@@ -1874,6 +2061,7 @@
     },
     {
       "name": "crisemwarlock",
+      "account": "@crisem97",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Warlock",
@@ -1884,6 +2072,7 @@
     },
     {
       "name": "crisemhunter",
+      "account": "@crisem97",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Ranger",
@@ -1894,6 +2083,7 @@
     },
     {
       "name": "Rilay",
+      "account": "@maxswirid#1637",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Bard",
@@ -1904,6 +2094,7 @@
     },
     {
       "name": "Erzulie",
+      "account": "@thorhammern",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Wizard",
@@ -1914,6 +2105,7 @@
     },
     {
       "name": "Gimli The Grey",
+      "account": "@eastpakistcool",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Barbarian",
@@ -1924,6 +2116,7 @@
     },
     {
       "name": "crisembarbarian",
+      "account": "@crisem97",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Barbarian",
@@ -1934,6 +2127,7 @@
     },
     {
       "name": "Lathril",
+      "account": "@MrZenigata#08011",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Cleric",
@@ -1944,6 +2138,7 @@
     },
     {
       "name": "Jimi",
+      "account": "@MrZenigata#08011",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Bard",
@@ -1954,6 +2149,7 @@
     },
     {
       "name": "Rankle",
+      "account": "@MrZenigata#08011",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Rogue",
@@ -1964,6 +2160,7 @@
     },
     {
       "name": "Rilay OP",
+      "account": "@maxswirid#1637",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Paladin",
@@ -1974,6 +2171,7 @@
     },
     {
       "name": "Liliana Vess",
+      "account": "@MrZenigata#08011",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Warlock",
@@ -1984,6 +2182,7 @@
     },
     {
       "name": "xxxPARADOXxxx",
+      "account": "@malapa6#80217",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Wizard",
@@ -1994,6 +2193,7 @@
     },
     {
       "name": "Morik",
+      "account": "@malapa6#80217",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Rogue",
@@ -2004,6 +2204,7 @@
     },
     {
       "name": "Zilla-cw",
+      "account": "@ritchano2001#9268",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Wizard",
@@ -2014,6 +2215,7 @@
     },
     {
       "name": "Marwyin",
+      "account": "@MrZenigata#08011",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Ranger",
@@ -2024,6 +2226,7 @@
     },
     {
       "name": "Gideon",
+      "account": "@MrZenigata#08011",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Paladin",
@@ -2034,6 +2237,7 @@
     },
     {
       "name": "Zephyr",
+      "account": "@eatsomewaffles",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Wizard",
@@ -2044,6 +2248,7 @@
     },
     {
       "name": "Security",
+      "account": "@leo#4323",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Paladin",
@@ -2054,6 +2259,7 @@
     },
     {
       "name": "black widow",
+      "account": "@Skeet803#87492",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -2064,6 +2270,7 @@
     },
     {
       "name": "Elızabeth",
+      "account": "@havuzbasi",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -2074,6 +2281,7 @@
     },
     {
       "name": "BishBash",
+      "account": "@cheekiefemail",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Barbarian",
@@ -2084,6 +2292,7 @@
     },
     {
       "name": "RoRo",
+      "account": "@cheekiefemail",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Rogue",
@@ -2094,6 +2303,7 @@
     },
     {
       "name": "Drauga Belaruus",
+      "account": "@wolfsonge",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Warlock",
@@ -2104,6 +2314,7 @@
     },
     {
       "name": "Yalir",
+      "account": "@Kaido#96974",
       "rank": "Initiate",
       "rankOrder": 1,
       "class": "Wizard",
@@ -2114,6 +2325,7 @@
     },
     {
       "name": "IGLWarlock",
+      "account": "@wellimreallybad#1789",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Warlock",
@@ -2124,6 +2336,7 @@
     },
     {
       "name": "Rilay SW",
+      "account": "@maxswirid#1637",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Warlock",
@@ -2134,6 +2347,7 @@
     },
     {
       "name": "leggylass",
+      "account": "@BIG_DUNC#15076",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Ranger",
@@ -2144,6 +2358,7 @@
     },
     {
       "name": "LITTLE GRONKY",
+      "account": "@hoopyt1357",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Ranger",
@@ -2154,6 +2369,7 @@
     },
     {
       "name": "mythic",
+      "account": "@mythic#7026",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Wizard",
@@ -2164,6 +2380,7 @@
     },
     {
       "name": "ArkHybrid",
+      "account": "@ArkHybrid#75770",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Barbarian",
@@ -2174,6 +2391,7 @@
     },
     {
       "name": "Pardon",
+      "account": "@malapa6#80217",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Paladin",
@@ -2184,6 +2402,7 @@
     },
     {
       "name": "MythicArby",
+      "account": "@mythic#7026",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Cleric",
@@ -2194,6 +2413,7 @@
     },
     {
       "name": "MyhticT",
+      "account": "@mythic#7026",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Fighter",
@@ -2204,6 +2424,7 @@
     },
     {
       "name": "-PinkRiot-",
+      "account": "@malapa6#80217",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Bard",
@@ -2214,6 +2435,7 @@
     },
     {
       "name": "Shadow",
+      "account": "@nagyadi9494#2027",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Rogue",
@@ -2224,6 +2446,7 @@
     },
     {
       "name": "Tatanka",
+      "account": "@malapa6#80217",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Fighter",
@@ -2234,6 +2457,7 @@
     },
     {
       "name": "Maiken V",
+      "account": "@vansykle",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Bard",
@@ -2244,6 +2468,7 @@
     },
     {
       "name": "Valk",
+      "account": "@morinela2#5008",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Paladin",
@@ -2254,6 +2479,7 @@
     },
     {
       "name": "MythicPally",
+      "account": "@mythic#7026",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Paladin",
@@ -2264,6 +2490,7 @@
     },
     {
       "name": "Garruk",
+      "account": "@MrZenigata#08011",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Barbarian",
@@ -2274,6 +2501,7 @@
     },
     {
       "name": "MythicSW",
+      "account": "@mythic#7026",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Warlock",
@@ -2284,6 +2512,7 @@
     },
     {
       "name": "Rilay CW",
+      "account": "@maxswirid#1637",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Wizard",
@@ -2294,6 +2523,7 @@
     },
     {
       "name": "Rilay GWF",
+      "account": "@maxswirid#1637",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Barbarian",
@@ -2304,6 +2534,7 @@
     },
     {
       "name": "Story",
+      "account": "@cheekiefemail",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Bard",
@@ -2314,6 +2545,7 @@
     },
     {
       "name": "MythicBarb",
+      "account": "@mythic#7026",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Barbarian",
@@ -2324,6 +2556,7 @@
     },
     {
       "name": "luna",
+      "account": "@angelbosszaragoza2004#06971",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Warlock",
@@ -2334,6 +2567,7 @@
     },
     {
       "name": "Himen",
+      "account": "@filamingom",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Paladin",
@@ -2344,6 +2578,7 @@
     },
     {
       "name": "Fendi",
+      "account": "@drintot#4657",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Barbarian",
@@ -2354,6 +2589,7 @@
     },
     {
       "name": "Asura",
+      "account": "@velocitysly#6099",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Fighter",
@@ -2364,6 +2600,7 @@
     },
     {
       "name": "Asura Wizard",
+      "account": "@velocitysly#6099",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Wizard",
@@ -2374,6 +2611,7 @@
     },
     {
       "name": "Asura Paladin",
+      "account": "@velocitysly#6099",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Paladin",
@@ -2384,6 +2622,7 @@
     },
     {
       "name": "Asura Bard",
+      "account": "@velocitysly#6099",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Bard",
@@ -2394,6 +2633,7 @@
     },
     {
       "name": "Asura Rogue",
+      "account": "@velocitysly#6099",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Rogue",
@@ -2404,6 +2644,7 @@
     },
     {
       "name": "Link",
+      "account": "@daniel#5542",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Ranger",
@@ -2414,6 +2655,7 @@
     },
     {
       "name": "Vamprella",
+      "account": "@rocker1969",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Warlock",
@@ -2424,6 +2666,7 @@
     },
     {
       "name": "ZZ POPS",
+      "account": "@arrow#5683",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Bard",
@@ -2434,6 +2677,7 @@
     },
     {
       "name": "Asura Warlock",
+      "account": "@velocitysly#6099",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Warlock",
@@ -2444,6 +2688,7 @@
     },
     {
       "name": "Asura Barbarian",
+      "account": "@velocitysly#6099",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Barbarian",
@@ -2454,6 +2699,7 @@
     },
     {
       "name": "Asura Bank 1",
+      "account": "@velocitysly#6099",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Fighter",
@@ -2464,6 +2710,7 @@
     },
     {
       "name": "Asura Bank 2",
+      "account": "@velocitysly#6099",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Rogue",
@@ -2474,6 +2721,7 @@
     },
     {
       "name": "Asura Bank 3",
+      "account": "@velocitysly#6099",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Wizard",
@@ -2484,6 +2732,7 @@
     },
     {
       "name": "Vithka",
+      "account": "@Skeet803#87492",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Warlock",
@@ -2494,6 +2743,7 @@
     },
     {
       "name": "Jaskier the Bard",
+      "account": "@cdolph090102#2729",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Bard",
@@ -2504,6 +2754,7 @@
     },
     {
       "name": "LAN ZHAN",
+      "account": "@lanzhan#7231",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -2514,6 +2765,7 @@
     },
     {
       "name": "MythicBard",
+      "account": "@mythic#7026",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Bard",
@@ -2524,6 +2776,7 @@
     },
     {
       "name": "Clanker GF",
+      "account": "@whomid#7073",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Fighter",
@@ -2534,6 +2787,7 @@
     },
     {
       "name": "Clanker B",
+      "account": "@whomid#7073",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Bard",
@@ -2544,6 +2798,7 @@
     },
     {
       "name": "Raedra Obarskyr",
+      "account": "@kyo#1079",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Rogue",
@@ -2554,6 +2809,7 @@
     },
     {
       "name": "Kragnar",
+      "account": "@deejaykreep#2384",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Ranger",
@@ -2564,6 +2820,7 @@
     },
     {
       "name": "Mika Loyalar",
+      "account": "@cavalier#5290",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -2574,6 +2831,7 @@
     },
     {
       "name": "Merlin The Mender",
+      "account": "@cdolph090102#2729",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Paladin",
@@ -2584,6 +2842,7 @@
     },
     {
       "name": "Aelin",
+      "account": "@cdolph090102#2729",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Warlock",
@@ -2594,6 +2853,7 @@
     },
     {
       "name": "Ann_Roze",
+      "account": "@As0t1gu3#86314",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Warlock",
@@ -2604,6 +2864,7 @@
     },
     {
       "name": "temu mythic",
+      "account": "@BIG_DUNC#15076",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Warlock",
@@ -2614,6 +2875,7 @@
     },
     {
       "name": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Paladin",
@@ -2624,6 +2886,7 @@
     },
     {
       "name": "Thanatos",
+      "account": "@niggi-1997#85685",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Wizard",
@@ -2634,6 +2897,7 @@
     },
     {
       "name": "Ivynn",
+      "account": "@reelapse#5586",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Fighter",
@@ -2644,6 +2908,7 @@
     },
     {
       "name": "Boris The Barbarian",
+      "account": "@cdolph090102#2729",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Barbarian",
@@ -2654,6 +2919,7 @@
     },
     {
       "name": "andrea",
+      "account": "@amcallister9#35166",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Fighter",
@@ -2664,6 +2930,7 @@
     },
     {
       "name": "Incantation Station",
+      "account": "@hrc02",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -2674,6 +2941,7 @@
     },
     {
       "name": "Ei8ht",
+      "account": "@ninjabeast2",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Fighter",
@@ -2684,6 +2952,7 @@
     },
     {
       "name": "Opuncicus",
+      "account": "@ellenaro",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Paladin",
@@ -2694,6 +2963,7 @@
     },
     {
       "name": "DARTHIIR",
+      "account": "@wolfraan",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Wizard",
@@ -2704,6 +2974,7 @@
     },
     {
       "name": "Zixx Silentread",
+      "account": "@Zixx_76#82208",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Ranger",
@@ -2714,6 +2985,7 @@
     },
     {
       "name": "Nyx Moonshadow",
+      "account": "@jyncat22",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Cleric",
@@ -2724,6 +2996,7 @@
     },
     {
       "name": "Kalasag",
+      "account": "@12thLuigi#56765",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Fighter",
@@ -2734,6 +3007,7 @@
     },
     {
       "name": "Varis Darksbane",
+      "account": "@Zixx_76#82208",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Warlock",
@@ -2744,6 +3018,7 @@
     },
     {
       "name": "Nuit Loreweaver",
+      "account": "@jyncat22",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Rogue",
@@ -2754,6 +3029,7 @@
     },
     {
       "name": "Forgrim Mineshadow",
+      "account": "@Zixx_76#82208",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Fighter",
@@ -2764,6 +3040,7 @@
     },
     {
       "name": "pally ho",
+      "account": "@Skeet803#87492",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Paladin",
@@ -2774,6 +3051,7 @@
     },
     {
       "name": "Gotrek Gurnisson",
+      "account": "@daniel#5542",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Fighter",
@@ -2784,6 +3062,7 @@
     },
     {
       "name": "Steve",
+      "account": "@x50calmulishax#9338",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Fighter",
@@ -2794,6 +3073,7 @@
     },
     {
       "name": "Kriv",
+      "account": "@x50calmulishax#9338",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Warlock",
@@ -2804,6 +3084,7 @@
     },
     {
       "name": "Rhogar",
+      "account": "@x50calmulishax#9338",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Rogue",
@@ -2814,6 +3095,7 @@
     },
     {
       "name": "Ayano",
+      "account": "@x50calmulishax#9338",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Bard",
@@ -2824,6 +3106,7 @@
     },
     {
       "name": "Alisa",
+      "account": "@x50calmulishax#9338",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Cleric",
@@ -2834,6 +3117,7 @@
     },
     {
       "name": "Kinkyy",
+      "account": "@kingkhalid101#4973",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Warlock",
@@ -2844,6 +3128,7 @@
     },
     {
       "name": "Kyrian Tyvorn",
+      "account": "@Zixx_76#82208",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Cleric",
@@ -2854,6 +3139,7 @@
     },
     {
       "name": "Mystirielle Moonsong",
+      "account": "@jyncat22",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Bard",
@@ -2864,6 +3150,7 @@
     },
     {
       "name": "Zixx Xantril",
+      "account": "@Zixx_76#82208",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -2874,6 +3161,7 @@
     },
     {
       "name": "Madelynnn",
+      "account": "@LittleMix#84588",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Wizard",
@@ -2884,6 +3172,7 @@
     },
     {
       "name": "Li'L Gronk",
+      "account": "@hoopyt1357",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Wizard",
@@ -2894,6 +3183,7 @@
     },
     {
       "name": "rei",
+      "account": "@x50calmulishax#9338",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -2904,6 +3194,7 @@
     },
     {
       "name": "Cheekie",
+      "account": "@cheekiefemail",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Ranger",
@@ -2914,6 +3205,7 @@
     },
     {
       "name": "Veyl",
+      "account": "@zorlonix",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Wizard",
@@ -2924,6 +3216,7 @@
     },
     {
       "name": "Freyr",
+      "account": "@eatsomewaffles",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Fighter",
@@ -2934,6 +3227,7 @@
     },
     {
       "name": "sojo12",
+      "account": "@richest11",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -2944,6 +3238,7 @@
     },
     {
       "name": "Chali",
+      "account": "@Bahnegork",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Cleric",
@@ -2954,6 +3249,7 @@
     },
     {
       "name": "Rabeye",
+      "account": "@robtn",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Wizard",
@@ -2964,6 +3260,7 @@
     },
     {
       "name": "Andromeda",
+      "account": "@lightray394#2720",
       "rank": "Officer",
       "rankOrder": 6,
       "class": "Wizard",
@@ -2974,6 +3271,7 @@
     },
     {
       "name": "Isildur Bane of Evil",
+      "account": "@eastpakistcool",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Fighter",
@@ -2984,6 +3282,7 @@
     },
     {
       "name": "Zarra",
+      "account": "@arrow#5683",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Warlock",
@@ -2994,6 +3293,7 @@
     },
     {
       "name": "Yalir DC",
+      "account": "@Kaido#96974",
       "rank": "Initiate",
       "rankOrder": 1,
       "class": "Cleric",
@@ -3004,6 +3304,7 @@
     },
     {
       "name": "Rowan Deforet",
+      "account": "@jyncat22",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -3014,6 +3315,7 @@
     },
     {
       "name": "gaia.",
+      "account": "@gaia#9610",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Wizard",
@@ -3024,6 +3326,7 @@
     },
     {
       "name": "Aethelgard",
+      "account": "@thorhammern",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Cleric",
@@ -3034,6 +3337,7 @@
     },
     {
       "name": "Melech Babausong",
+      "account": "@swish68",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -3044,6 +3348,7 @@
     },
     {
       "name": "Maiken VI",
+      "account": "@vansykle",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Wizard",
@@ -3054,6 +3359,7 @@
     },
     {
       "name": "Willy The Wiz",
+      "account": "@cdolph090102#2729",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -3064,6 +3370,7 @@
     },
     {
       "name": "meatball",
+      "account": "@gonnaeatu#7347",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -3074,6 +3381,7 @@
     },
     {
       "name": "Optimus",
+      "account": "@csapkodojack1",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Fighter",
@@ -3084,6 +3392,7 @@
     },
     {
       "name": "Anubis",
+      "account": "@niggi-1997#85685",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Fighter",
@@ -3094,6 +3403,7 @@
     },
     {
       "name": "Snickelfritz",
+      "account": "@badassleeroy#2335",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -3104,6 +3414,7 @@
     },
     {
       "name": "Happy Heelme",
+      "account": "@sunsoul#6318",
       "rank": "Initiate",
       "rankOrder": 1,
       "class": "Cleric",
@@ -3114,6 +3425,7 @@
     },
     {
       "name": "Zer0",
+      "account": "@ninjabeast2",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Wizard",
@@ -3124,6 +3436,7 @@
     },
     {
       "name": "grizzie",
+      "account": "@tramport99#2050",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Fighter",
@@ -3134,6 +3447,7 @@
     },
     {
       "name": "Shadowheart",
+      "account": "@xiaoshungaming#9707",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Warlock",
@@ -3144,6 +3458,7 @@
     },
     {
       "name": "Adrik Stoneheart",
+      "account": "@nagash#2154",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Fighter",
@@ -3154,6 +3469,7 @@
     },
     {
       "name": "Zerospace",
+      "account": "@tofusurpr1se",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Paladin",
@@ -3164,6 +3480,7 @@
     },
     {
       "name": "Vyptimus",
+      "account": "@csapkodojack1",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -3174,6 +3491,7 @@
     },
     {
       "name": "Hammer of Justice",
+      "account": "@polo910#9172",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Cleric",
@@ -3184,6 +3502,7 @@
     },
     {
       "name": "Zixx Ulfgrik",
+      "account": "@Zixx_76#82208",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Barbarian",
@@ -3194,6 +3513,7 @@
     },
     {
       "name": "Bryndiele Bloodthorn",
+      "account": "@jyncat22",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Barbarian",
@@ -3204,6 +3524,7 @@
     },
     {
       "name": "BLOCKYBALBOA",
+      "account": "@skatopsixos7",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Fighter",
@@ -3214,6 +3535,7 @@
     },
     {
       "name": "WinkleUwU",
+      "account": "@add#9025",
       "rank": "Initiate",
       "rankOrder": 1,
       "class": "Paladin",
@@ -3224,6 +3546,7 @@
     },
     {
       "name": "Gyda Thorunn",
+      "account": "@Oliver1416#77740",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Barbarian",
@@ -3234,6 +3557,7 @@
     },
     {
       "name": "BlockTuah",
+      "account": "@skatopsixos7",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Paladin",
@@ -3244,6 +3568,7 @@
     },
     {
       "name": "CELESTIA",
+      "account": "@vhorsmam#41559",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Paladin",
@@ -3254,6 +3579,7 @@
     },
     {
       "name": "Velissra",
+      "account": "@skorpntv#4972",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Warlock",
@@ -3264,6 +3590,7 @@
     },
     {
       "name": "Rodger The Rogue",
+      "account": "@cdolph090102#2729",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Rogue",
@@ -3274,6 +3601,7 @@
     },
     {
       "name": "Hermes",
+      "account": "@niggi-1997#85685",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Rogue",
@@ -3284,6 +3612,7 @@
     },
     {
       "name": "JiiKo",
+      "account": "@lyyten#4513",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Cleric",
@@ -3294,6 +3623,7 @@
     },
     {
       "name": "Sunrise",
+      "account": "@noobynut",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Bard",
@@ -3304,6 +3634,7 @@
     },
     {
       "name": "LORD",
+      "account": "@giorgi86#2074",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Ranger",
@@ -3314,6 +3645,7 @@
     },
     {
       "name": "Sauron Eye of Evil",
+      "account": "@eastpakistcool",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Warlock",
@@ -3324,6 +3656,7 @@
     },
     {
       "name": "Ado",
+      "account": "@lyyten#4513",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Bard",
@@ -3334,6 +3667,7 @@
     },
     {
       "name": "CELESTIA SW",
+      "account": "@vhorsmam#41559",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Warlock",
@@ -3344,6 +3678,7 @@
     },
     {
       "name": "Prime",
+      "account": "@csapkodojack1",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Paladin",
@@ -3354,6 +3689,7 @@
     },
     {
       "name": "Mezotis",
+      "account": "@Mezotis#65886",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Wizard",
@@ -3364,6 +3700,7 @@
     },
     {
       "name": "12th Dennis",
+      "account": "@12thLuigi#56765",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Bard",
@@ -3374,6 +3711,7 @@
     },
     {
       "name": "Alune The Beauty",
+      "account": "@Alune#58925",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Warlock",
@@ -3384,6 +3722,7 @@
     },
     {
       "name": "Zixx Xulthar",
+      "account": "@Zixx_76#82208",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Paladin",
@@ -3394,6 +3733,7 @@
     },
     {
       "name": "Zixx Xorvash",
+      "account": "@Zixx_76#82208",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Rogue",
@@ -3404,6 +3744,7 @@
     },
     {
       "name": "Veralidaine Sarrasri",
+      "account": "@jyncat22",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Ranger",
@@ -3414,6 +3755,7 @@
     },
     {
       "name": "AGramos",
+      "account": "@zgilos#0747",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Ranger",
@@ -3424,6 +3766,7 @@
     },
     {
       "name": "Numair Salmalin",
+      "account": "@Zixx_76#82208",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Wizard",
@@ -3434,6 +3777,7 @@
     },
     {
       "name": "Alanna the Lioness",
+      "account": "@jyncat22",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Paladin",
@@ -3444,6 +3788,7 @@
     },
     {
       "name": "Fighting Theo",
+      "account": "@theoden#2099",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Fighter",
@@ -3454,6 +3799,7 @@
     },
     {
       "name": "HardPunch",
+      "account": "@Alicolak2#49993",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Barbarian",
@@ -3464,6 +3810,7 @@
     },
     {
       "name": "Jeru",
+      "account": "@Jerusalem#41133",
       "rank": "Initiate",
       "rankOrder": 1,
       "class": "Warlock",
@@ -3474,6 +3821,7 @@
     },
     {
       "name": "Troubadix",
+      "account": "@thorhammern",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Bard",
@@ -3484,6 +3832,7 @@
     },
     {
       "name": "woodenwolf",
+      "account": "@machrist0021#32205",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Ranger",
@@ -3494,6 +3843,7 @@
     },
     {
       "name": "HardStyle",
+      "account": "@Alicolak2#49993",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Warlock",
@@ -3504,6 +3854,7 @@
     },
     {
       "name": "OldMan",
+      "account": "@noobynut",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Fighter",
@@ -3514,6 +3865,7 @@
     },
     {
       "name": "Nigella",
+      "account": "@acckund",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Wizard",
@@ -3524,6 +3876,7 @@
     },
     {
       "name": "Hadryl Kay'ron",
+      "account": "@almavarno",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Warlock",
@@ -3534,6 +3887,7 @@
     },
     {
       "name": "Baby Nie",
+      "account": "@rm080481209#58515",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Warlock",
@@ -3544,6 +3898,7 @@
     },
     {
       "name": "Ragnar The Bard",
+      "account": "@dokrahm#9634",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Bard",
@@ -3554,6 +3909,7 @@
     },
     {
       "name": "Zero",
+      "account": "@tofusurpr1se",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Warlock",
@@ -3564,6 +3920,7 @@
     },
     {
       "name": "Clanker TR",
+      "account": "@whomid#7073",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Rogue",
@@ -3574,6 +3931,7 @@
     },
     {
       "name": "Clanker OP",
+      "account": "@whomid#7073",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Paladin",
@@ -3584,6 +3942,7 @@
     },
     {
       "name": "Shadowbane",
+      "account": "@pompeyphil",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Barbarian",
@@ -3594,6 +3953,7 @@
     },
     {
       "name": "MEPIKCHULITE",
+      "account": "@mrpikachulite#37610",
       "rank": "Initiate",
       "rankOrder": 1,
       "class": "Warlock",
@@ -3604,6 +3964,7 @@
     },
     {
       "name": "Eeirtis",
+      "account": "@eeirtis#4047",
       "rank": "Initiate",
       "rankOrder": 1,
       "class": "Rogue",
@@ -3614,6 +3975,7 @@
     },
     {
       "name": "Singing Theo",
+      "account": "@theoden#2099",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Bard",
@@ -3624,6 +3986,7 @@
     },
     {
       "name": "Lirael Remembrancer",
+      "account": "@jyncat22",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Warlock",
@@ -3634,6 +3997,7 @@
     },
     {
       "name": "Zixx Xintrel",
+      "account": "@Zixx_76#82208",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Bard",
@@ -3644,6 +4008,7 @@
     },
     {
       "name": "Zer0",
+      "account": "@tofusurpr1se",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Rogue",
@@ -3654,6 +4019,7 @@
     },
     {
       "name": "Zixx Xtra",
+      "account": "@Zixx_76#82208",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Warlock",
@@ -3664,6 +4030,7 @@
     },
     {
       "name": "PegLeg Paddy",
+      "account": "@wellimreallybad#1789",
       "rank": "Wayfarer",
       "rankOrder": 2,
       "class": "Fighter",
@@ -3674,6 +4041,7 @@
     },
     {
       "name": "Lurtz",
+      "account": "@thorhammern",
       "rank": "Elder",
       "rankOrder": 5,
       "class": "Barbarian",
@@ -3684,6 +4052,7 @@
     },
     {
       "name": "Ryn",
+      "account": "@vhorsmam#41559",
       "rank": "Stalwart",
       "rankOrder": 3,
       "class": "Cleric",
@@ -3694,6 +4063,7 @@
     },
     {
       "name": "Clanker XS",
+      "account": "@whomid#7073",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Ranger",
@@ -3704,6 +4074,7 @@
     },
     {
       "name": "Sourdoughss",
+      "account": "@Strudelss#80167",
       "rank": "Initiate",
       "rankOrder": 1,
       "class": "Warlock",
@@ -3714,6 +4085,7 @@
     },
     {
       "name": "Yalir B",
+      "account": "@Kaido#96974",
       "rank": "Initiate",
       "rankOrder": 1,
       "class": "Bard",
@@ -3724,6 +4096,7 @@
     },
     {
       "name": "ghostface",
+      "account": "@Skeet803#87492",
       "rank": "Veteran",
       "rankOrder": 4,
       "class": "Rogue",
@@ -3734,6 +4107,7 @@
     },
     {
       "name": "Jancul",
+      "account": "@janculadeen",
       "rank": "Initiate",
       "rankOrder": 1,
       "class": "Paladin",
