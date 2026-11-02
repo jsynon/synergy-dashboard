@@ -51,7 +51,7 @@
       const eligibleDate=addCalendarMonths(account.joinDate,monthsByRank[account.rankOrder]);
       return {...account,eligibleDate};
     }).sort((a,b)=>a.eligibleDate-b.eligibleDate||a.account.localeCompare(b.account));
-    const upcoming=milestones.slice(0,12);
+    const upcoming=milestones.slice(0,24);
     const count=upcoming.length;
     $('promotion-list').innerHTML=count?upcoming.map(account=>{
       const nextRank=account.rankOrder+1;
