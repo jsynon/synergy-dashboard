@@ -55,6 +55,21 @@ a { color: inherit; }
 .promotion-path span { padding:0 3px; color:var(--teal); }
 .promotion-date { grid-column:1/-1; color:var(--muted); font-size:10px; }
 .inactivity-panel { margin:0 0 12px; padding:10px 14px; }
+.promotion-rules-link { padding:0; border:0; background:none; color:var(--teal); font:inherit; text-decoration:underline; text-decoration-style:dotted; text-underline-offset:2px; cursor:pointer; }
+.promotion-rules-link:hover,.promotion-rules-link:focus-visible { color:var(--gold-bright); }
+.promotion-rules-dialog { width:min(460px,calc(100% - 28px)); max-width:460px; max-height:calc(100% - 32px); padding:18px; border:1px solid var(--gold); color:var(--text); background:linear-gradient(145deg,#18232c,#11171c); box-shadow:0 22px 70px rgba(0,0,0,.65); }
+.promotion-rules-dialog::backdrop { background:rgba(0,0,0,.74); backdrop-filter:blur(2px); }
+.promotion-rules-header { display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom:12px; }
+.promotion-rules-header h2 { margin:0; color:var(--gold-bright); font:600 19px/1.25 var(--serif); }
+.promotion-rules-header .kicker { margin-bottom:4px; }
+.promotion-dialog-close { width:30px; height:30px; border:1px solid var(--line); color:var(--muted); background:rgba(255,255,255,.03); font-size:21px; line-height:1; cursor:pointer; }
+.promotion-dialog-close:hover,.promotion-dialog-close:focus-visible { color:var(--gold-bright); border-color:var(--gold); }
+.promotion-rules-list { display:grid; gap:5px; margin:0; padding:0; list-style:none; }
+.promotion-rules-list li { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:8px 10px; border:1px solid rgba(190,160,103,.2); background:rgba(7,12,20,.54); }
+.promotion-rules-list li span { color:var(--text); font-size:13px; }
+.promotion-rules-list li small { margin-left:5px; color:var(--muted); font-size:10px; }
+.promotion-rules-list li strong { color:var(--gold-bright); font-size:12px; white-space:nowrap; }
+.promotion-rules-note { margin:12px 1px 0; color:var(--muted); font-size:11px; line-height:1.55; }
 .inactivity-rules-link { padding:0; border:0; background:none; color:var(--teal); font:inherit; text-decoration:underline; text-decoration-style:dotted; text-underline-offset:2px; cursor:pointer; }
 .inactivity-rules-dialog { width:min(460px,calc(100% - 28px)); max-width:460px; max-height:calc(100% - 32px); padding:18px; border:1px solid var(--gold); color:var(--text); background:linear-gradient(145deg,#18232c,#11171c); box-shadow:0 22px 70px rgba(0,0,0,.65); }
 .inactivity-rules-dialog::backdrop { background:rgba(0,0,0,.74); backdrop-filter:blur(2px); }

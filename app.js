@@ -189,6 +189,12 @@
     state.rankFilter='';state.classFilter='';renderDirectoryFilters();renderRoster();
     $('roster').scrollIntoView({behavior:'smooth',block:'start'});
   });
+  const promotionRulesDialog=$('promotion-rules-dialog');
+  $('show-promotion-rules').addEventListener('click',()=>promotionRulesDialog.showModal());
+  $('close-promotion-rules').addEventListener('click',()=>promotionRulesDialog.close());
+  promotionRulesDialog.addEventListener('click',event=>{
+    if(event.target===promotionRulesDialog)promotionRulesDialog.close();
+  });
   const inactivityRulesDialog=$('inactivity-rules-dialog');
   $('show-inactivity-rules').addEventListener('click',()=>inactivityRulesDialog.showModal());
   $('close-inactivity-rules').addEventListener('click',()=>inactivityRulesDialog.close());
