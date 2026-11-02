@@ -1,0 +1,6158 @@
+{
+  "generatedAt": "2026-11-01T23:55:48+00:00",
+  "accountCount": 146,
+  "roster": [
+    {
+      "name": "Jeighsin",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-01-17T20:00:55",
+      "lastOnline": "2026-10-02T18:58:41",
+      "onlineNow": false
+    },
+    {
+      "name": "SHROK",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2025-01-21T09:21:41",
+      "lastOnline": "2026-11-01T07:20:44",
+      "onlineNow": false
+    },
+    {
+      "name": "Rabeye Skywise",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2025-04-18T10:30:28",
+      "lastOnline": "2026-10-27T08:11:57",
+      "onlineNow": false
+    },
+    {
+      "name": "Jade Providance",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2025-12-21T09:55:00",
+      "lastOnline": "2026-11-01T04:54:09",
+      "onlineNow": false
+    },
+    {
+      "name": "Vicious Helltalon",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-06-23T11:31:27",
+      "lastOnline": "2026-10-31T10:42:22",
+      "onlineNow": false
+    },
+    {
+      "name": "Sirina",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2025-03-31T09:32:35",
+      "lastOnline": "2026-11-01T01:25:42",
+      "onlineNow": false
+    },
+    {
+      "name": "Greyhawk",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-01-30T16:12:43",
+      "lastOnline": "2026-01-30T16:44:29",
+      "onlineNow": false
+    },
+    {
+      "name": "Porcica",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2025-08-29T14:23:17",
+      "lastOnline": "2026-10-22T09:43:04",
+      "onlineNow": false
+    },
+    {
+      "name": "Patotoya",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-07-20T01:51:20",
+      "lastOnline": "2026-11-01T08:50:04",
+      "onlineNow": false
+    },
+    {
+      "name": "OrKo",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-06-06T06:13:56",
+      "lastOnline": "2026-11-01T16:21:43",
+      "onlineNow": false
+    },
+    {
+      "name": "Azazel",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2025-03-28T05:27:03",
+      "lastOnline": "2026-11-01T06:00:26",
+      "onlineNow": false
+    },
+    {
+      "name": "Thorhammern",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2025-01-14T13:49:14",
+      "lastOnline": "2026-11-01T13:21:46",
+      "onlineNow": false
+    },
+    {
+      "name": "Antilogic",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-04-21T13:37:22",
+      "lastOnline": "2026-09-28T03:10:16",
+      "onlineNow": false
+    },
+    {
+      "name": "Zarathud",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2025-07-18T05:23:12",
+      "lastOnline": "2026-10-05T16:22:46",
+      "onlineNow": false
+    },
+    {
+      "name": "Wazzz",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2025-09-18T03:23:23",
+      "lastOnline": "2026-11-01T14:59:49",
+      "onlineNow": false
+    },
+    {
+      "name": "Carric Silentread",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2025-11-13T17:10:14",
+      "lastOnline": "2026-10-28T19:44:01",
+      "onlineNow": false
+    },
+    {
+      "name": "Zanros",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2025-12-19T18:07:52",
+      "lastOnline": "2026-11-01T16:51:00",
+      "onlineNow": false
+    },
+    {
+      "name": "crisem97",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2024-12-01T17:23:55",
+      "lastOnline": "2026-11-01T07:22:30",
+      "onlineNow": false
+    },
+    {
+      "name": "Dara Moonshadow",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2025-01-20T07:32:12",
+      "lastOnline": "2026-10-31T12:37:50",
+      "onlineNow": false
+    },
+    {
+      "name": "Korvan",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2025-05-08T16:30:02",
+      "lastOnline": "2026-11-01T07:12:38",
+      "onlineNow": false
+    },
+    {
+      "name": "MALK1N",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-09-21T17:52:55",
+      "lastOnline": "2026-10-31T13:10:19",
+      "onlineNow": false
+    },
+    {
+      "name": "Isiyel",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2024-04-22T08:05:11",
+      "lastOnline": "2026-11-01T17:12:02",
+      "onlineNow": false
+    },
+    {
+      "name": "Vordon De'Ayyad",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-03-12T16:55:58",
+      "lastOnline": "2026-11-01T12:39:03",
+      "onlineNow": false
+    },
+    {
+      "name": "Pantomime",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-08-15T13:19:27",
+      "lastOnline": "2026-11-01T15:22:16",
+      "onlineNow": false
+    },
+    {
+      "name": "Nefalen",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2025-06-25T16:09:30",
+      "lastOnline": "2026-10-21T03:01:27",
+      "onlineNow": false
+    },
+    {
+      "name": "Midir",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-01-07T23:09:29",
+      "lastOnline": "2026-08-27T02:31:06",
+      "onlineNow": false
+    },
+    {
+      "name": "Nolanian",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-07-08T02:04:16",
+      "lastOnline": "2026-11-01T12:41:42",
+      "onlineNow": false
+    },
+    {
+      "name": "Vickul Helltalon",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-09-17T20:10:20",
+      "lastOnline": "2026-10-31T10:12:00",
+      "onlineNow": false
+    },
+    {
+      "name": "Albrecht Tun",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-07-04T15:51:57",
+      "lastOnline": "2026-10-30T12:29:38",
+      "onlineNow": false
+    },
+    {
+      "name": "Maiken Falnevakt",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-02-14T01:41:13",
+      "lastOnline": "2026-10-31T01:15:56",
+      "onlineNow": false
+    },
+    {
+      "name": "Galactic Underwear",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-05-14T12:44:27",
+      "lastOnline": "2026-11-01T12:42:12",
+      "onlineNow": false
+    },
+    {
+      "name": "YggDaSill",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-08-06T20:40:08",
+      "lastOnline": null,
+      "onlineNow": true
+    },
+    {
+      "name": "Yggdrasil",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-02-25T16:04:03",
+      "lastOnline": "2026-11-01T18:42:52",
+      "onlineNow": false
+    },
+    {
+      "name": "Mana Stickyfingers",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-01-22T18:46:00",
+      "lastOnline": "2026-03-18T13:28:15",
+      "onlineNow": false
+    },
+    {
+      "name": "Mana the Holy",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-01-22T13:56:07",
+      "lastOnline": "2026-07-02T15:55:18",
+      "onlineNow": false
+    },
+    {
+      "name": "Mana the Cruel",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-01-22T13:57:11",
+      "lastOnline": "2026-04-30T17:08:16",
+      "onlineNow": false
+    },
+    {
+      "name": "Ammy lightstep",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-08-13T22:15:24",
+      "lastOnline": "2026-10-26T23:30:05",
+      "onlineNow": false
+    },
+    {
+      "name": "Mana the Merciless",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-01-22T13:55:12",
+      "lastOnline": "2026-07-04T19:56:47",
+      "onlineNow": false
+    },
+    {
+      "name": "Davyd Bowie",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-01-31T20:06:47",
+      "lastOnline": "2026-03-07T19:33:48",
+      "onlineNow": false
+    },
+    {
+      "name": "Navi GreenLight",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-08-08T00:27:30",
+      "lastOnline": "2026-10-26T23:30:42",
+      "onlineNow": false
+    },
+    {
+      "name": "Blur",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2025-06-29T16:45:15",
+      "lastOnline": "2026-10-28T21:21:06",
+      "onlineNow": false
+    },
+    {
+      "name": "Amadeus",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-09-29T11:36:33",
+      "lastOnline": "2026-11-01T07:45:15",
+      "onlineNow": false
+    },
+    {
+      "name": "Squishy",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-10-10T17:44:05",
+      "lastOnline": "2026-11-01T12:09:07",
+      "onlineNow": false
+    },
+    {
+      "name": "Hallebooyah",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-09-29T21:20:52",
+      "lastOnline": "2026-10-31T23:42:45",
+      "onlineNow": false
+    },
+    {
+      "name": "YumukluSucurta",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-09-30T14:50:40",
+      "lastOnline": "2026-11-01T04:51:31",
+      "onlineNow": false
+    },
+    {
+      "name": "Alaemiga",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2025-05-20T19:27:19",
+      "lastOnline": "2026-09-03T21:19:38",
+      "onlineNow": false
+    },
+    {
+      "name": "blink",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2025-05-01T08:53:44",
+      "lastOnline": "2026-11-01T07:47:45",
+      "onlineNow": false
+    },
+    {
+      "name": "tamuramaro",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2017-01-19T13:04:54",
+      "lastOnline": "2026-09-27T09:19:16",
+      "onlineNow": false
+    },
+    {
+      "name": "naori",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-02-04T16:12:58",
+      "lastOnline": "2026-11-01T11:44:24",
+      "onlineNow": false
+    },
+    {
+      "name": "psycho Wubble",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-05-04T23:55:56",
+      "lastOnline": "2026-10-31T07:37:44",
+      "onlineNow": false
+    },
+    {
+      "name": "Tameika",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-04-15T21:09:34",
+      "lastOnline": "2026-10-31T08:00:36",
+      "onlineNow": false
+    },
+    {
+      "name": "Tuldar Wolvesbane",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-02-19T21:26:28",
+      "lastOnline": null,
+      "onlineNow": true
+    },
+    {
+      "name": "pak long",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2019-05-22T11:46:31",
+      "lastOnline": "2026-04-22T11:58:46",
+      "onlineNow": false
+    },
+    {
+      "name": "Charlotte The Harlot",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2025-05-10T15:50:58",
+      "lastOnline": "2026-08-28T18:02:05",
+      "onlineNow": false
+    },
+    {
+      "name": "Merlin",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2024-06-28T15:43:16",
+      "lastOnline": "2026-11-01T14:38:49",
+      "onlineNow": false
+    },
+    {
+      "name": "Odin",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-01-26T11:15:42",
+      "lastOnline": "2026-11-01T10:54:14",
+      "onlineNow": false
+    },
+    {
+      "name": "GabyTzzu",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-09-05T15:40:50",
+      "lastOnline": "2026-11-01T08:33:31",
+      "onlineNow": false
+    },
+    {
+      "name": "Durance Critus",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-09-29T21:21:56",
+      "lastOnline": "2026-10-31T20:23:12",
+      "onlineNow": false
+    },
+    {
+      "name": "penyamun tarbus",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2024-12-24T10:51:02",
+      "lastOnline": "2026-06-23T12:22:46",
+      "onlineNow": false
+    },
+    {
+      "name": "Celeste Truthspeaker",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-10-25T13:11:02",
+      "lastOnline": "2026-11-01T03:29:22",
+      "onlineNow": false
+    },
+    {
+      "name": "Graytan",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-01-10T20:59:21",
+      "lastOnline": "2026-11-01T10:02:00",
+      "onlineNow": false
+    },
+    {
+      "name": "Fran Faithheart",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-09-16T07:03:58",
+      "lastOnline": "2026-10-31T21:18:31",
+      "onlineNow": false
+    },
+    {
+      "name": "d00fus",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-01-06T09:07:01",
+      "lastOnline": "2026-11-01T18:01:07",
+      "onlineNow": false
+    },
+    {
+      "name": "Sulva",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-07-13T16:38:06",
+      "lastOnline": "2026-11-01T12:37:11",
+      "onlineNow": false
+    },
+    {
+      "name": "Gotnoname",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-07-13T21:16:32",
+      "lastOnline": "2026-10-25T20:00:48",
+      "onlineNow": false
+    },
+    {
+      "name": "b00zer",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-01-06T09:11:29",
+      "lastOnline": null,
+      "onlineNow": true
+    },
+    {
+      "name": "Ebbs",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-04-04T17:10:49",
+      "lastOnline": "2026-07-22T17:14:00",
+      "onlineNow": false
+    },
+    {
+      "name": "Bae",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2025-09-23T05:13:34",
+      "lastOnline": "2026-11-01T09:51:10",
+      "onlineNow": false
+    },
+    {
+      "name": "Fafnir",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-08-06T20:41:07",
+      "lastOnline": "2026-11-01T15:36:51",
+      "onlineNow": false
+    },
+    {
+      "name": "SN00 SN00",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-01-06T09:12:02",
+      "lastOnline": "2026-11-01T18:00:38",
+      "onlineNow": false
+    },
+    {
+      "name": "Victorinous",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-07-04T19:27:26",
+      "lastOnline": "2026-11-01T15:21:51",
+      "onlineNow": false
+    },
+    {
+      "name": "Jade Vixen",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2025-12-22T20:05:08",
+      "lastOnline": "2026-10-22T14:13:33",
+      "onlineNow": false
+    },
+    {
+      "name": "3tnA",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2025-05-10T07:25:40",
+      "lastOnline": "2026-11-01T06:01:04",
+      "onlineNow": false
+    },
+    {
+      "name": "LITTLE GRONK",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2024-06-12T12:09:06",
+      "lastOnline": "2026-11-01T17:37:55",
+      "onlineNow": false
+    },
+    {
+      "name": "Kojii",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-06-11T13:18:00",
+      "lastOnline": "2026-10-21T03:43:53",
+      "onlineNow": false
+    },
+    {
+      "name": "Renids",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-04-30T09:07:19",
+      "lastOnline": "2026-10-20T02:28:31",
+      "onlineNow": false
+    },
+    {
+      "name": "Brightwing",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-07-06T21:16:23",
+      "lastOnline": "2026-11-01T15:22:11",
+      "onlineNow": false
+    },
+    {
+      "name": "Girth Quake",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2025-12-19T04:32:42",
+      "lastOnline": "2026-08-26T05:49:58",
+      "onlineNow": false
+    },
+    {
+      "name": "Ragnar OP",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-07-07T04:12:05",
+      "lastOnline": "2026-11-01T17:50:02",
+      "onlineNow": false
+    },
+    {
+      "name": "Sensv",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-07-06T23:55:37",
+      "lastOnline": "2026-10-28T16:07:00",
+      "onlineNow": false
+    },
+    {
+      "name": "Dara TR",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2025-05-03T13:52:32",
+      "lastOnline": "2026-10-27T08:13:56",
+      "onlineNow": false
+    },
+    {
+      "name": "Emerald Acrux",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-04-01T00:43:23",
+      "lastOnline": "2026-11-01T12:36:25",
+      "onlineNow": false
+    },
+    {
+      "name": "Dara HR",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2025-05-03T13:53:49",
+      "lastOnline": "2026-10-27T08:13:29",
+      "onlineNow": false
+    },
+    {
+      "name": "SkyriM",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-07-31T21:15:45",
+      "lastOnline": "2026-11-01T15:40:00",
+      "onlineNow": false
+    },
+    {
+      "name": "Regdar Windsailor",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-02-01T16:51:52",
+      "lastOnline": "2026-11-01T16:39:40",
+      "onlineNow": false
+    },
+    {
+      "name": "Ruzzous",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-01-31T18:55:48",
+      "lastOnline": "2026-10-29T20:30:57",
+      "onlineNow": false
+    },
+    {
+      "name": "Jamster",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-02-19T22:10:19",
+      "lastOnline": "2026-10-28T18:08:10",
+      "onlineNow": false
+    },
+    {
+      "name": "Ivydora",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-08-13T00:06:00",
+      "lastOnline": "2026-11-01T09:54:43",
+      "onlineNow": false
+    },
+    {
+      "name": "Dara OP",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2025-08-05T07:42:37",
+      "lastOnline": "2026-10-27T08:14:26",
+      "onlineNow": false
+    },
+    {
+      "name": "Sir Perceval",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-09-18T15:00:30",
+      "lastOnline": "2026-10-31T14:29:40",
+      "onlineNow": false
+    },
+    {
+      "name": "Yumuklu_heal",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-06-16T13:44:50",
+      "lastOnline": "2026-11-01T05:07:22",
+      "onlineNow": false
+    },
+    {
+      "name": "PeneloPe",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-06-26T05:52:23",
+      "lastOnline": "2026-11-01T02:03:17",
+      "onlineNow": false
+    },
+    {
+      "name": "Clanker",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-07-25T09:07:31",
+      "lastOnline": "2026-11-01T11:59:03",
+      "onlineNow": false
+    },
+    {
+      "name": "Dyreth Galanodel",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-04-26T00:23:52",
+      "lastOnline": "2026-11-01T14:48:25",
+      "onlineNow": false
+    },
+    {
+      "name": "GORO",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-05-27T15:50:52",
+      "lastOnline": "2026-10-31T13:51:29",
+      "onlineNow": false
+    },
+    {
+      "name": "Mytholoki",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-10-23T21:02:29",
+      "lastOnline": null,
+      "onlineNow": true
+    },
+    {
+      "name": "Sir Rufus",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-05-02T14:17:53",
+      "lastOnline": "2026-11-01T12:28:42",
+      "onlineNow": false
+    },
+    {
+      "name": "Yusarlig Greyforge",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2025-09-23T14:46:50",
+      "lastOnline": "2026-11-01T05:44:11",
+      "onlineNow": false
+    },
+    {
+      "name": "anreaal",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-02-14T09:53:17",
+      "lastOnline": "2026-07-21T17:44:23",
+      "onlineNow": false
+    },
+    {
+      "name": "Sir LeeRoy",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-05-02T14:19:03",
+      "lastOnline": "2026-11-01T12:09:28",
+      "onlineNow": false
+    },
+    {
+      "name": "Огњен Црвени",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2025-01-15T13:29:16",
+      "lastOnline": "2026-11-01T17:54:01",
+      "onlineNow": false
+    },
+    {
+      "name": "Valkiria",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-05-09T13:12:08",
+      "lastOnline": "2026-10-30T20:21:19",
+      "onlineNow": false
+    },
+    {
+      "name": "Kimberley",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2024-08-04T06:03:41",
+      "lastOnline": "2026-11-01T14:15:22",
+      "onlineNow": false
+    },
+    {
+      "name": "crisemrogue",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2024-12-01T17:25:21",
+      "lastOnline": "2026-10-31T08:07:57",
+      "onlineNow": false
+    },
+    {
+      "name": "crisemcleric",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2024-12-01T17:26:19",
+      "lastOnline": "2026-10-31T08:08:49",
+      "onlineNow": false
+    },
+    {
+      "name": "crisempala",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2024-11-29T07:44:44",
+      "lastOnline": "2026-10-31T08:09:13",
+      "onlineNow": false
+    },
+    {
+      "name": "Dominus",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2025-12-27T06:33:42",
+      "lastOnline": "2026-11-01T06:04:07",
+      "onlineNow": false
+    },
+    {
+      "name": "Rusher",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-04-26T16:02:22",
+      "lastOnline": "2026-11-01T13:01:46",
+      "onlineNow": false
+    },
+    {
+      "name": "Yukki",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-03-31T11:24:57",
+      "lastOnline": "2026-11-01T06:29:39",
+      "onlineNow": false
+    },
+    {
+      "name": "Demetsch",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-08-26T14:06:28",
+      "lastOnline": "2026-11-01T06:03:45",
+      "onlineNow": false
+    },
+    {
+      "name": "Unknown Oath",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-10-10T17:36:11",
+      "lastOnline": "2026-11-01T16:29:17",
+      "onlineNow": false
+    },
+    {
+      "name": "Eliza",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2024-12-20T15:17:39",
+      "lastOnline": "2026-11-01T17:20:30",
+      "onlineNow": false
+    },
+    {
+      "name": "Dara the Bard",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2025-05-03T10:53:02",
+      "lastOnline": "2026-10-27T08:12:24",
+      "onlineNow": false
+    },
+    {
+      "name": "Eliza Idris",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2026-05-17T16:57:46",
+      "lastOnline": "2026-10-27T23:37:32",
+      "onlineNow": false
+    },
+    {
+      "name": "abg busker",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2021-07-28T10:41:42",
+      "lastOnline": "2026-05-23T03:41:42",
+      "onlineNow": false
+    },
+    {
+      "name": "The Blade",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-05-02T14:17:06",
+      "lastOnline": "2026-11-01T12:16:58",
+      "onlineNow": false
+    },
+    {
+      "name": "Cliate Citadel",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-05-17T15:37:46",
+      "lastOnline": "2026-10-26T07:44:39",
+      "onlineNow": false
+    },
+    {
+      "name": "Moxy",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-10-03T11:16:07",
+      "lastOnline": "2026-10-22T17:20:18",
+      "onlineNow": false
+    },
+    {
+      "name": "ohnomypickle",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-07-12T07:27:10",
+      "lastOnline": "2026-10-29T20:54:24",
+      "onlineNow": false
+    },
+    {
+      "name": "Shinbikyn",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2025-11-22T13:01:28",
+      "lastOnline": "2026-10-24T09:10:47",
+      "onlineNow": false
+    },
+    {
+      "name": "LeviaTank",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-09-01T20:30:59",
+      "lastOnline": "2026-11-01T01:36:01",
+      "onlineNow": false
+    },
+    {
+      "name": "hEllena",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-02-15T01:41:00",
+      "lastOnline": "2026-11-01T13:36:32",
+      "onlineNow": false
+    },
+    {
+      "name": "Damar",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-09-20T16:29:31",
+      "lastOnline": null,
+      "onlineNow": true
+    },
+    {
+      "name": "Amaya",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2025-09-23T15:27:33",
+      "lastOnline": "2026-10-31T20:04:44",
+      "onlineNow": false
+    },
+    {
+      "name": "iiiiGAIAiiii",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2024-07-28T13:44:54",
+      "lastOnline": "2026-10-31T10:07:02",
+      "onlineNow": false
+    },
+    {
+      "name": "oiiGAIAiio",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2024-07-27T14:12:08",
+      "lastOnline": "2026-10-31T13:54:58",
+      "onlineNow": false
+    },
+    {
+      "name": "Alfie",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-07-02T13:21:49",
+      "lastOnline": "2026-10-31T11:33:19",
+      "onlineNow": false
+    },
+    {
+      "name": "Kira",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-10-02T11:48:36",
+      "lastOnline": "2026-10-30T19:30:49",
+      "onlineNow": false
+    },
+    {
+      "name": "Andrushka",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2024-02-28T14:35:54",
+      "lastOnline": "2026-09-07T15:10:04",
+      "onlineNow": false
+    },
+    {
+      "name": "NIEDORTH",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-08-07T22:38:50",
+      "lastOnline": "2026-10-26T15:09:30",
+      "onlineNow": false
+    },
+    {
+      "name": "Niedorth the Fallen",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-08-04T22:11:03",
+      "lastOnline": "2026-11-01T11:50:28",
+      "onlineNow": false
+    },
+    {
+      "name": "Niedorth's Wisdom",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-08-14T10:47:50",
+      "lastOnline": "2026-10-26T15:12:43",
+      "onlineNow": false
+    },
+    {
+      "name": "Pathô",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-02-14T17:25:59",
+      "lastOnline": "2026-11-01T10:59:05",
+      "onlineNow": false
+    },
+    {
+      "name": "Lethal Chaos",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-09-14T19:55:31",
+      "lastOnline": null,
+      "onlineNow": true
+    },
+    {
+      "name": "Evilyn",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-02-13T09:40:40",
+      "lastOnline": "2026-11-01T10:20:37",
+      "onlineNow": false
+    },
+    {
+      "name": "Emily",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2025-10-29T17:36:33",
+      "lastOnline": "2026-11-01T12:35:21",
+      "onlineNow": false
+    },
+    {
+      "name": "Violeta",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2026-02-13T09:47:34",
+      "lastOnline": "2026-10-31T11:59:55",
+      "onlineNow": false
+    },
+    {
+      "name": "Ruzzy",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-08-19T17:23:08",
+      "lastOnline": "2026-10-30T13:59:18",
+      "onlineNow": false
+    },
+    {
+      "name": "Dalia Strongshield",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-09-02T21:33:01",
+      "lastOnline": "2026-10-31T21:32:03",
+      "onlineNow": false
+    },
+    {
+      "name": "Brax Brokenscale",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-09-03T00:59:28",
+      "lastOnline": "2026-10-31T22:18:16",
+      "onlineNow": false
+    },
+    {
+      "name": "Jord Jaggedscale",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-09-03T00:54:09",
+      "lastOnline": "2026-11-01T03:34:09",
+      "onlineNow": false
+    },
+    {
+      "name": "Straag Sparklescale",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-09-03T01:03:28",
+      "lastOnline": "2026-10-31T21:15:37",
+      "onlineNow": false
+    },
+    {
+      "name": "Upgrayedd",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2025-09-23T20:27:44",
+      "lastOnline": "2026-11-01T07:19:32",
+      "onlineNow": false
+    },
+    {
+      "name": "The.Holy.Pickle",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-07-13T21:21:24",
+      "lastOnline": "2026-10-29T21:03:07",
+      "onlineNow": false
+    },
+    {
+      "name": "Athena",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-10-23T21:23:14",
+      "lastOnline": "2026-11-01T15:44:14",
+      "onlineNow": false
+    },
+    {
+      "name": "Wonder Woman",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-10-14T21:59:36",
+      "lastOnline": "2026-11-01T14:48:17",
+      "onlineNow": false
+    },
+    {
+      "name": "TiTuS",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2025-06-20T13:58:03",
+      "lastOnline": "2026-11-01T17:15:24",
+      "onlineNow": false
+    },
+    {
+      "name": "Belar Aeth'las",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-01-19T03:43:25",
+      "lastOnline": "2026-09-05T06:31:18",
+      "onlineNow": false
+    },
+    {
+      "name": "Vitamin",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-09-14T19:36:55",
+      "lastOnline": "2026-11-01T00:32:12",
+      "onlineNow": false
+    },
+    {
+      "name": "Hero",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-08-26T01:37:17",
+      "lastOnline": "2026-10-23T21:41:41",
+      "onlineNow": false
+    },
+    {
+      "name": "TYE",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2025-05-10T15:48:36",
+      "lastOnline": "2026-09-25T21:25:50",
+      "onlineNow": false
+    },
+    {
+      "name": "Zefrina",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-08-23T17:02:21",
+      "lastOnline": "2026-08-31T08:52:25",
+      "onlineNow": false
+    },
+    {
+      "name": "Nightmare DC",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-04-25T21:27:06",
+      "lastOnline": "2026-11-01T12:41:53",
+      "onlineNow": false
+    },
+    {
+      "name": "se7en",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2024-04-03T08:02:10",
+      "lastOnline": "2026-11-01T18:08:57",
+      "onlineNow": false
+    },
+    {
+      "name": "GuardianAngel",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-10-13T22:06:13",
+      "lastOnline": "2026-11-01T18:37:43",
+      "onlineNow": false
+    },
+    {
+      "name": "Zilla",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-10-06T20:09:09",
+      "lastOnline": "2026-11-01T10:44:16",
+      "onlineNow": false
+    },
+    {
+      "name": "Silent",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2024-03-19T14:42:19",
+      "lastOnline": "2026-09-14T15:26:41",
+      "onlineNow": false
+    },
+    {
+      "name": "Nightmare OP",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-06-06T16:31:14",
+      "lastOnline": "2026-11-01T13:00:14",
+      "onlineNow": false
+    },
+    {
+      "name": "ToneDeaf",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2024-04-08T18:56:06",
+      "lastOnline": "2026-09-14T15:05:58",
+      "onlineNow": false
+    },
+    {
+      "name": "Luna",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2024-05-22T14:03:55",
+      "lastOnline": "2026-09-14T15:15:34",
+      "onlineNow": false
+    },
+    {
+      "name": "Tim The Enchanter",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-02-06T03:54:17",
+      "lastOnline": "2026-10-30T14:06:17",
+      "onlineNow": false
+    },
+    {
+      "name": "Azki",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2025-03-15T05:09:46",
+      "lastOnline": "2026-11-01T02:35:32",
+      "onlineNow": false
+    },
+    {
+      "name": "Merlina",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2024-06-18T17:14:19",
+      "lastOnline": "2026-09-14T15:15:16",
+      "onlineNow": false
+    },
+    {
+      "name": "Itzy-Bitzy",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2024-06-18T17:13:58",
+      "lastOnline": "2026-09-14T15:05:40",
+      "onlineNow": false
+    },
+    {
+      "name": "Zelda",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-01-06T09:12:24",
+      "lastOnline": "2026-11-01T18:29:52",
+      "onlineNow": false
+    },
+    {
+      "name": "Elanor",
+      "rank": "Guild Leader",
+      "rankOrder": 7,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2025-05-10T16:53:52",
+      "lastOnline": null,
+      "onlineNow": true
+    },
+    {
+      "name": "Gaia",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2024-07-29T11:27:12",
+      "lastOnline": "2026-10-31T10:01:08",
+      "onlineNow": false
+    },
+    {
+      "name": "8Gaia8",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2024-08-09T13:52:31",
+      "lastOnline": "2026-10-31T09:55:40",
+      "onlineNow": false
+    },
+    {
+      "name": "Stratocaster",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-02-19T22:11:15",
+      "lastOnline": "2026-10-05T17:45:59",
+      "onlineNow": false
+    },
+    {
+      "name": "Madelyn",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2024-11-22T14:36:51",
+      "lastOnline": "2026-11-01T14:22:37",
+      "onlineNow": false
+    },
+    {
+      "name": "Rydark",
+      "rank": "Guild Leader",
+      "rankOrder": 7,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2025-05-19T16:07:13",
+      "lastOnline": "2026-10-23T21:54:42",
+      "onlineNow": false
+    },
+    {
+      "name": "Madelynn",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2024-11-22T14:37:44",
+      "lastOnline": "2026-11-01T14:22:27",
+      "onlineNow": false
+    },
+    {
+      "name": "Annabelle",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2025-09-22T18:06:50",
+      "lastOnline": "2026-11-01T18:29:20",
+      "onlineNow": false
+    },
+    {
+      "name": "Gaia.o",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2024-10-05T09:39:50",
+      "lastOnline": "2026-10-31T09:48:30",
+      "onlineNow": false
+    },
+    {
+      "name": "Gaia Renegade",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2024-10-06T10:50:02",
+      "lastOnline": "2026-10-31T09:39:24",
+      "onlineNow": false
+    },
+    {
+      "name": "Gaia Devolt",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2024-10-06T10:49:37",
+      "lastOnline": "2026-10-31T09:08:08",
+      "onlineNow": false
+    },
+    {
+      "name": "Gaia a Barbara",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2024-10-06T10:49:02",
+      "lastOnline": "2026-10-31T08:48:21",
+      "onlineNow": false
+    },
+    {
+      "name": "Towa",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2025-03-27T08:19:18",
+      "lastOnline": "2026-10-31T04:49:01",
+      "onlineNow": false
+    },
+    {
+      "name": "Ayara",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2024-10-30T12:09:41",
+      "lastOnline": "2026-10-20T04:46:11",
+      "onlineNow": false
+    },
+    {
+      "name": "zzGaiazz",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2024-10-16T10:44:04",
+      "lastOnline": "2026-10-31T12:07:11",
+      "onlineNow": false
+    },
+    {
+      "name": "Huuntaahh",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2025-01-14T13:50:57",
+      "lastOnline": "2026-11-01T13:16:38",
+      "onlineNow": false
+    },
+    {
+      "name": "Val",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2024-11-10T20:04:11",
+      "lastOnline": "2026-09-14T15:05:22",
+      "onlineNow": false
+    },
+    {
+      "name": "sora",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-09-19T23:22:47",
+      "lastOnline": "2026-10-31T03:00:41",
+      "onlineNow": false
+    },
+    {
+      "name": "Norman",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2025-01-19T11:42:42",
+      "lastOnline": "2026-10-18T03:43:05",
+      "onlineNow": false
+    },
+    {
+      "name": "Silverbead",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-06-09T12:05:29",
+      "lastOnline": "2026-11-01T11:50:24",
+      "onlineNow": false
+    },
+    {
+      "name": "crisembard",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2024-11-30T06:05:25",
+      "lastOnline": "2026-10-31T08:10:05",
+      "onlineNow": false
+    },
+    {
+      "name": "crisemfighter",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2024-12-01T14:53:05",
+      "lastOnline": "2026-10-31T08:11:12",
+      "onlineNow": false
+    },
+    {
+      "name": "crisemwarlock",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2024-12-02T16:55:17",
+      "lastOnline": "2026-10-31T08:11:40",
+      "onlineNow": false
+    },
+    {
+      "name": "crisemhunter",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2024-12-05T15:06:18",
+      "lastOnline": "2026-10-31T08:12:17",
+      "onlineNow": false
+    },
+    {
+      "name": "Rilay",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2026-01-20T20:54:47",
+      "lastOnline": "2026-11-01T16:34:35",
+      "onlineNow": false
+    },
+    {
+      "name": "Erzulie",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2025-03-29T06:58:52",
+      "lastOnline": "2026-11-01T06:02:29",
+      "onlineNow": false
+    },
+    {
+      "name": "Gimli The Grey",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-03-25T20:40:51",
+      "lastOnline": "2026-11-01T13:15:28",
+      "onlineNow": false
+    },
+    {
+      "name": "crisembarbarian",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2024-12-27T18:06:41",
+      "lastOnline": "2026-10-28T22:28:36",
+      "onlineNow": false
+    },
+    {
+      "name": "Lathril",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2025-01-15T16:18:11",
+      "lastOnline": "2026-10-18T03:42:30",
+      "onlineNow": false
+    },
+    {
+      "name": "Jimi",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2025-04-26T16:58:15",
+      "lastOnline": "2026-10-18T03:42:19",
+      "onlineNow": false
+    },
+    {
+      "name": "Rankle",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2025-01-24T08:46:53",
+      "lastOnline": "2026-10-18T03:43:28",
+      "onlineNow": false
+    },
+    {
+      "name": "Rilay OP",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-07-05T16:48:06",
+      "lastOnline": "2026-11-01T12:37:59",
+      "onlineNow": false
+    },
+    {
+      "name": "Liliana Vess",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2025-11-14T17:46:59",
+      "lastOnline": "2026-10-18T03:42:43",
+      "onlineNow": false
+    },
+    {
+      "name": "xxxPARADOXxxx",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2025-11-27T06:05:24",
+      "lastOnline": "2026-07-07T03:37:54",
+      "onlineNow": false
+    },
+    {
+      "name": "Morik",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2025-03-25T03:44:21",
+      "lastOnline": "2026-07-02T03:04:29",
+      "onlineNow": false
+    },
+    {
+      "name": "Zilla-cw",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-09-29T20:23:37",
+      "lastOnline": "2026-10-23T18:02:32",
+      "onlineNow": false
+    },
+    {
+      "name": "Marwyin",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Ranger",
+      "level": "5",
+      "joinDate": "2025-11-14T17:56:28",
+      "lastOnline": "2026-10-18T03:42:54",
+      "onlineNow": false
+    },
+    {
+      "name": "Gideon",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2025-04-20T12:34:12",
+      "lastOnline": "2026-10-18T03:41:59",
+      "onlineNow": false
+    },
+    {
+      "name": "Zephyr",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-01-07T23:08:52",
+      "lastOnline": "2026-09-08T17:23:59",
+      "onlineNow": false
+    },
+    {
+      "name": "Security",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2025-01-14T07:45:51",
+      "lastOnline": "2026-11-01T16:13:22",
+      "onlineNow": false
+    },
+    {
+      "name": "black widow",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-01-18T17:04:49",
+      "lastOnline": "2026-09-14T18:11:24",
+      "onlineNow": false
+    },
+    {
+      "name": "Elızabeth",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2025-12-18T14:42:37",
+      "lastOnline": "2026-11-01T09:18:54",
+      "onlineNow": false
+    },
+    {
+      "name": "BishBash",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2025-04-01T07:38:32",
+      "lastOnline": "2026-09-14T15:05:03",
+      "onlineNow": false
+    },
+    {
+      "name": "RoRo",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2025-04-01T07:38:16",
+      "lastOnline": "2026-09-14T15:04:46",
+      "onlineNow": false
+    },
+    {
+      "name": "Drauga Belaruus",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-02-08T14:32:12",
+      "lastOnline": "2026-11-01T12:09:06",
+      "onlineNow": false
+    },
+    {
+      "name": "Yalir",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-10-13T20:53:40",
+      "lastOnline": "2026-11-01T16:28:36",
+      "onlineNow": false
+    },
+    {
+      "name": "IGLWarlock",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-09-29T12:12:43",
+      "lastOnline": null,
+      "onlineNow": true
+    },
+    {
+      "name": "Rilay SW",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-08-13T00:06:50",
+      "lastOnline": "2026-11-01T12:38:33",
+      "onlineNow": false
+    },
+    {
+      "name": "leggylass",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-06-28T16:31:28",
+      "lastOnline": "2026-07-23T16:57:32",
+      "onlineNow": false
+    },
+    {
+      "name": "LITTLE GRONKY",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-07-14T20:02:24",
+      "lastOnline": null,
+      "onlineNow": true
+    },
+    {
+      "name": "mythic",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2025-10-30T14:21:09",
+      "lastOnline": "2026-06-27T13:55:00",
+      "onlineNow": false
+    },
+    {
+      "name": "ArkHybrid",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-07-07T14:09:08",
+      "lastOnline": "2026-09-10T12:45:41",
+      "onlineNow": false
+    },
+    {
+      "name": "Pardon",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2025-12-09T01:57:44",
+      "lastOnline": "2026-07-07T03:57:03",
+      "onlineNow": false
+    },
+    {
+      "name": "MythicArby",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-05-14T04:21:52",
+      "lastOnline": "2026-06-27T16:00:31",
+      "onlineNow": false
+    },
+    {
+      "name": "MyhticT",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-01-22T07:28:38",
+      "lastOnline": "2026-06-27T13:41:31",
+      "onlineNow": false
+    },
+    {
+      "name": "-PinkRiot-",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2025-11-20T01:49:02",
+      "lastOnline": "2026-05-11T05:43:43",
+      "onlineNow": false
+    },
+    {
+      "name": "Shadow",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2025-03-15T15:18:46",
+      "lastOnline": "2026-10-31T16:21:16",
+      "onlineNow": false
+    },
+    {
+      "name": "Tatanka",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2025-04-09T08:37:11",
+      "lastOnline": "2026-10-22T02:58:37",
+      "onlineNow": false
+    },
+    {
+      "name": "Maiken V",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2026-02-13T21:32:34",
+      "lastOnline": "2026-10-13T21:32:28",
+      "onlineNow": false
+    },
+    {
+      "name": "Valk",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-02-13T09:43:57",
+      "lastOnline": "2026-11-01T10:22:09",
+      "onlineNow": false
+    },
+    {
+      "name": "MythicPally",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-01-22T07:27:55",
+      "lastOnline": "2026-06-27T13:56:27",
+      "onlineNow": false
+    },
+    {
+      "name": "Garruk",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2025-11-14T18:06:19",
+      "lastOnline": "2026-10-18T03:41:43",
+      "onlineNow": false
+    },
+    {
+      "name": "MythicSW",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-01-22T07:27:21",
+      "lastOnline": "2026-06-27T15:09:41",
+      "onlineNow": false
+    },
+    {
+      "name": "Rilay CW",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-01-20T20:58:14",
+      "lastOnline": "2026-11-01T12:39:30",
+      "onlineNow": false
+    },
+    {
+      "name": "Rilay GWF",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-08-02T19:29:04",
+      "lastOnline": "2026-11-01T12:40:10",
+      "onlineNow": false
+    },
+    {
+      "name": "Story",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Bard",
+      "level": "2",
+      "joinDate": "2026-05-10T12:54:59",
+      "lastOnline": "2026-09-14T15:14:56",
+      "onlineNow": false
+    },
+    {
+      "name": "MythicBarb",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-01-22T07:25:11",
+      "lastOnline": "2026-06-21T07:29:24",
+      "onlineNow": false
+    },
+    {
+      "name": "luna",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-08-19T00:02:11",
+      "lastOnline": "2026-09-18T20:53:03",
+      "onlineNow": false
+    },
+    {
+      "name": "Himen",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-06-06T07:19:46",
+      "lastOnline": "2026-11-01T12:11:19",
+      "onlineNow": false
+    },
+    {
+      "name": "Fendi",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2025-12-18T08:55:07",
+      "lastOnline": "2026-11-01T09:50:00",
+      "onlineNow": false
+    },
+    {
+      "name": "Asura",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-04-30T08:19:35",
+      "lastOnline": "2026-11-01T08:19:15",
+      "onlineNow": false
+    },
+    {
+      "name": "Asura Wizard",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2025-08-14T04:44:32",
+      "lastOnline": "2026-06-17T14:44:17",
+      "onlineNow": false
+    },
+    {
+      "name": "Asura Paladin",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2025-08-14T05:28:27",
+      "lastOnline": "2026-06-17T14:44:38",
+      "onlineNow": false
+    },
+    {
+      "name": "Asura Bard",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2025-08-14T05:35:53",
+      "lastOnline": "2026-06-17T14:45:11",
+      "onlineNow": false
+    },
+    {
+      "name": "Asura Rogue",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2025-08-14T05:32:36",
+      "lastOnline": "2026-06-17T14:45:34",
+      "onlineNow": false
+    },
+    {
+      "name": "Link",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-03-12T15:55:36",
+      "lastOnline": "2026-11-01T08:43:04",
+      "onlineNow": false
+    },
+    {
+      "name": "Vamprella",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2025-12-20T01:04:37",
+      "lastOnline": "2026-10-30T03:50:10",
+      "onlineNow": false
+    },
+    {
+      "name": "ZZ POPS",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2025-09-20T10:03:33",
+      "lastOnline": "2026-09-06T20:51:04",
+      "onlineNow": false
+    },
+    {
+      "name": "Asura Warlock",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2025-09-10T07:07:19",
+      "lastOnline": "2026-07-16T10:38:22",
+      "onlineNow": false
+    },
+    {
+      "name": "Asura Barbarian",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Barbarian",
+      "level": "8",
+      "joinDate": "2025-09-10T07:24:46",
+      "lastOnline": "2026-06-17T14:46:28",
+      "onlineNow": false
+    },
+    {
+      "name": "Asura Bank 1",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Fighter",
+      "level": "2",
+      "joinDate": "2026-04-07T23:32:29",
+      "lastOnline": "2026-07-12T12:26:48",
+      "onlineNow": false
+    },
+    {
+      "name": "Asura Bank 2",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Rogue",
+      "level": "2",
+      "joinDate": "2025-09-10T10:18:18",
+      "lastOnline": "2025-09-10T11:53:24",
+      "onlineNow": false
+    },
+    {
+      "name": "Asura Bank 3",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Wizard",
+      "level": "2",
+      "joinDate": "2025-09-10T10:18:36",
+      "lastOnline": "2025-09-10T11:54:30",
+      "onlineNow": false
+    },
+    {
+      "name": "Vithka",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-01-15T20:06:19",
+      "lastOnline": "2026-11-01T11:20:28",
+      "onlineNow": false
+    },
+    {
+      "name": "Jaskier the Bard",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2025-12-19T04:31:13",
+      "lastOnline": "2026-10-21T06:25:47",
+      "onlineNow": false
+    },
+    {
+      "name": "LAN ZHAN",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-02-16T01:59:18",
+      "lastOnline": "2026-10-03T23:04:12",
+      "onlineNow": false
+    },
+    {
+      "name": "MythicBard",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2026-01-22T07:26:40",
+      "lastOnline": "2026-06-27T18:04:20",
+      "onlineNow": false
+    },
+    {
+      "name": "Clanker GF",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-07-25T14:43:15",
+      "lastOnline": null,
+      "onlineNow": true
+    },
+    {
+      "name": "Clanker B",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2026-07-24T12:29:26",
+      "lastOnline": "2026-11-01T10:41:16",
+      "onlineNow": false
+    },
+    {
+      "name": "Raedra Obarskyr",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-09-29T21:23:41",
+      "lastOnline": "2026-11-01T00:35:08",
+      "onlineNow": false
+    },
+    {
+      "name": "Kragnar",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2025-12-05T10:25:38",
+      "lastOnline": "2026-02-13T16:21:58",
+      "onlineNow": false
+    },
+    {
+      "name": "Mika Loyalar",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-01-11T14:32:09",
+      "lastOnline": "2026-11-01T07:03:52",
+      "onlineNow": false
+    },
+    {
+      "name": "Merlin The Mender",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2025-12-19T04:35:50",
+      "lastOnline": "2026-08-26T05:48:36",
+      "onlineNow": false
+    },
+    {
+      "name": "Aelin",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-06-25T02:08:08",
+      "lastOnline": "2026-10-08T07:54:13",
+      "onlineNow": false
+    },
+    {
+      "name": "Ann_Roze",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-07-27T05:04:07",
+      "lastOnline": "2026-10-29T09:01:22",
+      "onlineNow": false
+    },
+    {
+      "name": "temu mythic",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-06-28T17:11:44",
+      "lastOnline": "2026-07-19T14:50:25",
+      "onlineNow": false
+    },
+    {
+      "name": "Amethyst Felis-Koit",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-06-27T20:20:48",
+      "lastOnline": "2026-11-01T12:59:24",
+      "onlineNow": false
+    },
+    {
+      "name": "Thanatos",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-05-24T12:03:19",
+      "lastOnline": "2026-11-01T05:47:34",
+      "onlineNow": false
+    },
+    {
+      "name": "Ivynn",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-01-18T14:34:53",
+      "lastOnline": "2026-10-27T21:54:39",
+      "onlineNow": false
+    },
+    {
+      "name": "Boris The Barbarian",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-04-28T11:14:39",
+      "lastOnline": "2026-08-26T05:49:00",
+      "onlineNow": false
+    },
+    {
+      "name": "andrea",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-09-05T10:23:23",
+      "lastOnline": "2026-10-29T16:19:04",
+      "onlineNow": false
+    },
+    {
+      "name": "Incantation Station",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-02-21T09:28:05",
+      "lastOnline": "2026-11-01T07:00:25",
+      "onlineNow": false
+    },
+    {
+      "name": "Ei8ht",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-02-11T10:00:50",
+      "lastOnline": null,
+      "onlineNow": true
+    },
+    {
+      "name": "Opuncicus",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-02-15T01:49:43",
+      "lastOnline": "2026-11-01T16:02:40",
+      "onlineNow": false
+    },
+    {
+      "name": "DARTHIIR",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-05-30T20:24:59",
+      "lastOnline": "2026-10-31T13:13:56",
+      "onlineNow": false
+    },
+    {
+      "name": "Zixx Silentread",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-05-25T11:06:52",
+      "lastOnline": "2026-11-01T14:47:27",
+      "onlineNow": false
+    },
+    {
+      "name": "Nyx Moonshadow",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-04-01T22:32:11",
+      "lastOnline": "2026-11-01T14:48:40",
+      "onlineNow": false
+    },
+    {
+      "name": "Kalasag",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-03-19T11:34:57",
+      "lastOnline": "2026-10-06T10:00:59",
+      "onlineNow": false
+    },
+    {
+      "name": "Varis Darksbane",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-04-01T22:31:59",
+      "lastOnline": "2026-11-01T15:42:08",
+      "onlineNow": false
+    },
+    {
+      "name": "Nuit Loreweaver",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-04-25T19:26:56",
+      "lastOnline": "2026-11-01T14:48:55",
+      "onlineNow": false
+    },
+    {
+      "name": "Forgrim Mineshadow",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-05-13T18:07:34",
+      "lastOnline": "2026-11-01T14:48:34",
+      "onlineNow": false
+    },
+    {
+      "name": "pally ho",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-03-30T05:47:47",
+      "lastOnline": "2026-10-31T10:06:02",
+      "onlineNow": false
+    },
+    {
+      "name": "Gotrek Gurnisson",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-04-01T21:36:31",
+      "lastOnline": "2026-10-31T19:13:06",
+      "onlineNow": false
+    },
+    {
+      "name": "Steve",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-04-03T07:56:00",
+      "lastOnline": "2026-07-10T15:47:24",
+      "onlineNow": false
+    },
+    {
+      "name": "Kriv",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-04-13T18:41:22",
+      "lastOnline": "2026-06-20T13:06:35",
+      "onlineNow": false
+    },
+    {
+      "name": "Rhogar",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-04-10T20:04:21",
+      "lastOnline": "2026-06-20T12:51:29",
+      "onlineNow": false
+    },
+    {
+      "name": "Ayano",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2026-05-24T02:00:52",
+      "lastOnline": "2026-06-20T13:03:18",
+      "onlineNow": false
+    },
+    {
+      "name": "Alisa",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-04-11T14:56:35",
+      "lastOnline": "2026-06-20T12:50:53",
+      "onlineNow": false
+    },
+    {
+      "name": "Kinkyy",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-09-08T13:18:00",
+      "lastOnline": "2026-10-25T16:39:19",
+      "onlineNow": false
+    },
+    {
+      "name": "Kyrian Tyvorn",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-04-27T11:54:32",
+      "lastOnline": "2026-11-01T14:48:49",
+      "onlineNow": false
+    },
+    {
+      "name": "Mystirielle Moonsong",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2026-04-30T22:35:34",
+      "lastOnline": "2026-11-01T14:49:10",
+      "onlineNow": false
+    },
+    {
+      "name": "Zixx Xantril",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-05-07T23:29:45",
+      "lastOnline": "2026-11-01T14:49:04",
+      "onlineNow": false
+    },
+    {
+      "name": "Madelynnn",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-04-21T11:56:34",
+      "lastOnline": "2026-11-01T14:22:48",
+      "onlineNow": false
+    },
+    {
+      "name": "Li'L Gronk",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-04-26T20:41:12",
+      "lastOnline": "2026-11-01T18:33:00",
+      "onlineNow": false
+    },
+    {
+      "name": "rei",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-04-21T11:51:11",
+      "lastOnline": "2026-06-20T12:50:34",
+      "onlineNow": false
+    },
+    {
+      "name": "Cheekie",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-04-21T12:32:23",
+      "lastOnline": "2026-09-14T15:04:27",
+      "onlineNow": false
+    },
+    {
+      "name": "Veyl",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-04-21T13:37:04",
+      "lastOnline": "2026-10-23T21:57:10",
+      "onlineNow": false
+    },
+    {
+      "name": "Freyr",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-04-21T12:29:51",
+      "lastOnline": "2026-09-07T09:38:11",
+      "onlineNow": false
+    },
+    {
+      "name": "sojo12",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-04-21T12:36:14",
+      "lastOnline": "2026-09-09T02:46:25",
+      "onlineNow": false
+    },
+    {
+      "name": "Chali",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-05-20T13:57:37",
+      "lastOnline": "2026-10-25T08:20:28",
+      "onlineNow": false
+    },
+    {
+      "name": "Rabeye",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-04-21T14:05:34",
+      "lastOnline": "2026-10-30T09:12:24",
+      "onlineNow": false
+    },
+    {
+      "name": "Andromeda",
+      "rank": "Officer",
+      "rankOrder": 6,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-05-04T14:15:50",
+      "lastOnline": "2026-08-14T22:35:53",
+      "onlineNow": false
+    },
+    {
+      "name": "Isildur Bane of Evil",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-04-21T18:39:48",
+      "lastOnline": "2026-11-01T10:25:56",
+      "onlineNow": false
+    },
+    {
+      "name": "Zarra",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-05-02T20:53:45",
+      "lastOnline": "2026-09-26T21:43:41",
+      "onlineNow": false
+    },
+    {
+      "name": "Yalir DC",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-10-13T20:55:45",
+      "lastOnline": "2026-11-01T13:05:53",
+      "onlineNow": false
+    },
+    {
+      "name": "Rowan Deforet",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-05-03T18:49:18",
+      "lastOnline": "2026-11-01T14:49:48",
+      "onlineNow": false
+    },
+    {
+      "name": "gaia.",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-04-22T07:16:14",
+      "lastOnline": "2026-10-31T10:20:27",
+      "onlineNow": false
+    },
+    {
+      "name": "Aethelgard",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-04-24T05:55:10",
+      "lastOnline": "2026-11-01T07:18:14",
+      "onlineNow": false
+    },
+    {
+      "name": "Melech Babausong",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-04-22T16:26:56",
+      "lastOnline": "2026-05-10T17:25:07",
+      "onlineNow": false
+    },
+    {
+      "name": "Maiken VI",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-04-23T01:37:19",
+      "lastOnline": "2026-08-30T04:55:52",
+      "onlineNow": false
+    },
+    {
+      "name": "Willy The Wiz",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-04-23T07:00:29",
+      "lastOnline": "2026-08-22T08:47:28",
+      "onlineNow": false
+    },
+    {
+      "name": "meatball",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-08-01T11:47:28",
+      "lastOnline": "2026-11-01T12:43:19",
+      "onlineNow": false
+    },
+    {
+      "name": "Optimus",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-05-02T14:12:51",
+      "lastOnline": "2026-10-02T14:41:44",
+      "onlineNow": false
+    },
+    {
+      "name": "Anubis",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-06-14T13:52:58",
+      "lastOnline": "2026-10-26T15:35:18",
+      "onlineNow": false
+    },
+    {
+      "name": "Snickelfritz",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-05-02T14:13:43",
+      "lastOnline": "2026-11-01T12:10:59",
+      "onlineNow": false
+    },
+    {
+      "name": "Happy Heelme",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-10-10T17:06:17",
+      "lastOnline": "2026-11-01T18:13:05",
+      "onlineNow": false
+    },
+    {
+      "name": "Zer0",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-05-22T18:34:50",
+      "lastOnline": "2026-11-01T18:43:00",
+      "onlineNow": false
+    },
+    {
+      "name": "grizzie",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-07-20T05:12:09",
+      "lastOnline": "2026-11-01T10:37:52",
+      "onlineNow": false
+    },
+    {
+      "name": "Shadowheart",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-05-01T18:30:40",
+      "lastOnline": "2026-11-01T14:42:36",
+      "onlineNow": false
+    },
+    {
+      "name": "Adrik Stoneheart",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-05-15T11:10:59",
+      "lastOnline": "2026-08-12T18:57:44",
+      "onlineNow": false
+    },
+    {
+      "name": "Zerospace",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-10-22T19:52:33",
+      "lastOnline": "2026-11-01T09:17:15",
+      "onlineNow": false
+    },
+    {
+      "name": "Vyptimus",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-06-27T17:55:35",
+      "lastOnline": "2026-10-13T12:44:05",
+      "onlineNow": false
+    },
+    {
+      "name": "Hammer of Justice",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-05-18T11:22:31",
+      "lastOnline": "2026-10-06T15:02:45",
+      "onlineNow": false
+    },
+    {
+      "name": "Zixx Ulfgrik",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-05-10T15:29:46",
+      "lastOnline": "2026-11-01T14:49:42",
+      "onlineNow": false
+    },
+    {
+      "name": "Bryndiele Bloodthorn",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-05-10T23:23:05",
+      "lastOnline": "2026-11-01T14:50:00",
+      "onlineNow": false
+    },
+    {
+      "name": "BLOCKYBALBOA",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Fighter",
+      "level": "5",
+      "joinDate": "2026-05-14T12:45:08",
+      "lastOnline": "2026-06-07T12:28:32",
+      "onlineNow": false
+    },
+    {
+      "name": "WinkleUwU",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-10-27T20:52:50",
+      "lastOnline": "2026-11-01T18:33:54",
+      "onlineNow": false
+    },
+    {
+      "name": "Gyda Thorunn",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-06-26T17:34:22",
+      "lastOnline": null,
+      "onlineNow": true
+    },
+    {
+      "name": "BlockTuah",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Paladin",
+      "level": "5",
+      "joinDate": "2026-05-14T12:45:34",
+      "lastOnline": "2026-06-07T12:28:43",
+      "onlineNow": false
+    },
+    {
+      "name": "CELESTIA",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-05-31T11:25:19",
+      "lastOnline": "2026-11-01T18:11:30",
+      "onlineNow": false
+    },
+    {
+      "name": "Velissra",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-09-22T17:52:45",
+      "lastOnline": "2026-11-01T08:31:18",
+      "onlineNow": false
+    },
+    {
+      "name": "Rodger The Rogue",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-05-22T04:15:17",
+      "lastOnline": "2026-08-15T03:59:59",
+      "onlineNow": false
+    },
+    {
+      "name": "Hermes",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-07-12T13:12:26",
+      "lastOnline": "2026-10-24T14:16:04",
+      "onlineNow": false
+    },
+    {
+      "name": "JiiKo",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-06-11T14:57:22",
+      "lastOnline": "2026-09-18T23:25:25",
+      "onlineNow": false
+    },
+    {
+      "name": "Sunrise",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2026-09-12T19:37:42",
+      "lastOnline": null,
+      "onlineNow": true
+    },
+    {
+      "name": "LORD",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-05-26T15:05:42",
+      "lastOnline": "2026-11-01T05:03:00",
+      "onlineNow": false
+    },
+    {
+      "name": "Sauron Eye of Evil",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-06-19T10:26:27",
+      "lastOnline": "2026-10-31T20:05:14",
+      "onlineNow": false
+    },
+    {
+      "name": "Ado",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2026-06-11T20:44:59",
+      "lastOnline": "2026-09-24T12:16:20",
+      "onlineNow": false
+    },
+    {
+      "name": "CELESTIA SW",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-06-18T16:15:09",
+      "lastOnline": "2026-11-01T09:06:03",
+      "onlineNow": false
+    },
+    {
+      "name": "Prime",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-06-27T17:56:23",
+      "lastOnline": "2026-09-23T07:19:56",
+      "onlineNow": false
+    },
+    {
+      "name": "Mezotis",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-06-14T22:53:46",
+      "lastOnline": null,
+      "onlineNow": true
+    },
+    {
+      "name": "12th Dennis",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2026-07-31T00:00:03",
+      "lastOnline": "2026-09-26T05:58:28",
+      "onlineNow": false
+    },
+    {
+      "name": "Alune The Beauty",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-10-20T22:30:20",
+      "lastOnline": null,
+      "onlineNow": true
+    },
+    {
+      "name": "Zixx Xulthar",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-06-17T15:18:31",
+      "lastOnline": "2026-11-01T15:23:56",
+      "onlineNow": false
+    },
+    {
+      "name": "Zixx Xorvash",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-06-20T01:51:25",
+      "lastOnline": "2026-11-01T14:50:05",
+      "onlineNow": false
+    },
+    {
+      "name": "Veralidaine Sarrasri",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-06-20T02:05:37",
+      "lastOnline": "2026-11-01T14:50:22",
+      "onlineNow": false
+    },
+    {
+      "name": "AGramos",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-09-27T21:04:21",
+      "lastOnline": "2026-10-25T14:27:59",
+      "onlineNow": false
+    },
+    {
+      "name": "Numair Salmalin",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-06-24T13:53:32",
+      "lastOnline": "2026-11-01T14:50:15",
+      "onlineNow": false
+    },
+    {
+      "name": "Alanna the Lioness",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-06-24T15:06:32",
+      "lastOnline": "2026-11-01T15:41:34",
+      "onlineNow": false
+    },
+    {
+      "name": "Fighting Theo",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-08-02T18:34:20",
+      "lastOnline": "2026-11-01T09:04:51",
+      "onlineNow": false
+    },
+    {
+      "name": "HardPunch",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-07-09T16:44:50",
+      "lastOnline": "2026-11-01T15:26:21",
+      "onlineNow": false
+    },
+    {
+      "name": "Jeru",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-10-14T03:07:46",
+      "lastOnline": "2026-11-01T04:51:51",
+      "onlineNow": false
+    },
+    {
+      "name": "Troubadix",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2026-07-29T06:38:47",
+      "lastOnline": "2026-11-01T07:16:53",
+      "onlineNow": false
+    },
+    {
+      "name": "woodenwolf",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-08-25T01:07:58",
+      "lastOnline": "2026-11-01T13:28:12",
+      "onlineNow": false
+    },
+    {
+      "name": "HardStyle",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-08-14T10:47:27",
+      "lastOnline": "2026-11-01T15:26:51",
+      "onlineNow": false
+    },
+    {
+      "name": "OldMan",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-09-13T21:31:47",
+      "lastOnline": "2026-10-30T19:52:15",
+      "onlineNow": false
+    },
+    {
+      "name": "Nigella",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Wizard",
+      "level": "20",
+      "joinDate": "2026-08-26T01:34:35",
+      "lastOnline": "2026-10-29T08:11:58",
+      "onlineNow": false
+    },
+    {
+      "name": "Hadryl Kay'ron",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-09-05T12:13:15",
+      "lastOnline": null,
+      "onlineNow": true
+    },
+    {
+      "name": "Baby Nie",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-08-31T12:01:10",
+      "lastOnline": "2026-10-26T15:10:15",
+      "onlineNow": false
+    },
+    {
+      "name": "Ragnar The Bard",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2026-08-31T20:20:29",
+      "lastOnline": "2026-11-01T18:15:03",
+      "onlineNow": false
+    },
+    {
+      "name": "Zero",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-09-12T00:12:12",
+      "lastOnline": "2026-11-01T09:09:51",
+      "onlineNow": false
+    },
+    {
+      "name": "Clanker TR",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-09-19T23:21:26",
+      "lastOnline": "2026-11-01T12:51:04",
+      "onlineNow": false
+    },
+    {
+      "name": "Clanker OP",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-09-06T20:17:34",
+      "lastOnline": "2026-10-30T22:52:46",
+      "onlineNow": false
+    },
+    {
+      "name": "Shadowbane",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-09-12T10:20:31",
+      "lastOnline": "2026-10-20T15:28:07",
+      "onlineNow": false
+    },
+    {
+      "name": "MEPIKCHULITE",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-10-13T21:57:23",
+      "lastOnline": "2026-11-01T08:49:23",
+      "onlineNow": false
+    },
+    {
+      "name": "Eeirtis",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-10-25T17:13:32",
+      "lastOnline": "2026-11-01T18:15:49",
+      "onlineNow": false
+    },
+    {
+      "name": "Singing Theo",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2026-09-06T11:38:29",
+      "lastOnline": "2026-11-01T09:02:26",
+      "onlineNow": false
+    },
+    {
+      "name": "Lirael Remembrancer",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-09-07T09:29:24",
+      "lastOnline": "2026-11-01T14:50:58",
+      "onlineNow": false
+    },
+    {
+      "name": "Zixx Xintrel",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2026-09-07T09:31:27",
+      "lastOnline": "2026-11-01T14:50:27",
+      "onlineNow": false
+    },
+    {
+      "name": "Zer0",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-09-19T23:22:05",
+      "lastOnline": "2026-11-01T09:10:05",
+      "onlineNow": false
+    },
+    {
+      "name": "Zixx Xtra",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-09-15T13:30:22",
+      "lastOnline": "2026-11-01T14:51:40",
+      "onlineNow": false
+    },
+    {
+      "name": "PegLeg Paddy",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-10-30T17:38:36",
+      "lastOnline": "2026-11-01T14:28:41",
+      "onlineNow": false
+    },
+    {
+      "name": "Lurtz",
+      "rank": "Elder",
+      "rankOrder": 5,
+      "class": "Barbarian",
+      "level": "5",
+      "joinDate": "2026-10-03T08:36:30",
+      "lastOnline": "2026-11-01T14:15:58",
+      "onlineNow": false
+    },
+    {
+      "name": "Ryn",
+      "rank": "Stalwart",
+      "rankOrder": 3,
+      "class": "Cleric",
+      "level": "20",
+      "joinDate": "2026-10-04T08:34:42",
+      "lastOnline": "2026-11-01T17:20:12",
+      "onlineNow": false
+    },
+    {
+      "name": "Clanker XS",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Ranger",
+      "level": "20",
+      "joinDate": "2026-10-09T17:51:50",
+      "lastOnline": "2026-10-30T22:53:11",
+      "onlineNow": false
+    },
+    {
+      "name": "Sourdoughss",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Warlock",
+      "level": "20",
+      "joinDate": "2026-10-19T20:10:59",
+      "lastOnline": null,
+      "onlineNow": true
+    },
+    {
+      "name": "Yalir B",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Bard",
+      "level": "20",
+      "joinDate": "2026-10-30T21:40:33",
+      "lastOnline": null,
+      "onlineNow": true
+    },
+    {
+      "name": "ghostface",
+      "rank": "Veteran",
+      "rankOrder": 4,
+      "class": "Rogue",
+      "level": "20",
+      "joinDate": "2026-10-24T12:04:35",
+      "lastOnline": "2026-11-01T17:12:12",
+      "onlineNow": false
+    },
+    {
+      "name": "Jancul",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Paladin",
+      "level": "20",
+      "joinDate": "2026-10-30T13:46:08",
+      "lastOnline": null,
+      "onlineNow": true
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-10-30T21:40:34",
+      "kind": "join",
+      "text": "Yalir B has joined the guild after being invited by Rilay"
+    },
+    {
+      "date": "2026-10-30T17:38:54",
+      "kind": "rank",
+      "text": "PegLeg Paddy's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-30T17:38:36",
+      "kind": "join",
+      "text": "PegLeg Paddy has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-30T13:46:08",
+      "kind": "join",
+      "text": "Jancul has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-30T01:10:19",
+      "kind": "exit",
+      "text": "Yalir B has left the guild"
+    },
+    {
+      "date": "2026-10-29T18:29:20",
+      "kind": "exit",
+      "text": "Bangking was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-29T18:27:49",
+      "kind": "exit",
+      "text": "SempreUmRogue was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-29T18:27:46",
+      "kind": "exit",
+      "text": "CodaSW was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-29T18:27:44",
+      "kind": "exit",
+      "text": "CodaPala was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-29T18:27:42",
+      "kind": "exit",
+      "text": "CodaGWF was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-29T18:27:40",
+      "kind": "exit",
+      "text": "CodaFigh was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-29T18:27:38",
+      "kind": "exit",
+      "text": "CodaCW was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-29T18:27:35",
+      "kind": "exit",
+      "text": "CodaBard was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-29T18:26:03",
+      "kind": "rank",
+      "text": "Zilla's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-29T18:25:59",
+      "kind": "rank",
+      "text": "Zilla-cw's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-29T18:25:20",
+      "kind": "rank",
+      "text": "IGLWarlock's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-29T18:25:04",
+      "kind": "rank",
+      "text": "Raedra Obarskyr's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-29T18:25:02",
+      "kind": "rank",
+      "text": "Hallebooyah's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-29T18:25:00",
+      "kind": "rank",
+      "text": "Durance Critus's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-29T18:24:58",
+      "kind": "rank",
+      "text": "Amadeus's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-29T18:24:17",
+      "kind": "exit",
+      "text": "Nocturum SW was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-29T18:23:29",
+      "kind": "exit",
+      "text": "Metulah HR was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-29T18:23:27",
+      "kind": "exit",
+      "text": "Metulah was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-29T18:23:06",
+      "kind": "exit",
+      "text": "daz was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-29T16:15:53",
+      "kind": "exit",
+      "text": "Mio-Ava has left the guild"
+    },
+    {
+      "date": "2026-10-27T20:52:50",
+      "kind": "join",
+      "text": "WinkleUwU has joined the guild after being invited by Ivydora"
+    },
+    {
+      "date": "2026-10-25T17:18:31",
+      "kind": "exit",
+      "text": "LFarquaad was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-25T17:13:32",
+      "kind": "join",
+      "text": "Eeirtis has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-25T13:11:02",
+      "kind": "join",
+      "text": "Celeste Truthspeaker has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-25T02:51:53",
+      "kind": "rank",
+      "text": "Singing Theo's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-25T02:51:48",
+      "kind": "rank",
+      "text": "Fighting Theo's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-24T12:07:46",
+      "kind": "rank",
+      "text": "ghostface's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-24T12:07:44",
+      "kind": "rank",
+      "text": "ghostface's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-24T12:07:42",
+      "kind": "rank",
+      "text": "ghostface's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-24T12:04:35",
+      "kind": "join",
+      "text": "ghostface has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-23T21:23:14",
+      "kind": "join",
+      "text": "Athena has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-23T21:03:32",
+      "kind": "exit",
+      "text": "Athena has left the guild"
+    },
+    {
+      "date": "2026-10-23T21:02:29",
+      "kind": "join",
+      "text": "Mytholoki has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-23T20:55:44",
+      "kind": "exit",
+      "text": "Mytholoki has left the guild"
+    },
+    {
+      "date": "2026-10-22T19:54:29",
+      "kind": "rank",
+      "text": "Zerospace's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-22T19:53:03",
+      "kind": "rank",
+      "text": "Zerospace's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-22T19:53:01",
+      "kind": "rank",
+      "text": "Zerospace's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-22T19:52:59",
+      "kind": "rank",
+      "text": "Zerospace's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-22T19:52:33",
+      "kind": "join",
+      "text": "Zerospace has joined the guild after being invited by Ivydora"
+    },
+    {
+      "date": "2026-10-22T00:42:15",
+      "kind": "exit",
+      "text": "Zerospace has left the guild"
+    },
+    {
+      "date": "2026-10-21T13:04:55",
+      "kind": "rank",
+      "text": "Vyptimus's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-21T13:04:49",
+      "kind": "rank",
+      "text": "Prime's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-21T13:04:46",
+      "kind": "rank",
+      "text": "Optimus's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-21T13:04:23",
+      "kind": "rank",
+      "text": "The Blade's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-21T13:04:20",
+      "kind": "rank",
+      "text": "Snickelfritz's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-21T13:04:17",
+      "kind": "rank",
+      "text": "Sir Rufus's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-21T13:04:15",
+      "kind": "rank",
+      "text": "Sir LeeRoy's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-21T12:59:30",
+      "kind": "rank",
+      "text": "Shadowheart's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-21T12:53:44",
+      "kind": "rank",
+      "text": "SkyriM's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-21T12:53:19",
+      "kind": "rank",
+      "text": "woodenwolf's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-21T12:46:01",
+      "kind": "rank",
+      "text": "OldMan's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-21T12:45:58",
+      "kind": "rank",
+      "text": "Sunrise's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-21T12:30:32",
+      "kind": "rank",
+      "text": "Ann_Roze's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-21T12:29:30",
+      "kind": "rank",
+      "text": "Rusher's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-21T12:28:57",
+      "kind": "rank",
+      "text": "Nightmare OP's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-21T12:28:54",
+      "kind": "rank",
+      "text": "Nightmare DC's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-21T12:28:52",
+      "kind": "rank",
+      "text": "meatball's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-21T12:23:18",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-21T12:23:16",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-20T22:30:20",
+      "kind": "join",
+      "text": "Alune The Beauty has joined the guild after being invited by Rilay"
+    },
+    {
+      "date": "2026-10-20T22:27:03",
+      "kind": "exit",
+      "text": "Alune The Beauty has left the guild"
+    },
+    {
+      "date": "2026-10-20T01:32:41",
+      "kind": "rank",
+      "text": "Moxy's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-20T01:32:38",
+      "kind": "rank",
+      "text": "Velissra's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-20T01:31:30",
+      "kind": "exit",
+      "text": "Balasore was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-19T20:10:59",
+      "kind": "join",
+      "text": "Sourdoughss has joined the guild after being invited by crisem97"
+    },
+    {
+      "date": "2026-10-17T18:59:51",
+      "kind": "exit",
+      "text": "Fass and Draco M. was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-16T19:50:56",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-16T19:50:53",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-16T19:50:19",
+      "kind": "join",
+      "text": "Alune The Beauty has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-16T19:44:28",
+      "kind": "exit",
+      "text": "Alune The Beauty has left the guild"
+    },
+    {
+      "date": "2026-10-16T18:17:59",
+      "kind": "rank",
+      "text": "Damar's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-14T22:00:17",
+      "kind": "join",
+      "text": "Athena has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-14T21:59:36",
+      "kind": "join",
+      "text": "Wonder Woman has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-14T21:58:34",
+      "kind": "join",
+      "text": "Mytholoki has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-14T03:07:46",
+      "kind": "join",
+      "text": "Jeru has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-13T22:06:13",
+      "kind": "join",
+      "text": "GuardianAngel has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-13T21:57:23",
+      "kind": "join",
+      "text": "MEPIKCHULITE has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-13T20:56:45",
+      "kind": "join",
+      "text": "Yalir B has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-13T20:55:45",
+      "kind": "join",
+      "text": "Yalir DC has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-13T20:53:40",
+      "kind": "join",
+      "text": "Yalir has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-12T19:02:08",
+      "kind": "exit",
+      "text": "Prediction was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-12T18:50:54",
+      "kind": "exit",
+      "text": "Aurora was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-12T12:44:58",
+      "kind": "rank",
+      "text": "Lethal Chaos's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-10T17:44:05",
+      "kind": "join",
+      "text": "Squishy has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-10T17:36:11",
+      "kind": "join",
+      "text": "Unknown Oath has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-10T17:30:15",
+      "kind": "join",
+      "text": "Nocturum SW has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-10T17:27:10",
+      "kind": "join",
+      "text": "Metulah HR has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-10T17:06:17",
+      "kind": "join",
+      "text": "Happy Heelme has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-09T18:43:25",
+      "kind": "rank",
+      "text": "Clanker XS's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-09T18:43:23",
+      "kind": "rank",
+      "text": "Clanker XS's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-09T18:43:21",
+      "kind": "rank",
+      "text": "Clanker XS's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-09T17:51:50",
+      "kind": "join",
+      "text": "Clanker XS has joined the guild after being invited by The.Holy.Pickle"
+    },
+    {
+      "date": "2026-10-09T14:18:37",
+      "kind": "exit",
+      "text": "Fentalina has left the guild"
+    },
+    {
+      "date": "2026-10-08T22:51:54",
+      "kind": "exit",
+      "text": "Rivakyn was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-08T22:49:21",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-08T22:49:19",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-08T20:29:25",
+      "kind": "join",
+      "text": "Alune The Beauty has joined the guild after being invited by Rilay"
+    },
+    {
+      "date": "2026-10-08T20:17:58",
+      "kind": "exit",
+      "text": "Alune The Beauty has left the guild"
+    },
+    {
+      "date": "2026-10-08T18:09:49",
+      "kind": "rank",
+      "text": "Renids's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-08T18:09:45",
+      "kind": "rank",
+      "text": "sojo12's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-08T18:08:52",
+      "kind": "rank",
+      "text": "grizzie's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-08T08:21:53",
+      "kind": "exit",
+      "text": "VonGolA has left the guild"
+    },
+    {
+      "date": "2026-10-06T20:09:09",
+      "kind": "join",
+      "text": "Zilla has joined the guild after being invited by crisem97"
+    },
+    {
+      "date": "2026-10-04T08:56:07",
+      "kind": "exit",
+      "text": "Aurfel was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-04T08:53:00",
+      "kind": "rank",
+      "text": "Tameika's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-04T08:52:57",
+      "kind": "rank",
+      "text": "psycho Wubble's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-04T08:52:30",
+      "kind": "rank",
+      "text": "Gotnoname's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-04T08:52:16",
+      "kind": "rank",
+      "text": "Sulva's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-04T08:51:40",
+      "kind": "rank",
+      "text": "HardStyle's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-04T08:51:37",
+      "kind": "rank",
+      "text": "HardPunch's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-04T08:51:01",
+      "kind": "rank",
+      "text": "Hadryl Kay'ron's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-04T08:50:32",
+      "kind": "rank",
+      "text": "andrea's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-04T08:50:14",
+      "kind": "rank",
+      "text": "GabyTzzu's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-04T08:42:07",
+      "kind": "exit",
+      "text": "The Storyteller was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-10-04T08:34:57",
+      "kind": "rank",
+      "text": "Ryn's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-04T08:34:52",
+      "kind": "rank",
+      "text": "Ryn's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-04T08:34:42",
+      "kind": "join",
+      "text": "NUWA has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-03T11:16:07",
+      "kind": "join",
+      "text": "Moxy has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-10-03T08:37:05",
+      "kind": "rank",
+      "text": "Lurtz's guild rank is now Elder"
+    },
+    {
+      "date": "2026-10-03T08:37:01",
+      "kind": "rank",
+      "text": "Lurtz's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-03T08:36:58",
+      "kind": "rank",
+      "text": "Lurtz's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-03T08:36:55",
+      "kind": "rank",
+      "text": "Lurtz's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-03T08:36:30",
+      "kind": "join",
+      "text": "Lurtz has joined the guild after being invited by Rydark"
+    },
+    {
+      "date": "2026-10-02T11:48:55",
+      "kind": "rank",
+      "text": "Kira's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-02T11:48:51",
+      "kind": "rank",
+      "text": "Kira's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-02T11:48:49",
+      "kind": "rank",
+      "text": "Kira's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-02T11:48:36",
+      "kind": "join",
+      "text": "Kira has joined the guild after being invited by Rydark"
+    },
+    {
+      "date": "2026-10-02T01:15:33",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-02T01:15:29",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-02T01:15:09",
+      "kind": "join",
+      "text": "Alune The Beauty has joined the guild after being invited by Rydark"
+    },
+    {
+      "date": "2026-10-02T01:09:19",
+      "kind": "exit",
+      "text": "Alune The Beauty has left the guild"
+    },
+    {
+      "date": "2026-10-01T06:37:25",
+      "kind": "rank",
+      "text": "Sensv's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-01T06:37:00",
+      "kind": "rank",
+      "text": "Ragnar The Bard's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-01T06:36:58",
+      "kind": "rank",
+      "text": "Ragnar OP's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-01T06:36:23",
+      "kind": "rank",
+      "text": "Brightwing's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-01T06:36:18",
+      "kind": "rank",
+      "text": "Victorinous's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-01T06:35:06",
+      "kind": "rank",
+      "text": "AGramos's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-01T06:35:02",
+      "kind": "rank",
+      "text": "LeviaTank's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-30T14:51:00",
+      "kind": "rank",
+      "text": "YumukluSucurta's guild rank is now Elder"
+    },
+    {
+      "date": "2026-09-30T14:50:57",
+      "kind": "rank",
+      "text": "YumukluSucurta's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-30T14:50:55",
+      "kind": "rank",
+      "text": "YumukluSucurta's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-30T14:50:52",
+      "kind": "rank",
+      "text": "YumukluSucurta's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-30T14:50:40",
+      "kind": "join",
+      "text": "YumukluSucurta has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-30T09:53:17",
+      "kind": "join",
+      "text": "Metulah has joined the guild after being invited by Ivydora"
+    },
+    {
+      "date": "2026-09-29T21:23:41",
+      "kind": "join",
+      "text": "Raedra Obarskyr has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-29T21:21:56",
+      "kind": "join",
+      "text": "Durance Critus has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-29T21:20:52",
+      "kind": "join",
+      "text": "Hallebooyah has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-29T20:23:37",
+      "kind": "join",
+      "text": "Zilla_cw has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-29T12:12:43",
+      "kind": "join",
+      "text": "IGLWarlock has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-29T11:36:33",
+      "kind": "join",
+      "text": "Amadeus has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-28T20:20:05",
+      "kind": "join",
+      "text": "The Storyteller has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-28T13:48:05",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-27T23:12:51",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-27T23:12:49",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-27T23:12:46",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-27T23:12:22",
+      "kind": "join",
+      "text": "Alune The Beauty has joined the guild after being invited by ohnomypickle"
+    },
+    {
+      "date": "2026-09-27T23:06:35",
+      "kind": "exit",
+      "text": "Alune The Beauty has left the guild"
+    },
+    {
+      "date": "2026-09-27T21:04:21",
+      "kind": "join",
+      "text": "AGramos has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-26T21:18:47",
+      "kind": "exit",
+      "text": "Felouire was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-09-26T21:17:59",
+      "kind": "exit",
+      "text": "lies was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-09-26T21:15:33",
+      "kind": "exit",
+      "text": "AGramos was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-09-26T16:05:52",
+      "kind": "other",
+      "text": "The guild Order of Knights Radiant has joined the Alliance xxxFUNxxx"
+    },
+    {
+      "date": "2026-09-26T01:15:25",
+      "kind": "other",
+      "text": "The guild Natural One has been kicked from the Alliance xxxWANTEDxxx"
+    },
+    {
+      "date": "2026-09-24T20:31:52",
+      "kind": "join",
+      "text": "Aurora has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-24T20:01:43",
+      "kind": "exit",
+      "text": "Grah was kicked from the guild by Rydark"
+    },
+    {
+      "date": "2026-09-24T19:36:55",
+      "kind": "exit",
+      "text": "GetDead was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-09-23T20:33:16",
+      "kind": "rank",
+      "text": "Nigella's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-23T12:57:41",
+      "kind": "rank",
+      "text": "Sir Perceval's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-23T12:57:38",
+      "kind": "rank",
+      "text": "Sir Perceval's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-22T17:52:45",
+      "kind": "join",
+      "text": "Velissra has joined the guild after being invited by ohnomypickle"
+    },
+    {
+      "date": "2026-09-21T17:53:12",
+      "kind": "rank",
+      "text": "MALK1N's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-21T17:53:10",
+      "kind": "rank",
+      "text": "MALK1N's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-21T17:52:55",
+      "kind": "join",
+      "text": "MALK1N has joined the guild after being invited by Rydark"
+    },
+    {
+      "date": "2026-09-20T16:29:31",
+      "kind": "join",
+      "text": "Damar has joined the guild after being invited by Amaya"
+    },
+    {
+      "date": "2026-09-20T00:39:27",
+      "kind": "exit",
+      "text": "Eeirtis was kicked from the guild by Rydark"
+    },
+    {
+      "date": "2026-09-19T23:23:57",
+      "kind": "rank",
+      "text": "sora's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-19T23:23:18",
+      "kind": "rank",
+      "text": "Clanker TR's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-19T23:23:16",
+      "kind": "rank",
+      "text": "Clanker TR's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-19T23:23:14",
+      "kind": "rank",
+      "text": "Clanker TR's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-19T23:22:47",
+      "kind": "join",
+      "text": "sora has joined the guild after being invited by Ivydora"
+    },
+    {
+      "date": "2026-09-19T23:22:46",
+      "kind": "rank",
+      "text": "Zer0's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-19T23:22:44",
+      "kind": "rank",
+      "text": "Zer0's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-19T23:22:05",
+      "kind": "join",
+      "text": "Zer0 has joined the guild after being invited by Rilay GWF"
+    },
+    {
+      "date": "2026-09-19T23:21:26",
+      "kind": "join",
+      "text": "Clanker TR has joined the guild after being invited by Rilay GWF"
+    },
+    {
+      "date": "2026-09-19T20:02:30",
+      "kind": "exit",
+      "text": "Ace Raven was kicked from the guild by Rydark"
+    },
+    {
+      "date": "2026-09-19T20:02:04",
+      "kind": "exit",
+      "text": "Stan was kicked from the guild by Rydark"
+    },
+    {
+      "date": "2026-09-19T20:01:37",
+      "kind": "exit",
+      "text": "Lumenara was kicked from the guild by Rydark"
+    },
+    {
+      "date": "2026-09-18T23:07:06",
+      "kind": "exit",
+      "text": "sora was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-09-18T15:00:30",
+      "kind": "join",
+      "text": "Sir Perceval has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-17T20:52:08",
+      "kind": "rank",
+      "text": "Vickul Helltalon's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-17T20:52:06",
+      "kind": "rank",
+      "text": "Vickul Helltalon's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-17T20:10:20",
+      "kind": "join",
+      "text": "Vickul Helltalon has joined the guild after being invited by Rilay SW"
+    },
+    {
+      "date": "2026-09-16T23:08:10",
+      "kind": "rank",
+      "text": "Ruzzy's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-16T08:36:59",
+      "kind": "exit",
+      "text": "Brox Brutescale has left the guild"
+    },
+    {
+      "date": "2026-09-16T07:13:00",
+      "kind": "rank",
+      "text": "Fran Faithheart's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-16T07:12:58",
+      "kind": "rank",
+      "text": "Fran Faithheart's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-16T07:12:56",
+      "kind": "rank",
+      "text": "Fran Faithheart's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-16T07:03:58",
+      "kind": "join",
+      "text": "Fran Faithheart has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-15T15:20:20",
+      "kind": "join",
+      "text": "Rivakyn has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-15T15:17:28",
+      "kind": "rank",
+      "text": "Zixx Xtra's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-15T15:17:26",
+      "kind": "rank",
+      "text": "Zixx Xtra's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-15T15:17:23",
+      "kind": "rank",
+      "text": "Zixx Xtra's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-15T13:30:22",
+      "kind": "join",
+      "text": "Zixx Xtra has joined the guild after being invited by Amaya"
+    },
+    {
+      "date": "2026-09-15T02:16:51",
+      "kind": "exit",
+      "text": "Zeus was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-09-14T19:55:31",
+      "kind": "join",
+      "text": "Lethal Chaos has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-14T19:50:04",
+      "kind": "rank",
+      "text": "Vitamin's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-14T19:50:01",
+      "kind": "rank",
+      "text": "Vitamin's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-14T19:49:59",
+      "kind": "rank",
+      "text": "Vitamin's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-14T19:36:55",
+      "kind": "join",
+      "text": "Vitamin has joined the guild after being invited by ohnomypickle"
+    },
+    {
+      "date": "2026-09-14T10:52:00",
+      "kind": "exit",
+      "text": "BearBecue has left the guild"
+    },
+    {
+      "date": "2026-09-14T10:51:26",
+      "kind": "exit",
+      "text": "Svarog has left the guild"
+    },
+    {
+      "date": "2026-09-13T22:26:31",
+      "kind": "rank",
+      "text": "OldMan's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-13T21:31:47",
+      "kind": "join",
+      "text": "OldMan has joined the guild after being invited by Ivydora"
+    },
+    {
+      "date": "2026-09-13T18:15:33",
+      "kind": "exit",
+      "text": "BlueJay Seluma has left the guild"
+    },
+    {
+      "date": "2026-09-13T18:15:05",
+      "kind": "exit",
+      "text": "Sofyna Vergara has left the guild"
+    },
+    {
+      "date": "2026-09-13T18:14:24",
+      "kind": "exit",
+      "text": "Vixen of the Vaal has left the guild"
+    },
+    {
+      "date": "2026-09-13T18:07:09",
+      "kind": "exit",
+      "text": "Nero CW has left the guild"
+    },
+    {
+      "date": "2026-09-13T18:06:54",
+      "kind": "exit",
+      "text": "Neroka has left the guild"
+    },
+    {
+      "date": "2026-09-13T18:06:40",
+      "kind": "exit",
+      "text": "Neroxis has left the guild"
+    },
+    {
+      "date": "2026-09-13T16:51:00",
+      "kind": "rank",
+      "text": "sora's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-13T10:40:22",
+      "kind": "rank",
+      "text": "Kinkyy's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-12T19:38:10",
+      "kind": "rank",
+      "text": "Sunrise's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-12T19:37:42",
+      "kind": "join",
+      "text": "Sunrise has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-12T15:38:13",
+      "kind": "rank",
+      "text": "Pantomime's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-12T13:58:44",
+      "kind": "join",
+      "text": "2Patch has joined the guild after being invited by Ivydora"
+    },
+    {
+      "date": "2026-09-12T12:24:50",
+      "kind": "exit",
+      "text": "Vitamin has left the guild"
+    },
+    {
+      "date": "2026-09-12T11:11:40",
+      "kind": "exit",
+      "text": "OldMan has left the guild"
+    },
+    {
+      "date": "2026-09-12T11:10:51",
+      "kind": "exit",
+      "text": "Sunrise has left the guild"
+    },
+    {
+      "date": "2026-09-12T10:20:53",
+      "kind": "rank",
+      "text": "Shadowbane's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-12T10:20:51",
+      "kind": "rank",
+      "text": "Shadowbane's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-12T10:20:49",
+      "kind": "rank",
+      "text": "Shadowbane's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-12T10:20:31",
+      "kind": "join",
+      "text": "Shadowbane has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-12T00:12:28",
+      "kind": "rank",
+      "text": "Zero's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-12T00:12:25",
+      "kind": "rank",
+      "text": "Zero's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-12T00:12:12",
+      "kind": "join",
+      "text": "Zero has joined the guild after being invited by Rydark"
+    },
+    {
+      "date": "2026-09-09T22:36:38",
+      "kind": "rank",
+      "text": "Vitamin's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-09T22:36:35",
+      "kind": "rank",
+      "text": "Vitamin's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-09T22:36:33",
+      "kind": "rank",
+      "text": "Vitamin's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-09T21:25:35",
+      "kind": "join",
+      "text": "Vitamin has joined the guild after being invited by Rilay OP"
+    },
+    {
+      "date": "2026-09-09T21:22:05",
+      "kind": "exit",
+      "text": "Vitamin has left the guild"
+    },
+    {
+      "date": "2026-09-09T15:11:02",
+      "kind": "join",
+      "text": "Prediction has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-09T10:31:00",
+      "kind": "exit",
+      "text": "Karnil was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-09-08T21:22:19",
+      "kind": "join",
+      "text": "Felouire has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-08T13:18:11",
+      "kind": "rank",
+      "text": "Kinkyy's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-08T13:18:00",
+      "kind": "join",
+      "text": "Kinkyy has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-07T18:04:14",
+      "kind": "join",
+      "text": "BearBecue has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-07T16:44:51",
+      "kind": "rank",
+      "text": "Niedorth's Wisdom's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:44:48",
+      "kind": "rank",
+      "text": "Niedorth the Fallen's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:44:45",
+      "kind": "rank",
+      "text": "NIEDORTH's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:44:42",
+      "kind": "rank",
+      "text": "Baby Nie's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:35:18",
+      "kind": "rank",
+      "text": "Amethyst Felis-Koit's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:35:15",
+      "kind": "rank",
+      "text": "Emerald Acrux's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:50",
+      "kind": "rank",
+      "text": "Zixx Xulthar's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:48",
+      "kind": "rank",
+      "text": "Zixx Xorvash's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:46",
+      "kind": "rank",
+      "text": "Zixx Xintrel's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:43",
+      "kind": "rank",
+      "text": "Zixx Xantril's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:41",
+      "kind": "rank",
+      "text": "Zixx Ulfgrik's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:39",
+      "kind": "rank",
+      "text": "Zixx Silentread's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:36",
+      "kind": "rank",
+      "text": "Varis Darksbane's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:33",
+      "kind": "rank",
+      "text": "Numair Salmalin's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:30",
+      "kind": "rank",
+      "text": "Kyrian Tyvorn's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:28",
+      "kind": "rank",
+      "text": "Forgrim Mineshadow's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:14",
+      "kind": "rank",
+      "text": "Veralidaine Sarrasri's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:10",
+      "kind": "rank",
+      "text": "Rowan Deforet's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:07",
+      "kind": "rank",
+      "text": "Nyx Moonshadow's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:05",
+      "kind": "rank",
+      "text": "Nuit Loreweaver's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:03",
+      "kind": "rank",
+      "text": "Mystirielle Moonsong's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:01",
+      "kind": "rank",
+      "text": "Lirael Remembrancer's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:33:58",
+      "kind": "rank",
+      "text": "Dyreth Galanodel's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:33:55",
+      "kind": "rank",
+      "text": "Bryndiele Bloodthorn's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:33:52",
+      "kind": "rank",
+      "text": "Alanna the Lioness's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T15:37:19",
+      "kind": "join",
+      "text": "LFarquaad has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-07T09:31:52",
+      "kind": "rank",
+      "text": "Zixx Xintrel's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-07T09:31:50",
+      "kind": "rank",
+      "text": "Zixx Xintrel's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-07T09:31:27",
+      "kind": "join",
+      "text": "Zixx Xintrel has joined the guild after being invited by Rydark"
+    },
+    {
+      "date": "2026-09-07T09:29:49",
+      "kind": "rank",
+      "text": "Lirael Remembrancer's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-07T09:29:46",
+      "kind": "rank",
+      "text": "Lirael Remembrancer's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-07T09:29:24",
+      "kind": "join",
+      "text": "Lirael Remembrancer has joined the guild after being invited by Rydark"
+    },
+    {
+      "date": "2026-09-07T04:38:13",
+      "kind": "rank",
+      "text": "Clanker OP's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T04:38:11",
+      "kind": "rank",
+      "text": "Clanker GF's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T04:38:09",
+      "kind": "rank",
+      "text": "Clanker B's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T04:38:07",
+      "kind": "rank",
+      "text": "Clanker's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-06T20:27:40",
+      "kind": "rank",
+      "text": "Clanker OP's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-06T20:27:37",
+      "kind": "rank",
+      "text": "Clanker OP's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-06T20:17:34",
+      "kind": "join",
+      "text": "Clanker OP has joined the guild after being invited by Ivydora"
+    },
+    {
+      "date": "2026-09-06T20:08:20",
+      "kind": "join",
+      "text": "Grah has joined the guild after being invited by ohnomypickle"
+    },
+    {
+      "date": "2026-09-06T18:50:51",
+      "kind": "join",
+      "text": "GetDead has joined the guild after being invited by ohnomypickle"
+    },
+    {
+      "date": "2026-09-06T11:38:56",
+      "kind": "rank",
+      "text": "Singing Theo's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-06T11:38:29",
+      "kind": "join",
+      "text": "Singing Theo has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-06T03:10:22",
+      "kind": "exit",
+      "text": "vonnn has left the guild"
+    },
+    {
+      "date": "2026-09-05T23:56:58",
+      "kind": "join",
+      "text": "AGramos has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-05T23:47:21",
+      "kind": "join",
+      "text": "Lumenara has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-05T15:40:50",
+      "kind": "join",
+      "text": "GabyTzzu has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-05T12:13:15",
+      "kind": "join",
+      "text": "Hadryl Kay'ron has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-05T10:23:24",
+      "kind": "join",
+      "text": "andrea has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-05T09:26:04",
+      "kind": "join",
+      "text": "Svarog has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-05T09:08:53",
+      "kind": "exit",
+      "text": "Prediction was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-09-05T09:08:39",
+      "kind": "exit",
+      "text": "Qay was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-09-05T09:08:26",
+      "kind": "exit",
+      "text": "nunaga was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-09-05T09:06:16",
+      "kind": "exit",
+      "text": "Tilt was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-09-04T16:28:21",
+      "kind": "exit",
+      "text": "Kitten was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-09-04T04:13:05",
+      "kind": "exit",
+      "text": "Tib has left the guild"
+    },
+    {
+      "date": "2026-09-03T09:39:44",
+      "kind": "rank",
+      "text": "Clanker GF's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T09:39:41",
+      "kind": "rank",
+      "text": "Clanker B's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T09:39:39",
+      "kind": "rank",
+      "text": "Clanker's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T08:43:42",
+      "kind": "rank",
+      "text": "Nolanian's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T08:43:40",
+      "kind": "rank",
+      "text": "Navi GreenLight's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T08:43:38",
+      "kind": "rank",
+      "text": "Ammy lightstep's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T08:07:30",
+      "kind": "rank",
+      "text": "Ammy lightstep's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-03T08:07:28",
+      "kind": "rank",
+      "text": "Navi GreenLight's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-03T08:07:26",
+      "kind": "rank",
+      "text": "Nolanian's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-03T07:58:07",
+      "kind": "rank",
+      "text": "Brax Brokenscale's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-03T07:58:05",
+      "kind": "rank",
+      "text": "Brax Brokenscale's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T07:58:03",
+      "kind": "rank",
+      "text": "Brax Brokenscale's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-03T07:58:01",
+      "kind": "rank",
+      "text": "Dalia Strongshield's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-03T07:57:59",
+      "kind": "rank",
+      "text": "Dalia Strongshield's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T07:57:56",
+      "kind": "rank",
+      "text": "Dalia Strongshield's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-03T07:57:53",
+      "kind": "rank",
+      "text": "Jord Jaggedscale's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-03T07:57:51",
+      "kind": "rank",
+      "text": "Jord Jaggedscale's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T07:57:48",
+      "kind": "rank",
+      "text": "Jord Jaggedscale's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-03T07:57:46",
+      "kind": "rank",
+      "text": "Straag Sparklescale's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-03T07:57:44",
+      "kind": "rank",
+      "text": "Straag Sparklescale's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T07:57:41",
+      "kind": "rank",
+      "text": "Straag Sparklescale's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-03T07:38:56",
+      "kind": "rank",
+      "text": "sora's guild rank is now Initiate"
+    },
+    {
+      "date": "2026-09-03T07:35:56",
+      "kind": "rank",
+      "text": "Zerospace's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T07:35:33",
+      "kind": "rank",
+      "text": "Nolanian's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T07:34:25",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T01:49:00",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-03T01:48:57",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T01:48:16",
+      "kind": "rank",
+      "text": "sora's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-03T01:06:48",
+      "kind": "join",
+      "text": "Swiper No Swiping has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-03T01:03:28",
+      "kind": "join",
+      "text": "Straag Sparklescale has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-03T00:59:28",
+      "kind": "join",
+      "text": "Brax Brokenscale has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-03T00:54:09",
+      "kind": "join",
+      "text": "Jord Jaggedscale has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-02T23:12:06",
+      "kind": "rank",
+      "text": "Clanker's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-02T23:11:56",
+      "kind": "rank",
+      "text": "Clanker's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-02T23:11:46",
+      "kind": "rank",
+      "text": "Zerospace's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-02T23:07:46",
+      "kind": "rank",
+      "text": "Nolanian's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-02T23:07:01",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-02T21:33:01",
+      "kind": "join",
+      "text": "Dalia Strongshield has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-02T15:36:36",
+      "kind": "exit",
+      "text": "Balls was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-09-02T14:41:16",
+      "kind": "join",
+      "text": "Eeirtis has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-02T14:38:26",
+      "kind": "join",
+      "text": "PR0R0K has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-01T21:03:59",
+      "kind": "join",
+      "text": "Karnil has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-01T20:30:59",
+      "kind": "join",
+      "text": "LeviaTank has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-01T19:32:36",
+      "kind": "join",
+      "text": "Eeirtis has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-09-01T19:25:56",
+      "kind": "rank",
+      "text": "OldMan's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-01T19:25:53",
+      "kind": "rank",
+      "text": "Sunrise's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-01T19:25:28",
+      "kind": "rank",
+      "text": "Fighting Theo's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-01T18:14:14",
+      "kind": "join",
+      "text": "Kitten has joined the guild after being invited by Ivydora"
+    },
+    {
+      "date": "2026-08-31T20:21:03",
+      "kind": "rank",
+      "text": "Ragnar The Bard's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-31T20:20:29",
+      "kind": "join",
+      "text": "Ragnar The Bard has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-31T12:07:28",
+      "kind": "rank",
+      "text": "Niedorth's Wisdom's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-31T12:07:26",
+      "kind": "rank",
+      "text": "Niedorth's Wisdom's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-31T12:07:23",
+      "kind": "rank",
+      "text": "Niedorth the Fallen's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-31T12:07:21",
+      "kind": "rank",
+      "text": "Niedorth the Fallen's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-31T12:07:18",
+      "kind": "rank",
+      "text": "NIEDORTH's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-31T12:07:15",
+      "kind": "rank",
+      "text": "NIEDORTH's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-31T12:07:06",
+      "kind": "rank",
+      "text": "Baby Nie's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-31T12:07:03",
+      "kind": "rank",
+      "text": "Baby Nie's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-31T12:01:10",
+      "kind": "join",
+      "text": "Baby Nie has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-30T17:45:23",
+      "kind": "exit",
+      "text": "Radiant Randy has left the guild"
+    },
+    {
+      "date": "2026-08-30T17:45:00",
+      "kind": "exit",
+      "text": "Drew Silverkin has left the guild"
+    },
+    {
+      "date": "2026-08-30T17:37:16",
+      "kind": "exit",
+      "text": "Nyx has left the guild"
+    },
+    {
+      "date": "2026-08-30T17:37:00",
+      "kind": "exit",
+      "text": "Rei has left the guild"
+    },
+    {
+      "date": "2026-08-30T17:36:44",
+      "kind": "exit",
+      "text": "Ryn has left the guild"
+    },
+    {
+      "date": "2026-08-30T17:36:27",
+      "kind": "exit",
+      "text": "Elenara has left the guild"
+    },
+    {
+      "date": "2026-08-29T12:49:40",
+      "kind": "join",
+      "text": "TESSERACT has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-29T02:18:10",
+      "kind": "exit",
+      "text": "Rage was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-29T02:18:08",
+      "kind": "exit",
+      "text": "Playa was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-29T02:18:06",
+      "kind": "exit",
+      "text": "Lazyy Wizzy was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-29T02:18:03",
+      "kind": "exit",
+      "text": "Hocus was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-29T01:35:01",
+      "kind": "exit",
+      "text": "Cass RSA Dokotela was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-29T01:34:59",
+      "kind": "exit",
+      "text": "Cass was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-29T01:34:57",
+      "kind": "exit",
+      "text": "Cal was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-28T20:29:58",
+      "kind": "join",
+      "text": "Eeirtis has joined the guild after being invited by Ivydora"
+    },
+    {
+      "date": "2026-08-28T14:47:49",
+      "kind": "join",
+      "text": "Eeirtis has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-27T14:19:40",
+      "kind": "exit",
+      "text": "Sniffer was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-27T14:19:20",
+      "kind": "exit",
+      "text": "Beiro Silentread was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-27T14:06:32",
+      "kind": "rank",
+      "text": "SkyriM's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-27T02:13:25",
+      "kind": "join",
+      "text": "Zeus has joined the guild after being invited by Zephyr"
+    },
+    {
+      "date": "2026-08-26T14:06:42",
+      "kind": "rank",
+      "text": "Demetsch's guild rank is now Elder"
+    },
+    {
+      "date": "2026-08-26T14:06:40",
+      "kind": "rank",
+      "text": "Demetsch's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-26T14:06:38",
+      "kind": "rank",
+      "text": "Demetsch's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-26T14:06:36",
+      "kind": "rank",
+      "text": "Demetsch's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-26T14:06:28",
+      "kind": "join",
+      "text": "Demetsch has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-26T13:55:39",
+      "kind": "exit",
+      "text": "Bip was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-26T13:51:07",
+      "kind": "exit",
+      "text": "Hornstar was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-26T13:41:12",
+      "kind": "rank",
+      "text": "Clanker GF's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-26T13:41:09",
+      "kind": "rank",
+      "text": "Clanker B's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-26T13:41:03",
+      "kind": "rank",
+      "text": "Clanker's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-26T01:37:48",
+      "kind": "rank",
+      "text": "Hero's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-26T01:37:44",
+      "kind": "rank",
+      "text": "Hero's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-26T01:37:42",
+      "kind": "rank",
+      "text": "Hero's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-26T01:37:17",
+      "kind": "join",
+      "text": "Hero has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-26T01:37:04",
+      "kind": "exit",
+      "text": "Zarek Shadowstep was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-26T01:34:35",
+      "kind": "join",
+      "text": "Nigella has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-25T06:08:27",
+      "kind": "rank",
+      "text": "woodenwolf's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-25T01:07:58",
+      "kind": "join",
+      "text": "woodenwolf has joined the guild after being invited by Azazel"
+    },
+    {
+      "date": "2026-08-25T01:02:39",
+      "kind": "exit",
+      "text": "woodenwolf has left the guild"
+    },
+    {
+      "date": "2026-08-24T01:59:13",
+      "kind": "rank",
+      "text": "Gyda Thorunn's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-23T17:02:44",
+      "kind": "rank",
+      "text": "Zefrina's guild rank is now Elder"
+    },
+    {
+      "date": "2026-08-23T17:02:41",
+      "kind": "rank",
+      "text": "Zefrina's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-23T17:02:37",
+      "kind": "rank",
+      "text": "Zefrina's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-23T17:02:33",
+      "kind": "rank",
+      "text": "Zefrina's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-23T17:02:21",
+      "kind": "join",
+      "text": "Zefrina has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-23T17:02:03",
+      "kind": "exit",
+      "text": "Mack was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-23T12:30:12",
+      "kind": "join",
+      "text": "TESSERACT has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-23T10:51:22",
+      "kind": "rank",
+      "text": "Ann_Roze's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-22T21:35:46",
+      "kind": "join",
+      "text": "Sofyna Vergara has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-22T21:34:58",
+      "kind": "join",
+      "text": "BlueJay Seluma has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-22T20:39:55",
+      "kind": "exit",
+      "text": "Swiper No Swiping was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-22T20:39:53",
+      "kind": "exit",
+      "text": "Straag Sparklescale was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-22T20:39:51",
+      "kind": "exit",
+      "text": "Jord Jaggedscale was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-22T20:39:49",
+      "kind": "exit",
+      "text": "Dalia Strongshield was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-22T20:39:47",
+      "kind": "exit",
+      "text": "Brax Brokenscale was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-22T17:59:09",
+      "kind": "join",
+      "text": "Vixen of the Vaal has joined the guild after being invited by Rilay SW"
+    },
+    {
+      "date": "2026-08-21T22:14:51",
+      "kind": "join",
+      "text": "Neroxis has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-21T22:14:25",
+      "kind": "join",
+      "text": "Neroka has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-21T22:12:17",
+      "kind": "join",
+      "text": "Neroco has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-21T02:17:32",
+      "kind": "rank",
+      "text": "Vicious Helltalon's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-20T22:01:18",
+      "kind": "join",
+      "text": "Hornstar has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-20T21:12:39",
+      "kind": "join",
+      "text": "Zarek Shadowstep has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-20T14:24:54",
+      "kind": "exit",
+      "text": "Gambit was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-20T13:55:00",
+      "kind": "join",
+      "text": "Bip has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-20T08:07:18",
+      "kind": "exit",
+      "text": "Excal has left the guild"
+    },
+    {
+      "date": "2026-08-19T23:04:56",
+      "kind": "join",
+      "text": "sora has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-19T17:28:02",
+      "kind": "exit",
+      "text": "Morthos was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-19T17:24:12",
+      "kind": "join",
+      "text": "daz has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-19T17:23:08",
+      "kind": "join",
+      "text": "Ruzzy has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-19T16:30:49",
+      "kind": "join",
+      "text": "Balls has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-19T00:17:55",
+      "kind": "rank",
+      "text": "luna's guild rank is now Officer"
+    },
+    {
+      "date": "2026-08-19T00:17:52",
+      "kind": "rank",
+      "text": "luna's guild rank is now Elder"
+    },
+    {
+      "date": "2026-08-19T00:17:49",
+      "kind": "rank",
+      "text": "luna's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-19T00:17:47",
+      "kind": "rank",
+      "text": "luna's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-19T00:17:44",
+      "kind": "rank",
+      "text": "luna's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-19T00:02:11",
+      "kind": "join",
+      "text": "luna has joined the guild after being invited by Ivydora"
+    },
+    {
+      "date": "2026-08-17T09:32:46",
+      "kind": "exit",
+      "text": "Balidor ElRenon has left the guild"
+    },
+    {
+      "date": "2026-08-17T09:19:11",
+      "kind": "join",
+      "text": "Balidor ElRenon has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-16T21:36:59",
+      "kind": "join",
+      "text": "Eeirtis has joined the guild after being invited by Amaya"
+    },
+    {
+      "date": "2026-08-15T22:05:46",
+      "kind": "rank",
+      "text": "grizzie's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-15T19:22:30",
+      "kind": "join",
+      "text": "OldMan has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-15T18:15:10",
+      "kind": "exit",
+      "text": "elmotero was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-15T18:14:48",
+      "kind": "exit",
+      "text": "Tylo was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-15T18:13:35",
+      "kind": "exit",
+      "text": "Nubbles was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-15T18:02:29",
+      "kind": "exit",
+      "text": "HYBRID MAGE was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-15T18:02:26",
+      "kind": "exit",
+      "text": "HYBRID BARD was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-15T13:19:27",
+      "kind": "join",
+      "text": "Pantomime has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-15T07:15:15",
+      "kind": "join",
+      "text": "Fass and Draco M. has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-14T10:48:08",
+      "kind": "rank",
+      "text": "HardStyle's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-14T10:47:50",
+      "kind": "join",
+      "text": "Niedorth's Wisdom has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-14T10:47:27",
+      "kind": "join",
+      "text": "HardStyle has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-13T22:59:22",
+      "kind": "rank",
+      "text": "Ammy lightstep's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-13T22:59:19",
+      "kind": "rank",
+      "text": "Ammy lightstep's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-13T22:15:24",
+      "kind": "join",
+      "text": "Ammy lightstep has joined the guild after being invited by Ivydora"
+    },
+    {
+      "date": "2026-08-13T20:33:27",
+      "kind": "exit",
+      "text": "Dragon has left the guild"
+    },
+    {
+      "date": "2026-08-13T18:26:01",
+      "kind": "join",
+      "text": "Dragon has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-13T00:08:31",
+      "kind": "rank",
+      "text": "Rilay SW's guild rank is now Officer"
+    },
+    {
+      "date": "2026-08-13T00:08:28",
+      "kind": "rank",
+      "text": "Rilay SW's guild rank is now Elder"
+    },
+    {
+      "date": "2026-08-13T00:08:26",
+      "kind": "rank",
+      "text": "Rilay SW's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-13T00:08:24",
+      "kind": "rank",
+      "text": "Rilay SW's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-13T00:08:22",
+      "kind": "rank",
+      "text": "Rilay SW's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-13T00:06:50",
+      "kind": "join",
+      "text": "Rilay SW has joined the guild after being invited by Rilay"
+    },
+    {
+      "date": "2026-08-13T00:06:10",
+      "kind": "rank",
+      "text": "Ivydora's guild rank is now Officer"
+    },
+    {
+      "date": "2026-08-13T00:06:08",
+      "kind": "rank",
+      "text": "Ivydora's guild rank is now Elder"
+    },
+    {
+      "date": "2026-08-13T00:06:07",
+      "kind": "rank",
+      "text": "Ivydora's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-13T00:06:05",
+      "kind": "rank",
+      "text": "Ivydora's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-13T00:06:04",
+      "kind": "rank",
+      "text": "Ivydora's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-13T00:06:00",
+      "kind": "join",
+      "text": "Ivydora has joined the guild after being invited by Rilay"
+    },
+    {
+      "date": "2026-08-12T23:58:38",
+      "kind": "exit",
+      "text": "Rilay SW has left the guild"
+    },
+    {
+      "date": "2026-08-12T23:58:37",
+      "kind": "exit",
+      "text": "Ivydora has left the guild"
+    },
+    {
+      "date": "2026-08-12T20:34:51",
+      "kind": "exit",
+      "text": "Navi SweetSong has left the guild"
+    },
+    {
+      "date": "2026-08-12T18:14:03",
+      "kind": "exit",
+      "text": "Lia was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-12T18:09:14",
+      "kind": "exit",
+      "text": "Khamül was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-11T23:36:56",
+      "kind": "join",
+      "text": "Ace Raven has joined the guild after being invited by ohnomypickle"
+    },
+    {
+      "date": "2026-08-11T20:09:46",
+      "kind": "exit",
+      "text": "Stormy Blade has left the guild"
+    },
+    {
+      "date": "2026-08-11T19:03:55",
+      "kind": "join",
+      "text": "Tib has joined the guild after being invited by Elanor"
+    }
+  ]
+}

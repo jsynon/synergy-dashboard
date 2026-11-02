@@ -1,0 +1,2 @@
+# Raw guild exports may include account handles and private comments. Publish only data/snapshot.json.
+data/*.csv
