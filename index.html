@@ -31,7 +31,7 @@
 
 
       <div class="section-heading member-search-intro">
-        <div><p class="section-kicker">Member search</p><h2>Find a member</h2><p class="section-intro">Search characters or accounts, then narrow the roster by rank or class.</p></div>
+        <div><p class="section-kicker">Member search</p><h2>Find a member</h2><p class="section-intro">Search characters or accounts, or narrow the roster by rank or class.</p></div>
       </div>
       <section class="panel search-panel" id="member-search" aria-label="Search and filter the member directory">
         <div class="toolbar">
@@ -42,9 +42,9 @@
           </div>
         </div>
         <div class="directory-facets" aria-label="Filter characters by rank or class">
-          <div class="facet-row"><span class="facet-label">Rank</span><div id="rank-facets" class="facet-chips"></div></div>
-          <div class="facet-row"><span class="facet-label">Class</span><div id="class-facets" class="facet-chips"></div></div>
-          <p class="facet-note">Counts show characters. Select a rank or class to filter the directory.</p>
+          <label class="facet-select-field"><span class="facet-label">Rank</span><select id="rank-facets" aria-label="Filter by rank"></select></label>
+          <label class="facet-select-field"><span class="facet-label">Class</span><select id="class-facets" aria-label="Filter by class"></select></label>
+          <p class="facet-note">Counts show characters. Choose a rank or class to filter the directory.</p>
         </div>
         <div class="filter-actions"><button id="clear-filters" class="text-button">Clear filters</button></div>
       </section>
