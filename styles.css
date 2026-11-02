@@ -56,8 +56,6 @@ a { color: inherit; }
 .promotion-date { grid-column:1/-1; color:var(--muted); font-size:10px; }
 .inactivity-panel { margin:0 0 12px; padding:10px 14px; }
 .inactivity-panel .panel-heading { align-items:flex-start; margin-bottom:8px; }
-.inactivity-panel .panel-heading h2 { font-size:16px; }
-.inactivity-panel .section-subtitle { font-size:11px; }
 .inactivity-list { display:grid; gap:5px; max-height:190px; overflow-y:auto; padding-right:5px; scrollbar-color:#80643b #171d21; scrollbar-width:thin; }
 .inactivity-row { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:8px 10px; border:1px solid rgba(240,138,82,.25); background:linear-gradient(110deg,rgba(45,25,21,.7),rgba(18,26,32,.8)); }
 .inactivity-account-link { color:var(--gold-bright); font-weight:700; text-decoration:none; overflow-wrap:anywhere; }
