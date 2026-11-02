@@ -14,7 +14,7 @@
     <header class="masthead">
       <div class="brand-mark" aria-hidden="true">✦</div>
       <div class="brand-copy"><div class="brand-name">SYNERGY</div><div class="brand-subtitle">A Neverwinter Guild</div></div>
-      <nav aria-label="Page sections"><a href="#overview">Overview</a><a href="#roster">Roster</a><a href="#activity">Activity</a></nav>
+      <nav aria-label="Page sections"><a href="#overview">Overview</a><a href="#roster">Roster</a><a href="#activity">Activity</a><a href="#about">About</a></nav>
       <a class="discord-link" href="https://discord.gg/synergy-nw" target="_blank" rel="noreferrer">Join our Discord <span aria-hidden="true">↗</span></a>
     </header>
 
@@ -25,41 +25,39 @@
         <p class="hero-copy">The people, ranks, and recent history of Synergy.</p>
       </section>
 
-      <section class="stats-grid" aria-label="Guild statistics">
-        <article class="stat-card"><div class="stat-icon">♙</div><div><div class="stat-value" id="stat-characters">—</div><div class="stat-label">Characters</div><div class="stat-note" id="stat-accounts">From the latest roster snapshot</div></div></article>
-        <article class="stat-card"><div class="stat-icon">⌖</div><div><div class="stat-value" id="stat-ranks">—</div><div class="stat-label">Guild ranks</div><div class="stat-note">Across the roster</div></div></article>
-        <article class="stat-card"><div class="stat-icon">✧</div><div><div class="stat-value" id="stat-activity">—</div><div class="stat-label">Logged events</div><div class="stat-note" id="stat-range">From the latest activity snapshot</div></div></article>
-        <article class="stat-card"><div class="stat-icon">⌁</div><div><div class="stat-value" id="stat-online">—</div><div class="stat-label">Online in export</div><div class="stat-note">At roster export time</div></div></article>
+      <section class="stats-grid" aria-label="Guild overview">
+        <article class="stat-card"><div class="stat-icon">♙</div><div><div class="stat-value" id="stat-characters">—</div><div class="stat-label">Characters</div><div class="stat-note">Across the guild roster</div></div></article>
+        <article class="stat-card"><div class="stat-icon">⌖</div><div><div class="stat-value" id="stat-accounts">—</div><div class="stat-label">Unique accounts</div><div class="stat-note" id="stat-account-note">Guild membership</div></div></article>
+        <article class="stat-card"><div class="stat-icon">✧</div><div><div class="stat-value" id="stat-spots">—</div><div class="stat-label">Open spots</div><div class="stat-note">Guild account capacity</div></div></article>
       </section>
 
-      <section class="dashboard-grid">
-        <article class="panel rank-panel">
-          <div class="panel-heading"><div><p class="kicker">The ranks</p><h2>Members by rank</h2></div><span class="panel-mark">✦</span></div>
-          <div id="rank-chart" class="rank-chart"><div class="empty-state">No published roster snapshot is available.</div></div>
-        </article>
-
-        <article class="panel roster-panel" id="roster">
-          <div class="panel-heading roster-heading"><div><p class="kicker">Find your people</p><h2>Member directory</h2></div><span class="count-pill" id="shown-count">0 members</span></div>
-          <div class="toolbar">
-            <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search member, character, or class" autocomplete="off"></label>
-            <label class="select-wrap"><span class="sr-only">Filter by rank</span><select id="rank-filter"><option value="">All ranks</option></select></label>
-            <label class="select-wrap"><span class="sr-only">Filter by class</span><select id="class-filter"><option value="">All classes</option></select></label>
-          </div>
-          <div class="table-wrap">
-            <table>
-              <thead><tr><th><button data-sort="name" class="sort-button">Character <span>↕</span></button></th><th><button data-sort="rankOrder" class="sort-button">Rank <span>↕</span></button></th><th><button data-sort="class" class="sort-button">Class <span>↕</span></button></th><th><button data-sort="joinDate" class="sort-button">Joined <span>↕</span></button></th><th><button data-sort="lastOnline" class="sort-button">Last online <span>↕</span></button></th></tr></thead>
-              <tbody id="roster-body"><tr><td colspan="5" class="table-empty">No published roster snapshot is available.</td></tr></tbody>
-            </table>
-          </div>
-          <div class="table-foot"><span id="table-summary">Member names, ranks, and class details</span><button id="clear-filters" class="text-button">Clear filters</button></div>
-        </article>
+      <section class="panel roster-panel" id="roster">
+        <div class="panel-heading roster-heading"><div><p class="kicker">Find your people</p><h2>Member directory</h2><p class="section-subtitle">Search characters, then narrow the roster by rank or class.</p></div><span class="count-pill" id="shown-count">0 characters</span></div>
+        <div class="toolbar">
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search character names" autocomplete="off"></label>
+        </div>
+        <div class="directory-facets" aria-label="Filter characters by rank or class">
+          <div class="facet-row"><span class="facet-label">Rank</span><div id="rank-facets" class="facet-chips"></div></div>
+          <div class="facet-row"><span class="facet-label">Class</span><div id="class-facets" class="facet-chips"></div></div>
+          <p class="facet-note">Counts show characters. Select a rank or class to filter the directory.</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th><button data-sort="name" class="sort-button">Character <span>↕</span></button></th><th><button data-sort="rankOrder" class="sort-button">Rank <span>↕</span></button></th><th><button data-sort="class" class="sort-button">Class <span>↕</span></button></th><th><button data-sort="joinDate" class="sort-button">Joined <span>↕</span></button></th><th><button data-sort="lastOnline" class="sort-button">Last online <span>↕</span></button></th></tr></thead>
+            <tbody id="roster-body"><tr><td colspan="5" class="table-empty">No published roster snapshot is available.</td></tr></tbody>
+          </table>
+        </div>
+        <div class="table-foot"><span id="table-summary">Member names, ranks, class, join date, and last online</span><button id="clear-filters" class="text-button">Clear filters</button></div>
       </section>
+
+
 
       <section class="activity-grid" id="activity">
         <article class="panel activity-chart-panel">
-          <div class="panel-heading"><div><p class="kicker">Guild history</p><h2>Activity over time</h2></div><select id="activity-filter" aria-label="Activity chart filter"><option value="all">All events</option><option value="join">Joined</option><option value="exit">Departures</option><option value="rank">Rank changes</option></select></div>
+          <div class="panel-heading"><div><p class="kicker">Guild history</p><h2>Monthly guild movement</h2><p class="section-subtitle">Character joins, departures, and rank changes recorded in the activity log.</p></div></div>
           <div id="activity-chart" class="activity-chart"><div class="empty-state">No published activity snapshot is available.</div></div>
-          <div class="chart-legend"><span><i class="legend-dot gold"></i>Events recorded in the log</span><span id="activity-date-range"></span></div>
+          <div class="chart-legend"><span><i class="legend-dot join-color"></i>Joined</span><span><i class="legend-dot exit-color"></i>Departures</span><span><i class="legend-dot rank-color"></i>Rank changes</span><span><i class="legend-dot other-color"></i>Other</span></div>
+          <div class="chart-foot"><span id="activity-date-range"></span><span id="net-change-note"></span></div>
         </article>
         <article class="panel recent-panel">
           <div class="panel-heading"><div><p class="kicker">Latest records</p><h2>Recent activity</h2></div><span class="panel-mark">◷</span></div>
@@ -67,7 +65,10 @@
         </article>
       </section>
 
-
+      <section class="about-panel" id="about">
+        <div><p class="kicker">Adventurers welcome</p><h2>Find your place in Synergy</h2><p>We’re an active, friendly Neverwinter guild in the WANTED Alliance. Join us for dungeons and trials, build and progression advice, Synergy Academy, and the Masterwork Forge.</p></div>
+        <a class="gold-button" href="https://discord.gg/synergy-nw" target="_blank" rel="noreferrer">Visit Synergy on Discord <span aria-hidden="true">↗</span></a>
+      </section>
     </main>
 
     <footer><span>SYNERGY <i>✦</i> NEVERWINTER GUILD</span><span>Roster details reflect the latest published snapshot.</span></footer>
