@@ -472,3 +472,17 @@ footer span:first-child { color:var(--gold-bright); font:600 .9rem var(--serif);
   .directory-facets { grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; padding:9px; }
   .facet-select-field select { min-height:40px; padding-left:8px; font-size:.72rem; }
 }
+
+
+/* Account names in the directory act as exact account filters. */
+.directory-account-link {
+  color:#82d9ef;
+  text-decoration:none;
+  text-underline-offset:2px;
+  overflow-wrap:anywhere;
+}
+.directory-account-link:hover,
+.directory-account-link:focus-visible {
+  color:var(--gold-bright);
+  text-decoration:underline;
+}

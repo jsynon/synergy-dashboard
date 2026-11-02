@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const state = { roster: [], events: [], accountCount: 0, accountJoinDates: {}, generatedAt: null, sortBy: 'name', sortDirection: 1, rankFilter: '', classFilter: '' };
+  const state = { roster: [], events: [], accountCount: 0, accountJoinDates: {}, generatedAt: null, sortBy: 'name', sortDirection: 1, rankFilter: '', classFilter: '', accountFilter: '' };
   const $ = (id) => document.getElementById(id);
 
   const parseDate=(str)=>{
@@ -16,6 +16,10 @@
   const displayStatus=(m)=>{
     if(!m.lastOnline)return m.onlineNow?'Today':'—';const days=Math.floor((new Date()-m.lastOnline)/86400000);
     if(days<1)return 'Today';if(days===1)return 'Yesterday';if(days<30)return `${days} days ago`;return formatDate(m.lastOnline);
+  };
+  const directoryAccountLink=(account)=>{
+    const value=String(account||'').trim();
+    return value?`<a class="directory-account-link" href="#roster" data-account-query="${escapeHtml(value)}">${escapeHtml(value)}</a>`:'—';
   };
   function renderSnapshotStatus(){
     const dateLabel=state.generatedAt?formatDate(state.generatedAt):null;
@@ -115,7 +119,8 @@
   }
   function getVisibleMembers(){
     const query=$('search').value.trim().toLowerCase();
-    return state.roster.filter(m=>(!query||`${m.name} ${m.account||''} ${m.class} ${m.rank}`.toLowerCase().includes(query))&&(!state.rankFilter||m.rank===state.rankFilter)&&(!state.classFilter||m.class===state.classFilter)).sort((a,b)=>{
+    const exactAccount=(state.accountFilter||'').trim().toLocaleLowerCase();
+    return state.roster.filter(m=>(!exactAccount||(m.account||'').trim().toLocaleLowerCase()===exactAccount)&&(!query||`${m.name} ${m.account||''} ${m.class} ${m.rank}`.toLowerCase().includes(query))&&(!state.rankFilter||m.rank===state.rankFilter)&&(!state.classFilter||m.class===state.classFilter)).sort((a,b)=>{
       let av=a[state.sortBy],bv=b[state.sortBy];if(av instanceof Date)av=av.getTime();if(bv instanceof Date)bv=bv.getTime();if(av==null)av='';if(bv==null)bv='';
       return (typeof av==='number'&&typeof bv==='number'?(av-bv):String(av).localeCompare(String(bv),undefined,{numeric:true,sensitivity:'base'}))*state.sortDirection;
     });
@@ -131,13 +136,13 @@
     $('mobile-sort').value=state.sortBy;
     $('mobile-sort-direction').textContent=state.sortDirection===1?'Ascending ↑':'Descending ↓';
     $('mobile-sort-direction').setAttribute('aria-label',state.sortDirection===1?'Sort descending':'Sort ascending');
-    $('roster-body').innerHTML=rows.length?rows.map(m=>`<tr><td class="member-name">${escapeHtml(m.name)}</td><td class="account-name">${escapeHtml(m.account||"")}</td><td><span class="rank-tag"><i class="rank-dot rank-${m.rankOrder}"></i>${escapeHtml(m.rank)}</span></td><td class="class-name">${escapeHtml(m.class)}</td><td>${formatDate(m.joinDate)}</td><td title="${m.lastOnline?escapeHtml(formatDate(m.lastOnline,true)):''}">${displayStatus(m)}</td></tr>`).join(''):'<tr><td colspan="6" class="table-empty">No members match these filters.</td></tr>';
+    $('roster-body').innerHTML=rows.length?rows.map(m=>`<tr><td class="member-name">${escapeHtml(m.name)}</td><td class="account-name">${directoryAccountLink(m.account)}</td><td><span class="rank-tag"><i class="rank-dot rank-${m.rankOrder}"></i>${escapeHtml(m.rank)}</span></td><td class="class-name">${escapeHtml(m.class)}</td><td>${formatDate(m.joinDate)}</td><td title="${m.lastOnline?escapeHtml(formatDate(m.lastOnline,true)):''}">${displayStatus(m)}</td></tr>`).join(''):'<tr><td colspan="6" class="table-empty">No members match these filters.</td></tr>';
     $('mobile-roster-list').innerHTML=rows.length?rows.map(m=>`<article class="mobile-member-card">
       <header class="mobile-member-card-head">
         <div class="mobile-member-identity"><h3 class="mobile-member-name">${escapeHtml(m.name)}</h3><span class="mobile-member-class">${escapeHtml(m.class)}</span></div>
         <span class="rank-tag mobile-member-rank"><i class="rank-dot rank-${m.rankOrder}"></i>${escapeHtml(m.rank)}</span>
       </header>
-      <div class="mobile-member-account"><span class="mobile-member-label">Account</span><span class="mobile-member-value">${escapeHtml(m.account||'—')}</span></div>
+      <div class="mobile-member-account"><span class="mobile-member-label">Account</span><span class="mobile-member-value">${directoryAccountLink(m.account)}</span></div>
       <div class="mobile-member-dates">
         <div><span class="mobile-member-label">Joined</span><span class="mobile-member-value">${formatDate(m.joinDate)}</span></div>
         <div><span class="mobile-member-label">Last online</span><span class="mobile-member-value mobile-member-status" title="${m.lastOnline?escapeHtml(formatDate(m.lastOnline,true)):''}">${displayStatus(m)}</span></div>
@@ -197,14 +202,25 @@
     try{const response=await fetch('data/snapshot.json',{cache:'no-store'});if(!response.ok)throw new Error('Snapshot not found');loadSnapshot(await response.json());}
     catch(_){$('data-status').textContent='No published snapshot found';}
   }
-  $('search').addEventListener('input',renderRoster);
+  $('search').addEventListener('input',()=>{state.accountFilter='';renderRoster();});
   $('activity-search').addEventListener('input',renderRecent);
+  $('roster').addEventListener('click',event=>{
+    const link=event.target.closest('.directory-account-link');
+    if(!link)return;
+    event.preventDefault();
+    const account=link.dataset.accountQuery||'';
+    $('search').value=account;
+    state.accountFilter=account.trim().toLocaleLowerCase();
+    state.rankFilter='';state.classFilter='';
+    renderDirectoryFilters();renderRoster();
+    $('roster').scrollIntoView({behavior:'smooth',block:'start'});
+  });
   $('promotion-list').addEventListener('click',event=>{
     const link=event.target.closest('.promotion-account-link');
     if(!link)return;
     event.preventDefault();
     $('search').value=link.dataset.accountQuery||'';
-    state.rankFilter='';state.classFilter='';renderDirectoryFilters();renderRoster();
+    state.rankFilter='';state.classFilter='';state.accountFilter='';renderDirectoryFilters();renderRoster();
     $('roster').scrollIntoView({behavior:'smooth',block:'start'});
   });
   const promotionRulesDialog=$('promotion-rules-dialog');
@@ -224,7 +240,7 @@
     if(!link)return;
     event.preventDefault();
     $('search').value=link.dataset.accountQuery||'';
-    state.rankFilter='';state.classFilter='';renderDirectoryFilters();renderRoster();
+    state.rankFilter='';state.classFilter='';state.accountFilter='';renderDirectoryFilters();renderRoster();
     $('roster').scrollIntoView({behavior:'smooth',block:'start'});
   });
   $('recent-events').addEventListener('click',event=>{
@@ -232,7 +248,7 @@
     if(!link)return;
     event.preventDefault();
     $('search').value=link.dataset.memberQuery||'';
-    state.rankFilter='';state.classFilter='';renderDirectoryFilters();renderRoster();
+    state.rankFilter='';state.classFilter='';state.accountFilter='';renderDirectoryFilters();renderRoster();
     $('roster').scrollIntoView({behavior:'smooth',block:'start'});
   });
   document.querySelectorAll('.sort-button').forEach(b=>b.addEventListener('click',()=>{if(state.sortBy===b.dataset.sort)state.sortDirection*=-1;else{state.sortBy=b.dataset.sort;state.sortDirection=1;}renderRoster();}));
@@ -240,6 +256,6 @@
   $('mobile-sort-direction').addEventListener('click',()=>{state.sortDirection*=-1;renderRoster();});
   $('rank-facets').addEventListener('change',event=>{state.rankFilter=event.target.value;renderRoster();});
   $('class-facets').addEventListener('change',event=>{state.classFilter=event.target.value;renderRoster();});
-  $('clear-filters').addEventListener('click',()=>{$('search').value='';state.rankFilter='';state.classFilter='';renderDirectoryFilters();renderRoster();});
+  $('clear-filters').addEventListener('click',()=>{$('search').value='';state.rankFilter='';state.classFilter='';state.accountFilter='';renderDirectoryFilters();renderRoster();});
   autoLoad();
 })();
