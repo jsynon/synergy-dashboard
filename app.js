@@ -164,15 +164,17 @@
       if(nameStart<cursor)continue;
       html+=escapeHtml(text.slice(cursor,nameStart));
       const member=memberByName.get(match[2].toLocaleLowerCase());
-      const rawHandle=(text.slice(nameEnd).match(/^@[A-Za-z0-9._-]+(?:#[A-Za-z0-9]+)?/)||[])[0]||'';
-      let account=rawHandle||((member&&member.account)||'');
+      const rawMatch=text.slice(nameEnd).match(/^(?:\\s+[A-Za-z])?\\s*(@[A-Za-z0-9._-]+(?:#[A-Za-z0-9]+)?)/);
+      const rawHandle=rawMatch?rawMatch[1]:'';
+      const memberAccount=member?String(member.account||'').replace(/^@/,''):'';
+      const sameAccount=Boolean(rawHandle&&memberAccount&&rawHandle.slice(1).toLocaleLowerCase()===memberAccount.toLocaleLowerCase());
+      let account=(sameAccount?rawHandle:((member&&member.account)||rawHandle||''));
       if(account&&!account.startsWith('@'))account='@'+account;
-      const suffix=rawHandle?rawHandle:account;
-      const label=match[2]+suffix;
+      const label=match[2]+account;
       const query=member?(member.account||member.name):match[2];
       html+=`<a class="activity-member-link" href="#roster" data-member-query="${escapeHtml(query)}">${escapeHtml(label)}</a>`;
       if(member&&account)searchableHandles.set(member.name.toLocaleLowerCase(),account);
-      cursor=nameEnd+(rawHandle?rawHandle.length:0);
+      cursor=nameEnd+(sameAccount?rawMatch[0].length:0);
       matcher.lastIndex=cursor;
     }
     html+=escapeHtml(text.slice(cursor));
