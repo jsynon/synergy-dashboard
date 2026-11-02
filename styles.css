@@ -381,3 +381,39 @@ footer span:first-child { color:var(--gold-bright); font:600 .9rem var(--serif);
   .roster-heading > div { flex:1 1 100%; min-width:0; }
   .roster-heading .count-pill { max-width:100%; white-space:normal; overflow-wrap:anywhere; }
 }
+
+/* Compact character cards replace the wide roster table on phones. */
+.mobile-roster-list { display:none; }
+.mobile-member-card {
+  min-width:0;
+  padding:12px;
+  border:1px solid rgba(190,160,103,.32);
+  border-radius:3px;
+  background:linear-gradient(115deg,rgba(10,31,42,.94),rgba(26,25,21,.94));
+  box-shadow:inset 0 1px rgba(255,255,255,.025);
+}
+.mobile-member-card-head { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; }
+.mobile-member-identity { min-width:0; }
+.mobile-member-name { margin:0; color:var(--gold-bright); font:600 1rem/1.3 var(--serif); overflow-wrap:anywhere; }
+.mobile-member-class { display:block; margin-top:4px; color:#a9c9c6; font-size:.75rem; text-transform:uppercase; letter-spacing:.05em; }
+.mobile-member-rank { flex:0 0 auto; padding:4px 7px; border:1px solid rgba(89,201,232,.26); border-radius:3px; background:rgba(89,201,232,.07); color:#dbe6ec; font-size:.68rem; }
+.mobile-member-account { display:grid; gap:3px; min-width:0; margin-top:10px; padding-top:9px; border-top:1px solid rgba(190,204,215,.12); }
+.mobile-member-label { display:block; color:var(--teal); font-size:.62rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+.mobile-member-value { min-width:0; color:#eaf2f6; font-size:.82rem; overflow-wrap:anywhere; }
+.mobile-member-dates { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:10px; margin-top:9px; padding-top:9px; border-top:1px solid rgba(190,204,215,.1); }
+.mobile-member-dates > div { display:grid; gap:3px; min-width:0; }
+.mobile-member-status { color:var(--gold-bright); }
+@media(max-width:620px) {
+  .table-wrap { display:none; }
+  .mobile-roster-list {
+    display:grid;
+    align-content:start;
+    gap:8px;
+    max-height:430px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    padding-right:4px;
+    scrollbar-color:#80643b #171d21;
+    scrollbar-width:thin;
+  }
+}

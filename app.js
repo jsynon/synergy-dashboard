@@ -129,6 +129,17 @@
     $('directory-count').textContent=$('search-results-count').textContent;
     $('table-summary').textContent=`Showing ${rows.length.toLocaleString()} of ${state.roster.length.toLocaleString()} character records`;
     $('roster-body').innerHTML=rows.length?rows.map(m=>`<tr><td class="member-name">${escapeHtml(m.name)}</td><td class="account-name">${escapeHtml(m.account||"")}</td><td><span class="rank-tag"><i class="rank-dot rank-${m.rankOrder}"></i>${escapeHtml(m.rank)}</span></td><td class="class-name">${escapeHtml(m.class)}</td><td>${formatDate(m.joinDate)}</td><td title="${m.lastOnline?escapeHtml(formatDate(m.lastOnline,true)):''}">${displayStatus(m)}</td></tr>`).join(''):'<tr><td colspan="6" class="table-empty">No members match these filters.</td></tr>';
+    $('mobile-roster-list').innerHTML=rows.length?rows.map(m=>`<article class="mobile-member-card">
+      <header class="mobile-member-card-head">
+        <div class="mobile-member-identity"><h3 class="mobile-member-name">${escapeHtml(m.name)}</h3><span class="mobile-member-class">${escapeHtml(m.class)}</span></div>
+        <span class="rank-tag mobile-member-rank"><i class="rank-dot rank-${m.rankOrder}"></i>${escapeHtml(m.rank)}</span>
+      </header>
+      <div class="mobile-member-account"><span class="mobile-member-label">Account</span><span class="mobile-member-value">${escapeHtml(m.account||'—')}</span></div>
+      <div class="mobile-member-dates">
+        <div><span class="mobile-member-label">Joined</span><span class="mobile-member-value">${formatDate(m.joinDate)}</span></div>
+        <div><span class="mobile-member-label">Last online</span><span class="mobile-member-value mobile-member-status" title="${m.lastOnline?escapeHtml(formatDate(m.lastOnline,true)):''}">${displayStatus(m)}</span></div>
+      </div>
+    </article>`).join(''):'<div class="empty-state">No members match these filters.</div>';
     document.querySelectorAll('.sort-button').forEach(b=>b.setAttribute('aria-sort',b.dataset.sort===state.sortBy?(state.sortDirection===1?'ascending':'descending'):'none'));
   }
   function activityMemberText(text){
