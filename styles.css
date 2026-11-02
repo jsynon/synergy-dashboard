@@ -259,10 +259,9 @@ td { padding:10px 11px; }
 .masthead nav a { display:inline-flex; align-items:center; justify-content:center; padding:10px 14px; border:1px solid rgba(190,160,103,.32); border-radius:3px; color:#dbe6ec; background:rgba(10,20,31,.52); font:600 12px var(--serif); white-space:nowrap; }
 .masthead nav a:hover,.masthead nav a:focus-visible { color:var(--gold-bright); border-color:var(--line); background:rgba(255,255,255,.05); }
 .discord-link { grid-column:3; justify-self:end; margin:0; padding:10px 13px; border-radius:3px; font-size:12px; }
-footer { align-items:center; padding:21px 3px 30px; color:#c2d0d8; border-top:1px solid rgba(190,160,103,.55); font-size:.88rem; }
+footer { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; padding:21px 3px 30px; color:#c2d0d8; border-top:1px solid rgba(190,160,103,.55); font-size:.88rem; text-align:center; }
 footer span:first-child { color:var(--gold-bright); font:600 .82rem var(--serif); letter-spacing:.12em; }
-footer span:last-child { font-size:.88rem; line-height:1.55; }
-.footer-credit { display:block; margin-top:5px; color:#b7c5cf; font-size:.8rem; }
+.footer-credit { display:block; margin:0; color:#b7c5cf; font-size:.8rem; line-height:1.55; text-align:center; }
 @media(max-width:850px) {
   .masthead nav { gap:5px; }
   .masthead nav a { padding:9px 11px; }
@@ -272,9 +271,8 @@ footer span:last-child { font-size:.88rem; line-height:1.55; }
   .masthead nav { grid-column:1/-1; grid-row:2; position:static; transform:none; justify-self:center; width:auto; justify-content:center; gap:6px; margin:6px 0 0; padding:0; border:0; }
   .masthead nav a { padding:9px 10px; font-size:10px; }
   .discord-link { grid-column:2; grid-row:1; justify-self:end; margin:0; padding:9px 11px; font-size:11px; }
-  footer { align-items:flex-start; gap:9px; padding:18px 2px 24px; font-size:.8rem; }
+  footer { align-items:center; gap:5px; padding:18px 2px 24px; font-size:.8rem; text-align:center; }
   footer span:first-child { font-size:.76rem; }
-  footer span:last-child { font-size:.8rem; }
   .footer-credit { font-size:.76rem; }
 }
 
