@@ -254,11 +254,11 @@ td { padding:10px 11px; }
 @media(max-width:620px) { .search-panel { padding:13px 11px; } }
 
 /* Shared masthead and footer finish */
-.masthead { position:relative; }
-.masthead nav { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); margin:0; gap:8px; }
+.masthead { display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); align-items:center; gap:14px; }
+.masthead nav { grid-column:2; justify-self:center; margin:0; gap:8px; }
 .masthead nav a { display:inline-flex; align-items:center; justify-content:center; padding:10px 14px; border:1px solid rgba(190,160,103,.32); border-radius:3px; color:#dbe6ec; background:rgba(10,20,31,.52); font:600 12px var(--serif); white-space:nowrap; }
 .masthead nav a:hover,.masthead nav a:focus-visible { color:var(--gold-bright); border-color:var(--line); background:rgba(255,255,255,.05); }
-.discord-link { margin-left:auto; padding:10px 13px; border-radius:3px; font-size:12px; }
+.discord-link { grid-column:3; justify-self:end; margin:0; padding:10px 13px; border-radius:3px; font-size:12px; }
 footer { align-items:center; padding:21px 3px 30px; color:#c2d0d8; border-top:1px solid rgba(190,160,103,.55); font-size:.88rem; }
 footer span:first-child { color:var(--gold-bright); font:600 .82rem var(--serif); letter-spacing:.12em; }
 footer span:last-child { font-size:.88rem; line-height:1.55; }
@@ -268,9 +268,10 @@ footer span:last-child { font-size:.88rem; line-height:1.55; }
   .masthead nav a { padding:9px 11px; }
 }
 @media(max-width:620px) {
-  .masthead nav { position:static; left:auto; top:auto; transform:none; order:3; width:100%; justify-content:center; gap:6px; margin:5px 0 0; padding-top:7px; border-top:1px solid rgba(177,138,72,.2); }
+  .masthead { grid-template-columns:minmax(0,1fr) auto; padding-top:17px; }
+  .masthead nav { grid-column:1/-1; grid-row:2; position:static; transform:none; justify-self:center; width:auto; justify-content:center; gap:6px; margin:6px 0 0; padding:0; border:0; }
   .masthead nav a { padding:9px 10px; font-size:10px; }
-  .discord-link { margin-left:auto; padding:9px 11px; font-size:11px; }
+  .discord-link { grid-column:2; grid-row:1; justify-self:end; margin:0; padding:9px 11px; font-size:11px; }
   footer { align-items:flex-start; gap:9px; padding:18px 2px 24px; font-size:.8rem; }
   footer span:first-child { font-size:.76rem; }
   footer span:last-child { font-size:.8rem; }
