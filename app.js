@@ -54,7 +54,7 @@
     const upcoming=[...accounts.values()].filter(account=>monthsByRank[account.rankOrder]&&account.joinDate).map(account=>{
       const eligibleDate=addCalendarMonths(account.joinDate,monthsByRank[account.rankOrder]);
       return {...account,eligibleDate};
-    }).filter(account=>account.eligibleDate>=startOfToday&&account.eligibleDate<=endOfWindow)
+    }).filter(account=>account.eligibleDate<=endOfWindow)
       .sort((a,b)=>a.eligibleDate-b.eligibleDate||a.account.localeCompare(b.account));
     const count=upcoming.length;
     $('promotion-list').innerHTML=count?upcoming.map(account=>{
