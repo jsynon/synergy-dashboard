@@ -51,6 +51,18 @@
 
       <section class="panel roster-panel" id="roster">
         <div class="panel-heading roster-heading"><div><p class="kicker">Roster export</p><h2>Member directory</h2><p class="section-subtitle">Roster details for each character and account.</p></div><span class="count-pill" id="directory-count">Loading roster totals</span></div>
+        <div class="mobile-directory-sort">
+          <label for="mobile-sort">Sort by</label>
+          <select id="mobile-sort" aria-label="Sort member directory">
+            <option value="name">Character</option>
+            <option value="account">Account</option>
+            <option value="rankOrder">Rank</option>
+            <option value="class">Class</option>
+            <option value="joinDate">Joined</option>
+            <option value="lastOnline">Last online</option>
+          </select>
+          <button type="button" id="mobile-sort-direction" aria-label="Sort ascending">Ascending ↑</button>
+        </div>
         <div class="table-wrap">
           <table>
             <thead><tr><th><button data-sort="name" class="sort-button">Character <span>↕</span></button></th><th><button data-sort="account" class="sort-button">Account <span>↕</span></button></th><th><button data-sort="rankOrder" class="sort-button">Rank <span>↕</span></button></th><th><button data-sort="class" class="sort-button">Class <span>↕</span></button></th><th><button data-sort="joinDate" class="sort-button">Joined <span>↕</span></button></th><th><button data-sort="lastOnline" class="sort-button">Last online <span>↕</span></button></th></tr></thead>

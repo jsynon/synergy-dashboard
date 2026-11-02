@@ -417,3 +417,29 @@ footer span:first-child { color:var(--gold-bright); font:600 .9rem var(--serif);
     scrollbar-width:thin;
   }
 }
+
+
+.mobile-directory-sort { display:none; }
+.mobile-directory-sort label {
+  color:var(--teal);
+  font-size:.62rem;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+.mobile-directory-sort select,
+.mobile-directory-sort button {
+  min-height:34px;
+  padding:6px 9px;
+  border:1px solid rgba(190,160,103,.32);
+  border-radius:3px;
+  background:#101a24;
+  color:var(--text);
+  font: .76rem var(--body);
+}
+.mobile-directory-sort button { color:var(--gold-bright); cursor:pointer; }
+.mobile-directory-sort button:hover { border-color:var(--teal); }
+@media(max-width:620px) {
+  .mobile-directory-sort { display:flex; align-items:center; justify-content:flex-end; gap:7px; margin:0 0 8px; }
+  .mobile-directory-sort select { max-width:46%; }
+}

@@ -128,6 +128,9 @@
     $('search-results-count').textContent=`${rows.length.toLocaleString()} ${characterLabel} · ${matchingAccounts.toLocaleString()} ${accountLabel} found`;
     $('directory-count').textContent=$('search-results-count').textContent;
     $('table-summary').textContent=`Showing ${rows.length.toLocaleString()} of ${state.roster.length.toLocaleString()} character records`;
+    $('mobile-sort').value=state.sortBy;
+    $('mobile-sort-direction').textContent=state.sortDirection===1?'Ascending ↑':'Descending ↓';
+    $('mobile-sort-direction').setAttribute('aria-label',state.sortDirection===1?'Sort descending':'Sort ascending');
     $('roster-body').innerHTML=rows.length?rows.map(m=>`<tr><td class="member-name">${escapeHtml(m.name)}</td><td class="account-name">${escapeHtml(m.account||"")}</td><td><span class="rank-tag"><i class="rank-dot rank-${m.rankOrder}"></i>${escapeHtml(m.rank)}</span></td><td class="class-name">${escapeHtml(m.class)}</td><td>${formatDate(m.joinDate)}</td><td title="${m.lastOnline?escapeHtml(formatDate(m.lastOnline,true)):''}">${displayStatus(m)}</td></tr>`).join(''):'<tr><td colspan="6" class="table-empty">No members match these filters.</td></tr>';
     $('mobile-roster-list').innerHTML=rows.length?rows.map(m=>`<article class="mobile-member-card">
       <header class="mobile-member-card-head">
@@ -233,6 +236,8 @@
     $('roster').scrollIntoView({behavior:'smooth',block:'start'});
   });
   document.querySelectorAll('.sort-button').forEach(b=>b.addEventListener('click',()=>{if(state.sortBy===b.dataset.sort)state.sortDirection*=-1;else{state.sortBy=b.dataset.sort;state.sortDirection=1;}renderRoster();}));
+  $('mobile-sort').addEventListener('change',event=>{state.sortBy=event.target.value;state.sortDirection=1;renderRoster();});
+  $('mobile-sort-direction').addEventListener('click',()=>{state.sortDirection*=-1;renderRoster();});
   $('clear-filters').addEventListener('click',()=>{$('search').value='';state.rankFilter='';state.classFilter='';renderDirectoryFilters();renderRoster();});
   autoLoad();
 })();
