@@ -17,7 +17,6 @@
     <div class="brand-banner" aria-label="Synergy guild crest"><img src="assets/synergy-banner.webp" alt="Synergy crest between icy blue and amber magic"></div>
     <header class="masthead">
       <div class="brand-mark"><img src="assets/synergy-emblem.webp" alt="" aria-hidden="true"></div>
-      <div class="brand-copy"><div class="brand-name">SYNERGY</div><div class="brand-subtitle">A Neverwinter Guild</div></div>
       <nav aria-label="Main menu"><a href="https://jsynon.github.io/synergy-dashboard/">Guild Roster</a><a href="https://jsynon.github.io/synergy-craft/">Masterwork Forge</a></nav>
       <a class="discord-link" href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">Join our Discord <span aria-hidden="true">↗</span></a>
     </header>
@@ -29,8 +28,8 @@
         <p class="hero-copy">Explore Synergy’s roster and recent guild activity.</p>
       </section>
 
-      <section class="panel roster-panel" id="roster">
-        <div class="panel-heading roster-heading"><div><p class="kicker">Roster export</p><h2>Member directory</h2><p class="section-subtitle">Search characters or accounts, then narrow the roster by rank or class.</p></div><span class="count-pill" id="directory-count">Loading roster totals</span></div>
+      <section class="panel search-panel" id="member-search">
+        <div class="panel-heading"><div><p class="kicker">Member search</p><h2>Find a member</h2><p class="section-subtitle">Search characters or accounts, then narrow the roster by rank or class.</p></div></div>
         <div class="toolbar">
           <div class="field directory-search">
             <label for="search">Search</label>
@@ -42,19 +41,22 @@
           <div class="facet-row"><span class="facet-label">Class</span><div id="class-facets" class="facet-chips"></div></div>
           <p class="facet-note">Counts show characters. Select a rank or class to filter the directory.</p>
         </div>
+        <div class="filter-actions"><button id="clear-filters" class="text-button">Clear filters</button></div>
+      </section>
+
+      <section class="panel roster-panel" id="roster">
+        <div class="panel-heading roster-heading"><div><p class="kicker">Roster export</p><h2>Member directory</h2><p class="section-subtitle">Roster details for each character and account.</p></div><span class="count-pill" id="directory-count">Loading roster totals</span></div>
         <div class="table-wrap">
           <table>
             <thead><tr><th><button data-sort="name" class="sort-button">Character <span>↕</span></button></th><th><button data-sort="account" class="sort-button">Account <span>↕</span></button></th><th><button data-sort="rankOrder" class="sort-button">Rank <span>↕</span></button></th><th><button data-sort="class" class="sort-button">Class <span>↕</span></button></th><th><button data-sort="joinDate" class="sort-button">Joined <span>↕</span></button></th><th><button data-sort="lastOnline" class="sort-button">Last online <span>↕</span></button></th></tr></thead>
             <tbody id="roster-body"><tr><td colspan="6" class="table-empty">No published roster snapshot is available.</td></tr></tbody>
           </table>
         </div>
-        <div class="table-foot"><span id="table-summary">Character and account names, rank, class, join date, and last online</span><button id="clear-filters" class="text-button">Clear filters</button></div>
+        <div class="table-foot"><span id="table-summary">Character and account names, rank, class, join date, and last online</span></div>
       </section>
 
-
-
       <section class="panel recent-panel" id="activity">
-        <div class="panel-heading"><div><p class="kicker">Activity log export</p><h2>Recent activity</h2><p class="section-subtitle">The 50 newest events from the latest activity log.</p></div><span class="panel-mark">◷</span></div>
+        <div class="panel-heading"><div><p class="kicker">Activity log export</p><h2>Recent activity</h2><p class="section-subtitle">All events from the latest activity log, newest first.</p></div><span class="panel-mark">◷</span></div>
         <div id="recent-events" class="recent-events"><div class="empty-state">No published activity snapshot is available.</div></div>
       </section>
     </main>
