@@ -55,6 +55,8 @@ a { color: inherit; }
 .promotion-path span { padding:0 3px; color:var(--teal); }
 .promotion-date { grid-column:1/-1; color:var(--muted); font-size:10px; }
 .inactivity-panel { margin:0 0 12px; padding:10px 14px; }
+.inactivity-rules-link { color:var(--teal); text-decoration:underline; text-decoration-style:dotted; text-underline-offset:2px; }
+.inactivity-rules-link:hover,.inactivity-rules-link:focus-visible { color:var(--gold-bright); }
 .inactivity-panel .panel-heading { align-items:flex-start; margin-bottom:8px; }
 .inactivity-list { display:grid; gap:5px; max-height:190px; overflow-y:auto; padding-right:5px; scrollbar-color:#80643b #171d21; scrollbar-width:thin; }
 .inactivity-row { display:flex; justify-content:space-between; align-items:center; gap:12px; padding:8px 10px; border:1px solid rgba(240,138,82,.25); background:linear-gradient(110deg,rgba(45,25,21,.7),rgba(18,26,32,.8)); }
