@@ -3,12 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#100d0a">
+  <meta name="theme-color" content="#101722">
   <meta name="description" content="A guild roster and activity dashboard built from Synergy’s latest published Neverwinter exports.">
   <title>Synergy Guild Dashboard</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
 </head>
@@ -17,8 +14,8 @@
     <header class="masthead">
       <div class="brand-mark" aria-hidden="true">✦</div>
       <div class="brand-copy"><div class="brand-name">SYNERGY</div><div class="brand-subtitle">A Neverwinter Guild</div></div>
-      <nav aria-label="Page sections"><a href="#overview">Overview</a><a href="#roster">Roster</a><a href="#activity">Activity</a><a href="https://jsynon.github.io/synergy-craft/">Masterwork Forge <span aria-hidden="true">↗</span></a></nav>
-      <a class="discord-link" href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">Join our Discord <span aria-hidden="true">↗</span></a>
+      <nav aria-label="Page sections"><a href="#overview">Overview</a><a href="#roster">Roster</a><a href="#activity">Activity</a><a href="#about">About</a></nav>
+      <a class="discord-link" href="https://discord.gg/synergy-nw" target="_blank" rel="noreferrer">Join our Discord <span aria-hidden="true">↗</span></a>
     </header>
 
     <main>
@@ -63,14 +60,14 @@
           <div class="chart-foot"><span id="activity-date-range"></span><span id="net-change-note"></span></div>
         </article>
         <article class="panel recent-panel">
-          <div class="panel-heading"><div><p class="kicker">Latest 15 records</p><h2>Recent activity</h2></div><span class="panel-mark">◷</span></div>
+          <div class="panel-heading"><div><p class="kicker">Latest records</p><h2>Recent activity</h2></div><span class="panel-mark">◷</span></div>
           <div id="recent-events" class="recent-events"><div class="empty-state">No published activity snapshot is available.</div></div>
         </article>
       </section>
 
       <section class="about-panel" id="about">
         <div><p class="kicker">Adventurers welcome</p><h2>Find your place in Synergy</h2><p>We’re an active, friendly Neverwinter guild in the WANTED Alliance. Join us for dungeons and trials, build and progression advice, Synergy Academy, and the Masterwork Forge.</p></div>
-        <div class="about-links"><a class="gold-button" href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">Visit Synergy on Discord <span aria-hidden="true">↗</span></a><a class="craft-link" href="https://jsynon.github.io/synergy-craft/">Open the Masterwork Forge <span aria-hidden="true">↗</span></a></div>
+        <a class="gold-button" href="https://discord.gg/synergy-nw" target="_blank" rel="noreferrer">Visit Synergy on Discord <span aria-hidden="true">↗</span></a>
       </section>
     </main>
 
