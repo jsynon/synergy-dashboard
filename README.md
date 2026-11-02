@@ -8,7 +8,7 @@ Part of the Synergy guild site: [Guild Roster](https://jsynon.github.io/synergy-
 
 - Member directory with character count, unique account count, character name, account name, rank, class, join date, and last-online date
 - Counted, clickable rank and class filters built into the directory
-- A scrollable list of the 15 newest records from the activity log
+- A scrollable list of the 50 newest records from the activity log
 - Links to the Masterwork Forge and Synergy Discord
 
 ## Refresh and publish guild data
