@@ -197,3 +197,7 @@ thead { background:#111d29; }
       .hero::before { left:-7%; } .hero::after { right:-7%; } .hero::before,.hero::after { font-size:65px; }
       footer { flex-direction:column; align-items:flex-start; font-size:9px; }
     }
+
+/* Room for more guild events before scrolling. */
+.recent-events { max-height:640px; }
+@media(max-width:620px) { .recent-events { max-height:500px; } }
