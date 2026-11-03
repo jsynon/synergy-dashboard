@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-02T23:31:06+00:00",
-  "accountCount": 146,
+  "generatedAt": "2026-11-03T00:33:54+00:00",
+  "accountCount": 147,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
     "@acckund": "2026-08-26T01:34:35",
@@ -114,6 +114,7 @@
     "@skatopsixos7": "2026-05-14T12:44:27",
     "@skeet803#87492": "2026-01-15T20:06:19",
     "@skorpntv#4972": "2026-09-22T17:52:45",
+    "@skyfirelegacy#57192": "2026-11-02T19:30:21",
     "@standingkotabear": "2026-09-19T23:22:47",
     "@stayroforos": "2025-03-31T09:32:35",
     "@strudelss#80167": "2026-10-19T20:10:59",
@@ -393,8 +394,8 @@
       "level": "20",
       "joinDate": "2024-12-01T17:23:55",
       "originalJoinDate": "2024-11-29T07:44:44",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-02T19:29:46",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -510,8 +511,8 @@
       "level": "20",
       "joinDate": "2026-07-08T02:04:16",
       "originalJoinDate": "2026-06-01T01:37:45",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-02T18:33:34",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -1264,8 +1265,8 @@
       "level": "20",
       "joinDate": "2026-02-01T16:51:52",
       "originalJoinDate": "2026-02-01T16:51:52",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-02T18:53:28",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -1329,7 +1330,7 @@
       "level": "20",
       "joinDate": "2026-09-18T15:00:30",
       "originalJoinDate": "2026-05-18T11:22:31",
-      "lastOnline": "2026-10-31T14:29:40",
+      "lastOnline": "2026-11-02T19:29:13",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1394,8 +1395,8 @@
       "level": "20",
       "joinDate": "2026-05-27T15:50:52",
       "originalJoinDate": "2026-05-18T11:22:31",
-      "lastOnline": "2026-10-31T13:51:29",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1602,8 +1603,8 @@
       "level": "20",
       "joinDate": "2026-10-10T17:36:11",
       "originalJoinDate": "2026-10-10T17:36:11",
-      "lastOnline": "2026-11-02T14:59:28",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1745,8 +1746,8 @@
       "level": "20",
       "joinDate": "2026-02-15T01:41:00",
       "originalJoinDate": "2026-02-15T01:41:00",
-      "lastOnline": "2026-11-02T13:10:22",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1901,8 +1902,8 @@
       "level": "20",
       "joinDate": "2026-09-14T19:55:31",
       "originalJoinDate": "2026-09-14T19:55:31",
-      "lastOnline": "2026-11-01T20:38:05",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2252,7 +2253,7 @@
       "level": "20",
       "joinDate": "2026-02-06T03:54:17",
       "originalJoinDate": "2026-02-06T03:54:17",
-      "lastOnline": "2026-10-30T14:06:17",
+      "lastOnline": "2026-11-02T19:11:17",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2293,6 +2294,19 @@
       "originalJoinDate": "2024-03-19T14:42:19",
       "lastOnline": "2026-09-14T15:05:40",
       "onlineNow": false,
+      "leaveOfAbsence": false
+    },
+    {
+      "name": "Varthan",
+      "account": "@SkyfireLegacy#57192",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Barbarian",
+      "level": "20",
+      "joinDate": "2026-11-02T19:30:21",
+      "originalJoinDate": "2026-11-02T19:30:21",
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2408,8 +2422,8 @@
       "level": "20",
       "joinDate": "2025-09-22T18:06:50",
       "originalJoinDate": "2025-09-22T18:06:50",
-      "lastOnline": "2026-11-02T18:04:38",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2629,7 +2643,7 @@
       "level": "20",
       "joinDate": "2026-01-20T20:54:47",
       "originalJoinDate": "2026-01-20T20:54:47",
-      "lastOnline": "2026-11-01T16:34:35",
+      "lastOnline": "2026-11-02T19:23:45",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2720,7 +2734,7 @@
       "level": "20",
       "joinDate": "2026-07-05T16:48:06",
       "originalJoinDate": "2026-01-20T20:54:47",
-      "lastOnline": "2026-11-01T12:37:59",
+      "lastOnline": "2026-11-02T19:24:48",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2928,7 +2942,7 @@
       "level": "20",
       "joinDate": "2026-08-13T00:06:50",
       "originalJoinDate": "2026-01-20T20:54:47",
-      "lastOnline": "2026-11-01T12:38:33",
+      "lastOnline": "2026-11-02T19:25:41",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3578,8 +3592,8 @@
       "level": "20",
       "joinDate": "2026-05-24T12:03:19",
       "originalJoinDate": "2026-05-24T12:03:19",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-02T18:38:13",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -3656,7 +3670,7 @@
       "level": "20",
       "joinDate": "2026-02-15T01:49:43",
       "originalJoinDate": "2026-02-15T01:41:00",
-      "lastOnline": "2026-11-02T13:43:29",
+      "lastOnline": "2026-11-02T19:20:44",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3695,8 +3709,8 @@
       "level": "20",
       "joinDate": "2026-04-01T22:32:11",
       "originalJoinDate": "2026-04-01T22:32:11",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-02T18:32:48",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -4527,8 +4541,8 @@
       "level": "20",
       "joinDate": "2026-06-14T22:53:46",
       "originalJoinDate": "2026-06-14T22:53:46",
-      "lastOnline": "2026-11-01T22:52:14",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -4566,8 +4580,8 @@
       "level": "20",
       "joinDate": "2026-06-17T15:18:31",
       "originalJoinDate": "2026-04-01T22:31:59",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-02T18:32:53",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -4748,8 +4762,8 @@
       "level": "20",
       "joinDate": "2026-09-05T12:13:15",
       "originalJoinDate": "2026-09-05T12:13:15",
-      "lastOnline": "2026-11-01T18:59:02",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -4995,8 +5009,8 @@
       "level": "20",
       "joinDate": "2026-10-30T21:40:33",
       "originalJoinDate": "2026-10-13T20:53:40",
-      "lastOnline": "2026-11-02T03:29:35",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -5027,6 +5041,11 @@
     }
   ],
   "events": [
+    {
+      "date": "2026-11-02T19:30:21",
+      "kind": "join",
+      "text": "Varthan@SkyfireLegacy#57192 has joined the guild after being invited by Elanor@zorlonix"
+    },
     {
       "date": "2026-11-02T18:30:42",
       "kind": "rank",
@@ -7451,11 +7470,6 @@
       "date": "2026-08-12T18:14:03",
       "kind": "exit",
       "text": "Lia@werellama was kicked from the guild by Elanor@zorlonix"
-    },
-    {
-      "date": "2026-08-12T18:09:14",
-      "kind": "exit",
-      "text": "Khamül@rxcloud26#64891 was kicked from the guild by Elanor@zorlonix"
     }
   ]
 }
