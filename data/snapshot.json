@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T04:35:41+00:00",
+  "generatedAt": "2026-11-03T04:39:02+00:00",
   "accountCount": 147,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -219,8 +219,8 @@
     {
       "name": "Enna Darksbane",
       "account": "@hellscrye",
-      "rank": "Initiate",
-      "rankOrder": 1,
+      "rank": "Stalwart",
+      "rankOrder": 3,
       "class": "Rogue",
       "level": "20",
       "joinDate": "2026-11-02T22:55:57",
@@ -1759,8 +1759,8 @@
       "level": "20",
       "joinDate": "2026-02-15T01:41:00",
       "originalJoinDate": "2026-02-15T01:41:00",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-02T23:36:42",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -5055,6 +5055,16 @@
   ],
   "events": [
     {
+      "date": "2026-11-02T23:38:32",
+      "kind": "rank",
+      "text": "Enna Darksbane@hellscrye's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-11-02T23:38:31",
+      "kind": "rank",
+      "text": "Enna Darksbane@hellscrye's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-11-02T22:55:57",
       "kind": "join",
       "text": "Enna Darksbane@hellscrye has joined the guild after being invited by crisem97@crisem97"
@@ -7473,16 +7483,6 @@
       "date": "2026-08-12T23:58:38",
       "kind": "exit",
       "text": "Rilay SW@maxswirid#1637 has left the guild"
-    },
-    {
-      "date": "2026-08-12T23:58:37",
-      "kind": "exit",
-      "text": "Ivydora@reelapse#5586 has left the guild"
-    },
-    {
-      "date": "2026-08-12T20:34:51",
-      "kind": "exit",
-      "text": "Navi SweetSong@menofgods has left the guild"
     }
   ]
 }
