@@ -129,6 +129,21 @@ tbody tr:hover { background:rgba(177,138,72,.07); }
 .class-name { color:#a9c9c6; }
 .table-empty { padding:27px; color:var(--muted); text-align:center; }
 .table-foot { display:flex; justify-content:space-between; align-items:center; gap:12px; padding-top:9px; color:var(--muted); font-size:10px; }
+.account-rank-check { margin-top:11px; }
+.account-rank-check-ok,.account-rank-check-warning { padding:10px 12px; border:1px solid; border-radius:3px; font-size:11px; }
+.account-rank-check-ok { border-color:rgba(125,200,165,.28); background:rgba(31,70,58,.19); color:var(--muted); }
+.account-rank-check-ok strong { color:var(--green); }
+.account-rank-check-warning { border-color:rgba(240,138,82,.48); background:rgba(81,42,26,.2); }
+.account-rank-check-heading { display:grid; gap:2px; }
+.account-rank-check-heading strong { color:var(--red); font-size:12px; }
+.account-rank-check-heading span { color:var(--muted); }
+.account-rank-check-warning ul { display:grid; gap:7px; margin:9px 0 0; padding:0; list-style:none; }
+.account-rank-check-warning li { padding-top:7px; border-top:1px solid rgba(240,138,82,.18); }
+.account-rank-check-warning .directory-account-link { color:var(--teal); font-weight:600; }
+.account-rank-characters { display:flex; flex-wrap:wrap; gap:5px 12px; margin-top:4px; }
+.account-rank-characters > span { display:inline-flex; flex-wrap:wrap; gap:4px; color:#e3dac9; }
+.account-rank-characters small { color:var(--gold-bright); font-size:10px; }
+
 .text-button { padding:5px 8px; border:1px solid var(--line); border-radius:3px; background:transparent; color:var(--gold-bright); font:600 10px var(--body); cursor:pointer; }
 .text-button:hover { background:rgba(177,138,72,.12); }
 .recent-panel { margin-bottom:18px; }
