@@ -127,10 +127,11 @@
   }
   function renderAccountRankCheck(){
     const accounts=new Map();
+    const ignoredAccounts=new Set(['@zorlonix']);
     for(const member of state.roster){
       const accountName=String(member.account||'').trim();
       const key=accountName.toLocaleLowerCase();
-      if(!key)continue;
+      if(!key||ignoredAccounts.has(key))continue;
       if(!accounts.has(key))accounts.set(key,{account:accountName,characters:[],ranks:new Set()});
       const account=accounts.get(key);
       const rank=String(member.rank||'Unranked').trim()||'Unranked';
