@@ -143,7 +143,7 @@
     const target=$('account-rank-check');
     if(!state.roster.length){target.innerHTML='';return;}
     if(!mismatches.length){
-      target.innerHTML='<div class="account-rank-check-ok"><strong>Account rank check:</strong> All '+accounts.size.toLocaleString()+' accounts have consistent character ranks.</div>';
+      target.innerHTML='<div class="account-rank-check-ok"><strong>Account rank check:</strong> All checked accounts have consistent character ranks.</div>';
       return;
     }
     target.innerHTML='<div class="account-rank-check-warning"><div class="account-rank-check-heading"><strong>Rank mismatch found in '+mismatches.length.toLocaleString()+' '+(mismatches.length===1?'account':'accounts')+'</strong><span>All characters on an account should share the same guild rank.</span></div><ul>'+mismatches.map(account=>'<li><a class="directory-account-link" href="#roster" data-account-query="'+escapeHtml(account.account)+'">'+escapeHtml(account.account)+'</a><div class="account-rank-characters">'+account.characters.map(character=>'<span><b>'+escapeHtml(character.name)+'</b><small>'+escapeHtml(character.rank)+'</small></span>').join('')+'</div></li>').join('')+'</ul></div>';
