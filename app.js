@@ -125,6 +125,28 @@
       return (typeof av==='number'&&typeof bv==='number'?(av-bv):String(av).localeCompare(String(bv),undefined,{numeric:true,sensitivity:'base'}))*state.sortDirection;
     });
   }
+  function renderAccountRankCheck(){
+    const accounts=new Map();
+    for(const member of state.roster){
+      const accountName=String(member.account||'').trim();
+      const key=accountName.toLocaleLowerCase();
+      if(!key)continue;
+      if(!accounts.has(key))accounts.set(key,{account:accountName,characters:[],ranks:new Set()});
+      const account=accounts.get(key);
+      const rank=String(member.rank||'Unranked').trim()||'Unranked';
+      const rankOrder=Number(member.rankOrder)||0;
+      account.ranks.add(String(rankOrder)+'|'+rank.toLocaleLowerCase());
+      account.characters.push({name:String(member.name||'Unknown'),rank});
+    }
+    const mismatches=[...accounts.values()].filter(account=>account.ranks.size>1);
+    const target=$('account-rank-check');
+    if(!state.roster.length){target.innerHTML='';return;}
+    if(!mismatches.length){
+      target.innerHTML='<div class="account-rank-check-ok"><strong>Account rank check:</strong> All '+accounts.size.toLocaleString()+' accounts have consistent character ranks.</div>';
+      return;
+    }
+    target.innerHTML='<div class="account-rank-check-warning"><div class="account-rank-check-heading"><strong>Rank mismatch found in '+mismatches.length.toLocaleString()+' '+(mismatches.length===1?'account':'accounts')+'</strong><span>All characters on an account should share the same guild rank.</span></div><ul>'+mismatches.map(account=>'<li><a class="directory-account-link" href="#roster" data-account-query="'+escapeHtml(account.account)+'">'+escapeHtml(account.account)+'</a><div class="account-rank-characters">'+account.characters.map(character=>'<span><b>'+escapeHtml(character.name)+'</b><small>'+escapeHtml(character.rank)+'</small></span>').join('')+'</div></li>').join('')+'</ul></div>';
+  }
   function renderRoster(){
     const rows=getVisibleMembers();
     const matchingAccounts=new Set(rows.map(m=>(m.account||'').trim().toLocaleLowerCase()).filter(Boolean)).size;
@@ -148,6 +170,7 @@
         <div><span class="mobile-member-label">Last online</span><span class="mobile-member-value mobile-member-status" title="${m.lastOnline?escapeHtml(formatDate(m.lastOnline,true)):''}">${displayStatus(m)}</span></div>
       </div>
     </article>`).join(''):'<div class="empty-state">No members match these filters.</div>';
+    renderAccountRankCheck();
     document.querySelectorAll('.sort-button').forEach(b=>b.setAttribute('aria-sort',b.dataset.sort===state.sortBy?(state.sortDirection===1?'ascending':'descending'):'none'));
   }
   function activityMemberText(text){
