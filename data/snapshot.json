@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T06:32:38+00:00",
+  "generatedAt": "2026-11-04T06:56:58+00:00",
   "accountCount": 148,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -1617,8 +1617,8 @@
       "level": "20",
       "joinDate": "2026-10-10T17:36:11",
       "originalJoinDate": "2026-10-10T17:36:11",
-      "lastOnline": "2026-11-03T22:10:36",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2293,8 +2293,8 @@
       "level": "20",
       "joinDate": "2026-06-06T16:31:14",
       "originalJoinDate": "2026-04-25T21:27:06",
-      "lastOnline": "2026-11-03T18:59:48",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2501,8 +2501,8 @@
       "level": "20",
       "joinDate": "2025-09-22T18:06:50",
       "originalJoinDate": "2025-09-22T18:06:50",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-04T01:37:03",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2644,7 +2644,7 @@
       "level": "20",
       "joinDate": "2026-09-19T23:22:47",
       "originalJoinDate": "2026-09-19T23:22:47",
-      "lastOnline": "2026-11-04T00:30:36",
+      "lastOnline": "2026-11-04T01:36:57",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4911,6 +4911,19 @@
       "leaveOfAbsence": false
     },
     {
+      "name": "soaruh",
+      "account": "@standingkotabear",
+      "rank": "Wayfarer",
+      "rankOrder": 2,
+      "class": "Fighter",
+      "level": "20",
+      "joinDate": "2026-11-04T01:39:00",
+      "originalJoinDate": "2026-09-19T23:22:47",
+      "lastOnline": null,
+      "onlineNow": true,
+      "leaveOfAbsence": false
+    },
+    {
       "name": "Zero",
       "account": "@tofusurpr1se",
       "rank": "Stalwart",
@@ -5159,6 +5172,16 @@
     }
   ],
   "events": [
+    {
+      "date": "2026-11-04T01:39:21",
+      "kind": "rank",
+      "text": "soaruh@standingkotabear's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-11-04T01:39:00",
+      "kind": "join",
+      "text": "soaruh@standingkotabear has joined the guild after being invited by Elanor@zorlonix"
+    },
     {
       "date": "2026-11-04T01:24:19",
       "kind": "rank",
@@ -7578,16 +7601,6 @@
       "date": "2026-08-23T17:02:33",
       "kind": "rank",
       "text": "Zefrina@Zefrina#08174's guild rank is now Wayfarer"
-    },
-    {
-      "date": "2026-08-23T17:02:21",
-      "kind": "join",
-      "text": "Zefrina@Zefrina#08174 has joined the guild after being invited by Elanor@zorlonix"
-    },
-    {
-      "date": "2026-08-23T17:02:03",
-      "kind": "exit",
-      "text": "Mack@mack#4143 was kicked from the guild by Elanor@zorlonix"
     }
   ]
 }
