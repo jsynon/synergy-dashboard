@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T22:02:59+00:00",
+  "generatedAt": "2026-11-04T23:29:39+00:00",
   "accountCount": 148,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -213,8 +213,8 @@
       "level": "20",
       "joinDate": "2026-06-23T11:31:27",
       "originalJoinDate": "2026-06-23T11:31:27",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-04T17:55:28",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -272,8 +272,8 @@
     {
       "name": "Patotoya",
       "account": "@milvon351",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Fighter",
       "level": "20",
       "joinDate": "2026-07-20T01:51:20",
@@ -519,8 +519,8 @@
     {
       "name": "Nolanian",
       "account": "@menofgods",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Fighter",
       "level": "20",
       "joinDate": "2026-07-08T02:04:16",
@@ -590,7 +590,7 @@
       "level": "20",
       "joinDate": "2026-08-06T20:40:08",
       "originalJoinDate": "2026-02-25T16:04:03",
-      "lastOnline": "2026-11-04T15:57:24",
+      "lastOnline": "2026-11-04T17:26:50",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -603,7 +603,7 @@
       "level": "20",
       "joinDate": "2026-02-25T16:04:03",
       "originalJoinDate": "2026-02-25T16:04:03",
-      "lastOnline": "2026-11-04T16:49:47",
+      "lastOnline": "2026-11-04T17:41:55",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -649,8 +649,8 @@
     {
       "name": "Ammy lightstep",
       "account": "@menofgods",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Barbarian",
       "level": "20",
       "joinDate": "2026-08-13T22:15:24",
@@ -688,14 +688,14 @@
     {
       "name": "Navi GreenLight",
       "account": "@menofgods",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Warlock",
       "level": "20",
       "joinDate": "2026-08-08T00:27:30",
       "originalJoinDate": "2026-06-01T01:37:45",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-04T17:21:52",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -720,7 +720,7 @@
       "level": "20",
       "joinDate": "2026-09-29T11:36:33",
       "originalJoinDate": "2026-09-29T11:36:33",
-      "lastOnline": "2026-11-04T04:55:21",
+      "lastOnline": "2026-11-04T18:08:18",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -733,7 +733,7 @@
       "level": "20",
       "joinDate": "2026-10-10T17:44:05",
       "originalJoinDate": "2026-10-10T17:44:05",
-      "lastOnline": "2026-11-03T22:57:47",
+      "lastOnline": "2026-11-04T18:20:49",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -746,8 +746,8 @@
       "level": "20",
       "joinDate": "2026-09-29T21:20:52",
       "originalJoinDate": "2026-09-29T11:36:33",
-      "lastOnline": "2026-11-04T06:20:30",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -928,7 +928,7 @@
       "level": "20",
       "joinDate": "2026-09-29T21:21:56",
       "originalJoinDate": "2026-09-29T11:36:33",
-      "lastOnline": "2026-11-04T07:11:22",
+      "lastOnline": "2026-11-04T18:12:17",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1279,7 +1279,7 @@
       "level": "20",
       "joinDate": "2026-02-01T16:51:52",
       "originalJoinDate": "2026-02-01T16:51:52",
-      "lastOnline": "2026-11-04T06:32:04",
+      "lastOnline": "2026-11-04T18:20:42",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1500,7 +1500,7 @@
       "level": "20",
       "joinDate": "2026-05-09T13:12:08",
       "originalJoinDate": "2026-02-13T09:40:40",
-      "lastOnline": "2026-11-03T10:26:26",
+      "lastOnline": "2026-11-04T18:24:51",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1617,8 +1617,8 @@
       "level": "20",
       "joinDate": "2026-10-10T17:36:11",
       "originalJoinDate": "2026-10-10T17:36:11",
-      "lastOnline": "2026-11-04T16:23:18",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1773,7 +1773,7 @@
       "level": "20",
       "joinDate": "2026-02-15T01:41:00",
       "originalJoinDate": "2026-02-15T01:41:00",
-      "lastOnline": "2026-11-04T16:35:19",
+      "lastOnline": "2026-11-04T18:18:34",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1929,8 +1929,8 @@
       "level": "20",
       "joinDate": "2026-02-14T17:25:59",
       "originalJoinDate": "2026-02-14T17:25:59",
-      "lastOnline": "2026-11-03T18:47:03",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1942,8 +1942,8 @@
       "level": "20",
       "joinDate": "2026-09-14T19:55:31",
       "originalJoinDate": "2026-09-14T19:55:31",
-      "lastOnline": "2026-11-04T16:35:41",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1955,8 +1955,8 @@
       "level": "20",
       "joinDate": "2026-02-13T09:40:40",
       "originalJoinDate": "2026-02-13T09:40:40",
-      "lastOnline": "2026-11-03T13:17:48",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1968,7 +1968,7 @@
       "level": "20",
       "joinDate": "2025-10-29T17:36:33",
       "originalJoinDate": "2025-10-29T17:36:33",
-      "lastOnline": "2026-11-04T12:02:22",
+      "lastOnline": "2026-11-04T17:45:06",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2111,8 +2111,8 @@
       "level": "20",
       "joinDate": "2026-10-23T21:23:14",
       "originalJoinDate": "2026-10-14T21:58:34",
-      "lastOnline": "2026-11-04T06:13:48",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2254,7 +2254,7 @@
       "level": "20",
       "joinDate": "2026-10-13T22:06:13",
       "originalJoinDate": "2026-10-13T22:06:13",
-      "lastOnline": "2026-11-04T16:38:07",
+      "lastOnline": "2026-11-04T18:24:08",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2638,14 +2638,14 @@
     {
       "name": "sora",
       "account": "@standingkotabear",
-      "rank": "Wayfarer",
-      "rankOrder": 2,
+      "rank": "Stalwart",
+      "rankOrder": 3,
       "class": "Rogue",
       "level": "20",
       "joinDate": "2026-09-19T23:22:47",
       "originalJoinDate": "2026-09-19T23:22:47",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-04T17:09:35",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -3021,7 +3021,7 @@
       "level": "20",
       "joinDate": "2026-09-29T12:12:43",
       "originalJoinDate": "2026-09-29T12:12:43",
-      "lastOnline": "2026-11-04T15:58:06",
+      "lastOnline": "2026-11-04T17:37:24",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3080,8 +3080,8 @@
     {
       "name": "ArkHybrid",
       "account": "@ArkHybrid#75770",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Barbarian",
       "level": "20",
       "joinDate": "2026-07-07T14:09:08",
@@ -3190,7 +3190,7 @@
       "level": "20",
       "joinDate": "2026-02-13T09:43:57",
       "originalJoinDate": "2026-02-13T09:40:40",
-      "lastOnline": "2026-11-03T17:53:07",
+      "lastOnline": "2026-11-04T17:54:48",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3762,8 +3762,8 @@
       "level": "20",
       "joinDate": "2026-02-21T09:28:05",
       "originalJoinDate": "2026-02-21T09:28:05",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-04T17:02:07",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -3788,8 +3788,8 @@
       "level": "20",
       "joinDate": "2026-02-15T01:49:43",
       "originalJoinDate": "2026-02-15T01:41:00",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-04T18:19:28",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -3801,8 +3801,8 @@
       "level": "20",
       "joinDate": "2026-05-30T20:24:59",
       "originalJoinDate": "2026-05-30T20:24:59",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-04T16:54:13",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -3892,8 +3892,8 @@
       "level": "20",
       "joinDate": "2026-03-30T05:47:47",
       "originalJoinDate": "2026-01-15T20:06:19",
-      "lastOnline": "2026-11-04T06:39:49",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -4393,8 +4393,8 @@
     {
       "name": "Zerospace",
       "account": "@tofusurpr1se",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Paladin",
       "level": "20",
       "joinDate": "2026-10-22T19:52:33",
@@ -4490,8 +4490,8 @@
       "level": "20",
       "joinDate": "2026-06-26T17:34:22",
       "originalJoinDate": "2026-06-26T17:34:22",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-04T16:52:46",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -4581,7 +4581,7 @@
       "level": "20",
       "joinDate": "2026-09-12T19:37:42",
       "originalJoinDate": "2026-08-04T22:12:43",
-      "lastOnline": "2026-11-04T09:53:06",
+      "lastOnline": "2026-11-04T17:52:54",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4659,8 +4659,8 @@
       "level": "20",
       "joinDate": "2026-06-14T22:53:46",
       "originalJoinDate": "2026-06-14T22:53:46",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-04T18:24:11",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -4679,8 +4679,8 @@
     {
       "name": "Alune The Beauty",
       "account": "@Alune#58925",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Warlock",
       "level": "20",
       "joinDate": "2026-11-03T22:53:50",
@@ -4880,8 +4880,8 @@
       "level": "20",
       "joinDate": "2026-09-05T12:13:15",
       "originalJoinDate": "2026-09-05T12:13:15",
-      "lastOnline": "2026-11-03T20:03:33",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -4913,21 +4913,21 @@
     {
       "name": "soaruh",
       "account": "@standingkotabear",
-      "rank": "Wayfarer",
-      "rankOrder": 2,
+      "rank": "Stalwart",
+      "rankOrder": 3,
       "class": "Fighter",
       "level": "20",
       "joinDate": "2026-11-04T01:39:00",
       "originalJoinDate": "2026-09-19T23:22:47",
-      "lastOnline": "2026-11-04T15:40:56",
+      "lastOnline": "2026-11-04T18:07:24",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
       "name": "Zero",
       "account": "@tofusurpr1se",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Warlock",
       "level": "20",
       "joinDate": "2026-09-12T00:12:12",
@@ -5043,8 +5043,8 @@
     {
       "name": "Zer0",
       "account": "@tofusurpr1se",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Rogue",
       "level": "20",
       "joinDate": "2026-09-19T23:22:05",
@@ -5075,8 +5075,8 @@
       "level": "20",
       "joinDate": "2026-10-30T17:38:36",
       "originalJoinDate": "2026-09-29T12:12:43",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-04T17:39:17",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -5101,8 +5101,8 @@
       "level": "20",
       "joinDate": "2026-10-04T08:34:42",
       "originalJoinDate": "2026-05-31T11:25:19",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-04T16:57:31",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -5153,7 +5153,7 @@
       "level": "20",
       "joinDate": "2026-10-24T12:04:35",
       "originalJoinDate": "2026-01-15T20:06:19",
-      "lastOnline": "2026-11-04T06:29:06",
+      "lastOnline": "2026-11-04T18:23:35",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5172,6 +5172,61 @@
     }
   ],
   "events": [
+    {
+      "date": "2026-11-04T18:28:14",
+      "kind": "rank",
+      "text": "soaruh@standingkotabear's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-11-04T18:28:10",
+      "kind": "rank",
+      "text": "sora@standingkotabear's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-11-04T18:24:59",
+      "kind": "rank",
+      "text": "ArkHybrid@ArkHybrid#75770's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-11-04T18:24:21",
+      "kind": "rank",
+      "text": "Patotoya@milvon351's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-11-04T18:21:56",
+      "kind": "rank",
+      "text": "Alune The Beauty@Alune#58925's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-11-04T18:21:36",
+      "kind": "rank",
+      "text": "Zerospace@tofusurpr1se's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-11-04T18:21:33",
+      "kind": "rank",
+      "text": "Zero@tofusurpr1se's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-11-04T18:21:31",
+      "kind": "rank",
+      "text": "Zer0@tofusurpr1se's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-11-04T18:20:28",
+      "kind": "rank",
+      "text": "Nolanian@menofgods's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-11-04T18:20:26",
+      "kind": "rank",
+      "text": "Navi GreenLight@menofgods's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-11-04T18:20:24",
+      "kind": "rank",
+      "text": "Ammy lightstep@menofgods's guild rank is now Veteran"
+    },
     {
       "date": "2026-11-04T01:39:21",
       "kind": "rank",
@@ -7546,61 +7601,6 @@
       "date": "2026-08-26T01:37:42",
       "kind": "rank",
       "text": "Hero@TPSeloT#99053's guild rank is now Wayfarer"
-    },
-    {
-      "date": "2026-08-26T01:37:17",
-      "kind": "join",
-      "text": "Hero@TPSeloT#99053 has joined the guild after being invited by Elanor@zorlonix"
-    },
-    {
-      "date": "2026-08-26T01:37:04",
-      "kind": "exit",
-      "text": "Zarek Shadowstep@Draconas#11840 was kicked from the guild by Elanor@zorlonix"
-    },
-    {
-      "date": "2026-08-26T01:34:35",
-      "kind": "join",
-      "text": "Nigella@acckund has joined the guild after being invited by Elanor@zorlonix"
-    },
-    {
-      "date": "2026-08-25T06:08:27",
-      "kind": "rank",
-      "text": "woodenwolf@machrist0021#32205's guild rank is now Wayfarer"
-    },
-    {
-      "date": "2026-08-25T01:07:58",
-      "kind": "join",
-      "text": "woodenwolf@machrist0021#32205 has joined the guild after being invited by Azazel@eatsomewaffles"
-    },
-    {
-      "date": "2026-08-25T01:02:39",
-      "kind": "exit",
-      "text": "woodenwolf@machrist0021#32205 has left the guild"
-    },
-    {
-      "date": "2026-08-24T01:59:13",
-      "kind": "rank",
-      "text": "Gyda Thorunn@Oliver1416#77740's guild rank is now Stalwart"
-    },
-    {
-      "date": "2026-08-23T17:02:44",
-      "kind": "rank",
-      "text": "Zefrina@Zefrina#08174's guild rank is now Elder"
-    },
-    {
-      "date": "2026-08-23T17:02:41",
-      "kind": "rank",
-      "text": "Zefrina@Zefrina#08174's guild rank is now Veteran"
-    },
-    {
-      "date": "2026-08-23T17:02:37",
-      "kind": "rank",
-      "text": "Zefrina@Zefrina#08174's guild rank is now Stalwart"
-    },
-    {
-      "date": "2026-08-23T17:02:33",
-      "kind": "rank",
-      "text": "Zefrina@Zefrina#08174's guild rank is now Wayfarer"
     }
   ]
 }
