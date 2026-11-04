@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T05:19:43+00:00",
+  "generatedAt": "2026-11-04T06:32:38+00:00",
   "accountCount": 148,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -213,7 +213,7 @@
       "level": "20",
       "joinDate": "2026-06-23T11:31:27",
       "originalJoinDate": "2026-06-23T11:31:27",
-      "lastOnline": "2026-11-03T23:04:41",
+      "lastOnline": "2026-11-04T01:30:42",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -538,8 +538,8 @@
       "level": "20",
       "joinDate": "2026-09-17T20:10:20",
       "originalJoinDate": "2026-06-23T11:31:27",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-04T01:11:59",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -603,8 +603,8 @@
       "level": "20",
       "joinDate": "2026-02-25T16:04:03",
       "originalJoinDate": "2026-02-25T16:04:03",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-04T00:56:14",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -993,7 +993,7 @@
       "level": "20",
       "joinDate": "2026-01-06T09:07:01",
       "originalJoinDate": "2026-01-06T09:07:01",
-      "lastOnline": "2026-11-03T18:21:40",
+      "lastOnline": "2026-11-04T01:04:21",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1006,8 +1006,8 @@
       "level": "20",
       "joinDate": "2026-07-13T16:38:06",
       "originalJoinDate": "2026-07-13T16:38:06",
-      "lastOnline": "2026-11-04T00:15:37",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1032,7 +1032,7 @@
       "level": "20",
       "joinDate": "2026-01-06T09:11:29",
       "originalJoinDate": "2026-01-06T09:07:01",
-      "lastOnline": "2026-11-03T18:21:30",
+      "lastOnline": "2026-11-04T01:04:11",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1084,7 +1084,7 @@
       "level": "20",
       "joinDate": "2026-01-06T09:12:02",
       "originalJoinDate": "2026-01-06T09:07:01",
-      "lastOnline": "2026-11-03T18:21:21",
+      "lastOnline": "2026-11-04T01:04:00",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1760,7 +1760,7 @@
       "level": "20",
       "joinDate": "2026-09-01T20:30:59",
       "originalJoinDate": "2026-09-01T20:30:59",
-      "lastOnline": "2026-11-03T00:22:24",
+      "lastOnline": "2026-11-04T00:49:31",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1773,7 +1773,7 @@
       "level": "20",
       "joinDate": "2026-02-15T01:41:00",
       "originalJoinDate": "2026-02-15T01:41:00",
-      "lastOnline": "2026-11-03T18:26:59",
+      "lastOnline": "2026-11-04T00:49:00",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2254,8 +2254,8 @@
       "level": "20",
       "joinDate": "2026-10-13T22:06:13",
       "originalJoinDate": "2026-10-13T22:06:13",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-04T01:03:02",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2397,7 +2397,7 @@
       "level": "20",
       "joinDate": "2026-01-06T09:12:24",
       "originalJoinDate": "2026-01-06T09:07:01",
-      "lastOnline": "2026-11-03T18:20:52",
+      "lastOnline": "2026-11-04T01:03:28",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2644,7 +2644,7 @@
       "level": "20",
       "joinDate": "2026-09-19T23:22:47",
       "originalJoinDate": "2026-09-19T23:22:47",
-      "lastOnline": "2026-11-04T00:14:04",
+      "lastOnline": "2026-11-04T00:30:36",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2735,7 +2735,7 @@
       "level": "20",
       "joinDate": "2026-01-20T20:54:47",
       "originalJoinDate": "2026-01-20T20:54:47",
-      "lastOnline": "2026-11-03T22:53:57",
+      "lastOnline": "2026-11-04T00:56:31",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2826,8 +2826,8 @@
       "level": "20",
       "joinDate": "2026-07-05T16:48:06",
       "originalJoinDate": "2026-01-20T20:54:47",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-04T00:19:38",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -3002,8 +3002,8 @@
     {
       "name": "Yalir CW",
       "account": "@Kaido#96974",
-      "rank": "Initiate",
-      "rankOrder": 1,
+      "rank": "Officer",
+      "rankOrder": 6,
       "class": "Wizard",
       "level": "20",
       "joinDate": "2026-10-13T20:53:40",
@@ -3697,8 +3697,8 @@
       "level": "20",
       "joinDate": "2026-06-27T20:20:48",
       "originalJoinDate": "2026-04-01T00:43:23",
-      "lastOnline": "2026-11-03T03:45:20",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -3788,8 +3788,8 @@
       "level": "20",
       "joinDate": "2026-02-15T01:49:43",
       "originalJoinDate": "2026-02-15T01:41:00",
-      "lastOnline": "2026-11-03T18:22:55",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -4185,8 +4185,8 @@
     {
       "name": "Yalir DC",
       "account": "@Kaido#96974",
-      "rank": "Initiate",
-      "rankOrder": 1,
+      "rank": "Officer",
+      "rankOrder": 6,
       "class": "Cleric",
       "level": "20",
       "joinDate": "2026-10-13T20:55:45",
@@ -4737,7 +4737,7 @@
       "level": "20",
       "joinDate": "2026-09-27T21:04:21",
       "originalJoinDate": "2026-09-01T20:30:59",
-      "lastOnline": "2026-10-25T14:27:59",
+      "lastOnline": "2026-11-04T01:16:39",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4828,8 +4828,8 @@
       "level": "20",
       "joinDate": "2026-08-25T01:07:58",
       "originalJoinDate": "2026-07-31T16:37:55",
-      "lastOnline": "2026-11-03T23:36:54",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -5121,14 +5121,14 @@
     {
       "name": "Yalir",
       "account": "@Kaido#96974",
-      "rank": "Initiate",
-      "rankOrder": 1,
+      "rank": "Officer",
+      "rankOrder": 6,
       "class": "Bard",
       "level": "20",
       "joinDate": "2026-10-30T21:40:33",
       "originalJoinDate": "2026-10-13T20:53:40",
-      "lastOnline": "2026-11-03T22:50:32",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -5159,6 +5159,91 @@
     }
   ],
   "events": [
+    {
+      "date": "2026-11-04T01:24:19",
+      "kind": "rank",
+      "text": "Yalir@Kaido#96974's guild rank is now Officer"
+    },
+    {
+      "date": "2026-11-04T01:24:17",
+      "kind": "rank",
+      "text": "Yalir@Kaido#96974's guild rank is now Elder"
+    },
+    {
+      "date": "2026-11-04T01:24:15",
+      "kind": "rank",
+      "text": "Yalir@Kaido#96974's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-11-04T01:24:13",
+      "kind": "rank",
+      "text": "Yalir@Kaido#96974's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-11-04T01:24:08",
+      "kind": "rank",
+      "text": "Yalir@Kaido#96974's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-11-04T01:24:05",
+      "kind": "rank",
+      "text": "Yalir CW@Kaido#96974's guild rank is now Officer"
+    },
+    {
+      "date": "2026-11-04T01:24:03",
+      "kind": "rank",
+      "text": "Yalir CW@Kaido#96974's guild rank is now Elder"
+    },
+    {
+      "date": "2026-11-04T01:24:01",
+      "kind": "rank",
+      "text": "Yalir CW@Kaido#96974's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-11-04T01:23:59",
+      "kind": "rank",
+      "text": "Yalir CW@Kaido#96974's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-11-04T01:23:57",
+      "kind": "rank",
+      "text": "Yalir CW@Kaido#96974's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-11-04T01:23:54",
+      "kind": "rank",
+      "text": "Yalir DC@Kaido#96974's guild rank is now Officer"
+    },
+    {
+      "date": "2026-11-04T01:23:52",
+      "kind": "rank",
+      "text": "Yalir DC@Kaido#96974's guild rank is now Elder"
+    },
+    {
+      "date": "2026-11-04T01:23:51",
+      "kind": "rank",
+      "text": "Yalir DC@Kaido#96974's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-11-04T01:23:48",
+      "kind": "rank",
+      "text": "Yalir DC@Kaido#96974's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-11-04T01:23:46",
+      "kind": "rank",
+      "text": "Yalir DC@Kaido#96974's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-11-04T01:00:46",
+      "kind": "other",
+      "text": "Elanor@zorlonix has disabled permission Promote to any Guild rank for rank Officer"
+    },
+    {
+      "date": "2026-11-04T01:00:45",
+      "kind": "other",
+      "text": "Elanor@zorlonix has disabled permission Demote any Guild rank for rank Officer"
+    },
     {
       "date": "2026-11-04T00:19:12",
       "kind": "rank",
@@ -7503,91 +7588,6 @@
       "date": "2026-08-23T17:02:03",
       "kind": "exit",
       "text": "Mack@mack#4143 was kicked from the guild by Elanor@zorlonix"
-    },
-    {
-      "date": "2026-08-23T12:30:12",
-      "kind": "join",
-      "text": "TESSERACT@tesseract#5851 has joined the guild after being invited by Elanor@zorlonix"
-    },
-    {
-      "date": "2026-08-23T10:51:22",
-      "kind": "rank",
-      "text": "Ann_Roze@As0t1gu3#86314's guild rank is now Wayfarer"
-    },
-    {
-      "date": "2026-08-22T21:35:46",
-      "kind": "join",
-      "text": "Sofyna Vergara@verozina#5317 has joined the guild after being invited by Elanor@zorlonix"
-    },
-    {
-      "date": "2026-08-22T21:34:58",
-      "kind": "join",
-      "text": "BlueJay Seluma@verozina#5317 has joined the guild after being invited by Elanor@zorlonix"
-    },
-    {
-      "date": "2026-08-22T20:39:55",
-      "kind": "exit",
-      "text": "Swiper No Swiping@jigoinane was kicked from the guild by Elanor@zorlonix"
-    },
-    {
-      "date": "2026-08-22T20:39:53",
-      "kind": "exit",
-      "text": "Straag Sparklescale@jigoinane was kicked from the guild by Elanor@zorlonix"
-    },
-    {
-      "date": "2026-08-22T20:39:51",
-      "kind": "exit",
-      "text": "Jord Jaggedscale@jigoinane was kicked from the guild by Elanor@zorlonix"
-    },
-    {
-      "date": "2026-08-22T20:39:49",
-      "kind": "exit",
-      "text": "Dalia Strongshield@jigoinane was kicked from the guild by Elanor@zorlonix"
-    },
-    {
-      "date": "2026-08-22T20:39:47",
-      "kind": "exit",
-      "text": "Brax Brokenscale@jigoinane was kicked from the guild by Elanor@zorlonix"
-    },
-    {
-      "date": "2026-08-22T17:59:09",
-      "kind": "join",
-      "text": "Vixen of the Vaal@verozina#5317 has joined the guild after being invited by Rilay SW@maxswirid#1637"
-    },
-    {
-      "date": "2026-08-21T22:14:51",
-      "kind": "join",
-      "text": "Neroxis@moonlight#8241 has joined the guild after being invited by Elanor@zorlonix"
-    },
-    {
-      "date": "2026-08-21T22:14:25",
-      "kind": "join",
-      "text": "Neroka@moonlight#8241 has joined the guild after being invited by Elanor@zorlonix"
-    },
-    {
-      "date": "2026-08-21T22:12:17",
-      "kind": "join",
-      "text": "Neroco@moonlight#8241 has joined the guild after being invited by Elanor@zorlonix"
-    },
-    {
-      "date": "2026-08-21T02:17:32",
-      "kind": "rank",
-      "text": "Vicious Helltalon@hellscrye's guild rank is now Stalwart"
-    },
-    {
-      "date": "2026-08-20T22:01:18",
-      "kind": "join",
-      "text": "Hornstar@platemale#5536 has joined the guild after being invited by Elanor@zorlonix"
-    },
-    {
-      "date": "2026-08-20T21:12:39",
-      "kind": "join",
-      "text": "Zarek Shadowstep@Draconas#11840 has joined the guild after being invited by Elanor@zorlonix"
-    },
-    {
-      "date": "2026-08-20T14:24:54",
-      "kind": "exit",
-      "text": "Gambit@47Roonin#75437 was kicked from the guild by Elanor@zorlonix"
     }
   ]
 }
