@@ -223,7 +223,7 @@
       if(account&&!account.startsWith('@'))account='@'+account;
       const label=match[2]+account;
       const query=member?(member.account||member.name):match[2];
-      html+=`<a class="activity-member-link" href="#roster" data-member-query="${escapeHtml(query)}">${escapeHtml(label)}</a>`;
+      html+=`<a class="activity-member-link" href="#account-dialog" aria-haspopup="dialog" data-member-query="${escapeHtml(query)}" data-account-query="${escapeHtml(account||query)}">${escapeHtml(label)}</a>`;
       if(member&&account)searchableHandles.set(member.name.toLocaleLowerCase(),account);
       cursor=nameEnd+(sameAccount?rawMatch[0].length:0);
       matcher.lastIndex=cursor;
@@ -285,9 +285,7 @@
     const link=event.target.closest('.promotion-account-link');
     if(!link)return;
     event.preventDefault();
-    $('search').value=link.dataset.accountQuery||'';
-    state.rankFilter='';state.classFilter='';state.accountFilter='';renderDirectoryFilters();renderRoster();
-    $('roster').scrollIntoView({behavior:'smooth',block:'start'});
+    showAccountDetails(link.dataset.accountQuery||'');
   });
   const promotionRulesDialog=$('promotion-rules-dialog');
   $('show-promotion-rules').addEventListener('click',()=>promotionRulesDialog.showModal());
@@ -305,17 +303,13 @@
     const link=event.target.closest('.inactivity-account-link');
     if(!link)return;
     event.preventDefault();
-    $('search').value=link.dataset.accountQuery||'';
-    state.rankFilter='';state.classFilter='';state.accountFilter='';renderDirectoryFilters();renderRoster();
-    $('roster').scrollIntoView({behavior:'smooth',block:'start'});
+    showAccountDetails(link.dataset.accountQuery||'');
   });
   $('recent-events').addEventListener('click',event=>{
     const link=event.target.closest('.activity-member-link');
     if(!link)return;
     event.preventDefault();
-    $('search').value=link.dataset.memberQuery||'';
-    state.rankFilter='';state.classFilter='';state.accountFilter='';renderDirectoryFilters();renderRoster();
-    $('roster').scrollIntoView({behavior:'smooth',block:'start'});
+    showAccountDetails(link.dataset.accountQuery||link.dataset.memberQuery||'');
   });
   document.querySelectorAll('.sort-button').forEach(b=>b.addEventListener('click',()=>{if(state.sortBy===b.dataset.sort)state.sortDirection*=-1;else{state.sortBy=b.dataset.sort;state.sortDirection=1;}renderRoster();}));
   $('mobile-sort').addEventListener('change',event=>{state.sortBy=event.target.value;state.sortDirection=1;renderRoster();});
