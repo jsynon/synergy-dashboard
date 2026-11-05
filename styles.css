@@ -884,3 +884,5 @@ footer {
   border-radius:9px;
 }
 .hero::before,.hero::after { border-radius:4px; }
+/* Slightly larger shared footer wordmark. */
+footer span:first-child { font-size:.98rem; }
