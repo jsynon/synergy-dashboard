@@ -375,9 +375,17 @@ footer span:first-child { color:var(--gold-bright); font:600 .9rem var(--serif);
   border-bottom:1px solid var(--line);
   background:linear-gradient(110deg,rgba(8,29,42,.96),rgba(16,28,40,.94) 58%,rgba(39,25,16,.94));
 }
+.inactivity-panel > .panel-heading {
+  position:relative;
+  margin:-10px -14px 8px;
+  padding:12px 14px 10px;
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(110deg,rgba(8,29,42,.96),rgba(16,28,40,.94) 58%,rgba(39,25,16,.94));
+}
 .roster-panel > .panel-heading::after,
 .recent-panel > .panel-heading::after,
-.promotions-panel > .panel-heading::after {
+.promotions-panel > .panel-heading::after,
+.inactivity-panel > .panel-heading::after {
   content:"";
   position:absolute;
   top:0;
@@ -408,6 +416,10 @@ footer span:first-child { color:var(--gold-bright); font:600 .9rem var(--serif);
   .promotions-panel > .panel-heading {
     margin:-13px -11px 9px;
     padding:13px 11px 12px;
+  }
+  .inactivity-panel > .panel-heading {
+    margin:-10px -11px 8px;
+    padding:10px 11px 9px;
   }
 }
 /* Live character and account results below the roster search. */
