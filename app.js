@@ -41,11 +41,12 @@
       if(!key)continue;
       if(!accounts.has(key)){
         const savedDate=state.accountJoinDates[key];
-        accounts.set(key,{key,account:member.account,rankOrder:0,characterCount:0,joinDate:asDate(savedDate)||member.originalJoinDate||member.joinDate});
+        accounts.set(key,{key,account:member.account,rankOrder:0,characterCount:0,characters:[],joinDate:asDate(savedDate)||member.originalJoinDate||member.joinDate});
       }
       const account=accounts.get(key);
       account.rankOrder=Math.max(account.rankOrder,Number(member.rankOrder)||0);
       account.characterCount++;
+      account.characters.push({name:member.name||'Unknown',class:member.class||'Unknown',rank:member.rank||'Unranked'});
       const savedDate=state.accountJoinDates[key];
       const joinDate=asDate(savedDate)||member.originalJoinDate||member.joinDate;
       if(joinDate&&(!account.joinDate||joinDate<account.joinDate))account.joinDate=joinDate;
@@ -60,16 +61,21 @@
       return {...account,eligibleDate};
     }).filter(account=>account.eligibleDate<=endOfWindow)
       .sort((a,b)=>a.eligibleDate-b.eligibleDate||a.account.localeCompare(b.account));
-    const count=upcoming.length;
-    $('promotion-list').innerHTML=count?upcoming.map(account=>{
+    const query=$('promotion-search').value.trim().toLocaleLowerCase();
+    const results=query?upcoming.filter(account=>account.account.toLocaleLowerCase().includes(query)||account.characters.some(character=>character.name.toLocaleLowerCase().includes(query))):upcoming;
+    $('promotion-search-results').textContent=query?results.length.toLocaleString()+' '+(results.length===1?'account':'accounts')+' match':upcoming.length.toLocaleString()+' '+(upcoming.length===1?'account':'accounts')+' on the promotion list';
+    $('promotion-list').innerHTML=results.length?results.map(account=>{
       const nextRank=account.rankOrder+1;
-      const stateLabel=account.eligibleDate<=now?'Eligible now':`Eligible ${formatDate(account.eligibleDate)}`;
-      return `<div class="promotion-row">
-        <div class="promotion-account"><a href="#roster" class="promotion-account-link" data-account-query="${escapeHtml(account.account)}">${escapeHtml(account.account)}</a><span>${account.characterCount} ${account.characterCount===1?'character':'characters'}</span></div>
-        <div class="promotion-path">${rankNames[account.rankOrder]} <span aria-hidden="true">→</span> ${rankNames[nextRank]}</div>
-        <time class="promotion-date" datetime="${account.eligibleDate.toISOString()}">${stateLabel}</time>
-      </div>`;
-    }).join(''):'<div class="empty-state">No accounts are approaching a promotion milestone in the next 30 days.</div>';
+      const currentRank=rankNames[account.rankOrder]||'Rank '+account.rankOrder;
+      const nextRankName=rankNames[nextRank]||'Rank '+nextRank;
+      const stateLabel=account.eligibleDate<=now?'Eligible now':'Eligible '+formatDate(account.eligibleDate);
+      const accountLink='<a href="#roster" class="promotion-account-link" data-account-query="'+escapeHtml(account.account)+'">'+escapeHtml(account.account)+'</a>';
+      if(query){
+        const characterDetails=account.characters.map(character=>'<span class="promotion-character"><b>'+escapeHtml(character.name)+'</b><small>'+escapeHtml(character.class)+' · '+escapeHtml(character.rank)+'</small></span>').join('');
+        return '<div class="promotion-row promotion-row-detail"><div class="promotion-account">'+accountLink+'<span>'+account.characterCount+' '+(account.characterCount===1?'character':'characters')+'</span></div><div class="promotion-path"><span class="promotion-path-label">Promoting</span> '+currentRank+' <span aria-hidden="true">→</span> '+nextRankName+'</div><time class="promotion-date" datetime="'+account.eligibleDate.toISOString()+'">'+stateLabel+'</time><div class="promotion-characters">'+characterDetails+'</div></div>';
+      }
+      return '<div class="promotion-row"><div class="promotion-account">'+accountLink+'<span>'+account.characterCount+' '+(account.characterCount===1?'character':'characters')+'</span></div><div class="promotion-path">'+currentRank+' <span aria-hidden="true">→</span> '+nextRankName+'</div><time class="promotion-date" datetime="'+account.eligibleDate.toISOString()+'">'+stateLabel+'</time></div>';
+    }).join(''):(query?'<div class="empty-state">No promotion accounts match this search.</div>':'<div class="empty-state">No accounts are approaching a promotion milestone in the next 30 days.</div>');
   }
   function renderInactivityAlerts(){
     const limits={1:7,2:14,3:30,4:60,5:90};
@@ -230,6 +236,7 @@
   }
   $('search').addEventListener('input',()=>{state.accountFilter='';renderRoster();});
   $('activity-search').addEventListener('input',renderRecent);
+  $('promotion-search').addEventListener('input',renderPromotions);
   $('roster').addEventListener('click',event=>{
     const link=event.target.closest('.directory-account-link');
     if(!link)return;
