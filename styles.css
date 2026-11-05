@@ -985,3 +985,25 @@ html,body { overflow-x:clip; }
   .account-detail-dialog { padding:14px; }
   .account-character-details { grid-template-columns:repeat(2,minmax(0,1fr)); }
 }
+
+/* Consistent rounded corners across roster controls, cards, and dialogs. */
+.masthead nav a,.discord-link,.page-nav a,
+.search-box,.field input,.field select,.facet-select-field select,
+.activity-filters select,.mobile-directory-sort select,.mobile-directory-sort button,
+.text-button,.promotion-dialog-close,.inactivity-dialog-close,.account-dialog-close,
+button:not(.sort-button) {
+  border-radius:8px;
+}
+.hero,.panel,.search-panel,.roster-panel,.recent-panel,.promotions-panel,.inactivity-panel,
+.route-section,.filter-panel,.item-card,.detail-panel,.route-card {
+  border-radius:12px;
+}
+.table-wrap,.directory-facets,.activity-filters,.mobile-member-card,.promotion-row,
+.inactivity-row,.event-row,.promotion-character,.promotion-rules-list li,
+.inactivity-rules-list li,.facet-chip,.mobile-member-rank,.count-pill,
+.account-rank-check-ok,.account-rank-check-warning,.account-character-card {
+  border-radius:8px;
+}
+.account-detail-dialog,.promotion-rules-dialog,.inactivity-rules-dialog {
+  border-radius:12px;
+}
