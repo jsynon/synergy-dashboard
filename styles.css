@@ -629,7 +629,7 @@ body {
   outline-offset:-6px;
   background:
     linear-gradient(90deg,rgba(2,14,24,.66),rgba(3,15,26,.74) 47%,rgba(3,15,26,.48)),
-    url('assets/synergy-hero.svg') center 52%/cover;
+    url('assets/synergy-flag-hero.webp') center 52%/cover;
   box-shadow:0 12px 35px rgba(0,0,0,.38), inset 0 0 24px rgba(5,111,159,.18);
 }
 .hero::before,.hero::after {
@@ -787,4 +787,28 @@ footer {
   .brand-banner-copy strong { font-size:2rem; }
   .brand-banner-copy small { gap:7px; font-size:.48rem; letter-spacing:.24em; }
   .brand-banner-copy small::before,.brand-banner-copy small::after { width:22px; }
+}
+
+
+/* Shared Synergy wordmark and S-banner artwork */
+.brand-banner { position:relative; isolation:isolate; }
+.brand-banner > .brand-banner-background {
+  position:absolute; inset:0; z-index:0;
+  display:block; width:100%; height:100%;
+  object-fit:cover; object-position:center 49%;
+}
+.brand-banner .brand-banner-copy > img {
+  position:relative; inset:auto; z-index:auto;
+  display:block; width:min(54vw,440px); max-width:calc(100% - 24px);
+  height:auto; max-height:calc(100% - 20px);
+  object-fit:contain; object-position:center;
+  filter:drop-shadow(0 7px 16px rgba(0,0,0,.65));
+}
+.hero {
+  background:
+    linear-gradient(90deg,rgba(2,14,24,.25),rgba(3,15,26,.42) 47%,rgba(3,15,26,.28)),
+    url('assets/synergy-flag-hero.webp') center 50%/cover;
+}
+@media(max-width:620px) {
+  .brand-banner .brand-banner-copy > img { width:min(74vw,360px); max-height:calc(100% - 18px); }
 }
