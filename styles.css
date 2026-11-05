@@ -857,3 +857,19 @@ footer {
     letter-spacing:0;
   }
 }
+
+/* Keep the full panoramic hero scene visible on phones. */
+@media(max-width:620px) {
+  .hero {
+    box-sizing:border-box;
+    width:100%;
+    height:calc((100vw - 20px) / 3);
+    min-height:0;
+    padding:8px;
+    background-size:100% 100%;
+    background-position:center;
+  }
+  .hero > .eyebrow { margin:0 0 3px; font-size:8px; }
+  .hero h1 { margin:3px 0; font-size:clamp(21px,6vw,26px); }
+  .hero-copy,.hero-subtitle { margin:3px 0 0; font-size:12px; line-height:1.3; }
+}
