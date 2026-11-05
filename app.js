@@ -56,14 +56,17 @@
     const endOfWindow=new Date(startOfToday);
     endOfWindow.setDate(endOfWindow.getDate()+30);
     endOfWindow.setHours(23,59,59,999);
-    const upcoming=[...accounts.values()].filter(account=>monthsByRank[account.rankOrder]&&account.joinDate).map(account=>{
+    const milestones=[...accounts.values()].filter(account=>monthsByRank[account.rankOrder]&&account.joinDate).map(account=>{
       const eligibleDate=addCalendarMonths(account.joinDate,monthsByRank[account.rankOrder]);
       return {...account,eligibleDate};
-    }).filter(account=>account.eligibleDate<=endOfWindow)
-      .sort((a,b)=>a.eligibleDate-b.eligibleDate||a.account.localeCompare(b.account));
+    }).sort((a,b)=>a.eligibleDate-b.eligibleDate||a.account.localeCompare(b.account));
+    const upcoming=milestones.filter(account=>account.eligibleDate<=endOfWindow);
+    const endOfSearchWindow=addCalendarMonths(startOfToday,12);
+    endOfSearchWindow.setHours(23,59,59,999);
+    const searchable=milestones.filter(account=>account.eligibleDate<=endOfSearchWindow);
     const query=$('promotion-search').value.trim().toLocaleLowerCase();
-    const results=query?upcoming.filter(account=>account.account.toLocaleLowerCase().includes(query)||account.characters.some(character=>character.name.toLocaleLowerCase().includes(query))):upcoming;
-    $('promotion-search-results').textContent=query?results.length.toLocaleString()+' '+(results.length===1?'account':'accounts')+' match':upcoming.length.toLocaleString()+' '+(upcoming.length===1?'account':'accounts')+' on the promotion list';
+    const results=query?searchable.filter(account=>account.account.toLocaleLowerCase().includes(query)||account.characters.some(character=>character.name.toLocaleLowerCase().includes(query))):upcoming;
+    $('promotion-search-results').textContent=query?results.length.toLocaleString()+' '+(results.length===1?'account':'accounts')+' match · through '+formatDate(endOfSearchWindow):upcoming.length.toLocaleString()+' '+(upcoming.length===1?'account':'accounts')+' on the promotion list';
     $('promotion-list').innerHTML=results.length?results.map(account=>{
       const nextRank=account.rankOrder+1;
       const currentRank=rankNames[account.rankOrder]||'Rank '+account.rankOrder;
@@ -75,7 +78,7 @@
         return '<div class="promotion-row promotion-row-detail"><div class="promotion-account">'+accountLink+'<span>'+account.characterCount+' '+(account.characterCount===1?'character':'characters')+'</span></div><div class="promotion-path"><span class="promotion-path-label">Promoting</span> '+currentRank+' <span aria-hidden="true">→</span> '+nextRankName+'</div><time class="promotion-date" datetime="'+account.eligibleDate.toISOString()+'">'+stateLabel+'</time><div class="promotion-characters">'+characterDetails+'</div></div>';
       }
       return '<div class="promotion-row"><div class="promotion-account">'+accountLink+'<span>'+account.characterCount+' '+(account.characterCount===1?'character':'characters')+'</span></div><div class="promotion-path">'+currentRank+' <span aria-hidden="true">→</span> '+nextRankName+'</div><time class="promotion-date" datetime="'+account.eligibleDate.toISOString()+'">'+stateLabel+'</time></div>';
-    }).join(''):(query?'<div class="empty-state">No promotion accounts match this search.</div>':'<div class="empty-state">No accounts are approaching a promotion milestone in the next 30 days.</div>');
+    }).join(''):(query?'<div class="empty-state">No promotion accounts match this search through the next 12 months.</div>':'<div class="empty-state">No accounts are approaching a promotion milestone in the next 30 days.</div>');
   }
   function renderInactivityAlerts(){
     const limits={1:7,2:14,3:30,4:60,5:90};
