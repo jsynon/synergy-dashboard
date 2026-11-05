@@ -5613,9 +5613,19 @@
       "text": "Yalir B@Kaido#96974 has joined the guild after being invited by Rilay@maxswirid#1637"
     },
     {
+      "date": "2026-10-30T21:40:34",
+      "kind": "join",
+      "text": "Yalir B has joined the guild after being invited by Rilay"
+    },
+    {
       "date": "2026-10-30T17:38:54",
       "kind": "rank",
       "text": "PegLeg Paddy@wellimreallybad#1789's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-30T17:38:54",
+      "kind": "rank",
+      "text": "PegLeg Paddy's guild rank is now Wayfarer"
     },
     {
       "date": "2026-10-30T17:38:36",
@@ -5623,9 +5633,19 @@
       "text": "PegLeg Paddy@wellimreallybad#1789 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-30T17:38:36",
+      "kind": "join",
+      "text": "PegLeg Paddy has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-10-30T13:46:08",
       "kind": "join",
       "text": "Jancul@janculadeen has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-10-30T13:46:08",
+      "kind": "join",
+      "text": "Jancul has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-10-30T01:10:19",
@@ -5633,9 +5653,19 @@
       "text": "Yalir B@Kaido#96974 has left the guild"
     },
     {
+      "date": "2026-10-30T01:10:19",
+      "kind": "exit",
+      "text": "Yalir B has left the guild"
+    },
+    {
       "date": "2026-10-29T18:29:20",
       "kind": "exit",
       "text": "Bangking@bangking#3346 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-10-29T18:29:20",
+      "kind": "exit",
+      "text": "Bangking was kicked from the guild by Elanor"
     },
     {
       "date": "2026-10-29T18:27:49",
@@ -5643,9 +5673,19 @@
       "text": "SempreUmRogue@CodaBrasil was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-29T18:27:49",
+      "kind": "exit",
+      "text": "SempreUmRogue was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-10-29T18:27:46",
       "kind": "exit",
       "text": "CodaSW@CodaBrasil was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-10-29T18:27:46",
+      "kind": "exit",
+      "text": "CodaSW was kicked from the guild by Elanor"
     },
     {
       "date": "2026-10-29T18:27:44",
@@ -5653,9 +5693,19 @@
       "text": "CodaPala@CodaBrasil was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-29T18:27:44",
+      "kind": "exit",
+      "text": "CodaPala was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-10-29T18:27:42",
       "kind": "exit",
       "text": "CodaGWF@CodaBrasil was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-10-29T18:27:42",
+      "kind": "exit",
+      "text": "CodaGWF was kicked from the guild by Elanor"
     },
     {
       "date": "2026-10-29T18:27:40",
@@ -5663,9 +5713,19 @@
       "text": "CodaFigh@CodaBrasil was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-29T18:27:40",
+      "kind": "exit",
+      "text": "CodaFigh was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-10-29T18:27:38",
       "kind": "exit",
       "text": "CodaCW@CodaBrasil was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-10-29T18:27:38",
+      "kind": "exit",
+      "text": "CodaCW was kicked from the guild by Elanor"
     },
     {
       "date": "2026-10-29T18:27:35",
@@ -5673,9 +5733,19 @@
       "text": "CodaBard@CodaBrasil was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-29T18:27:35",
+      "kind": "exit",
+      "text": "CodaBard was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-10-29T18:26:03",
       "kind": "rank",
       "text": "Zilla@ritchano2001#9268's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-29T18:26:03",
+      "kind": "rank",
+      "text": "Zilla's guild rank is now Wayfarer"
     },
     {
       "date": "2026-10-29T18:25:59",
@@ -5683,9 +5753,19 @@
       "text": "Zilla-cw@ritchano2001#9268's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-10-29T18:25:59",
+      "kind": "rank",
+      "text": "Zilla-cw's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-10-29T18:25:20",
       "kind": "rank",
       "text": "IGLWarlock@wellimreallybad#1789's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-29T18:25:20",
+      "kind": "rank",
+      "text": "IGLWarlock's guild rank is now Wayfarer"
     },
     {
       "date": "2026-10-29T18:25:04",
@@ -5693,9 +5773,19 @@
       "text": "Raedra Obarskyr@kyo#1079's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-10-29T18:25:04",
+      "kind": "rank",
+      "text": "Raedra Obarskyr's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-10-29T18:25:02",
       "kind": "rank",
       "text": "Hallebooyah@kyo#1079's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-29T18:25:02",
+      "kind": "rank",
+      "text": "Hallebooyah's guild rank is now Wayfarer"
     },
     {
       "date": "2026-10-29T18:25:00",
@@ -5703,9 +5793,19 @@
       "text": "Durance Critus@kyo#1079's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-10-29T18:25:00",
+      "kind": "rank",
+      "text": "Durance Critus's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-10-29T18:24:58",
       "kind": "rank",
       "text": "Amadeus@kyo#1079's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-29T18:24:58",
+      "kind": "rank",
+      "text": "Amadeus's guild rank is now Wayfarer"
     },
     {
       "date": "2026-10-29T18:24:17",
@@ -5713,9 +5813,19 @@
       "text": "Nocturum SW@Nocturum#99777 was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-29T18:24:17",
+      "kind": "exit",
+      "text": "Nocturum SW was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-10-29T18:23:29",
       "kind": "exit",
       "text": "Metulah HR@damien078#7634 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-10-29T18:23:29",
+      "kind": "exit",
+      "text": "Metulah HR was kicked from the guild by Elanor"
     },
     {
       "date": "2026-10-29T18:23:27",
@@ -5723,9 +5833,19 @@
       "text": "Metulah@damien078#7634 was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-29T18:23:27",
+      "kind": "exit",
+      "text": "Metulah was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-10-29T18:23:06",
       "kind": "exit",
       "text": "daz@norlinban#4154 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-10-29T18:23:06",
+      "kind": "exit",
+      "text": "daz was kicked from the guild by Elanor"
     },
     {
       "date": "2026-10-29T16:15:53",
@@ -5733,9 +5853,19 @@
       "text": "Mio-Ava@Bahnegork has left the guild"
     },
     {
+      "date": "2026-10-29T16:15:53",
+      "kind": "exit",
+      "text": "Mio-Ava has left the guild"
+    },
+    {
       "date": "2026-10-27T20:52:50",
       "kind": "join",
       "text": "WinkleUwU@add#9025 has joined the guild after being invited by Ivydora@reelapse#5586"
+    },
+    {
+      "date": "2026-10-27T20:52:50",
+      "kind": "join",
+      "text": "WinkleUwU has joined the guild after being invited by Ivydora"
     },
     {
       "date": "2026-10-25T17:18:31",
@@ -5743,9 +5873,19 @@
       "text": "LFarquaad@xeetzo#7171 was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-25T17:18:31",
+      "kind": "exit",
+      "text": "LFarquaad was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-10-25T17:13:32",
       "kind": "join",
       "text": "Eeirtis@eeirtis#4047 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-10-25T17:13:32",
+      "kind": "join",
+      "text": "Eeirtis has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-10-25T13:11:02",
@@ -5753,9 +5893,19 @@
       "text": "Celeste Truthspeaker@jigoinane has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-25T13:11:02",
+      "kind": "join",
+      "text": "Celeste Truthspeaker has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-10-25T02:51:53",
       "kind": "rank",
       "text": "Singing Theo@theoden#2099's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-25T02:51:53",
+      "kind": "rank",
+      "text": "Singing Theo's guild rank is now Stalwart"
     },
     {
       "date": "2026-10-25T02:51:48",
@@ -5763,9 +5913,19 @@
       "text": "Fighting Theo@theoden#2099's guild rank is now Stalwart"
     },
     {
+      "date": "2026-10-25T02:51:48",
+      "kind": "rank",
+      "text": "Fighting Theo's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-10-24T12:07:46",
       "kind": "rank",
       "text": "ghostface@Skeet803#87492's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-24T12:07:46",
+      "kind": "rank",
+      "text": "ghostface's guild rank is now Veteran"
     },
     {
       "date": "2026-10-24T12:07:44",
@@ -5773,9 +5933,19 @@
       "text": "ghostface@Skeet803#87492's guild rank is now Stalwart"
     },
     {
+      "date": "2026-10-24T12:07:44",
+      "kind": "rank",
+      "text": "ghostface's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-10-24T12:07:42",
       "kind": "rank",
       "text": "ghostface@Skeet803#87492's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-24T12:07:42",
+      "kind": "rank",
+      "text": "ghostface's guild rank is now Wayfarer"
     },
     {
       "date": "2026-10-24T12:04:35",
@@ -5783,9 +5953,19 @@
       "text": "ghostface@Skeet803#87492 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-24T12:04:35",
+      "kind": "join",
+      "text": "ghostface has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-10-23T21:23:14",
       "kind": "join",
       "text": "Athena@wotiiodin has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-10-23T21:23:14",
+      "kind": "join",
+      "text": "Athena has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-10-23T21:03:32",
@@ -5793,9 +5973,19 @@
       "text": "Athena@wotiiodin has left the guild"
     },
     {
+      "date": "2026-10-23T21:03:32",
+      "kind": "exit",
+      "text": "Athena has left the guild"
+    },
+    {
       "date": "2026-10-23T21:02:29",
       "kind": "join",
       "text": "Mytholoki@wotiiodin has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-10-23T21:02:29",
+      "kind": "join",
+      "text": "Mytholoki has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-10-23T20:55:44",
@@ -5803,9 +5993,19 @@
       "text": "Mytholoki@wotiiodin has left the guild"
     },
     {
+      "date": "2026-10-23T20:55:44",
+      "kind": "exit",
+      "text": "Mytholoki has left the guild"
+    },
+    {
       "date": "2026-10-22T19:54:29",
       "kind": "rank",
       "text": "Zerospace@tofusurpr1se's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-22T19:54:29",
+      "kind": "rank",
+      "text": "Zerospace's guild rank is now Stalwart"
     },
     {
       "date": "2026-10-22T19:53:03",
@@ -5813,9 +6013,19 @@
       "text": "Zerospace@tofusurpr1se's guild rank is now Veteran"
     },
     {
+      "date": "2026-10-22T19:53:03",
+      "kind": "rank",
+      "text": "Zerospace's guild rank is now Veteran"
+    },
+    {
       "date": "2026-10-22T19:53:01",
       "kind": "rank",
       "text": "Zerospace@tofusurpr1se's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-22T19:53:01",
+      "kind": "rank",
+      "text": "Zerospace's guild rank is now Stalwart"
     },
     {
       "date": "2026-10-22T19:52:59",
@@ -5823,9 +6033,19 @@
       "text": "Zerospace@tofusurpr1se's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-10-22T19:52:59",
+      "kind": "rank",
+      "text": "Zerospace's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-10-22T19:52:33",
       "kind": "join",
       "text": "Zerospace@tofusurpr1se has joined the guild after being invited by Ivydora@reelapse#5586"
+    },
+    {
+      "date": "2026-10-22T19:52:33",
+      "kind": "join",
+      "text": "Zerospace has joined the guild after being invited by Ivydora"
     },
     {
       "date": "2026-10-22T00:42:15",
@@ -5833,9 +6053,19 @@
       "text": "Zerospace@tofusurpr1se has left the guild"
     },
     {
+      "date": "2026-10-22T00:42:15",
+      "kind": "exit",
+      "text": "Zerospace has left the guild"
+    },
+    {
       "date": "2026-10-21T13:04:55",
       "kind": "rank",
       "text": "Vyptimus@csapkodojack1's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-21T13:04:55",
+      "kind": "rank",
+      "text": "Vyptimus's guild rank is now Veteran"
     },
     {
       "date": "2026-10-21T13:04:49",
@@ -5843,9 +6073,19 @@
       "text": "Prime@csapkodojack1's guild rank is now Veteran"
     },
     {
+      "date": "2026-10-21T13:04:49",
+      "kind": "rank",
+      "text": "Prime's guild rank is now Veteran"
+    },
+    {
       "date": "2026-10-21T13:04:46",
       "kind": "rank",
       "text": "Optimus@csapkodojack1's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-21T13:04:46",
+      "kind": "rank",
+      "text": "Optimus's guild rank is now Veteran"
     },
     {
       "date": "2026-10-21T13:04:23",
@@ -5853,9 +6093,19 @@
       "text": "The Blade@badassleeroy#2335's guild rank is now Veteran"
     },
     {
+      "date": "2026-10-21T13:04:23",
+      "kind": "rank",
+      "text": "The Blade's guild rank is now Veteran"
+    },
+    {
       "date": "2026-10-21T13:04:20",
       "kind": "rank",
       "text": "Snickelfritz@badassleeroy#2335's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-21T13:04:20",
+      "kind": "rank",
+      "text": "Snickelfritz's guild rank is now Veteran"
     },
     {
       "date": "2026-10-21T13:04:17",
@@ -5863,9 +6113,19 @@
       "text": "Sir Rufus@badassleeroy#2335's guild rank is now Veteran"
     },
     {
+      "date": "2026-10-21T13:04:17",
+      "kind": "rank",
+      "text": "Sir Rufus's guild rank is now Veteran"
+    },
+    {
       "date": "2026-10-21T13:04:15",
       "kind": "rank",
       "text": "Sir LeeRoy@badassleeroy#2335's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-21T13:04:15",
+      "kind": "rank",
+      "text": "Sir LeeRoy's guild rank is now Veteran"
     },
     {
       "date": "2026-10-21T12:59:30",
@@ -5873,9 +6133,19 @@
       "text": "Shadowheart@xiaoshungaming#9707's guild rank is now Veteran"
     },
     {
+      "date": "2026-10-21T12:59:30",
+      "kind": "rank",
+      "text": "Shadowheart's guild rank is now Veteran"
+    },
+    {
       "date": "2026-10-21T12:53:44",
       "kind": "rank",
       "text": "SkyriM@mata#8261's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-21T12:53:44",
+      "kind": "rank",
+      "text": "SkyriM's guild rank is now Stalwart"
     },
     {
       "date": "2026-10-21T12:53:19",
@@ -5883,9 +6153,19 @@
       "text": "woodenwolf@machrist0021#32205's guild rank is now Stalwart"
     },
     {
+      "date": "2026-10-21T12:53:19",
+      "kind": "rank",
+      "text": "woodenwolf's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-10-21T12:46:01",
       "kind": "rank",
       "text": "OldMan@noobynut's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-21T12:46:01",
+      "kind": "rank",
+      "text": "OldMan's guild rank is now Stalwart"
     },
     {
       "date": "2026-10-21T12:45:58",
@@ -5893,9 +6173,19 @@
       "text": "Sunrise@noobynut's guild rank is now Stalwart"
     },
     {
+      "date": "2026-10-21T12:45:58",
+      "kind": "rank",
+      "text": "Sunrise's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-10-21T12:30:32",
       "kind": "rank",
       "text": "Ann_Roze@As0t1gu3#86314's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-21T12:30:32",
+      "kind": "rank",
+      "text": "Ann_Roze's guild rank is now Stalwart"
     },
     {
       "date": "2026-10-21T12:29:30",
@@ -5903,9 +6193,19 @@
       "text": "Rusher@rusherzs13's guild rank is now Veteran"
     },
     {
+      "date": "2026-10-21T12:29:30",
+      "kind": "rank",
+      "text": "Rusher's guild rank is now Veteran"
+    },
+    {
       "date": "2026-10-21T12:28:57",
       "kind": "rank",
       "text": "Nightmare OP@gonnaeatu#7347's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-21T12:28:57",
+      "kind": "rank",
+      "text": "Nightmare OP's guild rank is now Veteran"
     },
     {
       "date": "2026-10-21T12:28:54",
@@ -5913,9 +6213,19 @@
       "text": "Nightmare DC@gonnaeatu#7347's guild rank is now Veteran"
     },
     {
+      "date": "2026-10-21T12:28:54",
+      "kind": "rank",
+      "text": "Nightmare DC's guild rank is now Veteran"
+    },
+    {
       "date": "2026-10-21T12:28:52",
       "kind": "rank",
       "text": "meatball@gonnaeatu#7347's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-21T12:28:52",
+      "kind": "rank",
+      "text": "meatball's guild rank is now Veteran"
     },
     {
       "date": "2026-10-21T12:23:18",
@@ -5923,9 +6233,19 @@
       "text": "Alune The Beauty@Alune#58925's guild rank is now Stalwart"
     },
     {
+      "date": "2026-10-21T12:23:18",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-10-21T12:23:16",
       "kind": "rank",
       "text": "Alune The Beauty@Alune#58925's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-21T12:23:16",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Wayfarer"
     },
     {
       "date": "2026-10-20T22:30:20",
@@ -5933,9 +6253,19 @@
       "text": "Alune The Beauty@Alune#58925 has joined the guild after being invited by Rilay@maxswirid#1637"
     },
     {
+      "date": "2026-10-20T22:30:20",
+      "kind": "join",
+      "text": "Alune The Beauty has joined the guild after being invited by Rilay"
+    },
+    {
       "date": "2026-10-20T22:27:03",
       "kind": "exit",
       "text": "Alune The Beauty@Alune#58925 has left the guild"
+    },
+    {
+      "date": "2026-10-20T22:27:03",
+      "kind": "exit",
+      "text": "Alune The Beauty has left the guild"
     },
     {
       "date": "2026-10-20T01:32:41",
@@ -5943,9 +6273,19 @@
       "text": "Moxy@skorpntv#4972's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-10-20T01:32:41",
+      "kind": "rank",
+      "text": "Moxy's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-10-20T01:32:38",
       "kind": "rank",
       "text": "Velissra@skorpntv#4972's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-20T01:32:38",
+      "kind": "rank",
+      "text": "Velissra's guild rank is now Wayfarer"
     },
     {
       "date": "2026-10-20T01:31:30",
@@ -5953,9 +6293,19 @@
       "text": "Balasore@cptcoop#2581 was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-20T01:31:30",
+      "kind": "exit",
+      "text": "Balasore was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-10-19T20:10:59",
       "kind": "join",
       "text": "Sourdoughss@Strudelss#80167 has joined the guild after being invited by crisem97@crisem97"
+    },
+    {
+      "date": "2026-10-19T20:10:59",
+      "kind": "join",
+      "text": "Sourdoughss has joined the guild after being invited by crisem97"
     },
     {
       "date": "2026-10-17T18:59:51",
@@ -5963,9 +6313,19 @@
       "text": "Fass and Draco M.@ravenwings22 was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-17T18:59:51",
+      "kind": "exit",
+      "text": "Fass and Draco M. was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-10-16T19:50:56",
       "kind": "rank",
       "text": "Alune The Beauty@Alune#58925's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-16T19:50:56",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Stalwart"
     },
     {
       "date": "2026-10-16T19:50:53",
@@ -5973,9 +6333,19 @@
       "text": "Alune The Beauty@Alune#58925's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-10-16T19:50:53",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-10-16T19:50:19",
       "kind": "join",
       "text": "Alune The Beauty@Alune#58925 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-10-16T19:50:19",
+      "kind": "join",
+      "text": "Alune The Beauty has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-10-16T19:44:28",
@@ -5983,9 +6353,19 @@
       "text": "Alune The Beauty@Alune#58925 has left the guild"
     },
     {
+      "date": "2026-10-16T19:44:28",
+      "kind": "exit",
+      "text": "Alune The Beauty has left the guild"
+    },
+    {
       "date": "2026-10-16T18:17:59",
       "kind": "rank",
       "text": "Damar@damar9292's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-16T18:17:59",
+      "kind": "rank",
+      "text": "Damar's guild rank is now Wayfarer"
     },
     {
       "date": "2026-10-14T22:00:17",
@@ -5993,9 +6373,19 @@
       "text": "Athena@wotiiodin has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-14T22:00:17",
+      "kind": "join",
+      "text": "Athena has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-10-14T21:59:36",
       "kind": "join",
       "text": "Wonder Woman@wotiiodin has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-10-14T21:59:36",
+      "kind": "join",
+      "text": "Wonder Woman has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-10-14T21:58:34",
@@ -6003,9 +6393,19 @@
       "text": "Mytholoki@wotiiodin has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-14T21:58:34",
+      "kind": "join",
+      "text": "Mytholoki has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-10-14T03:07:46",
       "kind": "join",
       "text": "Jeru@Jerusalem#41133 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-10-14T03:07:46",
+      "kind": "join",
+      "text": "Jeru has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-10-13T22:06:13",
@@ -6013,9 +6413,19 @@
       "text": "GuardianAngel@kenkenken.c83#62279 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-13T22:06:13",
+      "kind": "join",
+      "text": "GuardianAngel has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-10-13T21:57:23",
       "kind": "join",
       "text": "MEPIKCHULITE@mrpikachulite#37610 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-10-13T21:57:23",
+      "kind": "join",
+      "text": "MEPIKCHULITE has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-10-13T20:56:45",
@@ -6023,9 +6433,19 @@
       "text": "Yalir B@Kaido#96974 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-13T20:56:45",
+      "kind": "join",
+      "text": "Yalir B has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-10-13T20:55:45",
       "kind": "join",
       "text": "Yalir DC@Kaido#96974 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-10-13T20:55:45",
+      "kind": "join",
+      "text": "Yalir DC has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-10-13T20:53:40",
@@ -6033,9 +6453,19 @@
       "text": "Yalir@Kaido#96974 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-13T20:53:40",
+      "kind": "join",
+      "text": "Yalir has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-10-12T19:02:08",
       "kind": "exit",
       "text": "Prediction@prediction#9097 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-10-12T19:02:08",
+      "kind": "exit",
+      "text": "Prediction was kicked from the guild by Elanor"
     },
     {
       "date": "2026-10-12T18:50:54",
@@ -6043,9 +6473,19 @@
       "text": "Aurora@girlievampire28#9193 was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-12T18:50:54",
+      "kind": "exit",
+      "text": "Aurora was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-10-12T12:44:58",
       "kind": "rank",
       "text": "Lethal Chaos@lethalsandbox#5505's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-12T12:44:58",
+      "kind": "rank",
+      "text": "Lethal Chaos's guild rank is now Wayfarer"
     },
     {
       "date": "2026-10-10T17:44:05",
@@ -6053,9 +6493,19 @@
       "text": "Squishy@fatfack#4422 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-10T17:44:05",
+      "kind": "join",
+      "text": "Squishy has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-10-10T17:36:11",
       "kind": "join",
       "text": "Unknown Oath@betterorworse has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-10-10T17:36:11",
+      "kind": "join",
+      "text": "Unknown Oath has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-10-10T17:30:15",
@@ -6063,9 +6513,19 @@
       "text": "Nocturum SW@Nocturum#99777 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-10T17:30:15",
+      "kind": "join",
+      "text": "Nocturum SW has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-10-10T17:27:10",
       "kind": "join",
       "text": "Metulah HR@damien078#7634 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-10-10T17:27:10",
+      "kind": "join",
+      "text": "Metulah HR has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-10-10T17:06:17",
@@ -6073,9 +6533,19 @@
       "text": "Happy Heelme@sunsoul#6318 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-10T17:06:17",
+      "kind": "join",
+      "text": "Happy Heelme has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-10-09T18:43:25",
       "kind": "rank",
       "text": "Clanker XS@whomid#7073's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-09T18:43:25",
+      "kind": "rank",
+      "text": "Clanker XS's guild rank is now Veteran"
     },
     {
       "date": "2026-10-09T18:43:23",
@@ -6083,9 +6553,19 @@
       "text": "Clanker XS@whomid#7073's guild rank is now Stalwart"
     },
     {
+      "date": "2026-10-09T18:43:23",
+      "kind": "rank",
+      "text": "Clanker XS's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-10-09T18:43:21",
       "kind": "rank",
       "text": "Clanker XS@whomid#7073's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-09T18:43:21",
+      "kind": "rank",
+      "text": "Clanker XS's guild rank is now Wayfarer"
     },
     {
       "date": "2026-10-09T17:51:50",
@@ -6093,9 +6573,19 @@
       "text": "Clanker XS@whomid#7073 has joined the guild after being invited by The.Holy.Pickle@angelbosszaragoza2004#06971"
     },
     {
+      "date": "2026-10-09T17:51:50",
+      "kind": "join",
+      "text": "Clanker XS has joined the guild after being invited by The.Holy.Pickle"
+    },
+    {
       "date": "2026-10-09T14:18:37",
       "kind": "exit",
       "text": "Fentalina@marsnoplan#82844 has left the guild"
+    },
+    {
+      "date": "2026-10-09T14:18:37",
+      "kind": "exit",
+      "text": "Fentalina has left the guild"
     },
     {
       "date": "2026-10-08T22:51:54",
@@ -6103,9 +6593,19 @@
       "text": "Rivakyn@hightechredneck#1969 was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-08T22:51:54",
+      "kind": "exit",
+      "text": "Rivakyn was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-10-08T22:49:21",
       "kind": "rank",
       "text": "Alune The Beauty@Alune#58925's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-08T22:49:21",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Stalwart"
     },
     {
       "date": "2026-10-08T22:49:19",
@@ -6113,9 +6613,19 @@
       "text": "Alune The Beauty@Alune#58925's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-10-08T22:49:19",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-10-08T20:29:25",
       "kind": "join",
       "text": "Alune The Beauty@Alune#58925 has joined the guild after being invited by Rilay@maxswirid#1637"
+    },
+    {
+      "date": "2026-10-08T20:29:25",
+      "kind": "join",
+      "text": "Alune The Beauty has joined the guild after being invited by Rilay"
     },
     {
       "date": "2026-10-08T20:17:58",
@@ -6123,9 +6633,19 @@
       "text": "Alune The Beauty@Alune#58925 has left the guild"
     },
     {
+      "date": "2026-10-08T20:17:58",
+      "kind": "exit",
+      "text": "Alune The Beauty has left the guild"
+    },
+    {
       "date": "2026-10-08T18:09:49",
       "kind": "rank",
       "text": "Renids@richest11's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-08T18:09:49",
+      "kind": "rank",
+      "text": "Renids's guild rank is now Veteran"
     },
     {
       "date": "2026-10-08T18:09:45",
@@ -6133,9 +6653,19 @@
       "text": "sojo12@richest11's guild rank is now Veteran"
     },
     {
+      "date": "2026-10-08T18:09:45",
+      "kind": "rank",
+      "text": "sojo12's guild rank is now Veteran"
+    },
+    {
       "date": "2026-10-08T18:08:52",
       "kind": "rank",
       "text": "grizzie@tramport99#2050's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-08T18:08:52",
+      "kind": "rank",
+      "text": "grizzie's guild rank is now Stalwart"
     },
     {
       "date": "2026-10-08T08:21:53",
@@ -6143,9 +6673,19 @@
       "text": "VonGolA@vongola#7131 has left the guild"
     },
     {
+      "date": "2026-10-08T08:21:53",
+      "kind": "exit",
+      "text": "VonGolA has left the guild"
+    },
+    {
       "date": "2026-10-06T20:09:09",
       "kind": "join",
       "text": "Zilla@ritchano2001#9268 has joined the guild after being invited by crisem97@crisem97"
+    },
+    {
+      "date": "2026-10-06T20:09:09",
+      "kind": "join",
+      "text": "Zilla has joined the guild after being invited by crisem97"
     },
     {
       "date": "2026-10-04T08:56:07",
@@ -6153,9 +6693,19 @@
       "text": "Aurfel@aurfel was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-04T08:56:07",
+      "kind": "exit",
+      "text": "Aurfel was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-10-04T08:53:00",
       "kind": "rank",
       "text": "Tameika@necroforever#1834's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-10-04T08:53:00",
+      "kind": "rank",
+      "text": "Tameika's guild rank is now Veteran"
     },
     {
       "date": "2026-10-04T08:52:57",
@@ -6163,9 +6713,19 @@
       "text": "psycho Wubble@necroforever#1834's guild rank is now Veteran"
     },
     {
+      "date": "2026-10-04T08:52:57",
+      "kind": "rank",
+      "text": "psycho Wubble's guild rank is now Veteran"
+    },
+    {
       "date": "2026-10-04T08:52:30",
       "kind": "rank",
       "text": "Gotnoname@gotnoname4#9308's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-04T08:52:30",
+      "kind": "rank",
+      "text": "Gotnoname's guild rank is now Stalwart"
     },
     {
       "date": "2026-10-04T08:52:16",
@@ -6173,9 +6733,19 @@
       "text": "Sulva@sullivanwarmonk1#5131's guild rank is now Stalwart"
     },
     {
+      "date": "2026-10-04T08:52:16",
+      "kind": "rank",
+      "text": "Sulva's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-10-04T08:51:40",
       "kind": "rank",
       "text": "HardStyle@Alicolak2#49993's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-04T08:51:40",
+      "kind": "rank",
+      "text": "HardStyle's guild rank is now Stalwart"
     },
     {
       "date": "2026-10-04T08:51:37",
@@ -6183,9 +6753,19 @@
       "text": "HardPunch@Alicolak2#49993's guild rank is now Stalwart"
     },
     {
+      "date": "2026-10-04T08:51:37",
+      "kind": "rank",
+      "text": "HardPunch's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-10-04T08:51:01",
       "kind": "rank",
       "text": "Hadryl Kay'ron@almavarno's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-04T08:51:01",
+      "kind": "rank",
+      "text": "Hadryl Kay'ron's guild rank is now Wayfarer"
     },
     {
       "date": "2026-10-04T08:50:32",
@@ -6193,9 +6773,19 @@
       "text": "andrea@amcallister9#35166's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-10-04T08:50:32",
+      "kind": "rank",
+      "text": "andrea's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-10-04T08:50:14",
       "kind": "rank",
       "text": "GabyTzzu@gheibriol's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-04T08:50:14",
+      "kind": "rank",
+      "text": "GabyTzzu's guild rank is now Wayfarer"
     },
     {
       "date": "2026-10-04T08:42:07",
@@ -6203,9 +6793,19 @@
       "text": "The Storyteller@karsian#9338 was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-04T08:42:07",
+      "kind": "exit",
+      "text": "The Storyteller was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-10-04T08:34:57",
       "kind": "rank",
       "text": "Ryn@vhorsmam#41559's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-04T08:34:57",
+      "kind": "rank",
+      "text": "Ryn's guild rank is now Stalwart"
     },
     {
       "date": "2026-10-04T08:34:52",
@@ -6213,9 +6813,19 @@
       "text": "Ryn@vhorsmam#41559's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-10-04T08:34:52",
+      "kind": "rank",
+      "text": "Ryn's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-10-04T08:34:42",
       "kind": "join",
       "text": "NUWA@vhorsmam#41559 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-10-04T08:34:42",
+      "kind": "join",
+      "text": "NUWA has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-10-03T11:16:07",
@@ -6223,9 +6833,19 @@
       "text": "Moxy@skorpntv#4972 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-10-03T11:16:07",
+      "kind": "join",
+      "text": "Moxy has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-10-03T08:37:05",
       "kind": "rank",
       "text": "Lurtz@thorhammern's guild rank is now Elder"
+    },
+    {
+      "date": "2026-10-03T08:37:05",
+      "kind": "rank",
+      "text": "Lurtz's guild rank is now Elder"
     },
     {
       "date": "2026-10-03T08:37:01",
@@ -6233,9 +6853,19 @@
       "text": "Lurtz@thorhammern's guild rank is now Veteran"
     },
     {
+      "date": "2026-10-03T08:37:01",
+      "kind": "rank",
+      "text": "Lurtz's guild rank is now Veteran"
+    },
+    {
       "date": "2026-10-03T08:36:58",
       "kind": "rank",
       "text": "Lurtz@thorhammern's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-03T08:36:58",
+      "kind": "rank",
+      "text": "Lurtz's guild rank is now Stalwart"
     },
     {
       "date": "2026-10-03T08:36:55",
@@ -6243,9 +6873,19 @@
       "text": "Lurtz@thorhammern's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-10-03T08:36:55",
+      "kind": "rank",
+      "text": "Lurtz's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-10-03T08:36:30",
       "kind": "join",
       "text": "Lurtz@thorhammern has joined the guild after being invited by Rydark@zorlonix"
+    },
+    {
+      "date": "2026-10-03T08:36:30",
+      "kind": "join",
+      "text": "Lurtz has joined the guild after being invited by Rydark"
     },
     {
       "date": "2026-10-02T11:48:55",
@@ -6253,9 +6893,19 @@
       "text": "Kira@morinela2#5008's guild rank is now Veteran"
     },
     {
+      "date": "2026-10-02T11:48:55",
+      "kind": "rank",
+      "text": "Kira's guild rank is now Veteran"
+    },
+    {
       "date": "2026-10-02T11:48:51",
       "kind": "rank",
       "text": "Kira@morinela2#5008's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-02T11:48:51",
+      "kind": "rank",
+      "text": "Kira's guild rank is now Stalwart"
     },
     {
       "date": "2026-10-02T11:48:49",
@@ -6263,9 +6913,19 @@
       "text": "Kira@morinela2#5008's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-10-02T11:48:49",
+      "kind": "rank",
+      "text": "Kira's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-10-02T11:48:36",
       "kind": "join",
       "text": "Kira@morinela2#5008 has joined the guild after being invited by Rydark@zorlonix"
+    },
+    {
+      "date": "2026-10-02T11:48:36",
+      "kind": "join",
+      "text": "Kira has joined the guild after being invited by Rydark"
     },
     {
       "date": "2026-10-02T01:15:33",
@@ -6273,9 +6933,19 @@
       "text": "Alune The Beauty@Alune#58925's guild rank is now Stalwart"
     },
     {
+      "date": "2026-10-02T01:15:33",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-10-02T01:15:29",
       "kind": "rank",
       "text": "Alune The Beauty@Alune#58925's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-02T01:15:29",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Wayfarer"
     },
     {
       "date": "2026-10-02T01:15:09",
@@ -6283,9 +6953,19 @@
       "text": "Alune The Beauty@Alune#58925 has joined the guild after being invited by Rydark@zorlonix"
     },
     {
+      "date": "2026-10-02T01:15:09",
+      "kind": "join",
+      "text": "Alune The Beauty has joined the guild after being invited by Rydark"
+    },
+    {
       "date": "2026-10-02T01:09:19",
       "kind": "exit",
       "text": "Alune The Beauty@Alune#58925 has left the guild"
+    },
+    {
+      "date": "2026-10-02T01:09:19",
+      "kind": "exit",
+      "text": "Alune The Beauty has left the guild"
     },
     {
       "date": "2026-10-01T06:37:25",
@@ -6293,9 +6973,19 @@
       "text": "Sensv@sensv#9513's guild rank is now Stalwart"
     },
     {
+      "date": "2026-10-01T06:37:25",
+      "kind": "rank",
+      "text": "Sensv's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-10-01T06:37:00",
       "kind": "rank",
       "text": "Ragnar The Bard@dokrahm#9634's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-01T06:37:00",
+      "kind": "rank",
+      "text": "Ragnar The Bard's guild rank is now Stalwart"
     },
     {
       "date": "2026-10-01T06:36:58",
@@ -6303,9 +6993,19 @@
       "text": "Ragnar OP@dokrahm#9634's guild rank is now Stalwart"
     },
     {
+      "date": "2026-10-01T06:36:58",
+      "kind": "rank",
+      "text": "Ragnar OP's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-10-01T06:36:23",
       "kind": "rank",
       "text": "Brightwing@majere00#5813's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-10-01T06:36:23",
+      "kind": "rank",
+      "text": "Brightwing's guild rank is now Stalwart"
     },
     {
       "date": "2026-10-01T06:36:18",
@@ -6313,9 +7013,19 @@
       "text": "Victorinous@majere00#5813's guild rank is now Stalwart"
     },
     {
+      "date": "2026-10-01T06:36:18",
+      "kind": "rank",
+      "text": "Victorinous's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-10-01T06:35:06",
       "kind": "rank",
       "text": "AGramos@zgilos#0747's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-10-01T06:35:06",
+      "kind": "rank",
+      "text": "AGramos's guild rank is now Wayfarer"
     },
     {
       "date": "2026-10-01T06:35:02",
@@ -6323,9 +7033,19 @@
       "text": "LeviaTank@zgilos#0747's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-10-01T06:35:02",
+      "kind": "rank",
+      "text": "LeviaTank's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-30T14:51:00",
       "kind": "rank",
       "text": "YumukluSucurta@filamingom's guild rank is now Elder"
+    },
+    {
+      "date": "2026-09-30T14:51:00",
+      "kind": "rank",
+      "text": "YumukluSucurta's guild rank is now Elder"
     },
     {
       "date": "2026-09-30T14:50:57",
@@ -6333,9 +7053,19 @@
       "text": "YumukluSucurta@filamingom's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-30T14:50:57",
+      "kind": "rank",
+      "text": "YumukluSucurta's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-30T14:50:55",
       "kind": "rank",
       "text": "YumukluSucurta@filamingom's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-30T14:50:55",
+      "kind": "rank",
+      "text": "YumukluSucurta's guild rank is now Stalwart"
     },
     {
       "date": "2026-09-30T14:50:52",
@@ -6343,9 +7073,19 @@
       "text": "YumukluSucurta@filamingom's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-30T14:50:52",
+      "kind": "rank",
+      "text": "YumukluSucurta's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-30T14:50:40",
       "kind": "join",
       "text": "YumukluSucurta@filamingom has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-30T14:50:40",
+      "kind": "join",
+      "text": "YumukluSucurta has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-30T09:53:17",
@@ -6353,9 +7093,19 @@
       "text": "Metulah@damien078#7634 has joined the guild after being invited by Ivydora@reelapse#5586"
     },
     {
+      "date": "2026-09-30T09:53:17",
+      "kind": "join",
+      "text": "Metulah has joined the guild after being invited by Ivydora"
+    },
+    {
       "date": "2026-09-29T21:23:41",
       "kind": "join",
       "text": "Raedra Obarskyr@kyo#1079 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-29T21:23:41",
+      "kind": "join",
+      "text": "Raedra Obarskyr has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-29T21:21:56",
@@ -6363,9 +7113,19 @@
       "text": "Durance Critus@kyo#1079 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-29T21:21:56",
+      "kind": "join",
+      "text": "Durance Critus has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-09-29T21:20:52",
       "kind": "join",
       "text": "Hallebooyah@kyo#1079 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-29T21:20:52",
+      "kind": "join",
+      "text": "Hallebooyah has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-29T20:23:37",
@@ -6373,9 +7133,19 @@
       "text": "Zilla_cw@ritchano2001#9268 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-29T20:23:37",
+      "kind": "join",
+      "text": "Zilla_cw has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-09-29T12:12:43",
       "kind": "join",
       "text": "IGLWarlock@wellimreallybad#1789 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-29T12:12:43",
+      "kind": "join",
+      "text": "IGLWarlock has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-29T11:36:33",
@@ -6383,9 +7153,19 @@
       "text": "Amadeus@kyo#1079 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-29T11:36:33",
+      "kind": "join",
+      "text": "Amadeus has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-09-28T20:20:05",
       "kind": "join",
       "text": "The Storyteller@karsian#9338 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-28T20:20:05",
+      "kind": "join",
+      "text": "The Storyteller has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-28T13:48:05",
@@ -6393,9 +7173,19 @@
       "text": "Alune The Beauty@Alune#58925's guild rank is now Stalwart"
     },
     {
+      "date": "2026-09-28T13:48:05",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-09-27T23:12:51",
       "kind": "rank",
       "text": "Alune The Beauty@Alune#58925's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-27T23:12:51",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Veteran"
     },
     {
       "date": "2026-09-27T23:12:49",
@@ -6403,9 +7193,19 @@
       "text": "Alune The Beauty@Alune#58925's guild rank is now Stalwart"
     },
     {
+      "date": "2026-09-27T23:12:49",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-09-27T23:12:46",
       "kind": "rank",
       "text": "Alune The Beauty@Alune#58925's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-27T23:12:46",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Wayfarer"
     },
     {
       "date": "2026-09-27T23:12:22",
@@ -6413,9 +7213,19 @@
       "text": "Alune The Beauty@Alune#58925 has joined the guild after being invited by ohnomypickle@angelbosszaragoza2004#06971"
     },
     {
+      "date": "2026-09-27T23:12:22",
+      "kind": "join",
+      "text": "Alune The Beauty has joined the guild after being invited by ohnomypickle"
+    },
+    {
       "date": "2026-09-27T23:06:35",
       "kind": "exit",
       "text": "Alune The Beauty@Alune#58925 has left the guild"
+    },
+    {
+      "date": "2026-09-27T23:06:35",
+      "kind": "exit",
+      "text": "Alune The Beauty has left the guild"
     },
     {
       "date": "2026-09-27T21:04:21",
@@ -6423,9 +7233,19 @@
       "text": "AGramos@zgilos#0747 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-27T21:04:21",
+      "kind": "join",
+      "text": "AGramos has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-09-26T21:18:47",
       "kind": "exit",
       "text": "Felouire@felouire#2353 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-26T21:18:47",
+      "kind": "exit",
+      "text": "Felouire was kicked from the guild by Elanor"
     },
     {
       "date": "2026-09-26T21:17:59",
@@ -6433,9 +7253,19 @@
       "text": "lies@odysseas.fourlis#85657 was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-26T21:17:59",
+      "kind": "exit",
+      "text": "lies was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-09-26T21:15:33",
       "kind": "exit",
       "text": "AGramos@zgilos#0747 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-26T21:15:33",
+      "kind": "exit",
+      "text": "AGramos was kicked from the guild by Elanor"
     },
     {
       "date": "2026-09-26T16:05:52",
@@ -6453,9 +7283,19 @@
       "text": "Aurora@girlievampire28#9193 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-24T20:31:52",
+      "kind": "join",
+      "text": "Aurora has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-09-24T20:01:43",
       "kind": "exit",
       "text": "Grah@ezak#2843 was kicked from the guild by Rydark@zorlonix"
+    },
+    {
+      "date": "2026-09-24T20:01:43",
+      "kind": "exit",
+      "text": "Grah was kicked from the guild by Rydark"
     },
     {
       "date": "2026-09-24T19:36:55",
@@ -6463,9 +7303,19 @@
       "text": "GetDead@coolit8 was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-24T19:36:55",
+      "kind": "exit",
+      "text": "GetDead was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-09-23T20:33:16",
       "kind": "rank",
       "text": "Nigella@acckund's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-23T20:33:16",
+      "kind": "rank",
+      "text": "Nigella's guild rank is now Wayfarer"
     },
     {
       "date": "2026-09-23T12:57:41",
@@ -6473,9 +7323,19 @@
       "text": "Sir Perceval@polo910#9172's guild rank is now Stalwart"
     },
     {
+      "date": "2026-09-23T12:57:41",
+      "kind": "rank",
+      "text": "Sir Perceval's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-09-23T12:57:38",
       "kind": "rank",
       "text": "Sir Perceval@polo910#9172's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-23T12:57:38",
+      "kind": "rank",
+      "text": "Sir Perceval's guild rank is now Wayfarer"
     },
     {
       "date": "2026-09-22T17:52:45",
@@ -6483,9 +7343,19 @@
       "text": "Velissra@skorpntv#4972 has joined the guild after being invited by ohnomypickle@angelbosszaragoza2004#06971"
     },
     {
+      "date": "2026-09-22T17:52:45",
+      "kind": "join",
+      "text": "Velissra has joined the guild after being invited by ohnomypickle"
+    },
+    {
       "date": "2026-09-21T17:53:12",
       "kind": "rank",
       "text": "MALK1N@wolfraan's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-21T17:53:12",
+      "kind": "rank",
+      "text": "MALK1N's guild rank is now Stalwart"
     },
     {
       "date": "2026-09-21T17:53:10",
@@ -6493,9 +7363,19 @@
       "text": "MALK1N@wolfraan's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-21T17:53:10",
+      "kind": "rank",
+      "text": "MALK1N's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-21T17:52:55",
       "kind": "join",
       "text": "MALK1N@wolfraan has joined the guild after being invited by Rydark@zorlonix"
+    },
+    {
+      "date": "2026-09-21T17:52:55",
+      "kind": "join",
+      "text": "MALK1N has joined the guild after being invited by Rydark"
     },
     {
       "date": "2026-09-20T16:29:31",
@@ -6503,9 +7383,19 @@
       "text": "Damar@damar9292 has joined the guild after being invited by Amaya@lightray394#2720"
     },
     {
+      "date": "2026-09-20T16:29:31",
+      "kind": "join",
+      "text": "Damar has joined the guild after being invited by Amaya"
+    },
+    {
       "date": "2026-09-20T00:39:27",
       "kind": "exit",
       "text": "Eeirtis@eeirtis#4047 was kicked from the guild by Rydark@zorlonix"
+    },
+    {
+      "date": "2026-09-20T00:39:27",
+      "kind": "exit",
+      "text": "Eeirtis was kicked from the guild by Rydark"
     },
     {
       "date": "2026-09-19T23:23:57",
@@ -6513,9 +7403,19 @@
       "text": "sora@standingkotabear's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-19T23:23:57",
+      "kind": "rank",
+      "text": "sora's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-19T23:23:18",
       "kind": "rank",
       "text": "Clanker TR@whomid#7073's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-19T23:23:18",
+      "kind": "rank",
+      "text": "Clanker TR's guild rank is now Veteran"
     },
     {
       "date": "2026-09-19T23:23:16",
@@ -6523,9 +7423,19 @@
       "text": "Clanker TR@whomid#7073's guild rank is now Stalwart"
     },
     {
+      "date": "2026-09-19T23:23:16",
+      "kind": "rank",
+      "text": "Clanker TR's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-09-19T23:23:14",
       "kind": "rank",
       "text": "Clanker TR@whomid#7073's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-19T23:23:14",
+      "kind": "rank",
+      "text": "Clanker TR's guild rank is now Wayfarer"
     },
     {
       "date": "2026-09-19T23:22:47",
@@ -6533,9 +7443,19 @@
       "text": "sora@standingkotabear has joined the guild after being invited by Ivydora@reelapse#5586"
     },
     {
+      "date": "2026-09-19T23:22:47",
+      "kind": "join",
+      "text": "sora has joined the guild after being invited by Ivydora"
+    },
+    {
       "date": "2026-09-19T23:22:46",
       "kind": "rank",
       "text": "Zer0@tofusurpr1se's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-19T23:22:46",
+      "kind": "rank",
+      "text": "Zer0's guild rank is now Stalwart"
     },
     {
       "date": "2026-09-19T23:22:44",
@@ -6543,9 +7463,19 @@
       "text": "Zer0@tofusurpr1se's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-19T23:22:44",
+      "kind": "rank",
+      "text": "Zer0's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-19T23:22:05",
       "kind": "join",
       "text": "Zer0@tofusurpr1se has joined the guild after being invited by Rilay GWF@maxswirid#1637"
+    },
+    {
+      "date": "2026-09-19T23:22:05",
+      "kind": "join",
+      "text": "Zer0 has joined the guild after being invited by Rilay GWF"
     },
     {
       "date": "2026-09-19T23:21:26",
@@ -6553,9 +7483,19 @@
       "text": "Clanker TR@whomid#7073 has joined the guild after being invited by Rilay GWF@maxswirid#1637"
     },
     {
+      "date": "2026-09-19T23:21:26",
+      "kind": "join",
+      "text": "Clanker TR has joined the guild after being invited by Rilay GWF"
+    },
+    {
       "date": "2026-09-19T20:02:30",
       "kind": "exit",
       "text": "Ace Raven@AceRaven#64520 was kicked from the guild by Rydark@zorlonix"
+    },
+    {
+      "date": "2026-09-19T20:02:30",
+      "kind": "exit",
+      "text": "Ace Raven was kicked from the guild by Rydark"
     },
     {
       "date": "2026-09-19T20:02:04",
@@ -6563,9 +7503,19 @@
       "text": "Stan@antoniopiste was kicked from the guild by Rydark@zorlonix"
     },
     {
+      "date": "2026-09-19T20:02:04",
+      "kind": "exit",
+      "text": "Stan was kicked from the guild by Rydark"
+    },
+    {
       "date": "2026-09-19T20:01:37",
       "kind": "exit",
       "text": "Lumenara@M31flavrsofgainz#60140 was kicked from the guild by Rydark@zorlonix"
+    },
+    {
+      "date": "2026-09-19T20:01:37",
+      "kind": "exit",
+      "text": "Lumenara was kicked from the guild by Rydark"
     },
     {
       "date": "2026-09-18T23:07:06",
@@ -6573,9 +7523,19 @@
       "text": "sora@standingkotabear was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-18T23:07:06",
+      "kind": "exit",
+      "text": "sora was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-09-18T15:00:30",
       "kind": "join",
       "text": "Sir Perceval@polo910#9172 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-18T15:00:30",
+      "kind": "join",
+      "text": "Sir Perceval has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-17T20:52:08",
@@ -6583,9 +7543,19 @@
       "text": "Vickul Helltalon@hellscrye's guild rank is now Stalwart"
     },
     {
+      "date": "2026-09-17T20:52:08",
+      "kind": "rank",
+      "text": "Vickul Helltalon's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-09-17T20:52:06",
       "kind": "rank",
       "text": "Vickul Helltalon@hellscrye's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-17T20:52:06",
+      "kind": "rank",
+      "text": "Vickul Helltalon's guild rank is now Wayfarer"
     },
     {
       "date": "2026-09-17T20:10:20",
@@ -6593,9 +7563,19 @@
       "text": "Vickul Helltalon@hellscrye has joined the guild after being invited by Rilay SW@maxswirid#1637"
     },
     {
+      "date": "2026-09-17T20:10:20",
+      "kind": "join",
+      "text": "Vickul Helltalon has joined the guild after being invited by Rilay SW"
+    },
+    {
       "date": "2026-09-16T23:08:10",
       "kind": "rank",
       "text": "Ruzzy@djscooter12#8602's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-16T23:08:10",
+      "kind": "rank",
+      "text": "Ruzzy's guild rank is now Wayfarer"
     },
     {
       "date": "2026-09-16T08:36:59",
@@ -6603,9 +7583,19 @@
       "text": "Brox Brutescale@jigoinane has left the guild"
     },
     {
+      "date": "2026-09-16T08:36:59",
+      "kind": "exit",
+      "text": "Brox Brutescale has left the guild"
+    },
+    {
       "date": "2026-09-16T07:13:00",
       "kind": "rank",
       "text": "Fran Faithheart@jigoinane's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-16T07:13:00",
+      "kind": "rank",
+      "text": "Fran Faithheart's guild rank is now Veteran"
     },
     {
       "date": "2026-09-16T07:12:58",
@@ -6613,9 +7603,19 @@
       "text": "Fran Faithheart@jigoinane's guild rank is now Stalwart"
     },
     {
+      "date": "2026-09-16T07:12:58",
+      "kind": "rank",
+      "text": "Fran Faithheart's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-09-16T07:12:56",
       "kind": "rank",
       "text": "Fran Faithheart@jigoinane's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-16T07:12:56",
+      "kind": "rank",
+      "text": "Fran Faithheart's guild rank is now Wayfarer"
     },
     {
       "date": "2026-09-16T07:03:58",
@@ -6623,9 +7623,19 @@
       "text": "Fran Faithheart@jigoinane has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-16T07:03:58",
+      "kind": "join",
+      "text": "Fran Faithheart has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-09-15T15:20:20",
       "kind": "join",
       "text": "Rivakyn@hightechredneck#1969 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-15T15:20:20",
+      "kind": "join",
+      "text": "Rivakyn has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-15T15:17:28",
@@ -6633,9 +7643,19 @@
       "text": "Zixx Xtra@Zixx_76#82208's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-15T15:17:28",
+      "kind": "rank",
+      "text": "Zixx Xtra's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-15T15:17:26",
       "kind": "rank",
       "text": "Zixx Xtra@Zixx_76#82208's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-15T15:17:26",
+      "kind": "rank",
+      "text": "Zixx Xtra's guild rank is now Stalwart"
     },
     {
       "date": "2026-09-15T15:17:23",
@@ -6643,9 +7663,19 @@
       "text": "Zixx Xtra@Zixx_76#82208's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-15T15:17:23",
+      "kind": "rank",
+      "text": "Zixx Xtra's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-15T13:30:22",
       "kind": "join",
       "text": "Zixx Xtra@Zixx_76#82208 has joined the guild after being invited by Amaya@lightray394#2720"
+    },
+    {
+      "date": "2026-09-15T13:30:22",
+      "kind": "join",
+      "text": "Zixx Xtra has joined the guild after being invited by Amaya"
     },
     {
       "date": "2026-09-15T02:16:51",
@@ -6653,9 +7683,19 @@
       "text": "Zeus@lationusii was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-15T02:16:51",
+      "kind": "exit",
+      "text": "Zeus was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-09-14T19:55:31",
       "kind": "join",
       "text": "Lethal Chaos@lethalsandbox#5505 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-14T19:55:31",
+      "kind": "join",
+      "text": "Lethal Chaos has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-14T19:50:04",
@@ -6663,9 +7703,19 @@
       "text": "Vitamin@Vitamin#72769's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-14T19:50:04",
+      "kind": "rank",
+      "text": "Vitamin's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-14T19:50:01",
       "kind": "rank",
       "text": "Vitamin@Vitamin#72769's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-14T19:50:01",
+      "kind": "rank",
+      "text": "Vitamin's guild rank is now Stalwart"
     },
     {
       "date": "2026-09-14T19:49:59",
@@ -6673,9 +7723,19 @@
       "text": "Vitamin@Vitamin#72769's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-14T19:49:59",
+      "kind": "rank",
+      "text": "Vitamin's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-14T19:36:55",
       "kind": "join",
       "text": "Vitamin@Vitamin#72769 has joined the guild after being invited by ohnomypickle@angelbosszaragoza2004#06971"
+    },
+    {
+      "date": "2026-09-14T19:36:55",
+      "kind": "join",
+      "text": "Vitamin has joined the guild after being invited by ohnomypickle"
     },
     {
       "date": "2026-09-14T10:52:00",
@@ -6683,9 +7743,19 @@
       "text": "BearBecue@tesseract#5851 has left the guild"
     },
     {
+      "date": "2026-09-14T10:52:00",
+      "kind": "exit",
+      "text": "BearBecue has left the guild"
+    },
+    {
       "date": "2026-09-14T10:51:26",
       "kind": "exit",
       "text": "Svarog@tesseract#5851 has left the guild"
+    },
+    {
+      "date": "2026-09-14T10:51:26",
+      "kind": "exit",
+      "text": "Svarog has left the guild"
     },
     {
       "date": "2026-09-13T22:26:31",
@@ -6693,9 +7763,19 @@
       "text": "OldMan@noobynut's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-13T22:26:31",
+      "kind": "rank",
+      "text": "OldMan's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-13T21:31:47",
       "kind": "join",
       "text": "OldMan@noobynut has joined the guild after being invited by Ivydora@reelapse#5586"
+    },
+    {
+      "date": "2026-09-13T21:31:47",
+      "kind": "join",
+      "text": "OldMan has joined the guild after being invited by Ivydora"
     },
     {
       "date": "2026-09-13T18:15:33",
@@ -6703,9 +7783,19 @@
       "text": "BlueJay Seluma@verozina#5317 has left the guild"
     },
     {
+      "date": "2026-09-13T18:15:33",
+      "kind": "exit",
+      "text": "BlueJay Seluma has left the guild"
+    },
+    {
       "date": "2026-09-13T18:15:05",
       "kind": "exit",
       "text": "Sofyna Vergara@verozina#5317 has left the guild"
+    },
+    {
+      "date": "2026-09-13T18:15:05",
+      "kind": "exit",
+      "text": "Sofyna Vergara has left the guild"
     },
     {
       "date": "2026-09-13T18:14:24",
@@ -6713,9 +7803,19 @@
       "text": "Vixen of the Vaal@verozina#5317 has left the guild"
     },
     {
+      "date": "2026-09-13T18:14:24",
+      "kind": "exit",
+      "text": "Vixen of the Vaal has left the guild"
+    },
+    {
       "date": "2026-09-13T18:07:09",
       "kind": "exit",
       "text": "Nero CW@moonlight#8241 has left the guild"
+    },
+    {
+      "date": "2026-09-13T18:07:09",
+      "kind": "exit",
+      "text": "Nero CW has left the guild"
     },
     {
       "date": "2026-09-13T18:06:54",
@@ -6723,9 +7823,19 @@
       "text": "Neroka@moonlight#8241 has left the guild"
     },
     {
+      "date": "2026-09-13T18:06:54",
+      "kind": "exit",
+      "text": "Neroka has left the guild"
+    },
+    {
       "date": "2026-09-13T18:06:40",
       "kind": "exit",
       "text": "Neroxis@moonlight#8241 has left the guild"
+    },
+    {
+      "date": "2026-09-13T18:06:40",
+      "kind": "exit",
+      "text": "Neroxis has left the guild"
     },
     {
       "date": "2026-09-13T16:51:00",
@@ -6733,9 +7843,19 @@
       "text": "sora@standingkotabear's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-13T16:51:00",
+      "kind": "rank",
+      "text": "sora's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-13T10:40:22",
       "kind": "rank",
       "text": "Kinkyy@kingkhalid101#4973's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-13T10:40:22",
+      "kind": "rank",
+      "text": "Kinkyy's guild rank is now Stalwart"
     },
     {
       "date": "2026-09-12T19:38:10",
@@ -6743,9 +7863,19 @@
       "text": "Sunrise@noobynut's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-12T19:38:10",
+      "kind": "rank",
+      "text": "Sunrise's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-12T19:37:42",
       "kind": "join",
       "text": "Sunrise@noobynut has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-12T19:37:42",
+      "kind": "join",
+      "text": "Sunrise has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-12T15:38:13",
@@ -6753,9 +7883,19 @@
       "text": "Pantomime@vaneth9's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-12T15:38:13",
+      "kind": "rank",
+      "text": "Pantomime's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-12T13:58:44",
       "kind": "join",
       "text": "2Patch@tesseract#5851 has joined the guild after being invited by Ivydora@reelapse#5586"
+    },
+    {
+      "date": "2026-09-12T13:58:44",
+      "kind": "join",
+      "text": "2Patch has joined the guild after being invited by Ivydora"
     },
     {
       "date": "2026-09-12T12:24:50",
@@ -6763,9 +7903,19 @@
       "text": "Vitamin@Vitamin#72769 has left the guild"
     },
     {
+      "date": "2026-09-12T12:24:50",
+      "kind": "exit",
+      "text": "Vitamin has left the guild"
+    },
+    {
       "date": "2026-09-12T11:11:40",
       "kind": "exit",
       "text": "OldMan@noobynut has left the guild"
+    },
+    {
+      "date": "2026-09-12T11:11:40",
+      "kind": "exit",
+      "text": "OldMan has left the guild"
     },
     {
       "date": "2026-09-12T11:10:51",
@@ -6773,9 +7923,19 @@
       "text": "Sunrise@noobynut has left the guild"
     },
     {
+      "date": "2026-09-12T11:10:51",
+      "kind": "exit",
+      "text": "Sunrise has left the guild"
+    },
+    {
       "date": "2026-09-12T10:20:53",
       "kind": "rank",
       "text": "Shadowbane@pompeyphil's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-12T10:20:53",
+      "kind": "rank",
+      "text": "Shadowbane's guild rank is now Veteran"
     },
     {
       "date": "2026-09-12T10:20:51",
@@ -6783,9 +7943,19 @@
       "text": "Shadowbane@pompeyphil's guild rank is now Stalwart"
     },
     {
+      "date": "2026-09-12T10:20:51",
+      "kind": "rank",
+      "text": "Shadowbane's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-09-12T10:20:49",
       "kind": "rank",
       "text": "Shadowbane@pompeyphil's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-12T10:20:49",
+      "kind": "rank",
+      "text": "Shadowbane's guild rank is now Wayfarer"
     },
     {
       "date": "2026-09-12T10:20:31",
@@ -6793,9 +7963,19 @@
       "text": "Shadowbane@pompeyphil has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-12T10:20:31",
+      "kind": "join",
+      "text": "Shadowbane has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-09-12T00:12:28",
       "kind": "rank",
       "text": "Zero@tofusurpr1se's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-12T00:12:28",
+      "kind": "rank",
+      "text": "Zero's guild rank is now Stalwart"
     },
     {
       "date": "2026-09-12T00:12:25",
@@ -6803,9 +7983,19 @@
       "text": "Zero@tofusurpr1se's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-12T00:12:25",
+      "kind": "rank",
+      "text": "Zero's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-12T00:12:12",
       "kind": "join",
       "text": "Zero@tofusurpr1se has joined the guild after being invited by Rydark@zorlonix"
+    },
+    {
+      "date": "2026-09-12T00:12:12",
+      "kind": "join",
+      "text": "Zero has joined the guild after being invited by Rydark"
     },
     {
       "date": "2026-09-09T22:36:38",
@@ -6813,9 +8003,19 @@
       "text": "Vitamin@Vitamin#72769's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-09T22:36:38",
+      "kind": "rank",
+      "text": "Vitamin's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-09T22:36:35",
       "kind": "rank",
       "text": "Vitamin@Vitamin#72769's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-09T22:36:35",
+      "kind": "rank",
+      "text": "Vitamin's guild rank is now Stalwart"
     },
     {
       "date": "2026-09-09T22:36:33",
@@ -6823,9 +8023,19 @@
       "text": "Vitamin@Vitamin#72769's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-09T22:36:33",
+      "kind": "rank",
+      "text": "Vitamin's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-09T21:25:35",
       "kind": "join",
       "text": "Vitamin@Vitamin#72769 has joined the guild after being invited by Rilay OP@maxswirid#1637"
+    },
+    {
+      "date": "2026-09-09T21:25:35",
+      "kind": "join",
+      "text": "Vitamin has joined the guild after being invited by Rilay OP"
     },
     {
       "date": "2026-09-09T21:22:05",
@@ -6833,9 +8043,19 @@
       "text": "Vitamin@Vitamin#72769 has left the guild"
     },
     {
+      "date": "2026-09-09T21:22:05",
+      "kind": "exit",
+      "text": "Vitamin has left the guild"
+    },
+    {
       "date": "2026-09-09T15:11:02",
       "kind": "join",
       "text": "Prediction@prediction#9097 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-09T15:11:02",
+      "kind": "join",
+      "text": "Prediction has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-09T10:31:00",
@@ -6843,9 +8063,19 @@
       "text": "Karnil@skorpntv#4972 was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-09T10:31:00",
+      "kind": "exit",
+      "text": "Karnil was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-09-08T21:22:19",
       "kind": "join",
       "text": "Felouire@felouire#2353 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-08T21:22:19",
+      "kind": "join",
+      "text": "Felouire has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-08T13:18:11",
@@ -6853,9 +8083,19 @@
       "text": "Kinkyy@kingkhalid101#4973's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-08T13:18:11",
+      "kind": "rank",
+      "text": "Kinkyy's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-08T13:18:00",
       "kind": "join",
       "text": "Kinkyy@kingkhalid101#4973 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-08T13:18:00",
+      "kind": "join",
+      "text": "Kinkyy has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-07T18:04:14",
@@ -6863,9 +8103,19 @@
       "text": "BearBecue@tesseract#5851 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-07T18:04:14",
+      "kind": "join",
+      "text": "BearBecue has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-09-07T16:44:51",
       "kind": "rank",
       "text": "Niedorth's Wisdom@rm080481209#58515's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:44:51",
+      "kind": "rank",
+      "text": "Niedorth's Wisdom's guild rank is now Veteran"
     },
     {
       "date": "2026-09-07T16:44:48",
@@ -6873,9 +8123,19 @@
       "text": "Niedorth the Fallen@rm080481209#58515's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-07T16:44:48",
+      "kind": "rank",
+      "text": "Niedorth the Fallen's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-07T16:44:45",
       "kind": "rank",
       "text": "NIEDORTH@rm080481209#58515's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:44:45",
+      "kind": "rank",
+      "text": "NIEDORTH's guild rank is now Veteran"
     },
     {
       "date": "2026-09-07T16:44:42",
@@ -6883,9 +8143,19 @@
       "text": "Baby Nie@rm080481209#58515's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-07T16:44:42",
+      "kind": "rank",
+      "text": "Baby Nie's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-07T16:35:18",
       "kind": "rank",
       "text": "Amethyst Felis-Koit@wispling#1230's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:35:18",
+      "kind": "rank",
+      "text": "Amethyst Felis-Koit's guild rank is now Veteran"
     },
     {
       "date": "2026-09-07T16:35:15",
@@ -6893,9 +8163,19 @@
       "text": "Emerald Acrux@wispling#1230's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-07T16:35:15",
+      "kind": "rank",
+      "text": "Emerald Acrux's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-07T16:34:50",
       "kind": "rank",
       "text": "Zixx Xulthar@Zixx_76#82208's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:50",
+      "kind": "rank",
+      "text": "Zixx Xulthar's guild rank is now Veteran"
     },
     {
       "date": "2026-09-07T16:34:48",
@@ -6903,9 +8183,19 @@
       "text": "Zixx Xorvash@Zixx_76#82208's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-07T16:34:48",
+      "kind": "rank",
+      "text": "Zixx Xorvash's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-07T16:34:46",
       "kind": "rank",
       "text": "Zixx Xintrel@Zixx_76#82208's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:46",
+      "kind": "rank",
+      "text": "Zixx Xintrel's guild rank is now Veteran"
     },
     {
       "date": "2026-09-07T16:34:43",
@@ -6913,9 +8203,19 @@
       "text": "Zixx Xantril@Zixx_76#82208's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-07T16:34:43",
+      "kind": "rank",
+      "text": "Zixx Xantril's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-07T16:34:41",
       "kind": "rank",
       "text": "Zixx Ulfgrik@Zixx_76#82208's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:41",
+      "kind": "rank",
+      "text": "Zixx Ulfgrik's guild rank is now Veteran"
     },
     {
       "date": "2026-09-07T16:34:39",
@@ -6923,9 +8223,19 @@
       "text": "Zixx Silentread@Zixx_76#82208's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-07T16:34:39",
+      "kind": "rank",
+      "text": "Zixx Silentread's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-07T16:34:36",
       "kind": "rank",
       "text": "Varis Darksbane@Zixx_76#82208's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:36",
+      "kind": "rank",
+      "text": "Varis Darksbane's guild rank is now Veteran"
     },
     {
       "date": "2026-09-07T16:34:33",
@@ -6933,9 +8243,19 @@
       "text": "Numair Salmalin@Zixx_76#82208's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-07T16:34:33",
+      "kind": "rank",
+      "text": "Numair Salmalin's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-07T16:34:30",
       "kind": "rank",
       "text": "Kyrian Tyvorn@Zixx_76#82208's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:30",
+      "kind": "rank",
+      "text": "Kyrian Tyvorn's guild rank is now Veteran"
     },
     {
       "date": "2026-09-07T16:34:28",
@@ -6943,9 +8263,19 @@
       "text": "Forgrim Mineshadow@Zixx_76#82208's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-07T16:34:28",
+      "kind": "rank",
+      "text": "Forgrim Mineshadow's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-07T16:34:14",
       "kind": "rank",
       "text": "Veralidaine Sarrasri@jyncat22's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:14",
+      "kind": "rank",
+      "text": "Veralidaine Sarrasri's guild rank is now Veteran"
     },
     {
       "date": "2026-09-07T16:34:10",
@@ -6953,9 +8283,19 @@
       "text": "Rowan Deforet@jyncat22's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-07T16:34:10",
+      "kind": "rank",
+      "text": "Rowan Deforet's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-07T16:34:07",
       "kind": "rank",
       "text": "Nyx Moonshadow@jyncat22's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:07",
+      "kind": "rank",
+      "text": "Nyx Moonshadow's guild rank is now Veteran"
     },
     {
       "date": "2026-09-07T16:34:05",
@@ -6963,9 +8303,19 @@
       "text": "Nuit Loreweaver@jyncat22's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-07T16:34:05",
+      "kind": "rank",
+      "text": "Nuit Loreweaver's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-07T16:34:03",
       "kind": "rank",
       "text": "Mystirielle Moonsong@jyncat22's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:34:03",
+      "kind": "rank",
+      "text": "Mystirielle Moonsong's guild rank is now Veteran"
     },
     {
       "date": "2026-09-07T16:34:01",
@@ -6973,9 +8323,19 @@
       "text": "Lirael Remembrancer@jyncat22's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-07T16:34:01",
+      "kind": "rank",
+      "text": "Lirael Remembrancer's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-07T16:33:58",
       "kind": "rank",
       "text": "Dyreth Galanodel@jyncat22's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:33:58",
+      "kind": "rank",
+      "text": "Dyreth Galanodel's guild rank is now Veteran"
     },
     {
       "date": "2026-09-07T16:33:55",
@@ -6983,9 +8343,19 @@
       "text": "Bryndiele Bloodthorn@jyncat22's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-07T16:33:55",
+      "kind": "rank",
+      "text": "Bryndiele Bloodthorn's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-07T16:33:52",
       "kind": "rank",
       "text": "Alanna the Lioness@jyncat22's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T16:33:52",
+      "kind": "rank",
+      "text": "Alanna the Lioness's guild rank is now Veteran"
     },
     {
       "date": "2026-09-07T15:37:19",
@@ -6993,9 +8363,19 @@
       "text": "LFarquaad@xeetzo#7171 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-07T15:37:19",
+      "kind": "join",
+      "text": "LFarquaad has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-09-07T09:31:52",
       "kind": "rank",
       "text": "Zixx Xintrel@Zixx_76#82208's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-07T09:31:52",
+      "kind": "rank",
+      "text": "Zixx Xintrel's guild rank is now Stalwart"
     },
     {
       "date": "2026-09-07T09:31:50",
@@ -7003,9 +8383,19 @@
       "text": "Zixx Xintrel@Zixx_76#82208's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-07T09:31:50",
+      "kind": "rank",
+      "text": "Zixx Xintrel's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-07T09:31:27",
       "kind": "join",
       "text": "Zixx Xintrel@Zixx_76#82208 has joined the guild after being invited by Rydark@zorlonix"
+    },
+    {
+      "date": "2026-09-07T09:31:27",
+      "kind": "join",
+      "text": "Zixx Xintrel has joined the guild after being invited by Rydark"
     },
     {
       "date": "2026-09-07T09:29:49",
@@ -7013,9 +8403,19 @@
       "text": "Lirael Remembrancer@jyncat22's guild rank is now Stalwart"
     },
     {
+      "date": "2026-09-07T09:29:49",
+      "kind": "rank",
+      "text": "Lirael Remembrancer's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-09-07T09:29:46",
       "kind": "rank",
       "text": "Lirael Remembrancer@jyncat22's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-07T09:29:46",
+      "kind": "rank",
+      "text": "Lirael Remembrancer's guild rank is now Wayfarer"
     },
     {
       "date": "2026-09-07T09:29:24",
@@ -7023,9 +8423,19 @@
       "text": "Lirael Remembrancer@jyncat22 has joined the guild after being invited by Rydark@zorlonix"
     },
     {
+      "date": "2026-09-07T09:29:24",
+      "kind": "join",
+      "text": "Lirael Remembrancer has joined the guild after being invited by Rydark"
+    },
+    {
       "date": "2026-09-07T04:38:13",
       "kind": "rank",
       "text": "Clanker OP@whomid#7073's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T04:38:13",
+      "kind": "rank",
+      "text": "Clanker OP's guild rank is now Veteran"
     },
     {
       "date": "2026-09-07T04:38:11",
@@ -7033,9 +8443,19 @@
       "text": "Clanker GF@whomid#7073's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-07T04:38:11",
+      "kind": "rank",
+      "text": "Clanker GF's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-07T04:38:09",
       "kind": "rank",
       "text": "Clanker B@whomid#7073's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-07T04:38:09",
+      "kind": "rank",
+      "text": "Clanker B's guild rank is now Veteran"
     },
     {
       "date": "2026-09-07T04:38:07",
@@ -7043,9 +8463,19 @@
       "text": "Clanker@whomid#7073's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-07T04:38:07",
+      "kind": "rank",
+      "text": "Clanker's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-06T20:27:40",
       "kind": "rank",
       "text": "Clanker OP@whomid#7073's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-06T20:27:40",
+      "kind": "rank",
+      "text": "Clanker OP's guild rank is now Stalwart"
     },
     {
       "date": "2026-09-06T20:27:37",
@@ -7053,9 +8483,19 @@
       "text": "Clanker OP@whomid#7073's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-06T20:27:37",
+      "kind": "rank",
+      "text": "Clanker OP's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-06T20:17:34",
       "kind": "join",
       "text": "Clanker OP@whomid#7073 has joined the guild after being invited by Ivydora@reelapse#5586"
+    },
+    {
+      "date": "2026-09-06T20:17:34",
+      "kind": "join",
+      "text": "Clanker OP has joined the guild after being invited by Ivydora"
     },
     {
       "date": "2026-09-06T20:08:20",
@@ -7063,9 +8503,19 @@
       "text": "Grah@ezak#2843 has joined the guild after being invited by ohnomypickle@angelbosszaragoza2004#06971"
     },
     {
+      "date": "2026-09-06T20:08:20",
+      "kind": "join",
+      "text": "Grah has joined the guild after being invited by ohnomypickle"
+    },
+    {
       "date": "2026-09-06T18:50:51",
       "kind": "join",
       "text": "GetDead@coolit8 has joined the guild after being invited by ohnomypickle@angelbosszaragoza2004#06971"
+    },
+    {
+      "date": "2026-09-06T18:50:51",
+      "kind": "join",
+      "text": "GetDead has joined the guild after being invited by ohnomypickle"
     },
     {
       "date": "2026-09-06T11:38:56",
@@ -7073,9 +8523,19 @@
       "text": "Singing Theo@theoden#2099's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-06T11:38:56",
+      "kind": "rank",
+      "text": "Singing Theo's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-06T11:38:29",
       "kind": "join",
       "text": "Singing Theo@theoden#2099 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-06T11:38:29",
+      "kind": "join",
+      "text": "Singing Theo has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-06T03:10:22",
@@ -7083,9 +8543,19 @@
       "text": "vonnn@milvon351 has left the guild"
     },
     {
+      "date": "2026-09-06T03:10:22",
+      "kind": "exit",
+      "text": "vonnn has left the guild"
+    },
+    {
       "date": "2026-09-05T23:56:58",
       "kind": "join",
       "text": "AGramos@zgilos#0747 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-05T23:56:58",
+      "kind": "join",
+      "text": "AGramos has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-05T23:47:21",
@@ -7093,9 +8563,19 @@
       "text": "Lumenara@M31flavrsofgainz#60140 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-05T23:47:21",
+      "kind": "join",
+      "text": "Lumenara has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-09-05T15:40:50",
       "kind": "join",
       "text": "GabyTzzu@gheibriol has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-05T15:40:50",
+      "kind": "join",
+      "text": "GabyTzzu has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-05T12:13:15",
@@ -7103,9 +8583,19 @@
       "text": "Hadryl Kay'ron@almavarno has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-05T12:13:15",
+      "kind": "join",
+      "text": "Hadryl Kay'ron has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-09-05T10:23:24",
       "kind": "join",
       "text": "andrea@amcallister9#35166 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-05T10:23:24",
+      "kind": "join",
+      "text": "andrea has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-05T09:26:04",
@@ -7113,9 +8603,19 @@
       "text": "Svarog@tesseract#5851 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-05T09:26:04",
+      "kind": "join",
+      "text": "Svarog has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-09-05T09:08:53",
       "kind": "exit",
       "text": "Prediction@prediction#9097 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-05T09:08:53",
+      "kind": "exit",
+      "text": "Prediction was kicked from the guild by Elanor"
     },
     {
       "date": "2026-09-05T09:08:39",
@@ -7123,9 +8623,19 @@
       "text": "Qay@qayy#5651 was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-05T09:08:39",
+      "kind": "exit",
+      "text": "Qay was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-09-05T09:08:26",
       "kind": "exit",
       "text": "nunaga@nunaga#6581 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-05T09:08:26",
+      "kind": "exit",
+      "text": "nunaga was kicked from the guild by Elanor"
     },
     {
       "date": "2026-09-05T09:06:16",
@@ -7133,9 +8643,19 @@
       "text": "Tilt@exxar95 was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-05T09:06:16",
+      "kind": "exit",
+      "text": "Tilt was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-09-04T16:28:21",
       "kind": "exit",
       "text": "Kitten@Lowless#14647 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-04T16:28:21",
+      "kind": "exit",
+      "text": "Kitten was kicked from the guild by Elanor"
     },
     {
       "date": "2026-09-04T04:13:05",
@@ -7143,9 +8663,19 @@
       "text": "Tib@Lowless#14647 has left the guild"
     },
     {
+      "date": "2026-09-04T04:13:05",
+      "kind": "exit",
+      "text": "Tib has left the guild"
+    },
+    {
       "date": "2026-09-03T09:39:44",
       "kind": "rank",
       "text": "Clanker GF@whomid#7073's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T09:39:44",
+      "kind": "rank",
+      "text": "Clanker GF's guild rank is now Stalwart"
     },
     {
       "date": "2026-09-03T09:39:41",
@@ -7153,9 +8683,19 @@
       "text": "Clanker B@whomid#7073's guild rank is now Stalwart"
     },
     {
+      "date": "2026-09-03T09:39:41",
+      "kind": "rank",
+      "text": "Clanker B's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-09-03T09:39:39",
       "kind": "rank",
       "text": "Clanker@whomid#7073's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T09:39:39",
+      "kind": "rank",
+      "text": "Clanker's guild rank is now Stalwart"
     },
     {
       "date": "2026-09-03T08:43:42",
@@ -7163,9 +8703,19 @@
       "text": "Nolanian@menofgods's guild rank is now Stalwart"
     },
     {
+      "date": "2026-09-03T08:43:42",
+      "kind": "rank",
+      "text": "Nolanian's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-09-03T08:43:40",
       "kind": "rank",
       "text": "Navi GreenLight@menofgods's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T08:43:40",
+      "kind": "rank",
+      "text": "Navi GreenLight's guild rank is now Stalwart"
     },
     {
       "date": "2026-09-03T08:43:38",
@@ -7173,9 +8723,19 @@
       "text": "Ammy lightstep@menofgods's guild rank is now Stalwart"
     },
     {
+      "date": "2026-09-03T08:43:38",
+      "kind": "rank",
+      "text": "Ammy lightstep's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-09-03T08:07:30",
       "kind": "rank",
       "text": "Ammy lightstep@menofgods's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-03T08:07:30",
+      "kind": "rank",
+      "text": "Ammy lightstep's guild rank is now Veteran"
     },
     {
       "date": "2026-09-03T08:07:28",
@@ -7183,9 +8743,19 @@
       "text": "Navi GreenLight@menofgods's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-03T08:07:28",
+      "kind": "rank",
+      "text": "Navi GreenLight's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-03T08:07:26",
       "kind": "rank",
       "text": "Nolanian@menofgods's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-03T08:07:26",
+      "kind": "rank",
+      "text": "Nolanian's guild rank is now Veteran"
     },
     {
       "date": "2026-09-03T07:58:07",
@@ -7193,9 +8763,19 @@
       "text": "Brax Brokenscale@jigoinane's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-03T07:58:07",
+      "kind": "rank",
+      "text": "Brax Brokenscale's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-03T07:58:05",
       "kind": "rank",
       "text": "Brax Brokenscale@jigoinane's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T07:58:05",
+      "kind": "rank",
+      "text": "Brax Brokenscale's guild rank is now Stalwart"
     },
     {
       "date": "2026-09-03T07:58:03",
@@ -7203,9 +8783,19 @@
       "text": "Brax Brokenscale@jigoinane's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-03T07:58:03",
+      "kind": "rank",
+      "text": "Brax Brokenscale's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-03T07:58:01",
       "kind": "rank",
       "text": "Dalia Strongshield@jigoinane's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-03T07:58:01",
+      "kind": "rank",
+      "text": "Dalia Strongshield's guild rank is now Veteran"
     },
     {
       "date": "2026-09-03T07:57:59",
@@ -7213,9 +8803,19 @@
       "text": "Dalia Strongshield@jigoinane's guild rank is now Stalwart"
     },
     {
+      "date": "2026-09-03T07:57:59",
+      "kind": "rank",
+      "text": "Dalia Strongshield's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-09-03T07:57:56",
       "kind": "rank",
       "text": "Dalia Strongshield@jigoinane's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-03T07:57:56",
+      "kind": "rank",
+      "text": "Dalia Strongshield's guild rank is now Wayfarer"
     },
     {
       "date": "2026-09-03T07:57:53",
@@ -7223,9 +8823,19 @@
       "text": "Jord Jaggedscale@jigoinane's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-03T07:57:53",
+      "kind": "rank",
+      "text": "Jord Jaggedscale's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-03T07:57:51",
       "kind": "rank",
       "text": "Jord Jaggedscale@jigoinane's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T07:57:51",
+      "kind": "rank",
+      "text": "Jord Jaggedscale's guild rank is now Stalwart"
     },
     {
       "date": "2026-09-03T07:57:48",
@@ -7233,9 +8843,19 @@
       "text": "Jord Jaggedscale@jigoinane's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-03T07:57:48",
+      "kind": "rank",
+      "text": "Jord Jaggedscale's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-03T07:57:46",
       "kind": "rank",
       "text": "Straag Sparklescale@jigoinane's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-03T07:57:46",
+      "kind": "rank",
+      "text": "Straag Sparklescale's guild rank is now Veteran"
     },
     {
       "date": "2026-09-03T07:57:44",
@@ -7243,9 +8863,19 @@
       "text": "Straag Sparklescale@jigoinane's guild rank is now Stalwart"
     },
     {
+      "date": "2026-09-03T07:57:44",
+      "kind": "rank",
+      "text": "Straag Sparklescale's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-09-03T07:57:41",
       "kind": "rank",
       "text": "Straag Sparklescale@jigoinane's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-03T07:57:41",
+      "kind": "rank",
+      "text": "Straag Sparklescale's guild rank is now Wayfarer"
     },
     {
       "date": "2026-09-03T07:38:56",
@@ -7253,9 +8883,19 @@
       "text": "sora@standingkotabear's guild rank is now Initiate"
     },
     {
+      "date": "2026-09-03T07:38:56",
+      "kind": "rank",
+      "text": "sora's guild rank is now Initiate"
+    },
+    {
       "date": "2026-09-03T07:35:56",
       "kind": "rank",
       "text": "Zerospace@tofusurpr1se's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T07:35:56",
+      "kind": "rank",
+      "text": "Zerospace's guild rank is now Stalwart"
     },
     {
       "date": "2026-09-03T07:35:33",
@@ -7263,9 +8903,19 @@
       "text": "Nolanian@menofgods's guild rank is now Stalwart"
     },
     {
+      "date": "2026-09-03T07:35:33",
+      "kind": "rank",
+      "text": "Nolanian's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-09-03T07:34:25",
       "kind": "rank",
       "text": "Alune The Beauty@Alune#58925's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T07:34:25",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Stalwart"
     },
     {
       "date": "2026-09-03T01:49:00",
@@ -7273,9 +8923,19 @@
       "text": "Alune The Beauty@Alune#58925's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-03T01:49:00",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-03T01:48:57",
       "kind": "rank",
       "text": "Alune The Beauty@Alune#58925's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-09-03T01:48:57",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Stalwart"
     },
     {
       "date": "2026-09-03T01:48:16",
@@ -7283,9 +8943,19 @@
       "text": "sora@standingkotabear's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-03T01:48:16",
+      "kind": "rank",
+      "text": "sora's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-03T01:06:48",
       "kind": "join",
       "text": "Swiper No Swiping@jigoinane has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-03T01:06:48",
+      "kind": "join",
+      "text": "Swiper No Swiping has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-03T01:03:28",
@@ -7293,9 +8963,19 @@
       "text": "Straag Sparklescale@jigoinane has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-03T01:03:28",
+      "kind": "join",
+      "text": "Straag Sparklescale has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-09-03T00:59:28",
       "kind": "join",
       "text": "Brax Brokenscale@jigoinane has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-03T00:59:28",
+      "kind": "join",
+      "text": "Brax Brokenscale has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-03T00:54:09",
@@ -7303,9 +8983,19 @@
       "text": "Jord Jaggedscale@jigoinane has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-03T00:54:09",
+      "kind": "join",
+      "text": "Jord Jaggedscale has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-09-02T23:12:06",
       "kind": "rank",
       "text": "Clanker@whomid#7073's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-02T23:12:06",
+      "kind": "rank",
+      "text": "Clanker's guild rank is now Veteran"
     },
     {
       "date": "2026-09-02T23:11:56",
@@ -7313,9 +9003,19 @@
       "text": "Clanker@whomid#7073's guild rank is now Stalwart"
     },
     {
+      "date": "2026-09-02T23:11:56",
+      "kind": "rank",
+      "text": "Clanker's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-09-02T23:11:46",
       "kind": "rank",
       "text": "Zerospace@tofusurpr1se's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-02T23:11:46",
+      "kind": "rank",
+      "text": "Zerospace's guild rank is now Veteran"
     },
     {
       "date": "2026-09-02T23:07:46",
@@ -7323,9 +9023,19 @@
       "text": "Nolanian@menofgods's guild rank is now Veteran"
     },
     {
+      "date": "2026-09-02T23:07:46",
+      "kind": "rank",
+      "text": "Nolanian's guild rank is now Veteran"
+    },
+    {
       "date": "2026-09-02T23:07:01",
       "kind": "rank",
       "text": "Alune The Beauty@Alune#58925's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-09-02T23:07:01",
+      "kind": "rank",
+      "text": "Alune The Beauty's guild rank is now Veteran"
     },
     {
       "date": "2026-09-02T21:33:01",
@@ -7333,9 +9043,19 @@
       "text": "Dalia Strongshield@jigoinane has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-02T21:33:01",
+      "kind": "join",
+      "text": "Dalia Strongshield has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-09-02T15:36:36",
       "kind": "exit",
       "text": "Balls@xbrezi#7996 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-02T15:36:36",
+      "kind": "exit",
+      "text": "Balls was kicked from the guild by Elanor"
     },
     {
       "date": "2026-09-02T14:41:16",
@@ -7343,9 +9063,19 @@
       "text": "Eeirtis@eeirtis#4047 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-02T14:41:16",
+      "kind": "join",
+      "text": "Eeirtis has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-09-02T14:38:26",
       "kind": "join",
       "text": "PR0R0K@tesseract#5851 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-02T14:38:26",
+      "kind": "join",
+      "text": "PR0R0K has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-01T21:03:59",
@@ -7353,9 +9083,19 @@
       "text": "Karnil@skorpntv#4972 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-01T21:03:59",
+      "kind": "join",
+      "text": "Karnil has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-09-01T20:30:59",
       "kind": "join",
       "text": "LeviaTank@zgilos#0747 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-09-01T20:30:59",
+      "kind": "join",
+      "text": "LeviaTank has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-09-01T19:32:36",
@@ -7363,9 +9103,19 @@
       "text": "Eeirtis@eeirtis#4047 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-09-01T19:32:36",
+      "kind": "join",
+      "text": "Eeirtis has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-09-01T19:25:56",
       "kind": "rank",
       "text": "OldMan@noobynut's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-01T19:25:56",
+      "kind": "rank",
+      "text": "OldMan's guild rank is now Wayfarer"
     },
     {
       "date": "2026-09-01T19:25:53",
@@ -7373,9 +9123,19 @@
       "text": "Sunrise@noobynut's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-09-01T19:25:53",
+      "kind": "rank",
+      "text": "Sunrise's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-09-01T19:25:28",
       "kind": "rank",
       "text": "Fighting Theo@theoden#2099's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-09-01T19:25:28",
+      "kind": "rank",
+      "text": "Fighting Theo's guild rank is now Wayfarer"
     },
     {
       "date": "2026-09-01T18:14:14",
@@ -7383,9 +9143,19 @@
       "text": "Kitten@Lowless#14647 has joined the guild after being invited by Ivydora@reelapse#5586"
     },
     {
+      "date": "2026-09-01T18:14:14",
+      "kind": "join",
+      "text": "Kitten has joined the guild after being invited by Ivydora"
+    },
+    {
       "date": "2026-08-31T20:21:03",
       "kind": "rank",
       "text": "Ragnar The Bard@dokrahm#9634's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-31T20:21:03",
+      "kind": "rank",
+      "text": "Ragnar The Bard's guild rank is now Wayfarer"
     },
     {
       "date": "2026-08-31T20:20:29",
@@ -7393,9 +9163,19 @@
       "text": "Ragnar The Bard@dokrahm#9634 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-08-31T20:20:29",
+      "kind": "join",
+      "text": "Ragnar The Bard has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-08-31T12:07:28",
       "kind": "rank",
       "text": "Niedorth's Wisdom@rm080481209#58515's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-31T12:07:28",
+      "kind": "rank",
+      "text": "Niedorth's Wisdom's guild rank is now Stalwart"
     },
     {
       "date": "2026-08-31T12:07:26",
@@ -7403,9 +9183,19 @@
       "text": "Niedorth's Wisdom@rm080481209#58515's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-08-31T12:07:26",
+      "kind": "rank",
+      "text": "Niedorth's Wisdom's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-08-31T12:07:23",
       "kind": "rank",
       "text": "Niedorth the Fallen@rm080481209#58515's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-31T12:07:23",
+      "kind": "rank",
+      "text": "Niedorth the Fallen's guild rank is now Stalwart"
     },
     {
       "date": "2026-08-31T12:07:21",
@@ -7413,9 +9203,19 @@
       "text": "Niedorth the Fallen@rm080481209#58515's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-08-31T12:07:21",
+      "kind": "rank",
+      "text": "Niedorth the Fallen's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-08-31T12:07:18",
       "kind": "rank",
       "text": "NIEDORTH@rm080481209#58515's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-31T12:07:18",
+      "kind": "rank",
+      "text": "NIEDORTH's guild rank is now Stalwart"
     },
     {
       "date": "2026-08-31T12:07:15",
@@ -7423,9 +9223,19 @@
       "text": "NIEDORTH@rm080481209#58515's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-08-31T12:07:15",
+      "kind": "rank",
+      "text": "NIEDORTH's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-08-31T12:07:06",
       "kind": "rank",
       "text": "Baby Nie@rm080481209#58515's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-31T12:07:06",
+      "kind": "rank",
+      "text": "Baby Nie's guild rank is now Stalwart"
     },
     {
       "date": "2026-08-31T12:07:03",
@@ -7433,9 +9243,19 @@
       "text": "Baby Nie@rm080481209#58515's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-08-31T12:07:03",
+      "kind": "rank",
+      "text": "Baby Nie's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-08-31T12:01:10",
       "kind": "join",
       "text": "Baby Nie@rm080481209#58515 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-31T12:01:10",
+      "kind": "join",
+      "text": "Baby Nie has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-08-30T17:45:23",
@@ -7443,9 +9263,19 @@
       "text": "Radiant Randy@HammerSmashedBeef#09551 has left the guild"
     },
     {
+      "date": "2026-08-30T17:45:23",
+      "kind": "exit",
+      "text": "Radiant Randy has left the guild"
+    },
+    {
       "date": "2026-08-30T17:45:00",
       "kind": "exit",
       "text": "Drew Silverkin@HammerSmashedBeef#09551 has left the guild"
+    },
+    {
+      "date": "2026-08-30T17:45:00",
+      "kind": "exit",
+      "text": "Drew Silverkin has left the guild"
     },
     {
       "date": "2026-08-30T17:37:16",
@@ -7453,9 +9283,19 @@
       "text": "Nyx@annie#3072 has left the guild"
     },
     {
+      "date": "2026-08-30T17:37:16",
+      "kind": "exit",
+      "text": "Nyx has left the guild"
+    },
+    {
       "date": "2026-08-30T17:37:00",
       "kind": "exit",
       "text": "Rei@annie#3072 has left the guild"
+    },
+    {
+      "date": "2026-08-30T17:37:00",
+      "kind": "exit",
+      "text": "Rei has left the guild"
     },
     {
       "date": "2026-08-30T17:36:44",
@@ -7463,9 +9303,19 @@
       "text": "Ryn@annie#3072 has left the guild"
     },
     {
+      "date": "2026-08-30T17:36:44",
+      "kind": "exit",
+      "text": "Ryn has left the guild"
+    },
+    {
       "date": "2026-08-30T17:36:27",
       "kind": "exit",
       "text": "Elenara@annie#3072 has left the guild"
+    },
+    {
+      "date": "2026-08-30T17:36:27",
+      "kind": "exit",
+      "text": "Elenara has left the guild"
     },
     {
       "date": "2026-08-29T12:49:40",
@@ -7473,9 +9323,19 @@
       "text": "TESSERACT@tesseract#5851 has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-08-29T12:49:40",
+      "kind": "join",
+      "text": "TESSERACT has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-08-29T02:18:10",
       "kind": "exit",
       "text": "Rage@buzzinglizard743 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-29T02:18:10",
+      "kind": "exit",
+      "text": "Rage was kicked from the guild by Elanor"
     },
     {
       "date": "2026-08-29T02:18:08",
@@ -7483,9 +9343,19 @@
       "text": "Playa@buzzinglizard743 was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-08-29T02:18:08",
+      "kind": "exit",
+      "text": "Playa was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-08-29T02:18:06",
       "kind": "exit",
       "text": "Lazyy Wizzy@buzzinglizard743 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-29T02:18:06",
+      "kind": "exit",
+      "text": "Lazyy Wizzy was kicked from the guild by Elanor"
     },
     {
       "date": "2026-08-29T02:18:03",
@@ -7493,9 +9363,19 @@
       "text": "Hocus@buzzinglizard743 was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-08-29T02:18:03",
+      "kind": "exit",
+      "text": "Hocus was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-08-29T01:35:01",
       "kind": "exit",
       "text": "Cass RSA Dokotela@calvinsiphiwegaming27#09983 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-29T01:35:01",
+      "kind": "exit",
+      "text": "Cass RSA Dokotela was kicked from the guild by Elanor"
     },
     {
       "date": "2026-08-29T01:34:59",
@@ -7503,9 +9383,19 @@
       "text": "Cass@calvinsiphiwegaming27#09983 was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-08-29T01:34:59",
+      "kind": "exit",
+      "text": "Cass was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-08-29T01:34:57",
       "kind": "exit",
       "text": "Cal@calvinsiphiwegaming27#09983 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-29T01:34:57",
+      "kind": "exit",
+      "text": "Cal was kicked from the guild by Elanor"
     },
     {
       "date": "2026-08-28T20:29:58",
@@ -7513,9 +9403,19 @@
       "text": "Eeirtis@eeirtis#5482 has joined the guild after being invited by Ivydora@reelapse#5586"
     },
     {
+      "date": "2026-08-28T20:29:58",
+      "kind": "join",
+      "text": "Eeirtis has joined the guild after being invited by Ivydora"
+    },
+    {
       "date": "2026-08-28T14:47:49",
       "kind": "join",
       "text": "Eeirtis@eeirtis#5482 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-28T14:47:49",
+      "kind": "join",
+      "text": "Eeirtis has joined the guild after being invited by Elanor"
     },
     {
       "date": "2026-08-27T14:19:40",
@@ -7523,9 +9423,19 @@
       "text": "Sniffer@sakisx was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-08-27T14:19:40",
+      "kind": "exit",
+      "text": "Sniffer was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-08-27T14:19:20",
       "kind": "exit",
       "text": "Beiro Silentread@Jeink0#28674 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-27T14:19:20",
+      "kind": "exit",
+      "text": "Beiro Silentread was kicked from the guild by Elanor"
     },
     {
       "date": "2026-08-27T14:06:32",
@@ -7533,9 +9443,19 @@
       "text": "SkyriM@mata#8261's guild rank is now Wayfarer"
     },
     {
+      "date": "2026-08-27T14:06:32",
+      "kind": "rank",
+      "text": "SkyriM's guild rank is now Wayfarer"
+    },
+    {
       "date": "2026-08-27T02:13:25",
       "kind": "join",
       "text": "Zeus@lationusii has joined the guild after being invited by Zephyr@eatsomewaffles"
+    },
+    {
+      "date": "2026-08-27T02:13:25",
+      "kind": "join",
+      "text": "Zeus has joined the guild after being invited by Zephyr"
     },
     {
       "date": "2026-08-26T14:06:42",
@@ -7543,9 +9463,19 @@
       "text": "Demetsch@thorhammern's guild rank is now Elder"
     },
     {
+      "date": "2026-08-26T14:06:42",
+      "kind": "rank",
+      "text": "Demetsch's guild rank is now Elder"
+    },
+    {
       "date": "2026-08-26T14:06:40",
       "kind": "rank",
       "text": "Demetsch@thorhammern's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-26T14:06:40",
+      "kind": "rank",
+      "text": "Demetsch's guild rank is now Veteran"
     },
     {
       "date": "2026-08-26T14:06:38",
@@ -7553,9 +9483,19 @@
       "text": "Demetsch@thorhammern's guild rank is now Stalwart"
     },
     {
+      "date": "2026-08-26T14:06:38",
+      "kind": "rank",
+      "text": "Demetsch's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-08-26T14:06:36",
       "kind": "rank",
       "text": "Demetsch@thorhammern's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-26T14:06:36",
+      "kind": "rank",
+      "text": "Demetsch's guild rank is now Wayfarer"
     },
     {
       "date": "2026-08-26T14:06:28",
@@ -7563,9 +9503,19 @@
       "text": "Demetsch@thorhammern has joined the guild after being invited by Elanor@zorlonix"
     },
     {
+      "date": "2026-08-26T14:06:28",
+      "kind": "join",
+      "text": "Demetsch has joined the guild after being invited by Elanor"
+    },
+    {
       "date": "2026-08-26T13:55:39",
       "kind": "exit",
       "text": "Bip@leonardodweeb#7244 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-26T13:55:39",
+      "kind": "exit",
+      "text": "Bip was kicked from the guild by Elanor"
     },
     {
       "date": "2026-08-26T13:51:07",
@@ -7573,9 +9523,19 @@
       "text": "Hornstar@platemale#5536 was kicked from the guild by Elanor@zorlonix"
     },
     {
+      "date": "2026-08-26T13:51:07",
+      "kind": "exit",
+      "text": "Hornstar was kicked from the guild by Elanor"
+    },
+    {
       "date": "2026-08-26T13:41:12",
       "kind": "rank",
       "text": "Clanker GF@whomid#7073's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-26T13:41:12",
+      "kind": "rank",
+      "text": "Clanker GF's guild rank is now Veteran"
     },
     {
       "date": "2026-08-26T13:41:09",
@@ -7583,9 +9543,19 @@
       "text": "Clanker B@whomid#7073's guild rank is now Veteran"
     },
     {
+      "date": "2026-08-26T13:41:09",
+      "kind": "rank",
+      "text": "Clanker B's guild rank is now Veteran"
+    },
+    {
       "date": "2026-08-26T13:41:03",
       "kind": "rank",
       "text": "Clanker@whomid#7073's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-26T13:41:03",
+      "kind": "rank",
+      "text": "Clanker's guild rank is now Veteran"
     },
     {
       "date": "2026-08-26T01:37:48",
@@ -7593,14 +9563,859 @@
       "text": "Hero@TPSeloT#99053's guild rank is now Veteran"
     },
     {
+      "date": "2026-08-26T01:37:48",
+      "kind": "rank",
+      "text": "Hero's guild rank is now Veteran"
+    },
+    {
       "date": "2026-08-26T01:37:44",
       "kind": "rank",
       "text": "Hero@TPSeloT#99053's guild rank is now Stalwart"
     },
     {
+      "date": "2026-08-26T01:37:44",
+      "kind": "rank",
+      "text": "Hero's guild rank is now Stalwart"
+    },
+    {
       "date": "2026-08-26T01:37:42",
       "kind": "rank",
       "text": "Hero@TPSeloT#99053's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-26T01:37:42",
+      "kind": "rank",
+      "text": "Hero's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-26T01:37:17",
+      "kind": "join",
+      "text": "Hero@TPSeloT#99053 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-26T01:37:17",
+      "kind": "join",
+      "text": "Hero has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-26T01:37:04",
+      "kind": "exit",
+      "text": "Zarek Shadowstep@Draconas#11840 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-26T01:37:04",
+      "kind": "exit",
+      "text": "Zarek Shadowstep was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-26T01:34:35",
+      "kind": "join",
+      "text": "Nigella@acckund has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-26T01:34:35",
+      "kind": "join",
+      "text": "Nigella has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-25T06:08:27",
+      "kind": "rank",
+      "text": "woodenwolf@machrist0021#32205's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-25T06:08:27",
+      "kind": "rank",
+      "text": "woodenwolf's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-25T01:07:58",
+      "kind": "join",
+      "text": "woodenwolf@machrist0021#32205 has joined the guild after being invited by Azazel@eatsomewaffles"
+    },
+    {
+      "date": "2026-08-25T01:07:58",
+      "kind": "join",
+      "text": "woodenwolf has joined the guild after being invited by Azazel"
+    },
+    {
+      "date": "2026-08-25T01:02:39",
+      "kind": "exit",
+      "text": "woodenwolf@machrist0021#32205 has left the guild"
+    },
+    {
+      "date": "2026-08-25T01:02:39",
+      "kind": "exit",
+      "text": "woodenwolf has left the guild"
+    },
+    {
+      "date": "2026-08-24T01:59:13",
+      "kind": "rank",
+      "text": "Gyda Thorunn@Oliver1416#77740's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-24T01:59:13",
+      "kind": "rank",
+      "text": "Gyda Thorunn's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-23T17:02:44",
+      "kind": "rank",
+      "text": "Zefrina@Zefrina#08174's guild rank is now Elder"
+    },
+    {
+      "date": "2026-08-23T17:02:44",
+      "kind": "rank",
+      "text": "Zefrina's guild rank is now Elder"
+    },
+    {
+      "date": "2026-08-23T17:02:41",
+      "kind": "rank",
+      "text": "Zefrina@Zefrina#08174's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-23T17:02:41",
+      "kind": "rank",
+      "text": "Zefrina's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-23T17:02:37",
+      "kind": "rank",
+      "text": "Zefrina@Zefrina#08174's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-23T17:02:37",
+      "kind": "rank",
+      "text": "Zefrina's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-23T17:02:33",
+      "kind": "rank",
+      "text": "Zefrina@Zefrina#08174's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-23T17:02:33",
+      "kind": "rank",
+      "text": "Zefrina's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-23T17:02:21",
+      "kind": "join",
+      "text": "Zefrina@Zefrina#08174 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-23T17:02:21",
+      "kind": "join",
+      "text": "Zefrina has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-23T17:02:03",
+      "kind": "exit",
+      "text": "Mack@mack#4143 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-23T17:02:03",
+      "kind": "exit",
+      "text": "Mack was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-23T12:30:12",
+      "kind": "join",
+      "text": "TESSERACT@tesseract#5851 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-23T12:30:12",
+      "kind": "join",
+      "text": "TESSERACT has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-23T10:51:22",
+      "kind": "rank",
+      "text": "Ann_Roze@As0t1gu3#86314's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-23T10:51:22",
+      "kind": "rank",
+      "text": "Ann_Roze's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-22T21:35:46",
+      "kind": "join",
+      "text": "Sofyna Vergara@verozina#5317 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-22T21:35:46",
+      "kind": "join",
+      "text": "Sofyna Vergara has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-22T21:34:58",
+      "kind": "join",
+      "text": "BlueJay Seluma@verozina#5317 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-22T21:34:58",
+      "kind": "join",
+      "text": "BlueJay Seluma has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-22T20:39:55",
+      "kind": "exit",
+      "text": "Swiper No Swiping@jigoinane was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-22T20:39:55",
+      "kind": "exit",
+      "text": "Swiper No Swiping was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-22T20:39:53",
+      "kind": "exit",
+      "text": "Straag Sparklescale@jigoinane was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-22T20:39:53",
+      "kind": "exit",
+      "text": "Straag Sparklescale was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-22T20:39:51",
+      "kind": "exit",
+      "text": "Jord Jaggedscale@jigoinane was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-22T20:39:51",
+      "kind": "exit",
+      "text": "Jord Jaggedscale was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-22T20:39:49",
+      "kind": "exit",
+      "text": "Dalia Strongshield@jigoinane was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-22T20:39:49",
+      "kind": "exit",
+      "text": "Dalia Strongshield was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-22T20:39:47",
+      "kind": "exit",
+      "text": "Brax Brokenscale@jigoinane was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-22T20:39:47",
+      "kind": "exit",
+      "text": "Brax Brokenscale was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-22T17:59:09",
+      "kind": "join",
+      "text": "Vixen of the Vaal@verozina#5317 has joined the guild after being invited by Rilay SW@maxswirid#1637"
+    },
+    {
+      "date": "2026-08-22T17:59:09",
+      "kind": "join",
+      "text": "Vixen of the Vaal has joined the guild after being invited by Rilay SW"
+    },
+    {
+      "date": "2026-08-21T22:14:51",
+      "kind": "join",
+      "text": "Neroxis@moonlight#8241 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-21T22:14:51",
+      "kind": "join",
+      "text": "Neroxis has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-21T22:14:25",
+      "kind": "join",
+      "text": "Neroka@moonlight#8241 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-21T22:14:25",
+      "kind": "join",
+      "text": "Neroka has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-21T22:12:17",
+      "kind": "join",
+      "text": "Neroco@moonlight#8241 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-21T22:12:17",
+      "kind": "join",
+      "text": "Neroco has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-21T02:17:32",
+      "kind": "rank",
+      "text": "Vicious Helltalon@hellscrye's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-21T02:17:32",
+      "kind": "rank",
+      "text": "Vicious Helltalon's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-20T22:01:18",
+      "kind": "join",
+      "text": "Hornstar@platemale#5536 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-20T22:01:18",
+      "kind": "join",
+      "text": "Hornstar has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-20T21:12:39",
+      "kind": "join",
+      "text": "Zarek Shadowstep@Draconas#11840 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-20T21:12:39",
+      "kind": "join",
+      "text": "Zarek Shadowstep has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-20T14:24:54",
+      "kind": "exit",
+      "text": "Gambit@47Roonin#75437 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-20T14:24:54",
+      "kind": "exit",
+      "text": "Gambit was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-20T13:55:00",
+      "kind": "join",
+      "text": "Bip@leonardodweeb#7244 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-20T13:55:00",
+      "kind": "join",
+      "text": "Bip has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-20T08:07:18",
+      "kind": "exit",
+      "text": "Excal@sundaearch has left the guild"
+    },
+    {
+      "date": "2026-08-20T08:07:18",
+      "kind": "exit",
+      "text": "Excal has left the guild"
+    },
+    {
+      "date": "2026-08-19T23:04:56",
+      "kind": "join",
+      "text": "sora@standingkotabear has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-19T23:04:56",
+      "kind": "join",
+      "text": "sora has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-19T17:28:02",
+      "kind": "exit",
+      "text": "Morthos@andy#4370 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-19T17:28:02",
+      "kind": "exit",
+      "text": "Morthos was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-19T17:24:12",
+      "kind": "join",
+      "text": "daz@norlinban#4154 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-19T17:24:12",
+      "kind": "join",
+      "text": "daz has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-19T17:23:08",
+      "kind": "join",
+      "text": "Ruzzy@djscooter12#8602 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-19T17:23:08",
+      "kind": "join",
+      "text": "Ruzzy has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-19T16:30:49",
+      "kind": "join",
+      "text": "Balls@xbrezi#7996 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-19T16:30:49",
+      "kind": "join",
+      "text": "Balls has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-19T00:17:55",
+      "kind": "rank",
+      "text": "luna@angelbosszaragoza2004#06971's guild rank is now Officer"
+    },
+    {
+      "date": "2026-08-19T00:17:55",
+      "kind": "rank",
+      "text": "luna's guild rank is now Officer"
+    },
+    {
+      "date": "2026-08-19T00:17:52",
+      "kind": "rank",
+      "text": "luna@angelbosszaragoza2004#06971's guild rank is now Elder"
+    },
+    {
+      "date": "2026-08-19T00:17:52",
+      "kind": "rank",
+      "text": "luna's guild rank is now Elder"
+    },
+    {
+      "date": "2026-08-19T00:17:49",
+      "kind": "rank",
+      "text": "luna@angelbosszaragoza2004#06971's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-19T00:17:49",
+      "kind": "rank",
+      "text": "luna's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-19T00:17:47",
+      "kind": "rank",
+      "text": "luna@angelbosszaragoza2004#06971's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-19T00:17:47",
+      "kind": "rank",
+      "text": "luna's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-19T00:17:44",
+      "kind": "rank",
+      "text": "luna@angelbosszaragoza2004#06971's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-19T00:17:44",
+      "kind": "rank",
+      "text": "luna's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-19T00:02:11",
+      "kind": "join",
+      "text": "luna@angelbosszaragoza2004#06971 has joined the guild after being invited by Ivydora@reelapse#5586"
+    },
+    {
+      "date": "2026-08-19T00:02:11",
+      "kind": "join",
+      "text": "luna has joined the guild after being invited by Ivydora"
+    },
+    {
+      "date": "2026-08-17T09:32:46",
+      "kind": "exit",
+      "text": "Balidor ElRenon@BalidorElRenon#12881 has left the guild"
+    },
+    {
+      "date": "2026-08-17T09:32:46",
+      "kind": "exit",
+      "text": "Balidor ElRenon has left the guild"
+    },
+    {
+      "date": "2026-08-17T09:19:11",
+      "kind": "join",
+      "text": "Balidor ElRenon@BalidorElRenon#12881 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-17T09:19:11",
+      "kind": "join",
+      "text": "Balidor ElRenon has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-16T21:36:59",
+      "kind": "join",
+      "text": "Eeirtis@eeirtis#5482 has joined the guild after being invited by Amaya@lightray394#2720"
+    },
+    {
+      "date": "2026-08-16T21:36:59",
+      "kind": "join",
+      "text": "Eeirtis has joined the guild after being invited by Amaya"
+    },
+    {
+      "date": "2026-08-15T22:05:46",
+      "kind": "rank",
+      "text": "grizzie@tramport99#2050's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-15T22:05:46",
+      "kind": "rank",
+      "text": "grizzie's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-15T19:22:30",
+      "kind": "join",
+      "text": "OldMan@noobynut has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-15T19:22:30",
+      "kind": "join",
+      "text": "OldMan has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-15T18:15:10",
+      "kind": "exit",
+      "text": "elmotero@pintow13#2065 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-15T18:15:10",
+      "kind": "exit",
+      "text": "elmotero was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-15T18:14:48",
+      "kind": "exit",
+      "text": "Tylo@tydo98#7440 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-15T18:14:48",
+      "kind": "exit",
+      "text": "Tylo was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-15T18:13:35",
+      "kind": "exit",
+      "text": "Nubbles@nubbles1 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-15T18:13:35",
+      "kind": "exit",
+      "text": "Nubbles was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-15T18:02:29",
+      "kind": "exit",
+      "text": "HYBRID MAGE@kzler#8243 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-15T18:02:29",
+      "kind": "exit",
+      "text": "HYBRID MAGE was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-15T18:02:26",
+      "kind": "exit",
+      "text": "HYBRID BARD@kzler#8243 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-15T18:02:26",
+      "kind": "exit",
+      "text": "HYBRID BARD was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-15T13:19:27",
+      "kind": "join",
+      "text": "Pantomime@vaneth9 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-15T13:19:27",
+      "kind": "join",
+      "text": "Pantomime has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-15T07:15:15",
+      "kind": "join",
+      "text": "Fass and Draco M.@ravenwings22 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-15T07:15:15",
+      "kind": "join",
+      "text": "Fass and Draco M. has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-14T10:48:08",
+      "kind": "rank",
+      "text": "HardStyle@Alicolak2#49993's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-14T10:48:08",
+      "kind": "rank",
+      "text": "HardStyle's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-14T10:47:50",
+      "kind": "join",
+      "text": "Niedorth's Wisdom@rm080481209#58515 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-14T10:47:50",
+      "kind": "join",
+      "text": "Niedorth's Wisdom has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-14T10:47:27",
+      "kind": "join",
+      "text": "HardStyle@Alicolak2#49993 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-14T10:47:27",
+      "kind": "join",
+      "text": "HardStyle has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-13T22:59:22",
+      "kind": "rank",
+      "text": "Ammy lightstep@menofgods's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-13T22:59:22",
+      "kind": "rank",
+      "text": "Ammy lightstep's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-13T22:59:19",
+      "kind": "rank",
+      "text": "Ammy lightstep@menofgods's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-13T22:59:19",
+      "kind": "rank",
+      "text": "Ammy lightstep's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-13T22:15:24",
+      "kind": "join",
+      "text": "Ammy lightstep@menofgods has joined the guild after being invited by Ivydora@reelapse#5586"
+    },
+    {
+      "date": "2026-08-13T22:15:24",
+      "kind": "join",
+      "text": "Ammy lightstep has joined the guild after being invited by Ivydora"
+    },
+    {
+      "date": "2026-08-13T20:33:27",
+      "kind": "exit",
+      "text": "Dragon@gladio666 has left the guild"
+    },
+    {
+      "date": "2026-08-13T20:33:27",
+      "kind": "exit",
+      "text": "Dragon has left the guild"
+    },
+    {
+      "date": "2026-08-13T18:26:01",
+      "kind": "join",
+      "text": "Dragon@gladio666 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-13T18:26:01",
+      "kind": "join",
+      "text": "Dragon has joined the guild after being invited by Elanor"
+    },
+    {
+      "date": "2026-08-13T00:08:31",
+      "kind": "rank",
+      "text": "Rilay SW@maxswirid#1637's guild rank is now Officer"
+    },
+    {
+      "date": "2026-08-13T00:08:31",
+      "kind": "rank",
+      "text": "Rilay SW's guild rank is now Officer"
+    },
+    {
+      "date": "2026-08-13T00:08:28",
+      "kind": "rank",
+      "text": "Rilay SW@maxswirid#1637's guild rank is now Elder"
+    },
+    {
+      "date": "2026-08-13T00:08:28",
+      "kind": "rank",
+      "text": "Rilay SW's guild rank is now Elder"
+    },
+    {
+      "date": "2026-08-13T00:08:26",
+      "kind": "rank",
+      "text": "Rilay SW@maxswirid#1637's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-13T00:08:26",
+      "kind": "rank",
+      "text": "Rilay SW's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-13T00:08:24",
+      "kind": "rank",
+      "text": "Rilay SW@maxswirid#1637's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-13T00:08:24",
+      "kind": "rank",
+      "text": "Rilay SW's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-13T00:08:22",
+      "kind": "rank",
+      "text": "Rilay SW@maxswirid#1637's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-13T00:08:22",
+      "kind": "rank",
+      "text": "Rilay SW's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-13T00:06:50",
+      "kind": "join",
+      "text": "Rilay SW@maxswirid#1637 has joined the guild after being invited by Rilay@maxswirid#1637"
+    },
+    {
+      "date": "2026-08-13T00:06:50",
+      "kind": "join",
+      "text": "Rilay SW has joined the guild after being invited by Rilay"
+    },
+    {
+      "date": "2026-08-13T00:06:10",
+      "kind": "rank",
+      "text": "Ivydora@reelapse#5586's guild rank is now Officer"
+    },
+    {
+      "date": "2026-08-13T00:06:10",
+      "kind": "rank",
+      "text": "Ivydora's guild rank is now Officer"
+    },
+    {
+      "date": "2026-08-13T00:06:08",
+      "kind": "rank",
+      "text": "Ivydora@reelapse#5586's guild rank is now Elder"
+    },
+    {
+      "date": "2026-08-13T00:06:08",
+      "kind": "rank",
+      "text": "Ivydora's guild rank is now Elder"
+    },
+    {
+      "date": "2026-08-13T00:06:07",
+      "kind": "rank",
+      "text": "Ivydora@reelapse#5586's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-13T00:06:07",
+      "kind": "rank",
+      "text": "Ivydora's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-08-13T00:06:05",
+      "kind": "rank",
+      "text": "Ivydora@reelapse#5586's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-13T00:06:05",
+      "kind": "rank",
+      "text": "Ivydora's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-08-13T00:06:04",
+      "kind": "rank",
+      "text": "Ivydora@reelapse#5586's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-13T00:06:04",
+      "kind": "rank",
+      "text": "Ivydora's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-08-13T00:06:00",
+      "kind": "join",
+      "text": "Ivydora@reelapse#5586 has joined the guild after being invited by Rilay@maxswirid#1637"
+    },
+    {
+      "date": "2026-08-13T00:06:00",
+      "kind": "join",
+      "text": "Ivydora has joined the guild after being invited by Rilay"
+    },
+    {
+      "date": "2026-08-12T23:58:38",
+      "kind": "exit",
+      "text": "Rilay SW@maxswirid#1637 has left the guild"
+    },
+    {
+      "date": "2026-08-12T23:58:38",
+      "kind": "exit",
+      "text": "Rilay SW has left the guild"
+    },
+    {
+      "date": "2026-08-12T23:58:37",
+      "kind": "exit",
+      "text": "Ivydora@reelapse#5586 has left the guild"
+    },
+    {
+      "date": "2026-08-12T23:58:37",
+      "kind": "exit",
+      "text": "Ivydora has left the guild"
+    },
+    {
+      "date": "2026-08-12T20:34:51",
+      "kind": "exit",
+      "text": "Navi SweetSong@menofgods has left the guild"
+    },
+    {
+      "date": "2026-08-12T20:34:51",
+      "kind": "exit",
+      "text": "Navi SweetSong has left the guild"
+    },
+    {
+      "date": "2026-08-12T18:14:03",
+      "kind": "exit",
+      "text": "Lia@werellama was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-12T18:14:03",
+      "kind": "exit",
+      "text": "Lia was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-12T18:09:14",
+      "kind": "exit",
+      "text": "Khamül@rxcloud26#64891 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-12T18:09:14",
+      "kind": "exit",
+      "text": "Khamül was kicked from the guild by Elanor"
+    },
+    {
+      "date": "2026-08-11T23:36:56",
+      "kind": "join",
+      "text": "Ace Raven@AceRaven#64520 has joined the guild after being invited by ohnomypickle@angelbosszaragoza2004#06971"
+    },
+    {
+      "date": "2026-08-11T23:36:56",
+      "kind": "join",
+      "text": "Ace Raven has joined the guild after being invited by ohnomypickle"
+    },
+    {
+      "date": "2026-08-11T20:09:46",
+      "kind": "exit",
+      "text": "Stormy Blade@arokill has left the guild"
+    },
+    {
+      "date": "2026-08-11T20:09:46",
+      "kind": "exit",
+      "text": "Stormy Blade has left the guild"
+    },
+    {
+      "date": "2026-08-11T19:03:55",
+      "kind": "join",
+      "text": "Tib@Lowless#14647 has joined the guild after being invited by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-08-11T19:03:55",
+      "kind": "join",
+      "text": "Tib has joined the guild after being invited by Elanor"
     }
   ]
 }
