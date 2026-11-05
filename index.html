@@ -72,8 +72,12 @@
       </section>
 
       <section class="panel recent-panel" id="activity">
-        <div class="panel-heading"><div><p class="kicker">Activity log export</p><h2>Recent activity</h2><p class="section-subtitle">Search activity by character, account, or event. Select a member name to open that roster entry.</p></div><span class="panel-mark">◷</span></div>
+        <div class="panel-heading"><div><p class="kicker">Activity archive</p><h2>Recent activity</h2><p class="section-subtitle">Search the retained guild log by member, event, or date range. Select a member name to open that roster entry.</p></div><span class="panel-mark">◷</span></div>
         <div class="field activity-search-field"><label for="activity-search">Search activity</label><div class="search-box"><span aria-hidden="true">⌕</span><input id="activity-search" type="search" placeholder="Character, account, or event" autocomplete="off"></div><p id="activity-results-count" class="search-results-count" aria-live="polite"></p></div>
+        <div class="activity-filters" aria-label="Activity filters">
+          <div class="field"><label for="activity-type-filter">Event type</label><select id="activity-type-filter"><option value="">All event types</option><option value="join">Joins</option><option value="exit">Departures</option><option value="rank">Rank changes</option><option value="other">Other guild events</option></select></div>
+          <div class="field"><label for="activity-period-filter">Time period</label><select id="activity-period-filter"><option value="0">All time</option><option value="7">Past 7 days</option><option value="30">Past 30 days</option><option value="90">Past 90 days</option><option value="365">Past year</option></select></div>
+        </div>
         <div id="recent-events" class="recent-events"><div class="empty-state">No published activity snapshot is available.</div></div>
       </section>
       <section class="panel promotions-panel" id="upcoming-promotions" aria-labelledby="promotion-title">
@@ -115,6 +119,13 @@
           <li><span>Officer <small>Rank 6</small></span><strong>By appointment only</strong></li>
         </ul>
         <p class="promotion-rules-note">These are general benchmarks based on the account’s earliest verified guild join date. Active participation can support faster progression. Rank decisions also consider activity, participation in guild events or runs, communication, respectful behavior, and positive contribution.</p>
+      </dialog>
+      <dialog class="account-detail-dialog" id="account-dialog" aria-labelledby="account-dialog-title">
+        <div class="account-dialog-header">
+          <div><p class="kicker">Member account</p><h2 id="account-dialog-title">Account details</h2><p id="account-dialog-summary" class="account-dialog-summary"></p></div>
+          <button type="button" class="account-dialog-close" id="close-account-dialog" aria-label="Close account details">×</button>
+        </div>
+        <div id="account-dialog-characters" class="account-dialog-characters"></div>
       </dialog>
     </main>
 

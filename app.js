@@ -17,10 +17,29 @@
     if(!m.lastOnline)return m.onlineNow?'Today':'—';const days=Math.floor((new Date()-m.lastOnline)/86400000);
     if(days<1)return 'Today';if(days===1)return 'Yesterday';if(days<30)return `${days} days ago`;return formatDate(m.lastOnline);
   };
+
   const directoryAccountLink=(account)=>{
     const value=String(account||'').trim();
-    return value?`<a class="directory-account-link" href="#roster" data-account-query="${escapeHtml(value)}">${escapeHtml(value)}</a>`:'—';
+    return value?`<a class="directory-account-link" href="#account-details" aria-haspopup="dialog" aria-label="View characters for ${escapeHtml(value)}" data-account-query="${escapeHtml(value)}">${escapeHtml(value)}</a>`:'—';
   };
+  function showAccountDetails(account){
+    const value=String(account||'').trim();
+    const key=value.toLocaleLowerCase();
+    const members=state.roster.filter(member=>String(member.account||'').trim().toLocaleLowerCase()===key)
+      .sort((a,b)=>a.name.localeCompare(b.name));
+    const joinDate=state.accountJoinDates[key]||members.map(member=>member.originalJoinDate||member.joinDate).filter(Boolean).sort()[0]||null;
+    $('account-dialog-title').textContent=value||'Account details';
+    $('account-dialog-summary').textContent=`${members.length.toLocaleString()} ${members.length===1?'character':'characters'} · Earliest verified guild join ${formatDate(asDate(joinDate))}`;
+    $('account-dialog-characters').innerHTML=members.length?members.map(member=>`<article class="account-character-card">
+      <div class="account-character-heading"><div><strong>${escapeHtml(member.name)}</strong><span class="account-character-class">${escapeHtml(member.class)}</span></div><span class="rank-tag"><i class="rank-dot rank-${member.rankOrder}"></i>${escapeHtml(member.rank)}</span></div>
+      <div class="account-character-details">
+        <div><small>Joined</small><span>${formatDate(member.joinDate)}</span></div>
+        <div><small>Last online</small><span>${displayStatus(member)}</span></div>
+        <div><small>Level</small><span>${escapeHtml(member.level||'—')}</span></div>
+      </div>
+    </article>`).join(''):'<div class="empty-state">No characters are listed for this account.</div>';
+    $('account-dialog').showModal();
+  }
   function renderSnapshotStatus(){
     const dateLabel=state.generatedAt?formatDate(state.generatedAt):null;
     $('roster-generated-date').textContent=dateLabel?`Roster snapshot generated on ${dateLabel}.`:'Roster snapshot date unavailable.';
@@ -215,14 +234,24 @@
     }
     return {html,searchText};
   }
+
   function renderRecent(){
     const label={join:'Joined',exit:'Departed',rank:'Rank changed',other:'Guild event'};
     const query=$('activity-search').value.trim().toLocaleLowerCase();
+    const typeFilter=$('activity-type-filter').value;
+    const periodDays=Number($('activity-period-filter').value)||0;
+    const cutoff=periodDays?Date.now()-periodDays*86400000:0;
     const prepared=state.events.map(event=>({event,view:activityMemberText(event.text)}));
-    const rows=prepared.filter(item=>!query||item.view.searchText.toLocaleLowerCase().includes(query)||item.event.kind.toLocaleLowerCase().includes(query));
-    const count=rows.length, total=state.events.length;
-    $('activity-results-count').textContent=query?`${count.toLocaleString()} of ${total.toLocaleString()} events match`:`${total.toLocaleString()} events`;
-    $('recent-events').innerHTML=count?rows.map(({event,view})=>`<div class="event-row"><i class="event-dot ${event.kind}"></i><div><div class="event-copy">${view.html}</div><div class="event-type">${label[event.kind]||label.other}</div></div><time class="event-date" datetime="${event.date.toISOString()}">${formatDate(event.date,true)}</time></div>`).join(''):(query?'<div class="empty-state">No activity events match this search.</div>':'<div class="empty-state">No published activity records are available.</div>');
+    const rows=prepared.filter(item=>{
+      const matchesQuery=!query||item.view.searchText.toLocaleLowerCase().includes(query)||item.event.kind.toLocaleLowerCase().includes(query);
+      const matchesType=!typeFilter||item.event.kind===typeFilter;
+      const matchesPeriod=!cutoff||item.event.date.getTime()>=cutoff;
+      return matchesQuery&&matchesType&&matchesPeriod;
+    });
+    const count=rows.length,total=state.events.length;
+    const filtered=Boolean(query||typeFilter||periodDays);
+    $('activity-results-count').textContent=filtered?`${count.toLocaleString()} of ${total.toLocaleString()} events match`:`${total.toLocaleString()} events`;
+    $('recent-events').innerHTML=count?rows.map(({event,view})=>`<div class="event-row"><i class="event-dot ${event.kind}"></i><div><div class="event-copy">${view.html}</div><div class="event-type">${label[event.kind]||label.other}</div></div><time class="event-date" datetime="${event.date.toISOString()}">${formatDate(event.date,true)}</time></div>`).join(''):(filtered?'<div class="empty-state">No activity events match these filters.</div>':'<div class="empty-state">No published activity records are available.</div>');
   }
   function render(){renderSnapshotStatus();renderDirectoryFilters();renderRoster();renderRecent();renderPromotions();renderInactivityAlerts();}
   function loadSnapshot(snapshot){
@@ -238,19 +267,21 @@
   }
   $('search').addEventListener('input',()=>{state.accountFilter='';renderRoster();});
   $('activity-search').addEventListener('input',renderRecent);
+  $('activity-type-filter').addEventListener('change',renderRecent);
+  $('activity-period-filter').addEventListener('change',renderRecent);
   $('promotion-search').addEventListener('input',renderPromotions);
   $('roster').addEventListener('click',event=>{
     const link=event.target.closest('.directory-account-link');
     if(!link)return;
     event.preventDefault();
-    const account=link.dataset.accountQuery||'';
-    $('search').value=account;
-    state.accountFilter=account.trim().toLocaleLowerCase();
-    state.rankFilter='';state.classFilter='';
-    renderDirectoryFilters();renderRoster();
-    $('roster').scrollIntoView({behavior:'smooth',block:'start'});
+    showAccountDetails(link.dataset.accountQuery||'');
   });
-  $('promotion-list').addEventListener('click',event=>{
+  const accountDialog=$('account-dialog');
+  $('close-account-dialog').addEventListener('click',()=>accountDialog.close());
+  accountDialog.addEventListener('click',event=>{
+    if(event.target===accountDialog)accountDialog.close();
+  });
+    $('promotion-list').addEventListener('click',event=>{
     const link=event.target.closest('.promotion-account-link');
     if(!link)return;
     event.preventDefault();

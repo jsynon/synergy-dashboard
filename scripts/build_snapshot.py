@@ -54,6 +54,21 @@ def event_kind(row):
     return "other"
 
 
+
+def normalize_snapshot_event(event):
+    """Return a clean event record from an existing snapshot, or None."""
+    if not isinstance(event, dict):
+        return None
+    date = str(event.get("date", "")).strip()
+    text = re.sub(r"\s+", " ", str(event.get("text", ""))).strip()
+    kind = str(event.get("kind", "other")).strip().lower()
+    if not date or not text:
+        return None
+    if kind not in {"join", "exit", "rank", "other"}:
+        kind = "other"
+    return {"date": date, "kind": kind, "text": text}
+
+
 def main():
     roster_rows = read_csv(ROSTER_PATH)
     activity_rows = read_csv(ACTIVITY_PATH)
@@ -65,6 +80,7 @@ def main():
     # Carry forward the first verified account join date across snapshot refreshes.
     # This keeps a brief leave/rejoin from resetting the tenure milestone.
     account_join_dates = {}
+    previous_events = []
     if OUTPUT_PATH.exists():
         try:
             previous = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
@@ -73,6 +89,9 @@ def main():
                 for account, date in previous.get("accountJoinDates", {}).items()
                 if str(account).strip() and date
             }
+            previous_events = previous.get("events", [])
+            if not isinstance(previous_events, list):
+                previous_events = []
             for member in previous.get("roster", []):
                 account = str(member.get("account", "")).strip().casefold()
                 date = member.get("originalJoinDate") or member.get("joinDate")
@@ -80,6 +99,7 @@ def main():
                     account_join_dates.setdefault(account, date)
         except (OSError, json.JSONDecodeError, AttributeError):
             account_join_dates = {}
+            previous_events = []
 
     account_current_dates = {}
     accounts = set()
@@ -130,7 +150,23 @@ def main():
             continue
         text = re.sub(r"\s+", " ", row.get("Text", "")).strip()
         events.append({"date": date, "kind": event_kind(row), "text": text})
-    events.sort(key=lambda event: event["date"], reverse=True)
+    previous_keys = set()
+    merged_events = {}
+    for event in previous_events:
+        normalized = normalize_snapshot_event(event)
+        if normalized:
+            key = (normalized["date"], normalized["kind"], normalized["text"].casefold())
+            previous_keys.add(key)
+            merged_events.setdefault(key, normalized)
+    current_keys = set()
+    for event in events:
+        normalized = normalize_snapshot_event(event)
+        if normalized:
+            key = (normalized["date"], normalized["kind"], normalized["text"].casefold())
+            current_keys.add(key)
+            merged_events.setdefault(key, normalized)
+    new_event_count = len(current_keys - previous_keys)
+    events = sorted(merged_events.values(), key=lambda event: event["date"], reverse=True)
 
     snapshot = {
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -141,7 +177,8 @@ def main():
     }
     OUTPUT_PATH.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote {OUTPUT_PATH.relative_to(ROOT)}: {len(members)} characters, "
-          f"{len(accounts)} unique accounts, {len(events)} activity records.")
+          f"{len(accounts)} unique accounts, {len(events)} retained activity records.")
+    print(f"Activity history: {new_event_count} new events added from this export.")
 
 
 if __name__ == "__main__":
