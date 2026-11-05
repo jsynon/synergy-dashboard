@@ -813,3 +813,46 @@ footer {
 @media(max-width:620px) {
   .brand-banner .brand-banner-copy > img { width:min(74vw,360px); max-height:calc(100% - 18px); }
 }
+
+
+/* Integrated Synergy header art and a stable three-link mobile menu */
+.brand-banner { height:clamp(240px,21vw,420px); }
+.brand-banner > .brand-banner-background { object-position:center 12%; }
+.brand-banner::after { display:none; }
+.masthead {
+  display:flex;
+  flex-wrap:nowrap;
+  justify-content:center;
+  align-items:stretch;
+  gap:0;
+}
+.masthead nav {
+  display:flex;
+  align-items:stretch;
+  justify-content:center;
+  width:min(100%,780px);
+  margin:0;
+  gap:0;
+}
+.masthead nav a,.masthead nav .discord-link {
+  display:flex;
+  flex:1 1 0;
+  align-items:center;
+  justify-content:center;
+  min-width:0;
+  margin:0;
+  padding:10px clamp(8px,2vw,24px);
+  white-space:nowrap;
+}
+.masthead nav a + a,.masthead nav .discord-link { border-left:1px solid var(--frame-gold); }
+.masthead nav .discord-link { border-top:0; border-right:0; border-bottom:0; }
+@media(max-width:620px) {
+  .brand-banner { height:clamp(150px,42vw,190px); }
+  .masthead { min-height:48px; padding:0 2px; }
+  .masthead nav { width:100%; }
+  .masthead nav a,.masthead nav .discord-link {
+    padding:8px 2px;
+    font-size:clamp(.56rem,2.25vw,.72rem);
+    letter-spacing:0;
+  }
+}
