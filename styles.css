@@ -535,3 +535,191 @@ footer span:first-child { color:var(--gold-bright); font:600 .9rem var(--serif);
   color:var(--gold-bright);
   text-decoration:underline;
 }
+
+
+
+/* Shared celestial-citadel visual treatment */
+:root {
+  --frame-gold: #d8a84e;
+  --frame-cyan: #32c5df;
+  --frame-deep: #061521;
+}
+body {
+  background-color: #040b13;
+  background-image:
+    radial-gradient(ellipse at 10% 18%, rgba(0,153,224,.17), transparent 36rem),
+    radial-gradient(ellipse at 92% 28%, rgba(246,127,39,.13), transparent 38rem),
+    radial-gradient(ellipse at 50% 90%, rgba(6,71,107,.15), transparent 50rem),
+    repeating-linear-gradient(0deg, rgba(130,193,220,.018) 0 1px, transparent 1px 5px),
+    linear-gradient(115deg, #030811, #071522 53%, #100e0d);
+}
+.brand-banner {
+  width:100vw;
+  max-width:none;
+  height:clamp(108px,12vw,166px);
+  margin:0 calc(50% - 50vw);
+  border:0;
+  border-bottom:1px solid rgba(216,168,78,.82);
+  background:#06111c;
+  box-shadow:0 7px 28px rgba(0,0,0,.5), 0 1px 0 rgba(50,197,223,.35);
+}
+.brand-banner img { object-position:center 49%; }
+.masthead {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:0;
+  width:100vw;
+  min-height:53px;
+  margin:0 calc(50% - 50vw);
+  padding:0 12px;
+  border-top:1px solid rgba(50,197,223,.18);
+  border-bottom:1px solid rgba(216,168,78,.72);
+  background:linear-gradient(180deg,rgba(5,23,36,.98),rgba(3,13,22,.98));
+  box-shadow:0 5px 18px rgba(0,0,0,.3);
+}
+.masthead .brand-mark,.masthead .brand-copy { display:none; }
+.masthead nav {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:0;
+  margin:0;
+}
+.masthead nav a {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px clamp(12px,2.6vw,30px);
+  border:0;
+  border-radius:0;
+  color:#d8eaf3;
+  background:transparent;
+  font:500 clamp(.82rem,1.35vw,1rem) var(--serif);
+  letter-spacing:.025em;
+}
+.masthead nav a + a { border-left:1px solid var(--frame-gold); }
+.masthead nav a:hover,.masthead nav a:focus-visible {
+  color:var(--gold-bright);
+  background:rgba(38,151,190,.09);
+}
+.discord-link {
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  margin:0;
+  padding:10px clamp(12px,2.6vw,30px);
+  border:0;
+  border-left:1px solid var(--frame-gold);
+  border-radius:0;
+  color:#d8eaf3;
+  background:transparent;
+  font:500 clamp(.82rem,1.35vw,1rem) var(--serif);
+}
+.discord-link:hover { color:var(--gold-bright); background:rgba(38,151,190,.09); }
+.hero {
+  position:relative;
+  min-height:180px;
+  margin:22px 0 20px;
+  padding:40px 24px 34px;
+  overflow:hidden;
+  border:1px solid rgba(216,168,78,.9);
+  border-radius:0;
+  outline:1px solid rgba(50,197,223,.42);
+  outline-offset:-6px;
+  background:
+    linear-gradient(90deg,rgba(2,14,24,.66),rgba(3,15,26,.74) 47%,rgba(3,15,26,.48)),
+    url('assets/synergy-banner.webp') center 52%/cover;
+  box-shadow:0 12px 35px rgba(0,0,0,.38), inset 0 0 24px rgba(5,111,159,.18);
+}
+.hero::before,.hero::after {
+  content:"";
+  position:absolute;
+  z-index:0;
+  width:24px;
+  height:24px;
+  top:9px;
+  left:9px;
+  border-top:1px solid var(--frame-gold);
+  border-left:1px solid var(--frame-gold);
+  color:transparent;
+  font-size:0;
+  transform:none;
+}
+.hero::after {
+  top:auto;
+  left:auto;
+  right:9px;
+  bottom:9px;
+  border:0;
+  border-right:1px solid var(--frame-gold);
+  border-bottom:1px solid var(--frame-gold);
+}
+.hero-mark { display:none; }
+.hero h1 { text-shadow:0 2px 5px #000,0 0 24px rgba(16,109,153,.45); }
+.hero .eyebrow,.hero > .kicker {
+  color:#36d2e5;
+  letter-spacing:.25em;
+}
+.hero-copy,.hero-subtitle { color:#d9edf6; }
+.panel,.search-panel,.roster-panel,.recent-panel,.promotions-panel,.inactivity-panel,
+.route-section,.filter-panel,.item-card,.detail-panel,.route-card {
+  border:1px solid rgba(216,168,78,.76);
+  border-radius:0;
+  outline:1px solid rgba(50,197,223,.24);
+  outline-offset:-6px;
+  background-color:#071925;
+  background-image:
+    radial-gradient(ellipse at 8% 0%,rgba(10,109,144,.17),transparent 38rem),
+    linear-gradient(145deg,rgba(4,22,33,.96),rgba(5,16,27,.98));
+  box-shadow:0 10px 28px rgba(0,0,0,.28),inset 0 0 22px rgba(4,87,121,.08);
+}
+.roster-panel > .panel-heading,.recent-panel > .panel-heading,
+.promotions-panel > .panel-heading,.inactivity-panel > .panel-heading,
+.card-header {
+  border-bottom:1px solid rgba(50,197,223,.46);
+  background:linear-gradient(100deg,rgba(4,35,51,.98),rgba(6,30,45,.95) 56%,rgba(47,29,17,.94));
+}
+.panel-heading .kicker,.section-kicker,.section-heading .section-kicker {
+  color:#35d2e3;
+}
+.panel-heading h2,h2,.item-title,.empty-state strong { text-shadow:0 1px 7px rgba(0,0,0,.55); }
+.directory-facets,.filter-panel {
+  border-color:rgba(50,197,223,.42);
+  background-color:rgba(3,17,27,.88);
+}
+.search-box,.field input,.field select,.facet-select-field select {
+  border-color:rgba(67,190,218,.38);
+  background-color:#071722;
+}
+.search-box:focus-within,.field input:focus,.field select:focus,.facet-select-field select:focus {
+  border-color:#38c9e1;
+  box-shadow:0 0 0 3px rgba(50,197,223,.13);
+}
+.table-wrap,.table-wrap th,.mobile-member-card,.promotion-row,.inactivity-row,.event-row {
+  border-color:rgba(50,197,223,.25);
+}
+.mobile-member-card,.promotion-row,.inactivity-row {
+  background:linear-gradient(115deg,rgba(5,29,43,.94),rgba(20,25,29,.94));
+}
+.route-button,.class-badge,.facet-chip,.mobile-member-rank {
+  border-color:rgba(50,197,223,.38);
+  background-color:rgba(8,37,52,.78);
+}
+.route-button:hover,.facet-chip:hover,.facet-chip.active { border-color:var(--frame-gold); }
+.card-header::after,.roster-panel > .panel-heading::after,.recent-panel > .panel-heading::after,
+.promotions-panel > .panel-heading::after,.inactivity-panel > .panel-heading::after {
+  border-color:rgba(50,197,223,.55);
+  border-top-color:rgba(216,168,78,.9);
+  border-right-color:rgba(216,168,78,.9);
+}
+footer {
+  border-top:1px solid rgba(216,168,78,.68);
+  color:#bfd5df;
+}
+@media(max-width:620px) {
+  .brand-banner { height:112px; margin-top:0; }
+  .masthead { min-height:49px; padding:0 5px; }
+  .masthead nav a,.discord-link { padding:9px 8px; font-size:.75rem; }
+  .hero { min-height:155px; margin:16px 0; padding:30px 13px 25px; }
+}
