@@ -368,8 +368,16 @@ footer span:first-child { color:var(--gold-bright); font:600 .9rem var(--serif);
   border-bottom:1px solid var(--line);
   background:linear-gradient(110deg,rgba(8,29,42,.96),rgba(16,28,40,.94) 58%,rgba(39,25,16,.94));
 }
+.promotions-panel > .panel-heading {
+  position:relative;
+  margin:-13px -17px 9px;
+  padding:15px 17px 14px;
+  border-bottom:1px solid var(--line);
+  background:linear-gradient(110deg,rgba(8,29,42,.96),rgba(16,28,40,.94) 58%,rgba(39,25,16,.94));
+}
 .roster-panel > .panel-heading::after,
-.recent-panel > .panel-heading::after {
+.recent-panel > .panel-heading::after,
+.promotions-panel > .panel-heading::after {
   content:"";
   position:absolute;
   top:0;
@@ -395,6 +403,10 @@ footer span:first-child { color:var(--gold-bright); font:600 .9rem var(--serif);
   .roster-panel > .panel-heading,
   .recent-panel > .panel-heading {
     margin:-13px -11px 14px;
+    padding:13px 11px 12px;
+  }
+  .promotions-panel > .panel-heading {
+    margin:-13px -11px 9px;
     padding:13px 11px 12px;
   }
 }
