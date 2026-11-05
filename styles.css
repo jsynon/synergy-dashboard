@@ -773,15 +773,37 @@ footer {
   background:linear-gradient(90deg,transparent,#d6a74d);
 }
 .brand-banner-copy small::after { transform:scaleX(-1); }
+/* Fantasy panel frames: beveled corners and small cyan-inlaid gold diamonds. */
+:root {
+  --frame-gem:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M6 .75 11.25 6 6 11.25.75 6Z' fill='%23071521' stroke='%23f5d88e' stroke-width='1.2'/%3E%3Cpath d='M6 3 9 6 6 9 3 6Z' fill='%2359c9e8'/%3E%3C/svg%3E");
+}
 .panel,.item-card,.route-section,.filter-panel,.detail-panel,.search-panel { position:relative; }
 .panel::before,.item-card::before,.route-section::before,.filter-panel::before,.detail-panel::before,.search-panel::before {
   content:"";
   position:absolute;
   inset:0;
   z-index:2;
-  border:1px solid rgba(245,194,91,.9);
-  clip-path:polygon(13px 0,calc(100% - 13px) 0,100% 13px,100% calc(100% - 13px),calc(100% - 13px) 100%,13px 100%,0 calc(100% - 13px),0 13px);
+  border:1px solid rgba(245,216,142,.9);
+  clip-path:polygon(
+    15px 0,calc(100% - 15px) 0,
+    calc(100% - 11px) 4px,calc(100% - 4px) 4px,100% 15px,
+    100% calc(100% - 15px),calc(100% - 4px) calc(100% - 4px),
+    calc(100% - 11px) calc(100% - 4px),calc(100% - 15px) 100%,
+    15px 100%,11px calc(100% - 4px),4px calc(100% - 4px),
+    0 calc(100% - 15px),0 15px,4px 11px,4px 4px,11px 4px
+  );
   pointer-events:none;
+}
+.panel::after,.item-card::after,.route-section::after,.filter-panel::after,.detail-panel::after,.search-panel::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+  background-image:var(--frame-gem),var(--frame-gem),var(--frame-gem),var(--frame-gem);
+  background-repeat:no-repeat;
+  background-size:9px 9px;
+  background-position:left 4px top 4px,right 4px top 4px,left 4px bottom 4px,right 4px bottom 4px;
 }
 @media(max-width:620px) {
   .brand-banner-copy strong { font-size:2rem; }
