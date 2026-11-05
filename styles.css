@@ -629,7 +629,7 @@ body {
   outline-offset:-6px;
   background:
     linear-gradient(90deg,rgba(2,14,24,.66),rgba(3,15,26,.74) 47%,rgba(3,15,26,.48)),
-    url('assets/synergy-banner.webp') center 52%/cover;
+    url('assets/synergy-hero.svg') center 52%/cover;
   box-shadow:0 12px 35px rgba(0,0,0,.38), inset 0 0 24px rgba(5,111,159,.18);
 }
 .hero::before,.hero::after {
@@ -722,4 +722,69 @@ footer {
   .masthead { min-height:49px; padding:0 5px; }
   .masthead nav a,.discord-link { padding:9px 8px; font-size:.75rem; }
   .hero { min-height:155px; margin:16px 0; padding:30px 13px 25px; }
+}
+
+/* Generated celestial-citadel artwork with a live wordmark overlay */
+.brand-banner { position:relative; isolation:isolate; }
+.brand-banner img { position:absolute; inset:0; z-index:0; object-fit:cover; object-position:center 50%; }
+.brand-banner::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:linear-gradient(90deg,rgba(2,10,19,.12),rgba(2,12,20,.18) 28%,rgba(2,12,20,.42) 50%,rgba(2,12,20,.08));
+  pointer-events:none;
+}
+.brand-banner-copy {
+  position:absolute;
+  inset:0;
+  z-index:2;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  pointer-events:none;
+  text-align:center;
+}
+.brand-banner-copy strong {
+  color:#f6d58a;
+  font:500 clamp(2rem,5.3vw,4rem)/1.05 var(--serif);
+  letter-spacing:.1em;
+  text-shadow:0 2px 4px #02070c,0 0 24px rgba(0,0,0,.9),0 0 26px rgba(231,160,67,.3);
+  text-transform:uppercase;
+}
+.brand-banner-copy small {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-top:6px;
+  color:#dbeaf1;
+  font-size:.58rem;
+  font-weight:600;
+  letter-spacing:.34em;
+  line-height:1.3;
+  text-transform:uppercase;
+  text-shadow:0 1px 5px #02070c;
+}
+.brand-banner-copy small::before,.brand-banner-copy small::after {
+  content:"";
+  width:38px;
+  height:1px;
+  background:linear-gradient(90deg,transparent,#d6a74d);
+}
+.brand-banner-copy small::after { transform:scaleX(-1); }
+.panel,.item-card,.route-section,.filter-panel,.detail-panel,.search-panel { position:relative; }
+.panel::before,.item-card::before,.route-section::before,.filter-panel::before,.detail-panel::before,.search-panel::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  border:1px solid rgba(245,194,91,.9);
+  clip-path:polygon(13px 0,calc(100% - 13px) 0,100% 13px,100% calc(100% - 13px),calc(100% - 13px) 100%,13px 100%,0 calc(100% - 13px),0 13px);
+  pointer-events:none;
+}
+@media(max-width:620px) {
+  .brand-banner-copy strong { font-size:2rem; }
+  .brand-banner-copy small { gap:7px; font-size:.48rem; letter-spacing:.24em; }
+  .brand-banner-copy small::before,.brand-banner-copy small::after { width:22px; }
 }
