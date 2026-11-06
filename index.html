@@ -91,10 +91,10 @@
         <div id="inactivity-list" class="inactivity-list"><div class="empty-state">Alerts will appear when the roster snapshot loads.</div></div>
       </section>
 
-      <dialog class="inactivity-rules-dialog" id="inactivity-rules-dialog" aria-labelledby="inactivity-rules-title">
+      <dialog class="popup-shell inactivity-rules-dialog" id="inactivity-rules-dialog" aria-labelledby="inactivity-rules-title">
         <div class="inactivity-rules-header">
           <div><p class="kicker">Guild activity policy</p><h2 id="inactivity-rules-title">Inactivity limits</h2></div>
-          <button type="button" class="inactivity-dialog-close" id="close-inactivity-rules" aria-label="Close inactivity limits">×</button>
+          <button type="button" class="popup-close inactivity-dialog-close" id="close-inactivity-rules" aria-label="Close inactivity limits">×</button>
         </div>
         <ul class="inactivity-rules-list">
           <li><span>Initiate <small>Rank 1</small></span><strong>7 days</strong></li>
@@ -106,10 +106,10 @@
         </ul>
         <p class="inactivity-rules-note">Limits are evaluated at the account level using the most recent activity across its characters. Reaching a limit makes an account eligible for removal; it does not remove the account automatically.</p>
       </dialog>
-      <dialog class="promotion-rules-dialog" id="promotion-rules-dialog" aria-labelledby="promotion-rules-title">
+      <dialog class="popup-shell promotion-rules-dialog" id="promotion-rules-dialog" aria-labelledby="promotion-rules-title">
         <div class="promotion-rules-header">
           <div><p class="kicker">Guild advancement</p><h2 id="promotion-rules-title">Rank Progression Benchmarks</h2></div>
-          <button type="button" class="promotion-dialog-close" id="close-promotion-rules" aria-label="Close rank progression benchmarks">×</button>
+          <button type="button" class="popup-close promotion-dialog-close" id="close-promotion-rules" aria-label="Close rank progression benchmarks">×</button>
         </div>
         <ul class="promotion-rules-list">
           <li><span>Wayfarer <small>Rank 2</small></span><strong>~1 month</strong></li>
@@ -120,10 +120,10 @@
         </ul>
         <p class="promotion-rules-note">These are general benchmarks based on the account’s earliest verified guild join date. Active participation can support faster progression. Rank decisions also consider activity, participation in guild events or runs, communication, respectful behavior, and positive contribution.</p>
       </dialog>
-      <dialog class="account-detail-dialog" id="account-dialog" aria-labelledby="account-dialog-title">
+      <dialog class="popup-shell account-detail-dialog" id="account-dialog" aria-labelledby="account-dialog-title">
         <div class="account-dialog-header">
           <div><p class="kicker">Member account</p><h2 id="account-dialog-title">Account details</h2><p id="account-dialog-summary" class="account-dialog-summary"></p></div>
-          <button type="button" class="account-dialog-close" id="close-account-dialog" aria-label="Close account details">×</button>
+          <button type="button" class="popup-close account-dialog-close" id="close-account-dialog" aria-label="Close account details">×</button>
         </div>
         <div id="account-dialog-characters" class="account-dialog-characters"></div>
       </dialog>
