@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T04:40:55+00:00",
+  "generatedAt": "2026-11-06T14:31:09+00:00",
   "accountCount": 148,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -187,7 +187,7 @@
       "level": "20",
       "joinDate": "2025-04-18T10:30:28",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-05T11:50:42",
+      "lastOnline": "2026-11-06T08:54:09",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -239,7 +239,7 @@
       "level": "20",
       "joinDate": "2025-03-31T09:32:35",
       "originalJoinDate": "2025-03-31T09:32:35",
-      "lastOnline": "2026-11-05T07:02:46",
+      "lastOnline": "2026-11-06T02:06:57",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -278,7 +278,7 @@
       "level": "20",
       "joinDate": "2026-07-20T01:51:20",
       "originalJoinDate": "2026-06-19T06:48:35",
-      "lastOnline": "2026-11-05T06:23:19",
+      "lastOnline": "2026-11-06T09:08:16",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -304,7 +304,7 @@
       "level": "20",
       "joinDate": "2025-03-28T05:27:03",
       "originalJoinDate": "2025-03-28T05:27:03",
-      "lastOnline": "2026-11-03T06:02:04",
+      "lastOnline": "2026-11-06T08:35:07",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -408,7 +408,7 @@
       "level": "20",
       "joinDate": "2024-12-01T17:23:55",
       "originalJoinDate": "2024-11-29T07:44:44",
-      "lastOnline": "2026-11-05T06:59:52",
+      "lastOnline": "2026-11-06T07:02:41",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -421,8 +421,8 @@
       "level": "20",
       "joinDate": "2025-01-20T07:32:12",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-05T13:16:46",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -460,7 +460,7 @@
       "level": "20",
       "joinDate": "2024-04-22T08:05:11",
       "originalJoinDate": "2024-04-22T08:05:11",
-      "lastOnline": "2026-11-05T09:29:56",
+      "lastOnline": "2026-11-06T04:03:24",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -486,7 +486,7 @@
       "level": "20",
       "joinDate": "2026-08-15T13:19:27",
       "originalJoinDate": "2026-08-15T13:19:27",
-      "lastOnline": "2026-11-05T16:19:16",
+      "lastOnline": "2026-11-06T01:49:58",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -590,7 +590,7 @@
       "level": "20",
       "joinDate": "2026-08-06T20:40:08",
       "originalJoinDate": "2026-02-25T16:04:03",
-      "lastOnline": "2026-11-05T14:28:46",
+      "lastOnline": "2026-11-06T08:26:50",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -603,8 +603,8 @@
       "level": "20",
       "joinDate": "2026-02-25T16:04:03",
       "originalJoinDate": "2026-02-25T16:04:03",
-      "lastOnline": "2026-11-05T15:16:30",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -837,8 +837,8 @@
       "level": "20",
       "joinDate": "2026-04-15T21:09:34",
       "originalJoinDate": "2026-04-15T21:09:34",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-06T02:36:37",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -915,8 +915,8 @@
       "level": "20",
       "joinDate": "2026-09-05T15:40:50",
       "originalJoinDate": "2026-09-05T15:40:50",
-      "lastOnline": "2026-11-05T13:35:06",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1006,8 +1006,8 @@
       "level": "20",
       "joinDate": "2026-07-13T16:38:06",
       "originalJoinDate": "2026-07-13T16:38:06",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-06T04:55:46",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -1019,8 +1019,8 @@
       "level": "20",
       "joinDate": "2026-07-13T21:16:32",
       "originalJoinDate": "2026-07-13T21:16:32",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-06T02:00:21",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -1058,7 +1058,7 @@
       "level": "20",
       "joinDate": "2025-09-23T05:13:34",
       "originalJoinDate": "2025-09-23T05:13:34",
-      "lastOnline": "2026-11-05T07:49:14",
+      "lastOnline": "2026-11-06T07:56:58",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1097,8 +1097,8 @@
       "level": "20",
       "joinDate": "2026-07-04T19:27:26",
       "originalJoinDate": "2026-07-04T19:27:26",
-      "lastOnline": "2026-11-05T09:32:57",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1123,7 +1123,7 @@
       "level": "20",
       "joinDate": "2025-05-10T07:25:40",
       "originalJoinDate": "2025-05-10T07:25:40",
-      "lastOnline": "2026-11-05T11:08:16",
+      "lastOnline": "2026-11-06T05:15:54",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1136,8 +1136,8 @@
       "level": "20",
       "joinDate": "2024-06-12T12:09:06",
       "originalJoinDate": "2024-06-12T12:09:06",
-      "lastOnline": "2026-11-05T22:14:56",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1175,7 +1175,7 @@
       "level": "20",
       "joinDate": "2026-07-06T21:16:23",
       "originalJoinDate": "2026-07-04T19:27:26",
-      "lastOnline": "2026-11-05T09:32:40",
+      "lastOnline": "2026-11-06T09:26:51",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1227,7 +1227,7 @@
       "level": "20",
       "joinDate": "2025-05-03T13:52:32",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-05T11:56:49",
+      "lastOnline": "2026-11-06T08:56:55",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1240,7 +1240,7 @@
       "level": "20",
       "joinDate": "2026-04-01T00:43:23",
       "originalJoinDate": "2026-04-01T00:43:23",
-      "lastOnline": "2026-11-05T23:18:11",
+      "lastOnline": "2026-11-06T02:37:48",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1253,7 +1253,7 @@
       "level": "20",
       "joinDate": "2025-05-03T13:53:49",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-05T11:54:29",
+      "lastOnline": "2026-11-06T08:56:17",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1266,7 +1266,7 @@
       "level": "20",
       "joinDate": "2026-07-31T21:15:45",
       "originalJoinDate": "2026-07-31T21:15:45",
-      "lastOnline": "2026-11-05T15:51:22",
+      "lastOnline": "2026-11-06T09:02:49",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1279,7 +1279,7 @@
       "level": "20",
       "joinDate": "2026-02-01T16:51:52",
       "originalJoinDate": "2026-02-01T16:51:52",
-      "lastOnline": "2026-11-05T18:26:33",
+      "lastOnline": "2026-11-06T06:14:22",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1331,7 +1331,7 @@
       "level": "20",
       "joinDate": "2025-08-05T07:42:37",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-05T12:00:26",
+      "lastOnline": "2026-11-06T08:57:25",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1370,7 +1370,7 @@
       "level": "20",
       "joinDate": "2026-06-26T05:52:23",
       "originalJoinDate": "2025-03-31T09:32:35",
-      "lastOnline": "2026-11-05T07:03:08",
+      "lastOnline": "2026-11-06T02:28:57",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1383,8 +1383,8 @@
       "level": "20",
       "joinDate": "2026-07-25T09:07:31",
       "originalJoinDate": "2026-07-24T12:29:26",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-06T00:21:07",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -1552,7 +1552,7 @@
       "level": "20",
       "joinDate": "2024-11-29T07:44:44",
       "originalJoinDate": "2024-11-29T07:44:44",
-      "lastOnline": "2026-11-04T05:08:55",
+      "lastOnline": "2026-11-06T06:59:25",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1591,7 +1591,7 @@
       "level": "20",
       "joinDate": "2026-03-31T11:24:57",
       "originalJoinDate": "2026-03-31T11:24:57",
-      "lastOnline": "2026-11-05T07:07:10",
+      "lastOnline": "2026-11-06T06:53:46",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1630,7 +1630,7 @@
       "level": "20",
       "joinDate": "2024-12-20T15:17:39",
       "originalJoinDate": "2024-12-20T15:17:39",
-      "lastOnline": "2026-11-05T10:44:47",
+      "lastOnline": "2026-11-06T07:33:59",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1643,7 +1643,7 @@
       "level": "20",
       "joinDate": "2025-05-03T10:53:02",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-05T11:52:50",
+      "lastOnline": "2026-11-06T08:55:46",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1786,7 +1786,7 @@
       "level": "20",
       "joinDate": "2026-09-20T16:29:31",
       "originalJoinDate": "2026-09-20T16:29:31",
-      "lastOnline": "2026-11-05T18:56:03",
+      "lastOnline": "2026-11-06T09:06:02",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1812,7 +1812,7 @@
       "level": "20",
       "joinDate": "2024-07-28T13:44:54",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-05T12:00:08",
+      "lastOnline": "2026-11-06T05:04:12",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1825,7 +1825,7 @@
       "level": "20",
       "joinDate": "2024-07-27T14:12:08",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-05T20:48:39",
+      "lastOnline": "2026-11-06T05:06:48",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1916,7 +1916,7 @@
       "level": "20",
       "joinDate": "2026-11-03T12:54:47",
       "originalJoinDate": "2026-11-03T12:52:27",
-      "lastOnline": "2026-11-05T07:55:23",
+      "lastOnline": "2026-11-06T07:48:50",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2059,7 +2059,7 @@
       "level": "20",
       "joinDate": "2025-09-23T20:27:44",
       "originalJoinDate": "2025-09-23T20:27:44",
-      "lastOnline": "2026-11-05T11:43:55",
+      "lastOnline": "2026-11-06T09:13:32",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2085,7 +2085,7 @@
       "level": "20",
       "joinDate": "2026-11-03T12:52:27",
       "originalJoinDate": "2026-11-03T12:52:27",
-      "lastOnline": "2026-11-05T13:30:58",
+      "lastOnline": "2026-11-06T05:35:00",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2098,7 +2098,7 @@
       "level": "20",
       "joinDate": "2026-11-03T12:55:50",
       "originalJoinDate": "2026-11-03T12:52:27",
-      "lastOnline": "2026-11-05T07:58:53",
+      "lastOnline": "2026-11-06T07:49:36",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2137,8 +2137,8 @@
       "level": "20",
       "joinDate": "2026-11-03T12:56:28",
       "originalJoinDate": "2026-11-03T12:52:27",
-      "lastOnline": "2026-11-05T14:12:44",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2228,7 +2228,7 @@
       "level": "20",
       "joinDate": "2026-04-25T21:27:06",
       "originalJoinDate": "2026-04-25T21:27:06",
-      "lastOnline": "2026-11-05T11:25:31",
+      "lastOnline": "2026-11-06T08:36:10",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2254,8 +2254,8 @@
       "level": "20",
       "joinDate": "2026-10-13T22:06:13",
       "originalJoinDate": "2026-10-13T22:06:13",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-06T00:23:28",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2267,7 +2267,7 @@
       "level": "20",
       "joinDate": "2026-10-06T20:09:09",
       "originalJoinDate": "2026-09-29T20:23:37",
-      "lastOnline": "2026-11-05T08:02:32",
+      "lastOnline": "2026-11-06T08:19:08",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2293,8 +2293,8 @@
       "level": "20",
       "joinDate": "2026-06-06T16:31:14",
       "originalJoinDate": "2026-04-25T21:27:06",
-      "lastOnline": "2026-11-05T18:38:13",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2423,7 +2423,7 @@
       "level": "20",
       "joinDate": "2024-07-29T11:27:12",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-05T12:00:21",
+      "lastOnline": "2026-11-06T05:03:57",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2436,7 +2436,7 @@
       "level": "20",
       "joinDate": "2024-08-09T13:52:31",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-05T11:59:33",
+      "lastOnline": "2026-11-06T05:03:43",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2462,7 +2462,7 @@
       "level": "20",
       "joinDate": "2024-11-22T14:36:51",
       "originalJoinDate": "2024-11-22T14:36:51",
-      "lastOnline": "2026-11-05T11:03:24",
+      "lastOnline": "2026-11-06T09:19:12",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2488,7 +2488,7 @@
       "level": "20",
       "joinDate": "2024-11-22T14:37:44",
       "originalJoinDate": "2024-11-22T14:36:51",
-      "lastOnline": "2026-11-05T11:03:12",
+      "lastOnline": "2026-11-06T09:19:02",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2514,7 +2514,7 @@
       "level": "20",
       "joinDate": "2024-10-05T09:39:50",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-05T11:59:17",
+      "lastOnline": "2026-11-06T05:03:29",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2527,7 +2527,7 @@
       "level": "20",
       "joinDate": "2024-10-06T10:50:02",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-05T11:59:03",
+      "lastOnline": "2026-11-06T05:03:17",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2540,7 +2540,7 @@
       "level": "20",
       "joinDate": "2024-10-06T10:49:37",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-05T11:58:29",
+      "lastOnline": "2026-11-06T05:02:35",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2553,7 +2553,7 @@
       "level": "20",
       "joinDate": "2024-10-06T10:49:02",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-05T11:58:07",
+      "lastOnline": "2026-11-06T05:03:04",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2592,7 +2592,7 @@
       "level": "20",
       "joinDate": "2026-11-03T12:57:16",
       "originalJoinDate": "2026-11-03T12:52:27",
-      "lastOnline": "2026-11-05T11:38:01",
+      "lastOnline": "2026-11-06T05:12:57",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2605,7 +2605,7 @@
       "level": "20",
       "joinDate": "2024-10-16T10:44:04",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-05T12:00:57",
+      "lastOnline": "2026-11-06T05:04:41",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2670,7 +2670,7 @@
       "level": "20",
       "joinDate": "2026-06-09T12:05:29",
       "originalJoinDate": "2026-06-09T12:05:29",
-      "lastOnline": "2026-11-05T14:51:16",
+      "lastOnline": "2026-11-06T09:02:22",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2696,7 +2696,7 @@
       "level": "20",
       "joinDate": "2024-12-01T14:53:05",
       "originalJoinDate": "2024-11-29T07:44:44",
-      "lastOnline": "2026-11-04T05:11:07",
+      "lastOnline": "2026-11-06T07:05:39",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2774,7 +2774,7 @@
       "level": "20",
       "joinDate": "2024-12-27T18:06:41",
       "originalJoinDate": "2024-11-29T07:44:44",
-      "lastOnline": "2026-11-04T05:12:31",
+      "lastOnline": "2026-11-06T06:58:02",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2956,7 +2956,7 @@
       "level": "20",
       "joinDate": "2025-12-18T14:42:37",
       "originalJoinDate": "2025-12-18T14:42:37",
-      "lastOnline": "2026-11-05T08:04:11",
+      "lastOnline": "2026-11-06T09:09:56",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3021,8 +3021,8 @@
       "level": "20",
       "joinDate": "2026-09-29T12:12:43",
       "originalJoinDate": "2026-09-29T12:12:43",
-      "lastOnline": "2026-11-05T16:55:00",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -3060,7 +3060,7 @@
       "level": "20",
       "joinDate": "2026-07-14T20:02:24",
       "originalJoinDate": "2024-06-12T12:09:06",
-      "lastOnline": "2026-11-05T22:50:07",
+      "lastOnline": "2026-11-06T08:01:27",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3281,7 +3281,7 @@
       "level": "20",
       "joinDate": "2026-11-03T12:58:11",
       "originalJoinDate": "2026-11-03T12:52:27",
-      "lastOnline": "2026-11-05T07:59:53",
+      "lastOnline": "2026-11-06T08:11:46",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3333,7 +3333,7 @@
       "level": "20",
       "joinDate": "2025-12-18T08:55:07",
       "originalJoinDate": "2025-09-23T05:13:34",
-      "lastOnline": "2026-11-05T07:48:27",
+      "lastOnline": "2026-11-06T07:52:04",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3359,7 +3359,7 @@
       "level": "20",
       "joinDate": "2026-11-03T12:59:02",
       "originalJoinDate": "2026-11-03T12:52:27",
-      "lastOnline": "2026-11-05T08:00:47",
+      "lastOnline": "2026-11-06T05:00:17",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3424,7 +3424,7 @@
       "level": "20",
       "joinDate": "2026-03-12T15:55:36",
       "originalJoinDate": "2026-03-12T15:55:36",
-      "lastOnline": "2026-11-03T09:31:15",
+      "lastOnline": "2026-11-06T00:39:35",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3528,7 +3528,7 @@
       "level": "20",
       "joinDate": "2026-01-15T20:06:19",
       "originalJoinDate": "2026-01-15T20:06:19",
-      "lastOnline": "2026-11-05T06:28:43",
+      "lastOnline": "2026-11-06T06:40:02",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3593,7 +3593,7 @@
       "level": "20",
       "joinDate": "2026-07-24T12:29:26",
       "originalJoinDate": "2026-07-24T12:29:26",
-      "lastOnline": "2026-11-04T23:33:40",
+      "lastOnline": "2026-11-06T00:21:34",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3697,8 +3697,8 @@
       "level": "20",
       "joinDate": "2026-06-27T20:20:48",
       "originalJoinDate": "2026-04-01T00:43:23",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-06T02:39:45",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -4035,7 +4035,7 @@
       "level": "20",
       "joinDate": "2026-04-21T11:56:34",
       "originalJoinDate": "2024-11-22T14:36:51",
-      "lastOnline": "2026-11-05T11:03:34",
+      "lastOnline": "2026-11-06T09:19:22",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4048,7 +4048,7 @@
       "level": "20",
       "joinDate": "2026-04-26T20:41:12",
       "originalJoinDate": "2024-06-12T12:09:06",
-      "lastOnline": "2026-11-05T19:08:03",
+      "lastOnline": "2026-11-06T08:00:54",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4139,7 +4139,7 @@
       "level": "20",
       "joinDate": "2026-04-21T14:05:34",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-05T12:01:02",
+      "lastOnline": "2026-11-06T08:53:38",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4217,7 +4217,7 @@
       "level": "20",
       "joinDate": "2026-04-22T07:16:14",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-05T12:00:38",
+      "lastOnline": "2026-11-06T05:04:27",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4282,7 +4282,7 @@
       "level": "20",
       "joinDate": "2026-08-01T11:47:28",
       "originalJoinDate": "2026-04-25T21:27:06",
-      "lastOnline": "2026-11-05T18:30:49",
+      "lastOnline": "2026-11-06T09:11:21",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4490,7 +4490,7 @@
       "level": "20",
       "joinDate": "2026-06-26T17:34:22",
       "originalJoinDate": "2026-06-26T17:34:22",
-      "lastOnline": "2026-11-05T21:16:15",
+      "lastOnline": "2026-11-06T01:09:55",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4581,7 +4581,7 @@
       "level": "20",
       "joinDate": "2026-09-12T19:37:42",
       "originalJoinDate": "2026-08-04T22:12:43",
-      "lastOnline": "2026-11-05T21:38:45",
+      "lastOnline": "2026-11-06T08:42:22",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4685,8 +4685,8 @@
       "level": "20",
       "joinDate": "2026-11-03T22:53:50",
       "originalJoinDate": "2026-06-15T21:39:37",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-06T00:28:35",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -4698,8 +4698,8 @@
       "level": "20",
       "joinDate": "2026-06-17T15:18:31",
       "originalJoinDate": "2026-04-01T22:31:59",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-05T23:58:29",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -4763,8 +4763,8 @@
       "level": "20",
       "joinDate": "2026-06-24T15:06:32",
       "originalJoinDate": "2026-04-01T22:32:11",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-06T00:00:09",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -4880,7 +4880,7 @@
       "level": "20",
       "joinDate": "2026-09-05T12:13:15",
       "originalJoinDate": "2026-09-05T12:13:15",
-      "lastOnline": "2026-11-05T18:01:53",
+      "lastOnline": "2026-11-06T07:59:41",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4984,7 +4984,7 @@
       "level": "20",
       "joinDate": "2026-10-13T21:57:23",
       "originalJoinDate": "2026-10-13T21:57:23",
-      "lastOnline": "2026-11-05T06:38:15",
+      "lastOnline": "2026-11-06T08:40:49",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5075,7 +5075,7 @@
       "level": "20",
       "joinDate": "2026-10-30T17:38:36",
       "originalJoinDate": "2026-09-29T12:12:43",
-      "lastOnline": "2026-11-05T16:49:41",
+      "lastOnline": "2026-11-06T09:13:12",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5101,7 +5101,7 @@
       "level": "20",
       "joinDate": "2026-10-04T08:34:42",
       "originalJoinDate": "2026-05-31T11:25:19",
-      "lastOnline": "2026-11-05T18:08:45",
+      "lastOnline": "2026-11-06T03:46:13",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5121,13 +5121,13 @@
     {
       "name": "Sourdoughss",
       "account": "@Strudelss#80167",
-      "rank": "Initiate",
-      "rankOrder": 1,
+      "rank": "Wayfarer",
+      "rankOrder": 2,
       "class": "Warlock",
       "level": "20",
       "joinDate": "2026-10-19T20:10:59",
       "originalJoinDate": "2026-10-19T20:10:59",
-      "lastOnline": "2026-11-05T16:29:18",
+      "lastOnline": "2026-11-06T02:18:48",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5140,8 +5140,8 @@
       "level": "20",
       "joinDate": "2026-10-30T21:40:33",
       "originalJoinDate": "2026-10-13T20:53:40",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-06T00:38:16",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -5153,7 +5153,7 @@
       "level": "20",
       "joinDate": "2026-10-24T12:04:35",
       "originalJoinDate": "2026-01-15T20:06:19",
-      "lastOnline": "2026-11-05T06:46:55",
+      "lastOnline": "2026-11-06T06:56:21",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5172,6 +5172,11 @@
     }
   ],
   "events": [
+    {
+      "date": "2026-11-06T02:08:46",
+      "kind": "rank",
+      "text": "Sourdoughss@Strudelss#80167's guild rank is now Wayfarer"
+    },
     {
       "date": "2026-11-04T18:28:14",
       "kind": "rank",
