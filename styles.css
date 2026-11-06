@@ -1192,6 +1192,7 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
     letter-spacing: 0;
     line-height: 1.2;
   }
+  .masthead nav > a + a { border-left: 0; }
   .masthead nav > a:nth-child(even) {
     border-left: 1px solid var(--frame-gold);
   }
