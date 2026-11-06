@@ -1320,8 +1320,13 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
 }
 
 
-/* Match Guild Info card labels to the roster page's cyan section labels. */
+/* Match Guild Info card labels to the roster page's small uppercase section labels. */
 .guild-info-list .guild-info-summary .section-kicker,
 .guild-discord-panel > .guild-discord-summary .section-kicker {
+  margin:0 0 3px;
   color:#35d2e3;
+  font-size:.69rem;
+  font-weight:700;
+  letter-spacing:.19em;
+  text-transform:uppercase;
 }
