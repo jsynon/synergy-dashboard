@@ -232,74 +232,88 @@
         </details>
       </section>
 
-      <section class="panel guild-discord-panel" aria-labelledby="guild-discord-title">
-        <div class="guild-discord-heading">
-          <p class="section-kicker">Join the Community</p>
-          <h2 id="guild-discord-title">Synergy on Discord</h2>
-          <p>Chat with guildmates, find groups, and stay connected with the community.</p>
-        </div>
-        <div class="guild-discord-widget">
-          <div class="discord-dashboard" data-discord-widget data-widget-url="https://discord.com/api/guilds/964991521524944956/widget.json">
-            <div class="discord-dashboard-head">
-              <div class="discord-server-brand">
-                <span class="discord-server-emblem" aria-hidden="true">S</span>
-                <div class="discord-server-copy">
-                  <p class="discord-live-label"><span class="discord-live-dot" aria-hidden="true"></span><span id="discordFeedStatus" aria-live="polite">Connecting to Discord</span></p>
-                  <h3>Synergy</h3>
-                  <p>Guild community</p>
+      <details class="panel guild-discord-panel" aria-labelledby="guild-discord-title">
+        <summary class="guild-info-summary guild-discord-summary">
+          <div class="guild-info-summary-copy">
+            <p class="section-kicker">Join the Community</p>
+            <h2 id="guild-discord-title">Synergy on Discord</h2>
+            <p>Chat with guildmates, find groups, and stay connected with the community.</p>
+          </div>
+          <span class="guild-info-toggle" aria-hidden="true"></span>
+        </summary>
+        <div class="guild-discord-content">
+          <div class="guild-discord-widget">
+            <div class="discord-dashboard" data-discord-widget data-widget-url="https://discord.com/api/guilds/964991521524944956/widget.json">
+              <div class="discord-dashboard-head">
+                <div class="discord-server-brand">
+                  <div class="discord-server-copy">
+                    <p class="discord-live-label"><span id="discordFeedStatus" aria-live="polite">Connecting to Discord</span></p>
+                    <h3>Synergy</h3>
+                    <p>Guild community</p>
+                  </div>
+                </div>
+                <div class="discord-presence-total">
+                  <strong id="discordPresenceCount">—</strong>
+                  <span>members online</span>
                 </div>
               </div>
-              <div class="discord-presence-total">
-                <strong id="discordPresenceCount">—</strong>
-                <span>members online</span>
-              </div>
-            </div>
 
-            <div class="discord-live-stats" aria-label="Live Discord activity">
-              <div class="discord-live-stat">
-                <span>Playing Neverwinter</span>
-                <strong id="discordNeverwinterCount">—</strong>
+              <div class="discord-live-stats" aria-label="Live Discord activity">
+                <div class="discord-live-stat">
+                  <span>Playing Neverwinter</span>
+                  <strong id="discordNeverwinterCount">—</strong>
+                </div>
+                <div class="discord-live-stat">
+                  <span>In voice</span>
+                  <strong id="discordVoiceCount">—</strong>
+                </div>
+                <div class="discord-live-stat">
+                  <span>Voice channels</span>
+                  <strong id="discordChannelCount">—</strong>
+                </div>
               </div>
-              <div class="discord-live-stat">
-                <span>In voice</span>
-                <strong id="discordVoiceCount">—</strong>
-              </div>
-              <div class="discord-live-stat">
-                <span>Voice channels</span>
-                <strong id="discordChannelCount">—</strong>
-              </div>
-            </div>
 
-            <div class="discord-live-details">
-              <section class="discord-live-section" aria-labelledby="discord-neverwinter-title">
-                <div class="discord-section-heading">
-                  <h4 id="discord-neverwinter-title">Playing Neverwinter</h4>
-                  <span>Adventurers online</span>
-                </div>
-                <div class="discord-member-list" id="discordNeverwinterMembers">
-                  <p class="discord-live-empty">Loading member activity…</p>
-                </div>
-              </section>
-              <section class="discord-live-section" aria-labelledby="discord-voice-title">
-                <div class="discord-section-heading">
-                  <h4 id="discord-voice-title">Voice channels</h4>
-                  <span>Who's grouped up</span>
-                </div>
-                <div class="discord-channel-list" id="discordVoiceChannels">
-                  <p class="discord-live-empty">Loading voice channels…</p>
-                </div>
-              </section>
-            </div>
+              <div class="discord-live-details">
+                <section class="discord-live-section" aria-labelledby="discord-neverwinter-title">
+                  <div class="discord-section-heading">
+                    <h4 id="discord-neverwinter-title">Playing Neverwinter</h4>
+                    <span>Adventurers online</span>
+                  </div>
+                  <div class="discord-member-list" id="discordNeverwinterMembers">
+                    <p class="discord-live-empty">Loading member activity…</p>
+                  </div>
+                </section>
+                <section class="discord-live-section" aria-labelledby="discord-voice-title">
+                  <div class="discord-section-heading">
+                    <h4 id="discord-voice-title">Voice channels</h4>
+                    <span>Select a channel to see who's there</span>
+                  </div>
+                  <div class="discord-channel-list" id="discordVoiceChannels">
+                    <p class="discord-live-empty">Loading voice channels…</p>
+                  </div>
+                </section>
+              </div>
 
-            <p class="discord-live-footnote">The online count covers the server. Discord shares up to 100 member presence details for the activity lists.</p>
-            <a class="discord-join-button" href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">
-              <span class="discord-join-mark" aria-hidden="true">S</span>
-              Join Synergy on Discord
-              <span aria-hidden="true">↗</span>
-            </a>
+              <p class="discord-live-footnote">The online count covers the server. Discord lists only voice channels available to everyone and up to 100 member presence details.</p>
+              <a class="discord-join-button" href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">
+                Join Synergy on Discord
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
           </div>
         </div>
-      </section>
+      </details>
+      <dialog class="popup-shell discord-channel-dialog" id="discordChannelDialog" aria-labelledby="discordChannelDialogTitle">
+        <div class="account-dialog-header">
+          <div>
+            <p class="section-kicker">Voice channel</p>
+            <h2 id="discordChannelDialogTitle">Channel members</h2>
+            <p class="discord-channel-dialog-summary" id="discordChannelDialogSummary"></p>
+          </div>
+          <button class="popup-close" id="closeDiscordChannelDialog" type="button" aria-label="Close channel members">×</button>
+        </div>
+        <div class="discord-channel-dialog-list" id="discordChannelDialogMembers"></div>
+      </dialog>
     </main>
 
     <footer><span>SYNERGY</span><span class="footer-credit">Guild overview, rules, charter, and history</span></footer>
@@ -317,6 +331,11 @@
       const channelCount = document.getElementById("discordChannelCount");
       const neverwinterList = document.getElementById("discordNeverwinterMembers");
       const voiceList = document.getElementById("discordVoiceChannels");
+      const channelDialog = document.getElementById("discordChannelDialog");
+      const channelDialogTitle = document.getElementById("discordChannelDialogTitle");
+      const channelDialogSummary = document.getElementById("discordChannelDialogSummary");
+      const channelDialogMembers = document.getElementById("discordChannelDialogMembers");
+      let currentWidget = null;
       let hasLoaded = false;
 
       const makeEmpty = (container, message) => {
@@ -399,8 +418,11 @@
 
         orderedChannels.forEach(channel => {
           const attendees = members.filter(member => member.channel_id === channel.id);
-          const item = document.createElement("div");
+          const item = document.createElement("button");
+          item.type = "button";
           item.className = "discord-channel-row";
+          item.dataset.channelId = channel.id;
+          item.setAttribute("aria-label", String(channel.name || "Voice channel") + ", " + attendees.length + (attendees.length === 1 ? " member" : " members") + ". Show channel members.");
 
           const channelCopy = document.createElement("div");
           channelCopy.className = "discord-channel-copy";
@@ -438,6 +460,7 @@
             throw new Error("Discord widget data is incomplete");
           }
 
+          currentWidget = widget;
           const members = widget.members;
           const neverwinterPlayers = members.filter(member => {
             return String(member.game?.name || "").toLowerCase() === "neverwinter";
@@ -465,6 +488,28 @@
           }
         }
       };
+
+      voiceList.addEventListener("click", event => {
+        const channelButton = event.target.closest("button[data-channel-id]");
+        if (!channelButton || !currentWidget) return;
+
+        const channel = currentWidget.channels.find(item => item.id === channelButton.dataset.channelId);
+        if (!channel) return;
+        const attendees = currentWidget.members.filter(member => member.channel_id === channel.id);
+        channelDialogTitle.textContent = String(channel.name || "Voice channel");
+        channelDialogSummary.textContent = attendees.length
+          ? attendees.length + (attendees.length === 1 ? " member is listed in this channel." : " members are listed in this channel.")
+          : "No members are listed in this channel right now.";
+        renderMembers(channelDialogMembers, attendees, "No members are listed in this channel right now.", Infinity);
+        if (!channelDialog.open) channelDialog.showModal();
+      });
+
+      document.getElementById("closeDiscordChannelDialog").addEventListener("click", () => {
+        channelDialog.close();
+      });
+      channelDialog.addEventListener("click", event => {
+        if (event.target === channelDialog) channelDialog.close();
+      });
 
       loadWidget();
       window.setInterval(loadWidget, 5 * 60 * 1000);
