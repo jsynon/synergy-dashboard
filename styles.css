@@ -1091,15 +1091,14 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
 .guild-info-body { padding:19px 22px 22px; color:#dbe6ec; font-size:.92rem; line-height:1.7; }
 .guild-info-body p { margin:0 0 13px; }
 .guild-info-body p:last-child { margin-bottom:0; }
-.guild-info-body h3 {
+.guild-info-body h3,.guild-info-body h4 {
   margin:20px 0 7px;
-  color:#bceefa;
-  font:700 .76rem/1.45 var(--body);
-  letter-spacing:.13em;
-  text-transform:uppercase;
+  color:var(--gold-bright);
+  font:600 .9rem/1.4 var(--serif);
+  letter-spacing:.025em;
+  text-transform:none;
 }
-.guild-info-body h3:first-child { margin-top:0; }
-.guild-info-body h4 { margin:16px 0 6px; color:var(--gold-bright); font:600 .86rem/1.4 var(--serif); letter-spacing:.025em; }
+.guild-info-body h3:first-child,.guild-info-body h4:first-child { margin-top:0; }
 .guild-info-body ul { display:grid; gap:6px; margin:7px 0 14px; padding-left:21px; }
 .guild-info-body li { padding-left:2px; }
 .guild-info-body strong { color:var(--gold-bright); }
@@ -1117,4 +1116,29 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
   .guild-info-summary p { font-size:.78rem; }
   .guild-info-toggle { width:30px; height:30px; }
   .guild-info-body { padding:16px 16px 19px; font-size:.86rem; line-height:1.65; }
+}
+/* Guild Discord widget card */
+.guild-discord-panel { margin:0 0 20px; overflow:hidden; }
+.guild-discord-heading {
+  padding:17px 21px 14px;
+  border-bottom:1px solid rgba(89,201,232,.32);
+  background:linear-gradient(100deg,rgba(8,29,42,.92),rgba(16,28,40,.9) 58%,rgba(39,25,16,.86));
+}
+.guild-discord-heading .section-kicker { margin:0 0 3px; }
+.guild-discord-heading h2 { margin:0; color:var(--gold-bright); font:600 clamp(1.2rem,2.5vw,1.55rem)/1.3 var(--serif); }
+.guild-discord-heading > p:last-child { margin:5px 0 0; color:var(--muted); font-size:.84rem; }
+.guild-discord-widget { display:flex; justify-content:center; padding:20px; }
+.guild-discord-widget iframe {
+  display:block;
+  width:min(350px,100%);
+  max-width:100%;
+  height:500px;
+  border:1px solid rgba(89,201,232,.34);
+  border-radius:10px;
+  background:#071722;
+  box-shadow:0 10px 28px rgba(0,0,0,.3);
+}
+@media(max-width:620px) {
+  .guild-discord-heading { padding:14px 15px 12px; }
+  .guild-discord-widget { padding:15px 10px; }
 }
