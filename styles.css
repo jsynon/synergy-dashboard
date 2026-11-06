@@ -1330,3 +1330,8 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
   letter-spacing:.19em;
   text-transform:uppercase;
 }
+
+/* Use the Forge's Cinzel typography for search and dropdown labels throughout the dashboard. */
+.field label,
+.facet-label,
+.mobile-directory-sort label { font-family:var(--serif); }
