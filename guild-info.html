@@ -239,21 +239,236 @@
           <p>Chat with guildmates, find groups, and stay connected with the community.</p>
         </div>
         <div class="guild-discord-widget">
-          <iframe
-            src="https://discord.com/widget?id=964991521524944956&amp;theme=dark"
-            title="Synergy Discord server"
-            width="350"
-            height="500"
-            allowtransparency="true"
-            frameborder="0"
-            loading="lazy"
-            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
-          </iframe>
+          <div class="discord-dashboard" data-discord-widget data-widget-url="https://discord.com/api/guilds/964991521524944956/widget.json">
+            <div class="discord-dashboard-head">
+              <div class="discord-server-brand">
+                <span class="discord-server-emblem" aria-hidden="true">S</span>
+                <div class="discord-server-copy">
+                  <p class="discord-live-label"><span class="discord-live-dot" aria-hidden="true"></span><span id="discordFeedStatus" aria-live="polite">Connecting to Discord</span></p>
+                  <h3>Synergy</h3>
+                  <p>Guild community</p>
+                </div>
+              </div>
+              <div class="discord-presence-total">
+                <strong id="discordPresenceCount">—</strong>
+                <span>members online</span>
+              </div>
+            </div>
+
+            <div class="discord-live-stats" aria-label="Live Discord activity">
+              <div class="discord-live-stat">
+                <span>Playing Neverwinter</span>
+                <strong id="discordNeverwinterCount">—</strong>
+              </div>
+              <div class="discord-live-stat">
+                <span>In voice</span>
+                <strong id="discordVoiceCount">—</strong>
+              </div>
+              <div class="discord-live-stat">
+                <span>Voice channels</span>
+                <strong id="discordChannelCount">—</strong>
+              </div>
+            </div>
+
+            <div class="discord-live-details">
+              <section class="discord-live-section" aria-labelledby="discord-neverwinter-title">
+                <div class="discord-section-heading">
+                  <h4 id="discord-neverwinter-title">Playing Neverwinter</h4>
+                  <span>Adventurers online</span>
+                </div>
+                <div class="discord-member-list" id="discordNeverwinterMembers">
+                  <p class="discord-live-empty">Loading member activity…</p>
+                </div>
+              </section>
+              <section class="discord-live-section" aria-labelledby="discord-voice-title">
+                <div class="discord-section-heading">
+                  <h4 id="discord-voice-title">Voice channels</h4>
+                  <span>Who's grouped up</span>
+                </div>
+                <div class="discord-channel-list" id="discordVoiceChannels">
+                  <p class="discord-live-empty">Loading voice channels…</p>
+                </div>
+              </section>
+            </div>
+
+            <p class="discord-live-footnote">The online count covers the server. Discord shares up to 100 member presence details for the activity lists.</p>
+            <a class="discord-join-button" href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">
+              <span class="discord-join-mark" aria-hidden="true">S</span>
+              Join Synergy on Discord
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
         </div>
       </section>
     </main>
 
     <footer><span>SYNERGY</span><span class="footer-credit">Guild overview, rules, charter, and history</span></footer>
   </div>
-</body>
+  <script>
+    (() => {
+      const dashboard = document.querySelector("[data-discord-widget]");
+      if (!dashboard) return;
+
+      const endpoint = dashboard.dataset.widgetUrl;
+      const statusLine = document.getElementById("discordFeedStatus");
+      const presenceCount = document.getElementById("discordPresenceCount");
+      const neverwinterCount = document.getElementById("discordNeverwinterCount");
+      const voiceCount = document.getElementById("discordVoiceCount");
+      const channelCount = document.getElementById("discordChannelCount");
+      const neverwinterList = document.getElementById("discordNeverwinterMembers");
+      const voiceList = document.getElementById("discordVoiceChannels");
+      let hasLoaded = false;
+
+      const makeEmpty = (container, message) => {
+        const note = document.createElement("p");
+        note.className = "discord-live-empty";
+        note.textContent = message;
+        container.replaceChildren(note);
+      };
+
+      const makeAvatar = member => {
+        const avatar = document.createElement("span");
+        avatar.className = "discord-member-avatar";
+        const name = String(member.username || "Member").trim();
+        const initials = name.split(/\s+/).slice(0, 2).map(part => part[0] || "").join("").toUpperCase();
+        avatar.textContent = initials || "S";
+
+        if (typeof member.avatar_url === "string") {
+          try {
+            const url = new URL(member.avatar_url);
+            if (url.protocol === "https:" && url.hostname === "cdn.discordapp.com") {
+              const image = document.createElement("img");
+              image.src = url.href;
+              image.alt = "";
+              image.loading = "lazy";
+              image.addEventListener("error", () => image.remove(), { once: true });
+              avatar.replaceChildren(image);
+            }
+          } catch (_) {}
+        }
+        return avatar;
+      };
+
+      const makeMemberRow = member => {
+        const row = document.createElement("div");
+        row.className = "discord-member-row";
+
+        const avatar = makeAvatar(member);
+        const presence = String(member.status || "online").toLowerCase();
+        avatar.dataset.presence = ["online", "idle", "dnd"].includes(presence) ? presence : "online";
+        row.appendChild(avatar);
+
+        const copy = document.createElement("div");
+        copy.className = "discord-member-copy";
+        const name = document.createElement("strong");
+        name.textContent = String(member.username || "Member");
+        const state = document.createElement("span");
+        state.textContent = presence === "dnd" ? "Do Not Disturb" : presence === "idle" ? "Away" : "Online";
+        copy.append(name, state);
+        row.appendChild(copy);
+        return row;
+      };
+
+      const renderMembers = (container, members, emptyMessage, limit = 6) => {
+        container.replaceChildren();
+        if (!members.length) {
+          makeEmpty(container, emptyMessage);
+          return;
+        }
+        members.slice(0, limit).forEach(member => container.appendChild(makeMemberRow(member)));
+        if (members.length > limit) {
+          const more = document.createElement("p");
+          more.className = "discord-more-note";
+          more.textContent = "And " + (members.length - limit) + " more";
+          container.appendChild(more);
+        }
+      };
+
+      const renderVoiceChannels = (channels, members) => {
+        voiceList.replaceChildren();
+        if (!channels.length) {
+          makeEmpty(voiceList, "No public voice channels are available in the widget.");
+          return;
+        }
+
+        const orderedChannels = [...channels].sort((a, b) => {
+          const aMembers = members.filter(member => member.channel_id === a.id).length;
+          const bMembers = members.filter(member => member.channel_id === b.id).length;
+          return bMembers - aMembers || (a.position || 0) - (b.position || 0);
+        });
+
+        orderedChannels.forEach(channel => {
+          const attendees = members.filter(member => member.channel_id === channel.id);
+          const item = document.createElement("div");
+          item.className = "discord-channel-row";
+
+          const channelCopy = document.createElement("div");
+          channelCopy.className = "discord-channel-copy";
+          const name = document.createElement("strong");
+          name.textContent = String(channel.name || "Voice channel");
+          const people = document.createElement("span");
+          people.textContent = attendees.length
+            ? attendees.length + (attendees.length === 1 ? " member here" : " members here")
+            : "Quiet right now";
+          channelCopy.append(name, people);
+          item.appendChild(channelCopy);
+
+          if (attendees.length) {
+            const avatarGroup = document.createElement("div");
+            avatarGroup.className = "discord-channel-attendees";
+            attendees.slice(0, 3).forEach(member => avatarGroup.appendChild(makeAvatar(member)));
+            if (attendees.length > 3) {
+              const extra = document.createElement("span");
+              extra.className = "discord-avatar-extra";
+              extra.textContent = "+" + (attendees.length - 3);
+              avatarGroup.appendChild(extra);
+            }
+            item.appendChild(avatarGroup);
+          }
+          voiceList.appendChild(item);
+        });
+      };
+
+      const loadWidget = async () => {
+        try {
+          const response = await fetch(endpoint, { cache: "no-store", headers: { Accept: "application/json" } });
+          if (!response.ok) throw new Error("Discord returned " + response.status);
+          const widget = await response.json();
+          if (!Array.isArray(widget.members) || !Array.isArray(widget.channels)) {
+            throw new Error("Discord widget data is incomplete");
+          }
+
+          const members = widget.members;
+          const neverwinterPlayers = members.filter(member => {
+            return String(member.game?.name || "").toLowerCase() === "neverwinter";
+          });
+          const voiceMembers = members.filter(member => member.channel_id);
+          const online = Number(widget.presence_count);
+
+          presenceCount.textContent = Number.isFinite(online) ? online.toLocaleString() : "—";
+          neverwinterCount.textContent = neverwinterPlayers.length.toLocaleString();
+          voiceCount.textContent = voiceMembers.length.toLocaleString();
+          channelCount.textContent = widget.channels.length.toLocaleString();
+          renderMembers(neverwinterList, neverwinterPlayers, "No listed members are playing Neverwinter right now.");
+          renderVoiceChannels(widget.channels, members);
+          statusLine.textContent = "Live from Discord";
+          hasLoaded = true;
+        } catch (error) {
+          statusLine.textContent = hasLoaded ? "Showing last snapshot" : "Discord status unavailable";
+          if (!hasLoaded) {
+            presenceCount.textContent = "—";
+            neverwinterCount.textContent = "—";
+            voiceCount.textContent = "—";
+            channelCount.textContent = "—";
+            makeEmpty(neverwinterList, "Member activity is temporarily unavailable. You can still join the server below.");
+            makeEmpty(voiceList, "Voice channel activity is temporarily unavailable.");
+          }
+        }
+      };
+
+      loadWidget();
+      window.setInterval(loadWidget, 5 * 60 * 1000);
+    })();
+  </script>
+  </body>
 </html>
