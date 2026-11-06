@@ -1318,3 +1318,10 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
   .discord-channel-dialog { width:min(520px,calc(100% - 20px)); padding:16px; }
   .discord-channel-dialog-list { max-height:58vh; }
 }
+
+
+/* Match Guild Info card labels to the roster page's cyan section labels. */
+.guild-info-list .guild-info-summary .section-kicker,
+.guild-discord-panel > .guild-discord-summary .section-kicker {
+  color:#35d2e3;
+}
