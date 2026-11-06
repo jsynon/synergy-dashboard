@@ -1142,3 +1142,25 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
   .guild-discord-heading { padding:14px 15px 12px; }
   .guild-discord-widget { padding:15px 10px; }
 }
+/* Keep all four shared menu labels inside their boxes on narrow screens. */
+@media(max-width:520px) {
+  .masthead nav {
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    width:100%;
+  }
+  .masthead nav a,.masthead nav .discord-link {
+    min-width:0;
+    min-height:38px;
+    padding:8px 5px;
+    font-size:clamp(.68rem,3vw,.8rem);
+    letter-spacing:0;
+    border:0;
+  }
+  .masthead nav a:nth-child(even),.masthead nav .discord-link {
+    border-left:1px solid var(--frame-gold);
+  }
+  .masthead nav a:nth-child(n+3),.masthead nav .discord-link {
+    border-top:1px solid var(--frame-gold);
+  }
+}
