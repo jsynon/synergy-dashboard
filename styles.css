@@ -1099,6 +1099,7 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
   text-transform:uppercase;
 }
 .guild-info-body h3:first-child { margin-top:0; }
+.guild-info-body h4 { margin:16px 0 6px; color:var(--gold-bright); font:600 .86rem/1.4 var(--serif); letter-spacing:.025em; }
 .guild-info-body ul { display:grid; gap:6px; margin:7px 0 14px; padding-left:21px; }
 .guild-info-body li { padding-left:2px; }
 .guild-info-body strong { color:var(--gold-bright); }
