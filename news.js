@@ -96,7 +96,12 @@
         title.href = `https://discord.com/events/${encodeURIComponent(event.guildId)}/${encodeURIComponent(event.id)}`;
         title.target = "_blank";
         title.rel = "noopener noreferrer";
-        title.textContent = event.name;
+        const eventName = document.createElement("span");
+        eventName.textContent = event.name;
+        const destination = document.createElement("span");
+        destination.className = "news-event-name-destination";
+        destination.textContent = "Discord event ↗";
+        title.append(eventName, destination);
         details.append(title);
       } else {
         addText(details, "span", "news-event-name", event.name);
@@ -107,7 +112,7 @@
       if (event.recurring) addText(links, "span", "news-event-repeat", "Recurring");
       const eventUrl = safeHttpsUrl(event.url || event.location);
       if (eventUrl) {
-        const linkLabel = /raid[-.]?helper/i.test(eventUrl) ? "Raid-Helper signup ↗" : "Event link ↗";
+        const linkLabel = /raid[-.]?helper/i.test(eventUrl) ? "Raid-Helper signup ↗" : "Location / details ↗";
         const eventLink = addText(links, "a", "news-event-link", linkLabel);
         eventLink.href = eventUrl;
         eventLink.target = "_blank";
