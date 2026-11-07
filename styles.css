@@ -157,7 +157,7 @@ tbody tr:hover { background:rgba(177,138,72,.07); }
 .text-button { padding:5px 8px; border:1px solid var(--line); border-radius:3px; background:transparent; color:var(--gold-bright); font:600 10px var(--body); cursor:pointer; }
 .text-button:hover { background:rgba(177,138,72,.12); }
 .recent-panel { margin-bottom:18px; }
-.bank-panel { margin:0 0 16px; overflow:hidden; }
+.bank-panel { margin:0 0 18px; overflow:hidden; }
 .bank-panel > summary { list-style:none; }
 .bank-panel > summary::-webkit-details-marker { display:none; }
 .bank-panel[open] > .bank-panel-summary { border-bottom:1px solid rgba(89,201,232,.32); }
