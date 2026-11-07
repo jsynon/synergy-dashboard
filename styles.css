@@ -1472,3 +1472,7 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
   .promotions-panel > .collapsible-panel-body { padding:12px 11px; }
   .inactivity-panel > .collapsible-panel-body { padding:10px 11px; }
 }
+
+
+/* Match Guild Bank Activity's kicker to the other dashboard cards. */
+.bank-panel-summary .section-kicker { color:#35d2e3; font-size:.69rem; font-weight:700; letter-spacing:.19em; text-transform:uppercase; }
