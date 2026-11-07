@@ -2,6 +2,96 @@
   "use strict";
 
   const PAGE_SIZE = 20;
+
+  const eventList = document.getElementById("news-event-list");
+  const eventStatus = document.getElementById("news-event-status");
+  const eventDateFormatter = new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "America/New_York"
+  });
+
+  const formatEventDate = (value) => {
+    const date = new Date(value);
+    return Number.isNaN(date.valueOf()) ? null : eventDateFormatter.format(date);
+  };
+
+  const safeHttpsUrl = (value) => {
+    if (typeof value !== "string") return null;
+    try {
+      const url = new URL(value.trim());
+      return url.protocol === "https:" ? url.href : null;
+    } catch {
+      return null;
+    }
+  };
+
+  const renderGuildEvents = (events) => {
+    eventList.replaceChildren();
+    if (!events.length) {
+      addText(eventList, "li", "news-event-empty", "No upcoming events are scheduled.");
+      eventStatus.textContent = "No upcoming events";
+      return;
+    }
+
+    for (const event of events) {
+      const row = document.createElement("li");
+      row.className = "news-event-row";
+
+      const start = formatEventDate(event.startTime);
+      const end = event.endTime ? formatEventDate(event.endTime) : null;
+      const dateLabel = start && end && start !== end ? `${start} – ${end}` : start || "Date unavailable";
+      addText(row, "span", "news-event-date", dateLabel);
+
+      const details = document.createElement("div");
+      details.className = "news-event-copy";
+      const title = document.createElement("a");
+      title.className = "news-event-name";
+      title.href = `https://discord.com/events/${encodeURIComponent(event.guildId)}/${encodeURIComponent(event.id)}`;
+      title.target = "_blank";
+      title.rel = "noopener noreferrer";
+      title.textContent = event.name;
+      details.append(title);
+
+      const links = document.createElement("div");
+      links.className = "news-event-links";
+      if (event.recurring) addText(links, "span", "news-event-repeat", "Recurring");
+      const locationUrl = safeHttpsUrl(event.location);
+      if (locationUrl) {
+        const locationLink = addText(links, "a", "news-event-link", /raid[-.]?helper/i.test(locationUrl) ? "Raid-Helper signup ↗" : "Event link ↗");
+        locationLink.href = locationUrl;
+        locationLink.target = "_blank";
+        locationLink.rel = "noopener noreferrer";
+      } else if (event.location) {
+        addText(links, "span", "news-event-location", event.location);
+      }
+      if (links.childElementCount) details.append(links);
+      row.append(details);
+      eventList.append(row);
+    }
+    eventStatus.textContent = `${events.length} upcoming ${events.length === 1 ? "event" : "events"}`;
+  };
+
+  const loadGuildEvents = () => {
+    fetch("data/discord-events.json", { cache: "no-cache", headers: { Accept: "application/json" } })
+      .then((response) => {
+        if (!response.ok) throw new Error(`Guild events request failed (${response.status})`);
+        return response.json();
+      })
+      .then((feed) => {
+        if (!Array.isArray(feed.events)) throw new Error("Guild events data is invalid");
+        renderGuildEvents(feed.events);
+        window.guildEventsFetchedAt = feed.generatedAt || null;
+      })
+      .catch((error) => {
+        console.error("Unable to load Synergy events:", error);
+        eventList.replaceChildren();
+        addText(eventList, "li", "news-event-empty", "Guild events are temporarily unavailable.");
+        eventStatus.textContent = "Calendar temporarily unavailable";
+      });
+  };
+
   const feedRoot = document.getElementById("news-feed-list");
   const status = document.getElementById("news-feed-status");
   const moreButton = document.getElementById("news-load-more");
@@ -103,6 +193,7 @@
   };
 
   moreButton.addEventListener("click", renderMore);
+  loadGuildEvents();
 
   fetch("data/neverwinter-news.json", { cache: "no-cache", headers: { Accept: "application/json" } })
     .then((response) => {

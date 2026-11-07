@@ -74,16 +74,11 @@
 
       <section class="panel news-feed-panel news-calendar-panel" aria-labelledby="news-calendar-title">
         <div class="news-feed-heading">
-          <div><p class="kicker">Event calendar</p><h2 id="news-calendar-title">Upcoming events</h2></div>
+          <div><p class="kicker">Guild events</p><h2 id="news-calendar-title">Upcoming events</h2></div>
+          <p class="news-feed-status" id="news-event-status" aria-live="polite">Loading guild events…</p>
         </div>
-        <ul class="news-event-list" aria-label="Neverwinter event dates">
-          <li class="news-event-row"><span class="news-event-date">Sep 1 – Nov 24</span><span class="news-event-name">Monoliths of Madness</span></li>
-          <li class="news-event-row"><span class="news-event-date">Sep 1 – Nov 25</span><span class="news-event-name">Of Minds and Madness</span></li>
-          <li class="news-event-row"><span class="news-event-date">Nov 5 – Nov 12</span><span class="news-event-name">2x Currency: Icewind Dale</span></li>
-          <li class="news-event-row"><span class="news-event-date">Nov 12 – Nov 17</span><span class="news-event-name">2x Currency: Descent into Avernus</span></li>
-          <li class="news-event-row"><span class="news-event-date">Nov 12 – Nov 17</span><span class="news-event-name">2x Seals</span></li>
-          <li class="news-event-row"><span class="news-event-date">Nov 17 – Nov 25</span><span class="news-event-name">Of Minds and Madness – Last Chance!</span></li>
-          <li class="news-event-row"><span class="news-event-date">Nov 24 – Dec 1</span><span class="news-event-name">Monoliths of Madness – Last Chance!</span></li>
+        <ul class="news-event-list" id="news-event-list" aria-label="Upcoming Synergy Discord events">
+          <li class="news-event-empty">Loading upcoming events…</li>
         </ul>
       </section>
 
