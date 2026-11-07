@@ -61,8 +61,10 @@
         <div class="filter-actions"><button id="clear-filters" class="text-button">Clear filters</button></div>
       </section>
 
-      <section class="panel roster-panel" id="roster">
-        <div class="panel-heading roster-heading"><div><p class="kicker">Roster export</p><h2>Member directory</h2><p class="section-subtitle">Roster details for each character and account.</p></div><span class="count-pill" id="directory-count">Loading roster totals</span></div>
+      <details class="panel roster-panel collapsible-panel" id="roster" open>
+        <summary class="panel-heading roster-heading collapsible-heading"><div><p class="kicker">Roster export</p><h2>Member directory</h2><p class="section-subtitle">Roster details for each character and account.</p></div><span class="count-pill" id="directory-count">Loading roster totals</span><span class="collapse-indicator" aria-hidden="true"></span></summary>
+        <div class="collapsible-panel-body">
+        <div class="collapsible-panel-body">
         <div class="mobile-directory-sort">
           <label for="mobile-sort">Sort by</label>
           <select id="mobile-sort" aria-label="Sort member directory">
@@ -84,17 +86,21 @@
         <div id="mobile-roster-list" class="mobile-roster-list" aria-label="Member directory cards"><div class="empty-state">No published roster snapshot is available.</div></div>
         <div class="table-foot"><span id="table-summary">Character and account names, rank, class, join date, and last online</span></div>
         <div id="account-rank-check" class="account-rank-check" aria-live="polite"></div>
-      </section>
+        </div>
+      </details>
 
-      <section class="panel recent-panel" id="activity">
-        <div class="panel-heading"><div><p class="kicker">Activity archive</p><h2>Recent activity</h2><p class="section-subtitle">Search the retained guild log by member, event, or date range. Select a member name to open that roster entry.</p></div><span class="panel-mark">◷</span></div>
+      <details class="panel recent-panel collapsible-panel" id="activity">
+        <summary class="panel-heading collapsible-heading"><div><p class="kicker">Activity archive</p><h2>Recent activity</h2><p class="section-subtitle">Search the retained guild log by member, event, or date range. Select a member name to open that roster entry.</p></div><span class="panel-mark">◷</span><span class="collapse-indicator" aria-hidden="true"></span></summary>
+        <div class="collapsible-panel-body">
+        <div class="collapsible-panel-body">
         <div class="field activity-search-field"><label for="activity-search">Search activity</label><div class="search-box"><span aria-hidden="true">⌕</span><input id="activity-search" type="search" placeholder="Character, account, or event" autocomplete="off"></div><p id="activity-results-count" class="search-results-count" aria-live="polite"></p></div>
         <div class="activity-filters" aria-label="Activity filters">
           <div class="field"><label for="activity-type-filter">Event type</label><select id="activity-type-filter"><option value="">All event types</option><option value="join">Joins</option><option value="exit">Departures</option><option value="rank">Rank changes</option><option value="other">Other guild events</option></select></div>
           <div class="field"><label for="activity-period-filter">Time period</label><select id="activity-period-filter"><option value="0">All time</option><option value="7">Past 7 days</option><option value="30">Past 30 days</option><option value="90">Past 90 days</option><option value="365">Past year</option></select></div>
         </div>
         <div id="recent-events" class="recent-events"><div class="empty-state">No published activity snapshot is available.</div></div>
-      </section>
+        </div>
+      </details>
       <details class="panel bank-panel" id="guild-bank-activity">
         <summary class="guild-info-summary bank-panel-summary">
           <div class="guild-info-summary-copy">
@@ -114,16 +120,21 @@
           <div class="bank-events-actions"><button type="button" id="bank-show-more" class="text-button" hidden>Show more bank activity</button></div>
         </div>
       </details>
-      <section class="panel promotions-panel" id="upcoming-promotions" aria-labelledby="promotion-title">
-        <div class="panel-heading"><div><p class="kicker">Guild milestones</p><h2 id="promotion-title">Upcoming promotions</h2><p class="section-subtitle">Accounts eligible now or approaching a <button type="button" class="promotion-rules-link" id="show-promotion-rules">tenure milestone</button>.</p></div><span class="panel-mark">✦</span></div>
+      <details class="panel promotions-panel collapsible-panel" id="upcoming-promotions" aria-labelledby="promotion-title">
+        <summary class="panel-heading collapsible-heading"><div><p class="kicker">Guild milestones</p><h2 id="promotion-title">Upcoming promotions</h2><p class="section-subtitle">Accounts eligible now or approaching a <button type="button" class="promotion-rules-link" id="show-promotion-rules">tenure milestone</button>.</p></div><span class="panel-mark">✦</span><span class="collapse-indicator" aria-hidden="true"></span></summary>
+        <div class="collapsible-panel-body">
+        <div class="collapsible-panel-body">
         <div class="field promotion-search-field"><label for="promotion-search">Search promotions</label><div class="search-box"><span aria-hidden="true">⌕</span><input id="promotion-search" type="search" placeholder="Character or account name" autocomplete="off"></div><p id="promotion-search-results" class="search-results-count" aria-live="polite">Promotion account results will appear here.</p></div>
         <div id="promotion-list" class="promotion-list"><div class="empty-state">Promotion milestones will appear when the roster snapshot loads.</div></div>
-      </section>
+        </div>
+      </details>
 
-      <section class="panel inactivity-panel" id="inactivity-alerts" aria-labelledby="inactivity-title">
-        <div class="panel-heading"><div><p class="kicker">Account activity</p><h2 id="inactivity-title">Inactivity alerts</h2><p class="section-subtitle">Accounts at or beyond their rank-based <button type="button" class="inactivity-rules-link" id="show-inactivity-rules">inactivity limit</button>.</p></div><span class="count-pill" id="inactivity-count">—</span></div>
+      <details class="panel inactivity-panel collapsible-panel" id="inactivity-alerts" aria-labelledby="inactivity-title">
+        <summary class="panel-heading collapsible-heading"><div><p class="kicker">Account activity</p><h2 id="inactivity-title">Inactivity alerts</h2><p class="section-subtitle">Accounts at or beyond their rank-based <button type="button" class="inactivity-rules-link" id="show-inactivity-rules">inactivity limit</button>.</p></div><span class="count-pill" id="inactivity-count">—</span><span class="collapse-indicator" aria-hidden="true"></span></summary>
+        <div class="collapsible-panel-body">
         <div id="inactivity-list" class="inactivity-list"><div class="empty-state">Alerts will appear when the roster snapshot loads.</div></div>
-      </section>
+        </div>
+      </details>
 
       <dialog class="popup-shell inactivity-rules-dialog" id="inactivity-rules-dialog" aria-labelledby="inactivity-rules-title">
         <div class="inactivity-rules-header">

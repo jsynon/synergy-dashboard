@@ -271,7 +271,7 @@
       return `<div class="bank-event-row">
         <time class="bank-event-date" datetime="${event.date.toISOString()}">${formatDate(event.date,true)}</time>
         <div class="bank-event-details">
-          <div class="bank-event-member"><strong>${escapeHtml(event.player||'Unknown member')}</strong><span>${escapeHtml(event.account||'')}</span></div>
+          <div class="bank-event-member"><strong>${escapeHtml(event.player||'Unknown member')}</strong>${event.account?`<a class="bank-account-link" href="#account-dialog" aria-haspopup="dialog" data-account-query="${escapeHtml(event.account)}">${escapeHtml(event.account)}</a>`:''}</div>
           <div class="bank-event-item">${escapeHtml(event.item||'Unspecified item')}</div>
           <div class="bank-event-category">${escapeHtml(event.category||'Other')}</div>
         </div>
@@ -341,6 +341,12 @@
     if(!link)return;
     event.preventDefault();
     showAccountDetails(link.dataset.accountQuery||link.dataset.memberQuery||'');
+  });
+  $('bank-events').addEventListener('click',event=>{
+    const link=event.target.closest('.bank-account-link');
+    if(!link)return;
+    event.preventDefault();
+    showAccountDetails(link.dataset.accountQuery||'');
   });
   document.querySelectorAll('.sort-button').forEach(b=>b.addEventListener('click',()=>{if(state.sortBy===b.dataset.sort)state.sortDirection*=-1;else{state.sortBy=b.dataset.sort;state.sortDirection=1;}renderRoster();}));
   $('mobile-sort').addEventListener('change',event=>{state.sortBy=event.target.value;state.sortDirection=1;renderRoster();});

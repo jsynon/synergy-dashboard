@@ -1428,3 +1428,15 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
   .news-card { grid-template-columns:1fr; gap:9px; }
   .news-card-image { grid-row:1; max-height:190px; aspect-ratio:16/9; }
 }
+
+
+/* Collapsible roster cards: retain the existing card headers and add a clear toggle. */
+.collapsible-heading { cursor:pointer; list-style:none; }
+.collapsible-heading::-webkit-details-marker { display:none; }
+.collapsible-heading::marker { content:""; }
+.collapse-indicator { flex:0 0 28px; width:28px; height:28px; margin-left:8px; border:1px solid var(--gold); border-radius:50%; position:relative; }
+.collapse-indicator::before,.collapse-indicator::after { content:""; position:absolute; top:50%; left:50%; width:10px; height:1px; background:var(--gold-bright); transform:translate(-50%,-50%); }
+.collapse-indicator::after { transform:translate(-50%,-50%) rotate(90deg); transition:transform .18s ease; }
+.collapsible-panel[open] .collapse-indicator::after { transform:translate(-50%,-50%) rotate(0); }
+.collapsible-panel > summary:focus-visible { outline-offset:-4px; }
+.collapsible-panel-body { min-width:0; }
