@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 
 const token = process.env.DISCORD_BOT_TOKEN;
@@ -28,6 +28,19 @@ if (!Array.isArray(payload)) {
 }
 
 const now = Date.now();
+const localDayKey = (value) => {
+  const date = new Date(value);
+  if (Number.isNaN(date.valueOf())) return null;
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    timeZone: "America/New_York"
+  }).formatToParts(date);
+  const part = (type) => parts.find((item) => item.type === type)?.value;
+  return `${part("year")}-${part("month")}-${part("day")}`;
+};
+const todayLocal = localDayKey(now);
 const events = payload
   .filter((event) => {
     const status = event.status;
@@ -50,10 +63,26 @@ const events = payload
     endTime: event.scheduled_end_time || null,
     location: typeof event.entity_metadata?.location === "string" ? event.entity_metadata.location : "",
     recurring: Boolean(event.recurrence_rule)
-  }))
-  .sort((a, b) => Date.parse(a.startTime) - Date.parse(b.startTime));
+  }));
 
 const outputPath = resolve("data/discord-events.json");
+let previousEvents = [];
+try {
+  const previousFeed = JSON.parse(await readFile(outputPath, "utf8"));
+  if (Array.isArray(previousFeed.events)) previousEvents = previousFeed.events;
+} catch {
+  // A missing or invalid prior feed should not prevent a fresh feed from being written.
+}
+
+// Keep a just-completed event through its final calendar day in Eastern time.
+const currentIds = new Set(events.map((event) => event.id));
+for (const event of previousEvents) {
+  if (currentIds.has(event.id)) continue;
+  const lastMoment = event.endTime || event.startTime;
+  if (localDayKey(lastMoment) === todayLocal) events.push(event);
+}
+
+events.sort((a, b) => Date.parse(a.startTime) - Date.parse(b.startTime));
 await mkdir(dirname(outputPath), { recursive: true });
 await writeFile(outputPath, `${JSON.stringify({ generatedAt: new Date().toISOString(), guildId, events }, null, 2)}\n`, "utf8");
 console.log(`Fetched ${events.length} upcoming or active Synergy Discord event(s).`);
