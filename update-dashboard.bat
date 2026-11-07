@@ -28,6 +28,11 @@ if not exist "%SOURCE_DIR%\GuildActivityLogs.csv" (
   pause
   exit /b 1
 )
+if not exist "%SOURCE_DIR%\GuildBankLog.csv" (
+  echo ERROR: GuildBankLog.csv was not found in the guild logs folder.
+  pause
+  exit /b 1
+)
 if not exist "%DATA_DIR%\" mkdir "%DATA_DIR%"
 if not exist "%DATA_DIR%\" (
   echo ERROR: Could not access the project data folder: "%DATA_DIR%"
@@ -38,6 +43,7 @@ if not exist "%DATA_DIR%\" (
 echo Selected roster source: "%ROSTER_NAME%"
 for %%F in ("%SOURCE_DIR%\%ROSTER_NAME%") do echo Source modified: %%~tF   Size: %%~zF bytes
 for %%F in ("%SOURCE_DIR%\GuildActivityLogs.csv") do echo Activity modified: %%~tF   Size: %%~zF bytes
+for %%F in ("%SOURCE_DIR%\GuildBankLog.csv") do echo Bank log modified: %%~tF   Size: %%~zF bytes
 echo.
 echo Copying to the stable project filenames:
 echo   "%DATA_DIR%\roster.csv"
@@ -52,8 +58,15 @@ if errorlevel 1 goto copy_failed
 fc /b "%SOURCE_DIR%\GuildActivityLogs.csv" "%DATA_DIR%\activity.csv" >nul
 if errorlevel 1 goto verify_failed
 
+echo   "%DATA_DIR%\bank.csv"
+copy /y "%SOURCE_DIR%\GuildBankLog.csv" "%DATA_DIR%\bank.csv"
+if errorlevel 1 goto copy_failed
+fc /b "%SOURCE_DIR%\GuildBankLog.csv" "%DATA_DIR%\bank.csv" >nul
+if errorlevel 1 goto verify_failed
+
 for %%F in ("%DATA_DIR%\roster.csv") do echo Verified roster.csv: %%~zF bytes
 for %%F in ("%DATA_DIR%\activity.csv") do echo Verified activity.csv: %%~zF bytes
+for %%F in ("%DATA_DIR%\bank.csv") do echo Verified bank.csv: %%~zF bytes
 echo.
 cd /d "%PROJECT_DIR%"
 py scripts\build_snapshot.py

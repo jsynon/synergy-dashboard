@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build the public dashboard snapshot from local Neverwinter CSV exports."""
 import csv
+import html
 import json
 import re
 from collections import Counter
@@ -10,6 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ROSTER_PATH = ROOT / "data" / "roster.csv"
 ACTIVITY_PATH = ROOT / "data" / "activity.csv"
+BANK_LOG_PATH = ROOT / "data" / "bank.csv"
 OUTPUT_PATH = ROOT / "data" / "snapshot.json"
 RANK_NAMES = {
     1: "Initiate", 2: "Wayfarer", 3: "Stalwart", 4: "Veteran",
@@ -43,6 +45,64 @@ def parse_date(value: str):
     return None
 
 
+def parse_bank_amount(value: str):
+    """Parse the signed stack delta from a bank-log row."""
+    normalized = re.sub(r"[\s,]", "", str(value or ""))
+    return int(normalized) if re.fullmatch(r"[+-]?\d+", normalized) else None
+
+
+def read_bank_log(path: Path):
+    """Normalize bank-log rows, including the export's occasional unquoted commas."""
+    events = []
+    with path.open("r", encoding="utf-8-sig", newline="") as handle:
+        reader = csv.reader(handle)
+        headers = [(header or "").strip() for header in next(reader, [])]
+        required = {"Time", "Player", "Action", "ItemName", "Amount", "Text"}
+        if not required.issubset(headers):
+            raise SystemExit(f"{path.name} is missing one or more expected bank-log columns.")
+        positions = {header: headers.index(header) for header in required}
+        for values in reader:
+            if len(values) <= positions["Amount"]:
+                continue
+            def cell(name):
+                index = positions[name]
+                return values[index].strip() if index < len(values) else ""
+
+            date = parse_date(cell("Time"))
+            item = cell("ItemName")
+            amount_text = cell("Amount")
+            amount = parse_bank_amount(amount_text)
+            text_index = positions["Text"]
+            text_parts = values[text_index:] if text_index < len(values) else []
+
+            # A few malformed rows contain a comma in ItemName without CSV quotes.
+            # That can shift Amount into the first Text cell while leaving the final
+            # piece of ItemName in the Amount column.
+            if text_parts and parse_bank_amount(text_parts[0]) is not None:
+                item = ", ".join(part.strip() for part in (item, amount_text) if part.strip())
+                amount = parse_bank_amount(text_parts[0])
+                text_parts = text_parts[1:]
+            if not date or amount is None:
+                continue
+
+            description = html.unescape(re.sub(r"<[^>]*>", "", ",".join(text_parts)))
+            description = re.sub(r"\s+", " ", description).strip().strip('"').replace('""', '"')
+            action_match = re.search(r"\b(Deposit|Withdraw)\b", description, re.IGNORECASE)
+            action = action_match.group(1).lower() if action_match else ("deposit" if amount >= 0 else "withdraw")
+            category = description.split(" - ", 1)[0].strip() if " - " in description else "Other"
+            category = re.sub(r"\b(Deposit|Withdraw)\b", "", category, flags=re.IGNORECASE).strip() or "Other"
+            events.append({
+                "date": date,
+                "player": cell("Player"),
+                "account": cell("Action"),
+                "action": action,
+                "category": category,
+                "item": item,
+                "amount": abs(amount),
+            })
+    return sorted(events, key=lambda event: event["date"], reverse=True)
+
+
 def event_kind(row):
     kind, text = row.get("Type", ""), row.get("Text", "").lower()
     if kind == "3" or "has joined the guild" in text:
@@ -69,9 +129,33 @@ def normalize_snapshot_event(event):
     return {"date": date, "kind": kind, "text": text}
 
 
+def normalize_snapshot_bank_event(event):
+    """Return a clean bank entry from a prior snapshot, or None."""
+    if not isinstance(event, dict):
+        return None
+    date = str(event.get("date", "")).strip()
+    action = str(event.get("action", "")).strip().lower()
+    if not date or action not in {"deposit", "withdraw"}:
+        return None
+    try:
+        amount = abs(int(event.get("amount", 0)))
+    except (TypeError, ValueError):
+        return None
+    return {
+        "date": date,
+        "player": re.sub(r"\s+", " ", str(event.get("player", ""))).strip(),
+        "account": str(event.get("account", "")).strip(),
+        "action": action,
+        "category": str(event.get("category", "Other")).strip() or "Other",
+        "item": re.sub(r"\s+", " ", str(event.get("item", ""))).strip(),
+        "amount": amount,
+    }
+
+
 def main():
     roster_rows = read_csv(ROSTER_PATH)
     activity_rows = read_csv(ACTIVITY_PATH)
+    bank_events = read_bank_log(BANK_LOG_PATH)
     if roster_rows and "Name" not in roster_rows[0]:
         raise SystemExit(f"{ROSTER_PATH.name} is missing the Name column.")
     if activity_rows and "Text" not in activity_rows[0]:
@@ -81,6 +165,7 @@ def main():
     # This keeps a brief leave/rejoin from resetting the tenure milestone.
     account_join_dates = {}
     previous_events = []
+    previous_bank_events = []
     if OUTPUT_PATH.exists():
         try:
             previous = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
@@ -92,6 +177,9 @@ def main():
             previous_events = previous.get("events", [])
             if not isinstance(previous_events, list):
                 previous_events = []
+            previous_bank_events = previous.get("bankEvents", [])
+            if not isinstance(previous_bank_events, list):
+                previous_bank_events = []
             for member in previous.get("roster", []):
                 account = str(member.get("account", "")).strip().casefold()
                 date = member.get("originalJoinDate") or member.get("joinDate")
@@ -100,6 +188,7 @@ def main():
         except (OSError, json.JSONDecodeError, AttributeError):
             account_join_dates = {}
             previous_events = []
+            previous_bank_events = []
 
     account_current_dates = {}
     accounts = set()
@@ -168,16 +257,36 @@ def main():
     new_event_count = len(current_keys - previous_keys)
     events = sorted(merged_events.values(), key=lambda event: event["date"], reverse=True)
 
+    merged_bank_events = {}
+    previous_bank_keys = set()
+    for event in previous_bank_events:
+        normalized = normalize_snapshot_bank_event(event)
+        if normalized:
+            key = tuple(normalized[field] for field in ("date", "player", "account", "action", "category", "item", "amount"))
+            previous_bank_keys.add(key)
+            merged_bank_events.setdefault(key, normalized)
+    current_bank_keys = set()
+    for event in bank_events:
+        normalized = normalize_snapshot_bank_event(event)
+        if normalized:
+            key = tuple(normalized[field] for field in ("date", "player", "account", "action", "category", "item", "amount"))
+            current_bank_keys.add(key)
+            merged_bank_events.setdefault(key, normalized)
+    new_bank_count = len(current_bank_keys - previous_bank_keys)
+    bank_events = sorted(merged_bank_events.values(), key=lambda event: event["date"], reverse=True)
+
     snapshot = {
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "accountCount": len(accounts),
         "accountJoinDates": dict(sorted(account_join_dates.items())),
         "roster": members,
         "events": events,
+        "bankEvents": bank_events,
     }
     OUTPUT_PATH.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Wrote {OUTPUT_PATH.relative_to(ROOT)}: {len(members)} characters, "
           f"{len(accounts)} unique accounts, {len(events)} retained activity records.")
+    print(f"Bank activity: {len(bank_events)} retained records, {new_bank_count} new from this export.")
     print(f"Activity history: {new_event_count} new events added from this export.")
 
 

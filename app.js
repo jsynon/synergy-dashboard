@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const state = { roster: [], events: [], accountCount: 0, accountJoinDates: {}, generatedAt: null, sortBy: 'name', sortDirection: 1, rankFilter: '', classFilter: '', accountFilter: '' };
+  const state = { roster: [], events: [], bankEvents: [], bankVisible: 30, accountCount: 0, accountJoinDates: {}, generatedAt: null, sortBy: 'name', sortDirection: 1, rankFilter: '', classFilter: '', accountFilter: '' };
   const $ = (id) => document.getElementById(id);
 
   const parseDate=(str)=>{
@@ -253,12 +253,41 @@
     $('activity-results-count').textContent=filtered?`${count.toLocaleString()} of ${total.toLocaleString()} events match`:`${total.toLocaleString()} events`;
     $('recent-events').innerHTML=count?rows.map(({event,view})=>`<div class="event-row"><i class="event-dot ${event.kind}"></i><div><div class="event-copy">${view.html}</div><div class="event-type">${label[event.kind]||label.other}</div></div><time class="event-date" datetime="${event.date.toISOString()}">${formatDate(event.date,true)}</time></div>`).join(''):(filtered?'<div class="empty-state">No activity events match these filters.</div>':'<div class="empty-state">No published activity records are available.</div>');
   }
-  function render(){renderSnapshotStatus();renderDirectoryFilters();renderRoster();renderRecent();renderPromotions();renderInactivityAlerts();}
+  function renderBankActivity(){
+    const query=$('bank-search').value.trim().toLocaleLowerCase();
+    const matches=state.bankEvents.filter(event=>[
+      event.player,event.account,event.item,event.action,event.category,formatDate(event.date,true)
+    ].join(' ').toLocaleLowerCase().includes(query));
+    const rows=matches.slice(0,state.bankVisible);
+    const total=state.bankEvents.length;
+    $('bank-results-count').textContent=query
+      ? `${matches.length.toLocaleString()} of ${total.toLocaleString()} bank entries match`
+      : `${total.toLocaleString()} bank entries · showing ${rows.length.toLocaleString()}`;
+    $('bank-events').innerHTML=rows.length?rows.map(event=>{
+      const isDeposit=event.action==='deposit';
+      const quantity=new Intl.NumberFormat('en-US').format(Math.abs(Number(event.amount)||0));
+      const sign=isDeposit?'+':'−';
+      const action=isDeposit?'Deposit':'Withdrawal';
+      return `<div class="bank-event-row">
+        <time class="bank-event-date" datetime="${event.date.toISOString()}">${formatDate(event.date,true)}</time>
+        <div class="bank-event-details">
+          <div class="bank-event-member"><strong>${escapeHtml(event.player||'Unknown member')}</strong><span>${escapeHtml(event.account||'')}</span></div>
+          <div class="bank-event-item">${escapeHtml(event.item||'Unspecified item')}</div>
+          <div class="bank-event-category">${escapeHtml(event.category||'Other')}</div>
+        </div>
+        <span class="bank-event-action ${isDeposit?'deposit':'withdrawal'}">${action}</span>
+        <strong class="bank-event-amount ${isDeposit?'deposit':'withdrawal'}">${sign}${quantity}</strong>
+      </div>`;
+    }).join(''):(query?'<div class="empty-state">No bank entries match this search.</div>':'<div class="empty-state">No published bank activity is available.</div>');
+    $('bank-show-more').hidden=rows.length>=matches.length;
+  }
+  function render(){renderSnapshotStatus();renderDirectoryFilters();renderRoster();renderRecent();renderBankActivity();renderPromotions();renderInactivityAlerts();}
   function loadSnapshot(snapshot){
     if(!snapshot||!Array.isArray(snapshot.roster)||!Array.isArray(snapshot.events))throw new Error('Snapshot format is invalid.');
     state.accountJoinDates=Object.fromEntries(Object.entries(snapshot.accountJoinDates||{}).map(([account,date])=>[account.trim().toLocaleLowerCase(),date]));
     state.roster=snapshot.roster.map(m=>({...m,joinDate:asDate(m.joinDate),originalJoinDate:asDate(m.originalJoinDate)||asDate(m.joinDate),lastOnline:asDate(m.lastOnline)}));
     state.events=snapshot.events.map(e=>({...e,date:asDate(e.date)})).filter(e=>e.date).sort((a,b)=>b.date-a.date);
+    state.bankEvents=(Array.isArray(snapshot.bankEvents)?snapshot.bankEvents:[]).map(e=>({...e,date:asDate(e.date)})).filter(e=>e.date).sort((a,b)=>b.date-a.date);
     state.accountCount=Number(snapshot.accountCount)||0;state.generatedAt=asDate(snapshot.generatedAt);render();
   }
   async function autoLoad(){
@@ -269,6 +298,8 @@
   $('activity-search').addEventListener('input',renderRecent);
   $('activity-type-filter').addEventListener('change',renderRecent);
   $('activity-period-filter').addEventListener('change',renderRecent);
+  $('bank-search').addEventListener('input',()=>{state.bankVisible=30;renderBankActivity();});
+  $('bank-show-more').addEventListener('click',()=>{state.bankVisible+=30;renderBankActivity();});
   $('promotion-search').addEventListener('input',renderPromotions);
   $('roster').addEventListener('click',event=>{
     const link=event.target.closest('.directory-account-link');

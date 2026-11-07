@@ -10455,5 +10455,187 @@
       "kind": "join",
       "text": "Tib has joined the guild after being invited by Elanor"
     }
+  ],
+  "bankEvents": [
+    {
+      "date": "2026-11-06T22:50:41",
+      "player": "Durance Critus",
+      "account": "@kyo#1079",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Black Ice Ioun Stone",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-06T22:48:03",
+      "player": "Durance Critus",
+      "account": "@kyo#1079",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Winter Wolf",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-06T22:47:03",
+      "player": "Durance Critus",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Kenku Archer",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-06T22:06:23",
+      "player": "Hallebooyah",
+      "account": "@kyo#1079",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Bregan D'aerthe Scout's Leggings",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-06T22:06:21",
+      "player": "Hallebooyah",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Bregan D'aerthe Scout's Leggings",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-06T22:05:59",
+      "player": "Hallebooyah",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Red Dragon Ioun Stone",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-06T22:05:09",
+      "player": "Hallebooyah",
+      "account": "@kyo#1079",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Fungal Loop of the Weary",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-06T22:05:08",
+      "player": "Hallebooyah",
+      "account": "@kyo#1079",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Fungal Loop of the Wise",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-06T22:05:02",
+      "player": "Hallebooyah",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Misc",
+      "item": "Fungal Loop of the Wise",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-06T22:05:00",
+      "player": "Hallebooyah",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Misc",
+      "item": "Fungal Loop of the Weary",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-06T20:31:28",
+      "player": "Shadowheart",
+      "account": "@xiaoshungaming#9707",
+      "action": "withdraw",
+      "category": "Other",
+      "item": "Copper",
+      "amount": 400000
+    },
+    {
+      "date": "2026-11-06T17:59:23",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Small Iceworks",
+      "amount": 4
+    },
+    {
+      "date": "2026-11-06T17:21:12",
+      "player": "Durance Critus",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Misc",
+      "item": "Black Ice Ioun Stone",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-06T17:20:59",
+      "player": "Durance Critus",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Companions",
+      "item": "Mercenary",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-06T17:20:38",
+      "player": "Durance Critus",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Companions",
+      "item": "Blacksmith",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-06T17:20:25",
+      "player": "Durance Critus",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Mounts",
+      "item": "Buckskin Destrier",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-06T17:19:59",
+      "player": "Durance Critus",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Mounts",
+      "item": "Medium Worg",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-06T17:19:52",
+      "player": "Durance Critus",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Artifacts",
+      "item": "Golden Brindle Horse",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-06T17:19:50",
+      "player": "Durance Critus",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Artifacts",
+      "item": "Stormraider Horse",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-06T16:54:15",
+      "player": "Emerald Acrux",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Crafted Potion of Power Rank 4, +1",
+      "amount": 4
+    }
   ]
 }

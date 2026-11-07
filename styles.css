@@ -157,6 +157,28 @@ tbody tr:hover { background:rgba(177,138,72,.07); }
 .text-button { padding:5px 8px; border:1px solid var(--line); border-radius:3px; background:transparent; color:var(--gold-bright); font:600 10px var(--body); cursor:pointer; }
 .text-button:hover { background:rgba(177,138,72,.12); }
 .recent-panel { margin-bottom:18px; }
+.bank-panel { margin:0 0 16px; overflow:hidden; }
+.bank-panel > summary { list-style:none; }
+.bank-panel > summary::-webkit-details-marker { display:none; }
+.bank-panel[open] > .bank-panel-summary { border-bottom:1px solid rgba(89,201,232,.32); }
+.bank-panel-body { padding:14px 19px 16px; }
+.bank-search-field { margin-bottom:7px; }
+.bank-events { max-height:450px; overflow-y:auto; padding-right:7px; scrollbar-color:#80643b #171d21; scrollbar-width:thin; }
+.bank-event-row { display:grid; grid-template-columns:140px minmax(0,1fr) 82px 80px; align-items:center; gap:8px 12px; padding:10px 3px; border-bottom:1px solid rgba(190,204,215,.09); }
+.bank-event-date { color:var(--muted); font-size:10px; white-space:nowrap; }
+.bank-event-details { min-width:0; }
+.bank-event-member { display:flex; flex-wrap:wrap; align-items:baseline; gap:3px 8px; font-size:11px; }
+.bank-event-member strong { color:#e3dac9; }
+.bank-event-member span { color:var(--teal); font-size:10px; }
+.bank-event-item { margin-top:3px; color:var(--text); font-size:11px; line-height:1.4; overflow-wrap:anywhere; }
+.bank-event-category { margin-top:2px; color:#a99570; font-size:9px; letter-spacing:.07em; text-transform:uppercase; }
+.bank-event-action { justify-self:start; padding:3px 6px; border:1px solid rgba(190,204,215,.16); border-radius:3px; color:var(--muted); font-size:9px; text-transform:uppercase; letter-spacing:.06em; }
+.bank-event-action.deposit { color:#a8d9b7; border-color:rgba(104,171,123,.28); }
+.bank-event-action.withdrawal { color:#e0bd8c; border-color:rgba(190,144,82,.28); }
+.bank-event-amount { justify-self:end; font-size:11px; font-weight:600; white-space:nowrap; }
+.bank-event-amount.deposit { color:#a8d9b7; }
+.bank-event-amount.withdrawal { color:#e0bd8c; }
+.bank-events-actions { display:flex; justify-content:center; padding-top:9px; }
 .panel-mark { color:var(--gold); font-size:21px; }
 .recent-events { display:grid; grid-template-columns:1fr; gap:0; max-height:450px; overflow-y:auto; padding-right:7px; scrollbar-color:#80643b #171d21; scrollbar-width:thin; }
 .event-row { display:grid; grid-template-columns:9px minmax(0,1fr) auto; align-items:start; gap:9px; padding:11px 4px; border-bottom:1px solid rgba(190,204,215,.09); }
@@ -188,6 +210,14 @@ footer i { color:var(--gold); font-style:normal; }
   .hero::before { left:-7%; } .hero::after { right:-7%; }
   .hero::before,.hero::after { font-size:65px; }
   .promotions-panel,.roster-panel,.recent-panel { padding:13px 11px; }
+  .bank-panel-summary { gap:10px; padding:13px 12px; }
+  .bank-panel-body { padding:12px 11px; }
+  .bank-events { max-height:360px; }
+  .bank-event-row { grid-template-columns:76px minmax(0,1fr) 48px; gap:5px 7px; padding:9px 1px; }
+  .bank-event-date { grid-column:1; grid-row:1 / span 2; align-self:start; font-size:9px; white-space:normal; }
+  .bank-event-details { grid-column:2 / 4; }
+  .bank-event-action { grid-column:2; grid-row:2; }
+  .bank-event-amount { grid-column:3; grid-row:2; font-size:10px; }
   .inactivity-panel { padding:10px 11px; }
   .promotions-panel .panel-heading { min-height:78px; }
   .promotion-list { grid-template-columns:1fr; height:470px; }
