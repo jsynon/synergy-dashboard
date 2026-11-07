@@ -1,6 +1,6 @@
 # Synergy Guild Website
 
-A three-page Neverwinter site for Synergy members and visitors. It brings together official game news and events, the guild roster and activity, and information about the guild’s community and policies.
+The Synergy website brings together four Neverwinter pages for guild members and visitors. This repository contains the News, Guild Roster, and Guild Info pages. The [Masterwork Forge](https://jsynon.github.io/synergy-craft/) is part of the same website experience, but it is maintained and published from the separate [`synergy-craft` repository](https://github.com/jsynon/synergy-craft). The pages share navigation, visual styling, and the Synergy community links.
 
 [News](https://jsynon.github.io/synergy-dashboard/news.html) · [Guild Roster](https://jsynon.github.io/synergy-dashboard/) · [Guild Info](https://jsynon.github.io/synergy-dashboard/guild-info.html) · [Masterwork Forge](https://jsynon.github.io/synergy-craft/) · [Discord](https://discord.gg/eMzcD6wJzh)
 
@@ -20,6 +20,12 @@ The page also includes a searchable Recent Activity archive, a collapsible Guild
 
 The [Guild Info page](https://jsynon.github.io/synergy-dashboard/guild-info.html) explains the guild and what members can expect. Its expandable cards cover the Guild Overview, support and progression, community culture, learning and participation, reasons to join, guild rules, rank progression, and the Guild Charter. The page also presents Synergy’s history—from BAMF and Lady Vega through the guild’s renewal and the creation of Synergy Academy and the Masterwork Forge—and includes the guild’s Discord information.
 
+## Masterwork Forge
+
+The [Masterwork Forge](https://jsynon.github.io/synergy-craft/) is Synergy’s crafting reference for Neverwinter Masterwork recipes. It includes verified recipes for all nine character classes, with search and filters for class and material source. Players can look up recipes, items, materials, and where ingredients come from.
+
+The Forge is a separate project in the [`synergy-craft` GitHub repository](https://github.com/jsynon/synergy-craft), rather than a page stored in this repository. It is published at its own GitHub Pages address and linked through the shared Synergy navigation, so it remains part of the same website for visitors.
+
 ## Update roster, activity, and bank data
 
 1. Export the roster, guild activity, and guild bank logs in Neverwinter.
@@ -34,4 +40,4 @@ Double-click `run-local.bat` (requires Python on Windows), then visit <http://lo
 
 ## GitHub Pages
 
-The project has no site build step. GitHub Pages serves the repository from the `main` branch root. Keep `data/snapshot.json` tracked so the published roster page can load it; `.gitignore` excludes raw `data/*.csv` exports.
+This repository has no site build step. GitHub Pages serves it from the `main` branch root. Keep `data/snapshot.json` tracked so the published roster page can load it; `.gitignore` excludes raw `data/*.csv` exports. The Masterwork Forge has its own deployment configuration in the separate `synergy-craft` repository.
