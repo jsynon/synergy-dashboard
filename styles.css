@@ -1476,3 +1476,8 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
 
 /* Match Guild Bank Activity's kicker to the other dashboard cards. */
 .bank-panel-summary .section-kicker { color:#35d2e3; font-size:.69rem; font-weight:700; letter-spacing:.19em; text-transform:uppercase; }
+
+
+/* Keep Guild Bank account links the same cyan as other account names. */
+.bank-event-member .bank-account-link { color:var(--teal); font-size:10px; text-decoration:underline; text-decoration-style:dotted; text-underline-offset:2px; }
+.bank-event-member .bank-account-link:hover,.bank-event-member .bank-account-link:focus-visible { color:var(--gold-bright); }
