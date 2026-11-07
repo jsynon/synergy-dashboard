@@ -1,5 +1,15 @@
 {
-  "generatedAt": "2026-11-07T22:08:56.945Z",
+  "generatedAt": "2026-11-07T22:12:05.063Z",
   "guildId": "964991521524944956",
-  "events": []
+  "events": [
+    {
+      "id": "1567389538861711410",
+      "guildId": "964991521524944956",
+      "name": "AJS/MJS Training",
+      "startTime": "2026-11-07T20:00:00+00:00",
+      "endTime": "2026-11-07T22:00:00+00:00",
+      "location": "https://discord.com/channels/964991521524944956/1499641964243452025/1567388059375378475",
+      "recurring": false
+    }
+  ]
 }
