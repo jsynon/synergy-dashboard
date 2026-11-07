@@ -1,0 +1,39 @@
+{
+  "events": [
+    {
+      "name": "Monoliths of Madness",
+      "startDate": "2026-09-01",
+      "endDate": "2026-11-24"
+    },
+    {
+      "name": "Of Minds and Madness",
+      "startDate": "2026-09-01",
+      "endDate": "2026-11-25"
+    },
+    {
+      "name": "2x Currency: Icewind Dale",
+      "startDate": "2026-11-05",
+      "endDate": "2026-11-12"
+    },
+    {
+      "name": "2x Currency: Descent into Avernus",
+      "startDate": "2026-11-12",
+      "endDate": "2026-11-17"
+    },
+    {
+      "name": "2x Seals",
+      "startDate": "2026-11-12",
+      "endDate": "2026-11-17"
+    },
+    {
+      "name": "Of Minds and Madness – Last Chance!",
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-25"
+    },
+    {
+      "name": "Monoliths of Madness – Last Chance!",
+      "startDate": "2026-11-24",
+      "endDate": "2026-12-01"
+    }
+  ]
+}

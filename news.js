@@ -5,16 +5,48 @@
 
   const eventList = document.getElementById("news-event-list");
   const eventStatus = document.getElementById("news-event-status");
-  const eventDateFormatter = new Intl.DateTimeFormat("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-    timeZone: "America/New_York"
-  });
+
+  const dateParts = (value) => {
+    if (!value) return null;
+    const dateOnly = /^\d{4}-\d{2}-\d{2}$/.test(value);
+    const date = new Date(dateOnly ? `${value}T12:00:00Z` : value);
+    if (Number.isNaN(date.valueOf())) return null;
+
+    const timeZone = dateOnly ? "UTC" : "America/New_York";
+    const parts = new Intl.DateTimeFormat("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+      timeZone
+    }).formatToParts(date);
+    const part = (type) => parts.find((item) => item.type === type)?.value;
+    return { year: part("year"), month: part("month"), day: Number(part("day")) };
+  };
+
+  const dateKey = (value) => {
+    const parts = dateParts(value);
+    return parts ? `${parts.year}-${String(new Date(`${parts.month} 1, ${parts.year}`).getMonth() + 1).padStart(2, "0")}-${String(parts.day).padStart(2, "0")}` : null;
+  };
 
   const formatEventDate = (value) => {
-    const date = new Date(value);
-    return Number.isNaN(date.valueOf()) ? null : eventDateFormatter.format(date);
+    const parts = dateParts(value);
+    return parts ? `${parts.month} ${parts.day}, ${parts.year}` : null;
+  };
+
+  const formatEventDateRange = (event) => {
+    const startValue = event.startDate || event.startTime;
+    const endValue = event.endDate || event.endTime;
+    const start = dateParts(startValue);
+    const end = endValue ? dateParts(endValue) : null;
+    if (!start) return "Date unavailable";
+    if (!end || dateKey(startValue) === dateKey(endValue)) return formatEventDate(startValue);
+    if (start.year === end.year && start.month === end.month) {
+      return `${start.month} ${start.day}–${end.day}, ${start.year}`;
+    }
+    if (start.year === end.year) {
+      return `${start.month} ${start.day} – ${end.month} ${end.day}, ${start.year}`;
+    }
+    return `${formatEventDate(startValue)} – ${formatEventDate(endValue)}`;
   };
 
   const safeHttpsUrl = (value) => {
@@ -29,40 +61,57 @@
 
   const renderGuildEvents = (events) => {
     eventList.replaceChildren();
-    if (!events.length) {
+    const todayParts = new Intl.DateTimeFormat("en-US", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      timeZone: "America/New_York"
+    }).formatToParts(new Date());
+    const today = `${todayParts.find((part) => part.type === "year").value}-${todayParts.find((part) => part.type === "month").value}-${todayParts.find((part) => part.type === "day").value}`;
+    const upcomingEvents = events
+      .filter((event) => {
+        const lastDate = event.endDate || event.endTime || event.startDate || event.startTime;
+        const key = dateKey(lastDate);
+        return key && key >= today;
+      })
+      .sort((a, b) => dateKey(a.startDate || a.startTime).localeCompare(dateKey(b.startDate || b.startTime)));
+
+    if (!upcomingEvents.length) {
       addText(eventList, "li", "news-event-empty", "No upcoming events are scheduled.");
       eventStatus.textContent = "No upcoming events";
       return;
     }
 
-    for (const event of events) {
+    for (const event of upcomingEvents) {
       const row = document.createElement("li");
       row.className = "news-event-row";
-
-      const start = formatEventDate(event.startTime);
-      const end = event.endTime ? formatEventDate(event.endTime) : null;
-      const dateLabel = start && end && start !== end ? `${start} – ${end}` : start || "Date unavailable";
-      addText(row, "span", "news-event-date", dateLabel);
+      addText(row, "span", "news-event-date", formatEventDateRange(event));
 
       const details = document.createElement("div");
       details.className = "news-event-copy";
-      const title = document.createElement("a");
-      title.className = "news-event-name";
-      title.href = `https://discord.com/events/${encodeURIComponent(event.guildId)}/${encodeURIComponent(event.id)}`;
-      title.target = "_blank";
-      title.rel = "noopener noreferrer";
-      title.textContent = event.name;
-      details.append(title);
+      const discordEvent = event.source === "discord";
+      if (discordEvent) {
+        const title = document.createElement("a");
+        title.className = "news-event-name";
+        title.href = `https://discord.com/events/${encodeURIComponent(event.guildId)}/${encodeURIComponent(event.id)}`;
+        title.target = "_blank";
+        title.rel = "noopener noreferrer";
+        title.textContent = event.name;
+        details.append(title);
+      } else {
+        addText(details, "span", "news-event-name", event.name);
+      }
 
       const links = document.createElement("div");
       links.className = "news-event-links";
       if (event.recurring) addText(links, "span", "news-event-repeat", "Recurring");
-      const locationUrl = safeHttpsUrl(event.location);
-      if (locationUrl) {
-        const locationLink = addText(links, "a", "news-event-link", /raid[-.]?helper/i.test(locationUrl) ? "Raid-Helper signup ↗" : "Event link ↗");
-        locationLink.href = locationUrl;
-        locationLink.target = "_blank";
-        locationLink.rel = "noopener noreferrer";
+      const eventUrl = safeHttpsUrl(event.url || event.location);
+      if (eventUrl) {
+        const linkLabel = /raid[-.]?helper/i.test(eventUrl) ? "Raid-Helper signup ↗" : "Event link ↗";
+        const eventLink = addText(links, "a", "news-event-link", linkLabel);
+        eventLink.href = eventUrl;
+        eventLink.target = "_blank";
+        eventLink.rel = "noopener noreferrer";
       } else if (event.location) {
         addText(links, "span", "news-event-location", event.location);
       }
@@ -70,19 +119,28 @@
       row.append(details);
       eventList.append(row);
     }
-    eventStatus.textContent = `${events.length} upcoming ${events.length === 1 ? "event" : "events"}`;
+    eventStatus.textContent = `${upcomingEvents.length} upcoming ${upcomingEvents.length === 1 ? "event" : "events"}`;
   };
 
   const loadGuildEvents = () => {
-    fetch("data/discord-events.json", { cache: "no-cache", headers: { Accept: "application/json" } })
-      .then((response) => {
-        if (!response.ok) throw new Error(`Guild events request failed (${response.status})`);
-        return response.json();
+    Promise.all([
+      fetch("data/discord-events.json", { cache: "no-cache", headers: { Accept: "application/json" } }),
+      fetch("data/manual-events.json", { cache: "no-cache", headers: { Accept: "application/json" } })
+    ])
+      .then(async ([discordResponse, manualResponse]) => {
+        if (!discordResponse.ok || !manualResponse.ok) throw new Error("Calendar data request failed");
+        return Promise.all([discordResponse.json(), manualResponse.json()]);
       })
-      .then((feed) => {
-        if (!Array.isArray(feed.events)) throw new Error("Guild events data is invalid");
-        renderGuildEvents(feed.events);
-        window.guildEventsFetchedAt = feed.generatedAt || null;
+      .then(([discordFeed, manualFeed]) => {
+        if (!Array.isArray(discordFeed.events) || !Array.isArray(manualFeed.events)) {
+          throw new Error("Calendar data is invalid");
+        }
+        const merged = [
+          ...manualFeed.events.map((event) => ({ ...event, source: "manual" })),
+          ...discordFeed.events.map((event) => ({ ...event, source: "discord" }))
+        ];
+        renderGuildEvents(merged);
+        window.guildEventsFetchedAt = discordFeed.generatedAt || null;
       })
       .catch((error) => {
         console.error("Unable to load Synergy events:", error);

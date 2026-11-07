@@ -6,11 +6,11 @@ The Synergy website brings together four Neverwinter pages for guild members and
 
 ## News
 
-The [News page](https://jsynon.github.io/synergy-dashboard/news.html) combines the compact Upcoming Events calendar with Recent Articles. The calendar reads Discord Scheduled Events from Synergy’s server, showing event names and dates, linking titles to the Discord event, and linking a “Somewhere Else” URL (such as a Raid-Helper signup post) when one is present. Dates display in Eastern Time without showing event times. The site currently reads Synergy events; adding events from another Discord server requires the bot to be installed there and that server to be configured too.
+The [News page](https://jsynon.github.io/synergy-dashboard/news.html) combines the compact Upcoming Events calendar with Recent Articles. The calendar merges manually maintained Neverwinter in-game events with upcoming and active events from Synergy’s Discord server. Event names link to Discord, and a “Somewhere Else” URL (such as a Raid-Helper signup post) appears as a secondary link. Dates display in Eastern Time without event times.
 
-Recent Articles presents official headlines, publication dates, summaries, and available-platform details, with links to the original articles on the Neverwinter site.
+Update the in-game event list in `data/manual-events.json`. Use `startDate` and `endDate` in `YYYY-MM-DD` format; events that have ended are hidden automatically. Discord events are fetched by `scripts/fetch-discord-events.mjs` into `data/discord-events.json`. Recent Articles presents official headlines, publication dates, summaries, and available-platform details, with links to the original Neverwinter articles.
 
-The news cache is built from the official Arc Games news feed. `scripts/fetch-neverwinter-news.mjs` retrieves up to 100 English entries and writes `data/neverwinter-news.json`. `scripts/fetch-discord-events.mjs` retrieves Synergy’s Scheduled Events and writes `data/discord-events.json`. The `.github/workflows/refresh-neverwinter-news.yml` workflow refreshes both caches every six hours and can also be run manually. It reads the `DISCORD_BOT_TOKEN` GitHub Actions secret and `DISCORD_GUILD_ID` repository variable; the token is never included in the public site data.
+The news cache is built from the official Arc Games news feed. `scripts/fetch-neverwinter-news.mjs` retrieves up to 100 English entries and writes `data/neverwinter-news.json`. The `.github/workflows/refresh-neverwinter-news.yml` workflow refreshes the official news and Discord event caches every six hours and can also be run manually. It reads the `DISCORD_BOT_TOKEN` GitHub Actions secret and `DISCORD_GUILD_ID` repository variable; the token is never included in the public site data.
 
 ## Guild Roster
 
