@@ -85,7 +85,18 @@
     for (const event of upcomingEvents) {
       const row = document.createElement("li");
       row.className = "news-event-row";
-      addText(row, "span", "news-event-date", formatEventDateRange(event));
+      const dateLabel = formatEventDateRange(event);
+      const startTime = event.source === "discord" && event.startTime ? new Date(event.startTime) : null;
+      if (startTime && !Number.isNaN(startTime.valueOf())) {
+        const localTime = new Intl.DateTimeFormat(undefined, {
+          hour: "numeric",
+          minute: "2-digit",
+          timeZoneName: "short"
+        }).format(startTime);
+        addText(row, "span", "news-event-date", `${dateLabel} · ${localTime}`);
+      } else {
+        addText(row, "span", "news-event-date", dateLabel);
+      }
 
       const details = document.createElement("div");
       details.className = "news-event-copy";
