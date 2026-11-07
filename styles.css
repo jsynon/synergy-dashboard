@@ -1502,10 +1502,16 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
 /* Compact Discord event rows on the News page. */
 .news-event-copy { display:flex; min-width:0; flex-direction:column; gap:2px; }
 .news-event-name { align-self:flex-start; color:var(--gold-bright); font:500 .9rem/1.35 var(--serif); text-decoration:none; text-underline-offset:3px; }
-.news-event-name:hover,.news-event-name:focus-visible { color:#fff0c3; text-decoration:underline; }
+a.news-event-name:hover,a.news-event-name:focus-visible { color:#fff0c3; text-decoration:underline; }
 .news-event-links { display:flex; flex-wrap:wrap; align-items:center; gap:8px; min-height:14px; }
 .news-event-link { color:var(--teal); font-size:.68rem; font-weight:600; text-decoration:none; }
 .news-event-link:hover,.news-event-link:focus-visible { color:var(--gold-bright); text-decoration:underline; text-underline-offset:3px; }
 .news-event-repeat { color:var(--muted); font-size:.64rem; letter-spacing:.04em; text-transform:uppercase; }
 .news-event-location,.news-event-empty { color:var(--muted); font-size:.78rem; }
 .news-event-empty { margin:0; padding:7px 2px; }
+
+
+/* Make the Discord event destination explicit beside linked titles. */
+a.news-event-name { display:inline-flex; flex-wrap:wrap; align-items:baseline; gap:3px 8px; }
+.news-event-name-destination { color:var(--teal); font:600 .64rem/1.35 var(--body); letter-spacing:.02em; }
+a.news-event-name:hover .news-event-name-destination,a.news-event-name:focus-visible .news-event-name-destination { color:var(--gold-bright); }
