@@ -1440,3 +1440,35 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
 .collapsible-panel[open] .collapse-indicator::after { transform:translate(-50%,-50%) rotate(0); }
 .collapsible-panel > summary:focus-visible { outline-offset:-4px; }
 .collapsible-panel-body { min-width:0; }
+
+
+/* Use the Guild Bank summary layout and toggle across every roster card. */
+.collapsible-panel { padding:0; overflow:hidden; }
+.collapsible-panel > .collapsible-heading {
+  display:flex; align-items:center; justify-content:space-between; gap:18px;
+  margin:0; padding:17px 21px; border:0; cursor:pointer; list-style:none;
+  background:linear-gradient(100deg,rgba(8,29,42,.92),rgba(16,28,40,.9) 58%,rgba(39,25,16,.86));
+}
+.collapsible-panel > .collapsible-heading::-webkit-details-marker { display:none; }
+.collapsible-panel > .collapsible-heading::marker { content:""; }
+.collapsible-panel > .collapsible-heading:hover,
+.collapsible-panel > .collapsible-heading:focus-visible { background:linear-gradient(100deg,rgba(9,42,58,.96),rgba(16,31,44,.94) 58%,rgba(50,31,17,.9)); }
+.collapsible-panel > .collapsible-heading:focus-visible { outline:2px solid var(--gold-bright); outline-offset:-4px; }
+.collapsible-panel[open] > .collapsible-heading { border-bottom:1px solid rgba(89,201,232,.32); }
+.collapsible-panel > .collapsible-heading > div:first-child { flex:1 1 auto; min-width:0; }
+.collapsible-header-meta { display:flex; flex:0 0 auto; align-items:center; gap:12px; }
+.collapsible-panel .guild-info-toggle { display:grid; flex:0 0 34px; place-items:center; }
+.collapsible-panel:not([open]) .guild-info-toggle::before { content:"+"; }
+.collapsible-panel[open] .guild-info-toggle::before { content:"−"; }
+.collapsible-panel-body { min-width:0; padding:14px 19px 16px; }
+.roster-panel > .collapsible-panel-body,.recent-panel > .collapsible-panel-body { padding:14px 19px 16px; }
+.promotions-panel > .collapsible-panel-body { padding:13px 17px; }
+.inactivity-panel > .collapsible-panel-body { padding:10px 14px; }
+@media(max-width:620px) {
+  .collapsible-panel > .collapsible-heading { gap:10px; padding:13px 12px; }
+  .collapsible-header-meta { gap:7px; }
+  .collapsible-panel > .collapsible-panel-body,
+  .roster-panel > .collapsible-panel-body,.recent-panel > .collapsible-panel-body { padding:12px 11px; }
+  .promotions-panel > .collapsible-panel-body { padding:12px 11px; }
+  .inactivity-panel > .collapsible-panel-body { padding:10px 11px; }
+}
