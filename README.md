@@ -6,9 +6,11 @@ The Synergy website brings together four Neverwinter pages for guild members and
 
 ## News
 
-The [News page](https://jsynon.github.io/synergy-dashboard/news.html) brings current Neverwinter announcements together with upcoming game events. The compact Upcoming Events card lists event names and dates. Recent Articles presents official headlines, publication dates, summaries, and available-platform details, with links to the original articles on the Neverwinter site.
+The [News page](https://jsynon.github.io/synergy-dashboard/news.html) combines the compact Upcoming Events calendar with Recent Articles. The calendar reads Discord Scheduled Events from Synergy’s server, showing event names and dates, linking titles to the Discord event, and linking a “Somewhere Else” URL (such as a Raid-Helper signup post) when one is present. Dates display in Eastern Time without showing event times. The site currently reads Synergy events; adding events from another Discord server requires the bot to be installed there and that server to be configured too.
 
-The news cache is built from the official Arc Games news feed. `scripts/fetch-neverwinter-news.mjs` retrieves up to 100 English entries and writes `data/neverwinter-news.json`. The page reads this same-origin file. The `.github/workflows/refresh-neverwinter-news.yml` workflow refreshes the cache every six hours and can also be run manually.
+Recent Articles presents official headlines, publication dates, summaries, and available-platform details, with links to the original articles on the Neverwinter site.
+
+The news cache is built from the official Arc Games news feed. `scripts/fetch-neverwinter-news.mjs` retrieves up to 100 English entries and writes `data/neverwinter-news.json`. `scripts/fetch-discord-events.mjs` retrieves Synergy’s Scheduled Events and writes `data/discord-events.json`. The `.github/workflows/refresh-neverwinter-news.yml` workflow refreshes both caches every six hours and can also be run manually. It reads the `DISCORD_BOT_TOKEN` GitHub Actions secret and `DISCORD_GUILD_ID` repository variable; the token is never included in the public site data.
 
 ## Guild Roster
 
