@@ -1351,6 +1351,7 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
   .masthead nav > a:nth-child(2),
   .masthead nav > a:nth-child(3),
   .masthead nav > .discord-link { border-left:1px solid var(--frame-gold); }
+  .masthead nav > a:nth-child(3) { border-top:0; }
   .masthead nav > a:nth-child(4) { border-left:0; }
 }
 
