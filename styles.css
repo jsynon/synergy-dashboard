@@ -1481,3 +1481,13 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
 /* Keep Guild Bank account links the same cyan as other account names. */
 .bank-event-member .bank-account-link { color:var(--teal); font-size:10px; text-decoration:underline; text-decoration-style:dotted; text-underline-offset:2px; }
 .bank-event-member .bank-account-link:hover,.bank-event-member .bank-account-link:focus-visible { color:var(--gold-bright); }
+
+
+/* Bring Guild Bank results up to the dashboard's standard text size. */
+.bank-event-row { font-size:14px; }
+.bank-event-date,.bank-event-member,.bank-event-member .bank-account-link,.bank-event-item,.bank-event-action,.bank-event-amount { font-size:14px; }
+.bank-event-category { font-size:11px; }
+@media(max-width:620px) {
+  .bank-event-date,.bank-event-member,.bank-event-member .bank-account-link,.bank-event-item,.bank-event-action,.bank-event-amount { font-size:13px; }
+  .bank-event-category { font-size:10px; }
+}
