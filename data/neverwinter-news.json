@@ -1,0 +1,2023 @@
+{
+  "source": "https://www.playneverwinter.com/en/news",
+  "api": "https://api.arcgames.com/v1.0/games/nw/news",
+  "generatedAt": "2026-11-07T03:43:59.593Z",
+  "count": 100,
+  "articles": [
+    {
+      "id": "11583719",
+      "title": "Queue Reward Improvements",
+      "summary": "Random Queue rewards have been improved. Let's have a closer look!",
+      "date": "2026-11-02",
+      "url": "https://www.playneverwinter.com/en/news-details/11583719",
+      "image": "https://pwimages-a.akamaihd.net/arc/8f/ca/8fcad36070ec710aa1ae0e305121d8eb1793283542.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11583527",
+      "title": "M34 Preview [Update]",
+      "summary": "M34 is approaching!",
+      "date": "2026-10-26",
+      "url": "https://www.playneverwinter.com/en/news-details/11583527",
+      "image": "https://pwimages-a.akamaihd.net/arc/6c/89/6c89fcdfd44adf32ce5d5e730ea158a71792156280.png",
+      "platforms": [
+        "pc"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-events"
+      ]
+    },
+    {
+      "id": "11583644",
+      "title": "Neverwinter Player Survey",
+      "summary": "We would like to invite you to partake in our Player Survey!",
+      "date": "2026-10-26",
+      "url": "https://www.playneverwinter.com/en/news-details/11583644",
+      "image": "https://pwimages-a.akamaihd.net/arc/6b/05/6b0581e80ed3716f9ae7b61aa68cf2cf1792761797.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-events",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11583449",
+      "title": "Masquerade of Liars",
+      "summary": "The Masquerade of Liars creeps into Neverwinter!",
+      "date": "2026-10-22",
+      "url": "https://www.playneverwinter.com/en/news-details/11583449",
+      "image": "https://pwimages-a.akamaihd.net/arc/57/5f/575f0e21612647b29a08469aef368fe21761133873.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11583365",
+      "title": "Patch Notes for 10/08/2026",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-10-08",
+      "url": "https://www.playneverwinter.com/en/news-details/11583365",
+      "image": "https://pwimages-a.akamaihd.net/arc/5e/7a/5e7acdcb70401d0ca2123a74014ca5781788437844.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11582592",
+      "title": "Of Minds and Madness Battle Pass - Phase 2",
+      "summary": "The corrupting influence of the monoliths has spread through our Battle Pass as well!",
+      "date": "2026-10-08",
+      "url": "https://www.playneverwinter.com/en/news-details/11582592",
+      "image": "https://pwimages-a.akamaihd.net/arc/26/27/26272e62f76d3e613c7030622ed09f531787061047.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-events"
+      ]
+    },
+    {
+      "id": "11583341",
+      "title": "Recap: Neverwinter Next Stream",
+      "summary": "Check out our latest Neverwinter Next stream!",
+      "date": "2026-10-05",
+      "url": "https://www.playneverwinter.com/en/news-details/11583341",
+      "image": "https://pwimages-a.akamaihd.net/arc/52/be/52be12b0a12d60302b8e94ec0256c64c1791213688.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-news",
+        "nw-events",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11583221",
+      "title": "Harvester of Nightmares Returns!",
+      "summary": "The nightmares return as the mysterious creature known as the Harvester of Nightmares arrives once again to feast on the restless dreams of the sleeping citizens!",
+      "date": "2026-10-01",
+      "url": "https://www.playneverwinter.com/en/news-details/11583221",
+      "image": "https://pwimages-a.akamaihd.net/arc/d1/b5/d1b5e521dcc156c5753c078df1d9d0ea1762513185.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11583050",
+      "title": "Patch Notes for 09/17/2026",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-09-17",
+      "url": "https://www.playneverwinter.com/en/news-details/11583050",
+      "image": "https://pwimages-a.akamaihd.net/arc/5e/7a/5e7acdcb70401d0ca2123a74014ca5781788437844.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11582924",
+      "title": "Patch Notes for 09/10/2026 [update]",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-09-10",
+      "url": "https://www.playneverwinter.com/en/news-details/11582924",
+      "image": "https://pwimages-a.akamaihd.net/arc/5e/7a/5e7acdcb70401d0ca2123a74014ca5781788437844.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11582840",
+      "title": "Patch Notes for 09/03/2026",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-09-03",
+      "url": "https://www.playneverwinter.com/en/news-details/11582840",
+      "image": "https://pwimages-a.akamaihd.net/arc/5e/7a/5e7acdcb70401d0ca2123a74014ca5781788437844.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11582595",
+      "title": "Neverwinter Roadmap - Beyond Monoliths of Madness",
+      "summary": "A look ahead!",
+      "date": "2026-09-02",
+      "url": "https://www.playneverwinter.com/en/news-details/11582595",
+      "image": "https://pwimages-a.akamaihd.net/arc/3e/09/3e09649af4e294eb5fedda96f74096c01779267760.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11582729",
+      "title": "Release: M33.5 - Monoliths of Madness",
+      "summary": "Strange monoliths have appeared across Faerûn, spreading madness and twisting nearby creatures into monstrous servants of a dark power.",
+      "date": "2026-09-01",
+      "url": "https://www.playneverwinter.com/en/news-details/11582729",
+      "image": "https://pwimages-a.akamaihd.net/arc/41/11/4111c4d774d816e46ff1667c5865abf41787834214.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11582589",
+      "title": "Of Minds and Madness Battle Pass",
+      "summary": "The corrupting influence of the monoliths has spread through our Battle Pass as well!",
+      "date": "2026-08-31",
+      "url": "https://www.playneverwinter.com/en/news-details/11582589",
+      "image": "https://pwimages-a.akamaihd.net/arc/26/27/26272e62f76d3e613c7030622ed09f531787061047.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-events"
+      ]
+    },
+    {
+      "id": "11582619",
+      "title": "Wild Adventures Lockbox",
+      "summary": "The Star Angler ensures a fishy ride while Encore provides tunes that are pretty fly!",
+      "date": "2026-08-28",
+      "url": "https://www.playneverwinter.com/en/news-details/11582619",
+      "image": "https://pwimages-a.akamaihd.net/arc/5c/03/5c0368ef0172e1fe22102b47043a163d1787217909.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11582622",
+      "title": "20% Bonus Zen & Zen Sale",
+      "summary": "Adventurers that are always looking to make a good deal can profit from 20% Bonus Zen on PC and from 20% off Zen packs on Xbox and PlayStation!",
+      "date": "2026-08-21",
+      "url": "https://www.playneverwinter.com/en/news-details/11582622",
+      "image": "https://pwimages-a.akamaihd.net/arc/02/9a/029abc038b9f50f0110c8c3690c5251e1787234097.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11582481",
+      "title": "Summer Festival is here",
+      "summary": "It's never winter during the Summer Festival!",
+      "date": "2026-08-18",
+      "url": "https://www.playneverwinter.com/en/news-details/11582481",
+      "image": "https://pwimages-a.akamaihd.net/arc/c8/e4/c8e45b6ddcf506a278dca404c1ec8e981753303294.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-events",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11582499",
+      "title": "Patch Notes for 08/11/2026",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-08-11",
+      "url": "https://www.playneverwinter.com/en/news-details/11582499",
+      "image": "https://pwimages-a.akamaihd.net/arc/a1/6c/a16c84898319708b2359761a84aa38d71782723421.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11582331",
+      "title": "M33.5 Preview",
+      "summary": "M33.5 is approaching!",
+      "date": "2026-08-05",
+      "url": "https://www.playneverwinter.com/en/news-details/11582331",
+      "image": "https://pwimages-a.akamaihd.net/arc/86/f4/86f4cc42fb2a971889d7cb0240402d781784306200.png",
+      "platforms": [
+        "pc"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-events"
+      ]
+    },
+    {
+      "id": "11580846",
+      "title": "Ice Breaker Battle Pass - Phase 3",
+      "summary": "Unleash your spirit and steel your resolve with Neverwinter’s Battle Pass!",
+      "date": "2026-07-30",
+      "url": "https://www.playneverwinter.com/en/news-details/11580846",
+      "image": "https://pwimages-a.akamaihd.net/arc/3b/a8/3ba8ea4389b7a344173c49c62498bad31776688696.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-events",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11581782",
+      "title": "Siege of Neverwinter Event",
+      "summary": "The Cult of the Dragon has amassed their forces once more!",
+      "date": "2026-07-16",
+      "url": "https://www.playneverwinter.com/en/news-details/11581782",
+      "image": "https://pwimages-a.akamaihd.net/arc/27/9f/279f75098ecbc28cbcdcbfefdb4698ab1781869860.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11582307",
+      "title": "Patch Notes for 07/15/2026",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-07-15",
+      "url": "https://www.playneverwinter.com/en/news-details/11582307",
+      "image": "https://pwimages-a.akamaihd.net/arc/a1/6c/a16c84898319708b2359761a84aa38d71782723421.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11581773",
+      "title": "Buried Treasure Lockbox",
+      "summary": "Try to armwrestle Ollie the Octie or make use of some new Combat Enchantments!",
+      "date": "2026-07-09",
+      "url": "https://www.playneverwinter.com/en/news-details/11581773",
+      "image": "https://pwimages-a.akamaihd.net/arc/24/3b/243b08bb9e748ab0088cb9e37192d0bf1781867586.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11581779",
+      "title": "Celebration of Lliira",
+      "summary": "It’s that time of the year again when adventurers gather to set off fireworks in honor of the Goddess of Joy!",
+      "date": "2026-07-03",
+      "url": "https://www.playneverwinter.com/en/news-details/11581779",
+      "image": "https://pwimages-a.akamaihd.net/arc/57/36/573677152cfece7e786caf61378100f61781868905.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11581905",
+      "title": "Patch Notes for 06/30/2026",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-06-30",
+      "url": "https://www.playneverwinter.com/en/news-details/11581905",
+      "image": "https://pwimages-a.akamaihd.net/arc/a1/6c/a16c84898319708b2359761a84aa38d71782723421.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11581848",
+      "title": "Patch Notes for 06/25/2026",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-06-25",
+      "url": "https://www.playneverwinter.com/en/news-details/11581848",
+      "image": "https://pwimages-a.akamaihd.net/arc/3e/24/3e24d2bcd0d0aa2ef5f17b67bbab63f51782229753.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11580849",
+      "title": "Ice Breaker Battle Pass - Phase 2",
+      "summary": "Unleash your spirit and steel your resolve with Neverwinter’s Battle Pass!",
+      "date": "2026-06-25",
+      "url": "https://www.playneverwinter.com/en/news-details/11580849",
+      "image": "https://pwimages-a.akamaihd.net/arc/d6/06/d60636dad343a68bc6c209ab2c250a441776688682.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-events"
+      ]
+    },
+    {
+      "id": "11581515",
+      "title": "Return to the Protector's Jubilee!",
+      "summary": "The Protector's Jubilee returns to Neverwinter with great new rewards!",
+      "date": "2026-06-23",
+      "url": "https://www.playneverwinter.com/en/news-details/11581515",
+      "image": "https://pwimages-a.akamaihd.net/arc/29/75/2975253a11bb0780e195fefdf154d0f01780662788.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11581686",
+      "title": "20% Bonus Zen & Zen Sale",
+      "summary": "Adventurers that are always looking to make a good deal can now profit from 20% Bonus Zen on PC and from 20% off Zen packs on Xbox and PlayStation!",
+      "date": "2026-07-01",
+      "url": "https://www.playneverwinter.com/en/news-details/11581686",
+      "image": "https://pwimages-a.akamaihd.net/arc/b7/7b/b77b098503610947b4779e04e711e51d1781617552.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11581650",
+      "title": "Patch Notes for 06/17/2026",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-06-17",
+      "url": "https://www.playneverwinter.com/en/news-details/11581650",
+      "image": "https://pwimages-a.akamaihd.net/arc/e3/27/e327efc3d5a9c879a0f66b64a655a0671781599333.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11581560",
+      "title": "Patch Notes for 06/10/2026",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-06-10",
+      "url": "https://www.playneverwinter.com/en/news-details/11581560",
+      "image": "https://pwimages-a.akamaihd.net/arc/85/9b/859b8dc8a1344420a5d467ecf820ff2e1781008232.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11581479",
+      "title": "Patch Notes for 06/04/2026",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-06-04",
+      "url": "https://www.playneverwinter.com/en/news-details/11581479",
+      "image": "https://pwimages-a.akamaihd.net/arc/eb/30/eb30eca3fcb72315538a48a77343644c1780488300.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11581401",
+      "title": "Patch Notes for 05/28/2026",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-05-28",
+      "url": "https://www.playneverwinter.com/en/news-details/11581401",
+      "image": "https://pwimages-a.akamaihd.net/arc/75/7b/757b0443be76d8c22fc843bb9f2055f81779872397.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11581017",
+      "title": "Challenge of the Gods",
+      "summary": "Will you prove yourself to the gods?",
+      "date": "2026-05-27",
+      "url": "https://www.playneverwinter.com/en/news-details/11581017",
+      "image": "https://pwimages-a.akamaihd.net/arc/31/95/3195800d462260d354dce63f86c298251777380768.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11581299",
+      "title": "Neverwinter Roadmap - Beyond Biting Cold",
+      "summary": "A look ahead!",
+      "date": "2026-05-20",
+      "url": "https://www.playneverwinter.com/en/news-details/11581299",
+      "image": "https://pwimages-a.akamaihd.net/arc/3e/09/3e09649af4e294eb5fedda96f74096c01779267760.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11581212",
+      "title": "Release: Module 33 - Biting Cold",
+      "summary": "Keeping your head cool is an automated process with Module 33, Biting Cold, where the temperatures drop and rise on the go.",
+      "date": "2026-05-20",
+      "url": "https://www.playneverwinter.com/en/news-details/11581212",
+      "image": "https://pwimages-a.akamaihd.net/arc/67/d0/67d0124a841fd5151e84082ebb9b5eb01778836082.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11580843",
+      "title": "Ice Breaker Battle Pass",
+      "summary": "Unleash your spirit and steel your resolve with Neverwinter’s Battle Pass!",
+      "date": "2026-05-18",
+      "url": "https://www.playneverwinter.com/en/news-details/11580843",
+      "image": "https://pwimages-a.akamaihd.net/arc/05/46/054688a14db41850a0c586a532af65651776688667.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-events"
+      ]
+    },
+    {
+      "id": "11580852",
+      "title": "Encroaching Frost Lockbox",
+      "summary": "Take a ride on Snowtusk or feel honored to be accompanied by Sir Waddelot!",
+      "date": "2026-05-12",
+      "url": "https://www.playneverwinter.com/en/news-details/11580852",
+      "image": "https://pwimages-a.akamaihd.net/arc/a8/46/a8460275bc88fc5f0850c515cf4871dd1776689916.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11580537",
+      "title": "Return for a Free Quick Start Character! [update]",
+      "summary": "Login now and select from three pre-built level 20 characters to play and keep forever!",
+      "date": "2026-05-11",
+      "url": "https://www.playneverwinter.com/en/news-details/11580537",
+      "image": "https://pwimages-a.akamaihd.net/arc/9b/50/9b50fd7f39415ff2d2109b9bf9303d081776426785.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11580939",
+      "title": "Sir Waddlelot: From Waddle to Warrior",
+      "summary": "From stumbling flippers to fearless defender, Sir Waddlelot’s journey proves that even the smallest heroes can leave the biggest footprint in the snow.",
+      "date": "2026-05-05",
+      "url": "https://www.playneverwinter.com/en/news-details/11580939",
+      "image": "https://pwimages-a.akamaihd.net/arc/2e/b0/2eb02425e1f0bb304ae5c48d0bbbe20c1776863701.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11581020",
+      "title": "Day of the Dungeon Master",
+      "summary": "Both Respen and Portobello are back!",
+      "date": "2026-04-30",
+      "url": "https://www.playneverwinter.com/en/news-details/11581020",
+      "image": "https://pwimages-a.akamaihd.net/arc/67/7a/677a3a84df58a6d781a083827304f84c1777381364.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11580825",
+      "title": "M33 Preview",
+      "summary": "M33 is approaching!",
+      "date": "2026-04-23",
+      "url": "https://www.playneverwinter.com/en/news-details/11580825",
+      "image": "https://pwimages-a.akamaihd.net/arc/68/57/685791abd0765070027481d49c1948a11776963864.jpg",
+      "platforms": [
+        "pc"
+      ],
+      "tags": [
+        "nw-launcher",
+        "neverwinter",
+        "nw-events"
+      ]
+    },
+    {
+      "id": "11580855",
+      "title": "20% Bonus Zen & Zen Sale",
+      "summary": "Adventurers that are always looking to make a good deal can profit from 20% Bonus Zen on PC and from 20% off Zen packs on Xbox and PlayStation!",
+      "date": "2026-04-21",
+      "url": "https://www.playneverwinter.com/en/news-details/11580855",
+      "image": "https://pwimages-a.akamaihd.net/arc/e8/9b/e89b1769d040841fb26cecb08383aa351776696830.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11580822",
+      "title": "Neverwinter Roadmap - Beyond Quickstart Event",
+      "summary": "A look ahead!",
+      "date": "2026-05-20",
+      "url": "https://www.playneverwinter.com/en/news-details/11580822",
+      "image": "https://pwimages-a.akamaihd.net/arc/99/16/991612239043e289e93b8b4e5665b4f31776433991.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11580726",
+      "title": "Guilds of Neverwinter",
+      "summary": "It's dangerous to go alone, adventurer. Take a look at these great Neverwinter Guilds and find your new family!",
+      "date": "2026-04-21",
+      "url": "https://www.playneverwinter.com/en/news-details/11580726",
+      "image": "https://pwimages-a.akamaihd.net/arc/00/c0/00c092742f5c5feecd52b6d2d4b4fc171776433205.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "guilds"
+      ]
+    },
+    {
+      "id": "11580819",
+      "title": "Patch Notes for 04/20/2026",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-04-20",
+      "url": "https://www.playneverwinter.com/en/news-details/11580819",
+      "image": "https://pwimages-a.akamaihd.net/arc/cc/33/cc3300c81c4252372177578bd0c51d961776432608.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11580342",
+      "title": "Tymora's Gift",
+      "summary": "Tymora, goddess of luck and victory, is returning to bestow her favor upon all adventurers!",
+      "date": "2026-04-14",
+      "url": "https://www.playneverwinter.com/en/news-details/11580342",
+      "image": "https://pwimages-a.akamaihd.net/arc/82/8d/828d8e96e490f9eeb6a20b3f5e1ff86e1773756336.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-events",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11580669",
+      "title": "Patch Notes for 04/08/2026 (Small Patch)",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-04-22",
+      "url": "https://www.playneverwinter.com/en/news-details/11580669",
+      "image": "https://pwimages-a.akamaihd.net/arc/b4/ae/b4ae8d3954b7557abe1f2e26aeaba3ea1775555160.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11580624",
+      "title": "Welcoming Back Cryptic Studios Veterans",
+      "summary": "Join us in welcoming back Landon Falls, Randy Mosiondz, and Julia Sprenz!",
+      "date": "2026-04-06",
+      "url": "https://www.playneverwinter.com/en/news-details/11580624",
+      "image": "https://pwimages-a.akamaihd.net/arc/68/ee/68ee3a6f452b994c3ed450aadb4d24641775050050.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "co-news",
+        "co-launcher",
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11580327",
+      "title": "Festival of Rubies",
+      "summary": "Gather eggs for the Festival of the Ruby to get invited for a grand feast!",
+      "date": "2026-04-02",
+      "url": "https://www.playneverwinter.com/en/news-details/11580327",
+      "image": "https://pwimages-a.akamaihd.net/arc/e2/e9/e2e9356c0c7591c3c16ace4c8b17b19a1773679556.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11580579",
+      "title": "Patch Notes for 04/01/2026",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-04-01",
+      "url": "https://www.playneverwinter.com/en/news-details/11580579",
+      "image": "https://pwimages-a.akamaihd.net/arc/6a/d5/6ad557c7d888f30d919a24cd060dbcaf1774960155.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11580465",
+      "title": "Patch Notes for 03/25/2026",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-03-25",
+      "url": "https://www.playneverwinter.com/en/news-details/11580465",
+      "image": "https://pwimages-a.akamaihd.net/arc/79/64/7964f4225d392ec307d8238a2c021f541774359493.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11580306",
+      "title": "April Fowls 2026",
+      "summary": "Chickens, Chaos, and Cluckles of Fun! It’s an egg-cellent time to be a hero.",
+      "date": "2026-03-19",
+      "url": "https://www.playneverwinter.com/en/news-details/11580306",
+      "image": "https://pwimages-a.akamaihd.net/arc/b6/65/b665ad87e89727a3121a1f2383664e301773417763.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-events",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11580339",
+      "title": "Patch Notes for 03/18/2026",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-03-18",
+      "url": "https://www.playneverwinter.com/en/news-details/11580339",
+      "image": "https://pwimages-a.akamaihd.net/arc/70/02/700276e888a2567c36e67a7639d405031773755261.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11580303",
+      "title": "Purrific Shoulder Buddies (Neck pieces)",
+      "summary": "You’ve gotta cat ‘em all to become a Crazy Cat Hero!",
+      "date": "2026-03-27",
+      "url": "https://www.playneverwinter.com/en/news-details/11580303",
+      "image": "https://pwimages-a.akamaihd.net/arc/04/b0/04b012ee4a988faa44ee9a701ff69fc61773412806.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "nw-events",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11580120",
+      "title": "Tempus Arena - The Slaughterhouse arriving",
+      "summary": "Check out everything in this article to learn more about reclaimable Celestial Insignias, Celestial Mounts, the renewed Slaughterhouse, Clerics, and more!",
+      "date": "2026-03-10",
+      "url": "https://www.playneverwinter.com/en/news-details/11580120",
+      "image": "https://pwimages-a.akamaihd.net/arc/12/cf/12cfe797240169ed4a857cd0d62b12b61772534575.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11580027",
+      "title": "Pet Pals Lockbox",
+      "summary": "Cuddly Companions and Mushy Mounts would still be understatements when we dive into our latest Lockbox.",
+      "date": "2026-03-09",
+      "url": "https://www.playneverwinter.com/en/news-details/11580027",
+      "image": "https://pwimages-a.akamaihd.net/arc/e6/40/e640ec3d5d967969a9690689d51433c21771582306.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11580024",
+      "title": "For Gods and Glory Battle Pass",
+      "summary": "Gear up for the new nightmares that await you within the arena, and conquer all enemies that cross your path. For Gods and Glory!",
+      "date": "2026-03-06",
+      "url": "https://www.playneverwinter.com/en/news-details/11580024",
+      "image": "https://pwimages-a.akamaihd.net/arc/ac/e5/ace501dc9735e2b21ebc55ff2ed3df281771581229.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-events"
+      ]
+    },
+    {
+      "id": "11579862",
+      "title": "Coins of Waukeen Event",
+      "summary": "The Goddess Waukeen is sharing her blessings once again with the heroes of Neverwinter!",
+      "date": "2026-02-26",
+      "url": "https://www.playneverwinter.com/en/news-details/11579862",
+      "image": "https://pwimages-a.akamaihd.net/arc/cf/30/cf3058abb26de033967bbc9ddbc28e461770717376.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-events",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579967",
+      "title": "Patch Notes for 02/24/2026",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-02-24",
+      "url": "https://www.playneverwinter.com/en/news-details/11579967",
+      "image": "https://pwimages-a.akamaihd.net/arc/bf/83/bf83be3ecb36af4ae370da3edef05e8b1771343448.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579739",
+      "title": "Feast of Lanterns - Year of the Immortal Jade Horse",
+      "summary": "Celebrate the Year of the Immortal Jade Horse!",
+      "date": "2026-02-12",
+      "url": "https://www.playneverwinter.com/en/news-details/11579739",
+      "image": "https://pwimages-a.akamaihd.net/arc/c2/c4/c2c40af2e40393eedfc96bc8bf3f71f51770026115.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579814",
+      "title": "Valentine’s Zen Promotion",
+      "summary": "Adventurers that are always looking to make a good deal can now profit from 20% Bonus Zen on PC and from 20% off Zen packs on Xbox and PlayStation!",
+      "date": "2026-02-11",
+      "url": "https://www.playneverwinter.com/en/news-details/11579814",
+      "image": "https://pwimages-a.akamaihd.net/arc/bc/95/bc9556101fda4bf1751415adbeb7f1da1770304967.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579832",
+      "title": "M32.5 Preview",
+      "summary": "M32.5 is approaching!",
+      "date": "2026-02-10",
+      "url": "https://www.playneverwinter.com/en/news-details/11579832",
+      "image": "https://pwimages-a.akamaihd.net/arc/74/15/7415c6765ef6f1c2cc6973c62a6c77621770631053.png",
+      "platforms": [
+        "pc"
+      ],
+      "tags": [
+        "nw-launcher",
+        "neverwinter",
+        "nw-events",
+        "nw-news-"
+      ]
+    },
+    {
+      "id": "11579736",
+      "title": "Patch Notes for 02/05/2026",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-02-05",
+      "url": "https://www.playneverwinter.com/en/news-details/11579736",
+      "image": "https://pwimages-a.akamaihd.net/arc/8a/52/8a52e64e0439e91835a77ef2d1da3ace1770025419.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579721",
+      "title": "2x Progress",
+      "summary": "Make your progression more rewarding!",
+      "date": "2026-02-02",
+      "url": "https://www.playneverwinter.com/en/news-details/11579721",
+      "image": "https://pwimages-a.akamaihd.net/arc/9e/f1/9ef1550399c4dc004b79aedc8cb70a8c1769764836.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579718",
+      "title": "2x Ravenloft Campaign Currency",
+      "summary": "The mists have chosen to assist adventurers in completing the Ravenloft Campaign!",
+      "date": "2026-02-02",
+      "url": "https://www.playneverwinter.com/en/news-details/11579718",
+      "image": "https://pwimages-a.akamaihd.net/arc/2a/1a/2a1a34170f1a8b142b13d13f2daf4b751769764479.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579196",
+      "title": "Bodies and Souls Battlepass - Phase 3",
+      "summary": "Unleash your spirit and steel your resolve with Neverwinter’s new Battle Pass - Bodies and Souls.",
+      "date": "2026-01-29",
+      "url": "https://www.playneverwinter.com/en/news-details/11579196",
+      "image": "https://pwimages-a.akamaihd.net/arc/9a/75/9a756a0f1c293a4da3fd6de0f9d36b881765966073.png",
+      "platforms": [
+        "pc",
+        "ps"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-events",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579619",
+      "title": "A Letter From Jack Emmert, CEO",
+      "summary": "Jack Emmert returns as CEO of Cryptic Studios and addresses the community of Neverwinter.",
+      "date": "2026-01-27",
+      "url": "https://www.playneverwinter.com/en/news-details/11579619",
+      "image": "https://pwimages-a.akamaihd.net/arc/25/e3/25e3e7a4fd2c8f9f0079d9ce6b9b78151769437254.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579604",
+      "title": "2x Chult Campaign Currency",
+      "summary": "Looking to make progress in the Chult campaign?",
+      "date": "2026-01-26",
+      "url": "https://www.playneverwinter.com/en/news-details/11579604",
+      "image": "https://pwimages-a.akamaihd.net/arc/ca/be/cabe6665243e9fe4910c7b0b4fbe14671769093791.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579484",
+      "title": "Patch Notes for 01/20/2026 [Update]",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-01-22",
+      "url": "https://www.playneverwinter.com/en/news-details/11579484",
+      "image": "https://pwimages-a.akamaihd.net/arc/77/f9/77f926254d033a2657e32c46af7b38541768314391.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579430",
+      "title": "Deathly Delights Lockbox",
+      "summary": "Unleash the Deathly Delights Lockbox, where infernal temptations whisper of some powerful demonic goods…",
+      "date": "2026-01-20",
+      "url": "https://www.playneverwinter.com/en/news-details/11579430",
+      "image": "https://pwimages-a.akamaihd.net/arc/c0/fd/c0fd745599f050ed224a8b17ddf96ad51768216946.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579517",
+      "title": "2x TCA Campaign Currency & 2x Seals",
+      "summary": "Looking to make progress in The Cloaked Ascendancy campaign?",
+      "date": "2026-01-19",
+      "url": "https://www.playneverwinter.com/en/news-details/11579517",
+      "image": "https://pwimages-a.akamaihd.net/arc/69/f7/69f7d132a081820ba191aa899f9a19f01768490334.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579412",
+      "title": "Day of the Dungeon Master",
+      "summary": "Both Respen and Portobello are back!",
+      "date": "2026-01-15",
+      "url": "https://www.playneverwinter.com/en/news-details/11579412",
+      "image": "https://pwimages-a.akamaihd.net/arc/c3/c1/c3c15381867c1c0102e090ac055f32c21767968988.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579415",
+      "title": "2x Path of the Fallen Campaign Currency",
+      "summary": "Help restore a fallen angel’s divinity with 2x Path of the Fallen Campaign Currency.",
+      "date": "2026-01-12",
+      "url": "https://www.playneverwinter.com/en/news-details/11579415",
+      "image": "https://pwimages-a.akamaihd.net/arc/d7/2c/d72c5f96ff027426e481c7a7dce6eb171768213896.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579346",
+      "title": "2x Icewind Dale Campaign Currency",
+      "summary": "Lord Neverember is granting adventurers help in completing the Icewind Dale Campaign!",
+      "date": "2026-01-05",
+      "url": "https://www.playneverwinter.com/en/news-details/11579346",
+      "image": "https://pwimages-a.akamaihd.net/arc/d2/8d/d28d4f89630b3f3f2bb47d56bd0cae341767352019.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579331",
+      "title": "2x Professions",
+      "summary": "Reap the rewards of your laborers’ work!",
+      "date": "2026-01-05",
+      "url": "https://www.playneverwinter.com/en/news-details/11579331",
+      "image": "https://pwimages-a.akamaihd.net/arc/b9/7b/b97b7fe42079b7dda7ccd4b0c450271a1767349058.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579289",
+      "title": "2x Legacy Campaign Currency",
+      "summary": "Looking to advance in multiple campaigns?",
+      "date": "2025-12-29",
+      "url": "https://www.playneverwinter.com/en/news-details/11579289",
+      "image": "https://pwimages-a.akamaihd.net/arc/0a/ed/0aed39d67dc7f27a56c65068dbb55edc1766064410.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579193",
+      "title": "Bodies and Souls Battlepass - Phase 2",
+      "summary": "Unleash your spirit and steel your resolve with Neverwinter’s new Battle Pass - Bodies and Souls.",
+      "date": "2025-12-23",
+      "url": "https://www.playneverwinter.com/en/news-details/11579193",
+      "image": "https://pwimages-a.akamaihd.net/arc/39/76/39764f869ab8e681c9c115ae90fc970b1765965697.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-events",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579058",
+      "title": "25% Bonus Zen & Zen Sale",
+      "summary": "Adventurers that are always looking to make a good deal can now profit from 25% Bonus Zen on PC and from 20% off Zen packs on Xbox and PlayStation!",
+      "date": "2025-12-22",
+      "url": "https://www.playneverwinter.com/en/news-details/11579058",
+      "image": "https://pwimages-a.akamaihd.net/arc/eb/8e/eb8e1254368f2c64325598d284164e0d1764845109.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579229",
+      "title": "2x SKT Currency & 2x Glory",
+      "summary": "Looking to make progress in the Storm King’s Thunder campaign?",
+      "date": "2025-12-22",
+      "url": "https://www.playneverwinter.com/en/news-details/11579229",
+      "image": "https://pwimages-a.akamaihd.net/arc/07/95/07956a56b8956ed962b74b43272932111765988305.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579124",
+      "title": "The Winter Festival of Simril",
+      "summary": "It’s time for the return of Simril’s Winter Festival!",
+      "date": "2025-12-17",
+      "url": "https://www.playneverwinter.com/en/news-details/11579124",
+      "image": "https://pwimages-a.akamaihd.net/arc/3d/84/3d847051b469d45e08110f4ce403640b1765466747.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579136",
+      "title": "Patch Notes for 12/16/2025",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2025-12-16",
+      "url": "https://www.playneverwinter.com/en/news-details/11579136",
+      "image": "https://pwimages-a.akamaihd.net/arc/7a/2d/7a2d6fe053136e6e997a0f2c42ff2f921765792680.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579139",
+      "title": "2x Path of the Fallen Campaign Currency",
+      "summary": "Help restore a fallen angel’s divinity with 2x Path of the Fallen Campaign Currency.",
+      "date": "2025-12-15",
+      "url": "https://www.playneverwinter.com/en/news-details/11579139",
+      "image": "https://pwimages-a.akamaihd.net/arc/bd/7d/bd7d80f441103153b35534604434da451765794707.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579034",
+      "title": "Refinement Week",
+      "summary": "Lord Neverember has declared it a Refinement holiday!",
+      "date": "2025-12-08",
+      "url": "https://www.playneverwinter.com/en/news-details/11579034",
+      "image": "https://pwimages-a.akamaihd.net/arc/8e/7d/8e7d20a3282aa15bee048fe2d84f553f1764777163.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11579019",
+      "title": "2x Ravenloft Campaign Currency",
+      "summary": "The mists have chosen to assist adventurers in completing the Ravenloft Campaign!",
+      "date": "2025-12-08",
+      "url": "https://www.playneverwinter.com/en/news-details/11579019",
+      "image": "https://pwimages-a.akamaihd.net/arc/da/d5/dad54081cbc94e5f82d6b9f835a2931b1764775662.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11578980",
+      "title": "Patch Notes For 12/02/25",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2025-12-02",
+      "url": "https://www.playneverwinter.com/en/news-details/11578980",
+      "image": "https://pwimages-a.akamaihd.net/arc/27/92/27929a9c52e562d671588a0d9eded57d1764680219.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11578950",
+      "title": "2x Descent Into Avernus Currency",
+      "summary": "No devil or demon can stop you from completing the Descent Into Avernus Campaign!",
+      "date": "2025-12-01",
+      "url": "https://www.playneverwinter.com/en/news-details/11578950",
+      "image": "https://pwimages-a.akamaihd.net/arc/40/84/40846f1e1b40ef391fa807609e4776fb1764585427.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11578725",
+      "title": "Red Harvest II: The Soul Collector is here",
+      "summary": "Red Harvest II: The Soul Collector will allow players to explore what remains of Szass Tam’s dreaded Doomvault.",
+      "date": "2025-11-26",
+      "url": "https://www.playneverwinter.com/en/news-details/11578725",
+      "image": "https://pwimages-a.akamaihd.net/arc/ea/45/ea45b2da20114d6bd4a148b92994ed7b1763473589.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11578554",
+      "title": "Trial: Soul Harvest",
+      "summary": "“Even the stars whisper my name now!”",
+      "date": "2025-11-25",
+      "url": "https://www.playneverwinter.com/en/news-details/11578554",
+      "image": "https://pwimages-a.akamaihd.net/arc/dc/e8/dce86eb67661c8aeb8e7dbc614adbace1762787248.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11578905",
+      "title": "VAT Update - November 24, 2025",
+      "summary": "",
+      "date": "2025-11-30",
+      "url": "https://www.playneverwinter.com/en/news-details/11578905",
+      "image": "https://pwimages-a.akamaihd.net/arc/74/69/74699e909e7928725e8ba2702cceafc11764021158.jpg",
+      "platforms": [
+        "pc"
+      ],
+      "tags": [
+        "sto-news",
+        "pwi-news",
+        "sto-launcher",
+        "co-news",
+        "co-launcher",
+        "nw-launcher",
+        "nw-news",
+        "arc-news"
+      ]
+    },
+    {
+      "id": "11578608",
+      "title": "Grubby Goods Lockbox",
+      "summary": "Grubshank’s hand is surprisingly comfortable!",
+      "date": "2025-11-24",
+      "url": "https://www.playneverwinter.com/en/news-details/11578608",
+      "image": "https://pwimages-a.akamaihd.net/arc/8e/d1/8ed19fce167f87d35d8b225eb4ebeb151762872429.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11578851",
+      "title": "2x Dread Ring Currency & 2x Seals",
+      "summary": "Every time you would earn Dread Ring Currency, you’ll now receive twice the amount!",
+      "date": "2025-11-24",
+      "url": "https://www.playneverwinter.com/en/news-details/11578851",
+      "image": "https://pwimages-a.akamaihd.net/arc/b2/f7/b2f7fc1652c0e7a0ee10136cf89cf9481763979359.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11578836",
+      "title": "VAT Update",
+      "summary": "",
+      "date": "2025-11-21",
+      "url": "https://www.playneverwinter.com/en/news-details/11578836",
+      "image": "https://pwimages-a.akamaihd.net/arc/c7/bc/c7bc008297386992d4c21e5677db79b01763775128.jpg",
+      "platforms": [
+        "pc"
+      ],
+      "tags": [
+        "nw-news",
+        "neverwinter"
+      ]
+    },
+    {
+      "id": "11578809",
+      "title": "20% Bonus Zen & Zen Sale",
+      "summary": "Adventurers that are always looking to make a good deal can now profit from 20% Bonus Zen on PC and from 20% off Zen packs on Xbox and PlayStation!",
+      "date": "2025-11-21",
+      "url": "https://www.playneverwinter.com/en/news-details/11578809",
+      "image": "https://pwimages-a.akamaihd.net/arc/37/d1/37d1c646d84f472d47e8b31796d46f3f1763729718.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11578650",
+      "title": "Bodies and Souls Battlepass",
+      "summary": "Unleash your spirit and steel your resolve with Neverwinter’s new Battle Pass!",
+      "date": "2025-11-21",
+      "url": "https://www.playneverwinter.com/en/news-details/11578650",
+      "image": "https://pwimages-a.akamaihd.net/arc/e8/c5/e8c597587a6b7927bafda3a75a1384781763042809.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-events"
+      ]
+    },
+    {
+      "id": "11578770",
+      "title": "Claim your Arena prizes before December 10",
+      "summary": "While we don’t have any details yet, we plan to return to the Arena later in the form of a temporary event.",
+      "date": "2025-11-20",
+      "url": "https://www.playneverwinter.com/en/news-details/11578770",
+      "image": "https://pwimages-a.akamaihd.net/arc/98/3c/983c21542831f23ad6bb6dde9ffcc6b51763647021.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-events",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11578710",
+      "title": "Patch Notes For 11/18/25",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2025-11-18",
+      "url": "https://www.playneverwinter.com/en/news-details/11578710",
+      "image": "https://pwimages-a.akamaihd.net/arc/35/52/355203740748fcc954a002583299a4591763461000.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11578668",
+      "title": "2x Path of the Fallen Campaign Currency",
+      "summary": "Help restore a fallen angel’s divinity with 2x Path of the Fallen Campaign Currency.",
+      "date": "2025-11-17",
+      "url": "https://www.playneverwinter.com/en/news-details/11578668",
+      "image": "https://pwimages-a.akamaihd.net/arc/e8/47/e847bf99b62433520598fa276a4abdf31763114302.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11578503",
+      "title": "Harvester of Nightmares Returns!",
+      "summary": "The nightmares return as the mysterious creature known as the Harvester of Nightmares arrives once again to feast on the restless dreams of the sleeping citizens of Prote",
+      "date": "2025-11-13",
+      "url": "https://www.playneverwinter.com/en/news-details/11578503",
+      "image": "https://pwimages-a.akamaihd.net/arc/d1/b5/d1b5e521dcc156c5753c078df1d9d0ea1762513185.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11578635",
+      "title": "Login Calendar has started",
+      "summary": "A new Daily Login Calendar!",
+      "date": "2025-11-13",
+      "url": "https://www.playneverwinter.com/en/news-details/11578635",
+      "image": "https://pwimages-a.akamaihd.net/arc/24/7a/247ae5d3324b02f3377a5c57961bba491763032841.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    }
+  ]
+}

@@ -2,7 +2,13 @@
 
 A static, single-page Neverwinter guild dashboard. Visitors see the latest published snapshot from `data/snapshot.json`.
 
-Part of the Synergy guild site: [Guild Roster](https://jsynon.github.io/synergy-dashboard/) · [Masterwork Forge](https://jsynon.github.io/synergy-craft/) · [Discord](https://discord.gg/eMzcD6wJzh)
+Part of the Synergy guild site: [News](https://jsynon.github.io/synergy-dashboard/news.html) · [Guild Roster](https://jsynon.github.io/synergy-dashboard/) · [Guild Info](https://jsynon.github.io/synergy-dashboard/guild-info.html) · [Masterwork Forge](https://jsynon.github.io/synergy-craft/) · [Discord](https://discord.gg/eMzcD6wJzh)
+
+## Neverwinter News
+
+The dedicated [Neverwinter News page](https://jsynon.github.io/synergy-dashboard/news.html) displays recent official headlines, dates, summaries, platform availability, and links to the full articles. `scripts/fetch-neverwinter-news.mjs` retrieves up to 100 English entries from the official Arc Games news JSON endpoint and writes the public cache to `data/neverwinter-news.json`. The page reads this same-origin file, avoiding browser cross-origin restrictions.
+
+The GitHub Actions workflow in `.github/workflows/refresh-neverwinter-news.yml` refreshes the cache every six hours and supports manual runs. When the feed changes, it commits the new JSON and explicitly requests a GitHub Pages branch build so the refreshed data is published. `robots.txt` and `sitemap.xml` describe the public pages for search crawlers.
 
 ## What the page shows
 

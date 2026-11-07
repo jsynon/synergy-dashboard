@@ -1335,3 +1335,53 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
 .field label,
 .facet-label,
 .mobile-directory-sort label { font-family:var(--serif); }
+
+/* Five-link menu layout: three links on the first phone row, two centered below. */
+@media(max-width:520px) {
+  .masthead nav { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); width:100%; }
+  .masthead nav > a,
+  .masthead nav > .discord-link { min-width:0; min-height:42px; padding:8px 3px; border:0; font-size:clamp(.57rem,2.7vw,.72rem); white-space:nowrap; }
+  .masthead nav > a:nth-child(1),
+  .masthead nav > a:nth-child(2),
+  .masthead nav > a:nth-child(3) { grid-column:span 2; }
+  .masthead nav > a:nth-child(4) { grid-column:1 / span 3; }
+  .masthead nav > .discord-link { grid-column:4 / span 3; }
+  .masthead nav > a:nth-child(4),
+  .masthead nav > .discord-link { border-top:1px solid var(--frame-gold); }
+  .masthead nav > a:nth-child(2),
+  .masthead nav > a:nth-child(3),
+  .masthead nav > .discord-link { border-left:1px solid var(--frame-gold); }
+}
+
+/* Official Neverwinter news cards. */
+.news-page-intro { margin:18px 0 12px; }
+.news-feed-panel { margin:0 0 18px; padding:15px 17px; }
+.news-feed-heading { display:flex; align-items:flex-end; justify-content:space-between; gap:18px; margin-bottom:12px; }
+.news-feed-heading h2 { margin:0; color:var(--gold-bright); font:600 clamp(21px,3vw,28px)/1.2 var(--serif); }
+.news-feed-heading .kicker { margin-bottom:4px; }
+.news-feed-status { color:var(--muted); font-size:.76rem; text-align:right; }
+.news-feed-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.news-card { display:grid; grid-template-columns:minmax(0,1fr) 150px; gap:12px; min-width:0; padding:12px; border:1px solid rgba(190,160,103,.28); border-radius:8px; background:linear-gradient(130deg,rgba(7,24,35,.9),rgba(26,27,27,.88)); }
+.news-card:not(.has-image) { grid-template-columns:minmax(0,1fr); }
+.news-card-copy { min-width:0; }
+.news-card-date { margin:0 0 4px; color:var(--teal); font-size:.68rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+.news-card h3 { margin:0 0 7px; color:var(--gold-bright); font:600 1.03rem/1.3 var(--serif); }
+.news-card h3 a { color:inherit; text-decoration:none; text-underline-offset:3px; }
+.news-card h3 a:hover,.news-card h3 a:focus-visible { color:#fff0c3; text-decoration:underline; }
+.news-card-summary { margin:0; color:#d1dce2; font-size:.82rem; line-height:1.55; }
+.news-card-image { display:block; width:100%; height:100%; min-height:100px; max-height:150px; object-fit:cover; border:1px solid rgba(89,201,232,.24); border-radius:5px; background:#0a1923; }
+.news-card-link { display:inline-flex; margin-top:9px; color:var(--teal); font-size:.76rem; font-weight:600; text-decoration:none; }
+.news-card-link:hover,.news-card-link:focus-visible { color:var(--gold-bright); text-decoration:underline; text-underline-offset:3px; }
+.news-feed-actions { display:flex; justify-content:center; padding-top:15px; }
+.news-load-more { padding:9px 16px; border:1px solid var(--gold); border-radius:6px; color:var(--gold-bright); background:rgba(177,138,72,.12); font:600 .8rem var(--body); cursor:pointer; }
+.news-load-more:hover,.news-load-more:focus-visible { background:rgba(177,138,72,.24); }
+.news-load-more:focus-visible { outline:2px solid var(--teal); outline-offset:2px; }
+.news-feed-error { padding:16px; border:1px solid rgba(240,138,82,.42); border-radius:8px; color:#ffd6c0; background:rgba(65,27,18,.4); }
+@media(max-width:760px) { .news-feed-list { grid-template-columns:1fr; } }
+@media(max-width:520px) {
+  .news-feed-panel { padding:12px; }
+  .news-feed-heading { align-items:flex-start; flex-direction:column; gap:4px; }
+  .news-feed-status { text-align:left; }
+  .news-card { grid-template-columns:1fr; gap:9px; }
+  .news-card-image { grid-row:1; max-height:190px; aspect-ratio:16/9; }
+}
