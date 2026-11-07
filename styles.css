@@ -1502,7 +1502,7 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
 /* Compact Discord event rows on the News page. */
 .news-event-copy { display:flex; min-width:0; flex-direction:column; gap:2px; }
 .news-event-name { align-self:flex-start; color:var(--gold-bright); font:500 .9rem/1.35 var(--serif); text-decoration:none; text-underline-offset:3px; }
-.news-event-name:hover,.news-event-name:focus-visible { color:#fff0c3; text-decoration:underline; }
+a.news-event-name:hover,a.news-event-name:focus-visible { color:#fff0c3; text-decoration:underline; }
 .news-event-links { display:flex; flex-wrap:wrap; align-items:center; gap:8px; min-height:14px; }
 .news-event-link { color:var(--teal); font-size:.68rem; font-weight:600; text-decoration:none; }
 .news-event-link:hover,.news-event-link:focus-visible { color:var(--gold-bright); text-decoration:underline; text-underline-offset:3px; }
