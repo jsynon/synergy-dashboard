@@ -1515,3 +1515,16 @@ a.news-event-name:hover,a.news-event-name:focus-visible { color:#fff0c3; text-de
 a.news-event-name { display:inline-flex; flex-wrap:wrap; align-items:baseline; gap:3px 8px; }
 .news-event-name-destination { color:var(--teal); font:600 .64rem/1.35 var(--body); letter-spacing:.02em; }
 a.news-event-name:hover .news-event-name-destination,a.news-event-name:focus-visible .news-event-name-destination { color:var(--gold-bright); }
+
+
+/* Make promotion eligibility visible on the collapsed card and improve tile readability. */
+.promotion-count.has-alert { border-color:rgba(240,138,82,.65); color:#ffd0a8; background:rgba(91,42,22,.28); }
+.promotion-row { gap:5px 12px; padding:11px 12px; }
+.promotion-account-link { font-size:12px; }
+.promotion-account span { font-size:11px; }
+.promotion-path { font-size:11px; }
+.promotion-date { font-size:11px; }
+.promotion-character { padding:6px 8px; }
+.promotion-character b { font-size:11px; }
+.promotion-character small { font-size:10px; }
+.promotion-path-label { font-size:10px; }
