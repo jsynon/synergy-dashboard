@@ -44,7 +44,10 @@
     $('account-dialog-characters').innerHTML=members.length?members.map(member=>{
       const memberName=String(member.name||'').trim().toLocaleLowerCase();
       const escapedActivityName = memberName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const recentEventPattern = escapedActivityName?new RegExp(`(^|[^\\p{L}\\p{N}_@])${escapedActivityName}(?=$|[^\\p{L}\\p{N}_])`,'iu'):null;
+      const activityAccount=String(member.account||'').trim().replace(/^@/,'');
+      const escapedActivityAccount=activityAccount.replace(/[.]/g,'\\.');
+      const accountSuffix=escapedActivityAccount?'@'+escapedActivityAccount:'@[A-Za-z0-9._-]+(?:#[A-Za-z0-9]+)?';
+      const recentEventPattern=escapedActivityName?new RegExp("^"+escapedActivityName+"(?:"+accountSuffix+")?(?=(?:['’]s\\s+(?:guild\\s+rank|permission)\\b|\\s+(?:has\\s+(?:joined|left|been|disabled|enabled)|guild\\s+rank\\b|rank\\s+|was\\b|is\\b|joined\\b|left\\b|disabled\\b|enabled\\b)))","iu"):null;
       const recentEvents=[];
       const seenRecentEvents=new Set();
       if(recentEventPattern){
@@ -60,9 +63,9 @@
           if(!canonicalText||seenRecentEvents.has(eventKey))continue;
           seenRecentEvents.add(eventKey);
           recentEvents.push(event);
-          if(recentEvents.length===3)break;
         }
       }
+      const renderActivityRows=events=>events.map(event=>`<div class="account-linked-row"><span>${escapeHtml(event.text)}</span><time>${formatDate(asDate(event.date),true)}</time></div>`).join('');
       const bankEvents=state.bankEvents.filter(event=>normalizeAccountKey(event.account)===normalizeAccountKey(value)&&String(event.player||'').trim().toLocaleLowerCase()===memberName).slice(0,3);
       return `<article class="account-character-card">
       <div class="account-character-heading"><div><strong>${escapeHtml(member.name)}</strong><span class="account-character-class">${escapeHtml(member.class)}</span></div><span class="rank-tag"><i class="rank-dot rank-${member.rankOrder}"></i>${escapeHtml(member.rank)}</span></div>
@@ -71,7 +74,7 @@
         <div><small>Last online</small><span>${displayStatus(member)}</span></div>
       </div>
       ${member.comment?`<div class="account-character-comment"><small>Member comment</small><span>${escapeHtml(member.comment)}</span></div>`:''}
-      ${recentEvents.length?`<div class="account-linked-section"><small>Recent activity</small>${recentEvents.map(event=>`<div class="account-linked-row"><span>${escapeHtml(event.text)}</span><time>${formatDate(asDate(event.date),true)}</time></div>`).join('')}</div>`:''}
+      ${recentEvents.length?`<div class="account-linked-section"><small>Recent activity · ${recentEvents.length}</small>${renderActivityRows(recentEvents.slice(0,3))}${recentEvents.length>3?`<details class="account-activity-more"><summary>Show ${recentEvents.length-3} earlier ${recentEvents.length-3===1?'event':'events'}</summary>${renderActivityRows(recentEvents.slice(3))}</details>`:''}</div>`:''}
       ${bankEvents.length?`<div class="account-linked-section"><small>Guild bank activity</small>${bankEvents.map(event=>`<div class="account-linked-row"><span>${escapeHtml(event.action==='deposit'?'Deposited':'Withdrew')} ${escapeHtml(event.item||'item')} · ${new Intl.NumberFormat('en-US').format(event.amount)}</span><time>${formatDate(asDate(event.date),true)}</time></div>`).join('')}</div>`:''}
     </article>`;
     }).join(''):'<div class="empty-state">No characters are listed for this account.</div>';
