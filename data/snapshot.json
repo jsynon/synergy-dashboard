@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T01:05:30+00:00",
+  "generatedAt": "2026-11-08T01:07:15+00:00",
   "accountCount": 148,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -5224,6 +5224,26 @@
     }
   ],
   "events": [
+    {
+      "date": "2026-11-07T20:05:19",
+      "kind": "rank",
+      "text": "Mez@Mezotis#65886's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-11-07T20:05:17",
+      "kind": "rank",
+      "text": "Mez@Mezotis#65886's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-11-07T20:05:14",
+      "kind": "rank",
+      "text": "Mezina@Mezotis#65886's guild rank is now Stalwart"
+    },
+    {
+      "date": "2026-11-07T20:05:12",
+      "kind": "rank",
+      "text": "Mezina@Mezotis#65886's guild rank is now Wayfarer"
+    },
     {
       "date": "2026-11-07T18:18:20",
       "kind": "join",
