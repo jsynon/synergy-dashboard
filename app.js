@@ -55,7 +55,7 @@
           if(!recentEventPattern.test(event.text))continue;
           const canonicalText=String(event.text||'')
             .replace(/@[A-Za-z0-9._-]+(?:#[A-Za-z0-9]+)?/g,' ')
-            .replace(/[^\\p{L}\\p{N}]+/gu,' ')
+            .replace(/[^\p{L}\p{N}]+/gu,' ')
             .trim()
             .toLocaleLowerCase();
           const minute=Math.floor(event.date.getTime()/60000);
