@@ -38,8 +38,28 @@ def read_csv(path: Path):
                                   ("member comments", "member comment", "comment")
                                   if name in header_indexes), None)
             if comment_index is not None:
-                # Preserve unquoted commas when comments appear as the final export column.
-                record["_member_comment"] = ",".join(values[comment_index:]).strip()
+                # The game writes generated "Last online ..." text in Status comments.
+                # Find that field after Member comments so it is never displayed as a member note.
+                status_index = next(
+                    (index for index in range(comment_index, len(values))
+                     if re.match(r"^\\s*Last online\\b", values[index], re.IGNORECASE)),
+                    None,
+                )
+                if status_index is not None:
+                    comment_values = values[comment_index:status_index]
+                elif len(values) > len(headers):
+                    # Preserve unquoted commas in a member comment while reserving the
+                    # trailing status and officer comment columns.
+                    trailing_columns = sum(
+                        name in header_indexes
+                        for name in ("status comments", "officer comments")
+                    )
+                    comment_values = values[comment_index:max(comment_index, len(values) - trailing_columns)]
+                else:
+                    comment_values = values[comment_index:comment_index + 1]
+                record["_member_comment"] = re.sub(
+                    r"\\s+", " ", ",".join(comment_values)
+                ).strip(" ,")
             records.append(record)
         return records
 
