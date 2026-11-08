@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T01:04:22+00:00",
+  "generatedAt": "2026-11-08T01:05:30+00:00",
   "accountCount": 148,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -4783,8 +4783,8 @@
     {
       "name": "Mez",
       "account": "@Mezotis#65886",
-      "rank": "Initiate",
-      "rankOrder": 1,
+      "rank": "Stalwart",
+      "rankOrder": 3,
       "class": "Fighter",
       "level": "20",
       "joinDate": "2026-11-07T18:17:39",
@@ -5160,8 +5160,8 @@
     {
       "name": "Mezina",
       "account": "@Mezotis#65886",
-      "rank": "Initiate",
-      "rankOrder": 1,
+      "rank": "Stalwart",
+      "rankOrder": 3,
       "class": "Cleric",
       "level": "20",
       "joinDate": "2026-11-07T18:18:20",
