@@ -22,13 +22,22 @@
     const value=String(account||'').trim();
     return value?`<a class="directory-account-link" href="#account-details" aria-haspopup="dialog" aria-label="View characters for ${escapeHtml(value)}" data-account-query="${escapeHtml(value)}">${escapeHtml(value)}</a>`:'—';
   };
-  function showAccountDetails(account){
-    const value=String(account||'').trim();
-    const key=(value.startsWith('@')?value:'@'+value).toLocaleLowerCase();
-    const members=state.roster.filter(member=>{
-      const memberAccount=String(member.account||'').trim();
-      return (memberAccount.startsWith('@')?memberAccount:'@'+memberAccount).toLocaleLowerCase()===key;
-    }).sort((a,b)=>a.name.localeCompare(b.name));
+  const normalizeAccountKey=(account)=>String(account||'').trim().replace(/^@/,'').toLocaleLowerCase();
+  function showAccountDetails(account,memberName=''){
+    let value=String(account||'').trim();
+    const accountKey=normalizeAccountKey(value);
+    let members=state.roster.filter(member=>normalizeAccountKey(member.account)===accountKey);
+    if(!members.length){
+      const lookupName=String(memberName||value).trim().toLocaleLowerCase();
+      const matchedMember=state.roster.find(member=>String(member.name||'').trim().toLocaleLowerCase()===lookupName&&member.account);
+      if(matchedMember){
+        value=String(matchedMember.account).trim();
+        const matchedAccountKey=normalizeAccountKey(value);
+        members=state.roster.filter(member=>normalizeAccountKey(member.account)===matchedAccountKey);
+      }
+    }
+    members.sort((a,b)=>a.name.localeCompare(b.name));
+    const key='@'+normalizeAccountKey(value);
     const joinDate=state.accountJoinDates[key]||members.map(member=>member.originalJoinDate||member.joinDate).filter(Boolean).sort()[0]||null;
     $('account-dialog-title').textContent=value||'Account details';
     $('account-dialog-summary').textContent=`${members.length.toLocaleString()} ${members.length===1?'character':'characters'} · Earliest verified guild join ${formatDate(asDate(joinDate))}`;
@@ -362,7 +371,7 @@
     const link=event.target.closest('.activity-member-link');
     if(!link)return;
     event.preventDefault();
-    showAccountDetails(link.dataset.accountQuery||link.dataset.memberQuery||'');
+    showAccountDetails(link.dataset.accountQuery||'',link.dataset.memberQuery||'');
   });
   $('bank-events').addEventListener('click',event=>{
     const link=event.target.closest('.bank-account-link');
