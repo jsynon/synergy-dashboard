@@ -1528,3 +1528,10 @@ a.news-event-name:hover .news-event-name-destination,a.news-event-name:focus-vis
 .promotion-character b { font-size:11px; }
 .promotion-character small { font-size:10px; }
 .promotion-path-label { font-size:10px; }
+
+
+/* Hide the insertion caret in dashboard search fields, matching the Forge search treatment. */
+input[type="search"] { caret-color:transparent !important; }
+
+/* Match roster rank/class option text to the Masterwork Forge filter size. */
+.facet-select-field select,.facet-select-field option { font-size:.72rem; }
