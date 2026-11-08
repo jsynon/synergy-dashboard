@@ -43,9 +43,9 @@
     $('account-dialog-summary').textContent=`${members.length.toLocaleString()} ${members.length===1?'character':'characters'} · Earliest verified guild join ${formatDate(asDate(joinDate))}`;
     $('account-dialog-characters').innerHTML=members.length?members.map(member=>{
       const memberName=String(member.name||'').trim().toLocaleLowerCase();
-      const escapedActivityName=memberName.replace(/[.*+?^${}()|[\\]\\\\]/g,'\\\\$&');
+      const escapedActivityName=memberName.replace(/[.*+?^${}()|[\]\\]/g,'\$&');
       const longerNameSuffixes=[...new Set(state.roster.map(candidate=>String(candidate.name||'').trim()).filter(name=>name.length>memberName.length&&name.toLocaleLowerCase().startsWith(memberName+' ')).map(name=>name.slice(memberName.length).toLocaleLowerCase()))];
-      const eventMentionPattern=escapedActivityName?new RegExp('(^|[^\\\\p{L}\\\\p{N}_@])('+escapedActivityName+')(?=$|[^\\\\p{L}\\\\p{N}_])','giu'):null;
+      const eventMentionPattern=escapedActivityName?new RegExp('(^|[^\\p{L}\\p{N}_@])('+escapedActivityName+')(?=$|[^\\p{L}\\p{N}_])','giu'):null;
       const mentionsCharacter=text=>{
         if(!eventMentionPattern)return false;
         const value=String(text||'');
@@ -63,7 +63,7 @@
         if(!mentionsCharacter(event.text))continue;
         const canonicalText=String(event.text||'')
           .replace(/@[A-Za-z0-9._-]+(?:#[A-Za-z0-9]+)?/g,' ')
-          .replace(/[^\\p{L}\\p{N}]+/gu,' ')
+          .replace(/[^\p{L}\p{N}]+/gu,' ')
           .trim()
           .toLocaleLowerCase();
         const minute=Math.floor(event.date.getTime()/60000);
