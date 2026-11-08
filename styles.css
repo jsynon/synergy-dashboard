@@ -113,7 +113,7 @@ a { color: inherit; }
 .toolbar { display:flex; gap:9px; margin-bottom:11px; }
 .search-box { display:flex; align-items:center; flex:1; gap:8px; min-width:190px; padding:0 11px; border:1px solid rgba(194,207,218,.24); background:#0d1824; color:var(--gold); font-size:19px; }
 .search-box:focus-within { border-color:var(--gold); box-shadow:0 0 0 3px rgba(210,173,104,.13); }
-.search-box input { width:100%; min-height:40px; border:0; outline:0; color:var(--text); background:transparent; font:12px var(--body); }
+.search-box input { caret-color:transparent; width:100%; min-height:40px; border:0; outline:0; color:var(--text); background:transparent; font:12px var(--body); }
 .search-box input::placeholder { color:#9b927f; }
 .directory-facets { display:grid; gap:8px; margin:0 0 12px; padding:10px 11px; border:1px solid rgba(177,138,72,.28); background:rgba(13,17,20,.48); }
 .facet-row { display:grid; grid-template-columns:47px minmax(0,1fr); gap:8px; align-items:start; }
