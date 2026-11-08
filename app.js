@@ -41,14 +41,21 @@
     const joinDate=state.accountJoinDates[key]||members.map(member=>member.originalJoinDate||member.joinDate).filter(Boolean).sort()[0]||null;
     $('account-dialog-title').textContent=value||'Account details';
     $('account-dialog-summary').textContent=`${members.length.toLocaleString()} ${members.length===1?'character':'characters'} · Earliest verified guild join ${formatDate(asDate(joinDate))}`;
-    $('account-dialog-characters').innerHTML=members.length?members.map(member=>`<article class="account-character-card">
+    $('account-dialog-characters').innerHTML=members.length?members.map(member=>{
+      const memberName=String(member.name||'').trim().toLocaleLowerCase();
+      const recentEvents=state.events.filter(event=>event.text.toLocaleLowerCase().includes(memberName)).slice(0,3);
+      const bankEvents=state.bankEvents.filter(event=>normalizeAccountKey(event.account)===normalizeAccountKey(value)&&String(event.player||'').trim().toLocaleLowerCase()===memberName).slice(0,3);
+      return `<article class="account-character-card">
       <div class="account-character-heading"><div><strong>${escapeHtml(member.name)}</strong><span class="account-character-class">${escapeHtml(member.class)}</span></div><span class="rank-tag"><i class="rank-dot rank-${member.rankOrder}"></i>${escapeHtml(member.rank)}</span></div>
       <div class="account-character-details">
         <div><small>Joined</small><span>${formatDate(member.joinDate)}</span></div>
         <div><small>Last online</small><span>${displayStatus(member)}</span></div>
       </div>
-      ${member.comment?'<div class="account-character-comment"><small>Member comment</small><span>'+escapeHtml(member.comment)+'</span></div>':''}
-    </article>`).join(''):'<div class="empty-state">No characters are listed for this account.</div>';
+      ${member.comment?`<div class="account-character-comment"><small>Member comment</small><span>${escapeHtml(member.comment)}</span></div>`:''}
+      ${recentEvents.length?`<div class="account-linked-section"><small>Recent activity</small>${recentEvents.map(event=>`<div class="account-linked-row"><span>${escapeHtml(event.text)}</span><time>${formatDate(asDate(event.date),true)}</time></div>`).join('')}</div>`:''}
+      ${bankEvents.length?`<div class="account-linked-section"><small>Guild bank activity</small>${bankEvents.map(event=>`<div class="account-linked-row"><span>${escapeHtml(event.action==='deposit'?'Deposited':'Withdrew')} ${escapeHtml(event.item||'item')} · ${new Intl.NumberFormat('en-US').format(event.amount)}</span><time>${formatDate(asDate(event.date),true)}</time></div>`).join('')}</div>`:''}
+    </article>`;
+    }).join(''):'<div class="empty-state">No characters are listed for this account.</div>';
     $('account-dialog').showModal();
   }
   function renderSnapshotStatus(){
@@ -286,12 +293,16 @@
   }
   function renderBankActivity(){
     const query=$('bank-search').value.trim().toLocaleLowerCase();
+    const actionFilter=$('bank-type-filter').value;
+    const periodDays=Number($('bank-period-filter').value)||0;
+    const cutoff=periodDays?Date.now()-periodDays*86400000:0;
     const matches=state.bankEvents.filter(event=>[
       event.player,event.account,event.item,event.action,event.category,formatDate(event.date,true)
-    ].join(' ').toLocaleLowerCase().includes(query));
+    ].join(' ').toLocaleLowerCase().includes(query)&&(!actionFilter||event.action===actionFilter)&&(!cutoff||event.date.getTime()>=cutoff));
     const rows=matches.slice(0,state.bankVisible);
     const total=state.bankEvents.length;
-    $('bank-results-count').textContent=query
+    const filtered=Boolean(query||actionFilter||periodDays);
+    $('bank-results-count').textContent=filtered
       ? `${matches.length.toLocaleString()} of ${total.toLocaleString()} bank entries match`
       : `${total.toLocaleString()} bank entries · showing ${rows.length.toLocaleString()}`;
     $('bank-events').innerHTML=rows.length?rows.map(event=>{
@@ -309,7 +320,7 @@
         <span class="bank-event-action ${isDeposit?'deposit':'withdrawal'}">${action}</span>
         <strong class="bank-event-amount ${isDeposit?'deposit':'withdrawal'}">${sign}${quantity}</strong>
       </div>`;
-    }).join(''):(query?'<div class="empty-state">No bank entries match this search.</div>':'<div class="empty-state">No published bank activity is available.</div>');
+    }).join(''):(filtered?'<div class="empty-state">No bank entries match these filters.</div>':'<div class="empty-state">No published bank activity is available.</div>');
     $('bank-show-more').hidden=rows.length>=matches.length;
   }
   function render(){renderSnapshotStatus();renderDirectoryFilters();renderRoster();renderRecent();renderBankActivity();renderPromotions();renderInactivityAlerts();}
@@ -330,6 +341,8 @@
   $('activity-type-filter').addEventListener('change',renderRecent);
   $('activity-period-filter').addEventListener('change',renderRecent);
   $('bank-search').addEventListener('input',()=>{state.bankVisible=30;renderBankActivity();});
+  $('bank-type-filter').addEventListener('change',()=>{state.bankVisible=30;renderBankActivity();});
+  $('bank-period-filter').addEventListener('change',()=>{state.bankVisible=30;renderBankActivity();});
   $('bank-show-more').addEventListener('click',()=>{state.bankVisible+=30;renderBankActivity();});
   $('promotion-search').addEventListener('input',renderPromotions);
   $('roster').addEventListener('click',event=>{

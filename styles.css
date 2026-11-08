@@ -163,6 +163,7 @@ tbody tr:hover { background:rgba(177,138,72,.07); }
 .bank-panel[open] > .bank-panel-summary { border-bottom:1px solid rgba(89,201,232,.32); }
 .bank-panel-body { padding:14px 19px 16px; }
 .bank-search-field { margin-bottom:7px; }
+.bank-filters { margin-top:0; }
 .bank-events { max-height:450px; overflow-y:auto; padding-right:7px; scrollbar-color:#80643b #171d21; scrollbar-width:thin; }
 .bank-event-row { display:grid; grid-template-columns:140px minmax(0,1fr) 82px 80px; align-items:center; gap:8px 12px; padding:10px 3px; border-bottom:1px solid rgba(190,204,215,.09); }
 .bank-event-date { color:var(--muted); font-size:10px; white-space:nowrap; }
@@ -1016,6 +1017,11 @@ html,body { overflow-x:clip; }
 .account-character-comment { display:grid; gap:3px; min-width:0; padding-top:7px; border-top:1px solid rgba(50,197,223,.16); }
 .account-character-comment small { color:#a99570; font-size:9px; letter-spacing:.06em; text-transform:uppercase; }
 .account-character-comment span { color:var(--text); font-size:11px; line-height:1.45; overflow-wrap:anywhere; }
+.account-linked-section { display:grid; gap:5px; min-width:0; padding-top:7px; border-top:1px solid rgba(50,197,223,.16); }
+.account-linked-section > small { color:#a99570; font-size:9px; letter-spacing:.06em; text-transform:uppercase; }
+.account-linked-row { display:flex; justify-content:space-between; gap:10px; color:var(--text); font-size:10px; line-height:1.45; }
+.account-linked-row span { min-width:0; overflow-wrap:anywhere; }
+.account-linked-row time { flex:none; color:var(--muted); white-space:nowrap; }
 .directory-account-link[aria-haspopup="dialog"] { text-underline-offset:3px; }
 @media(max-width:620px) {
   .activity-filters { grid-template-columns:1fr; gap:7px; }

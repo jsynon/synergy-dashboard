@@ -116,6 +116,10 @@
             <div class="search-box"><span aria-hidden="true">⌕</span><input id="bank-search" type="search" placeholder="Character, account, item, or category" autocomplete="off"></div>
             <p id="bank-results-count" class="search-results-count" aria-live="polite">Bank activity will appear when the roster snapshot loads.</p>
           </div>
+          <div class="activity-filters bank-filters" aria-label="Guild bank filters">
+            <div class="field"><label for="bank-type-filter">Transaction type</label><select id="bank-type-filter"><option value="">All transactions</option><option value="deposit">Deposits</option><option value="withdraw">Withdrawals</option></select></div>
+            <div class="field"><label for="bank-period-filter">Time period</label><select id="bank-period-filter"><option value="0">All time</option><option value="7">Past 7 days</option><option value="30">Past 30 days</option><option value="90">Past 90 days</option><option value="365">Past year</option></select></div>
+          </div>
           <div id="bank-events" class="bank-events"><div class="empty-state">No published bank activity is available.</div></div>
           <div class="bank-events-actions"><button type="button" id="bank-show-more" class="text-button" hidden>Show more bank activity</button></div>
         </div>
