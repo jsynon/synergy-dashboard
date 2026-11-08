@@ -43,27 +43,34 @@
     $('account-dialog-summary').textContent=`${members.length.toLocaleString()} ${members.length===1?'character':'characters'} · Earliest verified guild join ${formatDate(asDate(joinDate))}`;
     $('account-dialog-characters').innerHTML=members.length?members.map(member=>{
       const memberName=String(member.name||'').trim().toLocaleLowerCase();
-      const escapedActivityName = memberName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const activityAccount=String(member.account||'').trim().replace(/^@/,'');
-      const escapedActivityAccount=activityAccount.replace(/[.]/g,'\\.');
-      const accountSuffix=escapedActivityAccount?'@'+escapedActivityAccount:'@[A-Za-z0-9._-]+(?:#[A-Za-z0-9]+)?';
-      const recentEventPattern=escapedActivityName?new RegExp("^"+escapedActivityName+"(?:"+accountSuffix+")?(?=(?:['’]s\\s+(?:guild\\s+rank|permission)\\b|\\s+(?:has\\s+(?:joined|left|been|disabled|enabled)|guild\\s+rank\\b|rank\\s+|was\\b|is\\b|joined\\b|left\\b|disabled\\b|enabled\\b)))","iu"):null;
+      const escapedActivityName=memberName.replace(/[.*+?^${}()|[\\]\\\\]/g,'\\\\$&');
+      const longerNameSuffixes=[...new Set(state.roster.map(candidate=>String(candidate.name||'').trim()).filter(name=>name.length>memberName.length&&name.toLocaleLowerCase().startsWith(memberName+' ')).map(name=>name.slice(memberName.length).toLocaleLowerCase()))];
+      const eventMentionPattern=escapedActivityName?new RegExp('(^|[^\\\\p{L}\\\\p{N}_@])('+escapedActivityName+')(?=$|[^\\\\p{L}\\\\p{N}_])','giu'):null;
+      const mentionsCharacter=text=>{
+        if(!eventMentionPattern)return false;
+        const value=String(text||'');
+        let match;
+        while((match=eventMentionPattern.exec(value))){
+          const afterName=value.slice(match.index+match[1].length+match[2].length).toLocaleLowerCase();
+          if(longerNameSuffixes.some(suffix=>afterName.startsWith(suffix)))continue;
+          return true;
+        }
+        return false;
+      };
       const recentEvents=[];
       const seenRecentEvents=new Set();
-      if(recentEventPattern){
-        for(const event of state.events){
-          if(!recentEventPattern.test(event.text))continue;
-          const canonicalText=String(event.text||'')
-            .replace(/@[A-Za-z0-9._-]+(?:#[A-Za-z0-9]+)?/g,' ')
-            .replace(/[^\p{L}\p{N}]+/gu,' ')
-            .trim()
-            .toLocaleLowerCase();
-          const minute=Math.floor(event.date.getTime()/60000);
-          const eventKey=canonicalText+'|'+minute;
-          if(!canonicalText||seenRecentEvents.has(eventKey))continue;
-          seenRecentEvents.add(eventKey);
-          recentEvents.push(event);
-        }
+      for(const event of state.events){
+        if(!mentionsCharacter(event.text))continue;
+        const canonicalText=String(event.text||'')
+          .replace(/@[A-Za-z0-9._-]+(?:#[A-Za-z0-9]+)?/g,' ')
+          .replace(/[^\\p{L}\\p{N}]+/gu,' ')
+          .trim()
+          .toLocaleLowerCase();
+        const minute=Math.floor(event.date.getTime()/60000);
+        const eventKey=canonicalText+'|'+minute;
+        if(!canonicalText||seenRecentEvents.has(eventKey))continue;
+        seenRecentEvents.add(eventKey);
+        recentEvents.push(event);
       }
       const renderActivityRows=events=>events.map(event=>`<div class="account-linked-row"><span>${escapeHtml(event.text)}</span><time>${formatDate(asDate(event.date),true)}</time></div>`).join('');
       const bankEvents=state.bankEvents.filter(event=>normalizeAccountKey(event.account)===normalizeAccountKey(value)&&String(event.player||'').trim().toLocaleLowerCase()===memberName).slice(0,3);
