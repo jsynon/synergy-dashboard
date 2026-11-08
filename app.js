@@ -24,9 +24,11 @@
   };
   function showAccountDetails(account){
     const value=String(account||'').trim();
-    const key=value.toLocaleLowerCase();
-    const members=state.roster.filter(member=>String(member.account||'').trim().toLocaleLowerCase()===key)
-      .sort((a,b)=>a.name.localeCompare(b.name));
+    const key=(value.startsWith('@')?value:'@'+value).toLocaleLowerCase();
+    const members=state.roster.filter(member=>{
+      const memberAccount=String(member.account||'').trim();
+      return (memberAccount.startsWith('@')?memberAccount:'@'+memberAccount).toLocaleLowerCase()===key;
+    }).sort((a,b)=>a.name.localeCompare(b.name));
     const joinDate=state.accountJoinDates[key]||members.map(member=>member.originalJoinDate||member.joinDate).filter(Boolean).sort()[0]||null;
     $('account-dialog-title').textContent=value||'Account details';
     $('account-dialog-summary').textContent=`${members.length.toLocaleString()} ${members.length===1?'character':'characters'} · Earliest verified guild join ${formatDate(asDate(joinDate))}`;
