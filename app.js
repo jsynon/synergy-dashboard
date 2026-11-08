@@ -78,7 +78,12 @@
       const eligibleDate=addCalendarMonths(account.joinDate,monthsByRank[account.rankOrder]);
       return {...account,eligibleDate};
     }).sort((a,b)=>a.eligibleDate-b.eligibleDate||a.account.localeCompare(b.account));
+    const eligibleNow=milestones.filter(account=>account.eligibleDate<=now);
     const upcoming=milestones.filter(account=>account.eligibleDate<=endOfWindow);
+    const promotionCount=$('promotion-count');
+    promotionCount.textContent=`${eligibleNow.length} ${eligibleNow.length===1?'eligible account':'eligible accounts'}`;
+    promotionCount.classList.toggle('has-alert',eligibleNow.length>0);
+    promotionCount.setAttribute('aria-label', eligibleNow.length ? `${eligibleNow.length} accounts eligible for promotion now` : 'No accounts currently eligible for promotion');
     const endOfSearchWindow=addCalendarMonths(startOfToday,12);
     endOfSearchWindow.setHours(23,59,59,999);
     const searchable=milestones.filter(account=>account.eligibleDate<=endOfSearchWindow);
