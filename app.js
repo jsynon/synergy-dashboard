@@ -45,7 +45,24 @@
       const memberName=String(member.name||'').trim().toLocaleLowerCase();
       const escapedActivityName = memberName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
       const recentEventPattern = escapedActivityName?new RegExp(`(^|[^\\p{L}\\p{N}_@])${escapedActivityName}(?=$|[^\\p{L}\\p{N}_])`,'iu'):null;
-      const recentEvents=recentEventPattern?state.events.filter(event=>recentEventPattern.test(event.text)).slice(0,3):[];
+      const recentEvents=[];
+      const seenRecentEvents=new Set();
+      if(recentEventPattern){
+        for(const event of state.events){
+          if(!recentEventPattern.test(event.text))continue;
+          const canonicalText=String(event.text||'')
+            .replace(/@[A-Za-z0-9._-]+(?:#[A-Za-z0-9]+)?/g,' ')
+            .replace(/[^\\p{L}\\p{N}]+/gu,' ')
+            .trim()
+            .toLocaleLowerCase();
+          const minute=Math.floor(event.date.getTime()/60000);
+          const eventKey=canonicalText+'|'+minute;
+          if(!canonicalText||seenRecentEvents.has(eventKey))continue;
+          seenRecentEvents.add(eventKey);
+          recentEvents.push(event);
+          if(recentEvents.length===3)break;
+        }
+      }
       const bankEvents=state.bankEvents.filter(event=>normalizeAccountKey(event.account)===normalizeAccountKey(value)&&String(event.player||'').trim().toLocaleLowerCase()===memberName).slice(0,3);
       return `<article class="account-character-card">
       <div class="account-character-heading"><div><strong>${escapeHtml(member.name)}</strong><span class="account-character-class">${escapeHtml(member.class)}</span></div><span class="rank-tag"><i class="rank-dot rank-${member.rankOrder}"></i>${escapeHtml(member.rank)}</span></div>
