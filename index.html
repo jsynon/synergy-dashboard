@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261107-bank-right-column">
+  <link rel="stylesheet" href="styles.css?v=20261108-visible-search-caret">
   <script src="app.js?v=20261107-bank-account-popup" defer></script>
   <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
 </head>
@@ -121,8 +121,7 @@
         </div>
       </details>
       <details class="panel promotions-panel collapsible-panel" id="upcoming-promotions" aria-labelledby="promotion-title">
-        <summary class="panel-heading collapsible-heading"><div><p class="kicker">Guild milestones</p><h2 id="promotion-title">Upcoming promotions</h2><p class="section-subtitle">Accounts eligible now or approaching a <button type="button" class="promotion-rules-link" id="show-promotion-rules">tenure milestone</button>.</p></div><span class="guild-info-toggle" aria-hidden="true"></span></summary>
-        <div class="collapsible-panel-body">
+        <summary class="panel-heading collapsible-heading"><div><p class="kicker">Guild milestones</p><h2 id="promotion-title">Upcoming promotions</h2><p class="section-subtitle">Accounts eligible now or approaching a <button type="button" class="promotion-rules-link" id="show-promotion-rules">tenure milestone</button>.</p></div><span class="collapsible-header-meta"><span class="count-pill promotion-count" id="promotion-count" aria-live="polite">—</span><span class="guild-info-toggle" aria-hidden="true"></span></span></summary>
         <div class="collapsible-panel-body">
         <div class="field promotion-search-field"><label for="promotion-search">Search promotions</label><div class="search-box"><span aria-hidden="true">⌕</span><input id="promotion-search" type="search" placeholder="Character or account name" autocomplete="off"></div><p id="promotion-search-results" class="search-results-count" aria-live="polite">Promotion account results will appear here.</p></div>
         <div id="promotion-list" class="promotion-list"><div class="empty-state">Promotion milestones will appear when the roster snapshot loads.</div></div>
