@@ -43,7 +43,9 @@
     $('account-dialog-summary').textContent=`${members.length.toLocaleString()} ${members.length===1?'character':'characters'} · Earliest verified guild join ${formatDate(asDate(joinDate))}`;
     $('account-dialog-characters').innerHTML=members.length?members.map(member=>{
       const memberName=String(member.name||'').trim().toLocaleLowerCase();
-      const recentEvents=state.events.filter(event=>event.text.toLocaleLowerCase().includes(memberName)).slice(0,3);
+      const escapedActivityName = memberName.replace(/[.*+?^${}()|[\]\\]/g, '\\const recentEvents=state.events.filter(event=>event.text.toLocaleLowerCase().includes(memberName)).slice(0,3);');
+      const recentEventPattern = escapedActivityName?new RegExp(`(^|[^\\p{L}\\p{N}_@])${escapedActivityName}(?=$|[^\\p{L}\\p{N}_])`,'iu'):null;
+      const recentEvents=recentEventPattern?state.events.filter(event=>recentEventPattern.test(event.text)).slice(0,3):[];
       const bankEvents=state.bankEvents.filter(event=>normalizeAccountKey(event.account)===normalizeAccountKey(value)&&String(event.player||'').trim().toLocaleLowerCase()===memberName).slice(0,3);
       return `<article class="account-character-card">
       <div class="account-character-heading"><div><strong>${escapeHtml(member.name)}</strong><span class="account-character-class">${escapeHtml(member.class)}</span></div><span class="rank-tag"><i class="rank-dot rank-${member.rankOrder}"></i>${escapeHtml(member.rank)}</span></div>
