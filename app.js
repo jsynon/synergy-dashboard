@@ -227,8 +227,9 @@
       let account=(sameAccount?rawHandle:((member&&member.account)||rawHandle||''));
       if(account&&!account.startsWith('@'))account='@'+account;
       const label=match[2]+account;
-      const query=member?(member.account||member.name):match[2];
-      html+=`<a class="activity-member-link" href="#account-dialog" aria-haspopup="dialog" data-member-query="${escapeHtml(query)}" data-account-query="${escapeHtml(account||query)}">${escapeHtml(label)}</a>`;
+      const accountQuery=String(account||'').replace(/^@/,'').trim();
+      const query=member?(member.account||member.name):(accountQuery||match[2]);
+      html+=`<a class="activity-member-link" href="#account-dialog" aria-haspopup="dialog" data-member-query="${escapeHtml(query)}" data-account-query="${escapeHtml(accountQuery||query)}">${escapeHtml(label)}</a>`;
       if(member&&account)searchableHandles.set(member.name.toLocaleLowerCase(),account);
       cursor=nameEnd+(sameAccount?rawMatch[0].length:0);
       matcher.lastIndex=cursor;
