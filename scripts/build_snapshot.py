@@ -30,10 +30,14 @@ def read_csv(path: Path):
             record = {header: (values[i] if i < len(values) else "").strip()
                       for i, header in enumerate(headers)}
             record["_raw_values"] = values
-            comment_header = next((name for name in ("Member comments", "Member comment", "Comment")
-                                   if name in headers), None)
-            if comment_header:
-                comment_index = headers.index(comment_header)
+            header_indexes = {
+                re.sub(r"\\s+", " ", header).strip().casefold(): index
+                for index, header in enumerate(headers)
+            }
+            comment_index = next((header_indexes[name] for name in
+                                  ("member comments", "member comment", "comment")
+                                  if name in header_indexes), None)
+            if comment_index is not None:
                 # Preserve unquoted commas when comments appear as the final export column.
                 record["_member_comment"] = ",".join(values[comment_index:]).strip()
             records.append(record)
@@ -222,7 +226,9 @@ def main():
             "rankOrder": rank_order,
             "class": row.get("Class", "") or "Unknown",
             "level": row.get("Level", ""),
-            "comment": html.unescape(re.sub(r"<[^>]*>", "", row.get("_member_comment", ""))).strip(),
+            "comment": re.sub(r"\\s+", " ", html.unescape(
+                re.sub(r"<[^>]*>", " ", row.get("_member_comment", ""))
+            )).strip(),
             "joinDate": parse_date(row.get("Guild join date", "")),
             "originalJoinDate": account_join_dates.get(key),
             "lastOnline": parse_date(row.get("Last online date", "")),
