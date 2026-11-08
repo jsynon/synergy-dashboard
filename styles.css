@@ -938,7 +938,7 @@ html,body { overflow-x:clip; }
   border-radius:7px;
   color:var(--text);
   background:#071722;
-  font:.78rem var(--body);
+  font:14px var(--body);
 }
 .activity-filters select:focus {
   border-color:#38c9e1;
@@ -1541,9 +1541,19 @@ input[type="search"] { caret-color:transparent !important; }
 .search-box input[type="search"] {
   -webkit-appearance:none;
   appearance:none;
-  caret-color:#071722 !important;
+  caret-color:transparent !important;
+  text-shadow:none;
+  box-shadow:none;
 }
 .facet-select-field select,.facet-select-field option { font-size:14px; }
 @media(max-width:620px) {
   .facet-select-field select,.facet-select-field option { font-size:.72rem; }
 }
+
+
+/* Ensure the roster search does not show an inner inset edge in Chromium. */
+.search-box input[type="search"]::-webkit-search-decoration,
+.search-box input[type="search"]::-webkit-search-cancel-button,
+.search-box input[type="search"]::-webkit-search-results-button,
+.search-box input[type="search"]::-webkit-search-results-decoration { -webkit-appearance:none; appearance:none; }
+.search-box input[type="search"] { outline:0 !important; box-shadow:none !important; border:0 !important; }
