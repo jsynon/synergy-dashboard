@@ -37,8 +37,8 @@
       <div class="account-character-details">
         <div><small>Joined</small><span>${formatDate(member.joinDate)}</span></div>
         <div><small>Last online</small><span>${displayStatus(member)}</span></div>
-        <div><small>Level</small><span>${escapeHtml(member.level||'—')}</span></div>
       </div>
+      ${member.comment?'<div class="account-character-comment"><small>Member comment</small><span>'+escapeHtml(member.comment)+'</span></div>':''}
     </article>`).join(''):'<div class="empty-state">No characters are listed for this account.</div>';
     $('account-dialog').showModal();
   }
