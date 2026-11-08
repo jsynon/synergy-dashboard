@@ -31,7 +31,7 @@ def read_csv(path: Path):
                       for i, header in enumerate(headers)}
             record["_raw_values"] = values
             header_indexes = {
-                re.sub(r"\\s+", " ", header).strip().casefold(): index
+                re.sub(r"\s+", " ", header).strip().casefold(): index
                 for index, header in enumerate(headers)
             }
             comment_index = next((header_indexes[name] for name in
@@ -42,7 +42,7 @@ def read_csv(path: Path):
                 # Find that field after Member comments so it is never displayed as a member note.
                 status_index = next(
                     (index for index in range(comment_index, len(values))
-                     if re.match(r"^\\s*Last online\\b", values[index], re.IGNORECASE)),
+                     if re.match(r"^\s*Last online\b", values[index], re.IGNORECASE)),
                     None,
                 )
                 if status_index is not None:
@@ -58,7 +58,7 @@ def read_csv(path: Path):
                 else:
                     comment_values = values[comment_index:comment_index + 1]
                 record["_member_comment"] = re.sub(
-                    r"\\s+", " ", ",".join(comment_values)
+                    r"\s+", " ", ",".join(comment_values)
                 ).strip(" ,")
             records.append(record)
         return records
@@ -246,7 +246,7 @@ def main():
             "rankOrder": rank_order,
             "class": row.get("Class", "") or "Unknown",
             "level": row.get("Level", ""),
-            "comment": re.sub(r"\\s+", " ", html.unescape(
+            "comment": re.sub(r"\s+", " ", html.unescape(
                 re.sub(r"<[^>]*>", " ", row.get("_member_comment", ""))
             )).strip(),
             "joinDate": parse_date(row.get("Guild join date", "")),
