@@ -1009,10 +1009,13 @@ html,body { overflow-x:clip; }
 .account-character-heading > div { display:flex; flex-wrap:wrap; align-items:baseline; gap:4px 10px; min-width:0; }
 .account-character-heading strong { color:#f1e8d5; font-size:13px; overflow-wrap:anywhere; }
 .account-character-class { color:var(--teal); font-size:11px; }
-.account-character-details { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:10px; }
+.account-character-details { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
 .account-character-details > div { display:grid; gap:2px; min-width:0; }
 .account-character-details small { color:#a99570; font-size:9px; letter-spacing:.06em; text-transform:uppercase; }
 .account-character-details span { color:var(--text); font-size:11px; overflow-wrap:anywhere; }
+.account-character-comment { display:grid; gap:3px; min-width:0; padding-top:7px; border-top:1px solid rgba(50,197,223,.16); }
+.account-character-comment small { color:#a99570; font-size:9px; letter-spacing:.06em; text-transform:uppercase; }
+.account-character-comment span { color:var(--text); font-size:11px; line-height:1.45; overflow-wrap:anywhere; }
 .directory-account-link[aria-haspopup="dialog"] { text-underline-offset:3px; }
 @media(max-width:620px) {
   .activity-filters { grid-template-columns:1fr; gap:7px; }

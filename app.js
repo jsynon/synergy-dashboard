@@ -22,11 +22,22 @@
     const value=String(account||'').trim();
     return value?`<a class="directory-account-link" href="#account-details" aria-haspopup="dialog" aria-label="View characters for ${escapeHtml(value)}" data-account-query="${escapeHtml(value)}">${escapeHtml(value)}</a>`:'—';
   };
-  function showAccountDetails(account){
-    const value=String(account||'').trim();
-    const key=value.toLocaleLowerCase();
-    const members=state.roster.filter(member=>String(member.account||'').trim().toLocaleLowerCase()===key)
-      .sort((a,b)=>a.name.localeCompare(b.name));
+  const normalizeAccountKey=(account)=>String(account||'').trim().replace(/^@/,'').toLocaleLowerCase();
+  function showAccountDetails(account,memberName=''){
+    let value=String(account||'').trim();
+    const accountKey=normalizeAccountKey(value);
+    let members=state.roster.filter(member=>normalizeAccountKey(member.account)===accountKey);
+    if(!members.length){
+      const lookupName=String(memberName||value).trim().toLocaleLowerCase();
+      const matchedMember=state.roster.find(member=>String(member.name||'').trim().toLocaleLowerCase()===lookupName&&member.account);
+      if(matchedMember){
+        value=String(matchedMember.account).trim();
+        const matchedAccountKey=normalizeAccountKey(value);
+        members=state.roster.filter(member=>normalizeAccountKey(member.account)===matchedAccountKey);
+      }
+    }
+    members.sort((a,b)=>a.name.localeCompare(b.name));
+    const key='@'+normalizeAccountKey(value);
     const joinDate=state.accountJoinDates[key]||members.map(member=>member.originalJoinDate||member.joinDate).filter(Boolean).sort()[0]||null;
     $('account-dialog-title').textContent=value||'Account details';
     $('account-dialog-summary').textContent=`${members.length.toLocaleString()} ${members.length===1?'character':'characters'} · Earliest verified guild join ${formatDate(asDate(joinDate))}`;
@@ -35,8 +46,8 @@
       <div class="account-character-details">
         <div><small>Joined</small><span>${formatDate(member.joinDate)}</span></div>
         <div><small>Last online</small><span>${displayStatus(member)}</span></div>
-        <div><small>Level</small><span>${escapeHtml(member.level||'—')}</span></div>
       </div>
+      ${member.comment?'<div class="account-character-comment"><small>Member comment</small><span>'+escapeHtml(member.comment)+'</span></div>':''}
     </article>`).join(''):'<div class="empty-state">No characters are listed for this account.</div>';
     $('account-dialog').showModal();
   }
@@ -213,13 +224,14 @@
     const names=members.map(member=>member.name.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
     if(!names.length)return {html:escapeHtml(text),searchText:text};
     const matcher=new RegExp('(^|[^A-Za-z0-9_])(' + names.join('|') + ')(?![A-Za-z0-9_])','gi');
-    let cursor=0, html='', searchText=text, match;
+    let cursor=0, html='', searchText=text, match, matchedMember=false;
     while((match=matcher.exec(text))){
       const nameStart=match.index+match[1].length;
       const nameEnd=nameStart+match[2].length;
       if(nameStart<cursor)continue;
       html+=escapeHtml(text.slice(cursor,nameStart));
       const member=memberByName.get(match[2].toLocaleLowerCase());
+      matchedMember=true;
       const rawMatch=text.slice(nameEnd).match(/^(?:\s+[A-Za-z])?\s*(@[A-Za-z0-9._-]+(?:#[A-Za-z0-9]+)?)/);
       const rawHandle=rawMatch?rawMatch[1]:'';
       const memberAccount=member?String(member.account||'').replace(/^@/,''):'';
@@ -227,11 +239,25 @@
       let account=(sameAccount?rawHandle:((member&&member.account)||rawHandle||''));
       if(account&&!account.startsWith('@'))account='@'+account;
       const label=match[2]+account;
-      const query=member?(member.account||member.name):match[2];
-      html+=`<a class="activity-member-link" href="#account-dialog" aria-haspopup="dialog" data-member-query="${escapeHtml(query)}" data-account-query="${escapeHtml(account||query)}">${escapeHtml(label)}</a>`;
+      const accountQuery=String(account||'').replace(/^@/,'').trim();
+      const query=member?(member.account||member.name):(accountQuery||match[2]);
+      html+=`<a class="activity-member-link" href="#account-dialog" aria-haspopup="dialog" data-member-query="${escapeHtml(query)}" data-account-query="${escapeHtml(accountQuery||query)}">${escapeHtml(label)}</a>`;
       if(member&&account)searchableHandles.set(member.name.toLocaleLowerCase(),account);
       cursor=nameEnd+(sameAccount?rawMatch[0].length:0);
       matcher.lastIndex=cursor;
+    }
+    if(!matchedMember){
+      const handlePattern=/@[A-Za-z0-9._-]+(?:#[A-Za-z0-9]+)?/g;
+      let handleCursor=0, handleMatch;
+      while((handleMatch=handlePattern.exec(text))){
+        html+=escapeHtml(text.slice(handleCursor,handleMatch.index));
+        const handle=handleMatch[0];
+        const accountQuery=handle.slice(1);
+        html+=`<a class="activity-member-link" href="#account-dialog" aria-haspopup="dialog" data-member-query="${escapeHtml(accountQuery)}" data-account-query="${escapeHtml(accountQuery)}">${escapeHtml(handle)}</a>`;
+        searchableHandles.set(handle.toLocaleLowerCase(),handle);
+        handleCursor=handlePattern.lastIndex;
+      }
+      cursor=handleCursor;
     }
     html+=escapeHtml(text.slice(cursor));
     if(searchableHandles.size){
@@ -345,7 +371,7 @@
     const link=event.target.closest('.activity-member-link');
     if(!link)return;
     event.preventDefault();
-    showAccountDetails(link.dataset.accountQuery||link.dataset.memberQuery||'');
+    showAccountDetails(link.dataset.accountQuery||'',link.dataset.memberQuery||'');
   });
   $('bank-events').addEventListener('click',event=>{
     const link=event.target.closest('.bank-account-link');
