@@ -1535,3 +1535,15 @@ input[type="search"] { caret-color:transparent !important; }
 
 /* Match roster rank/class option text to the Masterwork Forge filter size. */
 .facet-select-field select,.facet-select-field option { font-size:.72rem; }
+
+
+/* Keep roster search carets invisible and match desktop dropdown size to the Forge. */
+.search-box input[type="search"] {
+  -webkit-appearance:none;
+  appearance:none;
+  caret-color:#071722 !important;
+}
+.facet-select-field select,.facet-select-field option { font-size:14px; }
+@media(max-width:620px) {
+  .facet-select-field select,.facet-select-field option { font-size:.72rem; }
+}
