@@ -57,8 +57,15 @@ def read_csv(path: Path):
                     comment_values = values[comment_index:max(comment_index, len(values) - trailing_columns)]
                 else:
                     comment_values = values[comment_index:comment_index + 1]
+                comment_text = ",".join(comment_values)
+                comment_text = re.sub(
+                    r"\s*,?\s*Last online\s+\d{1,2}/\d{1,2}/\d{4}(?:\s+\d{1,2}:\d{2}:\d{2}\s*(?:AM|PM))?.*$",
+                    "",
+                    comment_text,
+                    flags=re.IGNORECASE,
+                )
                 record["_member_comment"] = re.sub(
-                    r"\s+", " ", ",".join(comment_values)
+                    r"\s+", " ", comment_text
                 ).strip(" ,")
             records.append(record)
         return records
