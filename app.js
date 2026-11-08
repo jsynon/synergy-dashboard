@@ -39,8 +39,14 @@
     members.sort((a,b)=>a.name.localeCompare(b.name));
     const key='@'+normalizeAccountKey(value);
     const joinDate=state.accountJoinDates[key]||members.map(member=>member.originalJoinDate||member.joinDate).filter(Boolean).sort()[0]||null;
+    const promotionMonthsByRank={1:1,2:3,3:6,4:12};
+    const accountRankOrder=Math.max(0,...members.map(member=>Number(member.rankOrder)||0));
+    const joinDateValue=asDate(joinDate);
+    const promotionMonths=promotionMonthsByRank[accountRankOrder];
+    const promotionDue=promotionMonths&&joinDateValue?formatDate(addCalendarMonths(joinDateValue,promotionMonths)):null;
+    const promotionDueLabel=promotionDue?` · Promotion due: ${promotionDue}`:'';
     $('account-dialog-title').textContent=value||'Account details';
-    $('account-dialog-summary').textContent=`${members.length.toLocaleString()} ${members.length===1?'character':'characters'} · Earliest verified guild join ${formatDate(asDate(joinDate))}`;
+    $('account-dialog-summary').textContent=`${members.length.toLocaleString()} ${members.length===1?'character':'characters'} · Earliest verified guild join ${formatDate(joinDateValue)}${promotionDueLabel}`;
     $('account-dialog-characters').innerHTML=members.length?members.map(member=>{
       const memberName=String(member.name||'').trim().toLocaleLowerCase();
       const escapedActivityName=memberName.replace(/[.*+?^${}()|[\]\\]/g,'\$&');
