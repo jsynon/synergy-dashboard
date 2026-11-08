@@ -73,7 +73,8 @@
         recentEvents.push(event);
       }
       const renderActivityRows=events=>events.map(event=>`<div class="account-linked-row"><span>${escapeHtml(event.text)}</span><time>${formatDate(asDate(event.date),true)}</time></div>`).join('');
-      const bankEvents=state.bankEvents.filter(event=>normalizeAccountKey(event.account)===normalizeAccountKey(value)&&String(event.player||'').trim().toLocaleLowerCase()===memberName).slice(0,3);
+      const renderBankRows=events=>events.map(event=>`<div class="account-linked-row"><span>${escapeHtml(event.action==='deposit'?'Deposited':'Withdrew')} ${escapeHtml(event.item||'item')} · ${new Intl.NumberFormat('en-US').format(event.amount)}</span><time>${formatDate(asDate(event.date),true)}</time></div>`).join('');
+      const bankEvents=state.bankEvents.filter(event=>normalizeAccountKey(event.account)===normalizeAccountKey(value)&&String(event.player||'').trim().toLocaleLowerCase()===memberName);
       return `<article class="account-character-card">
       <div class="account-character-heading"><div><strong>${escapeHtml(member.name)}</strong><span class="account-character-class">${escapeHtml(member.class)}</span></div><span class="rank-tag"><i class="rank-dot rank-${member.rankOrder}"></i>${escapeHtml(member.rank)}</span></div>
       <div class="account-character-details">
@@ -82,7 +83,7 @@
       </div>
       ${member.comment?`<div class="account-character-comment"><small>Member comment</small><span>${escapeHtml(member.comment)}</span></div>`:''}
       ${recentEvents.length?`<div class="account-linked-section"><small>Recent activity · ${recentEvents.length}</small>${renderActivityRows(recentEvents.slice(0,3))}${recentEvents.length>3?`<details class="account-activity-more"><summary>Show ${recentEvents.length-3} earlier ${recentEvents.length-3===1?'event':'events'}</summary>${renderActivityRows(recentEvents.slice(3))}</details>`:''}</div>`:''}
-      ${bankEvents.length?`<div class="account-linked-section"><small>Guild bank activity</small>${bankEvents.map(event=>`<div class="account-linked-row"><span>${escapeHtml(event.action==='deposit'?'Deposited':'Withdrew')} ${escapeHtml(event.item||'item')} · ${new Intl.NumberFormat('en-US').format(event.amount)}</span><time>${formatDate(asDate(event.date),true)}</time></div>`).join('')}</div>`:''}
+      ${bankEvents.length?`<div class="account-linked-section"><small>Guild bank activity · ${bankEvents.length}</small>${renderBankRows(bankEvents.slice(0,3))}${bankEvents.length>3?`<details class="account-activity-more"><summary>Show ${bankEvents.length-3} earlier ${bankEvents.length-3===1?'entry':'entries'}</summary>${renderBankRows(bankEvents.slice(3))}</details>`:''}</div>`:''}
     </article>`;
     }).join(''):'<div class="empty-state">No characters are listed for this account.</div>';
     $('account-dialog').showModal();
