@@ -30,6 +30,12 @@ def read_csv(path: Path):
             record = {header: (values[i] if i < len(values) else "").strip()
                       for i, header in enumerate(headers)}
             record["_raw_values"] = values
+            comment_header = next((name for name in ("Member comments", "Member comment", "Comment")
+                                   if name in headers), None)
+            if comment_header:
+                comment_index = headers.index(comment_header)
+                # Preserve unquoted commas when comments appear as the final export column.
+                record["_member_comment"] = ",".join(values[comment_index:]).strip()
             records.append(record)
         return records
 
@@ -216,6 +222,7 @@ def main():
             "rankOrder": rank_order,
             "class": row.get("Class", "") or "Unknown",
             "level": row.get("Level", ""),
+            "comment": html.unescape(re.sub(r"<[^>]*>", "", row.get("_member_comment", ""))).strip(),
             "joinDate": parse_date(row.get("Guild join date", "")),
             "originalJoinDate": account_join_dates.get(key),
             "lastOnline": parse_date(row.get("Last online date", "")),
