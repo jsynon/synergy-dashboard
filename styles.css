@@ -1136,7 +1136,7 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
 .guild-info-toggle::before { content:"+"; }
 .guild-info-card[open] .guild-info-toggle::before { content:"−"; }
 .guild-info-body { padding:19px 22px 22px; color:#dbe6ec; font-size:.92rem; line-height:1.7; }
-.guild-info-channel-link { display:inline-block; white-space:nowrap; color:var(--gold-bright); }
+.guild-info-channel-link { display:inline-block; white-space:nowrap; color:var(--gold-bright); font-weight:700; }
 .guild-info-body p { margin:0 0 13px; }
 .guild-info-body p:last-child { margin-bottom:0; }
 .guild-info-body h3,.guild-info-body h4 {
