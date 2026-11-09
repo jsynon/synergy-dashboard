@@ -846,8 +846,8 @@ footer {
 
 
 /* Integrated Synergy header art and a stable three-link mobile menu */
-.brand-banner { height:clamp(240px,21vw,420px); }
-.brand-banner > .brand-banner-background { object-position:center 30%; }
+.brand-banner { height:clamp(240px,25vw,480px); }
+.brand-banner > .brand-banner-background { object-position:center 50%; }
 .brand-banner::after { display:none; }
 .masthead {
   display:flex;
