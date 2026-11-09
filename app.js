@@ -115,9 +115,11 @@
       if(!key)continue;
       if(!accounts.has(key)){
         const savedDate=state.accountJoinDates[key];
-        accounts.set(key,{key,account:member.account,rankOrder:0,characterCount:0,characters:[],joinDate:asDate(savedDate)||member.originalJoinDate||member.joinDate});
+        accounts.set(key,{key,account:member.account,rankOrder:0,characterCount:0,characters:[],joinDate:asDate(savedDate)||member.originalJoinDate||member.joinDate,lastOnline:null,onlineNow:false});
       }
       const account=accounts.get(key);
+      account.onlineNow=account.onlineNow||Boolean(member.onlineNow);
+      if(member.lastOnline&&(!account.lastOnline||member.lastOnline>account.lastOnline))account.lastOnline=member.lastOnline;
       account.rankOrder=Math.max(account.rankOrder,Number(member.rankOrder)||0);
       account.characterCount++;
       account.characters.push({name:member.name||'Unknown',class:member.class||'Unknown',rank:member.rank||'Unranked'});
@@ -150,10 +152,11 @@
       const currentRank=rankNames[account.rankOrder]||'Rank '+account.rankOrder;
       const nextRankName=rankNames[nextRank]||'Rank '+nextRank;
       const stateLabel=account.eligibleDate<=now?'Eligible now':'Eligible '+formatDate(account.eligibleDate);
+      const lastOnlineLabel=account.onlineNow?'Today':account.lastOnline?formatDate(account.lastOnline):'—';
       const accountLink='<a href="#roster" class="promotion-account-link" data-account-query="'+escapeHtml(account.account)+'">'+escapeHtml(account.account)+'</a>';
       if(query){
         const characterDetails=account.characters.map(character=>'<span class="promotion-character"><b>'+escapeHtml(character.name)+'</b><small>'+escapeHtml(character.class)+' · '+escapeHtml(character.rank)+'</small></span>').join('');
-        return '<div class="promotion-row promotion-row-detail"><div class="promotion-account">'+accountLink+'<span>'+account.characterCount+' '+(account.characterCount===1?'character':'characters')+'</span></div><div class="promotion-path"><span class="promotion-path-label">Promoting</span> '+currentRank+' <span aria-hidden="true">→</span> '+nextRankName+'</div><time class="promotion-date" datetime="'+account.eligibleDate.toISOString()+'">'+stateLabel+'</time><div class="promotion-characters">'+characterDetails+'</div></div>';
+        return '<div class="promotion-row promotion-row-detail"><div class="promotion-account">'+accountLink+'<span>'+account.characterCount+' '+(account.characterCount===1?'character':'characters')+'</span></div><div class="promotion-path"><span class="promotion-path-label">Promoting</span> '+currentRank+' <span aria-hidden="true">→</span> '+nextRankName+'</div><time class="promotion-date" datetime="'+account.eligibleDate.toISOString()+'">'+stateLabel+'<span class="promotion-last-online"> · Last online '+lastOnlineLabel+'</span></time><div class="promotion-characters">'+characterDetails+'</div></div>';
       }
       return '<div class="promotion-row"><div class="promotion-account">'+accountLink+'<span>'+account.characterCount+' '+(account.characterCount===1?'character':'characters')+'</span></div><div class="promotion-path">'+currentRank+' <span aria-hidden="true">→</span> '+nextRankName+'</div><time class="promotion-date" datetime="'+account.eligibleDate.toISOString()+'">'+stateLabel+'</time></div>';
     }).join(''):(query?'<div class="empty-state">No promotion accounts match this search through the next 12 months.</div>':'<div class="empty-state">No accounts are eligible now or reaching a promotion milestone in the next 3 months.</div>');
