@@ -45,7 +45,7 @@ a { color: inherit; }
 .panel { min-width:0; border:1px solid var(--line); background:linear-gradient(145deg,rgba(25,35,44,.97),rgba(17,23,28,.97)); box-shadow:0 12px 34px rgba(0,0,0,.19); }
 .promotions-panel { margin:0 0 16px; padding:13px 17px; }
 .promotions-panel .panel-heading { min-height:66px; margin-bottom:9px; }
-.promotion-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); align-content:start; gap:7px; height:290px; overflow-y:auto; padding-right:5px; scrollbar-color:#80643b #171d21; scrollbar-width:thin; }
+.promotion-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); align-content:start; gap:7px; height:360px; overflow-y:auto; padding-right:5px; scrollbar-color:#80643b #171d21; scrollbar-width:thin; }
 .promotion-row { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:3px 10px; align-items:center; min-width:0; padding:9px 10px; border:1px solid rgba(190,160,103,.22); background:linear-gradient(115deg,rgba(12,34,45,.76),rgba(35,27,20,.74)); }
 .promotion-account { display:flex; flex-wrap:wrap; align-items:baseline; gap:5px 8px; min-width:0; }
 .promotion-account-link { color:var(--teal); font-weight:700; text-decoration:none; overflow-wrap:anywhere; }
