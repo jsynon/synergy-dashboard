@@ -1573,7 +1573,7 @@ input[type="search"] { caret-color:auto !important; }
 .search-box input[type="search"] { outline:0 !important; box-shadow:none !important; border:0 !important; }
 
 .footer-links { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:8px; }
-.footer-links a { color:var(--gold-bright); text-decoration:none; }
+.footer-links a { color:var(--gold-bright); text-decoration:none; font:600 .9rem var(--serif); letter-spacing:.12em; }
 .footer-links a:hover,.footer-links a:focus-visible { text-decoration:underline; text-underline-offset:3px; }
-.footer-links .footer-synergy-wordmark { color:var(--gold-bright); font:600 .9rem var(--serif); letter-spacing:.12em; }
+.footer-links .footer-synergy-wordmark { color:var(--gold-bright); }
 .footer-links .footer-divider { color:var(--muted, #a8b7c5); }
