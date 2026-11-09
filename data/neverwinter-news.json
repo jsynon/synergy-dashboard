@@ -1,9 +1,29 @@
 {
   "source": "https://www.playneverwinter.com/en/news",
   "api": "https://api.arcgames.com/v1.0/games/nw/news",
-  "generatedAt": "2026-11-07T03:43:59.593Z",
+  "generatedAt": "2026-11-09T15:18:23.478Z",
   "count": 100,
   "articles": [
+    {
+      "id": "11583812",
+      "title": "Zen Market Gifting Feature",
+      "summary": "We are excited to announce the addition of a Gifting feature to our Zen Store!",
+      "date": "2026-11-09",
+      "url": "https://www.playneverwinter.com/en/news-details/11583812",
+      "image": "https://pwimages-a.akamaihd.net/arc/c7/2c/c72cac95543433da4ef2387fb18395551793886658.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
     {
       "id": "11583719",
       "title": "Queue Reward Improvements",
@@ -1986,26 +2006,6 @@
       "date": "2025-11-13",
       "url": "https://www.playneverwinter.com/en/news-details/11578503",
       "image": "https://pwimages-a.akamaihd.net/arc/d1/b5/d1b5e521dcc156c5753c078df1d9d0ea1762513185.png",
-      "platforms": [
-        "pc",
-        "ps",
-        "xbox"
-      ],
-      "tags": [
-        "nw-launcher",
-        "nw-news",
-        "neverwinter",
-        "nw-xbox",
-        "nw-playstation"
-      ]
-    },
-    {
-      "id": "11578635",
-      "title": "Login Calendar has started",
-      "summary": "A new Daily Login Calendar!",
-      "date": "2025-11-13",
-      "url": "https://www.playneverwinter.com/en/news-details/11578635",
-      "image": "https://pwimages-a.akamaihd.net/arc/24/7a/247ae5d3324b02f3377a5c57961bba491763032841.png",
       "platforms": [
         "pc",
         "ps",
