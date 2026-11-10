@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-10T16:32:29+00:00",
-  "accountCount": 149,
+  "generatedAt": "2026-11-10T16:42:52+00:00",
+  "accountCount": 147,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
     "@acckund": "2026-08-26T01:34:35",
@@ -331,7 +331,7 @@
       "comment": "+Tank MJS",
       "joinDate": "2025-01-14T13:49:14",
       "originalJoinDate": "2025-01-14T13:49:14",
-      "lastOnline": "2026-11-10T11:21:07",
+      "lastOnline": "2026-11-10T11:41:16",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1227,8 +1227,8 @@
       "comment": "",
       "joinDate": "2024-06-12T12:09:06",
       "originalJoinDate": "2024-06-12T12:09:06",
-      "lastOnline": "2026-11-10T11:20:27",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1731,8 +1731,8 @@
       "comment": "",
       "joinDate": "2026-08-26T14:06:28",
       "originalJoinDate": "2025-01-14T13:49:14",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-10T11:39:53",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2576,20 +2576,6 @@
       "leaveOfAbsence": false
     },
     {
-      "name": "Varthan",
-      "account": "@SkyfireLegacy#57192",
-      "rank": "Initiate",
-      "rankOrder": 1,
-      "class": "Barbarian",
-      "level": "20",
-      "comment": "",
-      "joinDate": "2026-11-02T19:30:21",
-      "originalJoinDate": "2026-11-02T19:30:21",
-      "lastOnline": "2026-11-03T21:52:20",
-      "onlineNow": false,
-      "leaveOfAbsence": false
-    },
-    {
       "name": "Zelda",
       "account": "@d00fus#2812",
       "rank": "Veteran",
@@ -2851,7 +2837,7 @@
       "comment": "",
       "joinDate": "2025-01-14T13:50:57",
       "originalJoinDate": "2025-01-14T13:49:14",
-      "lastOnline": "2026-11-10T10:13:27",
+      "lastOnline": "2026-11-10T11:40:21",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3342,20 +3328,6 @@
       "joinDate": "2025-10-30T14:21:09",
       "originalJoinDate": "2025-10-30T14:21:09",
       "lastOnline": "2026-06-27T13:55:00",
-      "onlineNow": false,
-      "leaveOfAbsence": false
-    },
-    {
-      "name": "ArkHybrid",
-      "account": "@ArkHybrid#75770",
-      "rank": "Veteran",
-      "rankOrder": 4,
-      "class": "Barbarian",
-      "level": "20",
-      "comment": "",
-      "joinDate": "2026-07-07T14:09:08",
-      "originalJoinDate": "2026-05-22T22:01:32",
-      "lastOnline": "2026-09-10T12:45:41",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4391,8 +4363,8 @@
       "comment": "",
       "joinDate": "2026-04-26T20:41:12",
       "originalJoinDate": "2024-06-12T12:09:06",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-10T11:32:55",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -5623,8 +5595,8 @@
       "comment": "",
       "joinDate": "2026-10-30T13:46:08",
       "originalJoinDate": "2026-10-30T13:46:08",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-10T11:34:43",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -5643,6 +5615,16 @@
     }
   ],
   "events": [
+    {
+      "date": "2026-11-10T11:42:14",
+      "kind": "exit",
+      "text": "Varthan@SkyfireLegacy#57192 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-11-10T11:41:41",
+      "kind": "exit",
+      "text": "ArkHybrid@ArkHybrid#75770 was kicked from the guild by Elanor@zorlonix"
+    },
     {
       "date": "2026-11-10T11:12:37",
       "kind": "join",
