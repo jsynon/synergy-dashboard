@@ -12,6 +12,7 @@
   };
   const asDate=(value)=>value?parseDate(value):null;
   const formatDate=(date,withTime=false)=>date?new Intl.DateTimeFormat('en-US',withTime?{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}:{month:'short',day:'numeric',year:'numeric'}).format(date):'—';
+  const isSameCalendarDay=(date,reference)=>Boolean(date)&&date.getFullYear()===reference.getFullYear()&&date.getMonth()===reference.getMonth()&&date.getDate()===reference.getDate();
   const escapeHtml=(s)=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const displayStatus=(m)=>{
     if(!m.lastOnline)return m.onlineNow?'Today':'—';const days=Math.floor((new Date()-m.lastOnline)/86400000);
@@ -152,7 +153,7 @@
       const currentRank=rankNames[account.rankOrder]||'Rank '+account.rankOrder;
       const nextRankName=rankNames[nextRank]||'Rank '+nextRank;
       const stateLabel=account.eligibleDate<=now?'Eligible now':'Eligible '+formatDate(account.eligibleDate);
-      const lastOnlineLabel=account.onlineNow?'Today':account.lastOnline?formatDate(account.lastOnline):'—';
+      const lastOnlineLabel=(account.onlineNow||isSameCalendarDay(account.lastOnline,now))?'Today':account.lastOnline?formatDate(account.lastOnline):'—';
       const accountLink='<a href="#roster" class="promotion-account-link" data-account-query="'+escapeHtml(account.account)+'">'+escapeHtml(account.account)+'</a>';
       if(query){
         const characterDetails=account.characters.map(character=>'<span class="promotion-character"><b>'+escapeHtml(character.name)+'</b><small>'+escapeHtml(character.class)+' · '+escapeHtml(character.rank)+'</small></span>').join('');
