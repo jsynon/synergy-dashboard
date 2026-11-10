@@ -165,7 +165,6 @@
   function renderInactivityAlerts(){
     const limits={1:7,2:14,3:30,4:60,5:90};
     const rankNames={1:'Initiate',2:'Wayfarer',3:'Stalwart',4:'Veteran',5:'Elder'};
-    const protectedAccounts=new Set(['@arkhybrid#75770']);
     const accounts=new Map();
     for(const member of state.roster){
       const key=(member.account||'').trim().toLocaleLowerCase();
@@ -181,7 +180,7 @@
     }
     const now=new Date();
     const alerts=[...accounts.values()].filter(account=>{
-      if(!limits[account.rankOrder]||protectedAccounts.has(account.key)||account.onLeave||!account.lastActive)return false;
+      if(!limits[account.rankOrder]||account.onLeave||!account.lastActive)return false;
       account.daysInactive=Math.max(0,Math.floor((now-account.lastActive)/86400000));
       account.limitDays=limits[account.rankOrder];
       return account.daysInactive>=account.limitDays;
