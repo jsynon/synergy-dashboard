@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T01:36:08+00:00",
+  "generatedAt": "2026-11-10T02:43:28+00:00",
   "accountCount": 148,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -218,8 +218,8 @@
       "comment": "returning player, relearning game",
       "joinDate": "2026-06-23T11:31:27",
       "originalJoinDate": "2026-06-23T11:31:27",
-      "lastOnline": "2026-11-09T18:15:30",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -414,8 +414,8 @@
       "comment": "alt to Carric Ranger",
       "joinDate": "2025-12-19T18:07:52",
       "originalJoinDate": "2025-11-13T17:10:14",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-09T21:04:33",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -635,11 +635,11 @@
       "rankOrder": 4,
       "class": "Fighter",
       "level": "20",
-      "comment": "",
+      "comment": "mTOS - aSH - mLMD",
       "joinDate": "2026-02-25T16:04:03",
       "originalJoinDate": "2026-02-25T16:04:03",
-      "lastOnline": "2026-11-09T00:22:19",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1016,7 +1016,7 @@
       "comment": "",
       "joinDate": "2026-10-25T13:11:02",
       "originalJoinDate": "2026-04-27T23:26:27",
-      "lastOnline": "2026-11-09T19:49:56",
+      "lastOnline": "2026-11-09T20:38:45",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1226,7 +1226,7 @@
       "comment": "",
       "joinDate": "2024-06-12T12:09:06",
       "originalJoinDate": "2024-06-12T12:09:06",
-      "lastOnline": "2026-11-09T18:55:08",
+      "lastOnline": "2026-11-09T21:15:12",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1534,8 +1534,8 @@
       "comment": "",
       "joinDate": "2026-11-08T16:00:14",
       "originalJoinDate": "2026-10-14T21:58:34",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-09T20:53:45",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2178,7 +2178,7 @@
       "comment": "",
       "joinDate": "2026-09-03T00:59:28",
       "originalJoinDate": "2026-04-27T23:26:27",
-      "lastOnline": "2026-11-09T17:38:39",
+      "lastOnline": "2026-11-09T20:37:53",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2192,8 +2192,8 @@
       "comment": "",
       "joinDate": "2026-09-03T00:54:09",
       "originalJoinDate": "2026-04-27T23:26:27",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-09T20:36:50",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2276,8 +2276,8 @@
       "comment": "",
       "joinDate": "2026-10-23T21:23:14",
       "originalJoinDate": "2026-10-14T21:58:34",
-      "lastOnline": "2026-11-09T20:32:54",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2430,7 +2430,7 @@
       "comment": "",
       "joinDate": "2026-10-13T22:06:13",
       "originalJoinDate": "2026-10-13T22:06:13",
-      "lastOnline": "2026-11-09T18:26:04",
+      "lastOnline": "2026-11-09T21:26:10",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2642,6 +2642,20 @@
       "originalJoinDate": "2026-02-19T21:26:28",
       "lastOnline": "2026-11-01T18:58:17",
       "onlineNow": false,
+      "leaveOfAbsence": false
+    },
+    {
+      "name": "Ken Shieldheart",
+      "account": "@kenkenken.c83#62279",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Fighter",
+      "level": "20",
+      "comment": "",
+      "joinDate": "2026-11-09T21:27:20",
+      "originalJoinDate": "2026-10-13T22:06:13",
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -3298,8 +3312,8 @@
       "comment": "",
       "joinDate": "2026-07-14T20:02:24",
       "originalJoinDate": "2024-06-12T12:09:06",
-      "lastOnline": "2026-11-09T18:54:41",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -3690,7 +3704,7 @@
       "comment": "Just your casual gamer",
       "joinDate": "2026-03-12T15:55:36",
       "originalJoinDate": "2026-03-12T15:55:36",
-      "lastOnline": "2026-11-07T22:00:14",
+      "lastOnline": "2026-11-09T21:10:35",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3858,7 +3872,7 @@
       "comment": "beep boop",
       "joinDate": "2026-07-25T14:43:15",
       "originalJoinDate": "2026-07-24T12:29:26",
-      "lastOnline": "2026-11-09T19:55:27",
+      "lastOnline": "2026-11-09T21:18:57",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3984,7 +3998,7 @@
       "comment": "",
       "joinDate": "2026-06-27T20:20:48",
       "originalJoinDate": "2026-04-01T00:43:23",
-      "lastOnline": "2026-11-09T19:57:29",
+      "lastOnline": "2026-11-09T21:29:17",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4362,8 +4376,8 @@
       "comment": "",
       "joinDate": "2026-04-26T20:41:12",
       "originalJoinDate": "2024-06-12T12:09:06",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-09T21:14:35",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -4737,11 +4751,11 @@
       "rankOrder": 4,
       "class": "Paladin",
       "level": "20",
-      "comment": "OPH - mjs/ash/msh/msod",
+      "comment": "",
       "joinDate": "2026-10-22T19:52:33",
       "originalJoinDate": "2026-06-04T15:29:23",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-09T21:27:18",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -4835,11 +4849,11 @@
       "rankOrder": 3,
       "class": "Barbarian",
       "level": "20",
-      "comment": "+ tank/dps + mjs/mdwp/msod/msh",
+      "comment": "+ tank/dps + mjs/mdwp/msod/msh,+ tank/dps + mjs/mdwp/msh/msod",
       "joinDate": "2026-06-26T17:34:22",
       "originalJoinDate": "2026-06-26T17:34:22",
-      "lastOnline": "2026-11-09T16:58:33",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -5020,8 +5034,8 @@
       "comment": "",
       "joinDate": "2026-06-14T22:53:46",
       "originalJoinDate": "2026-06-14T22:53:46",
-      "lastOnline": "2026-11-08T21:59:55",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -5272,8 +5286,8 @@
       "comment": "",
       "joinDate": "2026-09-05T12:13:15",
       "originalJoinDate": "2026-09-05T12:13:15",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-09T20:57:14",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -5325,11 +5339,11 @@
       "rankOrder": 4,
       "class": "Warlock",
       "level": "20",
-      "comment": "",
+      "comment": "OPH - mjs/asod/msod/adom/mdom",
       "joinDate": "2026-09-12T00:12:12",
       "originalJoinDate": "2026-06-04T15:29:23",
-      "lastOnline": "2026-11-09T19:20:02",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -5454,7 +5468,7 @@
       "comment": "",
       "joinDate": "2026-09-19T23:22:05",
       "originalJoinDate": "2026-06-04T15:29:23",
-      "lastOnline": "2026-11-09T19:21:01",
+      "lastOnline": "2026-11-09T21:19:29",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5594,8 +5608,8 @@
       "comment": "",
       "joinDate": "2026-10-30T13:46:08",
       "originalJoinDate": "2026-10-30T13:46:08",
-      "lastOnline": "2026-11-08T22:29:40",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -5614,6 +5628,11 @@
     }
   ],
   "events": [
+    {
+      "date": "2026-11-09T21:27:20",
+      "kind": "join",
+      "text": "Ken Shieldheart@kenkenken.c83#62279 has joined the guild after being invited by Elanor@zorlonix"
+    },
     {
       "date": "2026-11-08T22:52:42",
       "kind": "rank",
@@ -10946,6 +10965,186 @@
     }
   ],
   "bankEvents": [
+    {
+      "date": "2026-11-09T21:26:01",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Regal Draconic Guise",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-09T21:12:15",
+      "player": "Zero",
+      "account": "@tofusurpr1se",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Lightwine",
+      "amount": 4
+    },
+    {
+      "date": "2026-11-09T21:11:56",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Winter Sled",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-09T21:11:51",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Polar Bear",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-09T21:11:49",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Autumn Stag",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-09T21:11:47",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Stormraider Clydesdale",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-09T21:11:45",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Stormraider Horse",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-09T21:11:22",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Artifacts",
+      "item": "Greater Girdle of Strength",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-09T21:11:08",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Artifacts",
+      "item": "Small Forest Stag",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-09T21:11:01",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Artifacts",
+      "item": "Golden Brindle Horse",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-09T21:10:59",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Artifacts",
+      "item": "Ashen Brindle Horse",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-09T21:10:49",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Artifacts",
+      "item": "Demogorgon's Girdle of Might",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-09T21:10:45",
+      "player": "Zer0",
+      "account": "@tofusurpr1se",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Lightwine",
+      "amount": 4
+    },
+    {
+      "date": "2026-11-09T21:10:42",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Mounts",
+      "item": "Pale Horse",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-09T21:10:40",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Mounts",
+      "item": "Stormraider Horse",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-09T21:10:38",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Mounts",
+      "item": "Small Forest Stag",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-09T21:10:35",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Mounts",
+      "item": "Polar Bear",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-09T21:10:32",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Mounts",
+      "item": "Pale Horse",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-09T21:10:22",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Companions",
+      "item": "Air Archon",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-09T21:10:12",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Companions",
+      "item": "Earth Archon",
+      "amount": 1
+    },
     {
       "date": "2026-11-09T19:29:45",
       "player": "Amethyst Felis-Koit",
