@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jsynon.github.io/synergy-dashboard/sitemap.xml
+Sitemap: https://synergyonline.org/sitemap.xml
