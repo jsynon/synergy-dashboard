@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const state = { roster: [], events: [], bankEvents: [], bankVisible: 30, accountCount: 0, accountJoinDates: {}, generatedAt: null, sortBy: 'name', sortDirection: 1, rankFilter: '', classFilter: '', accountFilter: '' };
+  const state = { roster: [], events: [], bankEvents: [], accountCount: 0, accountJoinDates: {}, generatedAt: null, sortBy: 'name', sortDirection: 1, rankFilter: '', classFilter: '', accountFilter: '' };
   const $ = (id) => document.getElementById(id);
 
   const parseDate=(str)=>{
@@ -342,12 +342,12 @@
     const matches=state.bankEvents.filter(event=>[
       event.player,event.account,event.item,event.action,event.category,formatDate(event.date,true)
     ].join(' ').toLocaleLowerCase().includes(query)&&(!actionFilter||event.action===actionFilter)&&(!cutoff||event.date.getTime()>=cutoff));
-    const rows=matches.slice(0,state.bankVisible);
+    const rows=matches;
     const total=state.bankEvents.length;
     const filtered=Boolean(query||actionFilter||periodDays);
     $('bank-results-count').textContent=filtered
       ? `${matches.length.toLocaleString()} of ${total.toLocaleString()} bank entries match`
-      : `${total.toLocaleString()} bank entries · showing ${rows.length.toLocaleString()}`;
+      : `${total.toLocaleString()} bank entries`;
     $('bank-events').innerHTML=rows.length?rows.map(event=>{
       const isDeposit=event.action==='deposit';
       const quantity=new Intl.NumberFormat('en-US').format(Math.abs(Number(event.amount)||0));
@@ -364,7 +364,6 @@
         <strong class="bank-event-amount ${isDeposit?'deposit':'withdrawal'}">${sign}${quantity}</strong>
       </div>`;
     }).join(''):(filtered?'<div class="empty-state">No bank entries match these filters.</div>':'<div class="empty-state">No published bank activity is available.</div>');
-    $('bank-show-more').hidden=rows.length>=matches.length;
   }
   function render(){renderSnapshotStatus();renderDirectoryFilters();renderRoster();renderRecent();renderBankActivity();renderPromotions();renderInactivityAlerts();}
   function loadSnapshot(snapshot){
@@ -383,10 +382,9 @@
   $('activity-search').addEventListener('input',renderRecent);
   $('activity-type-filter').addEventListener('change',renderRecent);
   $('activity-period-filter').addEventListener('change',renderRecent);
-  $('bank-search').addEventListener('input',()=>{state.bankVisible=30;renderBankActivity();});
-  $('bank-type-filter').addEventListener('change',()=>{state.bankVisible=30;renderBankActivity();});
-  $('bank-period-filter').addEventListener('change',()=>{state.bankVisible=30;renderBankActivity();});
-  $('bank-show-more').addEventListener('click',()=>{state.bankVisible+=30;renderBankActivity();});
+  $('bank-search').addEventListener('input',renderBankActivity);
+  $('bank-type-filter').addEventListener('change',renderBankActivity);
+  $('bank-period-filter').addEventListener('change',renderBankActivity);
   $('promotion-search').addEventListener('input',renderPromotions);
   $('roster').addEventListener('click',event=>{
     const link=event.target.closest('.directory-account-link');

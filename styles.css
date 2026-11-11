@@ -179,7 +179,6 @@ tbody tr:hover { background:rgba(177,138,72,.07); }
 .bank-event-amount { justify-self:end; font-size:11px; font-weight:600; white-space:nowrap; }
 .bank-event-amount.deposit { color:#a8d9b7; }
 .bank-event-amount.withdrawal { color:#e0bd8c; }
-.bank-events-actions { display:flex; justify-content:center; padding-top:9px; }
 .panel-mark { color:var(--gold); font-size:21px; }
 .recent-events { display:grid; grid-template-columns:1fr; gap:0; max-height:450px; overflow-y:auto; padding-right:7px; scrollbar-color:#80643b #171d21; scrollbar-width:thin; }
 .event-row { display:grid; grid-template-columns:9px minmax(0,1fr) auto; align-items:start; gap:9px; padding:11px 4px; border-bottom:1px solid rgba(190,204,215,.09); }
