@@ -90,8 +90,8 @@
         <div><small>Last online</small><span>${displayStatus(member)}</span></div>
       </div>
       ${memberComment?`<div class="account-character-comment"><small>Member comment</small><span>${escapeHtml(memberComment)}</span></div>`:''}
-      ${recentEvents.length?`<div class="account-linked-section"><small>Recent activity · ${recentEvents.length}</small>${renderActivityRows(recentEvents.slice(0,3))}${recentEvents.length>3?`<details class="account-activity-more"><summary>Show ${recentEvents.length-3} earlier ${recentEvents.length-3===1?'event':'events'}</summary>${renderActivityRows(recentEvents.slice(3))}</details>`:''}</div>`:''}
-      ${bankEvents.length?`<div class="account-linked-section"><small>Guild bank activity · ${bankEvents.length}</small>${renderBankRows(bankEvents.slice(0,3))}${bankEvents.length>3?`<details class="account-activity-more"><summary>Show ${bankEvents.length-3} earlier ${bankEvents.length-3===1?'entry':'entries'}</summary>${renderBankRows(bankEvents.slice(3))}</details>`:''}</div>`:''}
+      ${recentEvents.length?`<div class="account-linked-section"><small>Recent activity · ${recentEvents.length}</small>${renderActivityRows(recentEvents.slice(0,3))}${recentEvents.length>3?`<details class="account-activity-more"><summary>Show ${recentEvents.length-3} earlier ${recentEvents.length-3===1?'event':'events'}</summary><div class="account-activity-scroll" tabindex="0">${renderActivityRows(recentEvents.slice(3))}</div></details>`:''}</div>`:''}
+      ${bankEvents.length?`<div class="account-linked-section"><small>Guild bank activity · ${bankEvents.length}</small>${renderBankRows(bankEvents.slice(0,3))}${bankEvents.length>3?`<details class="account-activity-more"><summary>Show ${bankEvents.length-3} earlier ${bankEvents.length-3===1?'entry':'entries'}</summary><div class="account-activity-scroll" tabindex="0">${renderBankRows(bankEvents.slice(3))}</div></details>`:''}</div>`:''}
     </article>`;
     }).join(''):'<div class="empty-state">No characters are listed for this account.</div>';
     $('account-dialog').showModal();
