@@ -1585,3 +1585,21 @@ input[type="search"] { caret-color:auto !important; }
 .footer-links a:hover,.footer-links a:focus-visible { text-decoration:underline; text-underline-offset:3px; }
 .footer-links .footer-synergy-wordmark { color:var(--gold-bright); }
 .footer-links .footer-divider { color:var(--muted, #a8b7c5); }
+
+/* Framed brand banner (desktop/tablet): keep the banner inside the page column
+   instead of breaking out to full viewport width. The height keeps today's 4:1
+   display ratio (25vw tall at full width), so the cover crop - including the
+   baked-in SYNERGY / WANTED ALLIANCE lettering - is composed exactly as before,
+   only at column scale: at the 1180px column the banner is 295px tall instead
+   of growing with the monitor. Mobile (max-width:620px) rules above are unchanged. */
+@media (min-width:621px) {
+  .brand-banner {
+    width:100%;
+    max-width:1180px;
+    height:auto;
+    aspect-ratio:4 / 1;
+    margin:17px auto 0;
+    border:1px solid rgba(216,168,78,.82);
+    border-radius:12px;
+  }
+}
