@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T09:49:45+00:00",
+  "generatedAt": "2026-11-11T10:07:21+00:00",
   "accountCount": 147,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -496,11 +496,11 @@
       "rankOrder": 4,
       "class": "Wizard",
       "level": "20",
-      "comment": "ash/msh/mjs/msod/mtos",
+      "comment": "ash/msh/mjs/msod/mtos,ash/msh/mjs/msod/mtos",
       "joinDate": "2026-03-12T16:55:58",
       "originalJoinDate": "2026-03-12T16:55:58",
-      "lastOnline": "2026-11-11T02:25:16",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -604,8 +604,8 @@
     {
       "name": "Galactic Underwear",
       "account": "@skatopsixos7",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Rogue",
       "level": "20",
       "comment": "",
@@ -1073,8 +1073,8 @@
       "comment": "",
       "joinDate": "2026-07-13T16:38:06",
       "originalJoinDate": "2026-07-13T16:38:06",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-11T05:05:42",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2893,8 +2893,8 @@
       "comment": "Your guild clown/troll",
       "joinDate": "2026-06-09T12:05:29",
       "originalJoinDate": "2026-06-09T12:05:29",
-      "lastOnline": "2026-11-10T15:42:41",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -3593,7 +3593,7 @@
       "comment": "",
       "joinDate": "2025-12-18T08:55:07",
       "originalJoinDate": "2025-09-23T05:13:34",
-      "lastOnline": "2026-11-11T03:12:01",
+      "lastOnline": "2026-11-11T05:04:29",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4804,8 +4804,8 @@
     {
       "name": "BLOCKYBALBOA",
       "account": "@skatopsixos7",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Fighter",
       "level": "5",
       "comment": "",
@@ -4846,8 +4846,8 @@
     {
       "name": "BlockTuah",
       "account": "@skatopsixos7",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Paladin",
       "level": "5",
       "comment": "",
@@ -5615,6 +5615,21 @@
     }
   ],
   "events": [
+    {
+      "date": "2026-11-11T05:07:00",
+      "kind": "rank",
+      "text": "Galactic Underwear@skatopsixos7's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-11-11T05:06:57",
+      "kind": "rank",
+      "text": "BLOCKYBALBOA@skatopsixos7's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-11-11T05:06:55",
+      "kind": "rank",
+      "text": "BlockTuah@skatopsixos7's guild rank is now Veteran"
+    },
     {
       "date": "2026-11-10T11:42:14",
       "kind": "exit",
