@@ -1603,3 +1603,20 @@ input[type="search"] { caret-color:auto !important; }
     border-radius:12px;
   }
 }
+
+/* Framed menu bar (desktop/tablet): the masthead gets the same treatment as
+   the banner above it. Its base rule breaks out to full viewport width
+   (width:100vw, dark gradient background, gold and teal hairlines), which read
+   fine under a full-bleed banner but bleeds past the edges of the framed
+   banner now that the banner sits in the column. Frame the bar to the column
+   too: uniform gold border, 12px radius, 12px gap below the banner. The nav
+   inside (780px, centered) is untouched, as are the mobile rules. */
+@media (min-width:621px) {
+  .masthead {
+    width:100%;
+    max-width:1180px;
+    margin:12px auto 0;
+    border:1px solid rgba(216,168,78,.72);
+    border-radius:12px;
+  }
+}
