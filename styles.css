@@ -1642,3 +1642,23 @@ input[type="search"] { caret-color:auto !important; }
 .mobile-member-card,.mobile-directory-sort select,.mobile-directory-sort button { border-color:rgba(216,168,78,.32); }
 .popup-shell .popup-close { border-color:rgba(216,168,78,.36); }
 footer { border-top-color:rgba(216,168,78,.55); }
+
+/* Corner bracket uniformity: most panel headings carry a 44px gold corner
+   bracket at their top-right (the panel-heading::after rule). Two heading
+   styles missed it - the guild-info summary headings, which the Guild Bank
+   Activity panel borrows and which also head every Guild Info accordion, and
+   the member search panel, which has no heading element to hang it on. Give
+   both the same bracket so every card wears the same corner. */
+.guild-info-summary { position:relative; }
+.guild-info-summary::after,
+.search-panel::after {
+  content:"";
+  position:absolute;
+  top:0;
+  right:0;
+  width:44px;
+  height:44px;
+  border-top:1px solid rgba(216,168,78,.9);
+  border-right:1px solid rgba(216,168,78,.9);
+  pointer-events:none;
+}
