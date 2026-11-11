@@ -1662,3 +1662,17 @@ footer { border-top-color:rgba(216,168,78,.55); }
   border-right:1px solid rgba(216,168,78,.9);
   pointer-events:none;
 }
+
+/* Corner brackets removed: the 44px gold corner tick that panel headings
+   carried at their top-right is retired - the plain double frame reads
+   cleaner without it. content:none stops the pseudo-elements from being
+   generated at all, for every heading style that had the bracket, including
+   the guild-info summaries and the search panel covered by the uniformity
+   pass. The headings themselves are untouched. */
+.card-header::after,
+.roster-panel > .panel-heading::after,
+.recent-panel > .panel-heading::after,
+.promotions-panel > .panel-heading::after,
+.inactivity-panel > .panel-heading::after,
+.guild-info-summary::after,
+.search-panel::after { content:none; }
