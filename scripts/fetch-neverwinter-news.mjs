@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const OUTPUT = resolve(ROOT, "data/neverwinter-news.json");
-const PAGE = resolve(ROOT, "news.html");
+const PAGE = resolve(ROOT, "index.html");
 const API_URL = "https://api.arcgames.com/v1.0/games/nw/news";
 const PAGE_SIZE = 20;
 const MAX_ARTICLES = 100;
