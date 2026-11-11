@@ -12,7 +12,11 @@
     const date = new Date(dateOnly ? `${value}T12:00:00Z` : value);
     if (Number.isNaN(date.valueOf())) return null;
 
-    const timeZone = dateOnly ? "UTC" : "America/New_York";
+    // Date-only entries are fixed calendar dates, read in UTC. Timed entries
+    // (Discord events) are instants: read them in the viewer's own timezone
+    // (no timeZone passed) so the date label agrees with the local time
+    // shown beside it.
+    const timeZone = dateOnly ? "UTC" : undefined;
     const parts = new Intl.DateTimeFormat("en-US", {
       year: "numeric",
       month: "short",
@@ -68,8 +72,15 @@
       timeZone: "America/New_York"
     }).formatToParts(new Date());
     const today = `${todayParts.find((part) => part.type === "year").value}-${todayParts.find((part) => part.type === "month").value}-${todayParts.find((part) => part.type === "day").value}`;
+    const now = new Date();
     const upcomingEvents = events
       .filter((event) => {
+        // Discord events are instants: they leave the list when they actually
+        // end, not at the end of a calendar day.
+        if (event.source === "discord") {
+          const end = new Date(event.endTime || event.startTime);
+          if (!Number.isNaN(end.valueOf())) return end >= now;
+        }
         const lastDate = event.endDate || event.endTime || event.startDate || event.startTime;
         const key = dateKey(lastDate);
         return key && key >= today;
