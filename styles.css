@@ -1026,6 +1026,15 @@ html,body { overflow-x:clip; }
 .account-activity-more summary { width:fit-content; color:#82dff0; cursor:pointer; font-size:10px; line-height:1.4; }
 .account-activity-more[open] summary { margin-bottom:4px; }
 .account-activity-more .account-linked-row { padding-left:8px; border-left:1px solid rgba(50,197,223,.16); }
+.account-activity-scroll {
+  display:grid;
+  gap:5px;
+  max-height:180px;
+  overflow-y:auto;
+  padding-right:5px;
+  scrollbar-color:#80643b #171d21;
+  scrollbar-width:thin;
+}
 .directory-account-link[aria-haspopup="dialog"] { text-underline-offset:3px; }
 @media(max-width:620px) {
   .activity-filters { grid-template-columns:1fr; gap:7px; }
