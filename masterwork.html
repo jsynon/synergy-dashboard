@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070c14">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://synergyonline.org/masterwork.html">
+  <meta name="description" content="Browse Synergy’s Neverwinter masterwork recipes; filter by class, material, and source to find ingredients and crafting details.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Synergy Guild">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Masterwork Forge | Synergy">
+  <meta property="og:description" content="Browse Synergy’s Neverwinter masterwork recipes; filter by class, material, and source to find ingredients and crafting details.">
+  <meta property="og:url" content="https://synergyonline.org/masterwork.html">
+  <meta property="og:image" content="https://synergyonline.org/assets/synergy-header-integrated.webp">
+  <meta property="og:image:alt" content="Synergy’s blue-and-gold fantasy banner">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Masterwork Forge | Synergy">
+  <meta name="twitter:description" content="Browse Synergy’s Neverwinter masterwork recipes; filter by class, material, and source to find ingredients and crafting details.">
+  <meta name="twitter:image" content="https://synergyonline.org/assets/synergy-header-integrated.webp">
+  <meta name="twitter:image:alt" content="Synergy’s blue-and-gold fantasy banner">
+  <title>Masterwork Forge | Synergy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: dark;
+      --night: #070c14;
+      --stone: #0b1521;
+      --panel: #101e2c;
+      --panel-raised: #19293a;
+      --line: rgba(190, 160, 103, .34);
+      --gold: #d49a42;
+      --gold-bright: #f5d88e;
+      --text: #eaf2f6;
+      --muted: #a8b7c5;
+      --teal: #59c9e8;
+      --red: #f08a52;
+      --serif: 'Cinzel', Georgia, serif;
+      --body: 'Inter', Arial, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--text);
+      font: 15px/1.55 var(--body);
+      background:
+        radial-gradient(ellipse at 0% 18%, rgba(23,155,200,.18), transparent 42rem),
+        radial-gradient(ellipse at 100% 20%, rgba(233,119,35,.16), transparent 42rem),
+        var(--night);
+    }
+    a { color: inherit; }
+    .site-shell { width: min(1180px, calc(100% - 36px)); margin: 0 auto; }
+    .masthead { padding: 28px 0 0; }
+    .guild-line { display:flex; align-items:center; justify-content:center; gap:12px; color:var(--gold); font-size:.72rem; font-weight:700; letter-spacing:.22em; text-transform:uppercase; }
+    .guild-line::before,.guild-line::after { content:""; width:54px; height:1px; background:linear-gradient(90deg,transparent,var(--gold)); }
+    .guild-line::after { transform:scaleX(-1); }
+    .hero {
+      position:relative; overflow:hidden; margin:20px 0 0; padding:48px 24px 38px;
+      text-align:center; border:1px solid var(--line); border-bottom:2px solid var(--gold);
+      background:linear-gradient(135deg, rgba(33,49,64,.96), rgba(15,25,36,.98) 64%, rgba(24,40,51,.97));
+      box-shadow:0 18px 45px rgba(0,0,0,.24), inset 0 1px rgba(255,255,255,.035);
+    }
+    .hero::before,.hero::after { content:"✦"; position:absolute; top:50%; color:rgba(210,173,104,.19); font-size:130px; transform:translateY(-50%); line-height:1; }
+    .hero::before { left:3%; } .hero::after { right:3%; }
+    .hero-mark { position:relative; z-index:1; display:grid; place-items:center; width:50px; height:50px; margin:0 auto 14px; border:1px solid var(--gold); transform:rotate(45deg); color:var(--gold-bright); background:rgba(210,173,104,.07); }
+    .hero-mark span { transform:rotate(-45deg); font-size:24px; }
+    .eyebrow { position:relative; z-index:1; margin:0 0 7px; color:var(--teal); font-size:.72rem; font-weight:700; letter-spacing:.24em; text-transform:uppercase; }
+    h1,h2,h3,p { margin-top:0; }
+    h1 { position:relative; z-index:1; margin:0; color:var(--gold-bright); font:700 clamp(2rem,5vw,3.15rem)/1.13 var(--serif); letter-spacing:.035em; text-shadow:0 3px 18px rgba(0,0,0,.5); }
+    .hero-subtitle { position:relative; z-index:1; margin:12px 0 0; color:#d3d9df; font:italic 1.02rem/1.6 'Lora', Georgia, serif; }
+    .credits { position:relative; z-index:1; margin:15px 0 0; color:var(--muted); font-size:.83rem; }
+    .credits a { color:var(--gold-bright); text-decoration:none; font-weight:700; }
+    .credits a:hover { text-decoration:underline; }
+    .quick-stats { display:flex; justify-content:center; gap:0; margin:22px auto 0; padding:0; list-style:none; }
+    .quick-stats li { min-width:130px; padding:0 22px; border-right:1px solid var(--line); color:var(--muted); font-size:.73rem; letter-spacing:.08em; text-transform:uppercase; }
+    .quick-stats li:last-child { border:0; }
+    .quick-stats strong { display:block; color:var(--text); font:600 1.1rem var(--serif); letter-spacing:0; }
+    .page-nav { display:flex; justify-content:center; gap:10px; padding:16px 0 4px; }
+    .page-nav a { padding:8px 14px; color:#c6ced5; border:1px solid transparent; border-radius:3px; text-decoration:none; font-size:.8rem; font-weight:600; }
+    .page-nav a:hover,.page-nav a:focus-visible { color:var(--gold-bright); border-color:var(--line); background:rgba(255,255,255,.03); }
+    main { padding:26px 0 50px; }
+    .section-heading { display:flex; align-items:end; justify-content:space-between; gap:18px; margin:0 0 15px; }
+    .section-kicker { margin:0 0 3px; color:var(--teal); font-size:.69rem; letter-spacing:.19em; text-transform:uppercase; font-weight:700; }
+    h2 { margin:0; color:var(--gold-bright); font:600 clamp(1.35rem,3vw,1.75rem)/1.25 var(--serif); }
+    .section-intro { max-width:640px; margin:7px 0 0; color:var(--muted); font-size:.88rem; }
+    .route-section { padding:25px; border:1px solid var(--line); background:linear-gradient(140deg,rgba(24,37,50,.96),rgba(16,26,37,.92)); box-shadow:0 12px 34px rgba(0,0,0,.13); }
+    .route-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(215px,1fr)); gap:11px; margin-top:20px; }
+    .route-button { display:flex; min-height:83px; align-items:center; gap:13px; width:100%; padding:13px 14px; text-align:left; color:var(--text); border:1px solid rgba(201,211,220,.12); border-radius:4px; background:linear-gradient(145deg,rgba(35,52,67,.86),rgba(24,37,50,.86)); cursor:pointer; transition:border-color .18s,background .18s,transform .18s; }
+    .route-button:hover { transform:translateY(-2px); border-color:rgba(210,173,104,.65); }
+    .route-button[aria-pressed="true"] { border-color:var(--gold); background:linear-gradient(145deg,rgba(82,68,44,.52),rgba(34,47,57,.95)); box-shadow:inset 0 0 0 1px rgba(210,173,104,.12); }
+    .route-icon { flex:0 0 38px; display:grid; place-items:center; width:38px; height:38px; color:var(--gold-bright); border:1px solid var(--line); border-radius:50%; font-size:17px; background:rgba(210,173,104,.06); }
+    .route-copy { min-width:0; }
+    .route-name { display:block; color:#f2eee5; font-size:.84rem; font-weight:700; line-height:1.35; }
+    .route-meta { display:block; margin-top:4px; color:var(--muted); font-size:.72rem; }
+    .route-hint { margin:13px 0 0; color:#8f9ba6; font-size:.76rem; }
+    .route-hint span { color:var(--gold); }
+    .tool-section { margin-top:35px; scroll-margin-top:20px; }
+    .filter-panel { display:grid; grid-template-columns:minmax(200px,1.5fr) minmax(135px,.75fr) minmax(180px,1fr) minmax(190px,1fr); gap:12px; margin:18px 0 14px; padding:14px; border:1px solid var(--line); background:rgba(19,30,42,.92); }
+    .field label { display:block; margin:0 0 6px; color:#c2ccd4; font-size:.7rem; font-weight:700; letter-spacing:.09em; text-transform:uppercase; }
+    .field input,.field select { width:100%; min-height:44px; padding:10px 12px; color:var(--text); border:1px solid rgba(194,207,218,.24); border-radius:3px; outline:none; background:#101a24; font:inherit; }
+    .field input::placeholder { color:#7e8b96; }
+    .field input:focus,.field select:focus { border-color:var(--gold); box-shadow:0 0 0 3px rgba(210,173,104,.13); }
+    select option { background:#101a24; }
+    .result-bar { display:flex; align-items:center; justify-content:space-between; min-height:32px; margin:0 0 12px; color:var(--muted); font-size:.8rem; }
+    .result-bar strong { color:var(--gold-bright); }
+    .clear-button { padding:5px 9px; color:var(--gold-bright); border:1px solid var(--line); border-radius:3px; background:transparent; font:600 .75rem var(--body); cursor:pointer; }
+    .clear-button:hover { background:rgba(210,173,104,.1); }
+    .items-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr)); gap:14px; }
+    .crafting-request-note { margin:18px 0 0; color:var(--muted); font-size:.84rem; line-height:1.6; text-align:center; }
+    .crafting-request-note a { display:inline-block; color:var(--gold-bright); font-weight:700; white-space:nowrap; }
+    .item-card { overflow:hidden; border:1px solid rgba(210,173,104,.27); border-radius:4px; background:linear-gradient(155deg,#1c2b39,#14212d); box-shadow:0 8px 22px rgba(0,0,0,.14); }
+    .card-header { position:relative; padding:15px 17px 14px; border-bottom:1px solid var(--line); background:linear-gradient(110deg,rgba(65,58,43,.4),rgba(24,39,52,.35)); }
+    .card-header::after { content:""; position:absolute; top:0; right:0; width:44px; height:44px; border-top:1px solid rgba(210,173,104,.35); border-right:1px solid rgba(210,173,104,.35); }
+    .badge-container { display:flex; flex-wrap:wrap; gap:5px; margin-bottom:9px; }
+    .class-badge { padding:3px 7px; color:#b5c6d0; border:1px solid rgba(120,189,194,.28); border-radius:2px; background:rgba(120,189,194,.07); font-size:.62rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    .item-title { max-width:90%; margin:0; color:var(--gold-bright); font:600 1.02rem/1.35 var(--serif); }
+    .card-body { padding:6px 17px 12px; }
+    .ingredient-row { display:flex; align-items:flex-start; gap:10px; padding:10px 0; border-bottom:1px solid rgba(190,204,215,.09); }
+    .ingredient-row:last-child { border-bottom:0; }
+    .qty { flex:0 0 auto; min-width:36px; padding:3px 6px; color:#13202b; border-radius:2px; background:var(--gold); text-align:center; font-size:.74rem; font-weight:800; }
+    .ingredient-info { min-width:0; }
+    .name { display:block; color:#eff1ed; font-size:.84rem; font-weight:600; }
+    .location-text { margin-top:3px; color:#9eabb5; font-size:.72rem; }
+    .location-text strong { color:var(--teal); font-weight:600; }
+    .color-orange { color:#efad70; } .color-purple { color:#c39ae2; } .color-blue { color:#87bce8; }
+    .empty-state { grid-column:1/-1; padding:30px; border:1px dashed var(--line); color:var(--muted); text-align:center; }
+    .empty-state strong { display:block; margin-bottom:5px; color:var(--gold-bright); font:600 1.1rem var(--serif); }
+    footer { padding:24px 0 30px; color:#8f9ba6; border-top:1px solid var(--line); text-align:center; font-size:.78rem; }
+    footer p { margin:4px 0; }
+    footer strong { color:var(--gold-bright); }
+    :focus-visible { outline:2px solid var(--gold-bright); outline-offset:3px; }
+    @media (max-width:720px) {
+      .site-shell { width:min(100% - 22px,1180px); }
+      .masthead { padding-top:17px; }
+      .hero { margin-top:14px; padding:34px 15px 28px; }
+      .hero::before { left:-8%; } .hero::after { right:-8%; }
+      .hero::before,.hero::after { font-size:90px; }
+      .quick-stats li { min-width:0; flex:1; padding:0 10px; font-size:.62rem; }
+      .quick-stats strong { font-size:.95rem; }
+      .route-section { padding:18px 14px; }
+      .route-grid { grid-template-columns:repeat(auto-fit,minmax(185px,1fr)); }
+      .filter-panel { grid-template-columns:1fr 1fr; }
+      .field:first-child { grid-column:1/-1; }
+      .section-heading { align-items:start; flex-direction:column; gap:3px; }
+    }
+    @media (max-width:430px) {
+      .guild-line { gap:7px; font-size:.61rem; letter-spacing:.15em; }
+      .guild-line::before,.guild-line::after { width:27px; }
+      .hero-subtitle { font-size:.9rem; }
+      .credits { font-size:.75rem; }
+      .page-nav { gap:3px; }
+      .page-nav a { padding:7px 9px; font-size:.73rem; }
+      .route-grid { grid-template-columns:1fr; }
+      .filter-panel { grid-template-columns:1fr; }
+      .field:first-child { grid-column:auto; }
+    }
+    @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; } }
+
+    /* Medieval guild ledger finish */
+    :root {
+      --night:#100d0a; --stone:#211913; --panel:#e7d9b9; --panel-raised:#efe3c8;
+      --line:rgba(105,72,35,.42); --gold:#b18a48; --gold-bright:#e5c984;
+      --text:#f1e8d5; --muted:#bcae91; --teal:#557a6c; --red:#762f27;
+      --body:'Lora', Georgia, serif;
+    }
+    body {
+      background-color:#100d0a;
+      background-image:radial-gradient(ellipse at 50% 0%,rgba(64,48,32,.46),transparent 48rem),
+        repeating-linear-gradient(0deg,rgba(255,255,255,.012) 0 1px,transparent 1px 5px),
+        linear-gradient(110deg,#0c0a08,#18120d 48%,#0c0a08);
+    }
+    .hero {
+      border:3px double #a47c3d;
+      background:linear-gradient(135deg,rgba(42,31,23,.98),rgba(20,17,14,.98) 55%,rgba(48,35,24,.98));
+      box-shadow:0 18px 45px rgba(0,0,0,.38),inset 0 0 0 5px rgba(205,166,94,.055),inset 0 1px rgba(255,255,255,.04);
+    }
+    .hero::before,.hero::after { color:rgba(229,201,132,.16); font-size:150px; }
+    .hero-mark { border:2px solid var(--gold); box-shadow:0 0 0 4px rgba(177,138,72,.12),inset 0 0 0 3px rgba(177,138,72,.12); }
+    .hero-mark span { font-family:'MedievalSharp',serif; }
+    .hero-subtitle { color:#e1d2b0; }
+    .page-nav a { font-family:var(--serif); letter-spacing:.04em; }
+    .route-section {
+      color:#34291e; border:4px double #92703e; border-radius:3px;
+      background-color:#e7d9b9;
+      background-image:radial-gradient(ellipse at 12% 10%,rgba(255,255,255,.34),transparent 35%),
+        radial-gradient(ellipse at 90% 85%,rgba(130,89,45,.08),transparent 40%),
+        repeating-linear-gradient(3deg,rgba(88,59,28,.018) 0 1px,transparent 1px 4px);
+      box-shadow:0 12px 34px rgba(0,0,0,.25),inset 0 0 0 4px rgba(255,250,229,.22);
+    }
+    .section-kicker { color:#6a4330; }
+    .route-section h2,.tool-section h2 { color:#5d2c24; text-shadow:0 1px rgba(255,255,255,.35); }
+    .route-section .section-intro,.tool-section .section-intro { color:#5f5141; }
+    .route-button {
+      color:#34291e; border:1px solid #987749; border-radius:2px;
+      background:linear-gradient(145deg,rgba(246,235,207,.95),rgba(218,198,158,.96));
+      box-shadow:inset 0 1px rgba(255,255,255,.62),0 2px 4px rgba(62,43,24,.12);
+    }
+    .route-button:hover { border-color:#6d4825; background:linear-gradient(145deg,#f7eccf,#e3cf9f); }
+    .route-button[aria-pressed="true"] { border:2px solid #8c642d; background:linear-gradient(145deg,#d8c18d,#b99a5e); box-shadow:inset 0 0 0 2px rgba(255,246,216,.35); }
+    .route-icon { color:#73372b; border:1px solid #a6844e; background:rgba(112,66,40,.08); font-family:'MedievalSharp',serif; }
+    .route-name { color:#33271d; font-family:var(--serif); font-size:.77rem; }
+    .route-meta { color:#665744; }
+    .route-hint { color:#5f5141; }
+    .route-hint span { color:#702f25; font-weight:700; }
+    .filter-panel {
+      border:3px double #92703e; border-radius:3px;
+      background-color:#e7d9b9;
+      background-image:repeating-linear-gradient(3deg,rgba(88,59,28,.02) 0 1px,transparent 1px 4px);
+      box-shadow:inset 0 0 0 3px rgba(255,250,229,.18);
+    }
+    .field label { color:#5d3429; font-family:var(--serif); letter-spacing:.08em; }
+    .field input,.field select { color:#34291e; border:1px solid #9b7b4a; border-radius:2px; background:#f1e6ca; font-family:'Lora',Georgia,serif; }
+    .field input::placeholder { color:#85745c; }
+    .field input:focus,.field select:focus { border-color:#7b4c2c; box-shadow:0 0 0 3px rgba(143,100,48,.16); }
+    select option { color:#34291e; background:#f1e6ca; }
+    .result-bar { color:#c4b597; }
+    .result-bar strong { color:#f0d895; }
+    .clear-button { color:#f0dfb7; border-color:#a47c3d; border-radius:2px; background:#572d22; font-family:var(--serif); }
+    .clear-button:hover { background:#713c2b; }
+    .item-card {
+      border:3px double #947245; border-radius:2px;
+      background-color:#e8dbbc;
+      background-image:radial-gradient(ellipse at 85% 12%,rgba(255,255,255,.25),transparent 42%),
+        repeating-linear-gradient(2deg,rgba(88,59,28,.018) 0 1px,transparent 1px 4px);
+      box-shadow:0 7px 18px rgba(0,0,0,.24),inset 0 0 0 3px rgba(255,250,229,.18);
+    }
+    .card-header {
+      border-bottom:2px solid #a7834c;
+      background:linear-gradient(100deg,#33251c,#4b3022 54%,#30231b);
+      box-shadow:inset 0 1px rgba(255,255,255,.08);
+    }
+    .card-header::after { border-color:rgba(229,201,132,.56); }
+    .class-badge { color:#e8d8ae; border-color:rgba(209,185,126,.45); border-radius:2px; background:rgba(91,118,87,.28); font-family:var(--serif); }
+    .item-title { color:#f0d895; text-shadow:0 1px 2px #1b120c; }
+    .card-body { padding-top:8px; }
+    .ingredient-row { border-bottom-color:rgba(91,65,36,.17); }
+    .qty { color:#f9efd8; border:1px solid #86602f; border-radius:2px; background:linear-gradient(#9a6c35,#79502d); font-family:var(--serif); }
+    .name { color:#33271d; font-family:'Lora',Georgia,serif; }
+    .location-text { color:#6d5a43; }
+    .location-text strong { color:#3f6551; }
+    .color-orange { color:#e67e22; font-weight:800; } .color-purple { color:#8e44ad; font-weight:700; } .color-blue { color:#0070dd; font-weight:700; }
+    .empty-state { color:#665744; border-color:#987749; background:#e7d9b9; }
+    .empty-state strong { color:#5d2c24; }
+    footer { color:#bcae91; border-color:rgba(177,138,72,.45); }
+    .tool-section > .section-heading {
+      padding:20px 24px;
+      border:4px double #92703e;
+      border-radius:3px;
+      background-color:#e7d9b9;
+      background-image:radial-gradient(ellipse at 12% 10%,rgba(255,255,255,.38),transparent 38%),
+        radial-gradient(ellipse at 90% 90%,rgba(130,89,45,.07),transparent 42%),
+        repeating-linear-gradient(3deg,rgba(88,59,28,.018) 0 1px,transparent 1px 4px);
+      box-shadow:0 8px 20px rgba(0,0,0,.2),inset 0 0 0 4px rgba(255,250,229,.2);
+    }
+    .tool-section > .section-heading .section-kicker { color:#6a4330; }
+    .tool-section > .section-heading h2 { color:#5d2c24; }
+    .tool-section > .section-heading .section-intro { color:#5f5141; }
+    .tool-section > .section-heading {
+      margin-bottom:0;
+      border-width:3px;
+      border-bottom:0;
+      border-radius:3px 3px 0 0;
+      background-image:radial-gradient(ellipse at 12% 10%,rgba(255,255,255,.38),transparent 38%),
+        radial-gradient(ellipse at 90% 90%,rgba(130,89,45,.07),transparent 42%),
+        repeating-linear-gradient(3deg,rgba(88,59,28,.018) 0 1px,transparent 1px 4px);
+      box-shadow:0 8px 20px rgba(0,0,0,.2),inset 0 0 0 3px rgba(255,250,229,.2);
+    }
+    .tool-section .filter-panel {
+      margin:0;
+      border-top:0;
+      border-radius:0 0 3px 3px;
+      background-color:#e7d9b9;
+      background-image:radial-gradient(ellipse at 12% 10%,rgba(255,255,255,.38),transparent 38%),
+        radial-gradient(ellipse at 90% 90%,rgba(130,89,45,.07),transparent 42%),
+        repeating-linear-gradient(3deg,rgba(88,59,28,.018) 0 1px,transparent 1px 4px);
+      box-shadow:0 8px 20px rgba(0,0,0,.2),inset 0 0 0 3px rgba(255,250,229,.2);
+    }
+  
+    /* Synergy's shared midnight, ice-blue, ember, and gold identity */
+    .brand-banner { display:block; height:clamp(132px,19vw,220px); margin:17px 0 0; overflow:hidden; border:1px solid rgba(205,169,103,.52); box-shadow:0 14px 38px rgba(0,0,0,.35),0 0 30px rgba(34,153,195,.08); }
+    .brand-banner img { display:block; width:100%; height:100%; object-fit:cover; object-position:center 49%; }
+    .hero { border-color:rgba(205,169,103,.48); border-bottom-color:var(--gold); background:linear-gradient(110deg,rgba(5,19,29,.91),rgba(8,16,25,.82) 48%,rgba(36,20,12,.89)),url('assets/synergy-hero.svg') center 49%/cover; box-shadow:0 18px 45px rgba(0,0,0,.32),inset 0 0 0 4px rgba(205,166,94,.035); }
+    .hero::before { color:rgba(68,196,231,.2); }
+    .hero::after { color:rgba(246,145,56,.22); }
+    .hero-mark { width:58px; height:58px; border:1px solid rgba(213,168,87,.65); border-radius:50%; transform:none; overflow:hidden; box-shadow:0 0 0 4px rgba(71,183,218,.08),0 0 20px rgba(218,141,48,.12); }
+    .hero-mark span { transform:none; }
+    .hero-mark img { display:block; width:100%; height:100%; object-fit:cover; border-radius:50%; }
+    .route-card,.filter-panel,.item-card,.result-bar,.detail-panel { border-color:rgba(94,169,197,.23); }
+    @media(max-width:620px) { .brand-banner { height:128px; margin-top:12px; } }
+
+  
+
+    /* Shared Synergy site frame */
+    :root { --night:#070c14; --line:rgba(190,160,103,.36); --gold:#d49a42; --gold-bright:#f5d88e; --text:#eaf2f6; --muted:#a8b7c5; --teal:#59c9e8; --green:#7dc8a5; --red:#f08a52; --serif:'Cinzel',Georgia,serif; --body:'Inter',Arial,sans-serif; }
+    body { margin:0; min-height:100vh; color:var(--text); font:14px/1.55 var(--body); background-color:var(--night); background-image:radial-gradient(ellipse at 0% 20%,rgba(23,155,200,.17),transparent 42rem),radial-gradient(ellipse at 100% 24%,rgba(233,119,35,.15),transparent 42rem),repeating-linear-gradient(0deg,rgba(255,255,255,.012) 0 1px,transparent 1px 5px),linear-gradient(110deg,#050911,#0b1420 50%,#100d0a); }
+    .page-shell { width:min(1180px,calc(100% - 36px)); margin:0 auto; }
+    .brand-banner { display:block; height:clamp(132px,19vw,220px); margin:17px 0 0; overflow:hidden; border:1px solid rgba(205,169,103,.52); box-shadow:0 14px 38px rgba(0,0,0,.35),0 0 30px rgba(34,153,195,.08); }
+    .brand-banner img { display:block; width:100%; height:100%; object-fit:cover; object-position:center 49%; }
+    .masthead { display:flex; align-items:center; gap:14px; padding:23px 0 12px; border-bottom:1px solid var(--line); }
+    .brand-mark { display:grid; flex:none; place-items:center; width:40px; height:40px; overflow:hidden; border:1px solid rgba(213,168,87,.75); border-radius:50%; box-shadow:0 0 0 4px rgba(71,183,218,.08),0 0 20px rgba(218,141,48,.13); }
+    .brand-mark img { display:block; width:100%; height:100%; object-fit:cover; border-radius:50%; }
+    .brand-copy { line-height:1; white-space:nowrap; }
+    .brand-name { color:var(--gold-bright); font:700 20px var(--serif); letter-spacing:.12em; }
+    .brand-subtitle { margin-top:5px; color:var(--muted); font:italic 11px 'Lora',Georgia,serif; }
+    .masthead nav { display:flex; align-items:center; gap:5px; margin-left:auto; }
+    .masthead nav a { padding:8px 10px; border:1px solid transparent; border-radius:3px; color:#c6ced5; text-decoration:none; font:600 11px var(--serif); white-space:nowrap; }
+    .masthead nav a:hover,.masthead nav a:focus-visible { color:var(--gold-bright); border-color:var(--line); background:rgba(255,255,255,.03); }
+    .discord-link { margin-left:9px; padding:8px 11px; border:1px solid var(--gold); border-radius:3px; color:var(--gold-bright); text-decoration:none; font-size:11px; font-weight:600; white-space:nowrap; }
+    .discord-link:hover { background:rgba(177,138,72,.12); }
+    .hero { position:relative; overflow:hidden; margin:17px 0 15px; padding:27px 24px 24px; text-align:center; border:1px solid rgba(204,169,103,.52); border-bottom:2px solid var(--gold); background:linear-gradient(110deg,rgba(5,19,29,.96),rgba(8,16,25,.94) 48%,rgba(36,20,12,.94)); box-shadow:0 18px 45px rgba(0,0,0,.32),inset 0 0 0 4px rgba(205,166,94,.035); }
+    .hero::before,.hero::after { content:'✦'; position:absolute; top:50%; font:100px 'MedievalSharp',serif; transform:translateY(-50%); line-height:1; }
+    .hero::before { left:4%; color:rgba(68,196,231,.23); } .hero::after { right:4%; color:rgba(246,145,56,.24); }
+    .hero > .eyebrow { position:relative; z-index:1; margin:0 0 5px; color:var(--teal); font-size:9px; font-weight:700; letter-spacing:.2em; text-transform:uppercase; }
+    .hero h1 { position:relative; z-index:1; margin:4px 0; color:var(--gold-bright); font:700 clamp(27px,4vw,39px)/1.2 var(--serif); letter-spacing:.025em; text-shadow:0 3px 18px rgba(0,0,0,.5); }
+    .hero-copy,.hero-subtitle { position:relative; z-index:1; margin:5px 0 0; color:#dbe6ec; font:italic 14px/1.5 'Lora',Georgia,serif; }
+    .page-nav { display:flex; justify-content:center; gap:10px; padding:0 0 4px; }
+    .page-nav a { padding:8px 14px; color:#c6ced5; border:1px solid transparent; border-radius:3px; text-decoration:none; font-size:.8rem; font-weight:600; }
+    .page-nav a:hover,.page-nav a:focus-visible { color:var(--gold-bright); border-color:var(--line); background:rgba(255,255,255,.03); }
+    main { padding:0 0 50px; }
+    footer { display:flex; justify-content:space-between; align-items:center; gap:15px; padding:16px 2px 24px; color:var(--muted); border-top:1px solid var(--line); text-align:left; font-size:10px; }
+    footer p { margin:4px 0; }
+    footer span:first-child { font:600 9px var(--serif); letter-spacing:.12em; }
+    footer i { color:var(--gold); font-style:normal; }
+    footer strong { color:var(--gold-bright); }
+    @media(max-width:850px) { .page-shell { width:min(100% - 28px,1180px); } .masthead { padding:23px 0 12px; } .masthead nav { gap:0; } .masthead nav a { padding:7px; } .hero { padding:27px 24px 24px; } }
+    @media(max-width:620px) {
+      .page-shell { width:calc(100% - 20px); }
+      .brand-banner { height:128px; margin-top:12px; }
+      .masthead { flex-wrap:wrap; padding:17px 0 10px; }
+      .brand-mark { width:33px; height:33px; }
+      .brand-name { font-size:17px; }
+      .brand-subtitle { font-size:9px; }
+      .masthead nav { order:3; width:100%; justify-content:center; margin:2px 0 0; border-top:1px solid rgba(177,138,72,.2); }
+      .masthead nav a { padding:8px 7px; font-size:9px; }
+      .discord-link { margin-left:auto; padding:7px 8px; font-size:9px; }
+      .hero { padding:23px 12px; }
+      .hero::before { left:-7%; } .hero::after { right:-7%; } .hero::before,.hero::after { font-size:65px; }
+      footer { flex-direction:column; align-items:flex-start; font-size:9px; }
+    }
+
+  
+    /* Recipe cards use the same midnight panel treatment as the guild dashboard. */
+    .tool-section { margin-top:0; }
+    .tool-section > .section-heading { margin:0 0 14px; padding:0; border:0; border-radius:0; background:transparent; box-shadow:none; }
+    .tool-section > .section-heading .section-kicker { color:var(--teal); }
+    .tool-section > .section-heading h2 { color:var(--gold-bright); text-shadow:none; }
+    .tool-section > .section-heading .section-intro { color:var(--muted); }
+    .filter-panel,.tool-section .filter-panel { margin:0 0 14px; border:1px solid rgba(180,158,121,.34); border-radius:0; background:linear-gradient(145deg,rgba(17,31,45,.98),rgba(9,18,27,.98)); box-shadow:0 12px 34px rgba(0,0,0,.19); }
+    .field label { color:var(--teal); }
+    .field input,.field select { color:var(--text); border-color:rgba(194,207,218,.24); border-radius:3px; background:#0d1824; font-family:var(--body); }
+    .field input::placeholder { color:#91a1ae; }
+    .field input:focus,.field select:focus { border-color:var(--teal); box-shadow:0 0 0 3px rgba(89,201,232,.13); }
+    select option { color:var(--text); background:#0d1824; }
+    .result-bar { color:var(--muted); }
+    .result-bar strong { color:var(--gold-bright); }
+    .clear-button { padding:5px 8px; color:var(--gold-bright); border:1px solid var(--line); border-radius:3px; background:transparent; font:600 10px var(--body); }
+    .clear-button:hover { background:rgba(177,138,72,.12); }
+    .item-card { overflow:hidden; border:1px solid rgba(180,158,121,.34); border-radius:0; background:linear-gradient(145deg,rgba(17,31,45,.98),rgba(9,18,27,.98)); box-shadow:0 12px 34px rgba(0,0,0,.19); }
+    .card-header { border-bottom:1px solid var(--line); background:linear-gradient(110deg,rgba(8,29,42,.96),rgba(16,28,40,.94) 58%,rgba(39,25,16,.94)); box-shadow:none; }
+    .card-header::after { border-color:rgba(89,201,232,.25); }
+    .class-badge { color:#b8eaf5; border-color:rgba(89,201,232,.28); border-radius:2px; background:rgba(89,201,232,.07); font-family:var(--body); }
+    .item-title { color:var(--gold-bright); text-shadow:none; }
+    .ingredient-row { border-bottom-color:rgba(190,204,215,.1); }
+    .qty { color:#12202a; border:0; border-radius:2px; background:var(--gold); font-family:var(--body); }
+    .name { color:#eff1ed; }
+    .location-text { color:var(--muted); }
+    .location-text strong { color:var(--teal); }
+    .color-orange { color:#efad70; font-weight:700; } .color-purple { color:#c39ae2; font-weight:700; } .color-blue { color:#87bce8; font-weight:700; }
+    .empty-state { color:var(--muted); border-color:var(--line); background:rgba(5,15,23,.55); }
+    .empty-state strong { color:var(--gold-bright); }
+
+/* Shared masthead and footer finish */
+.masthead { display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); align-items:center; gap:14px; }
+.masthead nav { grid-column:2; justify-self:center; margin:0; gap:8px; }
+.masthead nav a { display:inline-flex; align-items:center; justify-content:center; padding:10px 14px; border:1px solid rgba(190,160,103,.32); border-radius:3px; color:#dbe6ec; background:rgba(10,20,31,.52); font:600 12px var(--serif); white-space:nowrap; }
+.masthead nav a:hover,.masthead nav a:focus-visible { color:var(--gold-bright); border-color:var(--line); background:rgba(255,255,255,.05); }
+.discord-link { grid-column:3; justify-self:end; margin:0; padding:10px 13px; border-radius:3px; font-size:12px; }
+footer { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:5px; padding:21px 3px 30px; color:#c2d0d8; border-top:1px solid rgba(190,160,103,.55); font-size:.88rem; text-align:center; }
+footer span:first-child { color:var(--gold-bright); font:600 .9rem var(--serif); letter-spacing:.12em; }
+.footer-credit { display:block; margin:0; color:#b7c5cf; font-size:.8rem; line-height:1.55; text-align:center; }
+@media(max-width:850px) {
+  .masthead nav { gap:5px; }
+  .masthead nav a { padding:9px 11px; }
+}
+@media(max-width:620px) {
+  .masthead { grid-template-columns:minmax(0,1fr) auto; padding-top:17px; }
+  .masthead nav { grid-column:1/-1; grid-row:2; position:static; transform:none; justify-self:center; width:auto; justify-content:center; gap:6px; margin:6px 0 0; padding:0; border:0; }
+  .masthead nav a { padding:9px 10px; font-size:10px; }
+  .discord-link { grid-column:2; grid-row:1; justify-self:end; margin:0; padding:9px 11px; font-size:11px; }
+  footer { align-items:center; gap:5px; padding:18px 2px 24px; font-size:.8rem; text-align:center; }
+  footer span:first-child { font-size:.84rem; }
+  .footer-credit { font-size:.76rem; }
+}
+
+/* Shared celestial-citadel visual treatment */
+:root {
+  --frame-gold: #d8a84e;
+  --frame-cyan: #32c5df;
+  --frame-deep: #061521;
+}
+body {
+  background-color: #040b13;
+  background-image:
+    radial-gradient(ellipse at 10% 18%, rgba(0,153,224,.17), transparent 36rem),
+    radial-gradient(ellipse at 92% 28%, rgba(246,127,39,.13), transparent 38rem),
+    radial-gradient(ellipse at 50% 90%, rgba(6,71,107,.15), transparent 50rem),
+    repeating-linear-gradient(0deg, rgba(130,193,220,.018) 0 1px, transparent 1px 5px),
+    linear-gradient(115deg, #030811, #071522 53%, #100e0d);
+}
+.brand-banner {
+  width:100vw;
+  max-width:none;
+  height:clamp(108px,12vw,166px);
+  margin:0 calc(50% - 50vw);
+  border:0;
+  border-bottom:1px solid rgba(216,168,78,.82);
+  background:#06111c;
+  box-shadow:0 7px 28px rgba(0,0,0,.5), 0 1px 0 rgba(50,197,223,.35);
+}
+.brand-banner img { object-position:center 49%; }
+.masthead {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:0;
+  width:100vw;
+  min-height:53px;
+  margin:0 calc(50% - 50vw);
+  padding:0 12px;
+  border-top:1px solid rgba(50,197,223,.18);
+  border-bottom:1px solid rgba(216,168,78,.72);
+  background:linear-gradient(180deg,rgba(5,23,36,.98),rgba(3,13,22,.98));
+  box-shadow:0 5px 18px rgba(0,0,0,.3);
+}
+.masthead .brand-mark,.masthead .brand-copy { display:none; }
+.masthead nav {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:0;
+  margin:0;
+}
+.masthead nav a {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px clamp(12px,2.6vw,30px);
+  border:0;
+  border-radius:0;
+  color:#d8eaf3;
+  background:transparent;
+  font:500 clamp(.82rem,1.35vw,1rem) var(--serif);
+  letter-spacing:.025em;
+}
+.masthead nav a + a { border-left:1px solid var(--frame-gold); }
+.masthead nav a:hover,.masthead nav a:focus-visible {
+  color:var(--gold-bright);
+  background:rgba(38,151,190,.09);
+}
+.discord-link {
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  margin:0;
+  padding:10px clamp(12px,2.6vw,30px);
+  border:0;
+  border-left:1px solid var(--frame-gold);
+  border-radius:0;
+  color:#d8eaf3;
+  background:transparent;
+  font:500 clamp(.82rem,1.35vw,1rem) var(--serif);
+}
+.discord-link:hover { color:var(--gold-bright); background:rgba(38,151,190,.09); }
+.hero {
+  position:relative;
+  min-height:180px;
+  margin:22px 0 20px;
+  padding:40px 24px 34px;
+  overflow:hidden;
+  border:1px solid rgba(216,168,78,.9);
+  border-radius:0;
+  outline:1px solid rgba(50,197,223,.42);
+  outline-offset:-6px;
+  background:
+    linear-gradient(90deg,rgba(2,14,24,.66),rgba(3,15,26,.74) 47%,rgba(3,15,26,.48)),
+    url('assets/synergy-hero.svg') center 52%/cover;
+  box-shadow:0 12px 35px rgba(0,0,0,.38), inset 0 0 24px rgba(5,111,159,.18);
+}
+.hero::before,.hero::after {
+  content:"";
+  position:absolute;
+  z-index:0;
+  width:24px;
+  height:24px;
+  top:9px;
+  left:9px;
+  border-top:1px solid var(--frame-gold);
+  border-left:1px solid var(--frame-gold);
+  color:transparent;
+  font-size:0;
+  transform:none;
+}
+.hero::after {
+  top:auto;
+  left:auto;
+  right:9px;
+  bottom:9px;
+  border:0;
+  border-right:1px solid var(--frame-gold);
+  border-bottom:1px solid var(--frame-gold);
+}
+.hero-mark { display:none; }
+.hero h1 { text-shadow:0 2px 5px #000,0 0 24px rgba(16,109,153,.45); }
+.hero .eyebrow,.hero > .kicker {
+  color:#36d2e5;
+  letter-spacing:.25em;
+}
+.hero-copy,.hero-subtitle { color:#d9edf6; }
+.panel,.search-panel,.roster-panel,.recent-panel,.promotions-panel,.inactivity-panel,
+.route-section,.filter-panel,.item-card,.detail-panel,.route-card {
+  border:1px solid rgba(216,168,78,.76);
+  border-radius:0;
+  outline:1px solid rgba(50,197,223,.24);
+  outline-offset:-6px;
+  background-color:#071925;
+  background-image:
+    radial-gradient(ellipse at 8% 0%,rgba(10,109,144,.17),transparent 38rem),
+    linear-gradient(145deg,rgba(4,22,33,.96),rgba(5,16,27,.98));
+  box-shadow:0 10px 28px rgba(0,0,0,.28),inset 0 0 22px rgba(4,87,121,.08);
+}
+.roster-panel > .panel-heading,.recent-panel > .panel-heading,
+.promotions-panel > .panel-heading,.inactivity-panel > .panel-heading,
+.card-header {
+  border-bottom:1px solid rgba(50,197,223,.46);
+  background:linear-gradient(100deg,rgba(4,35,51,.98),rgba(6,30,45,.95) 56%,rgba(47,29,17,.94));
+}
+.panel-heading .kicker,.section-kicker,.section-heading .section-kicker {
+  color:#35d2e3;
+}
+.panel-heading h2,h2,.item-title,.empty-state strong { text-shadow:0 1px 7px rgba(0,0,0,.55); }
+.directory-facets,.filter-panel {
+  border-color:rgba(50,197,223,.42);
+  background-color:rgba(3,17,27,.88);
+}
+.search-box,.field input,.field select,.facet-select-field select {
+  border-color:rgba(67,190,218,.38);
+  background-color:#071722;
+}
+.search-box:focus-within,.field input:focus,.field select:focus,.facet-select-field select:focus {
+  border-color:#38c9e1;
+  box-shadow:0 0 0 3px rgba(50,197,223,.13);
+}
+.table-wrap,.table-wrap th,.mobile-member-card,.promotion-row,.inactivity-row,.event-row {
+  border-color:rgba(50,197,223,.25);
+}
+.mobile-member-card,.promotion-row,.inactivity-row {
+  background:linear-gradient(115deg,rgba(5,29,43,.94),rgba(20,25,29,.94));
+}
+.route-button,.class-badge,.facet-chip,.mobile-member-rank {
+  border-color:rgba(50,197,223,.38);
+  background-color:rgba(8,37,52,.78);
+}
+.route-button:hover,.facet-chip:hover,.facet-chip.active { border-color:var(--frame-gold); }
+.card-header::after,.roster-panel > .panel-heading::after,.recent-panel > .panel-heading::after,
+.promotions-panel > .panel-heading::after,.inactivity-panel > .panel-heading::after {
+  border-color:rgba(50,197,223,.55);
+  border-top-color:rgba(216,168,78,.9);
+  border-right-color:rgba(216,168,78,.9);
+}
+footer {
+  border-top:1px solid rgba(216,168,78,.68);
+  color:#bfd5df;
+}
+@media(max-width:620px) {
+  .brand-banner { height:112px; margin-top:0; }
+  .masthead { min-height:49px; padding:0 5px; }
+  .masthead nav a,.discord-link { padding:9px 8px; font-size:.75rem; }
+  .hero { min-height:155px; margin:16px 0; padding:30px 13px 25px; }
+}
+
+/* Generated celestial-citadel artwork with a live wordmark overlay */
+.brand-banner { position:relative; isolation:isolate; }
+.brand-banner img { position:absolute; inset:0; z-index:0; object-fit:cover; object-position:center 50%; }
+.brand-banner::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  background:linear-gradient(90deg,rgba(2,10,19,.12),rgba(2,12,20,.18) 28%,rgba(2,12,20,.42) 50%,rgba(2,12,20,.08));
+  pointer-events:none;
+}
+.brand-banner-copy {
+  position:absolute;
+  inset:0;
+  z-index:2;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  pointer-events:none;
+  text-align:center;
+}
+.brand-banner-copy strong {
+  color:#f6d58a;
+  font:500 clamp(2rem,5.3vw,4rem)/1.05 var(--serif);
+  letter-spacing:.1em;
+  text-shadow:0 2px 4px #02070c,0 0 24px rgba(0,0,0,.9),0 0 26px rgba(231,160,67,.3);
+  text-transform:uppercase;
+}
+.brand-banner-copy small {
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-top:6px;
+  color:#dbeaf1;
+  font-size:.58rem;
+  font-weight:600;
+  letter-spacing:.34em;
+  line-height:1.3;
+  text-transform:uppercase;
+  text-shadow:0 1px 5px #02070c;
+}
+.brand-banner-copy small::before,.brand-banner-copy small::after {
+  content:"";
+  width:38px;
+  height:1px;
+  background:linear-gradient(90deg,transparent,#d6a74d);
+}
+.brand-banner-copy small::after { transform:scaleX(-1); }
+/* Soft scroll-style frames with rounded corners and a fine double gold rule. */
+.panel,.item-card,.route-section,.filter-panel,.detail-panel,.search-panel { position:relative; }
+.panel::before,.item-card::before,.route-section::before,.filter-panel::before,.detail-panel::before,.search-panel::before {
+  content:"";
+  position:absolute;
+  inset:2px;
+  z-index:2;
+  border:1px solid rgba(245,216,142,.84);
+  border-radius:11px;
+  box-shadow:
+    inset 0 0 0 2px rgba(7,12,20,.72),
+    inset 0 0 0 3px rgba(212,154,66,.3);
+  pointer-events:none;
+}
+@media(max-width:620px) {
+  .brand-banner-copy strong { font-size:2rem; }
+  .brand-banner-copy small { gap:7px; font-size:.48rem; letter-spacing:.24em; }
+  .brand-banner-copy small::before,.brand-banner-copy small::after { width:22px; }
+}
+
+/* Shared Synergy wordmark and S-banner artwork */
+.brand-banner { position:relative; isolation:isolate; }
+.brand-banner > .brand-banner-background {
+  position:absolute; inset:0; z-index:0;
+  display:block; width:100%; height:100%;
+  object-fit:cover; object-position:center 49%;
+}
+.brand-banner .brand-banner-copy > img {
+  position:relative; inset:auto; z-index:auto;
+  display:block; width:min(54vw,440px); max-width:calc(100% - 24px);
+  height:auto; max-height:calc(100% - 20px);
+  object-fit:contain; object-position:center;
+  clip-path:inset(4.2% 0 0);
+  mix-blend-mode:screen;
+}
+.hero {
+  background:
+    linear-gradient(90deg,rgba(2,14,24,.25),rgba(3,15,26,.42) 47%,rgba(3,15,26,.28)),
+    url('assets/synergy-flag-hero.webp') center 50%/cover;
+}
+@media(max-width:620px) {
+  .brand-banner .brand-banner-copy > img { width:min(74vw,360px); max-height:calc(100% - 18px); }
+}
+
+    
+/* Integrated Synergy header art and a stable three-link mobile menu */
+.brand-banner { height:max(240px,25vw); }
+.brand-banner > .brand-banner-background { object-position:center 39%; }
+.brand-banner::after { display:none; }
+.masthead {
+  display:flex;
+  flex-wrap:nowrap;
+  justify-content:center;
+  align-items:stretch;
+  gap:0;
+}
+.masthead nav {
+  display:flex;
+  align-items:stretch;
+  justify-content:center;
+  width:min(100%,780px);
+  margin:0;
+  gap:0;
+}
+.masthead nav a,.masthead nav .discord-link {
+  display:flex;
+  flex:1 1 0;
+  align-items:center;
+  justify-content:center;
+  min-width:0;
+  margin:0;
+  padding:10px clamp(8px,2vw,24px);
+  white-space:nowrap;
+}
+.masthead nav a + a,.masthead nav .discord-link { border-left:1px solid var(--frame-gold); }
+.masthead nav .discord-link { border-top:0; border-right:0; border-bottom:0; }
+@media(max-width:620px) {
+  .brand-banner { height:auto; aspect-ratio:3 / 1; }
+  .brand-banner > .brand-banner-background { object-fit:contain; object-position:center; }
+  .masthead { min-height:48px; padding:0 2px; }
+  .masthead nav { width:100%; }
+  .masthead nav a,.masthead nav .discord-link {
+    padding:8px 2px;
+    font-size:clamp(.56rem,2.25vw,.72rem);
+    letter-spacing:0;
+  }
+}
+
+
+/* Keep the full panoramic hero scene visible on phones. */
+@media(max-width:620px) {
+  .hero {
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:calc((100vw - 20px) / 3);
+    min-height:0;
+    padding:8px;
+    background-size:100% 100%;
+    background-position:center;
+  }
+  .hero > .eyebrow { margin:0 0 3px; font-size:8px; }
+  .hero h1 { margin:3px 0; font-size:clamp(21px,6vw,26px); }
+  .hero-copy,.hero-subtitle { margin:3px 0 0; font-size:12px; line-height:1.3; }
+}
+
+
+    /* Round the actual outer panels so their outlines and inner headers share soft corners. */
+    .panel,.search-panel,.roster-panel,.recent-panel,.promotions-panel,.inactivity-panel,
+    .route-section,.filter-panel,.item-card,.detail-panel,.route-card,.hero {
+      border-radius:12px;
+      overflow:hidden;
+    }
+    .panel::before,.item-card::before,.route-section::before,.filter-panel::before,.detail-panel::before,.search-panel::before {
+      border-radius:9px;
+    }
+    .hero::before,.hero::after { border-radius:4px; }
+
+    /* Give the Forge search field the same soft corners as the card frames. */
+    #searchInput { border-radius:8px; }
+    #classFilter,#materialFilter,#sourceFilter { border-radius:8px; }
+
+    /* The Forge filter panel has a more specific legacy radius; round it too. */
+    .tool-section .filter-panel { border-radius:12px; overflow:hidden; }
+
+    /* Slightly larger shared footer wordmark. */
+    footer span:first-child { font-size:.98rem; }
+    
+    /* Prevent full-bleed 100vw header elements from creating page-level horizontal scrolling. */
+    html,body { overflow-x:clip; }
+
+    /* Interactive material and source details */
+    .filter-note { grid-column:1/-1; margin:-2px 0 0; color:#968a72; font-size:.74rem; }
+    .result-summary { display:flex; align-items:center; flex-wrap:wrap; gap:7px 12px; min-width:0; }
+    .active-filters { display:flex; flex-wrap:wrap; gap:5px; }
+    .filter-chip { padding:3px 8px; color:#bceefa; border:1px solid rgba(89,201,232,.32); border-radius:999px; background:rgba(8,37,51,.8); font:500 .7rem var(--body); cursor:pointer; }
+    .filter-chip:hover { border-color:var(--gold); color:var(--gold-bright); }
+    .detail-link { padding:0; border:0; background:none; color:var(--teal); text-decoration:underline; text-decoration-style:dotted; text-underline-offset:3px; cursor:pointer; text-align:left; }
+    .detail-link:hover,.detail-link:focus-visible { color:var(--gold-bright); }
+    .name.detail-link { display:block; font:600 .84rem var(--body); }
+    .name.detail-link.color-orange { color:#efad70; }
+    .name.detail-link.color-purple { color:#c39ae2; }
+    .name.detail-link.color-blue { color:#87bce8; }
+    .source-link { font-size:.72rem; }
+    .ingredient-row.source-match { padding-left:8px; border-left:2px solid var(--teal); background:rgba(33,143,171,.09); }
+    .ingredient-row.material-match { padding-left:8px; border-left:2px solid var(--gold); background:rgba(177,138,72,.12); }
+    .source-match-note { display:inline-block; margin-top:4px; color:#82d8eb; font-size:.64rem; letter-spacing:.06em; text-transform:uppercase; }
+    .material-match-note { display:inline-block; margin-top:4px; color:var(--gold-bright); font-size:.64rem; letter-spacing:.06em; text-transform:uppercase; }
+    .detail-dialog { width:min(640px,calc(100% - 24px)); max-height:min(82vh,760px); padding:0; overflow:auto; color:var(--text); border:1px solid rgba(216,168,78,.86); border-radius:12px; background:#071925; box-shadow:0 24px 80px rgba(0,0,0,.72),inset 0 0 28px rgba(4,87,121,.12); }
+    .detail-dialog::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur(3px); }
+    .detail-dialog-content { position:relative; padding:25px; border:3px double rgba(245,216,142,.7); border-radius:11px; background:radial-gradient(ellipse at 8% 0%,rgba(10,109,144,.16),transparent 28rem),linear-gradient(145deg,#0b1b29,#080f18 70%,#18110c); }
+    .detail-dialog-close { position:absolute; top:12px; right:13px; width:34px; height:34px; color:var(--gold-bright); border:1px solid var(--line); border-radius:50%; background:rgba(7,12,20,.65); font-size:1.3rem; cursor:pointer; }
+    .detail-dialog-content .section-kicker { margin:0 40px 4px 0; }
+    .detail-dialog-content h2 { margin:0 36px 7px 0; color:var(--gold-bright); font:600 clamp(1.25rem,4vw,1.7rem)/1.25 var(--serif); overflow-wrap:anywhere; }
+    .detail-intro { margin:0 0 19px; color:var(--muted); font-size:.9rem; }
+    .detail-body h3 { margin:18px 0 7px; color:#bceefa; font:700 .72rem var(--body); letter-spacing:.11em; text-transform:uppercase; }
+    .detail-list { display:grid; gap:6px; margin:0; padding:0; list-style:none; }
+    .detail-list li { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:8px 10px; border:1px solid rgba(89,201,232,.18); border-radius:5px; background:rgba(7,23,34,.76); }
+    .detail-list small { flex:0 0 auto; color:var(--muted); font-size:.68rem; text-align:right; }
+    .detail-list-button { padding:0; border:0; background:none; color:var(--teal); font:500 .82rem var(--body); text-align:left; text-decoration:underline; text-decoration-style:dotted; text-underline-offset:3px; cursor:pointer; }
+    .detail-list-button:hover { color:var(--gold-bright); }
+    .recipe-detail-list li { align-items:flex-start; flex-direction:column; gap:2px; }
+    .detail-recipe-name { color:var(--gold-bright); font:600 .82rem var(--serif); }
+    .detail-recipe-quantity { color:#82d8eb!important; font-size:.72rem!important; font-weight:700; }
+    .recipe-detail-list small { text-align:left; }
+    .detail-dialog-actions { display:flex; justify-content:flex-end; margin-top:20px; padding-top:14px; border-top:1px solid var(--line); }
+    .detail-filter-button { padding:8px 12px; color:#07121c; border:1px solid #e5ba68; border-radius:5px; background:linear-gradient(135deg,#f2d68e,#c88b37); font:700 .78rem var(--body); cursor:pointer; }
+    .detail-filter-button:hover { filter:brightness(1.08); }
+    @media(max-width:620px) {
+      .filter-note { grid-column:1/-1; }
+      .result-bar { align-items:flex-start; gap:8px; }
+      .detail-dialog-content { padding:21px 16px; }
+      .detail-list li { align-items:flex-start; }
+      .detail-list small { max-width:44%; }
+    }
+
+    /* Shared popup frame used by both Synergy pages. */
+    dialog.popup-shell {
+      box-sizing:border-box;
+      width:min(640px,calc(100% - 24px));
+      max-height:min(82vh,760px);
+      padding:22px;
+      overflow:auto;
+      color:#eaf2f6;
+      border:3px double rgba(216,168,78,.86);
+      border-radius:12px;
+      background:radial-gradient(ellipse at 8% 0%,rgba(10,109,144,.18),transparent 30rem),linear-gradient(145deg,#0b1b29,#080f18 70%,#18110c);
+      box-shadow:0 24px 80px rgba(0,0,0,.72),inset 0 0 28px rgba(4,87,121,.12);
+      scrollbar-color:#80643b #171d21;
+      scrollbar-width:thin;
+    }
+    dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur(3px); }
+    .popup-shell h2 { margin:0 36px 7px 0; color:#f5d88e; font:600 clamp(1.25rem,4vw,1.55rem)/1.25 'Cinzel',Georgia,serif; overflow-wrap:anywhere; }
+    .popup-shell .kicker,.popup-shell .section-kicker { color:#59c9e8; }
+    .popup-shell .popup-close {
+      display:grid; place-items:center;
+      width:34px; height:34px; flex:none; padding:0;
+      color:#f5d88e; border:1px solid rgba(190,160,103,.36);
+      border-radius:50%; background:rgba(7,12,20,.72);
+      font:400 22px/1 'Inter',Arial,sans-serif; cursor:pointer;
+    }
+    .popup-shell .popup-close:hover,.popup-shell .popup-close:focus-visible { color:#59c9e8; border-color:#d49a42; }
+    .popup-shell .promotion-rules-header,.popup-shell .inactivity-rules-header,.popup-shell .account-dialog-header {
+      margin-bottom:14px; padding-bottom:13px;
+      border-bottom:1px solid rgba(89,201,232,.3);
+      background:linear-gradient(100deg,rgba(8,29,42,.5),rgba(39,25,16,.32));
+    }
+    .popup-shell .detail-intro { padding-bottom:14px; border-bottom:1px solid rgba(89,201,232,.3); }
+    .popup-shell .detail-list li,.popup-shell .promotion-rules-list li,.popup-shell .inactivity-rules-list li,.popup-shell .account-character-card {
+      border:1px solid rgba(89,201,232,.24);
+      border-radius:7px;
+      background:linear-gradient(115deg,rgba(5,29,43,.88),rgba(20,25,29,.88));
+    }
+    .popup-shell .detail-list li { padding:8px 10px; }
+    .popup-shell .promotion-rules-list,.popup-shell .inactivity-rules-list { gap:6px; }
+    .popup-shell .promotion-rules-list li,.popup-shell .inactivity-rules-list li { padding:9px 11px; }
+    .popup-shell .account-character-card { padding:10px 12px; }
+    .popup-shell .detail-filter-button { border-radius:6px; }
+    .popup-shell .detail-dialog-content { padding:0; border:0; border-radius:0; background:transparent; }
+    dialog.detail-dialog.popup-shell[open] {
+      display:flex;
+      flex-direction:column;
+      overflow:hidden;
+    }
+    .popup-shell .detail-dialog-content {
+      display:flex;
+      flex:1 1 auto;
+      flex-direction:column;
+      min-height:0;
+      max-height:calc(min(82vh,760px) - 50px);
+      overflow:hidden;
+    }
+    .popup-shell .detail-dialog-content > .section-kicker,
+    .popup-shell .detail-dialog-content > h2,
+    .popup-shell .detail-dialog-content > .detail-intro,
+    .popup-shell .detail-dialog-actions { flex:0 0 auto; }
+    .popup-shell .detail-body {
+      flex:1 1 auto;
+      min-height:0;
+      overflow-y:auto;
+      padding-right:5px;
+      scrollbar-color:#80643b #171d21;
+      scrollbar-width:thin;
+    }
+    @media(max-width:620px) { dialog.popup-shell { padding:16px; } .popup-shell .detail-dialog-content { max-height:calc(min(82vh,760px) - 38px); } }
+
+/* Keep all four shared menu labels inside their boxes on narrow screens. */
+@media(max-width:520px) {
+  .masthead nav {
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    width:100%;
+  }
+  .masthead nav a,.masthead nav .discord-link {
+    min-width:0;
+    min-height:38px;
+    padding:8px 5px;
+    font-size:clamp(.68rem,3vw,.8rem);
+    letter-spacing:0;
+    border:0;
+  }
+  .masthead nav a:nth-child(even),.masthead nav .discord-link {
+    border-left:1px solid var(--frame-gold);
+  }
+  .masthead nav a:nth-child(n+3),.masthead nav .discord-link {
+    border-top:1px solid var(--frame-gold);
+  }
+}    
+
+/* Mobile main menu: preserve link order and use a balanced two-by-two layout. */
+@media (max-width: 520px) {
+  .masthead nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-flow: row;
+    width: 100%;
+    gap: 0;
+  }
+  .masthead nav > a,
+  .masthead nav > .discord-link {
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: stretch;
+    min-width: 0;
+    min-height: 42px;
+    margin: 0;
+    padding: 8px 4px;
+    border: 0;
+    border-radius: 0;
+    white-space: nowrap;
+    text-align: center;
+    font-size: clamp(.58rem, 2.8vw, .72rem);
+    letter-spacing: 0;
+    line-height: 1.2;
+  }
+  .masthead nav > a + a { border-left: 0; }
+  .masthead nav > a:nth-child(even) {
+    border-left: 1px solid var(--frame-gold);
+  }
+  .masthead nav > a:nth-child(n+3) {
+    border-top: 1px solid var(--frame-gold);
+  }
+}
+
+    /* Match the roster's magnifying glass search field treatment. */
+    .search-box {
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+      padding:0 12px;
+      border:1px solid rgba(67,190,218,.38);
+      border-radius:8px;
+      background:#071722;
+      color:var(--teal);
+      font-size:20px;
+    }
+    .search-box span { flex:0 0 auto; }
+    .search-box #searchInput {
+      width:100%;
+      min-width:0;
+      min-height:42px;
+      padding:10px 0;
+      border:0;
+      border-radius:0;
+      outline:0;
+      color:var(--text);
+      background:transparent;
+      box-shadow:none;
+      font:14px var(--body);
+    }
+    .search-box:focus-within {
+      border-color:#38c9e1;
+      box-shadow:0 0 0 3px rgba(50,197,223,.13);
+    }
+    .search-box #searchInput:focus { border:0; box-shadow:none; }
+
+    /* Match the roster search panel's padding, gaps, and dropdown sizing. */
+    .filter-panel { gap:9px; padding:17px 19px; }
+    .filter-panel .field select { min-height:42px; padding:8px 30px 8px 10px; }
+    @media(max-width:620px) {
+      .filter-panel { gap:7px; padding:13px 11px; }
+      .filter-panel .field select { min-height:40px; padding-left:8px; font-size:.72rem; }
+    }
+
+    /* Five-link Synergy menu: three first-row links and two balanced below. */
+    @media(max-width:520px) {
+      .masthead nav { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); width:100%; }
+      .masthead nav > a,
+      .masthead nav > .discord-link { min-width:0; min-height:42px; padding:8px 3px; border:0; font-size:clamp(.57rem,2.7vw,.72rem); white-space:nowrap; }
+      .masthead nav > a:nth-child(1),
+      .masthead nav > a:nth-child(2),
+      .masthead nav > a:nth-child(3) { grid-column:span 2; }
+      .masthead nav > a:nth-child(4) { grid-column:1 / span 3; }
+      .masthead nav > .discord-link { grid-column:4 / span 3; }
+      .masthead nav > a:nth-child(4),
+      .masthead nav > .discord-link { border-top:1px solid var(--frame-gold); }
+      .masthead nav > a:nth-child(2),
+      .masthead nav > a:nth-child(3),
+      .masthead nav > .discord-link { border-left:1px solid var(--frame-gold); }
+      .masthead nav > a:nth-child(3) { border-top:0; }
+      .masthead nav > a:nth-child(4) { border-left:0; }
+    }
+
+.footer-links { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:8px; }
+.footer-links a { color:var(--gold-bright); text-decoration:none; font:600 .9rem var(--serif); letter-spacing:.12em; }
+.footer-links a:hover,.footer-links a:focus-visible { text-decoration:underline; text-underline-offset:3px; }
+.footer-links .footer-synergy-wordmark { color:var(--gold-bright); }
+.footer-links .footer-divider { color:var(--muted, #a8b7c5); }
+/* Framed brand banner (desktop/tablet): keep the banner inside the page column
+   instead of breaking out to full viewport width - the same treatment as the
+   other three Synergy pages. The height keeps today's 4:1 display ratio (25vw
+   tall at full width), so the cover crop - including the baked-in SYNERGY /
+   WANTED ALLIANCE lettering - is composed exactly as before, only at column
+   scale: at the 1180px column the banner is 295px tall instead of growing
+   with the monitor. Mobile (max-width:620px) rules above are unchanged. */
+@media (min-width:621px) {
+  .brand-banner {
+    width:100%;
+    max-width:1180px;
+    height:auto;
+    aspect-ratio:4 / 1;
+    margin:17px auto 0;
+    border:1px solid rgba(216,168,78,.82);
+    border-radius:12px;
+  }
+}
+/* Framed menu bar (desktop/tablet): the masthead gets the same treatment as
+   the banner above it. Its base rule breaks out to full viewport width
+   (width:100vw, dark gradient background, gold and teal hairlines), which read
+   fine under a full-bleed banner but bleeds past the edges of the framed
+   banner now that the banner sits in the column. Frame the bar to the column
+   too: uniform gold border, 12px radius, 12px gap below the banner. The nav
+   inside (780px, centered) is untouched, as are the mobile rules. */
+@media (min-width:621px) {
+  .masthead {
+    width:100%;
+    max-width:1180px;
+    margin:12px auto 0;
+    border:1px solid rgba(216,168,78,.72);
+    border-radius:12px;
+  }
+}
+/* Unified frame and gold: one border language for the whole site.
+   The header stack (banner, menu bar, hero title panel) shares a single spec -
+   1px frame gold at full strength (.82) - and every quieter border below it
+   keeps its current weight but shifts to the same gold hue (216,168,78, the
+   --frame-gold family), replacing the older golds the design accumulated
+   (190,160,103 / 204,169,103 / 180,158,121 / 177,138,72). Hierarchy is
+   preserved - header strong, content quiet - but everything reads as one
+   metal, cast for one guild. */
+:root { --line:rgba(216,168,78,.36); }
+@media (min-width:621px) {
+  .masthead { border-color:rgba(216,168,78,.82); }
+}
+.hero { border:1px solid rgba(216,168,78,.82); }
+.item-card { border-color:rgba(216,168,78,.27); }
+/* Corner brackets removed: the 44px gold corner tick defined for card and
+   panel headings is retired site-wide - the plain double frame reads cleaner
+   without it. No Masterwork element currently uses these heading styles, so
+   nothing visible changes here today; this retires the bracket in code too,
+   so it cannot resurface on a future card. */
+.card-header::after,
+.roster-panel > .panel-heading::after,
+.recent-panel > .panel-heading::after,
+.promotions-panel > .panel-heading::after,
+.inactivity-panel > .panel-heading::after { content:none; }
+</style>
+  <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="brand-banner" role="img" aria-label="Synergy"><img class="brand-banner-background" src="assets/synergy-header-integrated.webp" alt=""></div>
+    <header class="masthead"><nav aria-label="Main menu"><a href="news.html">News</a><a href="index.html">Guild Roster</a><a href="masterwork.html">Masterwork</a><a href="guild-info.html">Guild Info</a><a class="discord-link" href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">Discord <span aria-hidden="true">↗</span></a></nav></header>
+
+    <main>
+      <section class="hero" aria-labelledby="forge-title">
+        <p class="eyebrow">A masterwork farming guide</p>
+        <h1 id="forge-title">The Masterwork Forge</h1>
+        <p class="hero-subtitle">Find the materials. Compare their sources. Craft with purpose.</p>
+        
+      </section>
+      <section class="tool-section" id="recipes" aria-labelledby="recipesTitle">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Materials and recipes</p>
+            <h2 id="recipesTitle">The field guide</h2>
+            <p class="section-intro">Browse by class, material, or source. Select an ingredient or source for details.</p>
+          </div>
+        </div>
+        <div class="filter-panel" role="search">
+          <div class="field">
+            <label for="searchInput">Search</label>
+            <div class="search-box"><span aria-hidden="true">⌕</span><input type="search" id="searchInput" placeholder="Recipe, class, material, or source" autocomplete="off"></div>
+          </div>
+          <div class="field">
+            <label for="classFilter">Class</label>
+            <select id="classFilter">
+              <option value="All">All Classes</option>
+              <option>Barbarian</option><option>Bard</option><option>Cleric</option><option>Fighter</option>
+              <option>Paladin</option><option>Ranger</option><option>Rogue</option><option>Warlock</option><option>Wizard</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="materialFilter">Material</label>
+            <select id="materialFilter"><option value="All">All Materials</option></select>
+          </div>
+          <div class="field">
+            <label for="sourceFilter">Source</label>
+            <select id="sourceFilter"><option value="All">All Sources</option></select>
+          </div>
+          <p class="filter-note">Material and source filters highlight matching recipe details.</p>
+        </div>
+        <div class="result-bar" aria-live="polite">
+          <div class="result-summary">
+            <span id="resultCount">Showing recipes</span>
+            <div id="activeFilters" class="active-filters"></div>
+          </div>
+          <button class="clear-button" id="clearFilters" type="button">Clear filters</button>
+        </div>
+        <div id="itemsGrid" class="items-grid"></div>
+      </section>
+      <p class="crafting-request-note">Crafting requests can be posted in the <a href="https://discord.com/channels/964991521524944956/1488094701138608199" target="_blank" rel="noopener noreferrer">#🛠️│𝙲𝚛𝚊𝚏𝚝𝚒𝚗𝚐-𝚁𝚎𝚚𝚞𝚎𝚜𝚝𝚜</a> Discord channel.</p>
+    </main>
+
+    <dialog id="detailDialog" class="popup-shell detail-dialog" aria-labelledby="detailTitle">
+      <div class="detail-dialog-content">
+        <button id="closeDetailDialog" class="popup-close detail-dialog-close" type="button" aria-label="Close details">×</button>
+        <p id="detailKicker" class="section-kicker"></p>
+        <h2 id="detailTitle"></h2>
+        <p id="detailIntro" class="detail-intro"></p>
+        <div id="detailBody" class="detail-body"></div>
+        <div class="detail-dialog-actions">
+          <button id="applyDetailFilter" class="detail-filter-button" type="button"></button>
+        </div>
+      </div>
+    </dialog>
+    <footer><div class="footer-links"><span class="footer-synergy-wordmark"><a href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">SYNERGY</a></span><span class="footer-divider" aria-hidden="true">|</span><a class="footer-alliance-link" href="https://discord.gg/eDgrKe24tu" target="_blank" rel="noopener noreferrer">WANTED Alliance</a></div><span class="footer-credit">Material research by <strong>Ivydora</strong> &amp; <strong>Asura</strong></span></footer>
+  </div>
+  <script>
+    const craftingData = [
+  // --- CONSOLIDATED SHARED SETS ---
+  {
+    "classes": ["Bard", "Barbarian", "Fighter", "Ranger", "Rogue"],
+    "item": "Shroomwood Amulet",
+    "ingredients": [
+      { "resource": "2x Mushroom Droplet", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "1x Menzoberranzan Faerzress Crystal", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "24x Mushroom Log", "location": "Explorer Chart: Menzoberranzan" },
+      { "resource": "48x Fluorescent Flora", "location": "Explorer Chart: Menzoberranzan" },
+      { "resource": "40x Luminescent Darklake Water", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "15x Fungal Moss", "location": "Abyssal Hunt Mod: Itty Bitty" },
+      { "resource": "5x Terebinth", "location": "Stronghold Vendor" }
+    ]
+  },
+  {
+    "classes": ["Bard", "Barbarian", "Fighter", "Ranger", "Rogue"],
+    "item": "Shroomwood Sash",
+    "ingredients": [
+      { "resource": "2x Fallen God's Ore", "location": "Master Demonweb Pits" },
+      { "resource": "1x Abyssal Crystal", "location": "Master Demonweb Pits" },
+      { "resource": "8x Perfect Marilith Hair", "location": "Master Demonweb Pits" },
+      { "resource": "24x Druegarsteel Scrap", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "13x Menzoberranzan Faerzress Crystal", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "1x Mushroom Droplet", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "4x Goristro Hide", "location": "Advanced Demonweb Pits" },
+      { "resource": "4x Calcified Webbing", "location": "Demonweb Pits Campaign Store" },
+      { "resource": "12x Mushroom Log", "location": "Explorer Chart: Menzoberranzan" },
+      { "resource": "3x Faerzress Rock", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "4x Luminescent Darklake Water", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "3x Fungal Moss", "location": "Abyssal Hunt Mod: Itty Bitty" }
+    ]
+  },
+  {
+    "classes": ["Cleric", "Warlock", "Wizard"],
+    "item": "Scintillant Amulet",
+    "ingredients": [
+      { "resource": "17x Fallen God’s Ore", "location": "Master Demonweb Pits" },
+      { "resource": "3x Abyssal Crystal", "location": "Master Demonweb Pits" },
+      { "resource": "24x Perfect Marilith Hair", "location": "Master Demonweb Pits" },
+      { "resource": "36x Druegarsteel Scrap", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "24x Menzoberranzan Faerzress Crystal", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "1x Demonweb Faerzress Crystal", "location": "Advanced Demonweb Pits" },
+      { "resource": "7x Calcified Webbing", "location": "Demonweb Pits Campaign Store" },
+      { "resource": "48x Fluorescent Flora", "location": "Explorer Chart: Menzoberranzan" },
+      { "resource": "6x Faerzress Rock", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "48x Luminescent Darklake Water", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "12x Fungal Moss", "location": "Abyssal Hunt Mod: Itty Bitty" },
+      { "resource": "5x Terebinth", "location": "Stronghold Vendor" }
+    ]
+  },
+  {
+    "classes": ["Cleric", "Warlock", "Wizard"],
+    "item": "Scintillant Sash",
+    "ingredients": [
+      { "resource": "4x Fallen God’s Ore", "location": "Master Demonweb Pits" },
+      { "resource": "2x Abyssal Crystal", "location": "Master Demonweb Pits" },
+      { "resource": "8x Perfect Marilith Hair", "location": "Master Demonweb Pits" },
+      { "resource": "24x Druegarsteel Scrap", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "12x Menzoberranzan Faerzress Crystal", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "1x Demonweb Faerzress Crystal", "location": "Advanced Demonweb Pits" },
+      { "resource": "4x Goristro Hide", "location": "Advanced Demonweb Pits" },
+      { "resource": "5x Calcified Webbing", "location": "Demonweb Pits Campaign Store" },
+      { "resource": "3x Faerzress Rock", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "3x Luminescent Darklake Water", "location": "Explorer Chart: Narbondellyn" }
+    ]
+  },
+  {
+    "classes": ["Barbarian", "Fighter", "Paladin"],
+    "item": "Darklake Ward Ring",
+    "ingredients": [
+      { "resource": "2x Fallen God’s Ore", "location": "Master Demonweb Pits" },
+      { "resource": "1x Abyssal Crystal", "location": "Master Demonweb Pits" },
+      { "resource": "24x Druegarsteel Scrap", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "16x Menzoberranzan Faerzress Crystal", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "4x Calcified Webbing", "location": "Demonweb Pits Campaign Store" },
+      { "resource": "3x Faerzress Rock", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "15x Luminescent Darklake Water", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "5x Terebinth", "location": "Stronghold Vendor" }
+    ]
+  },
+
+  // --- UNIQUE CLASS WEAPONS ---
+  {
+    "classes": ["Bard"],
+    "item": "Duergar Mercenary's Steel Rapier",
+    "ingredients": [
+      { "resource": "11x Fallen God’s Ore", "location": "Master Demonweb Pits" },
+      { "resource": "2x Abyssal Crystal", "location": "Master Demonweb Pits" },
+      { "resource": "16x Perfect Marilith Hair", "location": "Master Demonweb Pits" },
+      { "resource": "36x Druegarsteel Scrap", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "12x Menzoberranzan Faerzress Crystal", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "13x Mushroom Droplet", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "1x Demonweb Faerzress Crystal", "location": "Advanced Demonweb Pits" },
+      { "resource": "8x Goristro Hide", "location": "Advanced Demonweb Pits" },
+      { "resource": "7x Calcified Webbing", "location": "Demonweb Pits Campaign Store" },
+      { "resource": "12x Mushroom Log", "location": "Explorer Chart: Menzoberranzan" },
+      { "resource": "3x Faerzress Rock", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "21x Luminescent Darklake Water", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "2x Shroomsap Spores", "location": "Abyssal Hunt Mod: Itty Bitty" },
+      { "resource": "5x Terebinth", "location": "Stronghold Vendor" }
+    ]
+  },
+  {
+    "classes": ["Bard"],
+    "item": "Duergar Mercenary's Steel Lute",
+    "ingredients": [
+      { "resource": "3x Fallen God’s Ore", "location": "Master Demonweb Pits" },
+      { "resource": "1x Abyssal Crystal", "location": "Master Demonweb Pits" },
+      { "resource": "8x Perfect Marilith Hair", "location": "Master Demonweb Pits" },
+      { "resource": "12x Druegarsteel Scrap", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "2x Mushroom Droplet", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "1x Demonweb Faerzress Crystal", "location": "Advanced Demonweb Pits" },
+      { "resource": "5x Calcified Webbing", "location": "Demonweb Pits Campaign Store" },
+      { "resource": "24x Mushroom Log", "location": "Explorer Chart: Menzoberranzan" },
+      { "resource": "18x Luminescent Darklake Water", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "5x Terebinth", "location": "Stronghold Vendor" }
+    ]
+  },
+  {
+    "classes": ["Barbarian"],
+    "item": "Duergar Mercenary's Steel Hammer",
+    "ingredients": [
+      { "resource": "1x Fallen God’s Ore", "location": "Master Demonweb Pits" },
+      { "resource": "3x Perfect Marilith Hair", "location": "Master Demonweb Pits" },
+      { "resource": "16x Druegarsteel Scrap", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "14x Mushroom Droplet", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "8x Goristro Hide", "location": "Advanced Demonweb Pits" },
+      { "resource": "4x Calcified Webbing", "location": "Demonweb Pits Campaign Store" },
+      { "resource": "24x Mushroom Log", "location": "Explorer Chart: Menzoberranzan" },
+      { "resource": "30x Luminescent Darklake Water", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "2x Shroomsap Spores", "location": "Abyssal Hunt Mod: Itty Bitty" },
+      { "resource": "10x Terebinth", "location": "Stronghold Vendor" }
+    ]
+  },
+  {
+    "classes": ["Barbarian"],
+    "item": "Duergar Mercenary's Steel Sword Knot",
+    "ingredients": [
+      { "resource": "12x Fallen God’s Ore", "location": "Master Demonweb Pits" },
+      { "resource": "3x Abyssal Crystal", "location": "Master Demonweb Pits" },
+      { "resource": "16x Perfect Marilith Hair", "location": "Master Demonweb Pits" },
+      { "resource": "36x Druegarsteel Scrap", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "24x Menzoberranzan Faerzress Crystal", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "1x Demonweb Faerzress Crystal", "location": "Advanced Demonweb Pits" },
+      { "resource": "7x Calcified Webbing", "location": "Demonweb Pits Campaign Store" },
+      { "resource": "12x Fluorescent Flora", "location": "Explorer Chart: Menzoberranzan" },
+      { "resource": "6x Faerzress Rock", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "12x Luminescent Darklake Water", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "3x Fungal Moss", "location": "Abyssal Hunt Mod: Itty Bitty" }
+    ]
+  },
+  {
+    "classes": ["Cleric"],
+    "item": "Duergar Mercenary's Steel Symbol",
+    "ingredients": [
+      { "resource": "8x Fallen God’s Ore", "location": "Master Demonweb Pits" },
+      { "resource": "1x Abyssal Crystal", "location": "Master Demonweb Pits" },
+      { "resource": "16x Perfect Marilith Hair", "location": "Master Demonweb Pits" },
+      { "resource": "24x Druegarsteel Scrap", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "13x Menzoberranzan Faerzress Crystal", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "6x Mushroom Droplet", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "2x Goristro Hide", "location": "Advanced Demonweb Pits" },
+      { "resource": "5x Calcified Webbing", "location": "Demonweb Pits Campaign Store" },
+      { "resource": "40x Mushroom Log", "location": "Explorer Chart: Menzoberranzan" },
+      { "resource": "3x Faerzress Rock", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "22x Luminescent Darklake Water", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "3x Fungal Moss", "location": "Abyssal Hunt Mod: Itty Bitty" },
+      { "resource": "5x Terebinth", "location": "Stronghold Vendor" }
+    ]
+  },
+  {
+    "classes": ["Cleric"],
+    "item": "Duergar Mercenary's Steel Icon",
+    "ingredients": [
+      { "resource": "11x Fallen God’s Ore", "location": "Master Demonweb Pits" },
+      { "resource": "2x Abyssal Crystal", "location": "Master Demonweb Pits" },
+      { "resource": "16x Perfect Marilith Hair", "location": "Master Demonweb Pits" },
+      { "resource": "36x Druegarsteel Scrap", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "12x Menzoberranzan Faerzress Crystal", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "1x Demonweb Faerzress Crystal", "location": "Advanced Demonweb Pits" },
+      { "resource": "7x Calcified Webbing", "location": "Demonweb Pits Campaign Store" },
+      { "resource": "3x Faerzress Rock", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "6x Luminescent Darklake Water", "location": "Explorer Chart: Narbondellyn" }
+    ]
+  },
+  {
+    "classes": ["Fighter"],
+    "item": "Duergar Mercenary's Steel Longsword",
+    "ingredients": [
+      { "resource": "2x Fallen God’s Ore", "location": "Master Demonweb Pits" },
+      { "resource": "2x Abyssal Crystal", "location": "Master Demonweb Pits" },
+      { "resource": "3x Perfect Marilith Hair", "location": "Master Demonweb Pits" },
+      { "resource": "14x Mushroom Droplet", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "1x Demonweb Faerzress Crystal", "location": "Advanced Demonweb Pits" },
+      { "resource": "8x Goristro Hide", "location": "Advanced Demonweb Pits" },
+      { "resource": "3x Calcified Webbing", "location": "Demonweb Pits Campaign Store" },
+      { "resource": "24x Mushroom Log", "location": "Explorer Chart: Menzoberranzan" },
+      { "resource": "30x Luminescent Darklake Water", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "2x Shroomsap Spores", "location": "Abyssal Hunt Mod: Itty Bitty" },
+      { "resource": "10x Terebinth", "location": "Stronghold Vendor" }
+    ]
+  },
+  {
+    "classes": ["Fighter"],
+    "item": "Duergar Mercenary's Steel Shield",
+    "ingredients": [
+      { "resource": "4x Fallen God’s Ore", "location": "Master Demonweb Pits" },
+      { "resource": "1x Abyssal Crystal", "location": "Master Demonweb Pits" },
+      { "resource": "24x Druegarsteel Scrap", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "9x Mushroom Droplet", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "1x Demonweb Faerzress Crystal", "location": "Advanced Demonweb Pits" },
+      { "resource": "4x Goristro Hide", "location": "Advanced Demonweb Pits" },
+      { "resource": "5x Calcified Webbing", "location": "Demonweb Pits Campaign Store" },
+      { "resource": "44x Mushroom Log", "location": "Explorer Chart: Menzoberranzan" },
+      { "resource": "30x Luminescent Darklake Water", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "10x Terebinth", "location": "Stronghold Vendor" }
+    ]
+  },
+  {
+    "classes": ["Paladin"],
+    "item": "Duergar Mercenary's Steel Mace",
+    "ingredients": [
+      { "resource": "3x Fallen God’s Ore", "location": "Master Demonweb Pits" },
+      { "resource": "1x Abyssal Crystal", "location": "Master Demonweb Pits" },
+      { "resource": "12x Druegarsteel Scrap", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "14x Mushroom Droplet", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "1x Demonweb Faerzress Crystal", "location": "Advanced Demonweb Pits" },
+      { "resource": "9x Goristro Hide", "location": "Advanced Demonweb Pits" },
+      { "resource": "5x Calcified Webbing", "location": "Demonweb Pits Campaign Store" },
+      { "resource": "24x Mushroom Log", "location": "Explorer Chart: Menzoberranzan" },
+      { "resource": "30x Luminescent Darklake Water", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "2x Shroomsap Spores", "location": "Abyssal Hunt Mod: Itty Bitty" },
+      { "resource": "10x Terebinth", "location": "Stronghold Vendor" }
+    ]
+  },
+  {
+    "classes": ["Paladin"],
+    "item": "Duergar Mercenary's Steel Bulwark",
+    "ingredients": [
+      { "resource": "11x Fallen God’s Ore", "location": "Master Demonweb Pits" },
+      { "resource": "2x Abyssal Crystal", "location": "Master Demonweb Pits" },
+      { "resource": "16x Perfect Marilith Hair", "location": "Master Demonweb Pits" },
+      { "resource": "36x Druegarsteel Scrap", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "12x Menzoberranzan Faerzress Crystal", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "12x Mushroom Droplet", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "1x Demonweb Faerzress Crystal", "location": "Advanced Demonweb Pits" },
+      { "resource": "8x Goristro Hide", "location": "Advanced Demonweb Pits" },
+      { "resource": "7x Calcified Webbing", "location": "Demonweb Pits Campaign Store" },
+      { "resource": "3x Faerzress Rock", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "21x Luminescent Darklake Water", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "2x Shroomsap Spores", "location": "Abyssal Hunt Mod: Itty Bitty" },
+      { "resource": "5x Terebinth", "location": "Stronghold Vendor" }
+    ]
+  },
+  {
+    "classes": ["Warlock"],
+    "item": "Duergar Mercenary's Steel Pactblade",
+    "ingredients": [
+      { "resource": "9x Fallen God’s Ore", "location": "Master Demonweb Pits" },
+      { "resource": "1x Abyssal Crystal", "location": "Master Demonweb Pits" },
+      { "resource": "24x Perfect Marilith Hair", "location": "Master Demonweb Pits" },
+      { "resource": "36x Druegarsteel Scrap", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "13x Menzoberranzan Faerzress Crystal", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "2x Mushroom Droplet", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "7x Calcified Webbing", "location": "Demonweb Pits Campaign Store" },
+      { "resource": "24x Mushroom Log", "location": "Explorer Chart: Menzoberranzan" },
+      { "resource": "3x Faerzress Rock", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "25x Luminescent Darklake Water", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "3x Fungal Moss", "location": "Abyssal Hunt Mod: Itty Bitty" },
+      { "resource": "5x Terebinth", "location": "Stronghold Vendor" }
+    ]
+  },
+  {
+    "classes": ["Warlock"],
+    "item": "Duergar Mercenary's Steel Book",
+    "ingredients": [
+      { "resource": "1x Fallen God’s Ore", "location": "Master Demonweb Pits" },
+      { "resource": "12x Druegarsteel Scrap", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "2x Menzoberranzan Faerzress Crystal", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "26x Mushroom Droplet", "location": "Abyssal Hunt Mod: Tricky Reversal" },
+      { "resource": "16x Goristro Hide", "location": "Advanced Demonweb Pits" },
+      { "resource": "2x Calcified Webbing", "location": "Demonweb Pits Campaign Store" },
+      { "resource": "24x Mushroom Log", "location": "Explorer Chart: Menzoberranzan" },
+      { "resource": "24x Fluorescent Flora", "location": "Explorer Chart: Menzoberranzan" },
+      { "resource": "44x Luminescent Darklake Water", "location": "Explorer Chart: Narbondellyn" },
+      { "resource": "12x Fungal Moss", "location": "Abyssal Hunt Mod: Itty Bitty" },
+      { "resource": "4x Shroomsap Spores", "location": "Abyssal Hunt Mod: Itty Bitty" },
+      { "resource": "10x Terebinth", "location": "Stronghold Vendor" }
+    ]
+  }
+];
+
+    let activeSource = "All";
+    let activeMaterial = "All";
+
+    function parseIngredient(resource) {
+      const match = resource.match(/^(\d+x)\s+(.+)$/);
+      return match ? { qty: match[1], name: match[2] } : { qty: "", name: resource };
+    }
+
+    function getColorClass(resourceName) {
+      const name = resourceName.toLowerCase();
+      if (name.includes("druegarsteel") || name.includes("fallen god") || name.includes("abyssal crystal") || name.includes("menzoberranzan faerzress") || name.includes("mushroom droplet") || name.includes("perfect marilith")) return "color-orange";
+      if (name.includes("calcified webbing") || name.includes("demonweb faerzress") || name.includes("faerzress rock") || name.includes("mushroom log") || name.includes("shroomsap spores") || name.includes("fungal moss") || name.includes("fluorescent flora") || name.includes("goristro hide") || name.includes("luminescent darklake")) return "color-purple";
+      if (name.includes("terebinth")) return "color-blue";
+      return "";
+    }
+
+    function createMaterialEntries() {
+      const entries = new Map();
+      craftingData.forEach(recipe => {
+        const seen = new Set();
+        recipe.ingredients.forEach(ingredient => {
+          const name = parseIngredient(ingredient.resource).name;
+          const key = normalizeSearchText(name);
+          if (!entries.has(key)) entries.set(key, { key, name, recipes: [] });
+          if (!seen.has(key)) {
+            entries.get(key).recipes.push(recipe);
+            seen.add(key);
+          }
+        });
+      });
+      return Array.from(entries.values()).sort((a, b) => a.name.localeCompare(b.name));
+    }
+
+    function createSourceEntries() {
+      const entries = new Map();
+      craftingData.forEach(recipe => {
+        const seenSources = new Set();
+        recipe.ingredients.forEach(ingredient => {
+          const location = ingredient.location;
+          if (!entries.has(location)) entries.set(location, { name: location, recipes: [], materials: new Map() });
+          const source = entries.get(location);
+          if (!seenSources.has(location)) {
+            source.recipes.push(recipe);
+            seenSources.add(location);
+          }
+          const name = parseIngredient(ingredient.resource).name;
+          const key = normalizeSearchText(name);
+          if (!source.materials.has(key)) source.materials.set(key, { key, name, recipes: [] });
+          const material = source.materials.get(key);
+          if (!material.recipes.includes(recipe)) material.recipes.push(recipe);
+        });
+      });
+      return Array.from(entries.values()).sort((a, b) => a.name.localeCompare(b.name));
+    }
+
+    const materialEntries = createMaterialEntries();
+    const sourceEntries = createSourceEntries();
+
+    function populateFilters() {
+      const materialFilter = document.getElementById("materialFilter");
+      materialEntries.forEach(material => {
+        const option = document.createElement("option");
+        option.value = material.key;
+        option.textContent = material.name + " (" + material.recipes.length + ")";
+        materialFilter.appendChild(option);
+      });
+
+      const sourceFilter = document.getElementById("sourceFilter");
+      sourceEntries.forEach(source => {
+        const option = document.createElement("option");
+        option.value = source.name;
+        option.textContent = source.name + " (" + source.recipes.length + " recipes)";
+        sourceFilter.appendChild(option);
+      });
+    }
+
+    function createDetailButton(kind, value, label, className) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = className || "detail-link";
+      button.dataset.detailKind = kind;
+      button.dataset.detailValue = value;
+      button.textContent = label;
+      return button;
+    }
+
+    function appendDetailListItem(list, kind, value, label, note) {
+      const item = document.createElement("li");
+      item.appendChild(createDetailButton(kind, value, label, "detail-list-button"));
+      if (note) {
+        const small = document.createElement("small");
+        small.textContent = note;
+        item.appendChild(small);
+      }
+      list.appendChild(item);
+    }
+
+    function openDetail(kind, value) {
+      const dialog = document.getElementById("detailDialog");
+      const kicker = document.getElementById("detailKicker");
+      const title = document.getElementById("detailTitle");
+      const intro = document.getElementById("detailIntro");
+      const body = document.getElementById("detailBody");
+      const applyButton = document.getElementById("applyDetailFilter");
+      body.replaceChildren();
+
+      if (kind === "material") {
+        const material = materialEntries.find(entry => entry.key === normalizeSearchText(value));
+        if (!material) return;
+        kicker.textContent = "Crafting material";
+        title.textContent = material.name;
+        const sources = sourceEntries.filter(source => source.materials.has(material.key));
+        intro.textContent = "Used in " + material.recipes.length + " " + (material.recipes.length === 1 ? "recipe" : "recipes") + ".";
+        const sourceHeading = document.createElement("h3");
+        sourceHeading.textContent = "Gathered from";
+        body.appendChild(sourceHeading);
+        const sourceList = document.createElement("ul");
+        sourceList.className = "detail-list";
+        sources.forEach(source => appendDetailListItem(sourceList, "source", source.name, source.name, source.materials.get(material.key).recipes.length + " recipes use this material here"));
+        body.appendChild(sourceList);
+
+        const recipeHeading = document.createElement("h3");
+        recipeHeading.textContent = "Used in these recipes";
+        body.appendChild(recipeHeading);
+        const recipeList = document.createElement("ul");
+        recipeList.className = "detail-list recipe-detail-list";
+        material.recipes.forEach(recipe => {
+          const item = document.createElement("li");
+          const name = document.createElement("span");
+          name.className = "detail-recipe-name";
+          name.textContent = recipe.item;
+          const amountNeeded = recipe.ingredients.reduce((total, ingredient) => {
+            const parsed = parseIngredient(ingredient.resource);
+            if (normalizeSearchText(parsed.name) !== material.key) return total;
+            return total + (parseInt(parsed.qty, 10) || 0);
+          }, 0);
+          const quantity = document.createElement("small");
+          quantity.className = "detail-recipe-quantity";
+          quantity.textContent = amountNeeded > 0 ? amountNeeded + "x needed" : "Quantity not listed";
+          const classes = document.createElement("small");
+          classes.textContent = recipe.classes.join(", ");
+          item.append(name, quantity, classes);
+          recipeList.appendChild(item);
+        });
+        body.appendChild(recipeList);
+      } else if (kind === "source") {
+        const source = sourceEntries.find(entry => entry.name === value);
+        if (!source) return;
+        const materials = Array.from(source.materials.values()).sort((a, b) => a.name.localeCompare(b.name));
+        kicker.textContent = "Material source";
+        title.textContent = source.name;
+        intro.textContent = "This source appears in " + source.recipes.length + " " + (source.recipes.length === 1 ? "recipe" : "recipes") + " and provides " + materials.length + " distinct " + (materials.length === 1 ? "material" : "materials") + ".";
+        const materialHeading = document.createElement("h3");
+        materialHeading.textContent = "Materials found here";
+        body.appendChild(materialHeading);
+        const materialList = document.createElement("ul");
+        materialList.className = "detail-list";
+        materials.forEach(material => appendDetailListItem(materialList, "material", material.key, material.name, "Used in " + material.recipes.length + " " + (material.recipes.length === 1 ? "recipe" : "recipes")));
+        body.appendChild(materialList);
+
+        const recipeHeading = document.createElement("h3");
+        recipeHeading.textContent = "Recipes using this source";
+        body.appendChild(recipeHeading);
+        const recipeList = document.createElement("ul");
+        recipeList.className = "detail-list recipe-detail-list";
+        source.recipes.forEach(recipe => {
+          const item = document.createElement("li");
+          const name = document.createElement("span");
+          name.className = "detail-recipe-name";
+          name.textContent = recipe.item;
+          const classes = document.createElement("small");
+          classes.textContent = recipe.classes.join(", ");
+          item.append(name, classes);
+          recipeList.appendChild(item);
+        });
+        body.appendChild(recipeList);
+      } else {
+        return;
+      }
+
+      applyButton.dataset.filterKind = kind;
+      applyButton.dataset.filterValue = value;
+      applyButton.textContent = "Filter recipes by this " + kind;
+      if (!dialog.open) dialog.showModal();
+    }
+
+    function renderTable(data) {
+      const grid = document.getElementById("itemsGrid");
+      grid.replaceChildren();
+      if (!data.length) {
+        const empty = document.createElement("div");
+        empty.className = "empty-state";
+        const heading = document.createElement("strong");
+        heading.textContent = "No recipes found";
+        empty.append(heading, document.createTextNode("Try another search or clear one of the filters."));
+        grid.appendChild(empty);
+        return;
+      }
+
+      data.forEach(entry => {
+        const card = document.createElement("article");
+        card.className = "item-card";
+        const header = document.createElement("header");
+        header.className = "card-header";
+        const badges = document.createElement("div");
+        badges.className = "badge-container";
+        entry.classes.forEach(className => {
+          const badge = document.createElement("span");
+          badge.className = "class-badge";
+          badge.textContent = className;
+          badges.appendChild(badge);
+        });
+        const heading = document.createElement("h3");
+        heading.className = "item-title";
+        heading.textContent = entry.item;
+        header.append(badges, heading);
+
+        const cardBody = document.createElement("div");
+        cardBody.className = "card-body";
+        entry.ingredients.forEach(ingredient => {
+          const parsed = parseIngredient(ingredient.resource);
+          const sourceMatch = activeSource !== "All" && ingredient.location === activeSource;
+          const materialMatch = activeMaterial !== "All" && normalizeSearchText(parsed.name) === activeMaterial;
+          const row = document.createElement("div");
+          row.className = "ingredient-row" + (sourceMatch ? " source-match" : "") + (materialMatch ? " material-match" : "");
+
+          const quantity = document.createElement("span");
+          quantity.className = "qty";
+          quantity.textContent = parsed.qty;
+          const info = document.createElement("div");
+          info.className = "ingredient-info";
+          info.appendChild(createDetailButton("material", parsed.name, parsed.name, "name detail-link " + getColorClass(parsed.name)));
+
+          const location = document.createElement("div");
+          location.className = "location-text";
+          location.appendChild(document.createTextNode("Source: "));
+          location.appendChild(createDetailButton("source", ingredient.location, ingredient.location, "source-link detail-link"));
+          info.appendChild(location);
+          if (sourceMatch) {
+            const note = document.createElement("span");
+            note.className = "source-match-note";
+            note.textContent = "Selected source";
+            info.appendChild(note);
+          }
+          if (materialMatch) {
+            const note = document.createElement("span");
+            note.className = "material-match-note";
+            note.textContent = "Selected material";
+            info.appendChild(note);
+          }
+          row.append(quantity, info);
+          cardBody.appendChild(row);
+        });
+
+        card.append(header, cardBody);
+        grid.appendChild(card);
+      });
+    }
+
+    function renderActiveFilters() {
+      const container = document.getElementById("activeFilters");
+      container.replaceChildren();
+      const values = [
+        ["search", document.getElementById("searchInput").value.trim(), "Search"],
+        ["class", document.getElementById("classFilter").value, "Class"],
+        ["material", document.getElementById("materialFilter").value, "Material"],
+        ["source", document.getElementById("sourceFilter").value, "Source"]
+      ];
+      values.forEach(([key, value, label]) => {
+        if (!value || value === "All") return;
+        const chip = document.createElement("button");
+        chip.type = "button";
+        chip.className = "filter-chip";
+        chip.dataset.clearFilter = key;
+        const display = key === "class" ? value : key === "source" ? value : key === "material" ? (materialEntries.find(entry => entry.key === value)?.name || value) : value;
+        chip.textContent = label + ": " + display + " ×";
+        container.appendChild(chip);
+      });
+    }
+
+    function normalizeSearchText(value) {
+      return value.toLowerCase().replace(/[\u2018\u2019\u02bc\uff07]/g, "'");
+    }
+
+    function filterData() {
+      const searchVal = normalizeSearchText(document.getElementById("searchInput").value.trim());
+      const classVal = document.getElementById("classFilter").value;
+      activeMaterial = document.getElementById("materialFilter").value;
+      activeSource = document.getElementById("sourceFilter").value;
+      const filtered = craftingData.filter(recipe => {
+        const matchesClass = classVal === "All" || recipe.classes.includes(classVal);
+        const matchesMaterial = activeMaterial === "All" || recipe.ingredients.some(ingredient => normalizeSearchText(parseIngredient(ingredient.resource).name) === activeMaterial);
+        const matchesSource = activeSource === "All" || recipe.ingredients.some(ingredient => ingredient.location === activeSource);
+        const searchableText = normalizeSearchText([recipe.item, ...recipe.classes, ...recipe.ingredients.flatMap(ingredient => [ingredient.resource, ingredient.location])].join(" "));
+        return matchesClass && matchesMaterial && matchesSource && searchableText.includes(searchVal);
+      });
+      renderTable(filtered);
+      document.getElementById("resultCount").textContent = filtered.length + " " + (filtered.length === 1 ? "recipe" : "recipes") + " found";
+      renderActiveFilters();
+    }
+    document.getElementById("searchInput").addEventListener("input", filterData);
+    document.getElementById("classFilter").addEventListener("change", filterData);
+    document.getElementById("materialFilter").addEventListener("change", filterData);
+    document.getElementById("sourceFilter").addEventListener("change", filterData);
+    document.getElementById("activeFilters").addEventListener("click", event => {
+      const chip = event.target.closest("[data-clear-filter]");
+      if (!chip) return;
+      const key = chip.dataset.clearFilter;
+      if (key === "search") document.getElementById("searchInput").value = "";
+      if (key === "class") document.getElementById("classFilter").value = "All";
+      if (key === "material") document.getElementById("materialFilter").value = "All";
+      if (key === "source") document.getElementById("sourceFilter").value = "All";
+      filterData();
+    });
+    document.getElementById("clearFilters").addEventListener("click", () => {
+      document.getElementById("searchInput").value = "";
+      document.getElementById("classFilter").value = "All";
+      document.getElementById("materialFilter").value = "All";
+      document.getElementById("sourceFilter").value = "All";
+      filterData();
+    });
+    document.getElementById("itemsGrid").addEventListener("click", event => {
+      const button = event.target.closest("[data-detail-kind]");
+      if (button) openDetail(button.dataset.detailKind, button.dataset.detailValue);
+    });
+    document.getElementById("detailBody").addEventListener("click", event => {
+      const button = event.target.closest("[data-detail-kind]");
+      if (button) openDetail(button.dataset.detailKind, button.dataset.detailValue);
+    });
+    document.getElementById("applyDetailFilter").addEventListener("click", event => {
+      const button = event.currentTarget;
+      if (button.dataset.filterKind === "material") document.getElementById("materialFilter").value = normalizeSearchText(button.dataset.filterValue);
+      if (button.dataset.filterKind === "source") document.getElementById("sourceFilter").value = button.dataset.filterValue;
+      document.getElementById("detailDialog").close();
+      filterData();
+      document.getElementById("recipes").scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+    document.getElementById("closeDetailDialog").addEventListener("click", () => document.getElementById("detailDialog").close());
+
+    populateFilters();
+    filterData();
+  </script>
+</body>
+</html>
