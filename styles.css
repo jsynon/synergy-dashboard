@@ -1676,3 +1676,15 @@ footer { border-top-color:rgba(216,168,78,.55); }
 .inactivity-panel > .panel-heading::after,
 .guild-info-summary::after,
 .search-panel::after { content:none; }
+
+/* Synergy Soundtrack card (Guild Info): rows rendered from data/suno-music.json. */
+.suno-track-totals { color:var(--gold-bright); font-weight:600; }
+.suno-track-list { display:grid; gap:8px; margin:12px 0 14px; }
+.suno-track { display:flex; align-items:center; gap:12px; padding:8px 10px; border:1px solid rgba(190,160,103,.22); border-radius:10px; background:rgba(13,17,20,.35); text-decoration:none; }
+.suno-track:hover { border-color:rgba(216,168,78,.55); background:rgba(177,138,72,.08); }
+.suno-track-art { width:44px; height:44px; flex:none; border-radius:6px; object-fit:cover; }
+.suno-track-main { display:grid; gap:1px; min-width:0; flex:1; }
+.suno-track-title { color:var(--text); font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.suno-track-meta { color:var(--muted); font-size:.78rem; }
+.suno-track-plays { color:var(--gold-bright); font-size:.8rem; white-space:nowrap; }
+.suno-track-status { color:var(--muted); margin:0; }

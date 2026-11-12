@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261112-clear-filters-space">
+  <link rel="stylesheet" href="styles.css?v=20261112-suno-soundtrack">
   <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
 </head>
 <body>
@@ -251,6 +251,23 @@
               <p>Master artisans, gatherers, and dedicated contributors came together, pooling their efforts to refine materials, share knowledge, and elevate one another. Guided by the same principles that shaped the Academy, the Forge became a place of mentorship as much as production. Veterans passed down their expertise, newcomers found their footing, and each contribution—no matter how small—was recognized as part of a greater whole. The act of crafting became, in itself, an extension of Synergy’s philosophy: that true strength is not hoarded, but built together.</p>
               <p>Through the Forge, the guild’s reach extended beyond the battlefield, ensuring that its members were not only prepared for the trials ahead, but empowered to shape them. It stood as a symbol of refinement—of raw potential transformed through effort and unity into something enduring. And so Synergy continues to grow—not only as warriors, but as builders. Not only as individuals, but as a collective bound by purpose. With the Academy guiding its future and the Forge strengthening its foundation, the guild moves forward, ever shaping its legacy—tempered by experience, united in vision, and steadfast in the belief that what is built together will endure.</p>
             </div>
+          </div>
+        </details>
+
+        <details class="panel guild-info-card">
+          <summary class="guild-info-summary">
+            <div class="guild-info-summary-copy">
+              <p class="section-kicker">Guild Soundtrack</p>
+              <h2>Synergy Soundtrack</h2>
+              <p>Original songs made for the guild — dungeon anthems, queue blues, and loot celebrations.</p>
+            </div>
+            <span class="guild-info-toggle" aria-hidden="true"></span>
+          </summary>
+          <div class="guild-info-body">
+            <p>Synergy has its own soundtrack. Every song below was created for the guild by <strong>Antilogic</strong> — Neverwinter-inspired tracks about the adventures, the loot, and the late-night queues we run together. The list refreshes automatically from Suno, newest first; choose a song to listen on Suno.</p>
+            <p class="suno-track-totals" id="suno-track-totals"></p>
+            <div class="suno-track-list" id="suno-track-list"><p class="suno-track-status">Loading the soundtrack…</p></div>
+            <p><a class="guild-info-channel-link" href="https://suno.com/@antilogic" target="_blank" rel="noopener noreferrer">Listen and follow on Suno ↗</a></p>
           </div>
         </details>
 
@@ -551,6 +568,85 @@
 
       loadWidget();
       window.setInterval(loadWidget, 5 * 60 * 1000);
+    })();
+  </script>
+  <script>
+    (() => {
+      const list = document.getElementById("suno-track-list");
+      if (!list) return;
+      const totalsLine = document.getElementById("suno-track-totals");
+
+      const formatPlays = (value) => {
+        const plays = Number(value) || 0;
+        return `${plays.toLocaleString("en-US")} ${plays === 1 ? "play" : "plays"}`;
+      };
+      const formatDuration = (value) => {
+        const total = Math.round(Number(value) || 0);
+        if (!total) return "";
+        return `${Math.floor(total / 60)}:${String(total % 60).padStart(2, "0")}`;
+      };
+      const formatMonth = (value) => {
+        const date = new Date(value);
+        return Number.isNaN(date.valueOf()) ? "" : new Intl.DateTimeFormat("en-US", { month: "short", year: "numeric" }).format(date);
+      };
+      const showFallback = () => {
+        const note = document.createElement("p");
+        note.className = "suno-track-status";
+        note.textContent = "The track list could not be loaded just now — use the Suno link below to listen.";
+        list.replaceChildren(note);
+      };
+
+      fetch("data/suno-music.json")
+        .then((response) => {
+          if (!response.ok) throw new Error("Soundtrack data request failed.");
+          return response.json();
+        })
+        .then((data) => {
+          const songs = Array.isArray(data?.songs) ? data.songs : [];
+          if (!songs.length) {
+            showFallback();
+            return;
+          }
+          if (totalsLine && data.totals) {
+            totalsLine.textContent = `${data.totals.songs} ${data.totals.songs === 1 ? "song" : "songs"} · ${(Number(data.totals.plays) || 0).toLocaleString("en-US")} plays on Suno`;
+          }
+          list.replaceChildren();
+          for (const song of songs) {
+            const row = document.createElement("a");
+            row.className = "suno-track";
+            row.href = typeof song.url === "string" && song.url ? song.url : "https://suno.com/@antilogic";
+            row.target = "_blank";
+            row.rel = "noopener noreferrer";
+
+            if (typeof song.imageUrl === "string" && song.imageUrl) {
+              const art = document.createElement("img");
+              art.className = "suno-track-art";
+              art.src = song.imageUrl;
+              art.alt = "";
+              art.loading = "lazy";
+              art.addEventListener("error", () => art.remove(), { once: true });
+              row.appendChild(art);
+            }
+
+            const main = document.createElement("span");
+            main.className = "suno-track-main";
+            const title = document.createElement("span");
+            title.className = "suno-track-title";
+            title.textContent = String(song.title || "Untitled");
+            const meta = document.createElement("span");
+            meta.className = "suno-track-meta";
+            meta.textContent = [formatMonth(song.createdAt), formatDuration(song.durationSeconds)].filter(Boolean).join(" · ");
+            main.append(title, meta);
+
+            const plays = document.createElement("span");
+            plays.className = "suno-track-plays";
+            plays.textContent = formatPlays(song.plays);
+
+            row.append(main, plays);
+            list.appendChild(row);
+          }
+        })
+        .catch(showFallback);
     })();
   </script>
   </body>

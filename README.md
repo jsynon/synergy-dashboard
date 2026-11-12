@@ -10,7 +10,7 @@ The [News page](https://synergyonline.org/) is the site's homepage (`index.html`
 
 Update the in-game event list in `data/manual-events.json`. Use `startDate` and `endDate` in `YYYY-MM-DD` format; events that have ended are hidden automatically. Discord events are fetched by `scripts/fetch-discord-events.mjs` into `data/discord-events.json`. Recent Articles presents official headlines, publication dates, summaries, and available-platform details, with links to the original Neverwinter articles.
 
-The news cache is built from the official Arc Games news feed. `scripts/fetch-neverwinter-news.mjs` retrieves up to 100 English entries and writes `data/neverwinter-news.json`. The `.github/workflows/refresh-neverwinter-news.yml` workflow refreshes the official news and Discord event caches every six hours and can also be run manually. It reads the `DISCORD_BOT_TOKEN` GitHub Actions secret and `DISCORD_GUILD_ID` repository variable; the token is never included in the public site data. The workflow writes the refreshed article list into `index.html`; the old `news.html` address is now a redirect stub that sends visitors to the homepage.
+The news cache is built from the official Arc Games news feed. `scripts/fetch-neverwinter-news.mjs` retrieves up to 100 English entries and writes `data/neverwinter-news.json`. The `.github/workflows/refresh-neverwinter-news.yml` workflow refreshes the official news and Discord event caches every six hours and can also be run manually. The same workflow runs `scripts/fetch-suno-music.mjs`, which refreshes the Synergy Soundtrack track list in `data/suno-music.json` from the guild's public Suno profile; because that source is unofficial, a failed Suno fetch keeps the previous soundtrack data and never blocks the news refresh. It reads the `DISCORD_BOT_TOKEN` GitHub Actions secret and `DISCORD_GUILD_ID` repository variable; the token is never included in the public site data. The workflow writes the refreshed article list into `index.html`; the old `news.html` address is now a redirect stub that sends visitors to the homepage.
 
 ## Guild Roster
 
@@ -20,7 +20,7 @@ The page also includes a searchable Recent Activity archive, a collapsible Guild
 
 ## Guild Info
 
-The [Guild Info page](https://synergyonline.org/guild-info.html) explains the guild and what members can expect. Its expandable cards cover the Guild Overview, support and progression, community culture, learning and participation, reasons to join, guild rules, rank progression, and the Guild Charter. The page also presents Synergy’s history—from BAMF and Lady Vega through the guild’s renewal and the creation of Synergy Academy and the Masterwork Forge—and includes the guild’s Discord information.
+The [Guild Info page](https://synergyonline.org/guild-info.html) explains the guild and what members can expect. Its expandable cards cover the Guild Overview, support and progression, community culture, learning and participation, reasons to join, guild rules, rank progression, and the Guild Charter. The page also presents Synergy’s history—from BAMF and Lady Vega through the guild’s renewal and the creation of Synergy Academy and the Masterwork Forge—and includes the guild’s Discord information. A Synergy Soundtrack card presents the guild's original music — Neverwinter-inspired songs created by Antilogic — as a track list that refreshes automatically from [Suno](https://suno.com/@antilogic).
 
 ## Masterwork Forge
 
