@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=20261111-no-brackets">
-  <script src="app.js?v=20261111-promotion-year-window" defer></script>
+  <script src="app.js?v=20261112-merged-directory" defer></script>
   <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
 </head>
 <body>
@@ -40,17 +40,14 @@
         <p class="hero-copy">Explore Synergy’s roster and recent guild activity.</p>
       </section>
 
-
-
-      <div class="section-heading member-search-intro">
-        <div><p class="section-kicker">Member search</p><h2>Find a member</h2><p class="section-intro">Search characters or accounts, or narrow the roster by rank or class.</p></div>
-      </div>
-      <section class="panel search-panel" id="member-search" aria-label="Search and filter the member directory">
+      <details class="panel roster-panel collapsible-panel" id="roster" open>
+        <summary class="panel-heading roster-heading collapsible-heading"><div><p class="kicker">Roster export</p><h2>Member directory</h2><p class="section-subtitle">Roster details for each character and account.</p></div><span class="collapsible-header-meta"><span class="count-pill" id="directory-count" aria-live="polite">Loading roster totals</span><span class="guild-info-toggle" aria-hidden="true"></span></span></summary>
+        <div class="collapsible-panel-body">
+        <div class="collapsible-panel-body">
         <div class="toolbar">
           <div class="field directory-search">
             <label for="search">Search</label>
             <div class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search character or account names" autocomplete="off"></div>
-            <p id="search-results-count" class="search-results-count" aria-live="polite">Matching character and account results will appear here.</p>
           </div>
         </div>
         <div class="directory-facets" aria-label="Filter characters by rank or class">
@@ -59,12 +56,6 @@
           <p class="facet-note">Counts show characters. Choose a rank or class to filter the directory.</p>
         </div>
         <div class="filter-actions"><button id="clear-filters" class="text-button">Clear filters</button></div>
-      </section>
-
-      <details class="panel roster-panel collapsible-panel" id="roster" open>
-        <summary class="panel-heading roster-heading collapsible-heading"><div><p class="kicker">Roster export</p><h2>Member directory</h2><p class="section-subtitle">Roster details for each character and account.</p></div><span class="collapsible-header-meta"><span class="count-pill" id="directory-count">Loading roster totals</span><span class="guild-info-toggle" aria-hidden="true"></span></span></summary>
-        <div class="collapsible-panel-body">
-        <div class="collapsible-panel-body">
         <div class="mobile-directory-sort">
           <label for="mobile-sort">Sort by</label>
           <select id="mobile-sort" aria-label="Sort member directory">

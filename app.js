@@ -260,8 +260,7 @@
     const matchingAccounts=new Set(rows.map(m=>(m.account||'').trim().toLocaleLowerCase()).filter(Boolean)).size;
     const characterLabel=rows.length===1?'character':'characters';
     const accountLabel=matchingAccounts===1?'account':'accounts';
-    $('search-results-count').textContent=`${rows.length.toLocaleString()} ${characterLabel} · ${matchingAccounts.toLocaleString()} ${accountLabel} found`;
-    $('directory-count').textContent=$('search-results-count').textContent;
+    $('directory-count').textContent=`${rows.length.toLocaleString()} ${characterLabel} · ${matchingAccounts.toLocaleString()} ${accountLabel} found`;
     $('table-summary').textContent=`Showing ${rows.length.toLocaleString()} of ${state.roster.length.toLocaleString()} character records`;
     $('mobile-sort').value=state.sortBy;
     $('mobile-sort-direction').textContent=state.sortDirection===1?'Ascending ↑':'Descending ↓';
