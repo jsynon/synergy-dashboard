@@ -1720,7 +1720,7 @@ body.tabs-on .guild-panel.on { display:block; }
 
 /* Mobile tab-row hints (option A): the row's right edge fades out and a gold
    chevron sits over the fade, so it's obvious the menu scrolls sideways. */
-.guild-tabs-shell { position:relative; }
+.guild-tabs-shell { position:relative; min-width:0; }
 @media (max-width:720px) {
   body.tabs-on .guild-tabs { -webkit-mask-image:linear-gradient(90deg,#000 86%,transparent 99%); mask-image:linear-gradient(90deg,#000 86%,transparent 99%); }
   body.tabs-on .guild-tabs-shell::after { content:"›"; position:absolute; top:0; right:2px; bottom:0; display:flex; align-items:center; color:var(--gold-bright); font-size:1.1rem; font-weight:700; pointer-events:none; }
