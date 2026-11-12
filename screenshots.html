@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070c14">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://synergyonline.org/screenshots.html">
+  <meta name="description" content="Browse the Synergy guild's Neverwinter screenshots, shared by members in the Discord screenshots channel and gathered here automatically.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Synergy Guild">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Screenshots | Synergy">
+  <meta property="og:description" content="Browse the Synergy guild's Neverwinter screenshots, shared by members in the Discord screenshots channel and gathered here automatically.">
+  <meta property="og:url" content="https://synergyonline.org/screenshots.html">
+  <meta property="og:image" content="https://synergyonline.org/assets/synergy-header-integrated.webp">
+  <meta property="og:image:alt" content="Synergy’s blue-and-gold fantasy banner">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Screenshots | Synergy">
+  <meta name="twitter:description" content="Browse the Synergy guild's Neverwinter screenshots, shared by members in the Discord screenshots channel and gathered here automatically.">
+  <meta name="twitter:image" content="https://synergyonline.org/assets/synergy-header-integrated.webp">
+  <meta name="twitter:image:alt" content="Synergy’s blue-and-gold fantasy banner">
+  <title>Screenshots | Synergy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261112-screenshots">
+  <script src="screenshots.js?v=20261112-screenshots" defer></script>
+  <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="brand-banner" role="img" aria-label="Synergy"><img class="brand-banner-background" src="assets/synergy-header-integrated.webp" alt=""></div>
+    <header class="masthead"><nav aria-label="Main menu"><a href="index.html">News</a><a href="roster.html">Guild Roster</a><a href="masterwork.html">Masterwork</a><a href="guild-info.html">Guild Info</a><a href="screenshots.html" aria-current="page">Screenshots</a><a class="discord-link" href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">Discord <span aria-hidden="true">↗</span></a></nav></header>
+
+    <main>
+      <section class="hero" id="overview">
+        <div class="eyebrow"><span>Guild Gallery</span></div>
+        <h1>Screenshots</h1>
+        <p class="hero-copy">Moments from our adventures across Neverwinter, captured by Synergy members.</p>
+      </section>
+
+      <div class="section-heading member-search-intro">
+        <div>
+          <p class="section-kicker">From the Guild</p>
+          <h2>The guild gallery</h2>
+          <p class="section-intro">Every screenshot posted in the 📸 Screenshots channel on our Discord appears here automatically — dragon kills, sweeping vistas, stronghold life, and everything in between.</p>
+        </div>
+      </div>
+
+      <section class="panel news-feed-panel gallery-panel" aria-labelledby="gallery-title">
+        <div class="news-feed-heading">
+          <div><p class="section-kicker">Screenshot Archive</p><h2 id="gallery-title">Guild screenshots</h2><p class="section-subtitle">Newest first — select any screenshot to see it full size.</p></div>
+          <p class="news-feed-status count-pill" id="gallery-status" aria-live="polite">Loading screenshots…</p>
+        </div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+        <p class="gallery-message" id="gallery-message">Loading the gallery…</p>
+      </section>
+    </main>
+
+    <footer><div class="footer-links"><span class="footer-synergy-wordmark"><a href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">SYNERGY</a></span><span class="footer-divider" aria-hidden="true">|</span><a class="footer-alliance-link" href="https://discord.gg/eDgrKe24tu" target="_blank" rel="noopener noreferrer">WANTED Alliance</a></div><span class="footer-credit">Gathered automatically from the Synergy Discord screenshots channel.</span></footer>
+  </div>
+
+  <dialog class="gallery-lightbox" id="gallery-lightbox" aria-label="Screenshot viewer">
+    <div class="gallery-lightbox-frame">
+      <img id="gallery-lightbox-img" alt="">
+      <button type="button" class="gallery-close" id="gallery-close" aria-label="Close viewer">×</button>
+      <div class="gallery-lightbox-bar">
+        <button type="button" class="gallery-nav" id="gallery-prev" aria-label="Previous screenshot">←</button>
+        <div class="gallery-lightbox-meta"><p class="gallery-lightbox-caption" id="gallery-lightbox-caption"></p><p class="gallery-lightbox-byline" id="gallery-lightbox-byline"></p></div>
+        <button type="button" class="gallery-nav" id="gallery-next" aria-label="Next screenshot">→</button>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
