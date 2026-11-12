@@ -1745,3 +1745,14 @@ body.tabs-on .recent-panel .collapsible-panel-body, body.tabs-on .promotions-pan
 body.roster-heights-ready .recent-events, body.roster-heights-ready .bank-events, body.roster-heights-ready .promotion-list { flex:1; min-height:0; }
 body.roster-heights-ready .recent-events, body.roster-heights-ready .bank-events { max-height:none; }
 body.roster-heights-ready .promotion-list { height:auto; }
+
+/* News panel heads wear the same blue-to-orange bar as the roster and Guild
+   Info card heads, with the same heading text (blue-caps kicker, gold title
+   at the shared size). The bar bleeds to the panel's edges; the panel keeps
+   its own padding for the content below. */
+.news-feed-heading { margin:-15px -17px 12px; padding:17px 21px; border-bottom:1px solid rgba(89,201,232,.32); background:linear-gradient(100deg,rgba(8,29,42,.92),rgba(16,28,40,.9) 58%,rgba(39,25,16,.86)); }
+.news-feed-heading .section-kicker { margin:0 0 3px; color:#35d2e3; font-size:.69rem; font-weight:700; letter-spacing:.19em; text-transform:uppercase; }
+.news-feed-heading h2 { font:600 clamp(1.2rem,2.5vw,1.55rem)/1.3 var(--serif); }
+@media (max-width:720px) {
+  .news-feed-heading { margin:-12px -12px 12px; padding:14px 16px; }
+}
