@@ -1818,3 +1818,9 @@ body.roster-heights-ready .promotion-list { height:auto; }
 .gallery-more-button { padding:10px 22px; border:1px solid rgba(216,168,78,.55); border-radius:8px; background:rgba(212,154,66,.1); color:var(--gold-bright); font:600 .85rem var(--serif); letter-spacing:.04em; cursor:pointer; }
 .gallery-more-button:hover, .gallery-more-button:focus-visible { background:rgba(212,154,66,.2); border-color:rgba(216,168,78,.85); }
 .gallery-more-button[hidden] { display:none; }
+
+/* Screenshots intro: lift the shared 520px cap so the line uses the full
+   column and wraps only when it truly runs out of room (the sibling pages
+   pin theirs to one line with nowrap; this sentence is longer, so natural
+   wrapping is the safer form of the same idea). */
+.screenshots-page-intro .section-intro { max-width:none; }
