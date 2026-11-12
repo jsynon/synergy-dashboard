@@ -1710,3 +1710,10 @@ body.tabs-on .guild-panel.on { display:block; }
   .guild-panel-head { padding:15px 16px 0; }
   .guild-tab { padding:8px 10px; font-size:.82rem; }
 }
+
+/* Center the Guild Info tab menu where the full row fits (desktop widths);
+   "safe" centering keeps the row left-aligned and scrollable if it ever
+   outgrows the column instead of clipping its left edge. */
+@media (min-width:721px) {
+  .guild-tabs { justify-content:center; justify-content:safe center; }
+}
