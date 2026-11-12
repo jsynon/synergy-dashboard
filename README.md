@@ -1,8 +1,8 @@
 # Synergy Guild Website
 
-The Synergy website brings together four Neverwinter pages for guild members and visitors — News, Guild Roster, Guild Info, and the Masterwork Forge — all maintained and published from this repository at [synergyonline.org](https://synergyonline.org/). The pages share navigation, visual styling, and the Synergy community links.
+The Synergy website brings together four Neverwinter pages for guild members and visitors — News, Guild Roster, Guild Info, and the Masterwork Crafting Ledger — all maintained and published from this repository at [synergyonline.org](https://synergyonline.org/). The pages share navigation, visual styling, and the Synergy community links.
 
-[News](https://synergyonline.org/) · [Guild Roster](https://synergyonline.org/roster.html) · [Guild Info](https://synergyonline.org/guild-info.html) · [Masterwork Forge](https://synergyonline.org/masterwork.html) · [Discord](https://discord.gg/eMzcD6wJzh)
+[News](https://synergyonline.org/) · [Guild Roster](https://synergyonline.org/roster.html) · [Guild Info](https://synergyonline.org/guild-info.html) · [Masterwork Crafting Ledger](https://synergyonline.org/masterwork.html) · [Discord](https://discord.gg/eMzcD6wJzh)
 
 ## News
 
@@ -22,9 +22,9 @@ The page also includes a searchable Recent Activity archive, a collapsible Guild
 
 The [Guild Info page](https://synergyonline.org/guild-info.html) explains the guild and what members can expect. A topic menu at the top of the page switches between six sections — Guild Overview, Guild Rules, the Guild Charter, Guild History, the Synergy Soundtrack, and Synergy Academy — and each section keeps the full text of the expandable card it replaced, with its own link (for example, `guild-info.html#rules`); without JavaScript the sections simply stack open. The page also presents Synergy’s history—from BAMF and Lady Vega through the guild’s renewal and the creation of Synergy Academy and the Masterwork Forge. A Synergy Soundtrack section presents the guild's original music — Neverwinter-inspired songs created by Antilogic — as a track list that refreshes automatically from [Suno](https://suno.com/@antilogic).
 
-## Masterwork Forge
+## Masterwork Crafting Ledger
 
-The [Masterwork Forge](https://synergyonline.org/masterwork.html) is Synergy’s crafting reference for Neverwinter Masterwork recipes. It includes verified recipes for all nine character classes, with search and filters for class and material source. Players can look up recipes, items, materials, and where ingredients come from.
+The [Masterwork Crafting Ledger](https://synergyonline.org/masterwork.html) is Synergy’s crafting reference for Neverwinter Masterwork recipes. It includes verified recipes for all nine character classes, with search and filters for class and material source. Players can look up recipes, items, materials, and where ingredients come from.
 
 The Forge lives in this repository as `masterwork.html`. It was originally a separate project in the [`synergy-craft` GitHub repository](https://github.com/jsynon/synergy-craft); that repository is now archived, and its old GitHub Pages address serves a redirect to [synergyonline.org/masterwork.html](https://synergyonline.org/masterwork.html). Keep the archived repository in place — deleting it would break that redirect.
 
