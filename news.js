@@ -108,9 +108,16 @@
           if (!Number.isNaN(end.valueOf())) return end >= now;
         }
         // In-game events end at 10:30 AM Eastern on their end date, so a
-        // manual event leaves the list at that instant on its last day.
+        // manual event leaves the list at that instant on its last day. An
+        // event carrying its own endTime ("HH:MM", Eastern) ends then
+        // instead — the stronghold's Mysterious Merchant, whose seven days
+        // run from when its structure was built.
         if (event.source === "manual" && event.endDate) {
-          const endsAt = easternInstant(event.endDate, 10, 30);
+          const override = /^(\d{1,2}):(\d{2})$/.exec(event.endTime || "");
+          const valid = override && Number(override[1]) <= 23 && Number(override[2]) <= 59;
+          const endsAt = valid
+            ? easternInstant(event.endDate, Number(override[1]), Number(override[2]))
+            : easternInstant(event.endDate, 10, 30);
           if (endsAt) return endsAt > now;
         }
         const lastDate = event.endDate || event.endTime || event.startDate || event.startTime;
