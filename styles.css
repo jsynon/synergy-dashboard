@@ -1764,3 +1764,10 @@ body.roster-heights-ready .promotion-list { height:auto; }
 
 /* News heading subtitles match the other card headings' summary lines. */
 .news-feed-heading .section-subtitle { margin:4px 0 0; font-size:.84rem; }
+
+/* Recent Activity rows: the member link is the character name and account
+   handle as one unbroken string (e.g. "Name@handle#1234"), which can be
+   wider than the row's text column on phones and paint over the date.
+   Let long tokens wrap inside the copy (and the bank rows' member line,
+   which is built the same way). */
+.event-copy, .bank-event-member { overflow-wrap:anywhere; }
