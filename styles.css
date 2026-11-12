@@ -358,10 +358,10 @@ td { padding:10px 11px; }
 .member-search-intro .section-kicker { margin:0 0 3px; color:var(--teal); font-size:.69rem; letter-spacing:.19em; text-transform:uppercase; font-weight:700; }
 .member-search-intro h2 { margin:0; color:var(--gold-bright); font:600 clamp(1.35rem,3vw,1.75rem)/1.25 var(--serif); }
 .member-search-intro .section-intro { max-width:520px; margin:7px 0 0; color:var(--muted); font-size:.88rem; }
-.news-page-intro .section-intro,.guild-info-intro .section-intro { max-width:none; white-space:nowrap; }
+.news-page-intro .section-intro,.guild-info-intro .section-intro,.roster-page-intro .section-intro { max-width:none; white-space:nowrap; }
 @media(max-width:720px) {
   .member-search-intro { align-items:start; flex-direction:column; gap:3px; }
-  .news-page-intro .section-intro,.guild-info-intro .section-intro { white-space:normal; }
+  .news-page-intro .section-intro,.guild-info-intro .section-intro,.roster-page-intro .section-intro { white-space:normal; }
 }
 .search-panel { margin:0 0 14px; padding:17px 19px; }
 .filter-actions { display:flex; justify-content:flex-end; margin-top:10px; }
