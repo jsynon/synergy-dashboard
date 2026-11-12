@@ -364,7 +364,7 @@ td { padding:10px 11px; }
   .news-page-intro .section-intro,.guild-info-intro .section-intro,.roster-page-intro .section-intro { white-space:normal; }
 }
 .search-panel { margin:0 0 14px; padding:17px 19px; }
-.filter-actions { display:flex; justify-content:flex-end; margin-top:10px; }
+.filter-actions { display:flex; justify-content:flex-end; margin:10px 0 14px; }
 .search-panel .directory-facets { margin-bottom:0; }
 .roster-panel { margin-bottom:14px; }
 @media(max-width:620px) { .search-panel { padding:13px 11px; } }
