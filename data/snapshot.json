@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T04:19:27+00:00",
+  "generatedAt": "2026-11-12T04:52:33+00:00",
   "accountCount": 147,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -989,8 +989,8 @@
       "comment": "",
       "joinDate": "2026-09-29T21:21:56",
       "originalJoinDate": "2026-09-29T11:36:33",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-11T23:25:25",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2438,8 +2438,8 @@
     {
       "name": "GuardianAngel",
       "account": "@kenkenken.c83#62279",
-      "rank": "Initiate",
-      "rankOrder": 1,
+      "rank": "Wayfarer",
+      "rankOrder": 2,
       "class": "Rogue",
       "level": "20",
       "comment": "",
@@ -2648,8 +2648,8 @@
     {
       "name": "Ken Shieldheart",
       "account": "@kenkenken.c83#62279",
-      "rank": "Initiate",
-      "rankOrder": 1,
+      "rank": "Wayfarer",
+      "rankOrder": 2,
       "class": "Fighter",
       "level": "20",
       "comment": "",
@@ -3271,8 +3271,8 @@
       "comment": "MSOD/MJS",
       "joinDate": "2026-09-29T12:12:43",
       "originalJoinDate": "2026-09-29T12:12:43",
-      "lastOnline": "2026-11-11T21:15:55",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -3887,7 +3887,7 @@
       "comment": "",
       "joinDate": "2026-09-29T21:23:41",
       "originalJoinDate": "2026-09-29T11:36:33",
-      "lastOnline": "2026-11-11T09:33:57",
+      "lastOnline": "2026-11-11T23:30:23",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4083,7 +4083,7 @@
       "comment": "puffypofi",
       "joinDate": "2026-02-15T01:49:43",
       "originalJoinDate": "2026-02-15T01:41:00",
-      "lastOnline": "2026-11-11T23:13:22",
+      "lastOnline": "2026-11-11T23:27:49",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4836,11 +4836,11 @@
       "rankOrder": 3,
       "class": "Barbarian",
       "level": "20",
-      "comment": "+ tank/dps + mjs/mdwp/msod/msh",
+      "comment": "+ tank/dps + mjs/mdwp/msod/msh,+ tank/dps + mjs/mdwp/msh/msod",
       "joinDate": "2026-06-26T17:34:22",
       "originalJoinDate": "2026-06-26T17:34:22",
-      "lastOnline": "2026-11-11T16:43:59",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -5147,8 +5147,8 @@
       "comment": "",
       "joinDate": "2026-11-07T18:17:39",
       "originalJoinDate": "2026-06-14T22:53:46",
-      "lastOnline": "2026-11-11T18:36:26",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -5378,8 +5378,8 @@
     {
       "name": "MEPIKCHULITE",
       "account": "@mrpikachulite#37610",
-      "rank": "Initiate",
-      "rankOrder": 1,
+      "rank": "Wayfarer",
+      "rankOrder": 2,
       "class": "Warlock",
       "level": "20",
       "comment": "",
@@ -5483,8 +5483,8 @@
       "comment": "IGLWarlock Alt/ Bad tank mechanics rn",
       "joinDate": "2026-10-30T17:38:36",
       "originalJoinDate": "2026-09-29T12:12:43",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-11T23:38:25",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -5567,8 +5567,8 @@
       "comment": "",
       "joinDate": "2026-10-30T21:40:33",
       "originalJoinDate": "2026-10-13T20:53:40",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-11T23:40:00",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -5615,6 +5615,21 @@
     }
   ],
   "events": [
+    {
+      "date": "2026-11-11T23:52:05",
+      "kind": "rank",
+      "text": "Ken Shieldheart@kenkenken.c83#62279's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-11-11T23:52:02",
+      "kind": "rank",
+      "text": "GuardianAngel@kenkenken.c83#62279's guild rank is now Wayfarer"
+    },
+    {
+      "date": "2026-11-11T23:51:47",
+      "kind": "rank",
+      "text": "MEPIKCHULITE@mrpikachulite#37610's guild rank is now Wayfarer"
+    },
     {
       "date": "2026-11-11T05:07:00",
       "kind": "rank",
