@@ -1,6 +1,6 @@
 # Synergy Guild Website
 
-The Synergy website brings together four Neverwinter pages for guild members and visitors — News, Guild Roster, Guild Info, and the Masterwork Crafting Ledger — all maintained and published from this repository at [synergyonline.org](https://synergyonline.org/). The pages share navigation, visual styling, and the Synergy community links.
+The Synergy website brings together five Neverwinter pages for guild members and visitors — News, Guild Roster, Guild Info, the Masterwork Crafting Ledger, and Screenshots — all maintained and published from this repository at [synergyonline.org](https://synergyonline.org/). The pages share navigation, visual styling, and the Synergy community links.
 
 [News](https://synergyonline.org/) · [Guild Roster](https://synergyonline.org/roster.html) · [Guild Info](https://synergyonline.org/guild-info.html) · [Masterwork Crafting Ledger](https://synergyonline.org/masterwork.html) · [Discord](https://discord.gg/eMzcD6wJzh)
 
@@ -27,6 +27,10 @@ The [Guild Info page](https://synergyonline.org/guild-info.html) explains the gu
 The [Masterwork Crafting Ledger](https://synergyonline.org/masterwork.html) is Synergy’s crafting reference for Neverwinter Masterwork recipes. It includes verified recipes for all nine character classes, with search and filters for class and material source. Players can look up recipes, items, materials, and where ingredients come from.
 
 The Forge lives in this repository as `masterwork.html`. It was originally a separate project in the [`synergy-craft` GitHub repository](https://github.com/jsynon/synergy-craft); that repository is now archived, and its old GitHub Pages address serves a redirect to [synergyonline.org/masterwork.html](https://synergyonline.org/masterwork.html). Keep the archived repository in place — deleting it would break that redirect.
+
+## Screenshots
+
+The [Screenshots](https://synergyonline.org/screenshots.html) page is the guild's photo gallery. On the same refresh cycle as the news and events, a fetcher mirrors every image posted in the Discord screenshots channel into `assets/screenshots/` with an index in `data/screenshots.json`, so the gallery stays current without anyone uploading files by hand — and a screenshot deleted in Discord disappears from the gallery on the next refresh.
 
 ## Update roster, activity, and bank data
 
