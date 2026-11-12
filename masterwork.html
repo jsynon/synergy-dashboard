@@ -1062,6 +1062,18 @@ footer {
 .recent-panel > .panel-heading::after,
 .promotions-panel > .panel-heading::after,
 .inactivity-panel > .panel-heading::after { content:none; }
+
+/* Main menu spacing (2026-11-12): generic six-link phone grid + wider desktop nav (mirrors the dashboard stylesheet). */
+@media (min-width:621px) {
+  .masthead nav { width:min(100%,900px); }
+  .masthead nav a, .masthead nav .discord-link { padding-top:12px; padding-bottom:12px; }
+}
+@media(max-width:520px) {
+  .masthead nav { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); width:100%; }
+  .masthead nav > a:nth-child(n) { grid-column:span 2; min-width:0; min-height:42px; padding:8px 3px; border:0; font-size:clamp(.57rem,2.7vw,.72rem); white-space:nowrap; }
+  .masthead nav > a:nth-child(3n+2), .masthead nav > a:nth-child(3n+3) { border-left:1px solid var(--frame-gold); }
+  .masthead nav > a:nth-child(n+4) { border-top:1px solid var(--frame-gold); }
+}
 </style>
   <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
 </head>
