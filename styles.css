@@ -1725,3 +1725,12 @@ body.tabs-on .guild-panel.on { display:block; }
   body.tabs-on .guild-tabs { -webkit-mask-image:linear-gradient(90deg,#000 86%,transparent 99%); mask-image:linear-gradient(90deg,#000 86%,transparent 99%); }
   body.tabs-on .guild-tabs-shell::after { content:"›"; position:absolute; top:0; right:2px; bottom:0; display:flex; align-items:center; color:var(--gold-bright); font-size:1.1rem; font-weight:700; pointer-events:none; }
 }
+
+/* Roster topic tabs: the five panels as switchable tabs, the same mechanism
+   as Guild Info. Heads keep their summary classes so every existing heading
+   rule still applies; these rules only remove the collapse affordances and
+   restore the border the [open] state used to supply. */
+.collapsible-panel > .roster-panel-head, .bank-panel > .roster-panel-head { cursor:default; border-bottom:1px solid rgba(89,201,232,.32); }
+.collapsible-panel > .roster-panel-head:hover, .bank-panel > .roster-panel-head:hover { background:linear-gradient(100deg,rgba(8,29,42,.92),rgba(16,28,40,.9) 58%,rgba(39,25,16,.86)); }
+.roster-panel-head .section-kicker { color:#35d2e3; font-size:.69rem; font-weight:700; letter-spacing:.19em; text-transform:uppercase; }
+body.tabs-on .roster-tabs-shell { margin:0 0 16px; }
