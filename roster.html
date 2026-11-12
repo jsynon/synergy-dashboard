@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261112-roster-equal-height">
+  <link rel="stylesheet" href="styles.css?v=20261112-card-bars">
   <script src="app.js?v=20261112-merged-directory" defer></script>
   <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
 </head>
@@ -220,10 +220,12 @@
 
       select(hashTarget() || "directory");
 
-      // Activity, Bank, and Promotions match the Member Directory panel's
-      // height: measure the directory panel (it re-renders as the snapshot
-      // loads and as its filters change) and give the other three panels
-      // that height as a minimum; their lists flex to fill it and scroll.
+      // Activity, Bank, and Promotions take the Member Directory panel's
+      // exact height: measure the directory panel (it re-renders as the
+      // snapshot loads and as its filters change) and set that height on
+      // the other three; their lists flex to fill it and scroll inside.
+      // (A minimum height is not enough: with an indefinite flex height,
+      // the lists size to their full content instead of scrolling.)
       const directoryPanel = panels.find((panel) => panel.dataset.panel === "directory");
       const equalHeightPanels = panels.filter((panel) => ["activity", "bank", "promotions"].includes(panel.dataset.panel));
       if (directoryPanel && equalHeightPanels.length) {
@@ -242,7 +244,7 @@
         const syncPanelHeights = () => {
           const height = measureDirectory();
           if (!height) return;
-          equalHeightPanels.forEach((panel) => { panel.style.minHeight = `${height}px`; });
+          equalHeightPanels.forEach((panel) => { panel.style.height = `${height}px`; });
           document.body.classList.add("roster-heights-ready");
         };
         const queueHeightSync = () => {
