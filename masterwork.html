@@ -100,7 +100,7 @@
     .route-hint { margin:13px 0 0; color:#8f9ba6; font-size:.76rem; }
     .route-hint span { color:var(--gold); }
     .tool-section { margin-top:35px; scroll-margin-top:20px; }
-    .filter-panel { display:grid; grid-template-columns:minmax(200px,1.5fr) minmax(135px,.75fr) minmax(180px,1fr) minmax(190px,1fr); gap:12px; margin:18px 0 14px; padding:14px; border:1px solid var(--line); background:rgba(19,30,42,.92); }
+    .filter-panel { display:grid; grid-template-columns:minmax(200px,1.5fr) minmax(135px,.75fr) minmax(220px,1.25fr); gap:12px; margin:18px 0 14px; padding:14px; border:1px solid var(--line); background:rgba(19,30,42,.92); }
     .field label { display:block; margin:0 0 6px; color:#c2ccd4; font-size:.7rem; font-weight:700; letter-spacing:.09em; text-transform:uppercase; }
     .field input,.field select { width:100%; min-height:44px; padding:10px 12px; color:var(--text); border:1px solid rgba(194,207,218,.24); border-radius:3px; outline:none; background:#101a24; font:inherit; }
     .field input::placeholder { color:#7e8b96; }
@@ -755,7 +755,7 @@ footer {
 
     /* Give the Forge search field the same soft corners as the card frames. */
     #searchInput { border-radius:8px; }
-    #classFilter,#materialFilter,#sourceFilter { border-radius:8px; }
+    #classFilter,#recipeFilter { border-radius:8px; }
 
     /* The Forge filter panel has a more specific legacy radius; round it too. */
     .tool-section .filter-panel { border-radius:12px; overflow:hidden; }
@@ -1074,6 +1074,17 @@ footer {
   .masthead nav > a:nth-child(3n+2), .masthead nav > a:nth-child(3n+3) { border-left:1px solid var(--frame-gold); }
   .masthead nav > a:nth-child(n+4) { border-top:1px solid var(--frame-gold); }
 }
+
+    /* Collapsible recipe cards (2026-11-12): bodies stay hidden until a card
+       is opened, and an open card spans the full grid row so its ingredient
+       list gets the whole width. */
+    .item-card .card-body { display:none; }
+    .item-card.expanded { grid-column:1 / -1; }
+    .item-card.expanded .card-body { display:block; }
+    .item-card .card-header { cursor:pointer; }
+    .card-summary { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:8px; color:var(--muted); font-size:.78rem; }
+    .card-chevron { color:var(--gold); font-size:.85rem; transition:transform .18s ease; }
+    .item-card.expanded .card-chevron { transform:rotate(90deg); }
 </style>
   <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
 </head>
@@ -1094,7 +1105,7 @@ footer {
           <div>
             <p class="section-kicker">Materials and recipes</p>
             <h2 id="recipesTitle">The field guide</h2>
-            <p class="section-intro">Browse by class, material, or source. Select an ingredient or source for details.</p>
+            <p class="section-intro">Browse by class or recipe. Select an ingredient or source for details.</p>
           </div>
         </div>
         <div class="filter-panel" role="search">
@@ -1111,14 +1122,9 @@ footer {
             </select>
           </div>
           <div class="field">
-            <label for="materialFilter">Material</label>
-            <select id="materialFilter"><option value="All">All Materials</option></select>
+            <label for="recipeFilter">Recipe</label>
+            <select id="recipeFilter"><option value="All">All Recipes</option></select>
           </div>
-          <div class="field">
-            <label for="sourceFilter">Source</label>
-            <select id="sourceFilter"><option value="All">All Sources</option></select>
-          </div>
-          <p class="filter-note">Material and source filters highlight matching recipe details.</p>
         </div>
         <div class="result-bar" aria-live="polite">
           <div class="result-summary">
@@ -1440,8 +1446,7 @@ footer {
   }
 ];
 
-    let activeSource = "All";
-    let activeMaterial = "All";
+    let expandedItem = null;
 
     function parseIngredient(resource) {
       const match = resource.match(/^(\d+x)\s+(.+)$/);
@@ -1499,20 +1504,12 @@ footer {
     const sourceEntries = createSourceEntries();
 
     function populateFilters() {
-      const materialFilter = document.getElementById("materialFilter");
-      materialEntries.forEach(material => {
+      const recipeFilter = document.getElementById("recipeFilter");
+      [...craftingData].sort((a, b) => a.item.localeCompare(b.item)).forEach(recipe => {
         const option = document.createElement("option");
-        option.value = material.key;
-        option.textContent = material.name + " (" + material.recipes.length + ")";
-        materialFilter.appendChild(option);
-      });
-
-      const sourceFilter = document.getElementById("sourceFilter");
-      sourceEntries.forEach(source => {
-        const option = document.createElement("option");
-        option.value = source.name;
-        option.textContent = source.name + " (" + source.recipes.length + " recipes)";
-        sourceFilter.appendChild(option);
+        option.value = recipe.item;
+        option.textContent = recipe.item;
+        recipeFilter.appendChild(option);
       });
     }
 
@@ -1641,7 +1638,7 @@ footer {
 
       data.forEach(entry => {
         const card = document.createElement("article");
-        card.className = "item-card";
+        card.className = "item-card" + (expandedItem === entry.item ? " expanded" : "");
         const header = document.createElement("header");
         header.className = "card-header";
         const badges = document.createElement("div");
@@ -1655,16 +1652,32 @@ footer {
         const heading = document.createElement("h3");
         heading.className = "item-title";
         heading.textContent = entry.item;
-        header.append(badges, heading);
+        const summary = document.createElement("div");
+        summary.className = "card-summary";
+        const summaryText = document.createElement("span");
+        const sourceCount = new Set(entry.ingredients.map(ingredient => ingredient.location)).size;
+        summaryText.textContent = entry.ingredients.length + " materials · " + sourceCount + (sourceCount === 1 ? " source" : " sources");
+        const chevron = document.createElement("span");
+        chevron.className = "card-chevron";
+        chevron.setAttribute("aria-hidden", "true");
+        chevron.textContent = "▸";
+        summary.append(summaryText, chevron);
+        header.append(badges, heading, summary);
+        header.tabIndex = 0;
+        header.setAttribute("role", "button");
+        header.setAttribute("aria-expanded", expandedItem === entry.item ? "true" : "false");
+        const toggleCard = () => { expandedItem = expandedItem === entry.item ? null : entry.item; filterData(); };
+        header.addEventListener("click", toggleCard);
+        header.addEventListener("keydown", event => {
+          if (event.key === "Enter" || event.key === " ") { event.preventDefault(); toggleCard(); }
+        });
 
         const cardBody = document.createElement("div");
         cardBody.className = "card-body";
         entry.ingredients.forEach(ingredient => {
           const parsed = parseIngredient(ingredient.resource);
-          const sourceMatch = activeSource !== "All" && ingredient.location === activeSource;
-          const materialMatch = activeMaterial !== "All" && normalizeSearchText(parsed.name) === activeMaterial;
           const row = document.createElement("div");
-          row.className = "ingredient-row" + (sourceMatch ? " source-match" : "") + (materialMatch ? " material-match" : "");
+          row.className = "ingredient-row";
 
           const quantity = document.createElement("span");
           quantity.className = "qty";
@@ -1678,18 +1691,6 @@ footer {
           location.appendChild(document.createTextNode("Source: "));
           location.appendChild(createDetailButton("source", ingredient.location, ingredient.location, "source-link detail-link"));
           info.appendChild(location);
-          if (sourceMatch) {
-            const note = document.createElement("span");
-            note.className = "source-match-note";
-            note.textContent = "Selected source";
-            info.appendChild(note);
-          }
-          if (materialMatch) {
-            const note = document.createElement("span");
-            note.className = "material-match-note";
-            note.textContent = "Selected material";
-            info.appendChild(note);
-          }
           row.append(quantity, info);
           cardBody.appendChild(row);
         });
@@ -1705,8 +1706,7 @@ footer {
       const values = [
         ["search", document.getElementById("searchInput").value.trim(), "Search"],
         ["class", document.getElementById("classFilter").value, "Class"],
-        ["material", document.getElementById("materialFilter").value, "Material"],
-        ["source", document.getElementById("sourceFilter").value, "Source"]
+        ["recipe", document.getElementById("recipeFilter").value, "Recipe"]
       ];
       values.forEach(([key, value, label]) => {
         if (!value || value === "All") return;
@@ -1714,7 +1714,7 @@ footer {
         chip.type = "button";
         chip.className = "filter-chip";
         chip.dataset.clearFilter = key;
-        const display = key === "class" ? value : key === "source" ? value : key === "material" ? (materialEntries.find(entry => entry.key === value)?.name || value) : value;
+        const display = value;
         chip.textContent = label + ": " + display + " ×";
         container.appendChild(chip);
       });
@@ -1727,14 +1727,12 @@ footer {
     function filterData() {
       const searchVal = normalizeSearchText(document.getElementById("searchInput").value.trim());
       const classVal = document.getElementById("classFilter").value;
-      activeMaterial = document.getElementById("materialFilter").value;
-      activeSource = document.getElementById("sourceFilter").value;
+      const recipeVal = document.getElementById("recipeFilter").value;
       const filtered = craftingData.filter(recipe => {
         const matchesClass = classVal === "All" || recipe.classes.includes(classVal);
-        const matchesMaterial = activeMaterial === "All" || recipe.ingredients.some(ingredient => normalizeSearchText(parseIngredient(ingredient.resource).name) === activeMaterial);
-        const matchesSource = activeSource === "All" || recipe.ingredients.some(ingredient => ingredient.location === activeSource);
+        const matchesRecipe = recipeVal === "All" || recipe.item === recipeVal;
         const searchableText = normalizeSearchText([recipe.item, ...recipe.classes, ...recipe.ingredients.flatMap(ingredient => [ingredient.resource, ingredient.location])].join(" "));
-        return matchesClass && matchesMaterial && matchesSource && searchableText.includes(searchVal);
+        return matchesClass && matchesRecipe && searchableText.includes(searchVal);
       });
       renderTable(filtered);
       document.getElementById("resultCount").textContent = filtered.length + " " + (filtered.length === 1 ? "recipe" : "recipes") + " found";
@@ -1742,23 +1740,24 @@ footer {
     }
     document.getElementById("searchInput").addEventListener("input", filterData);
     document.getElementById("classFilter").addEventListener("change", filterData);
-    document.getElementById("materialFilter").addEventListener("change", filterData);
-    document.getElementById("sourceFilter").addEventListener("change", filterData);
+    document.getElementById("recipeFilter").addEventListener("change", event => {
+      expandedItem = event.target.value === "All" ? null : event.target.value;
+      filterData();
+    });
     document.getElementById("activeFilters").addEventListener("click", event => {
       const chip = event.target.closest("[data-clear-filter]");
       if (!chip) return;
       const key = chip.dataset.clearFilter;
       if (key === "search") document.getElementById("searchInput").value = "";
       if (key === "class") document.getElementById("classFilter").value = "All";
-      if (key === "material") document.getElementById("materialFilter").value = "All";
-      if (key === "source") document.getElementById("sourceFilter").value = "All";
+      if (key === "recipe") { document.getElementById("recipeFilter").value = "All"; expandedItem = null; }
       filterData();
     });
     document.getElementById("clearFilters").addEventListener("click", () => {
       document.getElementById("searchInput").value = "";
       document.getElementById("classFilter").value = "All";
-      document.getElementById("materialFilter").value = "All";
-      document.getElementById("sourceFilter").value = "All";
+      document.getElementById("recipeFilter").value = "All";
+      expandedItem = null;
       filterData();
     });
     document.getElementById("itemsGrid").addEventListener("click", event => {
@@ -1771,8 +1770,7 @@ footer {
     });
     document.getElementById("applyDetailFilter").addEventListener("click", event => {
       const button = event.currentTarget;
-      if (button.dataset.filterKind === "material") document.getElementById("materialFilter").value = normalizeSearchText(button.dataset.filterValue);
-      if (button.dataset.filterKind === "source") document.getElementById("sourceFilter").value = button.dataset.filterValue;
+      document.getElementById("searchInput").value = button.dataset.filterValue;
       document.getElementById("detailDialog").close();
       filterData();
       document.getElementById("recipes").scrollIntoView({ behavior: "smooth", block: "start" });
