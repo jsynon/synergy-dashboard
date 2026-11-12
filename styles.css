@@ -1701,13 +1701,13 @@ body.tabs-on .guild-tabs { display:flex; }
 .guild-tab[aria-selected="true"] { color:var(--gold-bright); border-bottom-color:var(--gold); }
 body.tabs-on .guild-panel { display:none; }
 body.tabs-on .guild-panel.on { display:block; }
-.guild-panel-head { padding:19px 22px 0; }
+.guild-panel-head { padding:17px 22px; border-bottom:1px solid rgba(89,201,232,.32); background:linear-gradient(100deg,rgba(8,29,42,.92),rgba(16,28,40,.9) 58%,rgba(39,25,16,.86)); }
 .guild-panel-head .section-kicker { margin:0 0 3px; color:#35d2e3; font-size:.69rem; font-weight:700; letter-spacing:.19em; text-transform:uppercase; }
 .guild-panel-head h2 { margin:0; color:var(--gold-bright); font:600 clamp(1.2rem,2.5vw,1.55rem)/1.3 var(--serif); }
 .guild-panel-head p { margin:4px 0 0; color:var(--muted); font-size:.84rem; }
 .guild-panel .guild-info-body { padding-top:12px; }
 @media (max-width:720px) {
-  .guild-panel-head { padding:15px 16px 0; }
+  .guild-panel-head { padding:14px 16px; }
   .guild-tab { padding:8px 10px; font-size:.82rem; }
 }
 
@@ -1727,10 +1727,21 @@ body.tabs-on .guild-panel.on { display:block; }
 }
 
 /* Roster topic tabs: the five panels as switchable tabs, the same mechanism
-   as Guild Info. Heads keep their summary classes so every existing heading
-   rule still applies; these rules only remove the collapse affordances and
-   restore the border the [open] state used to supply. */
+   as Guild Info. Heads keep the blue-to-orange summary bar; the text inside
+   follows the Guild Info heading text (blue-caps kicker at .69rem, gold
+   title at the Guild Info size, muted summary at .84rem). */
 .collapsible-panel > .roster-panel-head, .bank-panel > .roster-panel-head { cursor:default; border-bottom:1px solid rgba(89,201,232,.32); }
 .collapsible-panel > .roster-panel-head:hover, .bank-panel > .roster-panel-head:hover { background:linear-gradient(100deg,rgba(8,29,42,.92),rgba(16,28,40,.9) 58%,rgba(39,25,16,.86)); }
-.roster-panel-head .section-kicker { color:#35d2e3; font-size:.69rem; font-weight:700; letter-spacing:.19em; text-transform:uppercase; }
+.roster-panel-head .section-kicker { margin:0 0 3px; color:#35d2e3; font-size:.69rem; font-weight:700; letter-spacing:.19em; text-transform:uppercase; }
+.roster-panel-head h2 { font:600 clamp(1.2rem,2.5vw,1.55rem)/1.3 var(--serif); }
+.roster-panel-head .section-subtitle { margin:4px 0 0; font-size:.84rem; }
 body.tabs-on .roster-tabs-shell { margin:0 0 16px; }
+
+/* Roster equal-height tabs: Activity, Bank, and Promotions match the Member
+   Directory panel's height (synced by the roster tab script); their lists
+   grow to fill the panel and keep scrolling internally. */
+body.tabs-on .recent-panel.on, body.tabs-on .bank-panel.on, body.tabs-on .promotions-panel.on { display:flex; flex-direction:column; }
+body.tabs-on .recent-panel .collapsible-panel-body, body.tabs-on .promotions-panel .collapsible-panel-body, body.tabs-on .bank-panel .bank-panel-body { display:flex; flex-direction:column; flex:1; min-height:0; }
+body.roster-heights-ready .recent-events, body.roster-heights-ready .bank-events, body.roster-heights-ready .promotion-list { flex:1; min-height:0; }
+body.roster-heights-ready .recent-events, body.roster-heights-ready .bank-events { max-height:none; }
+body.roster-heights-ready .promotion-list { height:auto; }

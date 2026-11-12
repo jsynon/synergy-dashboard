@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261112-roster-tabs">
+  <link rel="stylesheet" href="styles.css?v=20261112-roster-equal-height">
   <script src="app.js?v=20261112-merged-directory" defer></script>
   <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
 </head>
@@ -59,7 +59,7 @@
         </div>
 
       <section class="panel roster-panel collapsible-panel guild-panel" id="roster" data-panel="directory" role="tabpanel" aria-labelledby="tab-directory" tabindex="0">
-        <div class="panel-heading roster-heading collapsible-heading roster-panel-head"><div><p class="kicker">Roster export</p><h2>Member directory</h2><p class="section-subtitle">Roster details for each character and account.</p></div><span class="collapsible-header-meta"><span class="count-pill" id="directory-count" aria-live="polite">Loading roster totals</span></span></div>
+        <div class="panel-heading roster-heading collapsible-heading roster-panel-head"><div><p class="section-kicker">Roster export</p><h2>Member directory</h2><p class="section-subtitle">Roster details for each character and account.</p></div><span class="collapsible-header-meta"><span class="count-pill" id="directory-count" aria-live="polite">Loading roster totals</span></span></div>
         <div class="collapsible-panel-body">
         <div class="collapsible-panel-body">
         <div class="toolbar">
@@ -99,7 +99,7 @@
             </section>
 
       <section class="panel recent-panel collapsible-panel guild-panel" id="activity" data-panel="activity" role="tabpanel" aria-labelledby="tab-activity" tabindex="0">
-        <div class="panel-heading collapsible-heading roster-panel-head"><div><p class="kicker">Activity archive</p><h2>Recent activity</h2><p class="section-subtitle">Search the retained guild log by member, event, or date range. Select a member name to open that roster entry.</p></div></div>
+        <div class="panel-heading collapsible-heading roster-panel-head"><div><p class="section-kicker">Activity archive</p><h2>Recent activity</h2><p class="section-subtitle">Search the retained guild log by member, event, or date range. Select a member name to open that roster entry.</p></div></div>
         <div class="collapsible-panel-body">
         <div class="collapsible-panel-body">
         <div class="field activity-search-field"><label for="activity-search">Search activity</label><div class="search-box"><span aria-hidden="true">⌕</span><input id="activity-search" type="search" placeholder="Character, account, or event" autocomplete="off"></div><p id="activity-results-count" class="search-results-count" aria-live="polite"></p></div>
@@ -133,7 +133,7 @@
         </div>
             </section>
       <section class="panel promotions-panel collapsible-panel guild-panel" id="upcoming-promotions" data-panel="promotions" role="tabpanel" aria-labelledby="tab-promotions" tabindex="0">
-        <div class="panel-heading collapsible-heading roster-panel-head"><div><p class="kicker">Guild milestones</p><h2 id="promotion-title">Upcoming promotions</h2><p class="section-subtitle">Accounts eligible now or approaching a <button type="button" class="promotion-rules-link" id="show-promotion-rules">tenure milestone</button>.</p></div><span class="collapsible-header-meta"><span class="count-pill promotion-count" id="promotion-count" aria-live="polite">—</span></span></div>
+        <div class="panel-heading collapsible-heading roster-panel-head"><div><p class="section-kicker">Guild milestones</p><h2 id="promotion-title">Upcoming promotions</h2><p class="section-subtitle">Accounts eligible now or approaching a <button type="button" class="promotion-rules-link" id="show-promotion-rules">tenure milestone</button>.</p></div><span class="collapsible-header-meta"><span class="count-pill promotion-count" id="promotion-count" aria-live="polite">—</span></span></div>
         <div class="collapsible-panel-body">
         <div class="field promotion-search-field"><label for="promotion-search">Search promotions</label><div class="search-box"><span aria-hidden="true">⌕</span><input id="promotion-search" type="search" placeholder="Character or account name" autocomplete="off"></div><p id="promotion-search-results" class="search-results-count" aria-live="polite">Promotion account results will appear here.</p></div>
         <div class="activity-filters"><div class="field"><label for="promotion-rank-filter">Promoting to</label><select id="promotion-rank-filter"><option value="">All ranks</option></select></div></div>
@@ -142,7 +142,7 @@
             </section>
 
       <section class="panel inactivity-panel collapsible-panel guild-panel" id="inactivity-alerts" data-panel="inactivity" role="tabpanel" aria-labelledby="tab-inactivity" tabindex="0">
-        <div class="panel-heading collapsible-heading roster-panel-head"><div><p class="kicker">Account activity</p><h2 id="inactivity-title">Inactivity alerts</h2><p class="section-subtitle">Accounts at or beyond their rank-based <button type="button" class="inactivity-rules-link" id="show-inactivity-rules">inactivity limit</button>.</p></div><span class="collapsible-header-meta"><span class="count-pill" id="inactivity-count">—</span></span></div>
+        <div class="panel-heading collapsible-heading roster-panel-head"><div><p class="section-kicker">Account activity</p><h2 id="inactivity-title">Inactivity alerts</h2><p class="section-subtitle">Accounts at or beyond their rank-based <button type="button" class="inactivity-rules-link" id="show-inactivity-rules">inactivity limit</button>.</p></div><span class="collapsible-header-meta"><span class="count-pill" id="inactivity-count">—</span></span></div>
         <div class="collapsible-panel-body">
         <div id="inactivity-list" class="inactivity-list"><div class="empty-state">Alerts will appear when the roster snapshot loads.</div></div>
         </div>
@@ -219,6 +219,49 @@
       };
 
       select(hashTarget() || "directory");
+
+      // Activity, Bank, and Promotions match the Member Directory panel's
+      // height: measure the directory panel (it re-renders as the snapshot
+      // loads and as its filters change) and give the other three panels
+      // that height as a minimum; their lists flex to fill it and scroll.
+      const directoryPanel = panels.find((panel) => panel.dataset.panel === "directory");
+      const equalHeightPanels = panels.filter((panel) => ["activity", "bank", "promotions"].includes(panel.dataset.panel));
+      if (directoryPanel && equalHeightPanels.length) {
+        let heightSyncQueued = false;
+        const measureDirectory = () => {
+          if (directoryPanel.classList.contains("on")) return directoryPanel.offsetHeight;
+          const previousDisplay = directoryPanel.style.display;
+          const previousVisibility = directoryPanel.style.visibility;
+          directoryPanel.style.display = "block";
+          directoryPanel.style.visibility = "hidden";
+          const height = directoryPanel.offsetHeight;
+          directoryPanel.style.display = previousDisplay;
+          directoryPanel.style.visibility = previousVisibility;
+          return height;
+        };
+        const syncPanelHeights = () => {
+          const height = measureDirectory();
+          if (!height) return;
+          equalHeightPanels.forEach((panel) => { panel.style.minHeight = `${height}px`; });
+          document.body.classList.add("roster-heights-ready");
+        };
+        const queueHeightSync = () => {
+          if (heightSyncQueued) return;
+          heightSyncQueued = true;
+          window.requestAnimationFrame(() => {
+            heightSyncQueued = false;
+            syncPanelHeights();
+          });
+        };
+        queueHeightSync();
+        new MutationObserver(queueHeightSync).observe(directoryPanel, { childList: true, subtree: true, characterData: true });
+        let resizeTimer = null;
+        window.addEventListener("resize", () => {
+          window.clearTimeout(resizeTimer);
+          resizeTimer = window.setTimeout(syncPanelHeights, 150);
+        });
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(queueHeightSync);
+      }
 
       tabs.forEach((tab, index) => {
         tab.addEventListener("click", () => show(tab.dataset.tab));
