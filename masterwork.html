@@ -1077,7 +1077,10 @@ footer {
 
     /* Collapsible recipe cards (2026-11-12): bodies stay hidden until a card
        is opened, and an open card spans the full grid row so its ingredient
-       list gets the whole width. */
+       list gets the whole width. Cards size to their own header rather than
+       stretching to the tallest card in the row, which left an empty strip
+       under shorter cards. */
+    .item-card { align-self:start; }
     .item-card .card-body { display:none; }
     .item-card.expanded { grid-column:1 / -1; }
     .item-card.expanded .card-body { display:block; }
