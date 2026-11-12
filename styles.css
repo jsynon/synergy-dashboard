@@ -1761,3 +1761,6 @@ body.roster-heights-ready .promotion-list { height:auto; }
    .count-pill class); this only settles the one conflict with
    .news-feed-status, whose muted color would otherwise win. */
 .news-feed-heading .count-pill { color:var(--gold-bright); }
+
+/* News heading subtitles match the other card headings' summary lines. */
+.news-feed-heading .section-subtitle { margin:4px 0 0; font-size:.84rem; }
