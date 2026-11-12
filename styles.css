@@ -1727,10 +1727,19 @@ body.tabs-on .guild-panel.on { display:block; }
 }
 
 /* Roster topic tabs: the five panels as switchable tabs, the same mechanism
-   as Guild Info. Heads keep their summary classes so every existing heading
-   rule still applies; these rules only remove the collapse affordances and
-   restore the border the [open] state used to supply. */
-.collapsible-panel > .roster-panel-head, .bank-panel > .roster-panel-head { cursor:default; border-bottom:1px solid rgba(89,201,232,.32); }
-.collapsible-panel > .roster-panel-head:hover, .bank-panel > .roster-panel-head:hover { background:linear-gradient(100deg,rgba(8,29,42,.92),rgba(16,28,40,.9) 58%,rgba(39,25,16,.86)); }
-.roster-panel-head .section-kicker { color:#35d2e3; font-size:.69rem; font-weight:700; letter-spacing:.19em; text-transform:uppercase; }
+   as Guild Info. Panel heads use the Guild Info heading style (the
+   .guild-panel-head rules above: blue-caps kicker, gold title, muted
+   summary, no summary band); the flex row only keeps each panel's live
+   count pill at the top right, where the old card headers carried it. */
+.roster-panel-head { display:flex; align-items:flex-start; justify-content:space-between; gap:16px; }
+.roster-panel-head .count-pill { flex:none; margin-top:6px; }
 body.tabs-on .roster-tabs-shell { margin:0 0 16px; }
+
+/* Roster equal-height tabs: Activity, Bank, and Promotions match the Member
+   Directory panel's height (synced by the roster tab script); their lists
+   grow to fill the panel and keep scrolling internally. */
+body.tabs-on .recent-panel.on, body.tabs-on .bank-panel.on, body.tabs-on .promotions-panel.on { display:flex; flex-direction:column; }
+body.tabs-on .recent-panel .collapsible-panel-body, body.tabs-on .promotions-panel .collapsible-panel-body, body.tabs-on .bank-panel .bank-panel-body { display:flex; flex-direction:column; flex:1; min-height:0; }
+body.roster-heights-ready .recent-events, body.roster-heights-ready .bank-events, body.roster-heights-ready .promotion-list { flex:1; min-height:0; }
+body.roster-heights-ready .recent-events, body.roster-heights-ready .bank-events { max-height:none; }
+body.roster-heights-ready .promotion-list { height:auto; }
