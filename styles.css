@@ -1702,7 +1702,7 @@ body.tabs-on .guild-tabs { display:flex; }
 body.tabs-on .guild-panel { display:none; }
 body.tabs-on .guild-panel.on { display:block; }
 .guild-panel-head { padding:19px 22px 0; }
-.guild-panel-head .section-kicker { margin:0 0 3px; }
+.guild-panel-head .section-kicker { margin:0 0 3px; color:#35d2e3; font-size:.69rem; font-weight:700; letter-spacing:.19em; text-transform:uppercase; }
 .guild-panel-head h2 { margin:0; color:var(--gold-bright); font:600 clamp(1.2rem,2.5vw,1.55rem)/1.3 var(--serif); }
 .guild-panel-head p { margin:4px 0 0; color:var(--muted); font-size:.84rem; }
 .guild-panel .guild-info-body { padding-top:12px; }
@@ -1716,4 +1716,12 @@ body.tabs-on .guild-panel.on { display:block; }
    outgrows the column instead of clipping its left edge. */
 @media (min-width:721px) {
   .guild-tabs { justify-content:center; justify-content:safe center; }
+}
+
+/* Mobile tab-row hints (option A): the row's right edge fades out and a gold
+   chevron sits over the fade, so it's obvious the menu scrolls sideways. */
+.guild-tabs-shell { position:relative; }
+@media (max-width:720px) {
+  body.tabs-on .guild-tabs { -webkit-mask-image:linear-gradient(90deg,#000 86%,transparent 99%); mask-image:linear-gradient(90deg,#000 86%,transparent 99%); }
+  body.tabs-on .guild-tabs-shell::after { content:"›"; position:absolute; top:0; right:2px; bottom:0; display:flex; align-items:center; color:var(--gold-bright); font-size:1.1rem; font-weight:700; pointer-events:none; }
 }

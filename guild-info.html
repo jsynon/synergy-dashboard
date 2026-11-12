@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261112-tabs-centered">
+  <link rel="stylesheet" href="styles.css?v=20261112-tabs-polish">
   <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
 </head>
 <body>
@@ -48,6 +48,7 @@
       </div>
 
       <section class="guild-info-list" aria-label="Guild information categories">
+        <div class="guild-tabs-shell">
         <div class="guild-tabs" role="tablist" aria-label="Guild information topics">
           <button class="guild-tab" type="button" role="tab" id="tab-overview" data-tab="overview" aria-controls="panel-overview" aria-selected="true" tabindex="0">Overview</button>
           <button class="guild-tab" type="button" role="tab" id="tab-rules" data-tab="rules" aria-controls="panel-rules" aria-selected="false" tabindex="-1">Rules</button>
@@ -55,6 +56,7 @@
           <button class="guild-tab" type="button" role="tab" id="tab-history" data-tab="history" aria-controls="panel-history" aria-selected="false" tabindex="-1">History</button>
           <button class="guild-tab" type="button" role="tab" id="tab-soundtrack" data-tab="soundtrack" aria-controls="panel-soundtrack" aria-selected="false" tabindex="-1">Soundtrack</button>
           <button class="guild-tab" type="button" role="tab" id="tab-academy" data-tab="academy" aria-controls="panel-academy" aria-selected="false" tabindex="-1">Academy</button>
+        </div>
         </div>
 
         <section class="panel guild-panel" role="tabpanel" id="panel-overview" data-panel="overview" aria-labelledby="tab-overview" tabindex="0">
