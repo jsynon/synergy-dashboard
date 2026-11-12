@@ -1756,3 +1756,8 @@ body.roster-heights-ready .promotion-list { height:auto; }
 @media (max-width:720px) {
   .news-feed-heading { margin:-12px -12px 12px; padding:14px 16px; }
 }
+
+/* News heading statuses wear the roster count-pill styling (they carry the
+   .count-pill class); this only settles the one conflict with
+   .news-feed-status, whose muted color would otherwise win. */
+.news-feed-heading .count-pill { color:var(--gold-bright); }
