@@ -1,9 +1,30 @@
 {
   "source": "https://www.playneverwinter.com/en/news",
   "api": "https://api.arcgames.com/v1.0/games/nw/news",
-  "generatedAt": "2026-11-09T15:18:23.478Z",
+  "generatedAt": "2026-11-12T19:02:35.825Z",
   "count": 100,
   "articles": [
+    {
+      "id": "11583917",
+      "title": "Beneath Sleeping Ice Battle Pass",
+      "summary": "Adventurers! A new Battle Pass is approaching!",
+      "date": "2026-11-12",
+      "url": "https://www.playneverwinter.com/en/news-details/11583917",
+      "image": "https://pwimages-a.akamaihd.net/arc/08/c3/08c34bb25a69b3b736f921eaa7676b931794308319.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-events",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
     {
       "id": "11583812",
       "title": "Zen Market Gifting Feature",
@@ -1986,26 +2007,6 @@
       "date": "2025-11-17",
       "url": "https://www.playneverwinter.com/en/news-details/11578668",
       "image": "https://pwimages-a.akamaihd.net/arc/e8/47/e847bf99b62433520598fa276a4abdf31763114302.jpg",
-      "platforms": [
-        "pc",
-        "ps",
-        "xbox"
-      ],
-      "tags": [
-        "nw-launcher",
-        "nw-news",
-        "neverwinter",
-        "nw-xbox",
-        "nw-playstation"
-      ]
-    },
-    {
-      "id": "11578503",
-      "title": "Harvester of Nightmares Returns!",
-      "summary": "The nightmares return as the mysterious creature known as the Harvester of Nightmares arrives once again to feast on the restless dreams of the sleeping citizens of Prote",
-      "date": "2025-11-13",
-      "url": "https://www.playneverwinter.com/en/news-details/11578503",
-      "image": "https://pwimages-a.akamaihd.net/arc/d1/b5/d1b5e521dcc156c5753c078df1d9d0ea1762513185.png",
       "platforms": [
         "pc",
         "ps",
