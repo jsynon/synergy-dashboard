@@ -10,6 +10,9 @@
 
   let items = [];
   let current = 0;
+  const PAGE_SIZE = 20;
+  let shown = 0;
+  const moreButton = document.getElementById("gallery-more");
   const dateFormat = new Intl.DateTimeFormat(undefined, { month: "short", day: "numeric", year: "numeric" });
   const dateLabel = (iso) => {
     const date = new Date(iso);
@@ -32,9 +35,10 @@
     if (typeof dialog.showModal === "function") dialog.showModal();
   }
 
-  function render() {
-    grid.replaceChildren();
-    items.forEach((item, index) => {
+  function renderBatch() {
+    const batch = items.slice(shown, shown + PAGE_SIZE);
+    batch.forEach((item, offset) => {
+      const index = shown + offset;
       const button = document.createElement("button");
       button.type = "button";
       button.className = "gallery-item";
@@ -52,7 +56,11 @@
       button.addEventListener("click", () => open(index));
       grid.append(button);
     });
+    shown += batch.length;
+    if (moreButton) moreButton.hidden = shown >= items.length;
   }
+
+  moreButton?.addEventListener("click", renderBatch);
 
   document.getElementById("gallery-close")?.addEventListener("click", () => dialog.close());
   document.getElementById("gallery-prev")?.addEventListener("click", () => show(current - 1));
@@ -74,7 +82,9 @@
         return;
       }
       message.hidden = true;
-      render();
+      grid.replaceChildren();
+      shown = 0;
+      renderBatch();
     })
     .catch(() => {
       status.textContent = "Gallery unavailable";

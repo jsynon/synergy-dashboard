@@ -1812,3 +1812,9 @@ body.roster-heights-ready .promotion-list { height:auto; }
   .masthead nav > a:nth-child(3n+2), .masthead nav > a:nth-child(3n+3) { border-left:1px solid var(--frame-gold); }
   .masthead nav > a:nth-child(n+4) { border-top:1px solid var(--frame-gold); }
 }
+
+/* Gallery "load more": batches of screenshots are appended on demand. */
+.gallery-more { margin-top:16px; text-align:center; }
+.gallery-more-button { padding:10px 22px; border:1px solid rgba(216,168,78,.55); border-radius:8px; background:rgba(212,154,66,.1); color:var(--gold-bright); font:600 .85rem var(--serif); letter-spacing:.04em; cursor:pointer; }
+.gallery-more-button:hover, .gallery-more-button:focus-visible { background:rgba(212,154,66,.2); border-color:rgba(216,168,78,.85); }
+.gallery-more-button[hidden] { display:none; }
