@@ -20,7 +20,7 @@ The page also includes a searchable Recent Activity archive, a collapsible Guild
 
 ## Guild Info
 
-The [Guild Info page](https://synergyonline.org/guild-info.html) explains the guild and what members can expect. Its expandable cards cover the Guild Overview, support and progression, community culture, learning and participation, reasons to join, guild rules, rank progression, and the Guild Charter. The page also presents Synergy’s history—from BAMF and Lady Vega through the guild’s renewal and the creation of Synergy Academy and the Masterwork Forge—and includes the guild’s Discord information. A Synergy Soundtrack card presents the guild's original music — Neverwinter-inspired songs created by Antilogic — as a track list that refreshes automatically from [Suno](https://suno.com/@antilogic).
+The [Guild Info page](https://synergyonline.org/guild-info.html) explains the guild and what members can expect. A topic menu at the top of the page switches between six sections — Guild Overview, Guild Rules, the Guild Charter, Guild History, the Synergy Soundtrack, and Synergy Academy — and each section keeps the full text of the expandable card it replaced, with its own link (for example, `guild-info.html#rules`); without JavaScript the sections simply stack open. The page also presents Synergy’s history—from BAMF and Lady Vega through the guild’s renewal and the creation of Synergy Academy and the Masterwork Forge. A Synergy Soundtrack section presents the guild's original music — Neverwinter-inspired songs created by Antilogic — as a track list that refreshes automatically from [Suno](https://suno.com/@antilogic).
 
 ## Masterwork Forge
 

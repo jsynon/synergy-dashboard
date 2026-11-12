@@ -6,25 +6,25 @@
   <meta name="theme-color" content="#070c14">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://synergyonline.org/guild-info.html">
-  <meta name="description" content="Read Synergy’s guild overview, community rules, charter, history, and Discord details in one guide for current and prospective members.">
+  <meta name="description" content="Read Synergy’s guild overview, community rules, charter, history, soundtrack, and academy in one guide for current and prospective members.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Synergy Guild">
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Guild Information | Synergy">
-  <meta property="og:description" content="Read Synergy’s guild overview, community rules, charter, history, and Discord details in one guide for current and prospective members.">
+  <meta property="og:description" content="Read Synergy’s guild overview, community rules, charter, history, soundtrack, and academy in one guide for current and prospective members.">
   <meta property="og:url" content="https://synergyonline.org/guild-info.html">
   <meta property="og:image" content="https://synergyonline.org/assets/synergy-header-integrated.webp">
   <meta property="og:image:alt" content="Synergy’s blue-and-gold fantasy banner">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Guild Information | Synergy">
-  <meta name="twitter:description" content="Read Synergy’s guild overview, community rules, charter, history, and Discord details in one guide for current and prospective members.">
+  <meta name="twitter:description" content="Read Synergy’s guild overview, community rules, charter, history, soundtrack, and academy in one guide for current and prospective members.">
   <meta name="twitter:image" content="https://synergyonline.org/assets/synergy-header-integrated.webp">
   <meta name="twitter:image:alt" content="Synergy’s blue-and-gold fantasy banner">
   <title>Guild Information | Synergy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261112-suno-soundtrack">
+  <link rel="stylesheet" href="styles.css?v=20261112-guild-info-tabs">
   <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
 </head>
 <body>
@@ -48,15 +48,21 @@
       </div>
 
       <section class="guild-info-list" aria-label="Guild information categories">
-        <details class="panel guild-info-card">
-          <summary class="guild-info-summary">
-            <div class="guild-info-summary-copy">
-              <p class="section-kicker">Our Community</p>
-              <h2>Guild Overview</h2>
-              <p>Who we are, how we play, and what members can expect.</p>
-            </div>
-            <span class="guild-info-toggle" aria-hidden="true"></span>
-          </summary>
+        <div class="guild-tabs" role="tablist" aria-label="Guild information topics">
+          <button class="guild-tab" type="button" role="tab" id="tab-overview" data-tab="overview" aria-controls="panel-overview" aria-selected="true" tabindex="0">Overview</button>
+          <button class="guild-tab" type="button" role="tab" id="tab-rules" data-tab="rules" aria-controls="panel-rules" aria-selected="false" tabindex="-1">Rules</button>
+          <button class="guild-tab" type="button" role="tab" id="tab-charter" data-tab="charter" aria-controls="panel-charter" aria-selected="false" tabindex="-1">Charter</button>
+          <button class="guild-tab" type="button" role="tab" id="tab-history" data-tab="history" aria-controls="panel-history" aria-selected="false" tabindex="-1">History</button>
+          <button class="guild-tab" type="button" role="tab" id="tab-soundtrack" data-tab="soundtrack" aria-controls="panel-soundtrack" aria-selected="false" tabindex="-1">Soundtrack</button>
+          <button class="guild-tab" type="button" role="tab" id="tab-academy" data-tab="academy" aria-controls="panel-academy" aria-selected="false" tabindex="-1">Academy</button>
+        </div>
+
+        <section class="panel guild-panel" role="tabpanel" id="panel-overview" data-panel="overview" aria-labelledby="tab-overview" tabindex="0">
+          <div class="guild-panel-head">
+            <p class="section-kicker">Our Community</p>
+            <h2>Guild Overview</h2>
+            <p>Who we are, how we play, and what members can expect.</p>
+          </div>
           <div class="guild-info-body">
             <p>Synergy is a community-driven guild focused on teamwork, learning, and steady progression. We welcome players of all experience levels, from those still learning the game to seasoned endgame adventurers. Our goal is to foster an environment where members can grow, improve, and enjoy the game without pressure, gatekeeping, or toxicity.</p>
             <p>We believe that strong groups are built through cooperation, communication, and shared understanding rather than rushing or skipping steps. Our approach emphasizes respectful, cooperative play; clear and intentional progression through content; and helping members learn roles, mechanics, and builds at a sustainable pace. Learning is encouraged, questions are welcome, and mistakes are treated as opportunities for growth rather than failures.</p>
@@ -82,18 +88,15 @@
               <li>Inclusive atmosphere where questions are encouraged and mistakes are part of learning</li>
               <li>Regular guild events, runs, and collaborative activities</li>
             </ul>
-          </div>
-        </details>
+                    </div>
+        </section>
 
-        <details class="panel guild-info-card">
-          <summary class="guild-info-summary">
-            <div class="guild-info-summary-copy">
-              <p class="section-kicker">Community Standards</p>
-              <h2>Guild Rules</h2>
-              <p>Guidelines for respectful play, fair participation, and steady progression.</p>
-            </div>
-            <span class="guild-info-toggle" aria-hidden="true"></span>
-          </summary>
+        <section class="panel guild-panel" role="tabpanel" id="panel-rules" data-panel="rules" aria-labelledby="tab-rules" tabindex="0">
+          <div class="guild-panel-head">
+            <p class="section-kicker">Community Standards</p>
+            <h2>Guild Rules</h2>
+            <p>Guidelines for respectful play, fair participation, and steady progression.</p>
+          </div>
           <div class="guild-info-body">
             <h3>Be Polite</h3>
             <p>Politeness is the foundation of a healthy community. When you log in, take a moment to greet guild or alliance members who are online. A simple “hello” helps keep the environment warm and welcoming. Likewise, if someone greets you, please respond; even a brief acknowledgement goes a long way.</p>
@@ -164,18 +167,15 @@
               <li>Rank 6 — Officer: Exempt</li>
             </ul>
             <p>Inactivity is evaluated by account, using the most recent login among its characters. Logging in on any character on the account resets the inactivity period. Reaching a threshold makes an account eligible for removal; it does not trigger automatic removal. If you expect to be away for an extended period, please contact an officer in advance or post in the <strong><a class="guild-info-channel-link" href="https://discord.com/channels/964991521524944956/1495622827959783454" target="_blank" rel="noopener noreferrer">#💤│𝙻𝚎𝚊𝚟𝚎-𝚘𝚏-𝙰𝚋𝚜𝚎𝚗𝚌𝚎</a></strong> channel. Approved leaves of absence are excluded from inactivity review.</p>
-          </div>
-        </details>
+                    </div>
+        </section>
 
-        <details class="panel guild-info-card">
-          <summary class="guild-info-summary">
-            <div class="guild-info-summary-copy">
-              <p class="section-kicker">Our Principles</p>
-              <h2>Guild Charter</h2>
-              <p>The values and expectations that guide our community.</p>
-            </div>
-            <span class="guild-info-toggle" aria-hidden="true"></span>
-          </summary>
+        <section class="panel guild-panel" role="tabpanel" id="panel-charter" data-panel="charter" aria-labelledby="tab-charter" tabindex="0">
+          <div class="guild-panel-head">
+            <p class="section-kicker">Our Principles</p>
+            <h2>Guild Charter</h2>
+            <p>The values and expectations that guide our community.</p>
+          </div>
           <div class="guild-info-body">
             <p>Synergy is a cooperative Neverwinter guild built on patience, learning, and shared progression. We believe the best endgame experiences come from teamwork, communication, and mutual respect—not rushing, elitism, or silent carries.</p>
 
@@ -209,18 +209,15 @@
               <li>Represent Synergy with respect in-game and in alliance spaces.</li>
             </ul>
             <p class="guild-info-highlight"><strong>You don’t need to be the best player. You do need to be a good guildmate.</strong></p>
-          </div>
-        </details>
+                    </div>
+        </section>
 
-        <details class="panel guild-info-card">
-          <summary class="guild-info-summary">
-            <div class="guild-info-summary-copy">
-              <p class="section-kicker">Our Story</p>
-              <h2>Guild History</h2>
-              <p>From BAMF to Synergy, and the chapters that shaped the guild.</p>
-            </div>
-            <span class="guild-info-toggle" aria-hidden="true"></span>
-          </summary>
+        <section class="panel guild-panel" role="tabpanel" id="panel-history" data-panel="history" aria-labelledby="tab-history" tabindex="0">
+          <div class="guild-panel-head">
+            <p class="section-kicker">Our Story</p>
+            <h2>Guild History</h2>
+            <p>From BAMF to Synergy, and the chapters that shaped the guild.</p>
+          </div>
           <div class="guild-info-body">
             <div class="guild-history-entry">
               <h3>BAMF and Lady Vega</h3>
@@ -251,323 +248,89 @@
               <p>Master artisans, gatherers, and dedicated contributors came together, pooling their efforts to refine materials, share knowledge, and elevate one another. Guided by the same principles that shaped the Academy, the Forge became a place of mentorship as much as production. Veterans passed down their expertise, newcomers found their footing, and each contribution—no matter how small—was recognized as part of a greater whole. The act of crafting became, in itself, an extension of Synergy’s philosophy: that true strength is not hoarded, but built together.</p>
               <p>Through the Forge, the guild’s reach extended beyond the battlefield, ensuring that its members were not only prepared for the trials ahead, but empowered to shape them. It stood as a symbol of refinement—of raw potential transformed through effort and unity into something enduring. And so Synergy continues to grow—not only as warriors, but as builders. Not only as individuals, but as a collective bound by purpose. With the Academy guiding its future and the Forge strengthening its foundation, the guild moves forward, ever shaping its legacy—tempered by experience, united in vision, and steadfast in the belief that what is built together will endure.</p>
             </div>
-          </div>
-        </details>
+                    </div>
+        </section>
 
-        <details class="panel guild-info-card">
-          <summary class="guild-info-summary">
-            <div class="guild-info-summary-copy">
-              <p class="section-kicker">Guild Soundtrack</p>
-              <h2>Synergy Soundtrack</h2>
-              <p>Original songs made for the guild — dungeon anthems, queue blues, and loot celebrations.</p>
-            </div>
-            <span class="guild-info-toggle" aria-hidden="true"></span>
-          </summary>
+        <section class="panel guild-panel" role="tabpanel" id="panel-soundtrack" data-panel="soundtrack" aria-labelledby="tab-soundtrack" tabindex="0">
+          <div class="guild-panel-head">
+            <p class="section-kicker">Guild Soundtrack</p>
+            <h2>Synergy Soundtrack</h2>
+            <p>Original songs made for the guild — dungeon anthems, queue blues, and loot celebrations.</p>
+          </div>
           <div class="guild-info-body">
             <p>Synergy has its own soundtrack. Every song below was created for the guild by <strong>Antilogic</strong> — Neverwinter-inspired tracks about the adventures, the loot, and the late-night queues we run together. The list refreshes automatically from Suno, newest first; choose a song to listen on Suno.</p>
             <p class="suno-track-totals" id="suno-track-totals"></p>
             <div class="suno-track-list" id="suno-track-list"><p class="suno-track-status">Loading the soundtrack…</p></div>
             <p><a class="guild-info-channel-link" href="https://suno.com/@antilogic" target="_blank" rel="noopener noreferrer">Listen and follow on Suno ↗</a></p>
-          </div>
-        </details>
+                    </div>
+        </section>
 
-        <details class="panel guild-info-card">
-          <summary class="guild-info-summary">
-            <div class="guild-info-summary-copy">
-              <p class="section-kicker">Progression Support</p>
-              <h2>Synergy Academy</h2>
-              <p>Gear recommendations and guidance on the path to endgame.</p>
-            </div>
-            <span class="guild-info-toggle" aria-hidden="true"></span>
-          </summary>
+        <section class="panel guild-panel" role="tabpanel" id="panel-academy" data-panel="academy" aria-labelledby="tab-academy" tabindex="0">
+          <div class="guild-panel-head">
+            <p class="section-kicker">Progression Support</p>
+            <h2>Synergy Academy</h2>
+            <p>Gear recommendations and guidance on the path to endgame.</p>
+          </div>
           <div class="guild-info-body">
             <p>Synergy Academy is a guidance pathway for members working toward endgame content. It helps you decide what to focus on next, with gear recommendations and practical advice for each stage of progression: <strong>Campaign → Advanced → Master</strong>.</p>
             <p>Whether you’re finishing campaigns, preparing for advanced dungeons, or looking to take on master content, you can get help understanding which upgrades are worth pursuing and what steps can move your character forward. The goal is to make the journey to endgame easier to navigate and help you build confidence as the challenges grow.</p>
             <p>You don’t need to have everything figured out before you ask for guidance. Bring your questions and share what your character is working on in the <a class="guild-info-channel-link" href="https://discord.com/channels/964991521524944956/1470322589284040794" target="_blank" rel="noopener noreferrer">#📚│𝚂𝚢𝚗𝚎𝚛𝚐𝚢-𝙰𝚌𝚊𝚍𝚎𝚖𝚢</a> forum thread to get help finding a clear next step.</p>
-          </div>
-        </details>
+                    </div>
+        </section>
       </section>
 
-      <details class="panel guild-discord-panel" aria-labelledby="guild-discord-title">
-        <summary class="guild-info-summary guild-discord-summary">
-          <div class="guild-info-summary-copy">
-            <p class="section-kicker">Join the Community</p>
-            <h2 id="guild-discord-title">Synergy on Discord</h2>
-            <p>Chat with guildmates, find groups, and stay connected with the community.</p>
-          </div>
-          <span class="guild-info-toggle" aria-hidden="true"></span>
-        </summary>
-        <div class="guild-discord-content">
-          <div class="guild-discord-widget">
-            <div class="discord-dashboard" data-discord-widget data-widget-url="https://discord.com/api/guilds/964991521524944956/widget.json">
-              <div class="discord-dashboard-head">
-                <div class="discord-server-brand">
-                  <div class="discord-server-copy">
-                    <p class="discord-live-label"><span id="discordFeedStatus" aria-live="polite">Connecting to Discord</span></p>
-                    <h3>Synergy</h3>
-                  </div>
-                </div>
-                <div class="discord-presence-total">
-                  <strong id="discordPresenceCount">—</strong>
-                  <span>members online</span>
-                </div>
-              </div>
-
-              <div class="discord-live-stats" aria-label="Live Discord activity">
-                <div class="discord-live-stat">
-                  <span>Playing Neverwinter</span>
-                  <strong id="discordNeverwinterCount">—</strong>
-                </div>
-                <div class="discord-live-stat">
-                  <span>In voice</span>
-                  <strong id="discordVoiceCount">—</strong>
-                </div>
-                <div class="discord-live-stat">
-                  <span>Voice channels</span>
-                  <strong id="discordChannelCount">—</strong>
-                </div>
-              </div>
-
-              <div class="discord-live-details">
-                <section class="discord-live-section" aria-labelledby="discord-neverwinter-title">
-                  <div class="discord-section-heading">
-                    <h4 id="discord-neverwinter-title">Playing Neverwinter</h4>
-                    <span>Adventurers online</span>
-                  </div>
-                  <div class="discord-member-list" id="discordNeverwinterMembers">
-                    <p class="discord-live-empty">Loading member activity…</p>
-                  </div>
-                </section>
-                <section class="discord-live-section" aria-labelledby="discord-voice-title">
-                  <div class="discord-section-heading">
-                    <h4 id="discord-voice-title">Voice channels</h4>
-                    <span>Select a channel to see who's there</span>
-                  </div>
-                  <div class="discord-channel-list" id="discordVoiceChannels">
-                    <p class="discord-live-empty">Loading voice channels…</p>
-                  </div>
-                </section>
-              </div>
-
-              <p class="discord-live-footnote">The online count covers the server. Discord lists only voice channels available to everyone and up to 100 member presence details.</p>
-              <a class="discord-join-button" href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">
-                Join Synergy on Discord
-                <span aria-hidden="true">↗</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </details>
-      <dialog class="popup-shell discord-channel-dialog" id="discordChannelDialog" aria-labelledby="discordChannelDialogTitle">
-        <div class="account-dialog-header">
-          <div>
-            <p class="section-kicker">Voice channel</p>
-            <h2 id="discordChannelDialogTitle">Channel members</h2>
-            <p class="discord-channel-dialog-summary" id="discordChannelDialogSummary"></p>
-          </div>
-          <button class="popup-close" id="closeDiscordChannelDialog" type="button" aria-label="Close channel members">×</button>
-        </div>
-        <div class="discord-channel-dialog-list" id="discordChannelDialogMembers"></div>
-      </dialog>
     </main>
 
     <footer><div class="footer-links"><span class="footer-synergy-wordmark"><a href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">SYNERGY</a></span><span class="footer-divider" aria-hidden="true">|</span><a class="footer-alliance-link" href="https://discord.gg/eDgrKe24tu" target="_blank" rel="noopener noreferrer">WANTED Alliance</a></div></footer>
   </div>
   <script>
     (() => {
-      const dashboard = document.querySelector("[data-discord-widget]");
-      if (!dashboard) return;
+      const tablist = document.querySelector(".guild-tabs");
+      if (!tablist) return;
+      const tabs = Array.from(tablist.querySelectorAll("[data-tab]"));
+      const panels = Array.from(document.querySelectorAll("[data-panel]"));
+      if (!tabs.length || !panels.length) return;
 
-      const endpoint = dashboard.dataset.widgetUrl;
-      const statusLine = document.getElementById("discordFeedStatus");
-      const presenceCount = document.getElementById("discordPresenceCount");
-      const neverwinterCount = document.getElementById("discordNeverwinterCount");
-      const voiceCount = document.getElementById("discordVoiceCount");
-      const channelCount = document.getElementById("discordChannelCount");
-      const neverwinterList = document.getElementById("discordNeverwinterMembers");
-      const voiceList = document.getElementById("discordVoiceChannels");
-      const channelDialog = document.getElementById("discordChannelDialog");
-      const channelDialogTitle = document.getElementById("discordChannelDialogTitle");
-      const channelDialogSummary = document.getElementById("discordChannelDialogSummary");
-      const channelDialogMembers = document.getElementById("discordChannelDialogMembers");
-      let currentWidget = null;
-      let hasLoaded = false;
+      document.body.classList.add("tabs-on");
 
-      const makeEmpty = (container, message) => {
-        const note = document.createElement("p");
-        note.className = "discord-live-empty";
-        note.textContent = message;
-        container.replaceChildren(note);
-      };
-
-      const makeAvatar = member => {
-        const avatar = document.createElement("span");
-        avatar.className = "discord-member-avatar";
-        const name = String(member.username || "Member").trim();
-        const initials = name.split(/\s+/).slice(0, 2).map(part => part[0] || "").join("").toUpperCase();
-        avatar.textContent = initials || "S";
-
-        if (typeof member.avatar_url === "string") {
-          try {
-            const url = new URL(member.avatar_url);
-            if (url.protocol === "https:" && url.hostname === "cdn.discordapp.com") {
-              const image = document.createElement("img");
-              image.src = url.href;
-              image.alt = "";
-              image.loading = "lazy";
-              image.addEventListener("error", () => image.remove(), { once: true });
-              avatar.replaceChildren(image);
-            }
-          } catch (_) {}
-        }
-        return avatar;
-      };
-
-      const makeMemberRow = member => {
-        const row = document.createElement("div");
-        row.className = "discord-member-row";
-
-        const avatar = makeAvatar(member);
-        const presence = String(member.status || "online").toLowerCase();
-        avatar.dataset.presence = ["online", "idle", "dnd"].includes(presence) ? presence : "online";
-        row.appendChild(avatar);
-
-        const copy = document.createElement("div");
-        copy.className = "discord-member-copy";
-        const name = document.createElement("strong");
-        name.textContent = String(member.username || "Member");
-        const state = document.createElement("span");
-        state.textContent = presence === "dnd" ? "Do Not Disturb" : presence === "idle" ? "Away" : "Online";
-        copy.append(name, state);
-        row.appendChild(copy);
-        return row;
-      };
-
-      const renderMembers = (container, members, emptyMessage, limit = 6) => {
-        container.replaceChildren();
-        if (!members.length) {
-          makeEmpty(container, emptyMessage);
-          return;
-        }
-        members.slice(0, limit).forEach(member => container.appendChild(makeMemberRow(member)));
-        if (members.length > limit) {
-          const more = document.createElement("p");
-          more.className = "discord-more-note";
-          more.textContent = "And " + (members.length - limit) + " more";
-          container.appendChild(more);
-        }
-      };
-
-      const renderVoiceChannels = (channels, members) => {
-        voiceList.replaceChildren();
-        if (!channels.length) {
-          makeEmpty(voiceList, "No public voice channels are available in the widget.");
-          return;
-        }
-
-        const orderedChannels = [...channels].sort((a, b) => {
-          const aMembers = members.filter(member => member.channel_id === a.id).length;
-          const bMembers = members.filter(member => member.channel_id === b.id).length;
-          return bMembers - aMembers || (a.position || 0) - (b.position || 0);
+      const select = (id, moveFocus = false) => {
+        tabs.forEach((tab) => {
+          const active = tab.dataset.tab === id;
+          tab.setAttribute("aria-selected", active ? "true" : "false");
+          tab.tabIndex = active ? 0 : -1;
+          if (active && moveFocus) tab.focus();
         });
+        panels.forEach((panel) => panel.classList.toggle("on", panel.dataset.panel === id));
+      };
+      const hashTarget = () => {
+        const id = window.location.hash.replace(/^#/, "");
+        return panels.some((panel) => panel.dataset.panel === id) ? id : null;
+      };
 
-        orderedChannels.forEach(channel => {
-          const attendees = members.filter(member => member.channel_id === channel.id);
-          const item = document.createElement("button");
-          item.type = "button";
-          item.className = "discord-channel-row";
-          item.dataset.channelId = channel.id;
-          item.setAttribute("aria-label", String(channel.name || "Voice channel") + ", " + attendees.length + (attendees.length === 1 ? " member" : " members") + ". Show channel members.");
+      select(hashTarget() || "overview");
 
-          const channelCopy = document.createElement("div");
-          channelCopy.className = "discord-channel-copy";
-          const name = document.createElement("strong");
-          name.textContent = String(channel.name || "Voice channel");
-          const people = document.createElement("span");
-          people.textContent = attendees.length
-            ? attendees.length + (attendees.length === 1 ? " member here" : " members here")
-            : "Quiet right now";
-          channelCopy.append(name, people);
-          item.appendChild(channelCopy);
-
-          if (attendees.length) {
-            const avatarGroup = document.createElement("div");
-            avatarGroup.className = "discord-channel-attendees";
-            attendees.slice(0, 3).forEach(member => avatarGroup.appendChild(makeAvatar(member)));
-            if (attendees.length > 3) {
-              const extra = document.createElement("span");
-              extra.className = "discord-avatar-extra";
-              extra.textContent = "+" + (attendees.length - 3);
-              avatarGroup.appendChild(extra);
-            }
-            item.appendChild(avatarGroup);
-          }
-          voiceList.appendChild(item);
+      tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => {
+          select(tab.dataset.tab);
+          window.history.replaceState(null, "", `#${tab.dataset.tab}`);
         });
-      };
-
-      const loadWidget = async () => {
-        try {
-          const response = await fetch(endpoint, { cache: "no-store", headers: { Accept: "application/json" } });
-          if (!response.ok) throw new Error("Discord returned " + response.status);
-          const widget = await response.json();
-          if (!Array.isArray(widget.members) || !Array.isArray(widget.channels)) {
-            throw new Error("Discord widget data is incomplete");
+        tab.addEventListener("keydown", (event) => {
+          let next = null;
+          if (event.key === "ArrowRight") next = tabs[(index + 1) % tabs.length];
+          if (event.key === "ArrowLeft") next = tabs[(index - 1 + tabs.length) % tabs.length];
+          if (event.key === "Home") next = tabs[0];
+          if (event.key === "End") next = tabs[tabs.length - 1];
+          if (next) {
+            event.preventDefault();
+            select(next.dataset.tab, true);
+            window.history.replaceState(null, "", `#${next.dataset.tab}`);
           }
-
-          currentWidget = widget;
-          const members = widget.members;
-          const neverwinterPlayers = members.filter(member => {
-            return String(member.game?.name || "").toLowerCase() === "neverwinter";
-          });
-          const voiceMembers = members.filter(member => member.channel_id);
-          const online = Number(widget.presence_count);
-
-          presenceCount.textContent = Number.isFinite(online) ? online.toLocaleString() : "—";
-          neverwinterCount.textContent = neverwinterPlayers.length.toLocaleString();
-          voiceCount.textContent = voiceMembers.length.toLocaleString();
-          channelCount.textContent = widget.channels.length.toLocaleString();
-          renderMembers(neverwinterList, neverwinterPlayers, "No listed members are playing Neverwinter right now.");
-          renderVoiceChannels(widget.channels, members);
-          statusLine.textContent = "Live from Discord";
-          hasLoaded = true;
-        } catch (error) {
-          statusLine.textContent = hasLoaded ? "Showing last snapshot" : "Discord status unavailable";
-          if (!hasLoaded) {
-            presenceCount.textContent = "—";
-            neverwinterCount.textContent = "—";
-            voiceCount.textContent = "—";
-            channelCount.textContent = "—";
-            makeEmpty(neverwinterList, "Member activity is temporarily unavailable. You can still join the server below.");
-            makeEmpty(voiceList, "Voice channel activity is temporarily unavailable.");
-          }
-        }
-      };
-
-      voiceList.addEventListener("click", event => {
-        const channelButton = event.target.closest("button[data-channel-id]");
-        if (!channelButton || !currentWidget) return;
-
-        const channel = currentWidget.channels.find(item => item.id === channelButton.dataset.channelId);
-        if (!channel) return;
-        const attendees = currentWidget.members.filter(member => member.channel_id === channel.id);
-        channelDialogTitle.textContent = String(channel.name || "Voice channel");
-        channelDialogSummary.textContent = attendees.length
-          ? attendees.length + (attendees.length === 1 ? " member is listed in this channel." : " members are listed in this channel.")
-          : "No members are listed in this channel right now.";
-        renderMembers(channelDialogMembers, attendees, "No members are listed in this channel right now.", Infinity);
-        if (!channelDialog.open) channelDialog.showModal();
+        });
       });
-
-      document.getElementById("closeDiscordChannelDialog").addEventListener("click", () => {
-        channelDialog.close();
+      window.addEventListener("hashchange", () => {
+        const id = hashTarget();
+        if (id) select(id);
       });
-      channelDialog.addEventListener("click", event => {
-        if (event.target === channelDialog) channelDialog.close();
-      });
-
-      loadWidget();
-      window.setInterval(loadWidget, 5 * 60 * 1000);
     })();
   </script>
   <script>

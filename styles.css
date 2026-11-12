@@ -1688,3 +1688,25 @@ footer { border-top-color:rgba(216,168,78,.55); }
 .suno-track-meta { color:var(--muted); font-size:.78rem; }
 .suno-track-plays { color:var(--gold-bright); font-size:.8rem; white-space:nowrap; }
 .suno-track-status { color:var(--muted); margin:0; }
+
+/* Guild Info topic tabs: the six sections as switchable panels. The tab bar
+   only appears once the page script activates it (body.tabs-on); without
+   JavaScript every panel simply stacks open, like the old expanded cards. */
+.guild-tabs { display:none; gap:2px; overflow-x:auto; padding:2px; scrollbar-width:none; }
+.guild-tabs::-webkit-scrollbar { display:none; }
+body.tabs-on .guild-tabs { display:flex; }
+.guild-tab { flex:none; padding:9px 13px; border:none; border-bottom:2px solid transparent; background:none; color:var(--muted); font:600 .88rem/1.3 var(--serif); letter-spacing:.04em; cursor:pointer; }
+.guild-tab:hover { color:var(--text); }
+.guild-tab:focus-visible { outline:2px solid var(--gold-bright); outline-offset:-2px; }
+.guild-tab[aria-selected="true"] { color:var(--gold-bright); border-bottom-color:var(--gold); }
+body.tabs-on .guild-panel { display:none; }
+body.tabs-on .guild-panel.on { display:block; }
+.guild-panel-head { padding:19px 22px 0; }
+.guild-panel-head .section-kicker { margin:0 0 3px; }
+.guild-panel-head h2 { margin:0; color:var(--gold-bright); font:600 clamp(1.2rem,2.5vw,1.55rem)/1.3 var(--serif); }
+.guild-panel-head p { margin:4px 0 0; color:var(--muted); font-size:.84rem; }
+.guild-panel .guild-info-body { padding-top:12px; }
+@media (max-width:720px) {
+  .guild-panel-head { padding:15px 16px 0; }
+  .guild-tab { padding:8px 10px; font-size:.82rem; }
+}
