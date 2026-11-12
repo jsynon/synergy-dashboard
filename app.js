@@ -145,9 +145,23 @@
     const endOfSearchWindow=addCalendarMonths(startOfToday,12);
     endOfSearchWindow.setHours(23,59,59,999);
     const searchable=milestones.filter(account=>account.eligibleDate<=endOfSearchWindow);
+    const rankFilter=$('promotion-rank-filter');
+    const targetRanks=[...new Set(searchable.map(account=>account.rankOrder+1))].sort((a,b)=>a-b);
+    const optionsSignature=targetRanks.join(',');
+    if(rankFilter.dataset.options!==optionsSignature){
+      const previousSelection=rankFilter.value;
+      rankFilter.innerHTML='<option value="">All ranks</option>'+targetRanks.map(rank=>'<option value="'+rank+'">'+(rankNames[rank]||'Rank '+rank)+'</option>').join('');
+      rankFilter.dataset.options=optionsSignature;
+      if(targetRanks.some(rank=>String(rank)===previousSelection))rankFilter.value=previousSelection;
+    }
+    const rankSelection=rankFilter.value;
+    const rankSelectionName=rankSelection?(rankNames[Number(rankSelection)]||'Rank '+rankSelection):'';
     const query=$('promotion-search').value.trim().toLocaleLowerCase();
-    const results=query?searchable.filter(account=>account.account.toLocaleLowerCase().includes(query)||account.characters.some(character=>character.name.toLocaleLowerCase().includes(query))):upcoming;
-    $('promotion-search-results').textContent=query?results.length.toLocaleString()+' '+(results.length===1?'account':'accounts')+' match · through '+formatDate(endOfSearchWindow):upcoming.length.toLocaleString()+' '+(upcoming.length===1?'account':'accounts')+' eligible now or within 3 months';
+    const matched=query?searchable.filter(account=>account.account.toLocaleLowerCase().includes(query)||account.characters.some(character=>character.name.toLocaleLowerCase().includes(query))):upcoming;
+    const results=rankSelection?matched.filter(account=>account.rankOrder+1===Number(rankSelection)):matched;
+    $('promotion-search-results').textContent=rankSelection
+      ?results.length.toLocaleString()+' '+(results.length===1?'account':'accounts')+(query?' match · promoting to '+rankSelectionName+' · through '+formatDate(endOfSearchWindow):' promoting to '+rankSelectionName+' · eligible now or within 3 months')
+      :(query?results.length.toLocaleString()+' '+(results.length===1?'account':'accounts')+' match · through '+formatDate(endOfSearchWindow):upcoming.length.toLocaleString()+' '+(upcoming.length===1?'account':'accounts')+' eligible now or within 3 months');
     $('promotion-list').innerHTML=results.length?results.map(account=>{
       const nextRank=account.rankOrder+1;
       const currentRank=rankNames[account.rankOrder]||'Rank '+account.rankOrder;
@@ -160,7 +174,7 @@
         return '<div class="promotion-row promotion-row-detail"><div class="promotion-account">'+accountLink+'<span>'+account.characterCount+' '+(account.characterCount===1?'character':'characters')+'</span></div><div class="promotion-path"><span class="promotion-path-label">Promoting</span> '+currentRank+' <span aria-hidden="true">→</span> '+nextRankName+'</div><time class="promotion-date" datetime="'+account.eligibleDate.toISOString()+'">'+stateLabel+'<span class="promotion-last-online"> · Last online '+lastOnlineLabel+'</span></time><div class="promotion-characters">'+characterDetails+'</div></div>';
       }
       return '<div class="promotion-row"><div class="promotion-account">'+accountLink+'<span>'+account.characterCount+' '+(account.characterCount===1?'character':'characters')+'</span></div><div class="promotion-path">'+currentRank+' <span aria-hidden="true">→</span> '+nextRankName+'</div><time class="promotion-date" datetime="'+account.eligibleDate.toISOString()+'">'+stateLabel+'<span class="promotion-last-online"> · Last online '+lastOnlineLabel+'</span></time></div>';
-    }).join(''):(query?'<div class="empty-state">No promotion accounts match this search through the next 12 months.</div>':'<div class="empty-state">No accounts are eligible now or reaching a promotion milestone in the next 3 months.</div>');
+    }).join(''):(rankSelection?(query?'<div class="empty-state">No promotion accounts match this search and rank through the next 12 months.</div>':'<div class="empty-state">No accounts are promoting to '+rankSelectionName+' now or within the next 3 months.</div>'):(query?'<div class="empty-state">No promotion accounts match this search through the next 12 months.</div>':'<div class="empty-state">No accounts are eligible now or reaching a promotion milestone in the next 3 months.</div>'));
   }
   function renderInactivityAlerts(){
     const limits={1:7,2:14,3:30,4:60,5:90};
@@ -386,6 +400,7 @@
   $('bank-type-filter').addEventListener('change',renderBankActivity);
   $('bank-period-filter').addEventListener('change',renderBankActivity);
   $('promotion-search').addEventListener('input',renderPromotions);
+  $('promotion-rank-filter').addEventListener('change',renderPromotions);
   $('roster').addEventListener('click',event=>{
     const link=event.target.closest('.directory-account-link');
     if(!link)return;
