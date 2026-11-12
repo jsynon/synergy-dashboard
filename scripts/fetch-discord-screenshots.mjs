@@ -106,12 +106,14 @@ async function main() {
   const onDisk = new Set(await readdir(IMAGE_DIR).catch(() => []));
 
   const screenshots = [];
+  let attachmentsSeen = 0;
   let downloaded = 0;
   let skippedVideo = 0;
   let downloadFailures = 0;
   const referenced = new Set();
   for (const message of messages) {
     for (const attachment of message.attachments || []) {
+      attachmentsSeen += 1;
       const ext = extensionOf(attachment.filename, attachment.content_type);
       if (!ext) { skippedVideo += 1; continue; }
       const fileName = `${message.id}-${attachment.id}.${ext}`;
@@ -148,11 +150,16 @@ async function main() {
   let pruned = 0;
   if (downloadFailures === 0) {
     for (const file of onDisk) {
+      if (file.startsWith(".")) continue;
       if (!referenced.has(file)) {
         await unlink(resolve(IMAGE_DIR, file)).catch(() => {});
         pruned += 1;
       }
     }
+  }
+
+  if (messages.length > 0 && attachmentsSeen === 0) {
+    console.warn("WARNING: Discord returned messages but no attachments at all. This is the signature of the bot missing the MESSAGE_CONTENT privileged intent: without it, Discord empties the content/embeds/attachments fields of messages the API returns. Enable it in the Discord Developer Portal (your application -> Bot -> Privileged Gateway Intents -> Message Content Intent), then re-run the refresh.");
   }
 
   screenshots.sort((a, b) => Date.parse(b.postedAt) - Date.parse(a.postedAt));
