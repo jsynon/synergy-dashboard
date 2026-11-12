@@ -53,6 +53,36 @@
     return `${formatEventDate(startValue)} – ${formatEventDate(endValue)}`;
   };
 
+  // A manual event may carry an endTime ("HH:MM", 24-hour) read as Eastern
+  // wall-clock time on its end date: in-game events often end mid-morning on
+  // their last day rather than at midnight. Resolve it to a real instant by
+  // correcting a UTC guess against Eastern's actual offset (two passes
+  // settle the answer across DST changes).
+  const manualEndInstant = (event) => {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(event.endDate || "")) return null;
+    if (!/^\d{1,2}:\d{2}$/.test(event.endTime || "")) return null;
+    const [year, month, day] = event.endDate.split("-").map(Number);
+    const [hour, minute] = event.endTime.split(":").map(Number);
+    if (hour > 23 || minute > 59) return null;
+    const target = Date.UTC(year, month - 1, day, hour, minute);
+    let guess = target;
+    for (let pass = 0; pass < 2; pass += 1) {
+      const parts = new Intl.DateTimeFormat("en-US", {
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hourCycle: "h23",
+        timeZone: "America/New_York"
+      }).formatToParts(new Date(guess));
+      const part = (type) => Number(parts.find((item) => item.type === type)?.value);
+      guess += target - Date.UTC(part("year"), part("month") - 1, part("day"), part("hour"), part("minute"), part("second"));
+    }
+    return new Date(guess);
+  };
+
   const safeHttpsUrl = (value) => {
     if (typeof value !== "string") return null;
     try {
@@ -81,6 +111,10 @@
           const end = new Date(event.endTime || event.startTime);
           if (!Number.isNaN(end.valueOf())) return end >= now;
         }
+        // A manual event with an Eastern end time leaves the list at that
+        // instant on its end date, the way timed Discord events do.
+        const manualEnd = event.source === "manual" ? manualEndInstant(event) : null;
+        if (manualEnd) return manualEnd > now;
         const lastDate = event.endDate || event.endTime || event.startDate || event.startTime;
         const key = dateKey(lastDate);
         return key && key >= today;
@@ -105,6 +139,13 @@
           timeZoneName: "short"
         }).format(startTime);
         addText(row, "span", "news-event-date", `${dateLabel} · ${localTime}`);
+      } else if (event.source === "manual" && manualEndInstant(event)) {
+        const localEnd = new Intl.DateTimeFormat(undefined, {
+          hour: "numeric",
+          minute: "2-digit",
+          timeZoneName: "short"
+        }).format(manualEndInstant(event));
+        addText(row, "span", "news-event-date", `${dateLabel} · ends ${localEnd}`);
       } else {
         addText(row, "span", "news-event-date", dateLabel);
       }
