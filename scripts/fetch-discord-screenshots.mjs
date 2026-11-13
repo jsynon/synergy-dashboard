@@ -9,11 +9,16 @@
 // untouched, so the rest of the refresh is never blocked by the gallery.
 
 import { mkdir, readFile, writeFile, readdir, unlink } from "node:fs/promises";
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
 import { resolve } from "node:path";
 
 const API = "https://discord.com/api/v10";
 const IMAGE_DIR = resolve("assets/screenshots");
+const THUMB_DIR = resolve("assets/screenshots/thumbs");
+const THUMB_WIDTH = 640;
 const OUTPUT_PATH = resolve("data/screenshots.json");
+const execFileAsync = promisify(execFile);
 const IMAGE_EXTENSIONS = new Set(["png", "jpg", "jpeg", "gif", "webp"]);
 const PAGE_SIZE = 100;
 const MAX_PAGES = 60; // safety stop: 6,000 messages of history per run
@@ -62,6 +67,28 @@ function extensionOf(filename, contentType) {
   return IMAGE_EXTENSIONS.has(fromType) ? fromType : null;
 }
 
+function thumbNameFor(fileName) {
+  return fileName.replace(/\.[^.]+$/, ".webp");
+}
+
+// Small WebP copies for the gallery grid, made with the ImageMagick that
+// ships on the workflow runner ("convert" on v6, "magick" on v7). Returns
+// false when the tool is missing or the conversion fails — thumbnails are
+// an optimization, never a reason to fail the run.
+async function makeThumbnail(sourcePath, targetPath, isGif) {
+  const input = isGif ? `${sourcePath}[0]` : sourcePath;
+  const args = [input, "-auto-orient", "-resize", `${THUMB_WIDTH}x>`, "-quality", "82", targetPath];
+  for (const binary of ["convert", "magick"]) {
+    try {
+      await execFileAsync(binary, args);
+      return true;
+    } catch (error) {
+      if (error.code !== "ENOENT") return false;
+    }
+  }
+  return false;
+}
+
 async function main() {
   const token = process.env.DISCORD_BOT_TOKEN;
   const guildId = process.env.DISCORD_GUILD_ID;
@@ -104,6 +131,7 @@ async function main() {
   // Existing downloads, so repeat runs only fetch what is new.
   await mkdir(IMAGE_DIR, { recursive: true });
   const onDisk = new Set(await readdir(IMAGE_DIR).catch(() => []));
+  let onDiskThumbs = new Set();
 
   const screenshots = [];
   let attachmentsSeen = 0;
@@ -144,15 +172,46 @@ async function main() {
     }
   }
 
+  // Thumbnails for the grid: the page shows these small copies and keeps
+  // the full-size originals for the viewer. Any screenshot whose original
+  // is on disk gets one, so the first run after this ships also backfills
+  // the existing archive. Fail-soft: without ImageMagick (or on a failed
+  // conversion) the item simply has no thumb and the page uses the original.
+  await mkdir(THUMB_DIR, { recursive: true });
+  onDiskThumbs = new Set(await readdir(THUMB_DIR).catch(() => []));
+  let thumbsCreated = 0;
+  let thumbsFailed = 0;
+  for (const shot of screenshots) {
+    const fileName = shot.file.split("/").pop();
+    const thumbName = thumbNameFor(fileName);
+    if (!onDiskThumbs.has(thumbName)) {
+      const created = await makeThumbnail(resolve(IMAGE_DIR, fileName), resolve(THUMB_DIR, thumbName), fileName.toLowerCase().endsWith(".gif"));
+      if (created) { thumbsCreated += 1; onDiskThumbs.add(thumbName); }
+      else thumbsFailed += 1;
+    }
+    if (onDiskThumbs.has(thumbName)) shot.thumb = `assets/screenshots/thumbs/${thumbName}`;
+  }
+  if (thumbsFailed > 0) {
+    console.warn(`Thumbnails could not be created for ${thumbsFailed} screenshot(s) (ImageMagick missing or conversion failed); those grid tiles will load the full-size original instead.`);
+  }
+
   // Only prune (posts deleted in Discord) after a complete pass in which
   // every kept image is actually on disk; a failed download keeps its file
   // out of the index for this run but must not delete anything.
   let pruned = 0;
   if (downloadFailures === 0) {
     for (const file of onDisk) {
-      if (file.startsWith(".")) continue;
+      if (file.startsWith(".") || file === "thumbs") continue;
       if (!referenced.has(file)) {
         await unlink(resolve(IMAGE_DIR, file)).catch(() => {});
+        pruned += 1;
+      }
+    }
+    const expectedThumbs = new Set(screenshots.map((shot) => thumbNameFor(shot.file.split("/").pop())));
+    for (const file of onDiskThumbs) {
+      if (file.startsWith(".")) continue;
+      if (!expectedThumbs.has(file)) {
+        await unlink(resolve(THUMB_DIR, file)).catch(() => {});
         pruned += 1;
       }
     }
@@ -170,7 +229,7 @@ async function main() {
     channelName: String(channel.name || "Screenshots"),
     screenshots
   }, null, 2)}\n`, "utf8");
-  console.log(`Gallery: ${screenshots.length} screenshot(s) (${downloaded} newly downloaded, ${pruned} pruned, ${skippedVideo} non-image attachment(s) skipped).`);
+  console.log(`Gallery: ${screenshots.length} screenshot(s) (${downloaded} newly downloaded, ${thumbsCreated} thumbnail(s) created, ${pruned} pruned, ${skippedVideo} non-image attachment(s) skipped).`);
 }
 
 main().catch((error) => {
