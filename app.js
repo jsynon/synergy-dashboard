@@ -408,9 +408,6 @@
   });
   const accountDialog=$('account-dialog');
   $('close-account-dialog').addEventListener('click',()=>accountDialog.close());
-  accountDialog.addEventListener('click',event=>{
-    if(event.target===accountDialog)accountDialog.close();
-  });
     $('promotion-list').addEventListener('click',event=>{
     const link=event.target.closest('.promotion-account-link');
     if(!link)return;
@@ -418,17 +415,23 @@
     showAccountDetails(link.dataset.accountQuery||'');
   });
   const promotionRulesDialog=$('promotion-rules-dialog');
-  $('show-promotion-rules').addEventListener('click',()=>promotionRulesDialog.showModal());
   $('close-promotion-rules').addEventListener('click',()=>promotionRulesDialog.close());
-  promotionRulesDialog.addEventListener('click',event=>{
-    if(event.target===promotionRulesDialog)promotionRulesDialog.close();
-  });
   const inactivityRulesDialog=$('inactivity-rules-dialog');
-  $('show-inactivity-rules').addEventListener('click',()=>inactivityRulesDialog.showModal());
   $('close-inactivity-rules').addEventListener('click',()=>inactivityRulesDialog.close());
-  inactivityRulesDialog.addEventListener('click',event=>{
-    if(event.target===inactivityRulesDialog)inactivityRulesDialog.close();
-  });
+  // Dialogs dismiss on backdrop click natively via closedby="any". Safari does not
+  // support closedby yet, so only there install a fallback that closes when a press
+  // starts and ends outside the dialog box (a drag out of the dialog must not close it).
+  if(!('closedBy' in HTMLDialogElement.prototype)){
+    const pressedOutside=(event,dialog)=>{
+      const rect=dialog.getBoundingClientRect();
+      return event.clientX<rect.left||event.clientX>rect.right||event.clientY<rect.top||event.clientY>rect.bottom;
+    };
+    for(const dialog of document.querySelectorAll('dialog[closedby="any"]')){
+      let downOutside=false;
+      dialog.addEventListener('pointerdown',event=>{downOutside=pressedOutside(event,dialog);});
+      dialog.addEventListener('pointerup',event=>{if(downOutside&&pressedOutside(event,dialog))dialog.close();});
+    }
+  }
   $('inactivity-list').addEventListener('click',event=>{
     const link=event.target.closest('.inactivity-account-link');
     if(!link)return;

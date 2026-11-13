@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=20261112-gallery-zoom">
-  <script src="app.js?v=20261112-merged-directory" defer></script>
+  <script src="app.js?v=20261113-modern-dialogs" defer></script>
   <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
 </head>
 <body>
@@ -133,7 +133,7 @@
         </div>
             </section>
       <section class="panel promotions-panel collapsible-panel guild-panel" id="upcoming-promotions" data-panel="promotions" role="tabpanel" aria-labelledby="tab-promotions" tabindex="0">
-        <div class="panel-heading collapsible-heading roster-panel-head"><div><p class="section-kicker">Guild milestones</p><h2 id="promotion-title">Upcoming promotions</h2><p class="section-subtitle">Accounts eligible now or approaching a <button type="button" class="promotion-rules-link" id="show-promotion-rules">tenure milestone</button>.</p></div><span class="collapsible-header-meta"><span class="count-pill promotion-count" id="promotion-count" aria-live="polite">—</span></span></div>
+        <div class="panel-heading collapsible-heading roster-panel-head"><div><p class="section-kicker">Guild milestones</p><h2 id="promotion-title">Upcoming promotions</h2><p class="section-subtitle">Accounts eligible now or approaching a <button type="button" class="promotion-rules-link" id="show-promotion-rules" commandfor="promotion-rules-dialog" command="show-modal">tenure milestone</button>.</p></div><span class="collapsible-header-meta"><span class="count-pill promotion-count" id="promotion-count" aria-live="polite">—</span></span></div>
         <div class="collapsible-panel-body">
         <div class="field promotion-search-field"><label for="promotion-search">Search promotions</label><div class="search-box"><span aria-hidden="true">⌕</span><input id="promotion-search" type="search" placeholder="Character or account name" autocomplete="off"></div><p id="promotion-search-results" class="search-results-count" aria-live="polite">Promotion account results will appear here.</p></div>
         <div class="activity-filters"><div class="field"><label for="promotion-rank-filter">Promoting to</label><select id="promotion-rank-filter"><option value="">All ranks</option></select></div></div>
@@ -142,13 +142,13 @@
             </section>
 
       <section class="panel inactivity-panel collapsible-panel guild-panel" id="inactivity-alerts" data-panel="inactivity" role="tabpanel" aria-labelledby="tab-inactivity" tabindex="0">
-        <div class="panel-heading collapsible-heading roster-panel-head"><div><p class="section-kicker">Account activity</p><h2 id="inactivity-title">Inactivity alerts</h2><p class="section-subtitle">Accounts at or beyond their rank-based <button type="button" class="inactivity-rules-link" id="show-inactivity-rules">inactivity limit</button>.</p></div><span class="collapsible-header-meta"><span class="count-pill" id="inactivity-count">—</span></span></div>
+        <div class="panel-heading collapsible-heading roster-panel-head"><div><p class="section-kicker">Account activity</p><h2 id="inactivity-title">Inactivity alerts</h2><p class="section-subtitle">Accounts at or beyond their rank-based <button type="button" class="inactivity-rules-link" id="show-inactivity-rules" commandfor="inactivity-rules-dialog" command="show-modal">inactivity limit</button>.</p></div><span class="collapsible-header-meta"><span class="count-pill" id="inactivity-count">—</span></span></div>
         <div class="collapsible-panel-body">
         <div id="inactivity-list" class="inactivity-list"><div class="empty-state">Alerts will appear when the roster snapshot loads.</div></div>
         </div>
             </section>
 
-      <dialog class="popup-shell inactivity-rules-dialog" id="inactivity-rules-dialog" aria-labelledby="inactivity-rules-title">
+      <dialog class="popup-shell inactivity-rules-dialog" id="inactivity-rules-dialog" aria-labelledby="inactivity-rules-title" closedby="any">
         <div class="inactivity-rules-header">
           <div><p class="kicker">Guild activity policy</p><h2 id="inactivity-rules-title">Inactivity limits</h2></div>
           <button type="button" class="popup-close inactivity-dialog-close" id="close-inactivity-rules" aria-label="Close inactivity limits">×</button>
@@ -163,7 +163,7 @@
         </ul>
         <p class="inactivity-rules-note">Limits are evaluated at the account level using the most recent activity across its characters. Reaching a limit makes an account eligible for removal; it does not remove the account automatically.</p>
       </dialog>
-      <dialog class="popup-shell promotion-rules-dialog" id="promotion-rules-dialog" aria-labelledby="promotion-rules-title">
+      <dialog class="popup-shell promotion-rules-dialog" id="promotion-rules-dialog" aria-labelledby="promotion-rules-title" closedby="any">
         <div class="promotion-rules-header">
           <div><p class="kicker">Guild advancement</p><h2 id="promotion-rules-title">Rank Progression Benchmarks</h2></div>
           <button type="button" class="popup-close promotion-dialog-close" id="close-promotion-rules" aria-label="Close rank progression benchmarks">×</button>
@@ -177,7 +177,7 @@
         </ul>
         <p class="promotion-rules-note">These are general benchmarks based on the account’s earliest verified guild join date. Active participation can support faster progression. Rank decisions also consider activity, participation in guild events or runs, communication, respectful behavior, and positive contribution.</p>
       </dialog>
-      <dialog class="popup-shell account-detail-dialog" id="account-dialog" aria-labelledby="account-dialog-title">
+      <dialog class="popup-shell account-detail-dialog" id="account-dialog" aria-labelledby="account-dialog-title" closedby="any">
         <div class="account-dialog-header">
           <div><p class="kicker">Member account</p><h2 id="account-dialog-title">Account details</h2><p id="account-dialog-summary" class="account-dialog-summary"></p></div>
           <button type="button" class="popup-close account-dialog-close" id="close-account-dialog" aria-label="Close account details">×</button>
@@ -285,6 +285,13 @@
         if (id) select(id);
       });
     })();
+  </script>
+  <script type="module">
+    // Invoker Commands (commandfor/command) open the rules dialogs declaratively.
+    // Load the polyfill only in browsers without native support.
+    if (!('commandForElement' in HTMLButtonElement.prototype)) {
+      import('https://esm.run/invokers-polyfill');
+    }
   </script>
 </body>
 </html>
