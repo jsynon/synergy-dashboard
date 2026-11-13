@@ -1552,7 +1552,7 @@ footer {
         kicker.textContent = "Crafting material";
         title.textContent = material.name;
         const sources = sourceEntries.filter(source => source.materials.has(material.key));
-        intro.textContent = "Used in " + material.recipes.length + " " + (material.recipes.length === 1 ? "recipe" : "recipes") + ".";
+        intro.textContent = "Gathered from " + sources.length + " " + (sources.length === 1 ? "source" : "sources") + ".";
         const sourceHeading = document.createElement("h3");
         sourceHeading.textContent = "Gathered from";
         body.appendChild(sourceHeading);
@@ -1560,38 +1560,13 @@ footer {
         sourceList.className = "detail-list";
         sources.forEach(source => appendDetailListItem(sourceList, "source", source.name, source.name, source.materials.get(material.key).recipes.length + " recipes use this material here"));
         body.appendChild(sourceList);
-
-        const recipeHeading = document.createElement("h3");
-        recipeHeading.textContent = "Used in these recipes";
-        body.appendChild(recipeHeading);
-        const recipeList = document.createElement("ul");
-        recipeList.className = "detail-list recipe-detail-list";
-        material.recipes.forEach(recipe => {
-          const item = document.createElement("li");
-          const name = document.createElement("span");
-          name.className = "detail-recipe-name";
-          name.textContent = recipe.item;
-          const amountNeeded = recipe.ingredients.reduce((total, ingredient) => {
-            const parsed = parseIngredient(ingredient.resource);
-            if (normalizeSearchText(parsed.name) !== material.key) return total;
-            return total + (parseInt(parsed.qty, 10) || 0);
-          }, 0);
-          const quantity = document.createElement("small");
-          quantity.className = "detail-recipe-quantity";
-          quantity.textContent = amountNeeded > 0 ? amountNeeded + "x needed" : "Quantity not listed";
-          const classes = document.createElement("small");
-          classes.textContent = recipe.classes.join(", ");
-          item.append(name, quantity, classes);
-          recipeList.appendChild(item);
-        });
-        body.appendChild(recipeList);
       } else if (kind === "source") {
         const source = sourceEntries.find(entry => entry.name === value);
         if (!source) return;
         const materials = Array.from(source.materials.values()).sort((a, b) => a.name.localeCompare(b.name));
         kicker.textContent = "Material source";
         title.textContent = source.name;
-        intro.textContent = "This source appears in " + source.recipes.length + " " + (source.recipes.length === 1 ? "recipe" : "recipes") + " and provides " + materials.length + " distinct " + (materials.length === 1 ? "material" : "materials") + ".";
+        intro.textContent = "Provides " + materials.length + " distinct " + (materials.length === 1 ? "material" : "materials") + ".";
         const materialHeading = document.createElement("h3");
         materialHeading.textContent = "Materials found here";
         body.appendChild(materialHeading);
@@ -1599,23 +1574,6 @@ footer {
         materialList.className = "detail-list";
         materials.forEach(material => appendDetailListItem(materialList, "material", material.key, material.name, "Used in " + material.recipes.length + " " + (material.recipes.length === 1 ? "recipe" : "recipes")));
         body.appendChild(materialList);
-
-        const recipeHeading = document.createElement("h3");
-        recipeHeading.textContent = "Recipes using this source";
-        body.appendChild(recipeHeading);
-        const recipeList = document.createElement("ul");
-        recipeList.className = "detail-list recipe-detail-list";
-        source.recipes.forEach(recipe => {
-          const item = document.createElement("li");
-          const name = document.createElement("span");
-          name.className = "detail-recipe-name";
-          name.textContent = recipe.item;
-          const classes = document.createElement("small");
-          classes.textContent = recipe.classes.join(", ");
-          item.append(name, classes);
-          recipeList.appendChild(item);
-        });
-        body.appendChild(recipeList);
       } else {
         return;
       }
