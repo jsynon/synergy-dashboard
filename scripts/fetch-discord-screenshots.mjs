@@ -8,7 +8,7 @@
 // clear warning and leaves the previous data/screenshots.json and images
 // untouched, so the rest of the refresh is never blocked by the gallery.
 
-import { mkdir, readFile, writeFile, readdir, unlink } from "node:fs/promises";
+import { mkdir, readFile, writeFile, readdir, rename, unlink } from "node:fs/promises";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { resolve } from "node:path";
@@ -17,6 +17,8 @@ const API = "https://discord.com/api/v10";
 const IMAGE_DIR = resolve("assets/screenshots");
 const THUMB_DIR = resolve("assets/screenshots/thumbs");
 const THUMB_WIDTH = 640;
+const ORIGINAL_MAX_WIDTH = 2560;
+const ORIGINAL_QUALITY = 88;
 const OUTPUT_PATH = resolve("data/screenshots.json");
 const execFileAsync = promisify(execFile);
 const IMAGE_EXTENSIONS = new Set(["png", "jpg", "jpeg", "gif", "webp"]);
@@ -71,13 +73,11 @@ function thumbNameFor(fileName) {
   return fileName.replace(/\.[^.]+$/, ".webp");
 }
 
-// Small WebP copies for the gallery grid, made with the ImageMagick that
-// ships on the workflow runner ("convert" on v6, "magick" on v7). Returns
-// false when the tool is missing or the conversion fails — thumbnails are
-// an optimization, never a reason to fail the run.
-async function makeThumbnail(sourcePath, targetPath, isGif) {
-  const input = isGif ? `${sourcePath}[0]` : sourcePath;
-  const args = [input, "-auto-orient", "-resize", `${THUMB_WIDTH}x>`, "-quality", "82", targetPath];
+// All image conversion uses the ImageMagick that ships on the workflow
+// runner ("convert" on v6, "magick" on v7). Returns false when the tool is
+// missing or the conversion fails — conversion is an optimization, never
+// a reason to fail the run.
+async function runConvert(args) {
   for (const binary of ["convert", "magick"]) {
     try {
       await execFileAsync(binary, args);
@@ -87,6 +87,36 @@ async function makeThumbnail(sourcePath, targetPath, isGif) {
     }
   }
   return false;
+}
+
+// Small WebP copies for the gallery grid.
+async function makeThumbnail(sourcePath, targetPath, isGif) {
+  const input = isGif ? `${sourcePath}[0]` : sourcePath;
+  return runConvert([input, "-auto-orient", "-resize", `${THUMB_WIDTH}x>`, "-quality", "82", targetPath]);
+}
+
+// The dimensions a stored original ends up with once the width cap is
+// applied — the index records these, so the viewer's layout and zoom
+// math describe the file that is actually served.
+function cappedDimensions(width, height) {
+  if (!width || !height || width <= ORIGINAL_MAX_WIDTH) return { width: width || null, height: height || null };
+  return { width: ORIGINAL_MAX_WIDTH, height: Math.round((height * ORIGINAL_MAX_WIDTH) / width) };
+}
+
+// Recompress a stored original to WebP, capped at ORIGINAL_MAX_WIDTH wide.
+// Discord's raw uploads (multi-MB PNGs, 4K shots) are what made the repo
+// balloon; a quality WebP at this cap keeps the viewer sharp at a
+// fraction of the bytes. Written via a temp file so a failed conversion
+// can never corrupt the existing original.
+async function convertOriginal(sourcePath, targetPath) {
+  const temporary = `${targetPath}.tmp.webp`;
+  const done = await runConvert([sourcePath, "-auto-orient", "-resize", `${ORIGINAL_MAX_WIDTH}x>`, "-quality", String(ORIGINAL_QUALITY), temporary]);
+  if (!done) {
+    await unlink(temporary).catch(() => {});
+    return false;
+  }
+  await rename(temporary, targetPath);
+  return true;
 }
 
 async function main() {
@@ -138,36 +168,75 @@ async function main() {
   let downloaded = 0;
   let skippedVideo = 0;
   let downloadFailures = 0;
+  let converted = 0;
   const referenced = new Set();
+
+  const downloadAttachment = async (attachment, name) => {
+    const response = await fetch(attachment.url);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    await writeFile(resolve(IMAGE_DIR, name), Buffer.from(await response.arrayBuffer()));
+    downloaded += 1;
+    await sleep(150);
+  };
   for (const message of messages) {
     for (const attachment of message.attachments || []) {
       attachmentsSeen += 1;
       const ext = extensionOf(attachment.filename, attachment.content_type);
       if (!ext) { skippedVideo += 1; continue; }
-      const fileName = `${message.id}-${attachment.id}.${ext}`;
-      referenced.add(fileName);
-      if (!onDisk.has(fileName)) {
-        try {
-          const response = await fetch(attachment.url);
-          if (!response.ok) throw new Error(`HTTP ${response.status}`);
-          await writeFile(resolve(IMAGE_DIR, fileName), Buffer.from(await response.arrayBuffer()));
-          downloaded += 1;
-          await sleep(150);
-        } catch (error) {
-          downloadFailures += 1;
-          console.warn(`Could not download ${attachment.filename}: ${error.message}. It will be retried next run.`);
-          continue;
+      const baseName = `${message.id}-${attachment.id}`;
+      const rawName = `${baseName}.${ext}`;
+      const webpName = `${baseName}.webp`;
+      // Stored form: still images live as recompressed WebP copies capped
+      // at ORIGINAL_MAX_WIDTH; GIFs stay exactly as uploaded. A screenshot
+      // already stored in either form is never re-downloaded — an on-disk
+      // raw file is converted in place instead, which is also what shrinks
+      // the existing archive on the first run after this ships (the raw
+      // drops out of the index and is pruned below). If conversion is
+      // unavailable, the raw file is kept and indexed as-is.
+      let storedName = null;
+      let storedWidth = attachment.width || null;
+      let storedHeight = attachment.height || null;
+      try {
+        if (ext === "gif") {
+          if (!onDisk.has(rawName)) await downloadAttachment(attachment, rawName);
+          storedName = rawName;
+        } else if (onDisk.has(webpName)) {
+          storedName = webpName;
+          ({ width: storedWidth, height: storedHeight } = cappedDimensions(storedWidth, storedHeight));
+        } else if (onDisk.has(rawName)) {
+          if (await convertOriginal(resolve(IMAGE_DIR, rawName), resolve(IMAGE_DIR, webpName))) {
+            converted += 1;
+            storedName = webpName;
+            ({ width: storedWidth, height: storedHeight } = cappedDimensions(storedWidth, storedHeight));
+          } else {
+            storedName = rawName;
+          }
+        } else {
+          await downloadAttachment(attachment, rawName);
+          if (await convertOriginal(resolve(IMAGE_DIR, rawName), resolve(IMAGE_DIR, webpName))) {
+            converted += 1;
+            await unlink(resolve(IMAGE_DIR, rawName)).catch(() => {});
+            storedName = webpName;
+            ({ width: storedWidth, height: storedHeight } = cappedDimensions(storedWidth, storedHeight));
+          } else {
+            storedName = rawName;
+          }
         }
+      } catch (error) {
+        downloadFailures += 1;
+        console.warn(`Could not download ${attachment.filename}: ${error.message}. It will be retried next run.`);
+        continue;
       }
+      referenced.add(storedName);
       screenshots.push({
         id: String(attachment.id),
-        file: `assets/screenshots/${fileName}`,
+        file: `assets/screenshots/${storedName}`,
         author: String(message.author?.global_name || message.author?.username || "Guild member"),
         username: String(message.author?.username || ""),
         caption: String(message.content || "").trim().slice(0, 300),
         postedAt: message.timestamp,
-        width: attachment.width || null,
-        height: attachment.height || null
+        width: storedWidth,
+        height: storedHeight
       });
     }
   }
@@ -229,7 +298,7 @@ async function main() {
     channelName: String(channel.name || "Screenshots"),
     screenshots
   }, null, 2)}\n`, "utf8");
-  console.log(`Gallery: ${screenshots.length} screenshot(s) (${downloaded} newly downloaded, ${thumbsCreated} thumbnail(s) created, ${pruned} pruned, ${skippedVideo} non-image attachment(s) skipped).`);
+  console.log(`Gallery: ${screenshots.length} screenshot(s) (${downloaded} newly downloaded, ${converted} original(s) recompressed, ${thumbsCreated} thumbnail(s) created, ${pruned} pruned, ${skippedVideo} non-image attachment(s) skipped).`);
 }
 
 main().catch((error) => {
