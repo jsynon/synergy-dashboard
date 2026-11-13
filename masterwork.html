@@ -1109,7 +1109,7 @@ footer {
         <div class="filter-panel" role="search">
           <div class="field">
             <label for="searchInput">Search</label>
-            <div class="search-box"><span aria-hidden="true">⌕</span><input type="search" id="searchInput" placeholder="Recipe, class, material, or source" autocomplete="off"></div>
+            <div class="search-box"><span aria-hidden="true">⌕</span><input type="search" id="searchInput" placeholder="Recipe or class" autocomplete="off"></div>
           </div>
           <div class="field">
             <label for="classFilter">Class</label>
@@ -1680,7 +1680,7 @@ footer {
       const filtered = craftingData.filter(recipe => {
         const matchesClass = classVal === "All" || recipe.classes.includes(classVal);
         const matchesRecipe = recipeVal === "All" || recipe.item === recipeVal;
-        const searchableText = normalizeSearchText([recipe.item, ...recipe.classes, ...recipe.ingredients.flatMap(ingredient => [ingredient.resource, ingredient.location])].join(" "));
+        const searchableText = normalizeSearchText([recipe.item, ...recipe.classes].join(" "));
         return matchesClass && matchesRecipe && searchableText.includes(searchVal);
       });
       renderTable(filtered);
