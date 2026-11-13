@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T00:35:18+00:00",
+  "generatedAt": "2026-11-13T14:11:54+00:00",
   "accountCount": 147,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -177,7 +177,7 @@
       "comment": "",
       "joinDate": "2025-01-21T09:21:41",
       "originalJoinDate": "2025-01-21T09:21:41",
-      "lastOnline": "2026-11-12T09:07:46",
+      "lastOnline": "2026-11-13T08:54:40",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -191,7 +191,7 @@
       "comment": "",
       "joinDate": "2025-04-18T10:30:28",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-12T09:38:26",
+      "lastOnline": "2026-11-13T07:18:12",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -219,7 +219,7 @@
       "comment": "returning player, relearning game",
       "joinDate": "2026-06-23T11:31:27",
       "originalJoinDate": "2026-06-23T11:31:27",
-      "lastOnline": "2026-11-12T19:20:03",
+      "lastOnline": "2026-11-12T21:45:51",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -233,7 +233,7 @@
       "comment": "",
       "joinDate": "2026-11-02T22:55:57",
       "originalJoinDate": "2026-06-23T11:31:27",
-      "lastOnline": "2026-11-12T11:21:22",
+      "lastOnline": "2026-11-12T20:22:17",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -331,7 +331,7 @@
       "comment": "+Tank MJS",
       "joinDate": "2025-01-14T13:49:14",
       "originalJoinDate": "2025-01-14T13:49:14",
-      "lastOnline": "2026-11-12T05:52:45",
+      "lastOnline": "2026-11-13T09:09:59",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -387,7 +387,7 @@
       "comment": "",
       "joinDate": "2025-09-18T03:23:23",
       "originalJoinDate": "2025-09-18T03:23:23",
-      "lastOnline": "2026-11-12T15:20:42",
+      "lastOnline": "2026-11-13T07:39:38",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -429,7 +429,7 @@
       "comment": "",
       "joinDate": "2024-12-01T17:23:55",
       "originalJoinDate": "2024-11-29T07:44:44",
-      "lastOnline": "2026-11-12T19:30:46",
+      "lastOnline": "2026-11-13T06:58:40",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -443,7 +443,7 @@
       "comment": "",
       "joinDate": "2025-01-20T07:32:12",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-12T10:02:38",
+      "lastOnline": "2026-11-13T08:31:40",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -457,8 +457,8 @@
       "comment": "",
       "joinDate": "2025-05-08T16:30:02",
       "originalJoinDate": "2025-01-21T09:21:41",
-      "lastOnline": "2026-11-12T09:17:03",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -471,7 +471,7 @@
       "comment": "",
       "joinDate": "2026-09-21T17:52:55",
       "originalJoinDate": "2026-05-30T20:24:59",
-      "lastOnline": "2026-11-11T17:04:22",
+      "lastOnline": "2026-11-13T04:36:44",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -485,7 +485,7 @@
       "comment": "confused arbiter",
       "joinDate": "2024-04-22T08:05:11",
       "originalJoinDate": "2024-04-22T08:05:11",
-      "lastOnline": "2026-11-12T15:17:32",
+      "lastOnline": "2026-11-13T05:47:59",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -499,7 +499,7 @@
       "comment": "ash/msh/mjs/msod/mtos",
       "joinDate": "2026-03-12T16:55:58",
       "originalJoinDate": "2026-03-12T16:55:58",
-      "lastOnline": "2026-11-12T05:20:15",
+      "lastOnline": "2026-11-13T07:41:00",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -513,7 +513,7 @@
       "comment": "August 2026",
       "joinDate": "2026-08-15T13:19:27",
       "originalJoinDate": "2026-08-15T13:19:27",
-      "lastOnline": "2026-11-12T16:04:58",
+      "lastOnline": "2026-11-13T02:24:32",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -569,7 +569,7 @@
       "comment": "",
       "joinDate": "2026-09-17T20:10:20",
       "originalJoinDate": "2026-06-23T11:31:27",
-      "lastOnline": "2026-11-12T19:23:04",
+      "lastOnline": "2026-11-12T20:20:16",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -765,7 +765,7 @@
       "comment": "+heal AJS/MJS",
       "joinDate": "2026-09-29T11:36:33",
       "originalJoinDate": "2026-09-29T11:36:33",
-      "lastOnline": "2026-11-12T18:16:03",
+      "lastOnline": "2026-11-13T07:05:56",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -779,7 +779,7 @@
       "comment": "",
       "joinDate": "2026-10-10T17:44:05",
       "originalJoinDate": "2026-10-10T17:44:05",
-      "lastOnline": "2026-11-12T18:28:48",
+      "lastOnline": "2026-11-12T23:31:07",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -793,7 +793,7 @@
       "comment": "",
       "joinDate": "2026-09-29T21:20:52",
       "originalJoinDate": "2026-09-29T11:36:33",
-      "lastOnline": "2026-11-11T16:48:10",
+      "lastOnline": "2026-11-13T03:51:59",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -835,7 +835,7 @@
       "comment": "MJS",
       "joinDate": "2025-05-01T08:53:44",
       "originalJoinDate": "2025-05-01T08:53:44",
-      "lastOnline": "2026-11-12T17:55:29",
+      "lastOnline": "2026-11-12T20:01:43",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -877,7 +877,7 @@
       "comment": "",
       "joinDate": "2026-05-04T23:55:56",
       "originalJoinDate": "2026-04-15T21:09:34",
-      "lastOnline": "2026-11-11T07:49:57",
+      "lastOnline": "2026-11-13T05:30:37",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -891,8 +891,8 @@
       "comment": "",
       "joinDate": "2026-04-15T21:09:34",
       "originalJoinDate": "2026-04-15T21:09:34",
-      "lastOnline": "2026-11-11T09:19:07",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -905,7 +905,7 @@
       "comment": "",
       "joinDate": "2026-02-19T21:26:28",
       "originalJoinDate": "2026-02-19T21:26:28",
-      "lastOnline": "2026-11-11T21:41:31",
+      "lastOnline": "2026-11-12T21:15:37",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -989,7 +989,7 @@
       "comment": "",
       "joinDate": "2026-09-29T21:21:56",
       "originalJoinDate": "2026-09-29T11:36:33",
-      "lastOnline": "2026-11-12T09:59:25",
+      "lastOnline": "2026-11-13T05:18:09",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1073,8 +1073,8 @@
       "comment": "",
       "joinDate": "2026-07-13T16:38:06",
       "originalJoinDate": "2026-07-13T16:38:06",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-13T05:05:02",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -1129,7 +1129,7 @@
       "comment": "-AFK-",
       "joinDate": "2025-09-23T05:13:34",
       "originalJoinDate": "2025-09-23T05:13:34",
-      "lastOnline": "2026-11-12T07:58:18",
+      "lastOnline": "2026-11-13T07:49:57",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1157,7 +1157,7 @@
       "comment": "Nightmare",
       "joinDate": "2026-11-07T01:15:55",
       "originalJoinDate": "2026-04-25T21:27:06",
-      "lastOnline": "2026-11-12T18:26:12",
+      "lastOnline": "2026-11-13T05:02:56",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1213,7 +1213,7 @@
       "comment": "",
       "joinDate": "2025-05-10T07:25:40",
       "originalJoinDate": "2025-05-10T07:25:40",
-      "lastOnline": "2026-11-12T10:47:44",
+      "lastOnline": "2026-11-13T06:58:13",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1255,7 +1255,7 @@
       "comment": "+asod and mlmd",
       "joinDate": "2026-04-30T09:07:19",
       "originalJoinDate": "2026-04-21T12:36:14",
-      "lastOnline": "2026-10-20T02:28:31",
+      "lastOnline": "2026-11-13T08:58:07",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1297,7 +1297,7 @@
       "comment": "---------->MJS<----------",
       "joinDate": "2026-07-07T04:12:05",
       "originalJoinDate": "2026-07-07T04:12:05",
-      "lastOnline": "2026-11-12T09:23:36",
+      "lastOnline": "2026-11-13T08:27:24",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1325,7 +1325,7 @@
       "comment": "",
       "joinDate": "2025-05-03T13:52:32",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-12T09:40:28",
+      "lastOnline": "2026-11-13T07:19:33",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1339,7 +1339,7 @@
       "comment": "",
       "joinDate": "2026-04-01T00:43:23",
       "originalJoinDate": "2026-04-01T00:43:23",
-      "lastOnline": "2026-11-11T19:34:20",
+      "lastOnline": "2026-11-13T02:19:24",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1353,7 +1353,7 @@
       "comment": "",
       "joinDate": "2025-05-03T13:53:49",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-12T09:39:59",
+      "lastOnline": "2026-11-13T07:19:07",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1423,7 +1423,7 @@
       "comment": "",
       "joinDate": "2026-08-13T00:06:00",
       "originalJoinDate": "2026-01-18T14:34:53",
-      "lastOnline": "2026-11-12T17:22:53",
+      "lastOnline": "2026-11-12T20:05:05",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1437,7 +1437,7 @@
       "comment": "",
       "joinDate": "2025-08-05T07:42:37",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-12T09:42:05",
+      "lastOnline": "2026-11-13T07:20:27",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1507,7 +1507,7 @@
       "comment": "",
       "joinDate": "2026-04-26T00:23:52",
       "originalJoinDate": "2026-04-01T22:32:11",
-      "lastOnline": "2026-11-12T18:40:08",
+      "lastOnline": "2026-11-12T23:27:47",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1535,8 +1535,8 @@
       "comment": "",
       "joinDate": "2026-11-08T16:00:14",
       "originalJoinDate": "2026-10-14T21:58:34",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-12T22:15:22",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -1591,7 +1591,7 @@
       "comment": "",
       "joinDate": "2026-05-02T14:19:03",
       "originalJoinDate": "2026-05-02T14:13:43",
-      "lastOnline": "2026-11-12T15:38:32",
+      "lastOnline": "2026-11-13T01:34:12",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1647,7 +1647,7 @@
       "comment": "",
       "joinDate": "2024-12-01T17:25:21",
       "originalJoinDate": "2024-11-29T07:44:44",
-      "lastOnline": "2026-11-12T19:13:45",
+      "lastOnline": "2026-11-13T06:09:38",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1661,7 +1661,7 @@
       "comment": "",
       "joinDate": "2024-12-01T17:26:19",
       "originalJoinDate": "2024-11-29T07:44:44",
-      "lastOnline": "2026-11-12T19:14:08",
+      "lastOnline": "2026-11-13T06:10:32",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1675,7 +1675,7 @@
       "comment": "",
       "joinDate": "2024-11-29T07:44:44",
       "originalJoinDate": "2024-11-29T07:44:44",
-      "lastOnline": "2026-11-12T19:14:41",
+      "lastOnline": "2026-11-13T06:11:07",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1689,7 +1689,7 @@
       "comment": "",
       "joinDate": "2025-12-27T06:33:42",
       "originalJoinDate": "2025-01-14T13:49:14",
-      "lastOnline": "2026-11-12T05:06:31",
+      "lastOnline": "2026-11-13T05:20:02",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1717,7 +1717,7 @@
       "comment": "dps 4 anything",
       "joinDate": "2026-03-31T11:24:57",
       "originalJoinDate": "2026-03-31T11:24:57",
-      "lastOnline": "2026-11-12T07:01:57",
+      "lastOnline": "2026-11-13T07:31:34",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1731,7 +1731,7 @@
       "comment": "",
       "joinDate": "2026-08-26T14:06:28",
       "originalJoinDate": "2025-01-14T13:49:14",
-      "lastOnline": "2026-11-12T05:06:18",
+      "lastOnline": "2026-11-13T05:19:49",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1745,7 +1745,7 @@
       "comment": "H or T +AJS/MJS/MDWP/ 1st Boss Farms",
       "joinDate": "2026-10-10T17:36:11",
       "originalJoinDate": "2026-10-10T17:36:11",
-      "lastOnline": "2026-11-12T18:09:42",
+      "lastOnline": "2026-11-13T05:42:34",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1759,7 +1759,7 @@
       "comment": "",
       "joinDate": "2024-12-20T15:17:39",
       "originalJoinDate": "2024-12-20T15:17:39",
-      "lastOnline": "2026-11-11T06:47:26",
+      "lastOnline": "2026-11-13T08:28:02",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1773,7 +1773,7 @@
       "comment": "",
       "joinDate": "2025-05-03T10:53:02",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-12T09:39:02",
+      "lastOnline": "2026-11-13T07:18:38",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1899,7 +1899,7 @@
       "comment": "",
       "joinDate": "2026-09-01T20:30:59",
       "originalJoinDate": "2026-09-01T20:30:59",
-      "lastOnline": "2026-11-11T16:34:31",
+      "lastOnline": "2026-11-12T23:42:06",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1913,7 +1913,7 @@
       "comment": "\\o/",
       "joinDate": "2026-02-15T01:41:00",
       "originalJoinDate": "2026-02-15T01:41:00",
-      "lastOnline": "2026-11-12T13:23:03",
+      "lastOnline": "2026-11-13T02:54:20",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1924,11 +1924,11 @@
       "rankOrder": 2,
       "class": "Rogue",
       "level": "20",
-      "comment": "MJS/MSOD/MSH/MLMD,MJS/MSH/MSOD/MDWP/MTOS/MTIC",
+      "comment": "MJS/MSOD/MSH/MLMD",
       "joinDate": "2026-09-20T16:29:31",
       "originalJoinDate": "2026-09-20T16:29:31",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-13T07:37:06",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -1955,7 +1955,7 @@
       "comment": "",
       "joinDate": "2024-07-28T13:44:54",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-12T07:11:16",
+      "lastOnline": "2026-11-13T05:03:50",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1969,7 +1969,7 @@
       "comment": "",
       "joinDate": "2024-07-27T14:12:08",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-12T07:40:37",
+      "lastOnline": "2026-11-13T07:37:26",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2081,7 +2081,7 @@
       "comment": "",
       "joinDate": "2026-11-03T12:54:47",
       "originalJoinDate": "2026-11-03T12:52:27",
-      "lastOnline": "2026-11-12T06:25:29",
+      "lastOnline": "2026-11-13T07:32:33",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2106,11 +2106,11 @@
       "rankOrder": 2,
       "class": "Wizard",
       "level": "20",
-      "comment": "MSH / MJS DPS,my a** hurts",
+      "comment": "MSH / MJS DPS",
       "joinDate": "2026-09-14T19:55:31",
       "originalJoinDate": "2026-09-14T19:55:31",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-12T21:02:03",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2263,7 +2263,7 @@
       "comment": "Main",
       "joinDate": "2026-11-03T12:52:27",
       "originalJoinDate": "2026-11-03T12:52:27",
-      "lastOnline": "2026-11-12T15:35:00",
+      "lastOnline": "2026-11-13T07:33:06",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2277,7 +2277,7 @@
       "comment": "",
       "joinDate": "2026-11-03T12:55:50",
       "originalJoinDate": "2026-11-03T12:52:27",
-      "lastOnline": "2026-11-12T06:26:34",
+      "lastOnline": "2026-11-13T07:33:44",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2291,7 +2291,7 @@
       "comment": "",
       "joinDate": "2026-10-23T21:23:14",
       "originalJoinDate": "2026-10-14T21:58:34",
-      "lastOnline": "2026-11-12T18:49:46",
+      "lastOnline": "2026-11-12T22:16:03",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2319,8 +2319,8 @@
       "comment": "+ ASH",
       "joinDate": "2026-11-03T12:56:28",
       "originalJoinDate": "2026-11-03T12:52:27",
-      "lastOnline": "2026-11-12T13:52:57",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2445,7 +2445,7 @@
       "comment": "",
       "joinDate": "2026-10-13T22:06:13",
       "originalJoinDate": "2026-10-13T22:06:13",
-      "lastOnline": "2026-11-12T18:36:14",
+      "lastOnline": "2026-11-12T21:58:28",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2487,7 +2487,7 @@
       "comment": "heal on demand number 2 :) +mjs",
       "joinDate": "2026-06-06T16:31:14",
       "originalJoinDate": "2026-04-25T21:27:06",
-      "lastOnline": "2026-11-12T18:48:39",
+      "lastOnline": "2026-11-13T07:15:51",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2613,7 +2613,7 @@
       "comment": "",
       "joinDate": "2024-07-29T11:27:12",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-12T07:10:51",
+      "lastOnline": "2026-11-13T05:03:34",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2627,7 +2627,7 @@
       "comment": "",
       "joinDate": "2024-08-09T13:52:31",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-12T07:10:38",
+      "lastOnline": "2026-11-13T05:03:19",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2655,7 +2655,7 @@
       "comment": "",
       "joinDate": "2026-11-09T21:27:20",
       "originalJoinDate": "2026-10-13T22:06:13",
-      "lastOnline": "2026-11-12T18:35:23",
+      "lastOnline": "2026-11-12T21:57:51",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2669,7 +2669,7 @@
       "comment": "",
       "joinDate": "2024-11-22T14:36:51",
       "originalJoinDate": "2024-11-22T14:36:51",
-      "lastOnline": "2026-11-12T16:27:31",
+      "lastOnline": "2026-11-13T09:03:39",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2694,11 +2694,11 @@
       "rankOrder": 5,
       "class": "Paladin",
       "level": "20",
-      "comment": "",
+      "comment": ".",
       "joinDate": "2024-11-22T14:37:44",
       "originalJoinDate": "2024-11-22T14:36:51",
-      "lastOnline": "2026-11-12T16:27:22",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2711,8 +2711,8 @@
       "comment": "",
       "joinDate": "2025-09-22T18:06:50",
       "originalJoinDate": "2025-09-22T18:06:50",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-12T20:05:59",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2725,7 +2725,7 @@
       "comment": "",
       "joinDate": "2024-10-05T09:39:50",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-12T07:10:23",
+      "lastOnline": "2026-11-13T09:04:54",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2739,7 +2739,7 @@
       "comment": "",
       "joinDate": "2024-10-06T10:50:02",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-12T07:10:08",
+      "lastOnline": "2026-11-13T05:02:47",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2753,7 +2753,7 @@
       "comment": "",
       "joinDate": "2024-10-06T10:49:37",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-12T07:09:53",
+      "lastOnline": "2026-11-13T08:56:35",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2767,7 +2767,7 @@
       "comment": "",
       "joinDate": "2024-10-06T10:49:02",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-12T07:08:30",
+      "lastOnline": "2026-11-13T05:01:44",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2809,7 +2809,7 @@
       "comment": "+MSH",
       "joinDate": "2026-11-03T12:57:16",
       "originalJoinDate": "2026-11-03T12:52:27",
-      "lastOnline": "2026-11-12T10:19:58",
+      "lastOnline": "2026-11-13T06:58:32",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2823,7 +2823,7 @@
       "comment": "",
       "joinDate": "2024-10-16T10:44:04",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-12T07:11:45",
+      "lastOnline": "2026-11-13T09:10:06",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2837,7 +2837,7 @@
       "comment": "",
       "joinDate": "2025-01-14T13:50:57",
       "originalJoinDate": "2025-01-14T13:49:14",
-      "lastOnline": "2026-11-12T05:06:06",
+      "lastOnline": "2026-11-13T05:19:26",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2893,7 +2893,7 @@
       "comment": "Your guild clown/troll",
       "joinDate": "2026-06-09T12:05:29",
       "originalJoinDate": "2026-06-09T12:05:29",
-      "lastOnline": "2026-11-12T14:32:35",
+      "lastOnline": "2026-11-12T22:39:26",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2907,7 +2907,7 @@
       "comment": "",
       "joinDate": "2024-11-30T06:05:25",
       "originalJoinDate": "2024-11-29T07:44:44",
-      "lastOnline": "2026-11-12T19:15:29",
+      "lastOnline": "2026-11-13T06:11:58",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2921,7 +2921,7 @@
       "comment": "",
       "joinDate": "2024-12-01T14:53:05",
       "originalJoinDate": "2024-11-29T07:44:44",
-      "lastOnline": "2026-11-12T19:17:55",
+      "lastOnline": "2026-11-13T06:12:36",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2935,7 +2935,7 @@
       "comment": "",
       "joinDate": "2024-12-02T16:55:17",
       "originalJoinDate": "2024-11-29T07:44:44",
-      "lastOnline": "2026-11-12T19:18:36",
+      "lastOnline": "2026-11-13T06:13:14",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2949,7 +2949,7 @@
       "comment": "",
       "joinDate": "2024-12-05T15:06:18",
       "originalJoinDate": "2024-11-29T07:44:44",
-      "lastOnline": "2026-11-12T19:19:24",
+      "lastOnline": "2026-11-13T06:13:53",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2963,7 +2963,7 @@
       "comment": "",
       "joinDate": "2026-01-20T20:54:47",
       "originalJoinDate": "2026-01-20T20:54:47",
-      "lastOnline": "2026-11-11T21:42:22",
+      "lastOnline": "2026-11-12T20:13:28",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2977,7 +2977,7 @@
       "comment": "",
       "joinDate": "2025-03-29T06:58:52",
       "originalJoinDate": "2025-01-14T13:49:14",
-      "lastOnline": "2026-11-12T05:05:31",
+      "lastOnline": "2026-11-13T05:19:13",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3005,7 +3005,7 @@
       "comment": "",
       "joinDate": "2024-12-27T18:06:41",
       "originalJoinDate": "2024-11-29T07:44:44",
-      "lastOnline": "2026-11-12T19:20:08",
+      "lastOnline": "2026-11-13T06:14:12",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3061,7 +3061,7 @@
       "comment": "",
       "joinDate": "2026-07-05T16:48:06",
       "originalJoinDate": "2026-01-20T20:54:47",
-      "lastOnline": "2026-11-11T21:39:26",
+      "lastOnline": "2026-11-12T22:45:06",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3173,7 +3173,7 @@
       "comment": "",
       "joinDate": "2025-01-14T07:45:51",
       "originalJoinDate": "2024-12-20T15:17:39",
-      "lastOnline": "2026-11-11T06:04:22",
+      "lastOnline": "2026-11-13T08:16:58",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3201,7 +3201,7 @@
       "comment": "",
       "joinDate": "2025-12-18T14:42:37",
       "originalJoinDate": "2025-12-18T14:42:37",
-      "lastOnline": "2026-11-12T14:43:55",
+      "lastOnline": "2026-11-13T06:52:06",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3257,7 +3257,7 @@
       "comment": "",
       "joinDate": "2026-10-13T20:53:40",
       "originalJoinDate": "2026-10-13T20:53:40",
-      "lastOnline": "2026-11-11T15:19:04",
+      "lastOnline": "2026-11-12T20:42:53",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3271,7 +3271,7 @@
       "comment": "MSOD/MJS",
       "joinDate": "2026-09-29T12:12:43",
       "originalJoinDate": "2026-09-29T12:12:43",
-      "lastOnline": "2026-11-12T11:59:51",
+      "lastOnline": "2026-11-13T07:49:59",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3285,7 +3285,7 @@
       "comment": "",
       "joinDate": "2026-08-13T00:06:50",
       "originalJoinDate": "2026-01-20T20:54:47",
-      "lastOnline": "2026-11-11T21:40:11",
+      "lastOnline": "2026-11-12T20:02:40",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3313,7 +3313,7 @@
       "comment": "",
       "joinDate": "2026-07-14T20:02:24",
       "originalJoinDate": "2024-06-12T12:09:06",
-      "lastOnline": "2026-11-12T16:39:22",
+      "lastOnline": "2026-11-13T08:32:07",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3495,7 +3495,7 @@
       "comment": "",
       "joinDate": "2026-01-20T20:58:14",
       "originalJoinDate": "2026-01-20T20:54:47",
-      "lastOnline": "2026-11-11T21:40:37",
+      "lastOnline": "2026-11-12T20:03:13",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3509,7 +3509,7 @@
       "comment": "",
       "joinDate": "2026-08-02T19:29:04",
       "originalJoinDate": "2026-01-20T20:54:47",
-      "lastOnline": "2026-11-11T15:13:20",
+      "lastOnline": "2026-11-12T20:03:45",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3537,7 +3537,7 @@
       "comment": "",
       "joinDate": "2026-11-03T12:58:11",
       "originalJoinDate": "2026-11-03T12:52:27",
-      "lastOnline": "2026-11-12T06:27:42",
+      "lastOnline": "2026-11-13T07:34:56",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3593,7 +3593,7 @@
       "comment": "",
       "joinDate": "2025-12-18T08:55:07",
       "originalJoinDate": "2025-09-23T05:13:34",
-      "lastOnline": "2026-11-12T07:57:47",
+      "lastOnline": "2026-11-13T07:49:47",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3621,7 +3621,7 @@
       "comment": "",
       "joinDate": "2026-11-03T12:59:02",
       "originalJoinDate": "2026-11-03T12:52:27",
-      "lastOnline": "2026-11-12T06:28:04",
+      "lastOnline": "2026-11-13T07:35:21",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3803,7 +3803,7 @@
       "comment": "need ASH for weapon upgrade",
       "joinDate": "2026-01-15T20:06:19",
       "originalJoinDate": "2026-01-15T20:06:19",
-      "lastOnline": "2026-11-11T20:19:24",
+      "lastOnline": "2026-11-13T06:43:40",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3859,7 +3859,7 @@
       "comment": "beep boop",
       "joinDate": "2026-07-25T14:43:15",
       "originalJoinDate": "2026-07-24T12:29:26",
-      "lastOnline": "2026-11-11T21:37:17",
+      "lastOnline": "2026-11-12T21:00:31",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3887,7 +3887,7 @@
       "comment": "",
       "joinDate": "2026-09-29T21:23:41",
       "originalJoinDate": "2026-09-29T11:36:33",
-      "lastOnline": "2026-11-12T17:49:26",
+      "lastOnline": "2026-11-13T06:35:44",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3915,7 +3915,7 @@
       "comment": "Dungeon novice",
       "joinDate": "2026-01-11T14:32:09",
       "originalJoinDate": "2026-01-11T14:32:09",
-      "lastOnline": "2026-11-12T14:23:56",
+      "lastOnline": "2026-11-13T01:47:50",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3985,7 +3985,7 @@
       "comment": "",
       "joinDate": "2026-06-27T20:20:48",
       "originalJoinDate": "2026-04-01T00:43:23",
-      "lastOnline": "2026-11-11T20:16:57",
+      "lastOnline": "2026-11-13T02:33:00",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3999,7 +3999,7 @@
       "comment": "DPS MJS",
       "joinDate": "2026-05-24T12:03:19",
       "originalJoinDate": "2026-05-24T12:03:19",
-      "lastOnline": "2026-11-12T17:27:53",
+      "lastOnline": "2026-11-13T02:04:00",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4055,7 +4055,7 @@
       "comment": "MJS / MSH / MSOD",
       "joinDate": "2026-02-21T09:28:05",
       "originalJoinDate": "2026-02-21T09:28:05",
-      "lastOnline": "2026-11-12T17:06:08",
+      "lastOnline": "2026-11-13T01:57:06",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4083,7 +4083,7 @@
       "comment": "puffypofi",
       "joinDate": "2026-02-15T01:49:43",
       "originalJoinDate": "2026-02-15T01:41:00",
-      "lastOnline": "2026-11-12T13:36:57",
+      "lastOnline": "2026-11-13T02:55:59",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4097,7 +4097,7 @@
       "comment": "+ AJS",
       "joinDate": "2026-05-30T20:24:59",
       "originalJoinDate": "2026-05-30T20:24:59",
-      "lastOnline": "2026-11-11T17:03:45",
+      "lastOnline": "2026-11-13T04:28:51",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4111,7 +4111,7 @@
       "comment": "",
       "joinDate": "2026-05-25T11:06:52",
       "originalJoinDate": "2026-04-01T22:31:59",
-      "lastOnline": "2026-11-12T18:39:09",
+      "lastOnline": "2026-11-12T22:39:28",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4125,7 +4125,7 @@
       "comment": "",
       "joinDate": "2026-04-01T22:32:11",
       "originalJoinDate": "2026-04-01T22:32:11",
-      "lastOnline": "2026-11-12T18:40:28",
+      "lastOnline": "2026-11-12T23:28:26",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4153,7 +4153,7 @@
       "comment": "",
       "joinDate": "2026-04-01T22:31:59",
       "originalJoinDate": "2026-04-01T22:31:59",
-      "lastOnline": "2026-11-12T18:39:36",
+      "lastOnline": "2026-11-12T23:46:23",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4167,7 +4167,7 @@
       "comment": "",
       "joinDate": "2026-04-25T19:26:56",
       "originalJoinDate": "2026-04-01T22:32:11",
-      "lastOnline": "2026-11-12T18:40:57",
+      "lastOnline": "2026-11-12T23:29:34",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4181,7 +4181,7 @@
       "comment": "",
       "joinDate": "2026-05-13T18:07:34",
       "originalJoinDate": "2026-04-01T22:31:59",
-      "lastOnline": "2026-11-12T18:39:46",
+      "lastOnline": "2026-11-12T22:26:28",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4307,7 +4307,7 @@
       "comment": "",
       "joinDate": "2026-04-27T11:54:32",
       "originalJoinDate": "2026-04-01T22:31:59",
-      "lastOnline": "2026-11-12T18:40:00",
+      "lastOnline": "2026-11-12T22:26:38",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4321,7 +4321,7 @@
       "comment": "",
       "joinDate": "2026-04-30T22:35:34",
       "originalJoinDate": "2026-04-01T22:32:11",
-      "lastOnline": "2026-11-12T18:41:22",
+      "lastOnline": "2026-11-12T23:46:17",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4335,7 +4335,7 @@
       "comment": "",
       "joinDate": "2026-05-07T23:29:45",
       "originalJoinDate": "2026-04-01T22:31:59",
-      "lastOnline": "2026-11-12T18:40:13",
+      "lastOnline": "2026-11-12T22:26:47",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4349,7 +4349,7 @@
       "comment": "",
       "joinDate": "2026-04-21T11:56:34",
       "originalJoinDate": "2024-11-22T14:36:51",
-      "lastOnline": "2026-11-12T16:27:11",
+      "lastOnline": "2026-11-13T09:03:51",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4363,7 +4363,7 @@
       "comment": "",
       "joinDate": "2026-04-26T20:41:12",
       "originalJoinDate": "2024-06-12T12:09:06",
-      "lastOnline": "2026-11-12T18:37:54",
+      "lastOnline": "2026-11-13T08:31:52",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4461,7 +4461,7 @@
       "comment": "",
       "joinDate": "2026-04-21T14:05:34",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-12T09:37:56",
+      "lastOnline": "2026-11-13T07:17:44",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4517,7 +4517,7 @@
       "comment": "",
       "joinDate": "2026-10-13T20:55:45",
       "originalJoinDate": "2026-10-13T20:53:40",
-      "lastOnline": "2026-11-11T15:18:40",
+      "lastOnline": "2026-11-12T20:42:23",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4531,7 +4531,7 @@
       "comment": "",
       "joinDate": "2026-05-03T18:49:18",
       "originalJoinDate": "2026-04-01T22:32:11",
-      "lastOnline": "2026-11-12T18:41:46",
+      "lastOnline": "2026-11-12T23:43:23",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4545,7 +4545,7 @@
       "comment": "",
       "joinDate": "2026-04-22T07:16:14",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": "2026-11-12T07:11:30",
+      "lastOnline": "2026-11-13T08:09:20",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4559,7 +4559,7 @@
       "comment": "",
       "joinDate": "2026-04-24T05:55:10",
       "originalJoinDate": "2025-01-14T13:49:14",
-      "lastOnline": "2026-11-12T05:05:20",
+      "lastOnline": "2026-11-13T05:19:01",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4615,7 +4615,7 @@
       "comment": "Nightmare dps :)+ ajs/mjs",
       "joinDate": "2026-08-01T11:47:28",
       "originalJoinDate": "2026-04-25T21:27:06",
-      "lastOnline": "2026-11-12T17:37:53",
+      "lastOnline": "2026-11-13T06:36:52",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4643,7 +4643,7 @@
       "comment": "",
       "joinDate": "2026-06-14T13:52:58",
       "originalJoinDate": "2026-05-24T12:03:19",
-      "lastOnline": "2026-11-12T17:57:01",
+      "lastOnline": "2026-11-13T02:04:34",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4699,7 +4699,7 @@
       "comment": "",
       "joinDate": "2026-07-20T05:12:09",
       "originalJoinDate": "2026-07-20T05:12:09",
-      "lastOnline": "2026-11-12T18:51:59",
+      "lastOnline": "2026-11-13T08:07:05",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4741,7 +4741,7 @@
       "comment": "",
       "joinDate": "2026-10-22T19:52:33",
       "originalJoinDate": "2026-06-04T15:29:23",
-      "lastOnline": "2026-11-12T18:56:49",
+      "lastOnline": "2026-11-13T07:58:43",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4783,7 +4783,7 @@
       "comment": "",
       "joinDate": "2026-05-10T15:29:46",
       "originalJoinDate": "2026-04-01T22:31:59",
-      "lastOnline": "2026-11-12T18:40:23",
+      "lastOnline": "2026-11-12T22:27:07",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4797,7 +4797,7 @@
       "comment": "",
       "joinDate": "2026-05-10T23:23:05",
       "originalJoinDate": "2026-04-01T22:32:11",
-      "lastOnline": "2026-11-12T18:52:13",
+      "lastOnline": "2026-11-12T23:42:38",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4839,7 +4839,7 @@
       "comment": "+ tank/dps + mjs/mdwp/msod/msh",
       "joinDate": "2026-06-26T17:34:22",
       "originalJoinDate": "2026-06-26T17:34:22",
-      "lastOnline": "2026-11-12T17:13:05",
+      "lastOnline": "2026-11-13T00:22:50",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4867,7 +4867,7 @@
       "comment": "MJS/MSOD",
       "joinDate": "2026-05-31T11:25:19",
       "originalJoinDate": "2026-05-31T11:25:19",
-      "lastOnline": "2026-11-12T13:57:32",
+      "lastOnline": "2026-11-13T05:35:40",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5021,7 +5021,7 @@
       "comment": "",
       "joinDate": "2026-06-14T22:53:46",
       "originalJoinDate": "2026-06-14T22:53:46",
-      "lastOnline": "2026-11-12T19:29:12",
+      "lastOnline": "2026-11-12T20:12:19",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5049,8 +5049,8 @@
       "comment": "",
       "joinDate": "2026-11-03T22:53:50",
       "originalJoinDate": "2026-06-15T21:39:37",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-12T22:45:48",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -5063,7 +5063,7 @@
       "comment": "",
       "joinDate": "2026-06-17T15:18:31",
       "originalJoinDate": "2026-04-01T22:31:59",
-      "lastOnline": "2026-11-12T18:56:20",
+      "lastOnline": "2026-11-12T23:40:35",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5077,7 +5077,7 @@
       "comment": "",
       "joinDate": "2026-06-20T01:51:25",
       "originalJoinDate": "2026-04-01T22:31:59",
-      "lastOnline": "2026-11-12T18:41:07",
+      "lastOnline": "2026-11-12T22:28:03",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5091,7 +5091,7 @@
       "comment": "",
       "joinDate": "2026-06-20T02:05:37",
       "originalJoinDate": "2026-04-01T22:32:11",
-      "lastOnline": "2026-11-12T18:53:05",
+      "lastOnline": "2026-11-12T23:41:46",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5119,7 +5119,7 @@
       "comment": "",
       "joinDate": "2026-06-24T13:53:32",
       "originalJoinDate": "2026-04-01T22:31:59",
-      "lastOnline": "2026-11-12T18:41:17",
+      "lastOnline": "2026-11-12T22:28:19",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5133,7 +5133,7 @@
       "comment": "",
       "joinDate": "2026-06-24T15:06:32",
       "originalJoinDate": "2026-04-01T22:32:11",
-      "lastOnline": "2026-11-12T18:53:43",
+      "lastOnline": "2026-11-12T23:39:34",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5147,7 +5147,7 @@
       "comment": "",
       "joinDate": "2026-11-07T18:17:39",
       "originalJoinDate": "2026-06-14T22:53:46",
-      "lastOnline": "2026-11-12T18:26:44",
+      "lastOnline": "2026-11-13T00:14:53",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5203,7 +5203,7 @@
       "comment": "",
       "joinDate": "2026-07-29T06:38:47",
       "originalJoinDate": "2025-01-14T13:49:14",
-      "lastOnline": "2026-11-12T05:05:09",
+      "lastOnline": "2026-11-13T05:18:50",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5301,7 +5301,7 @@
       "comment": "",
       "joinDate": "2026-08-31T20:20:29",
       "originalJoinDate": "2026-07-07T04:12:05",
-      "lastOnline": "2026-11-12T09:11:23",
+      "lastOnline": "2026-11-13T08:32:40",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5329,7 +5329,7 @@
       "comment": "",
       "joinDate": "2026-09-12T00:12:12",
       "originalJoinDate": "2026-06-04T15:29:23",
-      "lastOnline": "2026-11-12T18:57:38",
+      "lastOnline": "2026-11-13T07:59:27",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5385,7 +5385,7 @@
       "comment": "",
       "joinDate": "2026-10-13T21:57:23",
       "originalJoinDate": "2026-10-13T21:57:23",
-      "lastOnline": "2026-11-12T13:25:54",
+      "lastOnline": "2026-11-13T08:30:17",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5399,7 +5399,7 @@
       "comment": "",
       "joinDate": "2026-10-25T17:13:32",
       "originalJoinDate": "2026-10-25T17:13:32",
-      "lastOnline": "2026-11-12T12:51:15",
+      "lastOnline": "2026-11-12T23:08:59",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5427,7 +5427,7 @@
       "comment": "",
       "joinDate": "2026-09-07T09:29:24",
       "originalJoinDate": "2026-04-01T22:32:11",
-      "lastOnline": "2026-11-12T18:54:26",
+      "lastOnline": "2026-11-12T23:40:10",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5441,7 +5441,7 @@
       "comment": "",
       "joinDate": "2026-09-07T09:31:27",
       "originalJoinDate": "2026-04-01T22:31:59",
-      "lastOnline": "2026-11-12T18:41:38",
+      "lastOnline": "2026-11-12T22:28:52",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5455,7 +5455,7 @@
       "comment": "",
       "joinDate": "2026-09-19T23:22:05",
       "originalJoinDate": "2026-06-04T15:29:23",
-      "lastOnline": "2026-11-12T18:57:57",
+      "lastOnline": "2026-11-13T07:59:48",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5469,7 +5469,7 @@
       "comment": "",
       "joinDate": "2026-09-15T13:30:22",
       "originalJoinDate": "2026-04-01T22:31:59",
-      "lastOnline": "2026-11-12T18:41:53",
+      "lastOnline": "2026-11-12T22:29:11",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5483,8 +5483,8 @@
       "comment": "IGLWarlock Alt/ Bad tank mechanics rn",
       "joinDate": "2026-10-30T17:38:36",
       "originalJoinDate": "2026-09-29T12:12:43",
-      "lastOnline": "2026-11-12T11:38:23",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -5497,7 +5497,7 @@
       "comment": "",
       "joinDate": "2026-10-03T08:36:30",
       "originalJoinDate": "2025-01-14T13:49:14",
-      "lastOnline": "2026-11-12T05:04:57",
+      "lastOnline": "2026-11-13T05:18:37",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5511,7 +5511,7 @@
       "comment": "",
       "joinDate": "2026-10-04T08:34:42",
       "originalJoinDate": "2026-05-31T11:25:19",
-      "lastOnline": "2026-11-12T14:40:10",
+      "lastOnline": "2026-11-13T06:18:49",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5567,7 +5567,7 @@
       "comment": "",
       "joinDate": "2026-10-30T21:40:33",
       "originalJoinDate": "2026-10-13T20:53:40",
-      "lastOnline": "2026-11-11T23:40:00",
+      "lastOnline": "2026-11-12T20:44:57",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5581,7 +5581,7 @@
       "comment": "",
       "joinDate": "2026-10-24T12:04:35",
       "originalJoinDate": "2026-01-15T20:06:19",
-      "lastOnline": "2026-11-12T06:39:00",
+      "lastOnline": "2026-11-13T06:42:43",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5609,7 +5609,7 @@
       "comment": "",
       "joinDate": "2026-11-07T07:07:17",
       "originalJoinDate": "2026-10-14T03:07:46",
-      "lastOnline": "2026-11-12T14:32:18",
+      "lastOnline": "2026-11-13T05:01:33",
       "onlineNow": false,
       "leaveOfAbsence": false
     }
@@ -11022,6 +11022,231 @@
     }
   ],
   "bankEvents": [
+    {
+      "date": "2026-11-13T05:39:45",
+      "player": "Ryn",
+      "account": "@vhorsmam#41559",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "High Forest Bear",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-13T05:39:38",
+      "player": "Ryn",
+      "account": "@vhorsmam#41559",
+      "action": "withdraw",
+      "category": "Other",
+      "item": "Copper",
+      "amount": 300000
+    },
+    {
+      "date": "2026-11-13T02:28:11",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Dragon Loyalist's Visage",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-13T01:30:58",
+      "player": "PegLeg Paddy",
+      "account": "@wellimreallybad#1789",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Red Recluse Venom",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-13T01:30:57",
+      "player": "PegLeg Paddy",
+      "account": "@wellimreallybad#1789",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Red Recluse Venom",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-13T01:30:56",
+      "player": "PegLeg Paddy",
+      "account": "@wellimreallybad#1789",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Blood-caked Cutlass",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-13T01:30:55",
+      "player": "PegLeg Paddy",
+      "account": "@wellimreallybad#1789",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Blood-caked Cutlass",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-13T01:30:54",
+      "player": "PegLeg Paddy",
+      "account": "@wellimreallybad#1789",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Blood-caked Cutlass",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-13T01:30:52",
+      "player": "PegLeg Paddy",
+      "account": "@wellimreallybad#1789",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Razortyrannus Rex Spine",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-13T01:30:47",
+      "player": "PegLeg Paddy",
+      "account": "@wellimreallybad#1789",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Plagued Paw",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-13T01:30:45",
+      "player": "PegLeg Paddy",
+      "account": "@wellimreallybad#1789",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Sealed Wisp",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-13T01:20:09",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Greenscale Bowman",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-13T00:28:31",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Boxes",
+      "item": "Encroaching Frost Lockbox",
+      "amount": 4
+    },
+    {
+      "date": "2026-11-13T00:28:22",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Misc",
+      "item": "Small Party Popper",
+      "amount": 4
+    },
+    {
+      "date": "2026-11-13T00:28:15",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Small Iceworks",
+      "amount": 4
+    },
+    {
+      "date": "2026-11-13T00:14:29",
+      "player": "Emerald Acrux",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Small Iceworks",
+      "amount": 4
+    },
+    {
+      "date": "2026-11-13T00:13:29",
+      "player": "Emerald Acrux",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Boxes",
+      "item": "Encroaching Frost Lockbox",
+      "amount": 4
+    },
+    {
+      "date": "2026-11-13T00:13:06",
+      "player": "Emerald Acrux",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Misc",
+      "item": "Bottle of Lulu's Lovely Light Lemon Dye",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-13T00:11:29",
+      "player": "Emerald Acrux",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Misc",
+      "item": "Black Dragon Glyph",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-12T20:49:34",
+      "player": "Sulva",
+      "account": "@sullivanwarmonk1#5131",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Crafted Potion of Power Rank 4, +1",
+      "amount": 3
+    },
+    {
+      "date": "2026-11-12T20:18:04",
+      "player": "Vicious Helltalon",
+      "account": "@hellscrye",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Air Archon",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-12T20:17:57",
+      "player": "Vicious Helltalon",
+      "account": "@hellscrye",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Wererat Thief",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-12T20:17:54",
+      "player": "Vicious Helltalon",
+      "account": "@hellscrye",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Panther",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-12T20:17:49",
+      "player": "Vicious Helltalon",
+      "account": "@hellscrye",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Cave Bear",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-12T20:17:45",
+      "player": "Vicious Helltalon",
+      "account": "@hellscrye",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Shadow Wolf",
+      "amount": 1
+    },
     {
       "date": "2026-11-12T18:55:57",
       "player": "Mytholoki",
