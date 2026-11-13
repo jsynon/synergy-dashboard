@@ -11,7 +11,7 @@
 
   let items = [];
   let current = 0;
-  const PAGE_SIZE = 20;
+  const PAGE_SIZE = 60;
   let shown = 0;
   const moreButton = document.getElementById("gallery-more");
   const dateFormat = new Intl.DateTimeFormat(undefined, { month: "short", day: "numeric", year: "numeric" });
