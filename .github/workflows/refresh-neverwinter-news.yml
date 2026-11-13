@@ -41,6 +41,9 @@ jobs:
       - name: Fetch Suno soundtrack
         run: node scripts/fetch-suno-music.mjs
 
+      - name: Install ImageMagick for screenshot conversion
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends imagemagick
+
       - name: Fetch Discord screenshots
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
