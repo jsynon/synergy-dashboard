@@ -24,7 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261112-gallery-zoom">
+  <link rel="stylesheet" href="styles.css?v=20261113-modern-pass">
   <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
   <script type="application/ld+json">
     {
@@ -300,5 +300,12 @@
 
     <footer><div class="footer-links"><span class="footer-synergy-wordmark"><a href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">SYNERGY</a></span><span class="footer-divider" aria-hidden="true">|</span><a class="footer-alliance-link" href="https://discord.gg/eDgrKe24tu" target="_blank" rel="noopener noreferrer">WANTED Alliance</a></div></footer>
   </div>
+  <!-- Speculative loading (Modern Web Guidance): prefetch the site's pages eagerly and prerender them on hover intent, so menu clicks feel instant. Browsers without speculation rules support ignore this. -->
+  <script type="speculationrules">
+    {
+      "prefetch": [{ "urls": ["/", "/roster.html", "/guild-info.html", "/masterwork.html", "/screenshots.html"], "eagerness": "eager" }],
+      "prerender": [{ "urls": ["/", "/roster.html", "/guild-info.html", "/masterwork.html", "/screenshots.html"], "eagerness": "moderate" }]
+    }
+  </script>
 </body>
 </html>

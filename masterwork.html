@@ -1083,6 +1083,40 @@ footer {
     .card-summary { display:flex; align-items:center; justify-content:space-between; gap:10px; margin-top:8px; color:var(--muted); font-size:.78rem; }
     .card-chevron { color:var(--gold); font-size:.85rem; transition:transform .18s ease; }
     .item-card.expanded .card-chevron { transform:rotate(90deg); }
+
+    /* Modern web pass (2026-11-13, Modern Web Guidance): this page is
+       self-contained, so it carries its own copies of the shared modern
+       rules from styles.css. Progressive enhancement throughout. */
+    @media (prefers-reduced-motion: no-preference) {
+      @view-transition { navigation: auto; }
+    }
+    dialog.popup-shell {
+      opacity:0;
+      transition-property:opacity, transform, display, overlay;
+      transition-duration:.25s;
+      transition-timing-function:ease-out;
+      transition-behavior:allow-discrete;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      dialog.popup-shell { transform:scale(.96) translateY(6px); }
+      dialog.popup-shell[open] { transform:none; }
+    }
+    dialog.popup-shell[open] { opacity:1; }
+    @starting-style {
+      dialog.popup-shell[open] { opacity:0; }
+      dialog.popup-shell[open]::backdrop { background-color:rgba(0,0,0,0); }
+    }
+    dialog.popup-shell::backdrop {
+      transition-property:background-color, display, overlay;
+      transition-duration:.25s;
+      transition-timing-function:ease-out;
+      transition-behavior:allow-discrete;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      dialog.popup-shell { transition-duration:.1s; }
+      dialog.popup-shell::backdrop { transition-duration:.1s; }
+    }
+    .item-card { content-visibility:auto; contain-intrinsic-size:auto 190px; }
 </style>
   <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
 </head>
@@ -1136,7 +1170,7 @@ footer {
       <p class="crafting-request-note">Crafting requests can be posted in the <a href="https://discord.com/channels/964991521524944956/1488094701138608199" target="_blank" rel="noopener noreferrer">#🛠️│𝙲𝚛𝚊𝚏𝚝𝚒𝚗𝚐-𝚁𝚎𝚚𝚞𝚎𝚜𝚝𝚜</a> Discord channel.</p>
     </main>
 
-    <dialog id="detailDialog" class="popup-shell detail-dialog" aria-labelledby="detailTitle">
+    <dialog id="detailDialog" class="popup-shell detail-dialog" aria-labelledby="detailTitle" closedby="any">
       <div class="detail-dialog-content">
         <button id="closeDetailDialog" class="popup-close detail-dialog-close" type="button" aria-label="Close details">×</button>
         <p id="detailKicker" class="section-kicker"></p>
@@ -1718,9 +1752,29 @@ footer {
       if (button) openDetail(button.dataset.detailKind, button.dataset.detailValue);
     });
     document.getElementById("closeDetailDialog").addEventListener("click", () => document.getElementById("detailDialog").close());
+    // The detail dialog dismisses on backdrop click natively via closedby="any".
+    // Safari does not support closedby yet, so only there install a fallback that
+    // closes when a press starts and ends outside the dialog box.
+    if (!("closedBy" in HTMLDialogElement.prototype)) {
+      const detailDialog = document.getElementById("detailDialog");
+      const pressedOutside = (event) => {
+        const rect = detailDialog.getBoundingClientRect();
+        return event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom;
+      };
+      let downOutside = false;
+      detailDialog.addEventListener("pointerdown", (event) => { downOutside = pressedOutside(event); });
+      detailDialog.addEventListener("pointerup", (event) => { if (downOutside && pressedOutside(event)) detailDialog.close(); });
+    }
 
     populateFilters();
     filterData();
+  </script>
+  <!-- Speculative loading (Modern Web Guidance): prefetch the site's pages eagerly and prerender them on hover intent, so menu clicks feel instant. Browsers without speculation rules support ignore this. -->
+  <script type="speculationrules">
+    {
+      "prefetch": [{ "urls": ["/", "/roster.html", "/guild-info.html", "/masterwork.html", "/screenshots.html"], "eagerness": "eager" }],
+      "prerender": [{ "urls": ["/", "/roster.html", "/guild-info.html", "/masterwork.html", "/screenshots.html"], "eagerness": "moderate" }]
+    }
   </script>
 </body>
 </html>

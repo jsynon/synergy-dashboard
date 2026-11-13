@@ -1826,3 +1826,57 @@ body.roster-heights-ready .promotion-list { height:auto; }
    pin theirs to one line with nowrap; this sentence is longer, so natural
    wrapping is the safer form of the same idea). */
 .screenshots-page-intro .section-intro { max-width:none; }
+
+/* Modern web pass (2026-11-13, Modern Web Guidance): cross-document view
+   transitions, animated top-layer dialogs, and deferred rendering for long
+   lists. Everything here is progressive enhancement: browsers without a
+   feature simply behave as the site did before. */
+
+/* Smooth cross-fade between the site's pages on same-origin navigation.
+   Firefox does not support cross-document transitions yet and navigates
+   instantly, as before. */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition { navigation: auto; }
+}
+
+/* Dialogs ease in (and out where the browser can animate the top layer)
+   instead of popping. Entry works wherever @starting-style is supported;
+   exit transitions also need the overlay property, so Firefox and Safari
+   still close instantly rather than gaining a JavaScript closing shim. */
+dialog.popup-shell, .gallery-lightbox {
+  opacity:0;
+  transition-property:opacity, transform, display, overlay;
+  transition-duration:.25s;
+  transition-timing-function:ease-out;
+  transition-behavior:allow-discrete;
+}
+@media (prefers-reduced-motion: no-preference) {
+  dialog.popup-shell, .gallery-lightbox { transform:scale(.96) translateY(6px); }
+  dialog.popup-shell[open], .gallery-lightbox[open] { transform:none; }
+}
+dialog.popup-shell[open], .gallery-lightbox[open] { opacity:1; }
+@starting-style {
+  dialog.popup-shell[open], .gallery-lightbox[open] { opacity:0; }
+  dialog.popup-shell[open]::backdrop, .gallery-lightbox[open]::backdrop { background-color:rgba(0,0,0,0); }
+}
+dialog.popup-shell::backdrop, .gallery-lightbox::backdrop {
+  transition-property:background-color, display, overlay;
+  transition-duration:.25s;
+  transition-timing-function:ease-out;
+  transition-behavior:allow-discrete;
+}
+@media (prefers-reduced-motion: reduce) {
+  dialog.popup-shell, .gallery-lightbox { transition-duration:.1s; }
+  dialog.popup-shell::backdrop, .gallery-lightbox::backdrop { transition-duration:.1s; }
+}
+
+/* Long lists: skip layout and paint for items far off screen, keeping a
+   remembered size so scroll position stays stable. The intrinsic sizes are
+   first-render estimates; the auto keyword swaps in each item's real size
+   once it has rendered. Table rows are deliberately excluded (table layout
+   does not mix with size containment). */
+.news-card { content-visibility:auto; contain-intrinsic-size:auto 260px; }
+.event-row { content-visibility:auto; contain-intrinsic-size:auto 72px; }
+.bank-event-row { content-visibility:auto; contain-intrinsic-size:auto 84px; }
+.mobile-member-card { content-visibility:auto; contain-intrinsic-size:auto 168px; }
+.gallery-item { content-visibility:auto; contain-intrinsic-size:auto 180px; }
