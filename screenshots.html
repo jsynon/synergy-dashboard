@@ -24,8 +24,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261112-intro-width">
-  <script src="screenshots.js?v=20261112-gallery-paging" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261112-gallery-zoom">
+  <script src="screenshots.js?v=20261112-gallery-zoom" defer></script>
   <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
 </head>
 <body>
@@ -64,11 +64,11 @@
 
   <dialog class="gallery-lightbox" id="gallery-lightbox" aria-label="Screenshot viewer">
     <div class="gallery-lightbox-frame">
-      <img id="gallery-lightbox-img" alt="">
+      <div class="gallery-zoom-viewport" id="gallery-zoom-viewport"><img id="gallery-lightbox-img" alt=""></div>
       <button type="button" class="gallery-close" id="gallery-close" aria-label="Close viewer">×</button>
       <div class="gallery-lightbox-bar">
         <button type="button" class="gallery-nav" id="gallery-prev" aria-label="Previous screenshot">←</button>
-        <div class="gallery-lightbox-meta"><p class="gallery-lightbox-caption" id="gallery-lightbox-caption"></p><p class="gallery-lightbox-byline" id="gallery-lightbox-byline"></p></div>
+        <div class="gallery-lightbox-meta"><p class="gallery-lightbox-caption" id="gallery-lightbox-caption"></p><p class="gallery-lightbox-byline" id="gallery-lightbox-byline"></p><p class="gallery-lightbox-hint">Scroll, pinch, or double-click to zoom · drag to pan</p></div>
         <button type="button" class="gallery-nav" id="gallery-next" aria-label="Next screenshot">→</button>
       </div>
     </div>
