@@ -114,7 +114,18 @@
   document.getElementById("gallery-close")?.addEventListener("click", () => dialog.close());
   document.getElementById("gallery-prev")?.addEventListener("click", () => show(current - 1));
   document.getElementById("gallery-next")?.addEventListener("click", () => show(current + 1));
-  dialog?.addEventListener("click", (event) => { if (event.target === dialog) dialog.close(); });
+  // The lightbox dismisses on backdrop click natively via closedby="any".
+  // Safari does not support closedby yet, so only there install a fallback
+  // that closes when a press starts and ends outside the dialog box.
+  if (dialog && !("closedBy" in HTMLDialogElement.prototype)) {
+    const pressedOutside = (event) => {
+      const rect = dialog.getBoundingClientRect();
+      return event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom;
+    };
+    let downOutside = false;
+    dialog.addEventListener("pointerdown", (event) => { downOutside = pressedOutside(event); });
+    dialog.addEventListener("pointerup", (event) => { if (downOutside && pressedOutside(event)) dialog.close(); });
+  }
 
   lightboxImg.addEventListener("load", () => { if (!fitW && items[current]) layoutImage(items[current]); });
 
