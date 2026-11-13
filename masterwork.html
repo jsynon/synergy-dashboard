@@ -800,9 +800,6 @@ footer {
     .detail-recipe-name { color:var(--gold-bright); font:600 .82rem var(--serif); }
     .detail-recipe-quantity { color:#82d8eb!important; font-size:.72rem!important; font-weight:700; }
     .recipe-detail-list small { text-align:left; }
-    .detail-dialog-actions { display:flex; justify-content:flex-end; margin-top:20px; padding-top:14px; border-top:1px solid var(--line); }
-    .detail-filter-button { padding:8px 12px; color:#07121c; border:1px solid #e5ba68; border-radius:5px; background:linear-gradient(135deg,#f2d68e,#c88b37); font:700 .78rem var(--body); cursor:pointer; }
-    .detail-filter-button:hover { filter:brightness(1.08); }
     @media(max-width:620px) {
       .filter-note { grid-column:1/-1; }
       .result-bar { align-items:flex-start; gap:8px; }
@@ -852,7 +849,6 @@ footer {
     .popup-shell .promotion-rules-list,.popup-shell .inactivity-rules-list { gap:6px; }
     .popup-shell .promotion-rules-list li,.popup-shell .inactivity-rules-list li { padding:9px 11px; }
     .popup-shell .account-character-card { padding:10px 12px; }
-    .popup-shell .detail-filter-button { border-radius:6px; }
     .popup-shell .detail-dialog-content { padding:0; border:0; border-radius:0; background:transparent; }
     dialog.detail-dialog.popup-shell[open] {
       display:flex;
@@ -870,7 +866,6 @@ footer {
     .popup-shell .detail-dialog-content > .section-kicker,
     .popup-shell .detail-dialog-content > h2,
     .popup-shell .detail-dialog-content > .detail-intro,
-    .popup-shell .detail-dialog-actions { flex:0 0 auto; }
     .popup-shell .detail-body {
       flex:1 1 auto;
       min-height:0;
@@ -1148,9 +1143,6 @@ footer {
         <h2 id="detailTitle"></h2>
         <p id="detailIntro" class="detail-intro"></p>
         <div id="detailBody" class="detail-body"></div>
-        <div class="detail-dialog-actions">
-          <button id="applyDetailFilter" class="detail-filter-button" type="button"></button>
-        </div>
       </div>
     </dialog>
     <footer><div class="footer-links"><span class="footer-synergy-wordmark"><a href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">SYNERGY</a></span><span class="footer-divider" aria-hidden="true">|</span><a class="footer-alliance-link" href="https://discord.gg/eDgrKe24tu" target="_blank" rel="noopener noreferrer">WANTED Alliance</a></div><span class="footer-credit">Material research by <strong>Ivydora</strong> &amp; <strong>Asura</strong></span></footer>
@@ -1543,7 +1535,6 @@ footer {
       const title = document.getElementById("detailTitle");
       const intro = document.getElementById("detailIntro");
       const body = document.getElementById("detailBody");
-      const applyButton = document.getElementById("applyDetailFilter");
       body.replaceChildren();
 
       if (kind === "material") {
@@ -1578,9 +1569,6 @@ footer {
         return;
       }
 
-      applyButton.dataset.filterKind = kind;
-      applyButton.dataset.filterValue = value;
-      applyButton.textContent = "Filter recipes by this " + kind;
       if (!dialog.open) dialog.showModal();
     }
 
@@ -1728,13 +1716,6 @@ footer {
     document.getElementById("detailBody").addEventListener("click", event => {
       const button = event.target.closest("[data-detail-kind]");
       if (button) openDetail(button.dataset.detailKind, button.dataset.detailValue);
-    });
-    document.getElementById("applyDetailFilter").addEventListener("click", event => {
-      const button = event.currentTarget;
-      document.getElementById("searchInput").value = button.dataset.filterValue;
-      document.getElementById("detailDialog").close();
-      filterData();
-      document.getElementById("recipes").scrollIntoView({ behavior: "smooth", block: "start" });
     });
     document.getElementById("closeDetailDialog").addEventListener("click", () => document.getElementById("detailDialog").close());
 
