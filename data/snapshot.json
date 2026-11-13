@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T14:11:54+00:00",
+  "generatedAt": "2026-11-13T14:29:09+00:00",
   "accountCount": 147,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -457,8 +457,8 @@
       "comment": "",
       "joinDate": "2025-05-08T16:30:02",
       "originalJoinDate": "2025-01-21T09:21:41",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-13T09:17:24",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -1129,7 +1129,7 @@
       "comment": "-AFK-",
       "joinDate": "2025-09-23T05:13:34",
       "originalJoinDate": "2025-09-23T05:13:34",
-      "lastOnline": "2026-11-13T07:49:57",
+      "lastOnline": "2026-11-13T09:22:58",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1367,7 +1367,7 @@
       "comment": "123k",
       "joinDate": "2026-07-31T21:15:45",
       "originalJoinDate": "2026-07-31T21:15:45",
-      "lastOnline": "2026-11-12T15:29:49",
+      "lastOnline": "2026-11-13T09:20:08",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3593,7 +3593,7 @@
       "comment": "",
       "joinDate": "2025-12-18T08:55:07",
       "originalJoinDate": "2025-09-23T05:13:34",
-      "lastOnline": "2026-11-13T07:49:47",
+      "lastOnline": "2026-11-13T09:21:46",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -11022,6 +11022,15 @@
     }
   ],
   "bankEvents": [
+    {
+      "date": "2026-11-13T09:26:55",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Other",
+      "item": "Copper",
+      "amount": 10000000
+    },
     {
       "date": "2026-11-13T05:39:45",
       "player": "Ryn",
