@@ -1,6 +1,6 @@
 "use strict";
 
-// Achievements tab: four top-ten boards computed from the guild's own
+// Achievements tab: seven top-ten boards computed from the guild's own
 // published records — data/snapshot.json (roster + bank log) and
 // data/screenshots.json (the Discord screenshot gallery index).
 
@@ -125,6 +125,123 @@ function buildBenefactor(snapshot) {
   return rows.slice(0, BOARD_SIZE);
 }
 
+// Gold sits in the bank log as "Copper": 100 copper = 1 silver and
+// 100 silver = 1 gold, so 10,000 copper = 1 gold.
+const COPPER_PER_GOLD = 10000;
+
+function formatGold(copper) {
+  const gold = copper / COPPER_PER_GOLD;
+  return new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 }).format(gold);
+}
+
+function buildHighRoller(snapshot) {
+  const bestByAccount = new Map();
+  for (const event of snapshot.bankEvents || []) {
+    if (event.action !== "deposit") continue;
+    if (String(event.item || "").trim().toLowerCase() !== "copper") continue;
+    const key = String(event.account || "").trim().toLowerCase();
+    if (!key) continue;
+    const current = bestByAccount.get(key);
+    if (!current || (event.amount || 0) > current.amount) {
+      bestByAccount.set(key, {
+        account: event.account,
+        player: event.player,
+        amount: event.amount || 0,
+        when: parseDate(event.date),
+      });
+    }
+  }
+  const rows = [];
+  for (const entry of bestByAccount.values()) {
+    rows.push({
+      name: entry.player || entry.account,
+      sub: entry.account,
+      value: `${formatGold(entry.amount)} gold`,
+      valueSub: entry.when ? `single deposit · ${formatDate(entry.when)}` : "single deposit",
+      sort: -entry.amount,
+      tie: entry.when ? entry.when.getTime() : Number.MAX_SAFE_INTEGER,
+    });
+  }
+  rows.sort((a, b) => a.sort - b.sort || a.tie - b.tie || a.name.localeCompare(b.name));
+  return rows.slice(0, BOARD_SIZE);
+}
+
+// A return is a character's join that follows that same character's
+// departure in the recorded guild log. Ranked per account, counting
+// only accounts still on the roster.
+function buildBoomerang(snapshot) {
+  const currentAccounts = new Set(
+    [...groupRosterByAccount(snapshot.roster).keys()]
+  );
+  const events = [...(snapshot.events || [])].sort((a, b) =>
+    String(a.date).localeCompare(String(b.date)));
+  const stateByCharacter = new Map();
+  const returnsByAccount = new Map();
+  for (const event of events) {
+    if (event.kind !== "join" && event.kind !== "exit") continue;
+    const match = /^(.+?)@([^\s']+)/.exec(event.text || "");
+    if (!match) continue;
+    const characterName = match[1].trim();
+    const account = `@${match[2]}`;
+    const key = `${characterName.toLowerCase()}|${account.toLowerCase()}`;
+    if (event.kind === "exit") {
+      stateByCharacter.set(key, "out");
+      continue;
+    }
+    // join
+    if (stateByCharacter.get(key) === "out") {
+      const accountKey = account.toLowerCase();
+      if (!returnsByAccount.has(accountKey)) {
+        returnsByAccount.set(accountKey, { account, total: 0, byCharacter: new Map(), last: null });
+      }
+      const entry = returnsByAccount.get(accountKey);
+      entry.total += 1;
+      entry.byCharacter.set(characterName, (entry.byCharacter.get(characterName) || 0) + 1);
+      const when = parseDate(event.date);
+      if (when && (!entry.last || when > entry.last)) entry.last = when;
+    }
+    stateByCharacter.set(key, "in");
+  }
+  const rows = [];
+  for (const [accountKey, entry] of returnsByAccount) {
+    if (!currentAccounts.has(accountKey)) continue;
+    const lead = [...entry.byCharacter.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0];
+    rows.push({
+      name: lead ? lead[0] : entry.account,
+      sub: entry.account,
+      value: `${entry.total} return${entry.total === 1 ? "" : "s"}`,
+      valueSub: entry.last ? `latest ${formatDate(entry.last)}` : "came back to Synergy",
+      sort: -entry.total,
+      tie: entry.last ? -entry.last.getTime() : 0,
+    });
+  }
+  rows.sort((a, b) => a.sort - b.sort || a.tie - b.tie || a.name.localeCompare(b.name));
+  return rows.slice(0, BOARD_SIZE);
+}
+
+function buildNewBlood(snapshot) {
+  const asOf = parseDate(snapshot.generatedAt) || new Date();
+  const rows = [];
+  for (const { account, characters } of groupRosterByAccount(snapshot.roster).values()) {
+    let earliest = null;
+    for (const member of characters) {
+      const joined = parseDate(member.originalJoinDate) || parseDate(member.joinDate);
+      if (joined && (!earliest || joined < earliest)) earliest = joined;
+    }
+    if (!earliest) continue;
+    const lead = leadCharacter(characters);
+    rows.push({
+      name: lead.name,
+      sub: account,
+      value: formatDate(earliest),
+      valueSub: tenureText(earliest, asOf),
+      sort: -earliest.getTime(),
+    });
+  }
+  rows.sort((a, b) => a.sort - b.sort || a.name.localeCompare(b.name));
+  return rows.slice(0, BOARD_SIZE);
+}
+
 function buildPhotographer(shotsData) {
   const byUser = new Map();
   for (const shot of shotsData.screenshots || []) {
@@ -219,12 +336,15 @@ async function loadJson(url) {
 }
 
 async function init() {
-  const snapshotBoards = ["board-elders", "board-alt-army", "board-benefactor"];
+  const snapshotBoards = ["board-elders", "board-alt-army", "board-benefactor", "board-high-roller", "board-boomerang", "board-new-blood"];
   try {
     const snapshot = await loadJson("data/snapshot.json");
     renderBoard("board-elders", buildElders(snapshot));
     renderBoard("board-alt-army", buildAltArmy(snapshot));
     renderBoard("board-benefactor", buildBenefactor(snapshot));
+    renderBoard("board-high-roller", buildHighRoller(snapshot));
+    renderBoard("board-boomerang", buildBoomerang(snapshot));
+    renderBoard("board-new-blood", buildNewBlood(snapshot));
 
     const bankDates = (snapshot.bankEvents || []).map((event) => parseDate(event.date)).filter(Boolean);
     if (bankDates.length) {
