@@ -24,14 +24,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261113-modern-pass">
+  <link rel="stylesheet" href="styles.css?v=20261114-achievements-tab">
   <script src="app.js?v=20261113-activity-handles" defer></script>
+  <script src="achievements.js?v=20261114-achievements-tab" defer></script>
   <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
 </head>
 <body>
   <div class="page-shell">
     <div class="brand-banner" role="img" aria-label="Synergy"><img class="brand-banner-background" src="assets/synergy-header-integrated.webp" alt=""></div>
-    <header class="masthead"><nav aria-label="Main menu"><a href="index.html">News</a><a href="roster.html">Guild Roster</a><a href="achievements.html">Achievements</a><a href="masterwork.html">Masterwork</a><a href="guild-info.html">Guild Info</a><a href="screenshots.html">Screenshots</a><a class="discord-link" href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">Discord <span aria-hidden="true">↗</span></a></nav></header>
+    <header class="masthead"><nav aria-label="Main menu"><a href="index.html">News</a><a href="roster.html">Guild Roster</a><a href="masterwork.html">Masterwork</a><a href="guild-info.html">Guild Info</a><a href="screenshots.html">Screenshots</a><a class="discord-link" href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">Discord <span aria-hidden="true">↗</span></a></nav></header>
 
     <main>
       <section class="hero" id="overview">
@@ -55,6 +56,7 @@
           <button class="guild-tab" type="button" role="tab" id="tab-bank" data-tab="bank" aria-controls="guild-bank-activity" aria-selected="false" tabindex="-1">Bank</button>
           <button class="guild-tab" type="button" role="tab" id="tab-promotions" data-tab="promotions" aria-controls="upcoming-promotions" aria-selected="false" tabindex="-1">Promotions</button>
           <button class="guild-tab" type="button" role="tab" id="tab-inactivity" data-tab="inactivity" aria-controls="inactivity-alerts" aria-selected="false" tabindex="-1">Inactivity</button>
+          <button class="guild-tab" type="button" role="tab" id="tab-achievements" data-tab="achievements" aria-controls="achievements" aria-selected="false" tabindex="-1">Achievements</button>
         </div>
         </div>
 
@@ -145,6 +147,45 @@
         <div class="panel-heading collapsible-heading roster-panel-head"><div><p class="section-kicker">Account activity</p><h2 id="inactivity-title">Inactivity alerts</h2><p class="section-subtitle">Accounts at or beyond their rank-based <button type="button" class="inactivity-rules-link" id="show-inactivity-rules" commandfor="inactivity-rules-dialog" command="show-modal">inactivity limit</button>.</p></div><span class="collapsible-header-meta"><span class="count-pill" id="inactivity-count">—</span></span></div>
         <div class="collapsible-panel-body">
         <div id="inactivity-list" class="inactivity-list"><div class="empty-state">Alerts will appear when the roster snapshot loads.</div></div>
+        </div>
+            </section>
+
+      <section class="panel achievements-panel collapsible-panel guild-panel" id="achievements" data-panel="achievements" role="tabpanel" aria-labelledby="tab-achievements" tabindex="0">
+        <div class="panel-heading collapsible-heading roster-panel-head"><div><p class="section-kicker">Hall of Fame</p><h2 id="achievements-title">Achievements</h2><p class="section-subtitle">Four boards ranked from the guild's own records — the roster, the bank log, and the screenshot gallery. Every spot is there to be taken.</p></div><span class="collapsible-header-meta"><span class="count-pill">Top five per board</span></span></div>
+        <div class="collapsible-panel-body">
+        <div class="achievements-grid">
+        <section class="panel score-panel" aria-labelledby="elders-title">
+          <div class="panel-heading">
+            <div><p class="section-kicker">Longest Serving</p><h2 id="elders-title">Guild Elders</h2><p class="section-subtitle">The members who have stood with Synergy the longest.</p></div>
+          </div>
+          <ol class="score-list" id="board-elders"><li class="score-empty">Loading the board…</li></ol>
+          <p class="score-note">Ranked by each account's original join date, including time before the current roster.</p>
+        </section>
+
+        <section class="panel score-panel" aria-labelledby="alt-army-title">
+          <div class="panel-heading">
+            <div><p class="section-kicker">Most Characters</p><h2 id="alt-army-title">Alt Army</h2><p class="section-subtitle">One account, many heroes.</p></div>
+          </div>
+          <ol class="score-list" id="board-alt-army"><li class="score-empty">Loading the board…</li></ol>
+          <p class="score-note">Characters currently on the guild roster, counted per account.</p>
+        </section>
+
+        <section class="panel score-panel" aria-labelledby="benefactor-title">
+          <div class="panel-heading">
+            <div><p class="section-kicker">Guild Bank</p><h2 id="benefactor-title">Guild Benefactor</h2><p class="section-subtitle">The members who keep the guild bank stocked.</p></div>
+          </div>
+          <ol class="score-list" id="board-benefactor"><li class="score-empty">Loading the board…</li></ol>
+          <p class="score-note" id="benefactor-note">Ranked by deposits in the guild bank records the site holds.</p>
+        </section>
+
+        <section class="panel score-panel" aria-labelledby="photographer-title">
+          <div class="panel-heading">
+            <div><p class="section-kicker">Screenshot Gallery</p><h2 id="photographer-title">Guild Photographer</h2><p class="section-subtitle">The members behind the guild's screenshot archive.</p></div>
+          </div>
+          <ol class="score-list" id="board-photographer"><li class="score-empty">Loading the board…</li></ol>
+          <p class="score-note">Every screenshot shared in the Discord screenshots channel counts. Deleted accounts are not ranked. <a href="screenshots.html">Browse the gallery</a></p>
+        </section>
+        </div>
         </div>
             </section>
 
@@ -296,8 +337,8 @@
   <!-- Speculative loading (Modern Web Guidance): prefetch the site's pages eagerly and prerender them on hover intent, so menu clicks feel instant. Browsers without speculation rules support ignore this. -->
   <script type="speculationrules">
     {
-      "prefetch": [{ "urls": ["/", "/roster.html", "/achievements.html", "/guild-info.html", "/masterwork.html", "/screenshots.html"], "eagerness": "eager" }],
-      "prerender": [{ "urls": ["/", "/roster.html", "/achievements.html", "/guild-info.html", "/masterwork.html", "/screenshots.html"], "eagerness": "moderate" }]
+      "prefetch": [{ "urls": ["/", "/roster.html", "/guild-info.html", "/masterwork.html", "/screenshots.html"], "eagerness": "eager" }],
+      "prerender": [{ "urls": ["/", "/roster.html", "/guild-info.html", "/masterwork.html", "/screenshots.html"], "eagerness": "moderate" }]
     }
   </script>
 </body>
