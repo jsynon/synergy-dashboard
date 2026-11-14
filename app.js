@@ -2,6 +2,9 @@
   'use strict';
   const state = { roster: [], events: [], bankEvents: [], accountCount: 0, accountJoinDates: {}, generatedAt: null, sortBy: 'name', sortDirection: 1, rankFilter: '', classFilter: '', accountFilter: '' };
   const $ = (id) => document.getElementById(id);
+  // The bank log records gold in its base unit; gold amounts are shown as gold.
+  const isGoldEvent = (event) => String(event.item || '').trim().toLowerCase() === 'copper';
+  const formatGoldAmount = (amount) => new Intl.NumberFormat('en-US', { maximumFractionDigits: 2 }).format((Math.abs(Number(amount) || 0)) / 10000);
 
   const parseDate=(str)=>{
     if(!str)return null;
@@ -80,7 +83,7 @@
         recentEvents.push(event);
       }
       const renderActivityRows=events=>events.map(event=>`<div class="account-linked-row"><span>${escapeHtml(event.text)}</span><time>${formatDate(asDate(event.date),true)}</time></div>`).join('');
-      const renderBankRows=events=>events.map(event=>`<div class="account-linked-row"><span>${escapeHtml(event.action==='deposit'?'Deposited':'Withdrew')} ${escapeHtml(event.item||'item')} · ${new Intl.NumberFormat('en-US').format(event.amount)}</span><time>${formatDate(asDate(event.date),true)}</time></div>`).join('');
+      const renderBankRows=events=>events.map(event=>{const gold=isGoldEvent(event);const detail=gold?`${formatGoldAmount(event.amount)} gold`:`${escapeHtml(event.item||'item')} · ${new Intl.NumberFormat('en-US').format(event.amount)}`;return `<div class="account-linked-row"><span>${escapeHtml(event.action==='deposit'?'Deposited':'Withdrew')} ${detail}</span><time>${formatDate(asDate(event.date),true)}</time></div>`;}).join('');
       const memberComment=String(member.comment||'').replace(/\s*,?\s*Last online\s+\d{1,2}\/\d{1,2}\/\d{4}(?:\s+\d{1,2}:\d{2}:\d{2}\s*(?:AM|PM))?.*$/i,'').trim().replace(/[, ]+$/,'');
       const bankEvents=state.bankEvents.filter(event=>normalizeAccountKey(event.account)===normalizeAccountKey(value)&&String(event.player||'').trim().toLocaleLowerCase()===memberName);
       return `<article class="account-character-card">
@@ -357,7 +360,7 @@
     const periodDays=Number($('bank-period-filter').value)||0;
     const cutoff=periodDays?Date.now()-periodDays*86400000:0;
     const matches=state.bankEvents.filter(event=>[
-      event.player,event.account,event.item,event.action,event.category,formatDate(event.date,true)
+      event.player,event.account,event.item,event.action,event.category,formatDate(event.date,true),isGoldEvent(event)?'gold':''
     ].join(' ').toLocaleLowerCase().includes(query)&&(!actionFilter||event.action===actionFilter)&&(!cutoff||event.date.getTime()>=cutoff));
     const rows=matches;
     const total=state.bankEvents.length;
@@ -367,18 +370,19 @@
       : `${total.toLocaleString()} bank entries`;
     $('bank-events').innerHTML=rows.length?rows.map(event=>{
       const isDeposit=event.action==='deposit';
-      const quantity=new Intl.NumberFormat('en-US').format(Math.abs(Number(event.amount)||0));
+      const isGold=isGoldEvent(event);
+      const quantity=isGold?formatGoldAmount(event.amount):new Intl.NumberFormat('en-US').format(Math.abs(Number(event.amount)||0));
       const sign=isDeposit?'+':'−';
       const action=isDeposit?'Deposit':'Withdrawal';
       return `<div class="bank-event-row">
         <time class="bank-event-date" datetime="${event.date.toISOString()}">${formatDate(event.date,true)}</time>
         <div class="bank-event-details">
           <div class="bank-event-member"><strong>${escapeHtml(event.player||'Unknown member')}</strong>${event.account?`<a class="bank-account-link" href="#account-dialog" aria-haspopup="dialog" data-account-query="${escapeHtml(event.account)}">${escapeHtml(event.account)}</a>`:''}</div>
-          <div class="bank-event-item">${escapeHtml(event.item||'Unspecified item')}</div>
+          <div class="bank-event-item">${escapeHtml(isGold?'Gold':(event.item||'Unspecified item'))}</div>
           <div class="bank-event-category">${escapeHtml(event.category||'Other')}</div>
         </div>
         <span class="bank-event-action ${isDeposit?'deposit':'withdrawal'}">${action}</span>
-        <strong class="bank-event-amount ${isDeposit?'deposit':'withdrawal'}">${sign}${quantity}</strong>
+        <strong class="bank-event-amount ${isDeposit?'deposit':'withdrawal'}">${sign}${quantity}${isGold?' gold':''}</strong>
       </div>`;
     }).join(''):(filtered?'<div class="empty-state">No bank entries match these filters.</div>':'<div class="empty-state">No published bank activity is available.</div>');
   }
