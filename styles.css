@@ -1884,10 +1884,10 @@ dialog.popup-shell::backdrop, .gallery-lightbox::backdrop {
 /* Achievements page: four top-five boards in a two-column grid. */
 .achievements-grid { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:18px; align-items:start; }
 .achievements-panel { overflow:visible; }
-.achievements-panel .roster-panel-head { margin-bottom:16px; }
-.score-panel { padding:0; overflow:hidden; }
+.score-panel { padding:0; overflow:hidden; display:flex; flex-direction:column; }
 .score-panel .panel-heading { margin:0; padding:16px 22px 13px; background:linear-gradient(100deg, rgba(8, 29, 42, .92), rgba(16, 28, 40, .9) 58%, rgba(39, 25, 16, .86)); border-bottom:1px solid rgba(89, 201, 232, .32); }
-.score-panel .score-list { padding:8px 22px 14px; }
+.score-panel .section-kicker { margin:0 0 3px; color:#35d2e3; font-size:.69rem; font-weight:700; letter-spacing:.19em; text-transform:uppercase; }
+.score-panel .score-list { flex:1 1 auto; min-height:0; padding:8px 22px 6px; margin-bottom:10px; }
 .score-list { list-style:none; margin:0; padding:0; max-height:292px; overflow-y:auto; overscroll-behavior:contain; }
 .score-list:focus-visible { outline:2px solid var(--gold); outline-offset:2px; }
 .score-row { display:flex; align-items:center; gap:12px; padding:10px 2px; border-top:1px solid rgba(180, 158, 121, .18); }
@@ -1905,5 +1905,5 @@ dialog.popup-shell::backdrop, .gallery-lightbox::backdrop {
 @media (max-width: 760px) {
   .achievements-grid { grid-template-columns:minmax(0, 1fr); }
   .score-panel .panel-heading { padding:14px 16px 11px; }
-  .score-panel .score-list { padding:6px 16px 12px; }
+  .score-panel .score-list { padding:6px 16px 4px; margin-bottom:8px; }
 }
