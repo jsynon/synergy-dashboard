@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T01:57:32+00:00",
+  "generatedAt": "2026-11-14T02:15:10+00:00",
   "accountCount": 146,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -10941,6 +10941,87 @@
     }
   ],
   "bankEvents": [
+    {
+      "date": "2026-11-13T21:02:04",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Events",
+      "item": "Jarl's Gaze",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-13T21:02:03",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Events",
+      "item": "Jarl's Gaze",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-13T21:02:01",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Events",
+      "item": "Arma-Egg-On",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-13T20:58:43",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Events",
+      "item": "Ebon Riding Lizard",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-13T20:58:42",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Events",
+      "item": "Ebon Riding Lizard",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-13T20:58:39",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Events",
+      "item": "Myconid Bulette",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-13T20:58:38",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Events",
+      "item": "Ebon Riding Lizard",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-13T20:58:20",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Boxes",
+      "item": "Grubby Goods Lockbox",
+      "amount": 414
+    },
+    {
+      "date": "2026-11-13T20:58:13",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Events",
+      "item": "Frostforged Talisman of the Companion",
+      "amount": 1
+    },
     {
       "date": "2026-11-13T15:08:12",
       "player": "Elanor",
