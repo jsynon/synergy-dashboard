@@ -1,6 +1,6 @@
 "use strict";
 
-// Achievements tab: four top-ten boards computed from the guild's own
+// Achievements tab: seven top-ten boards computed from the guild's own
 // published records — data/snapshot.json (roster + bank log) and
 // data/screenshots.json (the Discord screenshot gallery index).
 
@@ -63,6 +63,7 @@ function buildElders(snapshot) {
     rows.push({
       name: lead.name,
       sub: account,
+      account,
       value: formatDate(earliest),
       valueSub: tenureText(earliest, asOf),
       sort: earliest.getTime(),
@@ -84,6 +85,7 @@ function buildAltArmy(snapshot) {
     rows.push({
       name: lead.name,
       sub: account,
+      account,
       value: `${characters.length} character${characters.length === 1 ? "" : "s"}`,
       valueSub: characters.length > 1 ? `${characters.length - 1} alts in the guild` : "one and only",
       sort: -(characters.length),
@@ -115,6 +117,7 @@ function buildBenefactor(snapshot) {
     rows.push({
       name: leadPlayer ? leadPlayer[0] : entry.account,
       sub: entry.account,
+      account: entry.account,
       value: `${entry.count} deposit${entry.count === 1 ? "" : "s"}`,
       valueSub: "into the guild bank",
       sort: -entry.count,
@@ -122,6 +125,123 @@ function buildBenefactor(snapshot) {
     });
   }
   rows.sort((a, b) => a.sort - b.sort || a.tie - b.tie || a.name.localeCompare(b.name));
+  return rows.slice(0, BOARD_SIZE);
+}
+
+// Gold sits in the bank log as "Copper": 100 copper = 1 silver and
+// 100 silver = 1 gold, so 10,000 copper = 1 gold.
+const COPPER_PER_GOLD = 10000;
+
+function formatGold(copper) {
+  const gold = copper / COPPER_PER_GOLD;
+  return new Intl.NumberFormat("en-US", { maximumFractionDigits: 2 }).format(gold);
+}
+
+function buildHighRoller(snapshot) {
+  const bestByAccount = new Map();
+  for (const event of snapshot.bankEvents || []) {
+    if (event.action !== "deposit") continue;
+    if (String(event.item || "").trim().toLowerCase() !== "copper") continue;
+    const key = String(event.account || "").trim().toLowerCase();
+    if (!key) continue;
+    const current = bestByAccount.get(key);
+    if (!current || (event.amount || 0) > current.amount) {
+      bestByAccount.set(key, {
+        account: event.account,
+        player: event.player,
+        amount: event.amount || 0,
+        when: parseDate(event.date),
+      });
+    }
+  }
+  const rows = [];
+  for (const entry of bestByAccount.values()) {
+    rows.push({
+      name: entry.player || entry.account,
+      sub: entry.account,
+      account: entry.account,
+      value: `${formatGold(entry.amount)} gold`,
+      valueSub: entry.when ? `single deposit · ${formatDate(entry.when)}` : "single deposit",
+      sort: -entry.amount,
+      tie: entry.when ? entry.when.getTime() : Number.MAX_SAFE_INTEGER,
+    });
+  }
+  rows.sort((a, b) => a.sort - b.sort || a.tie - b.tie || a.name.localeCompare(b.name));
+  return rows.slice(0, BOARD_SIZE);
+}
+
+// A return is an account coming back: a join that arrives while none
+// of the account's characters are in the guild, after the account has
+// previously emptied out (every character gone). Counted from the
+// recorded guild log; current roster accounts only.
+function buildBoomerang(snapshot) {
+  const groups = groupRosterByAccount(snapshot.roster);
+  const events = [...(snapshot.events || [])].sort((a, b) =>
+    String(a.date).localeCompare(String(b.date)));
+  const accounts = new Map();
+  for (const event of events) {
+    if (event.kind !== "join" && event.kind !== "exit") continue;
+    const match = /^(.+?)@([^\s']+)/.exec(event.text || "");
+    if (!match) continue;
+    const characterKey = `${match[1].trim().toLowerCase()}|${match[2].toLowerCase()}`;
+    const accountKey = `@${match[2]}`.toLowerCase();
+    if (!accounts.has(accountKey)) {
+      accounts.set(accountKey, { inSet: new Set(), hasLeft: false, returns: 0, last: null });
+    }
+    const entry = accounts.get(accountKey);
+    if (event.kind === "exit") {
+      entry.inSet.delete(characterKey);
+      if (entry.inSet.size === 0) entry.hasLeft = true;
+    } else {
+      if (entry.inSet.size === 0 && entry.hasLeft) {
+        entry.returns += 1;
+        const when = parseDate(event.date);
+        if (when && (!entry.last || when > entry.last)) entry.last = when;
+      }
+      entry.inSet.add(characterKey);
+    }
+  }
+  const rows = [];
+  for (const [accountKey, entry] of accounts) {
+    if (!entry.returns) continue;
+    const group = groups.get(accountKey);
+    if (!group) continue;
+    const lead = leadCharacter(group.characters);
+    rows.push({
+      name: lead.name,
+      sub: group.account,
+      account: group.account,
+      value: `${entry.returns} return${entry.returns === 1 ? "" : "s"}`,
+      valueSub: entry.last ? `latest ${formatDate(entry.last)}` : "came back to Synergy",
+      sort: -entry.returns,
+      tie: entry.last ? -entry.last.getTime() : 0,
+    });
+  }
+  rows.sort((a, b) => a.sort - b.sort || a.tie - b.tie || a.name.localeCompare(b.name));
+  return rows.slice(0, BOARD_SIZE);
+}
+
+function buildNewBlood(snapshot) {
+  const asOf = parseDate(snapshot.generatedAt) || new Date();
+  const rows = [];
+  for (const { account, characters } of groupRosterByAccount(snapshot.roster).values()) {
+    let earliest = null;
+    for (const member of characters) {
+      const joined = parseDate(member.originalJoinDate) || parseDate(member.joinDate);
+      if (joined && (!earliest || joined < earliest)) earliest = joined;
+    }
+    if (!earliest) continue;
+    const lead = leadCharacter(characters);
+    rows.push({
+      name: lead.name,
+      sub: account,
+      account,
+      value: formatDate(earliest),
+      valueSub: tenureText(earliest, asOf),
+      sort: -earliest.getTime(),
+    });
+  }
+  rows.sort((a, b) => a.sort - b.sort || a.name.localeCompare(b.name));
   return rows.slice(0, BOARD_SIZE);
 }
 
@@ -178,7 +298,18 @@ function renderBoard(listId, rows) {
     who.className = "score-who";
     const name = document.createElement("span");
     name.className = "score-name";
-    name.textContent = row.name;
+    if (row.account) {
+      const link = document.createElement("a");
+      link.className = "activity-member-link";
+      link.href = "#account-dialog";
+      link.setAttribute("aria-haspopup", "dialog");
+      link.dataset.memberQuery = row.name;
+      link.dataset.accountQuery = row.account;
+      link.textContent = row.name;
+      name.append(link);
+    } else {
+      name.textContent = row.name;
+    }
     const sub = document.createElement("span");
     sub.className = "score-sub";
     sub.textContent = row.sub;
@@ -219,12 +350,15 @@ async function loadJson(url) {
 }
 
 async function init() {
-  const snapshotBoards = ["board-elders", "board-alt-army", "board-benefactor"];
+  const snapshotBoards = ["board-elders", "board-alt-army", "board-benefactor", "board-high-roller", "board-boomerang", "board-new-blood"];
   try {
     const snapshot = await loadJson("data/snapshot.json");
     renderBoard("board-elders", buildElders(snapshot));
     renderBoard("board-alt-army", buildAltArmy(snapshot));
     renderBoard("board-benefactor", buildBenefactor(snapshot));
+    renderBoard("board-high-roller", buildHighRoller(snapshot));
+    renderBoard("board-boomerang", buildBoomerang(snapshot));
+    renderBoard("board-new-blood", buildNewBlood(snapshot));
 
     const bankDates = (snapshot.bankEvents || []).map((event) => parseDate(event.date)).filter(Boolean);
     if (bankDates.length) {

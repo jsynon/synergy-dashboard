@@ -448,6 +448,12 @@
     event.preventDefault();
     showAccountDetails(link.dataset.accountQuery||'',link.dataset.memberQuery||'');
   });
+  $('achievements')?.addEventListener('click',event=>{
+    const link=event.target.closest('.activity-member-link');
+    if(!link)return;
+    event.preventDefault();
+    showAccountDetails(link.dataset.accountQuery||'',link.dataset.memberQuery||'');
+  });
   $('bank-events').addEventListener('click',event=>{
     const link=event.target.closest('.bank-account-link');
     if(!link)return;
