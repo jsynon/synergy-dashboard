@@ -1883,8 +1883,24 @@ dialog.popup-shell::backdrop, .gallery-lightbox::backdrop {
 
 /* Achievements page: four top-five boards in a two-column grid. */
 .achievements-grid { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:18px; align-items:start; }
-.score-panel { padding:20px 22px 16px; }
-.score-panel .panel-heading { margin-bottom:6px; }
+.achievements-panel { overflow:visible; }
+.achievements-panel .roster-panel-head { margin-bottom:16px; }
+.score-panel { padding:0; overflow:hidden; }
+.score-panel .panel-heading { margin:0; padding:16px 22px 13px; background:linear-gradient(135deg, #2a3644, #1a242f); border-bottom:1px solid rgba(180, 158, 121, .25); }
+.score-panel .section-subtitle { color:rgba(233, 228, 218, .72); }
+.score-panel .score-list { padding:8px 22px 14px; }
+.score-panel.theme-gold .panel-heading { background:linear-gradient(135deg, #57431a, #33270e); border-bottom-color:rgba(212, 154, 66, .45); }
+.score-panel.theme-gold .section-kicker { color:var(--gold-bright); }
+.score-panel.theme-teal .panel-heading { background:linear-gradient(135deg, #14424e, #0c2833); border-bottom-color:rgba(89, 201, 232, .38); }
+.score-panel.theme-teal .section-kicker { color:#7fd8f2; }
+.score-panel.theme-green .panel-heading { background:linear-gradient(135deg, #1d4a2c, #11291a); border-bottom-color:rgba(110, 200, 140, .35); }
+.score-panel.theme-green .section-kicker { color:#8fd6a4; }
+.score-panel.theme-violet .panel-heading { background:linear-gradient(135deg, #3d2760, #221636); border-bottom-color:rgba(170, 130, 240, .38); }
+.score-panel.theme-violet .section-kicker { color:#c9a8f5; }
+.score-panel.theme-blue .panel-heading { background:linear-gradient(135deg, #274b73, #16283f); border-bottom-color:rgba(120, 170, 230, .38); }
+.score-panel.theme-blue .section-kicker { color:#9cc3ee; }
+.score-panel.theme-rose .panel-heading { background:linear-gradient(135deg, #5c2430, #33141b); border-bottom-color:rgba(230, 120, 135, .35); }
+.score-panel.theme-rose .section-kicker { color:#f2a0ab; }
 .score-list { list-style:none; margin:0; padding:0; max-height:292px; overflow-y:auto; overscroll-behavior:contain; }
 .score-list:focus-visible { outline:2px solid var(--gold); outline-offset:2px; }
 .score-row { display:flex; align-items:center; gap:12px; padding:10px 2px; border-top:1px solid rgba(180, 158, 121, .18); }
@@ -1901,5 +1917,6 @@ dialog.popup-shell::backdrop, .gallery-lightbox::backdrop {
 .score-empty { padding:12px 2px; color:var(--muted); }
 @media (max-width: 760px) {
   .achievements-grid { grid-template-columns:minmax(0, 1fr); }
-  .score-panel { padding:16px 16px 12px; }
+  .score-panel .panel-heading { padding:14px 16px 11px; }
+  .score-panel .score-list { padding:6px 16px 12px; }
 }
