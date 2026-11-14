@@ -135,32 +135,38 @@ function formatGold(copper) {
 }
 
 function buildHighRoller(snapshot) {
-  const bestByAccount = new Map();
+  const totalsByAccount = new Map();
   for (const event of snapshot.bankEvents || []) {
     if (event.action !== "deposit") continue;
     if (String(event.item || "").trim().toLowerCase() !== "copper") continue;
     const key = String(event.account || "").trim().toLowerCase();
     if (!key) continue;
-    const current = bestByAccount.get(key);
-    if (!current || (event.amount || 0) > current.amount) {
-      bestByAccount.set(key, {
-        account: event.account,
-        player: event.player,
-        amount: event.amount || 0,
-        when: parseDate(event.date),
-      });
+    const amount = Number(event.amount) || 0;
+    if (amount <= 0) continue;
+    if (!totalsByAccount.has(key)) {
+      totalsByAccount.set(key, { account: event.account, total: 0, players: new Map(), first: null, latest: null });
+    }
+    const entry = totalsByAccount.get(key);
+    entry.total += amount;
+    const player = String(event.player || "").trim();
+    if (player) entry.players.set(player, (entry.players.get(player) || 0) + amount);
+    const when = parseDate(event.date);
+    if (when) {
+      if (!entry.first || when < entry.first) entry.first = when;
+      if (!entry.latest || when > entry.latest) entry.latest = when;
     }
   }
   const rows = [];
-  for (const entry of bestByAccount.values()) {
+  for (const entry of totalsByAccount.values()) {
+    const leadPlayer = [...entry.players.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0];
     rows.push({
-      name: entry.player || entry.account,
+      name: leadPlayer ? leadPlayer[0] : entry.account,
       sub: entry.account,
       account: entry.account,
-      value: `${formatGold(entry.amount)} gold`,
-      valueSub: entry.when ? formatDate(entry.when) : "",
-      sort: -entry.amount,
-      tie: entry.when ? entry.when.getTime() : Number.MAX_SAFE_INTEGER,
+      value: `${formatGold(entry.total)} gold`,
+      valueSub: entry.latest ? formatDate(entry.latest) : "",
+      sort: -entry.total,
+      tie: entry.first ? entry.first.getTime() : Number.MAX_SAFE_INTEGER,
     });
   }
   rows.sort((a, b) => a.sort - b.sort || a.tie - b.tie || a.name.localeCompare(b.name));
