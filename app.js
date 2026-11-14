@@ -286,15 +286,32 @@
     const searchableHandles=new Map();
     const names=members.map(member=>member.name.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'));
     if(!names.length)return {html:escapeHtml(text),searchText:text};
+    // Linkify bare @handles in a plain-text chunk. This runs on every gap
+    // between member-name links, not just when no member matched at all —
+    // a message naming a current member (e.g. the officer who kicked
+    // someone) used to leave every other handle in it unclickable.
+    const linkifyHandles=(chunk)=>{
+      const handlePattern=/@[A-Za-z0-9._-]+(?:#[A-Za-z0-9]+)?/g;
+      let out='', handleCursor=0, handleMatch;
+      while((handleMatch=handlePattern.exec(chunk))){
+        out+=escapeHtml(chunk.slice(handleCursor,handleMatch.index));
+        const handle=handleMatch[0];
+        const accountQuery=handle.slice(1);
+        out+=`<a class="activity-member-link" href="#account-dialog" aria-haspopup="dialog" data-member-query="${escapeHtml(accountQuery)}" data-account-query="${escapeHtml(accountQuery)}">${escapeHtml(handle)}</a>`;
+        searchableHandles.set(handle.toLocaleLowerCase(),handle);
+        handleCursor=handlePattern.lastIndex;
+      }
+      out+=escapeHtml(chunk.slice(handleCursor));
+      return out;
+    };
     const matcher=new RegExp('(^|[^A-Za-z0-9_])(' + names.join('|') + ')(?![A-Za-z0-9_])','gi');
-    let cursor=0, html='', searchText=text, match, matchedMember=false;
+    let cursor=0, html='', searchText=text, match;
     while((match=matcher.exec(text))){
       const nameStart=match.index+match[1].length;
       const nameEnd=nameStart+match[2].length;
       if(nameStart<cursor)continue;
-      html+=escapeHtml(text.slice(cursor,nameStart));
+      html+=linkifyHandles(text.slice(cursor,nameStart));
       const member=memberByName.get(match[2].toLocaleLowerCase());
-      matchedMember=true;
       const rawMatch=text.slice(nameEnd).match(/^(?:\s+[A-Za-z])?\s*(@[A-Za-z0-9._-]+(?:#[A-Za-z0-9]+)?)/);
       const rawHandle=rawMatch?rawMatch[1]:'';
       const memberAccount=member?String(member.account||'').replace(/^@/,''):'';
@@ -309,20 +326,7 @@
       cursor=nameEnd+(sameAccount?rawMatch[0].length:0);
       matcher.lastIndex=cursor;
     }
-    if(!matchedMember){
-      const handlePattern=/@[A-Za-z0-9._-]+(?:#[A-Za-z0-9]+)?/g;
-      let handleCursor=0, handleMatch;
-      while((handleMatch=handlePattern.exec(text))){
-        html+=escapeHtml(text.slice(handleCursor,handleMatch.index));
-        const handle=handleMatch[0];
-        const accountQuery=handle.slice(1);
-        html+=`<a class="activity-member-link" href="#account-dialog" aria-haspopup="dialog" data-member-query="${escapeHtml(accountQuery)}" data-account-query="${escapeHtml(accountQuery)}">${escapeHtml(handle)}</a>`;
-        searchableHandles.set(handle.toLocaleLowerCase(),handle);
-        handleCursor=handlePattern.lastIndex;
-      }
-      cursor=handleCursor;
-    }
-    html+=escapeHtml(text.slice(cursor));
+    html+=linkifyHandles(text.slice(cursor));
     if(searchableHandles.size){
       searchText+=' '+[...searchableHandles.values()].join(' ');
     }
