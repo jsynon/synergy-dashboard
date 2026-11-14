@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070c14">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://synergyonline.org/achievements.html">
+  <meta name="description" content="Synergy's achievement boards: the guild's longest-serving members, biggest alt armies, top guild bank benefactors, and most prolific screenshot sharers.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Synergy Guild">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Achievements | Synergy">
+  <meta property="og:description" content="Synergy's achievement boards: the guild's longest-serving members, biggest alt armies, top guild bank benefactors, and most prolific screenshot sharers.">
+  <meta property="og:url" content="https://synergyonline.org/achievements.html">
+  <meta property="og:image" content="https://synergyonline.org/assets/synergy-header-integrated.webp">
+  <meta property="og:image:alt" content="Synergy’s blue-and-gold fantasy banner">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Achievements | Synergy">
+  <meta name="twitter:description" content="Synergy's achievement boards: the guild's longest-serving members, biggest alt armies, top guild bank benefactors, and most prolific screenshot sharers.">
+  <meta name="twitter:image" content="https://synergyonline.org/assets/synergy-header-integrated.webp">
+  <meta name="twitter:image:alt" content="Synergy’s blue-and-gold fantasy banner">
+  <title>Achievements | Synergy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261114-achievements">
+  <script src="achievements.js?v=20261114-achievements" defer></script>
+  <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
+</head>
+<body>
+  <div class="page-shell">
+    <div class="brand-banner" role="img" aria-label="Synergy"><img class="brand-banner-background" src="assets/synergy-header-integrated.webp" alt=""></div>
+    <header class="masthead"><nav aria-label="Main menu"><a href="index.html">News</a><a href="roster.html">Guild Roster</a><a href="achievements.html" aria-current="page">Achievements</a><a href="masterwork.html">Masterwork</a><a href="guild-info.html">Guild Info</a><a href="screenshots.html">Screenshots</a><a class="discord-link" href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">Discord <span aria-hidden="true">↗</span></a></nav></header>
+
+    <main>
+      <section class="hero" id="overview">
+        <div class="eyebrow"><span>Guild Achievements</span></div>
+        <h1>Achievements</h1>
+        <p class="hero-copy">Bragging rights, earned in game — the members at the top of the guild's boards.</p>
+      </section>
+
+      <div class="section-heading member-search-intro achievements-page-intro">
+        <div>
+          <p class="section-kicker">Hall of Fame</p>
+          <h2>The achievement boards</h2>
+          <p class="section-intro">Four boards, ranked from the guild's own records — the roster, the bank log, and the screenshot gallery. The boards update as new records come in, so every spot is there to be taken.</p>
+        </div>
+      </div>
+
+      <div class="achievements-grid">
+        <section class="panel score-panel" aria-labelledby="elders-title">
+          <div class="panel-heading">
+            <div><p class="section-kicker">Longest Serving</p><h2 id="elders-title">Guild Elders</h2><p class="section-subtitle">The members who have stood with Synergy the longest.</p></div>
+          </div>
+          <ol class="score-list" id="board-elders"><li class="score-empty">Loading the board…</li></ol>
+          <p class="score-note">Ranked by each account's original join date, including time before the current roster.</p>
+        </section>
+
+        <section class="panel score-panel" aria-labelledby="alt-army-title">
+          <div class="panel-heading">
+            <div><p class="section-kicker">Most Characters</p><h2 id="alt-army-title">Alt Army</h2><p class="section-subtitle">One account, many heroes.</p></div>
+          </div>
+          <ol class="score-list" id="board-alt-army"><li class="score-empty">Loading the board…</li></ol>
+          <p class="score-note">Characters currently on the guild roster, counted per account.</p>
+        </section>
+
+        <section class="panel score-panel" aria-labelledby="benefactor-title">
+          <div class="panel-heading">
+            <div><p class="section-kicker">Guild Bank</p><h2 id="benefactor-title">Guild Benefactor</h2><p class="section-subtitle">The members who keep the guild bank stocked.</p></div>
+          </div>
+          <ol class="score-list" id="board-benefactor"><li class="score-empty">Loading the board…</li></ol>
+          <p class="score-note" id="benefactor-note">Ranked by deposits in the guild bank records the site holds.</p>
+        </section>
+
+        <section class="panel score-panel" aria-labelledby="photographer-title">
+          <div class="panel-heading">
+            <div><p class="section-kicker">Screenshot Gallery</p><h2 id="photographer-title">Guild Photographer</h2><p class="section-subtitle">The members behind the guild's screenshot archive.</p></div>
+          </div>
+          <ol class="score-list" id="board-photographer"><li class="score-empty">Loading the board…</li></ol>
+          <p class="score-note">Every screenshot shared in the Discord screenshots channel counts. Deleted accounts are not ranked. <a href="screenshots.html">Browse the gallery</a></p>
+        </section>
+      </div>
+    </main>
+
+    <footer><div class="footer-links"><span class="footer-synergy-wordmark"><a href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">SYNERGY</a></span><span class="footer-divider" aria-hidden="true">|</span><a class="footer-alliance-link" href="https://discord.gg/eDgrKe24tu" target="_blank" rel="noopener noreferrer">WANTED Alliance</a></div><span class="footer-credit" id="achievements-updated">Boards update with the guild's published records.</span></footer>
+  </div>
+
+  <!-- Speculative loading (Modern Web Guidance): prefetch the site's pages eagerly and prerender them on hover intent, so menu clicks feel instant. Browsers without speculation rules support ignore this. -->
+  <script type="speculationrules">
+    {
+      "prefetch": [{ "urls": ["/", "/roster.html", "/achievements.html", "/guild-info.html", "/masterwork.html", "/screenshots.html"], "eagerness": "eager" }],
+      "prerender": [{ "urls": ["/", "/roster.html", "/achievements.html", "/guild-info.html", "/masterwork.html", "/screenshots.html"], "eagerness": "moderate" }]
+    }
+  </script>
+</body>
+</html>
