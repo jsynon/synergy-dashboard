@@ -63,6 +63,7 @@ function buildElders(snapshot) {
     rows.push({
       name: lead.name,
       sub: account,
+      account,
       value: formatDate(earliest),
       valueSub: tenureText(earliest, asOf),
       sort: earliest.getTime(),
@@ -84,6 +85,7 @@ function buildAltArmy(snapshot) {
     rows.push({
       name: lead.name,
       sub: account,
+      account,
       value: `${characters.length} character${characters.length === 1 ? "" : "s"}`,
       valueSub: characters.length > 1 ? `${characters.length - 1} alts in the guild` : "one and only",
       sort: -(characters.length),
@@ -115,6 +117,7 @@ function buildBenefactor(snapshot) {
     rows.push({
       name: leadPlayer ? leadPlayer[0] : entry.account,
       sub: entry.account,
+      account: entry.account,
       value: `${entry.count} deposit${entry.count === 1 ? "" : "s"}`,
       valueSub: "into the guild bank",
       sort: -entry.count,
@@ -156,6 +159,7 @@ function buildHighRoller(snapshot) {
     rows.push({
       name: entry.player || entry.account,
       sub: entry.account,
+      account: entry.account,
       value: `${formatGold(entry.amount)} gold`,
       valueSub: entry.when ? `single deposit · ${formatDate(entry.when)}` : "single deposit",
       sort: -entry.amount,
@@ -166,52 +170,50 @@ function buildHighRoller(snapshot) {
   return rows.slice(0, BOARD_SIZE);
 }
 
-// A return is a character's join that follows that same character's
-// departure in the recorded guild log. Ranked per account, counting
-// only accounts still on the roster.
+// A return is an account coming back: a join that arrives while none
+// of the account's characters are in the guild, after the account has
+// previously emptied out (every character gone). Counted from the
+// recorded guild log; current roster accounts only.
 function buildBoomerang(snapshot) {
-  const currentAccounts = new Set(
-    [...groupRosterByAccount(snapshot.roster).keys()]
-  );
+  const groups = groupRosterByAccount(snapshot.roster);
   const events = [...(snapshot.events || [])].sort((a, b) =>
     String(a.date).localeCompare(String(b.date)));
-  const stateByCharacter = new Map();
-  const returnsByAccount = new Map();
+  const accounts = new Map();
   for (const event of events) {
     if (event.kind !== "join" && event.kind !== "exit") continue;
     const match = /^(.+?)@([^\s']+)/.exec(event.text || "");
     if (!match) continue;
-    const characterName = match[1].trim();
-    const account = `@${match[2]}`;
-    const key = `${characterName.toLowerCase()}|${account.toLowerCase()}`;
+    const characterKey = `${match[1].trim().toLowerCase()}|${match[2].toLowerCase()}`;
+    const accountKey = `@${match[2]}`.toLowerCase();
+    if (!accounts.has(accountKey)) {
+      accounts.set(accountKey, { inSet: new Set(), hasLeft: false, returns: 0, last: null });
+    }
+    const entry = accounts.get(accountKey);
     if (event.kind === "exit") {
-      stateByCharacter.set(key, "out");
-      continue;
-    }
-    // join
-    if (stateByCharacter.get(key) === "out") {
-      const accountKey = account.toLowerCase();
-      if (!returnsByAccount.has(accountKey)) {
-        returnsByAccount.set(accountKey, { account, total: 0, byCharacter: new Map(), last: null });
+      entry.inSet.delete(characterKey);
+      if (entry.inSet.size === 0) entry.hasLeft = true;
+    } else {
+      if (entry.inSet.size === 0 && entry.hasLeft) {
+        entry.returns += 1;
+        const when = parseDate(event.date);
+        if (when && (!entry.last || when > entry.last)) entry.last = when;
       }
-      const entry = returnsByAccount.get(accountKey);
-      entry.total += 1;
-      entry.byCharacter.set(characterName, (entry.byCharacter.get(characterName) || 0) + 1);
-      const when = parseDate(event.date);
-      if (when && (!entry.last || when > entry.last)) entry.last = when;
+      entry.inSet.add(characterKey);
     }
-    stateByCharacter.set(key, "in");
   }
   const rows = [];
-  for (const [accountKey, entry] of returnsByAccount) {
-    if (!currentAccounts.has(accountKey)) continue;
-    const lead = [...entry.byCharacter.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0];
+  for (const [accountKey, entry] of accounts) {
+    if (!entry.returns) continue;
+    const group = groups.get(accountKey);
+    if (!group) continue;
+    const lead = leadCharacter(group.characters);
     rows.push({
-      name: lead ? lead[0] : entry.account,
-      sub: entry.account,
-      value: `${entry.total} return${entry.total === 1 ? "" : "s"}`,
+      name: lead.name,
+      sub: group.account,
+      account: group.account,
+      value: `${entry.returns} return${entry.returns === 1 ? "" : "s"}`,
       valueSub: entry.last ? `latest ${formatDate(entry.last)}` : "came back to Synergy",
-      sort: -entry.total,
+      sort: -entry.returns,
       tie: entry.last ? -entry.last.getTime() : 0,
     });
   }
@@ -233,6 +235,7 @@ function buildNewBlood(snapshot) {
     rows.push({
       name: lead.name,
       sub: account,
+      account,
       value: formatDate(earliest),
       valueSub: tenureText(earliest, asOf),
       sort: -earliest.getTime(),
@@ -295,7 +298,18 @@ function renderBoard(listId, rows) {
     who.className = "score-who";
     const name = document.createElement("span");
     name.className = "score-name";
-    name.textContent = row.name;
+    if (row.account) {
+      const link = document.createElement("a");
+      link.className = "activity-member-link";
+      link.href = "#account-dialog";
+      link.setAttribute("aria-haspopup", "dialog");
+      link.dataset.memberQuery = row.name;
+      link.dataset.accountQuery = row.account;
+      link.textContent = row.name;
+      name.append(link);
+    } else {
+      name.textContent = row.name;
+    }
     const sub = document.createElement("span");
     sub.className = "score-sub";
     sub.textContent = row.sub;
