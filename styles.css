@@ -1892,6 +1892,7 @@ dialog.popup-shell::backdrop, .gallery-lightbox::backdrop {
 .score-list { list-style:none; margin:0; padding:0; max-height:292px; overflow-y:auto; overscroll-behavior:contain; }
 .score-list:focus-visible { outline:2px solid var(--gold); outline-offset:2px; }
 .score-row { display:flex; align-items:center; gap:12px; padding:10px 2px; border-top:1px solid rgba(180, 158, 121, .18); }
+.score-row:first-child { border-top:0; }
 .score-rank { flex:none; width:32px; height:32px; border-radius:50%; display:grid; place-items:center; font:700 13px var(--serif); color:#aeb9c6; background:linear-gradient(160deg, #22303f, #101823); border:1px solid rgba(180, 158, 121, .38); box-shadow:inset 0 1px 0 rgba(255, 255, 255, .07), 0 2px 6px rgba(0, 0, 0, .35); }
 .score-rank.rank-1 { color:#2a1a05; background:radial-gradient(circle at 32% 28%, #ffedb3, #f5d88e 40%, #d49a42 74%, #a8742c); border-color:#ffe1a0; text-shadow:0 1px 0 rgba(255, 255, 255, .4); box-shadow:0 0 12px rgba(212, 154, 66, .5), inset 0 1px 2px rgba(255, 255, 255, .6), inset 0 -2px 4px rgba(122, 72, 14, .5); }
 .score-rank.rank-2 { color:#1c2733; background:radial-gradient(circle at 32% 28%, #ffffff, #dbe3ee 42%, #aeb9c6 76%, #7e8b9d); border-color:#eef3fa; text-shadow:0 1px 0 rgba(255, 255, 255, .5); box-shadow:0 0 10px rgba(200, 215, 235, .4), inset 0 1px 2px rgba(255, 255, 255, .65), inset 0 -2px 4px rgba(90, 104, 124, .5); }
