@@ -16,17 +16,6 @@ function formatDate(date) {
   return date.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
 }
 
-function tenureText(from, to) {
-  let months = (to.getFullYear() - from.getFullYear()) * 12 + (to.getMonth() - from.getMonth());
-  if (to.getDate() < from.getDate()) months -= 1;
-  if (months < 1) return "under a month in the guild";
-  const years = Math.floor(months / 12);
-  const rest = months % 12;
-  const yearPart = years > 0 ? `${years} yr${years === 1 ? "" : "s"}` : "";
-  const monthPart = rest > 0 ? `${rest} mo${rest === 1 ? "" : "s"}` : "";
-  return `${[yearPart, monthPart].filter(Boolean).join(" ")} in the guild`;
-}
-
 // Best display character for an account: highest rank first, then the
 // longest-standing character (the likeliest main), then name.
 function leadCharacter(characters) {
@@ -50,7 +39,6 @@ function groupRosterByAccount(roster) {
 }
 
 function buildElders(snapshot) {
-  const asOf = parseDate(snapshot.generatedAt) || new Date();
   const rows = [];
   for (const { account, characters } of groupRosterByAccount(snapshot.roster).values()) {
     let earliest = null;
@@ -65,7 +53,6 @@ function buildElders(snapshot) {
       sub: account,
       account,
       value: formatDate(earliest),
-      valueSub: tenureText(earliest, asOf),
       sort: earliest.getTime(),
     });
   }
@@ -174,7 +161,6 @@ function buildHighRoller(snapshot) {
 }
 
 function buildNewBlood(snapshot) {
-  const asOf = parseDate(snapshot.generatedAt) || new Date();
   const rows = [];
   for (const { account, characters } of groupRosterByAccount(snapshot.roster).values()) {
     let earliest = null;
@@ -189,7 +175,6 @@ function buildNewBlood(snapshot) {
       sub: account,
       account,
       value: formatDate(earliest),
-      valueSub: tenureText(earliest, asOf),
       sort: -earliest.getTime(),
     });
   }
