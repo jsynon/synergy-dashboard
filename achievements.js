@@ -1,10 +1,10 @@
 "use strict";
 
-// Achievements page: four top-five boards computed from the guild's own
+// Achievements tab: four top-ten boards computed from the guild's own
 // published records — data/snapshot.json (roster + bank log) and
 // data/screenshots.json (the Discord screenshot gallery index).
 
-const BOARD_SIZE = 5;
+const BOARD_SIZE = 10;
 
 function parseDate(value) {
   if (!value) return null;
