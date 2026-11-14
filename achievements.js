@@ -131,7 +131,7 @@ function buildHighRoller(snapshot) {
     const amount = Number(event.amount) || 0;
     if (amount <= 0) continue;
     if (!totalsByAccount.has(key)) {
-      totalsByAccount.set(key, { account: event.account, total: 0, players: new Map(), first: null, latest: null });
+      totalsByAccount.set(key, { account: event.account, total: 0, players: new Map(), first: null });
     }
     const entry = totalsByAccount.get(key);
     entry.total += amount;
@@ -140,7 +140,6 @@ function buildHighRoller(snapshot) {
     const when = parseDate(event.date);
     if (when) {
       if (!entry.first || when < entry.first) entry.first = when;
-      if (!entry.latest || when > entry.latest) entry.latest = when;
     }
   }
   const rows = [];
@@ -151,7 +150,6 @@ function buildHighRoller(snapshot) {
       sub: entry.account,
       account: entry.account,
       value: `${formatGold(entry.total)} gold`,
-      valueSub: entry.latest ? formatDate(entry.latest) : "",
       sort: -entry.total,
       tie: entry.first ? entry.first.getTime() : Number.MAX_SAFE_INTEGER,
     });
@@ -298,12 +296,6 @@ async function init() {
     renderBoard("board-high-roller", buildHighRoller(snapshot));
     renderBoard("board-new-blood", buildNewBlood(snapshot));
 
-    const bankDates = (snapshot.bankEvents || []).map((event) => parseDate(event.date)).filter(Boolean);
-    if (bankDates.length) {
-      const note = document.getElementById("benefactor-note");
-      const earliest = new Date(Math.min(...bankDates.map((date) => date.getTime())));
-      if (note) note.textContent = `Ranked by deposits in the guild bank records the site holds, which begin ${formatDate(earliest)}.`;
-    }
     const updated = document.getElementById("achievements-updated");
     const generated = parseDate(snapshot.generatedAt);
     if (updated && generated) updated.textContent = `Boards current as of ${formatDate(generated)}.`;
