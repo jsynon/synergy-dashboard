@@ -25,6 +25,13 @@ def read_csv(path: Path):
         headers = [(header or "").strip() for header in next(reader, [])]
         records = []
         for values in reader:
+            # The game appends one quoted empty field to roster rows, leaving
+            # one more cell than there are headers. Drop that trailing cell so
+            # the comment columns line up positionally again; without this,
+            # the overflow path below mistakes the extra cell for part of the
+            # member comment and absorbs the status text into it.
+            if len(values) > len(headers) and not values[-1].strip():
+                values.pop()
             # Some exports contain unquoted commas in comment fields. Map the known
             # columns normally and retain raw cells so leave-of-absence notes survive overflow.
             record = {header: (values[i] if i < len(values) else "").strip()
@@ -45,7 +52,12 @@ def read_csv(path: Path):
                      if re.match(r"^\s*Last online\b", values[index], re.IGNORECASE)),
                     None,
                 )
-                if status_index is not None:
+                if not values[comment_index].strip():
+                    # The member comment is empty, so any extra cells in this
+                    # row overflowed from the status or officer comments and
+                    # must not be displayed as a member note.
+                    comment_values = []
+                elif status_index is not None:
                     comment_values = values[comment_index:status_index]
                 elif len(values) > len(headers):
                     # Preserve unquoted commas in a member comment while reserving the
