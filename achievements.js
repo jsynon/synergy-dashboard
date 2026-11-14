@@ -87,7 +87,6 @@ function buildAltArmy(snapshot) {
       sub: account,
       account,
       value: `${characters.length} character${characters.length === 1 ? "" : "s"}`,
-      valueSub: characters.length > 1 ? `${characters.length - 1} alts in the guild` : "one and only",
       sort: -(characters.length),
       tie: earliest ? earliest.getTime() : Number.MAX_SAFE_INTEGER,
     });
@@ -119,7 +118,6 @@ function buildBenefactor(snapshot) {
       sub: entry.account,
       account: entry.account,
       value: `${entry.count} deposit${entry.count === 1 ? "" : "s"}`,
-      valueSub: "into the guild bank",
       sort: -entry.count,
       tie: entry.first ? entry.first.getTime() : Number.MAX_SAFE_INTEGER,
     });
@@ -160,7 +158,7 @@ function buildHighRoller(snapshot) {
       sub: entry.account,
       account: entry.account,
       value: `${formatGold(entry.amount)} gold`,
-      valueSub: entry.when ? `single deposit · ${formatDate(entry.when)}` : "single deposit",
+      valueSub: entry.when ? formatDate(entry.when) : "",
       sort: -entry.amount,
       tie: entry.when ? entry.when.getTime() : Number.MAX_SAFE_INTEGER,
     });
@@ -213,7 +211,6 @@ function buildPhotographer(shotsData) {
       name: entry.author,
       sub: entry.latest ? `Latest shared ${formatDate(entry.latest)}` : "Discord screenshot channel",
       value: `${entry.count} screenshot${entry.count === 1 ? "" : "s"}`,
-      valueSub: "shared with the guild",
       sort: -entry.count,
       tie: entry.first ? entry.first.getTime() : Number.MAX_SAFE_INTEGER,
     });
@@ -269,10 +266,13 @@ function renderBoard(listId, rows) {
     const value = document.createElement("span");
     value.className = "score-value";
     value.textContent = row.value;
-    const valueSub = document.createElement("span");
-    valueSub.className = "score-value-sub";
-    valueSub.textContent = row.valueSub;
-    stat.append(value, valueSub);
+    stat.append(value);
+    if (row.valueSub) {
+      const valueSub = document.createElement("span");
+      valueSub.className = "score-value-sub";
+      valueSub.textContent = row.valueSub;
+      stat.append(valueSub);
+    }
     item.append(stat);
 
     list.append(item);
