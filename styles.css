@@ -1883,6 +1883,7 @@ dialog.popup-shell::backdrop, .gallery-lightbox::backdrop {
 
 /* Achievements page: four top-five boards in a two-column grid. */
 .achievements-grid { display:grid; grid-template-columns:repeat(2, minmax(0, 1fr)); gap:18px; align-items:start; }
+.achievements-note { margin:14px 2px 0; color:var(--muted); font-size:.8rem; line-height:1.45; }
 .achievements-panel { overflow:visible; }
 .score-panel { padding:0; overflow:hidden; display:flex; flex-direction:column; }
 .score-panel .panel-heading { margin:0; padding:16px 22px 13px; background:linear-gradient(100deg, rgba(8, 29, 42, .92), rgba(16, 28, 40, .9) 58%, rgba(39, 25, 16, .86)); border-bottom:1px solid rgba(89, 201, 232, .32); }
