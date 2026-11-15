@@ -6,18 +6,18 @@
   <meta name="theme-color" content="#070c14">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://synergyonline.org/masterwork.html">
-  <meta name="description" content="Browse Synergy’s Neverwinter masterwork recipes; filter by class, material, and source to find ingredients and crafting details.">
+  <meta name="description" content="Browse Synergy’s Neverwinter masterwork recipes by class and recipe; each recipe lists its ingredients and where they are gathered.">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Synergy Guild">
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Crafting Ledger | Synergy">
-  <meta property="og:description" content="Browse Synergy’s Neverwinter masterwork recipes; filter by class, material, and source to find ingredients and crafting details.">
+  <meta property="og:description" content="Browse Synergy’s Neverwinter masterwork recipes by class and recipe; each recipe lists its ingredients and where they are gathered.">
   <meta property="og:url" content="https://synergyonline.org/masterwork.html">
   <meta property="og:image" content="https://synergyonline.org/assets/synergy-header-integrated.webp">
   <meta property="og:image:alt" content="Synergy’s blue-and-gold fantasy banner">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Crafting Ledger | Synergy">
-  <meta name="twitter:description" content="Browse Synergy’s Neverwinter masterwork recipes; filter by class, material, and source to find ingredients and crafting details.">
+  <meta name="twitter:description" content="Browse Synergy’s Neverwinter masterwork recipes by class and recipe; each recipe lists its ingredients and where they are gathered.">
   <meta name="twitter:image" content="https://synergyonline.org/assets/synergy-header-integrated.webp">
   <meta name="twitter:image:alt" content="Synergy’s blue-and-gold fantasy banner">
   <title>Crafting Ledger | Synergy</title>
@@ -1117,6 +1117,36 @@ footer {
       dialog.popup-shell::backdrop { transition-duration:.1s; }
     }
     .item-card { content-visibility:auto; contain-intrinsic-size:auto 190px; }
+
+    /* Crafting Ledger — index + page layout */
+    .ledger-layout { display:grid; grid-template-columns:300px minmax(0,1fr); gap:18px; align-items:start; }
+    .ledger-rail { position:sticky; top:16px; overflow:hidden; border:1px solid rgba(180,158,121,.34); background:linear-gradient(145deg,rgba(17,31,45,.98),rgba(9,18,27,.98)); box-shadow:0 12px 34px rgba(0,0,0,.19); }
+    .ledger-rail-head { padding:15px 17px 14px; border-bottom:1px solid var(--line); background:linear-gradient(110deg,rgba(8,29,42,.96),rgba(16,28,40,.94) 58%,rgba(39,25,16,.94)); }
+    .ledger-rail-head .field { margin-top:10px; }
+    .ledger-rail-body { padding:10px 10px 6px; }
+    .ledger-group-name { padding:8px 4px; color:var(--muted); font-size:.69rem; font-weight:700; letter-spacing:.19em; text-transform:uppercase; }
+    .ledger-index-btn { display:block; width:100%; margin:0 0 11px; padding:13px 14px; text-align:left; color:var(--text); border:1px solid rgba(201,211,220,.12); border-radius:4px; background:linear-gradient(145deg,rgba(35,52,67,.86),rgba(24,37,50,.86)); cursor:pointer; font:inherit; }
+    .ledger-index-btn:hover { border-color:rgba(210,173,104,.65); }
+    .ledger-index-btn:focus-visible { border-color:var(--teal); box-shadow:0 0 0 3px rgba(89,201,232,.13); outline:none; }
+    .ledger-index-btn .nm { display:block; color:#f2eee5; font-size:.84rem; font-weight:700; line-height:1.35; }
+    .ledger-index-btn .sb { display:block; margin-top:4px; color:var(--muted); font-size:.72rem; }
+    .ledger-index-btn[aria-current="true"] { border-color:var(--gold); background:linear-gradient(145deg,rgba(82,68,44,.52),rgba(34,47,57,.95)); box-shadow:inset 0 0 0 1px rgba(210,173,104,.12); }
+    .ledger-page { overflow:hidden; border:1px solid rgba(180,158,121,.34); background:linear-gradient(145deg,rgba(17,31,45,.98),rgba(9,18,27,.98)); box-shadow:0 12px 34px rgba(0,0,0,.19); }
+    .ledger-page-head { position:relative; padding:15px 17px 14px; border-bottom:1px solid var(--line); background:linear-gradient(110deg,rgba(8,29,42,.96),rgba(16,28,40,.94) 58%,rgba(39,25,16,.94)); }
+    .ledger-page-head::after { content:""; position:absolute; top:0; right:0; width:44px; height:44px; border-top:1px solid rgba(89,201,232,.25); border-right:1px solid rgba(89,201,232,.25); }
+    .ledger-recipe-name { margin:0; color:var(--gold-bright); font:600 clamp(1.35rem,3vw,1.75rem)/1.25 var(--serif); }
+    .ledger-meta { padding:12px 17px 2px; display:flex; flex-wrap:wrap; align-items:center; gap:8px; }
+    .ledger-counts { color:var(--muted); font-size:.78rem; margin-left:4px; }
+    .ledger-table { width:100%; border-collapse:collapse; margin-top:10px; }
+    .ledger-table th { text-align:left; padding:10px 17px 6px; color:var(--muted); font-size:.69rem; font-weight:700; letter-spacing:.19em; text-transform:uppercase; }
+    .ledger-table td { padding:9px 17px; border-top:1px solid rgba(190,204,215,.1); vertical-align:top; }
+    .ledger-table tbody tr:first-child td { border-top:0; }
+    .ledger-res-cell { display:flex; align-items:flex-start; gap:10px; }
+    .ledger-source { color:var(--teal); font-weight:600; font-size:.84rem; }
+    @media (max-width: 820px) {
+      .ledger-layout { grid-template-columns:minmax(0,1fr); }
+      .ledger-rail { position:static; }
+    }
 </style>
   <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
 </head>
@@ -1137,48 +1167,39 @@ footer {
           <div>
             <p class="section-kicker">Materials and recipes</p>
             <h2 id="recipesTitle">The field guide</h2>
-            <p class="section-intro">Browse by class or recipe. Select an ingredient or source for details.</p>
+            <p class="section-intro">Browse by class or recipe. Each recipe lists its ingredients and where they are gathered.</p>
           </div>
         </div>
-        <div class="filter-panel" role="search">
-          <div class="field">
-            <label for="searchInput">Search</label>
-            <div class="search-box"><span aria-hidden="true">⌕</span><input type="search" id="searchInput" placeholder="Recipe or class" autocomplete="off"></div>
-          </div>
-          <div class="field">
-            <label for="classFilter">Class</label>
-            <select id="classFilter">
-              <option value="All">All Classes</option>
-              <option>Barbarian</option><option>Bard</option><option>Cleric</option><option>Fighter</option>
-              <option>Paladin</option><option>Ranger</option><option>Rogue</option><option>Warlock</option><option>Wizard</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="recipeFilter">Recipe</label>
-            <select id="recipeFilter"><option value="All">All Recipes</option></select>
-          </div>
+        <div class="ledger-layout">
+          <nav class="ledger-rail" aria-label="Recipe index">
+            <div class="ledger-rail-head">
+              <p class="section-kicker">Recipe index</p>
+              <div class="field">
+                <label for="classFilter">Class</label>
+                <select id="classFilter">
+                  <option selected>Barbarian</option><option>Bard</option><option>Cleric</option><option>Fighter</option>
+                  <option>Paladin</option><option>Ranger</option><option>Rogue</option><option>Warlock</option><option>Wizard</option>
+                </select>
+              </div>
+            </div>
+            <div class="ledger-rail-body" id="recipeIndex"></div>
+          </nav>
+          <article class="ledger-page" aria-live="polite" aria-labelledby="recipeName">
+            <div class="ledger-page-head">
+              <p class="section-kicker" id="recipeFamily"></p>
+              <h3 class="ledger-recipe-name" id="recipeName"></h3>
+            </div>
+            <div class="ledger-meta" id="recipeMeta"></div>
+            <table class="ledger-table">
+              <thead><tr><th scope="col">Ingredient</th><th scope="col">Source</th></tr></thead>
+              <tbody id="recipeRows"></tbody>
+            </table>
+          </article>
         </div>
-        <div class="result-bar" aria-live="polite">
-          <div class="result-summary">
-            <span id="resultCount">Showing recipes</span>
-            <div id="activeFilters" class="active-filters"></div>
-          </div>
-          <button class="clear-button" id="clearFilters" type="button">Clear filters</button>
-        </div>
-        <div id="itemsGrid" class="items-grid"></div>
       </section>
       <p class="crafting-request-note">Crafting requests can be posted in the <a href="https://discord.com/channels/964991521524944956/1488094701138608199" target="_blank" rel="noopener noreferrer">#🛠️│𝙲𝚛𝚊𝚏𝚝𝚒𝚗𝚐-𝚁𝚎𝚚𝚞𝚎𝚜𝚝𝚜</a> Discord channel.</p>
     </main>
 
-    <dialog id="detailDialog" class="popup-shell detail-dialog" aria-labelledby="detailTitle" closedby="any">
-      <div class="detail-dialog-content">
-        <button id="closeDetailDialog" class="popup-close detail-dialog-close" type="button" aria-label="Close details">×</button>
-        <p id="detailKicker" class="section-kicker"></p>
-        <h2 id="detailTitle"></h2>
-        <p id="detailIntro" class="detail-intro"></p>
-        <div id="detailBody" class="detail-body"></div>
-      </div>
-    </dialog>
     <footer><div class="footer-links"><span class="footer-synergy-wordmark"><a href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">SYNERGY</a></span><span class="footer-divider" aria-hidden="true">|</span><a class="footer-alliance-link" href="https://discord.gg/eDgrKe24tu" target="_blank" rel="noopener noreferrer">WANTED Alliance</a></div><span class="footer-credit">Material research by <strong>Ivydora</strong> &amp; <strong>Asura</strong></span></footer>
   </div>
   <script>
@@ -1201,7 +1222,7 @@ footer {
     "classes": ["Bard", "Barbarian", "Fighter", "Ranger", "Rogue"],
     "item": "Shroomwood Sash",
     "ingredients": [
-      { "resource": "2x Fallen God's Ore", "location": "Master Demonweb Pits" },
+      { "resource": "2x Fallen God’s Ore", "location": "Master Demonweb Pits" },
       { "resource": "1x Abyssal Crystal", "location": "Master Demonweb Pits" },
       { "resource": "8x Perfect Marilith Hair", "location": "Master Demonweb Pits" },
       { "resource": "24x Druegarsteel Scrap", "location": "Abyssal Hunt Mod: Tricky Reversal" },
@@ -1475,7 +1496,6 @@ footer {
   }
 ];
 
-    let expandedItem = null;
 
     function parseIngredient(resource) {
       const match = resource.match(/^(\d+x)\s+(.+)$/);
@@ -1490,284 +1510,111 @@ footer {
       return "";
     }
 
-    function createMaterialEntries() {
-      const entries = new Map();
-      craftingData.forEach(recipe => {
-        const seen = new Set();
-        recipe.ingredients.forEach(ingredient => {
-          const name = parseIngredient(ingredient.resource).name;
-          const key = normalizeSearchText(name);
-          if (!entries.has(key)) entries.set(key, { key, name, recipes: [] });
-          if (!seen.has(key)) {
-            entries.get(key).recipes.push(recipe);
-            seen.add(key);
-          }
-        });
-      });
-      return Array.from(entries.values()).sort((a, b) => a.name.localeCompare(b.name));
+    const FAMILIES = [
+      ["Shroomwood", (name) => name.startsWith("Shroomwood")],
+      ["Scintillant", (name) => name.startsWith("Scintillant")],
+      ["Darklake", (name) => name.startsWith("Darklake")],
+      ["Duergar Mercenary's Steel", (name) => name.startsWith("Duergar")],
+    ];
+    const familyOf = (name) => (FAMILIES.find(([, test]) => test(name)) || ["Other"])[0];
+    const sourceCount = (recipe) => new Set(recipe.ingredients.map((ingredient) => ingredient.location)).size;
+
+    let currentRecipe = 0;
+    let currentClass = "Barbarian";
+    const classFilterEl = document.getElementById("classFilter");
+    const indexEl = document.getElementById("recipeIndex");
+
+    function visibleIndexes() {
+      return craftingData.map((recipe, i) => i).filter((i) => craftingData[i].classes.includes(currentClass));
     }
 
-    function createSourceEntries() {
-      const entries = new Map();
-      craftingData.forEach(recipe => {
-        const seenSources = new Set();
-        recipe.ingredients.forEach(ingredient => {
-          const location = ingredient.location;
-          if (!entries.has(location)) entries.set(location, { name: location, recipes: [], materials: new Map() });
-          const source = entries.get(location);
-          if (!seenSources.has(location)) {
-            source.recipes.push(recipe);
-            seenSources.add(location);
-          }
-          const name = parseIngredient(ingredient.resource).name;
-          const key = normalizeSearchText(name);
-          if (!source.materials.has(key)) source.materials.set(key, { key, name, recipes: [] });
-          const material = source.materials.get(key);
-          if (!material.recipes.includes(recipe)) material.recipes.push(recipe);
-        });
-      });
-      return Array.from(entries.values()).sort((a, b) => a.name.localeCompare(b.name));
-    }
-
-    const materialEntries = createMaterialEntries();
-    const sourceEntries = createSourceEntries();
-
-    function populateFilters() {
-      const recipeFilter = document.getElementById("recipeFilter");
-      [...craftingData].sort((a, b) => a.item.localeCompare(b.item)).forEach(recipe => {
-        const option = document.createElement("option");
-        option.value = recipe.item;
-        option.textContent = recipe.item;
-        recipeFilter.appendChild(option);
-      });
-    }
-
-    function createDetailButton(kind, value, label, className) {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = className || "detail-link";
-      button.dataset.detailKind = kind;
-      button.dataset.detailValue = value;
-      button.textContent = label;
-      return button;
-    }
-
-    function appendDetailListItem(list, kind, value, label, note) {
-      const item = document.createElement("li");
-      item.appendChild(createDetailButton(kind, value, label, "detail-list-button"));
-      if (note) {
-        const small = document.createElement("small");
-        small.textContent = note;
-        item.appendChild(small);
+    function renderIndex() {
+      indexEl.textContent = "";
+      const visible = new Set(visibleIndexes());
+      for (const [family] of FAMILIES.concat([["Other", () => true]])) {
+        const items = craftingData.map((recipe, i) => [recipe, i])
+          .filter(([recipe]) => familyOf(recipe.item) === family)
+          .filter(([, i]) => visible.has(i));
+        if (!items.length) continue;
+        const group = document.createElement("div");
+        const groupName = document.createElement("div");
+        groupName.className = "ledger-group-name";
+        groupName.textContent = family;
+        group.append(groupName);
+        for (const [recipe, i] of items) {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "ledger-index-btn";
+          button.setAttribute("aria-current", i === currentRecipe ? "true" : "false");
+          const name = document.createElement("span");
+          name.className = "nm";
+          name.textContent = recipe.item.replace(/^Duergar Mercenary's Steel /, "");
+          const sub = document.createElement("span");
+          sub.className = "sb";
+          sub.textContent = recipe.classes.join(" · ");
+          button.append(name, sub);
+          button.addEventListener("click", () => selectRecipe(i));
+          group.append(button);
+        }
+        indexEl.append(group);
       }
-      list.appendChild(item);
     }
 
-    function openDetail(kind, value) {
-      const dialog = document.getElementById("detailDialog");
-      const kicker = document.getElementById("detailKicker");
-      const title = document.getElementById("detailTitle");
-      const intro = document.getElementById("detailIntro");
-      const body = document.getElementById("detailBody");
-      body.replaceChildren();
-
-      if (kind === "material") {
-        const material = materialEntries.find(entry => entry.key === normalizeSearchText(value));
-        if (!material) return;
-        kicker.textContent = "Crafting material";
-        title.textContent = material.name;
-        const sources = sourceEntries.filter(source => source.materials.has(material.key));
-        intro.textContent = "Gathered from " + sources.length + " " + (sources.length === 1 ? "source" : "sources") + ".";
-        const sourceHeading = document.createElement("h3");
-        sourceHeading.textContent = "Gathered from";
-        body.appendChild(sourceHeading);
-        const sourceList = document.createElement("ul");
-        sourceList.className = "detail-list";
-        sources.forEach(source => appendDetailListItem(sourceList, "source", source.name, source.name, source.materials.get(material.key).recipes.length + " recipes use this material here"));
-        body.appendChild(sourceList);
-      } else if (kind === "source") {
-        const source = sourceEntries.find(entry => entry.name === value);
-        if (!source) return;
-        const materials = Array.from(source.materials.values()).sort((a, b) => a.name.localeCompare(b.name));
-        kicker.textContent = "Material source";
-        title.textContent = source.name;
-        intro.textContent = "Provides " + materials.length + " distinct " + (materials.length === 1 ? "material" : "materials") + ".";
-        const materialHeading = document.createElement("h3");
-        materialHeading.textContent = "Materials found here";
-        body.appendChild(materialHeading);
-        const materialList = document.createElement("ul");
-        materialList.className = "detail-list";
-        materials.forEach(material => appendDetailListItem(materialList, "material", material.key, material.name, "Used in " + material.recipes.length + " " + (material.recipes.length === 1 ? "recipe" : "recipes")));
-        body.appendChild(materialList);
-      } else {
-        return;
+    function selectRecipe(i) {
+      currentRecipe = i;
+      const recipe = craftingData[currentRecipe];
+      document.getElementById("recipeFamily").textContent = familyOf(recipe.item);
+      document.getElementById("recipeName").textContent = recipe.item;
+      const meta = document.getElementById("recipeMeta");
+      meta.textContent = "";
+      for (const cls of recipe.classes) {
+        const badge = document.createElement("span");
+        badge.className = "class-badge";
+        badge.textContent = cls;
+        meta.append(badge);
       }
-
-      if (!dialog.open) dialog.showModal();
-    }
-
-    function renderTable(data) {
-      const grid = document.getElementById("itemsGrid");
-      grid.replaceChildren();
-      if (!data.length) {
-        const empty = document.createElement("div");
-        empty.className = "empty-state";
-        const heading = document.createElement("strong");
-        heading.textContent = "No recipes found";
-        empty.append(heading, document.createTextNode("Try another search or clear one of the filters."));
-        grid.appendChild(empty);
-        return;
+      const counts = document.createElement("span");
+      counts.className = "ledger-counts";
+      counts.textContent = `${recipe.ingredients.length} ingredients · ${sourceCount(recipe)} sources`;
+      meta.append(counts);
+      const rows = document.getElementById("recipeRows");
+      rows.textContent = "";
+      for (const ingredient of recipe.ingredients) {
+        const parsed = parseIngredient(ingredient.resource);
+        const tr = document.createElement("tr");
+        const resCell = document.createElement("td");
+        const cell = document.createElement("div");
+        cell.className = "ledger-res-cell";
+        if (parsed.qty) {
+          const qty = document.createElement("span");
+          qty.className = "qty";
+          qty.textContent = parsed.qty;
+          cell.append(qty);
+        }
+        const name = document.createElement("span");
+        name.className = "name " + getColorClass(parsed.name);
+        name.textContent = parsed.name;
+        cell.append(name);
+        resCell.append(cell);
+        const locCell = document.createElement("td");
+        const loc = document.createElement("span");
+        loc.className = "ledger-source";
+        loc.textContent = ingredient.location;
+        locCell.append(loc);
+        tr.append(resCell, locCell);
+        rows.append(tr);
       }
-
-      data.forEach(entry => {
-        const card = document.createElement("article");
-        card.className = "item-card" + (expandedItem === entry.item ? " expanded" : "");
-        const header = document.createElement("header");
-        header.className = "card-header";
-        const badges = document.createElement("div");
-        badges.className = "badge-container";
-        entry.classes.forEach(className => {
-          const badge = document.createElement("span");
-          badge.className = "class-badge";
-          badge.textContent = className;
-          badges.appendChild(badge);
-        });
-        const heading = document.createElement("h3");
-        heading.className = "item-title";
-        heading.textContent = entry.item;
-        const summary = document.createElement("div");
-        summary.className = "card-summary";
-        const summaryText = document.createElement("span");
-        const sourceCount = new Set(entry.ingredients.map(ingredient => ingredient.location)).size;
-        summaryText.textContent = entry.ingredients.length + " materials · " + sourceCount + (sourceCount === 1 ? " source" : " sources");
-        const chevron = document.createElement("span");
-        chevron.className = "card-chevron";
-        chevron.setAttribute("aria-hidden", "true");
-        chevron.textContent = "▸";
-        summary.append(summaryText, chevron);
-        header.append(badges, heading, summary);
-        header.tabIndex = 0;
-        header.setAttribute("role", "button");
-        header.setAttribute("aria-expanded", expandedItem === entry.item ? "true" : "false");
-        const toggleCard = () => { expandedItem = expandedItem === entry.item ? null : entry.item; filterData(); };
-        header.addEventListener("click", toggleCard);
-        header.addEventListener("keydown", event => {
-          if (event.key === "Enter" || event.key === " ") { event.preventDefault(); toggleCard(); }
-        });
-
-        const cardBody = document.createElement("div");
-        cardBody.className = "card-body";
-        entry.ingredients.forEach(ingredient => {
-          const parsed = parseIngredient(ingredient.resource);
-          const row = document.createElement("div");
-          row.className = "ingredient-row";
-
-          const quantity = document.createElement("span");
-          quantity.className = "qty";
-          quantity.textContent = parsed.qty;
-          const info = document.createElement("div");
-          info.className = "ingredient-info";
-          info.appendChild(createDetailButton("material", parsed.name, parsed.name, "name detail-link " + getColorClass(parsed.name)));
-
-          const location = document.createElement("div");
-          location.className = "location-text";
-          location.appendChild(document.createTextNode("Source: "));
-          location.appendChild(createDetailButton("source", ingredient.location, ingredient.location, "source-link detail-link"));
-          info.appendChild(location);
-          row.append(quantity, info);
-          cardBody.appendChild(row);
-        });
-
-        card.append(header, cardBody);
-        grid.appendChild(card);
-      });
+      renderIndex();
     }
 
-    function renderActiveFilters() {
-      const container = document.getElementById("activeFilters");
-      container.replaceChildren();
-      const values = [
-        ["search", document.getElementById("searchInput").value.trim(), "Search"],
-        ["class", document.getElementById("classFilter").value, "Class"],
-        ["recipe", document.getElementById("recipeFilter").value, "Recipe"]
-      ];
-      values.forEach(([key, value, label]) => {
-        if (!value || value === "All") return;
-        const chip = document.createElement("button");
-        chip.type = "button";
-        chip.className = "filter-chip";
-        chip.dataset.clearFilter = key;
-        const display = value;
-        chip.textContent = label + ": " + display + " ×";
-        container.appendChild(chip);
-      });
-    }
+    classFilterEl.addEventListener("change", () => {
+      currentClass = classFilterEl.value;
+      const visible = visibleIndexes();
+      if (visible.length && !visible.includes(currentRecipe)) selectRecipe(visible[0]);
+      else renderIndex();
+    });
 
-    function normalizeSearchText(value) {
-      return value.toLowerCase().replace(/[\u2018\u2019\u02bc\uff07]/g, "'");
-    }
-
-    function filterData() {
-      const searchVal = normalizeSearchText(document.getElementById("searchInput").value.trim());
-      const classVal = document.getElementById("classFilter").value;
-      const recipeVal = document.getElementById("recipeFilter").value;
-      const filtered = craftingData.filter(recipe => {
-        const matchesClass = classVal === "All" || recipe.classes.includes(classVal);
-        const matchesRecipe = recipeVal === "All" || recipe.item === recipeVal;
-        const searchableText = normalizeSearchText([recipe.item, ...recipe.classes].join(" "));
-        return matchesClass && matchesRecipe && searchableText.includes(searchVal);
-      });
-      renderTable(filtered);
-      document.getElementById("resultCount").textContent = filtered.length + " " + (filtered.length === 1 ? "recipe" : "recipes") + " found";
-      renderActiveFilters();
-    }
-    document.getElementById("searchInput").addEventListener("input", filterData);
-    document.getElementById("classFilter").addEventListener("change", filterData);
-    document.getElementById("recipeFilter").addEventListener("change", event => {
-      expandedItem = event.target.value === "All" ? null : event.target.value;
-      filterData();
-    });
-    document.getElementById("activeFilters").addEventListener("click", event => {
-      const chip = event.target.closest("[data-clear-filter]");
-      if (!chip) return;
-      const key = chip.dataset.clearFilter;
-      if (key === "search") document.getElementById("searchInput").value = "";
-      if (key === "class") document.getElementById("classFilter").value = "All";
-      if (key === "recipe") { document.getElementById("recipeFilter").value = "All"; expandedItem = null; }
-      filterData();
-    });
-    document.getElementById("clearFilters").addEventListener("click", () => {
-      document.getElementById("searchInput").value = "";
-      document.getElementById("classFilter").value = "All";
-      document.getElementById("recipeFilter").value = "All";
-      expandedItem = null;
-      filterData();
-    });
-    document.getElementById("itemsGrid").addEventListener("click", event => {
-      const button = event.target.closest("[data-detail-kind]");
-      if (button) openDetail(button.dataset.detailKind, button.dataset.detailValue);
-    });
-    document.getElementById("detailBody").addEventListener("click", event => {
-      const button = event.target.closest("[data-detail-kind]");
-      if (button) openDetail(button.dataset.detailKind, button.dataset.detailValue);
-    });
-    document.getElementById("closeDetailDialog").addEventListener("click", () => document.getElementById("detailDialog").close());
-    // The detail dialog dismisses on backdrop click natively via closedby="any".
-    // Safari does not support closedby yet, so only there install a fallback that
-    // closes when a press starts and ends outside the dialog box.
-    if (!("closedBy" in HTMLDialogElement.prototype)) {
-      const detailDialog = document.getElementById("detailDialog");
-      const pressedOutside = (event) => {
-        const rect = detailDialog.getBoundingClientRect();
-        return event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom;
-      };
-      let downOutside = false;
-      detailDialog.addEventListener("pointerdown", (event) => { downOutside = pressedOutside(event); });
-      detailDialog.addEventListener("pointerup", (event) => { if (downOutside && pressedOutside(event)) detailDialog.close(); });
-    }
-
-    populateFilters();
-    filterData();
+    selectRecipe(visibleIndexes()[0]);
   </script>
   <!-- Speculative loading (Modern Web Guidance): prefetch the site's pages eagerly and prerender them on hover intent, so menu clicks feel instant. Browsers without speculation rules support ignore this. -->
   <script type="speculationrules">
