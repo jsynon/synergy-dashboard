@@ -1921,4 +1921,3 @@ dialog.popup-shell::backdrop, .gallery-lightbox::backdrop {
 .ticker-item { white-space:nowrap; font-size:.84rem; font-weight:600; color:#d9edf6; letter-spacing:.01em; }
 .ticker-item::after { content:"✦"; margin:0 22px; color:#d49a42; font-size:.68rem; }
 @keyframes guild-ticker-scroll { to { transform:translateX(-50%); } }
-@media (prefers-reduced-motion: reduce) { .ticker-track { animation:none; } }
