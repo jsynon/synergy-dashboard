@@ -131,6 +131,39 @@
         });
         items.push(`Next up: ${name} — ${label}`);
       }
+      // Ending soon: events already running whose end date is the
+      // nearest one, today through the next two days.
+      const soon = new Date();
+      soon.setDate(soon.getDate() + 2);
+      const soonKey = soon.toLocaleDateString("en-CA");
+      const endGroups = new Map();
+      const addEnding = (key, name) => {
+        if (!endGroups.has(key)) endGroups.set(key, []);
+        endGroups.get(key).push(name);
+      };
+      (manualEvents || []).forEach((event) => {
+        const endDate = event.endDate || event.startDate;
+        if (event.startDate && event.startDate <= todayKey && endDate && endDate >= todayKey && endDate <= soonKey) {
+          addEnding(endDate, event.name);
+        }
+      });
+      (discordEvents || []).forEach((event) => {
+        const start = tickerDate(event.startTime);
+        const end = tickerDate(event.endTime || event.startTime);
+        if (start && end && start.valueOf() <= Date.now() && end.valueOf() >= Date.now() - 60000 && end.valueOf() <= Date.now() + 2 * 24 * 60 * 60 * 1000) {
+          addEnding(end.toLocaleDateString("en-CA"), event.name);
+        }
+      });
+      if (endGroups.size) {
+        const key = [...endGroups.keys()].sort()[0];
+        const names = endGroups.get(key).join(" · ");
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        let when = new Date(`${key}T12:00:00`).toLocaleDateString("en-US", { weekday: "long" });
+        if (key === todayKey) when = "today";
+        else if (key === tomorrow.toLocaleDateString("en-CA")) when = "tomorrow";
+        items.push(`Ending ${when}: ${names}`);
+      }
       let anniversary = null;
       const today = new Date(generatedAt.getFullYear(), generatedAt.getMonth(), generatedAt.getDate());
       Object.entries(joinDates).forEach(([account, dateValue]) => {
