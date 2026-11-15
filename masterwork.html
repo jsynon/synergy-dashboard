@@ -24,6 +24,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&family=MedievalSharp&display=swap" rel="stylesheet">
+  <script src="ticker.js?v=20261115" defer></script>
   <style>
     :root {
       color-scheme: dark;
@@ -1150,6 +1151,17 @@ footer {
       .ledger-bar { grid-template-columns:minmax(0,1fr); }
       .ledger-bar-title { border-left:0; border-top:1px solid var(--line); }
     }
+
+/* Guild ticker: the shared strip under the main menu (rules mirror
+   styles.css; items are computed by ticker.js). */
+.guild-ticker { overflow:hidden; border-top:1px solid rgba(216,168,78,.34); border-bottom:1px solid rgba(216,168,78,.34); background:#071925; }
+.guild-ticker[hidden] { display:none; }
+.ticker-track { display:flex; width:max-content; animation:guild-ticker-scroll 62s linear infinite; }
+.guild-ticker:hover .ticker-track, .guild-ticker:focus-within .ticker-track { animation-play-state:paused; }
+.ticker-set { display:flex; align-items:center; padding:8px 0 9px; }
+.ticker-item { white-space:nowrap; font-size:.84rem; font-weight:600; color:#d9edf6; letter-spacing:.01em; }
+.ticker-item::after { content:"✦"; margin:0 22px; color:#d49a42; font-size:.68rem; }
+@keyframes guild-ticker-scroll { to { transform:translateX(-50%); } }
 </style>
   <link rel="icon" type="image/png" sizes="128x128" href="favicon.png">
 </head>
@@ -1157,6 +1169,10 @@ footer {
   <div class="page-shell">
     <div class="brand-banner" role="img" aria-label="Synergy"><img class="brand-banner-background" src="assets/synergy-header-integrated.webp" alt=""></div>
     <header class="masthead"><nav aria-label="Main menu"><a href="index.html">News</a><a href="roster.html">Guild Roster</a><a href="masterwork.html">Masterwork</a><a href="guild-info.html">Guild Info</a><a href="screenshots.html">Screenshots</a><a class="discord-link" href="https://discord.gg/eMzcD6wJzh" target="_blank" rel="noopener noreferrer">Discord <span aria-hidden="true">↗</span></a></nav></header>
+
+    <div class="guild-ticker" id="guild-ticker" aria-label="Guild highlights" hidden>
+      <div class="ticker-track" id="ticker-track"></div>
+    </div>
 
     <main>
       <section class="hero" aria-labelledby="forge-title">
