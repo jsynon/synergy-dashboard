@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T23:43:35+00:00",
+  "generatedAt": "2026-11-15T23:52:25+00:00",
   "accountCount": 148,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -10996,6 +10996,159 @@
     }
   ],
   "bankEvents": [
+    {
+      "date": "2026-11-15T18:33:27",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Events",
+      "item": "Genie's Gift",
+      "amount": 68
+    },
+    {
+      "date": "2026-11-15T18:32:56",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Events",
+      "item": "Preservation Ward",
+      "amount": 198
+    },
+    {
+      "date": "2026-11-15T18:30:20",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Heavy Twilight Nightmare",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-15T18:30:20",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Heavy Twilight Nightmare",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-15T18:30:08",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Gilded Giant Spider",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-15T18:29:28",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Sealed Wisp",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-15T18:29:28",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Artifacts",
+      "item": "Sealed Wisp",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-15T18:29:27",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Sealed Wisp",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-15T18:29:27",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Artifacts",
+      "item": "Sealed Wisp",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-15T18:29:25",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Bigclaw Pincer",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-15T18:29:25",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Artifacts",
+      "item": "Bigclaw Pincer",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-15T18:29:23",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Mask of the Hellbringers",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-15T18:29:23",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Artifacts",
+      "item": "Mask of the Hellbringers",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-15T17:40:44",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Sabatons of the Hollow",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-15T17:39:54",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Other",
+      "item": "Copper",
+      "amount": 500000
+    },
+    {
+      "date": "2026-11-15T17:05:01",
+      "player": "Shadowheart",
+      "account": "@xiaoshungaming#9707",
+      "action": "withdraw",
+      "category": "Other",
+      "item": "Copper",
+      "amount": 400000
+    },
+    {
+      "date": "2026-11-15T16:32:26",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Greenscale Bowman",
+      "amount": 1
+    },
     {
       "date": "2026-11-15T14:06:07",
       "player": "Gotnoname",
