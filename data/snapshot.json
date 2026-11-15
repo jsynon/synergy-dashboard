@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T23:35:59+00:00",
+  "generatedAt": "2026-11-15T23:43:35+00:00",
   "accountCount": 148,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -1229,8 +1229,8 @@
       "comment": "",
       "joinDate": "2024-06-12T12:09:06",
       "originalJoinDate": "2024-06-12T12:09:06",
-      "lastOnline": "2026-11-15T15:30:19",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1383,7 +1383,7 @@
       "comment": "crops off",
       "joinDate": "2026-02-01T16:51:52",
       "originalJoinDate": "2026-02-01T16:51:52",
-      "lastOnline": "2026-11-15T15:37:36",
+      "lastOnline": "2026-11-15T18:40:54",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2349,8 +2349,8 @@
       "comment": "",
       "joinDate": "2025-06-20T13:58:03",
       "originalJoinDate": "2025-06-20T13:58:03",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-15T18:40:32",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -3217,8 +3217,8 @@
       "comment": "",
       "joinDate": "2026-07-14T20:02:24",
       "originalJoinDate": "2024-06-12T12:09:06",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-15T18:40:16",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -4253,7 +4253,7 @@
       "comment": "",
       "joinDate": "2026-04-26T20:41:12",
       "originalJoinDate": "2024-06-12T12:09:06",
-      "lastOnline": "2026-11-15T15:32:03",
+      "lastOnline": "2026-11-15T18:41:03",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5051,8 +5051,8 @@
       "comment": "",
       "joinDate": "2026-11-07T18:17:39",
       "originalJoinDate": "2026-06-14T22:53:46",
-      "lastOnline": "2026-11-15T18:27:16",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -5177,8 +5177,8 @@
       "comment": "",
       "joinDate": "2026-09-05T12:13:15",
       "originalJoinDate": "2026-09-05T12:13:15",
-      "lastOnline": "2026-11-14T19:19:22",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
