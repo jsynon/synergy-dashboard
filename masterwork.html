@@ -522,7 +522,7 @@ body {
 }
 .hero-copy,.hero-subtitle { color:#d9edf6; }
 .panel,.search-panel,.roster-panel,.recent-panel,.promotions-panel,.inactivity-panel,
-.route-section,.filter-panel,.item-card,.detail-panel,.route-card {
+.route-section,.filter-panel,.item-card,.detail-panel,.route-card,.ledger-card {
   border:1px solid rgba(216,168,78,.76);
   border-radius:0;
   outline:1px solid rgba(50,197,223,.24);
@@ -633,8 +633,8 @@ footer {
 }
 .brand-banner-copy small::after { transform:scaleX(-1); }
 /* Soft scroll-style frames with rounded corners and a fine double gold rule. */
-.panel,.item-card,.route-section,.filter-panel,.detail-panel,.search-panel { position:relative; }
-.panel::before,.item-card::before,.route-section::before,.filter-panel::before,.detail-panel::before,.search-panel::before {
+.panel,.item-card,.route-section,.filter-panel,.detail-panel,.search-panel,.ledger-card { position:relative; }
+.panel::before,.item-card::before,.route-section::before,.filter-panel::before,.detail-panel::before,.search-panel::before,.ledger-card::before {
   content:"";
   position:absolute;
   inset:2px;
@@ -744,11 +744,11 @@ footer {
 
     /* Round the actual outer panels so their outlines and inner headers share soft corners. */
     .panel,.search-panel,.roster-panel,.recent-panel,.promotions-panel,.inactivity-panel,
-    .route-section,.filter-panel,.item-card,.detail-panel,.route-card,.hero {
+    .route-section,.filter-panel,.item-card,.detail-panel,.route-card,.hero,.ledger-card {
       border-radius:12px;
       overflow:hidden;
     }
-    .panel::before,.item-card::before,.route-section::before,.filter-panel::before,.detail-panel::before,.search-panel::before {
+    .panel::before,.item-card::before,.route-section::before,.filter-panel::before,.detail-panel::before,.search-panel::before,.ledger-card::before {
       border-radius:9px;
     }
     .hero::before,.hero::after { border-radius:4px; }
@@ -1046,7 +1046,7 @@ footer {
   .masthead { border-color:rgba(216,168,78,.82); }
 }
 .hero { border:1px solid rgba(216,168,78,.82); }
-.item-card { border-color:rgba(216,168,78,.27); }
+.item-card,.ledger-card { border-color:rgba(216,168,78,.27); }
 /* Corner brackets removed: the 44px gold corner tick defined for card and
    panel headings is retired site-wide - the plain double frame reads cleaner
    without it. No Masterwork element currently uses these heading styles, so
@@ -1119,8 +1119,7 @@ footer {
     .item-card { content-visibility:auto; contain-intrinsic-size:auto 190px; }
 
     /* Crafting Ledger — single-card index + page layout */
-    .ledger-card { overflow:hidden; border:1px solid rgba(180,158,121,.34); background:linear-gradient(145deg,rgba(17,31,45,.98),rgba(9,18,27,.98)); box-shadow:0 12px 34px rgba(0,0,0,.19); }
-    .ledger-bar { position:relative; display:grid; grid-template-columns:300px minmax(0,1fr); border-bottom:1px solid var(--line); background:linear-gradient(110deg,rgba(8,29,42,.96),rgba(16,28,40,.94) 58%,rgba(39,25,16,.94)); }
+    .ledger-bar { position:relative; display:grid; grid-template-columns:300px minmax(0,1fr); border-bottom:1px solid rgba(50,197,223,.46); background:linear-gradient(100deg,rgba(4,35,51,.98),rgba(6,30,45,.95) 56%,rgba(47,29,17,.94)); }
     .ledger-bar-class { padding:15px 10px 14px; }
     .ledger-bar-class select { width:100%; }
     .ledger-bar-title { min-width:0; padding:15px 17px 14px; border-left:1px solid var(--line); }
