@@ -271,8 +271,12 @@
 
       // Activity, Bank, and Promotions take the Member Directory panel's
       // exact height: measure the directory panel (it re-renders as the
-      // snapshot loads and as its filters change) and set that height on
-      // the other three; their lists flex to fill it and scroll inside.
+      // snapshot loads) and set that height on the other three; their
+      // lists flex to fill it and scroll inside. The reference is the
+      // directory's UNFILTERED height: filtering shrinks the directory
+      // itself, which is fine, but the other panels must not follow it
+      // down, so syncs are skipped while any directory filter is active
+      // and resume when the filters clear.
       // (A minimum height is not enough: with an indefinite flex height,
       // the lists size to their full content instead of scrolling.)
       const directoryPanel = panels.find((panel) => panel.dataset.panel === "directory");
@@ -290,7 +294,18 @@
           directoryPanel.style.visibility = previousVisibility;
           return height;
         };
+        const directoryFiltered = () => {
+          const search = document.getElementById("search");
+          const rank = document.getElementById("rank-facets");
+          const classFilter = document.getElementById("class-facets");
+          return Boolean(
+            (search && search.value.trim()) ||
+            (rank && rank.value) ||
+            (classFilter && classFilter.value)
+          );
+        };
         const syncPanelHeights = () => {
+          if (directoryFiltered()) return;
           const height = measureDirectory();
           if (!height) return;
           equalHeightPanels.forEach((panel) => { panel.style.height = `${height}px`; });
