@@ -1122,7 +1122,6 @@ footer {
     .ledger-layout { display:grid; grid-template-columns:300px minmax(0,1fr); gap:18px; align-items:start; }
     .ledger-rail { position:sticky; top:16px; overflow:hidden; border:1px solid rgba(180,158,121,.34); background:linear-gradient(145deg,rgba(17,31,45,.98),rgba(9,18,27,.98)); box-shadow:0 12px 34px rgba(0,0,0,.19); }
     .ledger-rail-head { padding:15px 17px 14px; border-bottom:1px solid var(--line); background:linear-gradient(110deg,rgba(8,29,42,.96),rgba(16,28,40,.94) 58%,rgba(39,25,16,.94)); }
-    .ledger-rail-head .field { margin-top:10px; }
     .ledger-rail-body { padding:10px 10px 6px; }
     .ledger-group-name { padding:8px 4px; color:var(--muted); font-size:.69rem; font-weight:700; letter-spacing:.19em; text-transform:uppercase; }
     .ledger-index-btn { display:block; width:100%; margin:0 0 11px; padding:13px 14px; text-align:left; color:var(--text); border:1px solid rgba(201,211,220,.12); border-radius:4px; background:linear-gradient(145deg,rgba(35,52,67,.86),rgba(24,37,50,.86)); cursor:pointer; font:inherit; }
@@ -1166,14 +1165,13 @@ footer {
         <div class="section-heading">
           <div>
             <p class="section-kicker">Materials and recipes</p>
-            <h2 id="recipesTitle">The field guide</h2>
+            <h2 id="recipesTitle">Recipe index</h2>
             <p class="section-intro">Browse by class or recipe. Each recipe lists its ingredients and where they are gathered.</p>
           </div>
         </div>
         <div class="ledger-layout">
           <nav class="ledger-rail" aria-label="Recipe index">
             <div class="ledger-rail-head">
-              <p class="section-kicker">Recipe index</p>
               <div class="field">
                 <label for="classFilter">Class</label>
                 <select id="classFilter">
