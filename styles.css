@@ -1909,3 +1909,16 @@ dialog.popup-shell::backdrop, .gallery-lightbox::backdrop {
   .score-panel .panel-heading { padding:14px 16px 11px; }
   .score-panel .score-list { padding:6px 16px 4px; margin-bottom:8px; }
 }
+
+/* Guild ticker (news page): a scrolling strip of guild highlights under
+   the Neverwinter News card. Items are computed by news.js from the
+   roster snapshot, the screenshots feed, and the events files. */
+.guild-ticker { overflow:hidden; margin:2px 0 0; border:1px solid rgba(216,168,78,.34); border-radius:12px; background:#071925; }
+.guild-ticker[hidden] { display:none; }
+.ticker-track { display:flex; width:max-content; animation:guild-ticker-scroll 62s linear infinite; }
+.guild-ticker:hover .ticker-track, .guild-ticker:focus-within .ticker-track { animation-play-state:paused; }
+.ticker-set { display:flex; align-items:center; padding:8px 0 9px; }
+.ticker-item { white-space:nowrap; font-size:.84rem; font-weight:600; color:#d9edf6; letter-spacing:.01em; }
+.ticker-item::after { content:"✦"; margin:0 22px; color:#d49a42; font-size:.68rem; }
+@keyframes guild-ticker-scroll { to { transform:translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .ticker-track { animation:none; } }
