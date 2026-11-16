@@ -88,6 +88,9 @@ function buildBenefactor(snapshot) {
     if (event.action !== "deposit") continue;
     const key = String(event.account || "").trim().toLowerCase();
     if (!key) continue;
+    // The guild leader stocks the bank with donated funds, so his
+    // account does not compete on the bank boards.
+    if (key === "@zorlonix") continue;
     if (!depositsByAccount.has(key)) {
       depositsByAccount.set(key, { account: event.account, count: 0, players: new Map(), first: null });
     }
@@ -128,6 +131,7 @@ function buildHighRoller(snapshot) {
     if (String(event.item || "").trim().toLowerCase() !== "copper") continue;
     const key = String(event.account || "").trim().toLowerCase();
     if (!key) continue;
+    if (key === "@zorlonix") continue;
     const amount = Number(event.amount) || 0;
     if (amount <= 0) continue;
     if (!totalsByAccount.has(key)) {
