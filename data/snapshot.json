@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T13:15:14+00:00",
+  "generatedAt": "2026-11-16T14:40:12+00:00",
   "accountCount": 148,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -194,7 +194,7 @@
       "comment": "",
       "joinDate": "2025-04-18T10:30:28",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-15T13:11:31",
+      "lastOnline": "2026-11-16T08:39:54",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -446,7 +446,7 @@
       "comment": "",
       "joinDate": "2025-01-20T07:32:12",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-15T18:08:29",
+      "lastOnline": "2026-11-16T09:36:03",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1132,7 +1132,7 @@
       "comment": "-AFK-",
       "joinDate": "2025-09-23T05:13:34",
       "originalJoinDate": "2025-09-23T05:13:34",
-      "lastOnline": "2026-11-16T07:50:44",
+      "lastOnline": "2026-11-16T09:26:59",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1230,8 +1230,8 @@
       "comment": "",
       "joinDate": "2024-06-12T12:09:06",
       "originalJoinDate": "2024-06-12T12:09:06",
-      "lastOnline": "2026-11-15T21:56:06",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1328,7 +1328,7 @@
       "comment": "",
       "joinDate": "2025-05-03T13:52:32",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-15T13:15:29",
+      "lastOnline": "2026-11-16T08:41:37",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1356,7 +1356,7 @@
       "comment": "",
       "joinDate": "2025-05-03T13:53:49",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-15T13:12:28",
+      "lastOnline": "2026-11-16T08:41:04",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1370,7 +1370,7 @@
       "comment": "123k",
       "joinDate": "2026-07-31T21:15:45",
       "originalJoinDate": "2026-07-31T21:15:45",
-      "lastOnline": "2026-11-15T15:28:48",
+      "lastOnline": "2026-11-16T08:55:35",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1440,15 +1440,15 @@
       "comment": "",
       "joinDate": "2025-08-05T07:42:37",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-15T13:15:59",
+      "lastOnline": "2026-11-16T08:44:17",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
       "name": "Sir Perceval",
       "account": "@polo910#9172",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Paladin",
       "level": "20",
       "comment": "",
@@ -1517,8 +1517,8 @@
     {
       "name": "GORO",
       "account": "@polo910#9172",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Fighter",
       "level": "20",
       "comment": "MJS/ASH/MSOD tank/dps",
@@ -1720,7 +1720,7 @@
       "comment": "dps 4 anything",
       "joinDate": "2026-03-31T11:24:57",
       "originalJoinDate": "2026-03-31T11:24:57",
-      "lastOnline": "2026-11-15T07:38:05",
+      "lastOnline": "2026-11-16T09:23:40",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1748,7 +1748,7 @@
       "comment": "H or T +AJS/MJS/MDWP/ 1st Boss Farms",
       "joinDate": "2026-10-10T17:36:11",
       "originalJoinDate": "2026-10-10T17:36:11",
-      "lastOnline": "2026-11-16T08:09:47",
+      "lastOnline": "2026-11-16T09:30:43",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1776,7 +1776,7 @@
       "comment": "",
       "joinDate": "2025-05-03T10:53:02",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-15T13:12:00",
+      "lastOnline": "2026-11-16T08:40:29",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2098,8 +2098,8 @@
       "comment": "",
       "joinDate": "2026-02-14T17:25:59",
       "originalJoinDate": "2026-02-14T17:25:59",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-16T09:08:33",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2294,8 +2294,8 @@
       "comment": "+ ASH",
       "joinDate": "2026-11-03T12:56:28",
       "originalJoinDate": "2026-11-03T12:52:27",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-16T08:21:52",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2462,8 +2462,8 @@
       "comment": "heal on demand number 2 :) +mjs",
       "joinDate": "2026-06-06T16:31:14",
       "originalJoinDate": "2026-04-25T21:27:06",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-16T08:22:01",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2784,8 +2784,8 @@
       "comment": "+MSH",
       "joinDate": "2026-11-03T12:57:16",
       "originalJoinDate": "2026-11-03T12:52:27",
-      "lastOnline": "2026-11-16T07:55:28",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2854,8 +2854,8 @@
       "comment": "Your guild clown/troll",
       "joinDate": "2026-06-09T12:05:29",
       "originalJoinDate": "2026-06-09T12:05:29",
-      "lastOnline": "2026-11-15T22:46:59",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -3078,7 +3078,7 @@
       "comment": "",
       "joinDate": "2025-12-18T14:42:37",
       "originalJoinDate": "2025-12-18T14:42:37",
-      "lastOnline": "2026-11-16T07:08:25",
+      "lastOnline": "2026-11-16T09:33:09",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3190,7 +3190,7 @@
       "comment": "",
       "joinDate": "2026-07-14T20:02:24",
       "originalJoinDate": "2024-06-12T12:09:06",
-      "lastOnline": "2026-11-15T20:24:55",
+      "lastOnline": "2026-11-16T08:17:42",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3456,7 +3456,7 @@
       "comment": "",
       "joinDate": "2025-12-18T08:55:07",
       "originalJoinDate": "2025-09-23T05:13:34",
-      "lastOnline": "2026-11-16T07:33:24",
+      "lastOnline": "2026-11-16T09:26:39",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3862,8 +3862,8 @@
       "comment": "DPS MJS",
       "joinDate": "2026-05-24T12:03:19",
       "originalJoinDate": "2026-05-24T12:03:19",
-      "lastOnline": "2026-11-14T03:51:37",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -3957,11 +3957,11 @@
       "rankOrder": 3,
       "class": "Wizard",
       "level": "20",
-      "comment": "+ AJS",
+      "comment": "+MJS",
       "joinDate": "2026-05-30T20:24:59",
       "originalJoinDate": "2026-05-30T20:24:59",
-      "lastOnline": "2026-11-16T06:51:26",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -4226,8 +4226,8 @@
       "comment": "",
       "joinDate": "2026-04-26T20:41:12",
       "originalJoinDate": "2024-06-12T12:09:06",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-16T08:16:25",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -4338,8 +4338,8 @@
       "comment": "",
       "joinDate": "2026-04-21T14:05:34",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": "2026-11-15T13:08:08",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -4618,7 +4618,7 @@
       "comment": "",
       "joinDate": "2026-10-22T19:52:33",
       "originalJoinDate": "2026-06-04T15:29:23",
-      "lastOnline": "2026-11-15T23:18:57",
+      "lastOnline": "2026-11-16T09:38:02",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4639,8 +4639,8 @@
     {
       "name": "Hammer of Justice",
       "account": "@polo910#9172",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Cleric",
       "level": "20",
       "comment": "",
@@ -5066,7 +5066,7 @@
       "comment": "",
       "joinDate": "2026-10-14T03:07:46",
       "originalJoinDate": "2026-10-14T03:07:46",
-      "lastOnline": "2026-11-15T17:43:33",
+      "lastOnline": "2026-11-16T09:38:13",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5206,7 +5206,7 @@
       "comment": "",
       "joinDate": "2026-09-12T00:12:12",
       "originalJoinDate": "2026-06-04T15:29:23",
-      "lastOnline": "2026-11-15T23:19:47",
+      "lastOnline": "2026-11-16T09:38:46",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5262,8 +5262,8 @@
       "comment": "",
       "joinDate": "2026-10-13T21:57:23",
       "originalJoinDate": "2026-10-13T21:57:23",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-16T09:08:04",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -5332,7 +5332,7 @@
       "comment": "",
       "joinDate": "2026-09-19T23:22:05",
       "originalJoinDate": "2026-06-04T15:29:23",
-      "lastOnline": "2026-11-15T23:20:56",
+      "lastOnline": "2026-11-16T09:39:05",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5486,12 +5486,27 @@
       "comment": "",
       "joinDate": "2026-11-07T07:07:17",
       "originalJoinDate": "2026-10-14T03:07:46",
-      "lastOnline": "2026-11-16T08:09:24",
+      "lastOnline": "2026-11-16T09:37:35",
       "onlineNow": false,
       "leaveOfAbsence": false
     }
   ],
   "events": [
+    {
+      "date": "2026-11-16T09:39:48",
+      "kind": "rank",
+      "text": "GORO@polo910#9172's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-11-16T09:39:45",
+      "kind": "rank",
+      "text": "Hammer of Justice@polo910#9172's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-11-16T09:39:40",
+      "kind": "rank",
+      "text": "Sir Perceval@polo910#9172's guild rank is now Veteran"
+    },
     {
       "date": "2026-11-15T22:41:04",
       "kind": "exit",
@@ -10989,6 +11004,33 @@
     }
   ],
   "bankEvents": [
+    {
+      "date": "2026-11-16T09:27:50",
+      "player": "Silverbead",
+      "account": "@n00b#52235",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Bottle of Basilisk Blue Dye",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-16T09:27:01",
+      "player": "Silverbead",
+      "account": "@n00b#52235",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Bottle of Basilisk Blue Dye",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-16T09:26:16",
+      "player": "Silverbead",
+      "account": "@n00b#52235",
+      "action": "withdraw",
+      "category": "Other",
+      "item": "Copper",
+      "amount": 300000
+    },
     {
       "date": "2026-11-16T07:53:18",
       "player": "Elanor",
