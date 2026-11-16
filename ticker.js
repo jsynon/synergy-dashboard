@@ -123,23 +123,55 @@
         items.push(`High Roller: ${displayName(highRoller[0])} — ${formatCount(highRoller[1])} gold deposited`);
       }
       const todayKey = new Date().toLocaleDateString("en-CA");
+      // "Next up" is the soonest event that has not started yet. A
+      // manual event starts at 10:30 AM Eastern on its start date —
+      // the calendar's rule — except an event carrying an endTime
+      // (the Mysterious Merchant), which starts at that time of day,
+      // its seven days running from when the structure was built.
+      // easternInstant mirrors the calendar's helper in news.js.
+      const easternInstant = (dateValue, hour, minute) => {
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(dateValue || "")) return null;
+        const [year, month, day] = dateValue.split("-").map(Number);
+        const target = Date.UTC(year, month - 1, day, hour, minute);
+        let guess = target;
+        for (let pass = 0; pass < 2; pass += 1) {
+          const parts = new Intl.DateTimeFormat("en-US", {
+            year: "numeric",
+            month: "2-digit",
+            day: "2-digit",
+            hour: "2-digit",
+            minute: "2-digit",
+            second: "2-digit",
+            hourCycle: "h23",
+            timeZone: "America/New_York"
+          }).formatToParts(new Date(guess));
+          const part = (type) => Number(parts.find((item) => item.type === type)?.value);
+          guess += target - Date.UTC(part("year"), part("month") - 1, part("day"), part("hour"), part("minute"), part("second"));
+        }
+        return new Date(guess);
+      };
       const upcoming = [];
       (manualEvents || []).forEach((event) => {
-        if (event.startDate && event.startDate >= todayKey) upcoming.push([event.startDate, event.name]);
+        if (!event.startDate) return;
+        const override = /^(\d{1,2}):(\d{2})$/.exec(event.endTime || "");
+        const valid = override && Number(override[1]) <= 23 && Number(override[2]) <= 59;
+        const start = valid
+          ? easternInstant(event.startDate, Number(override[1]), Number(override[2]))
+          : easternInstant(event.startDate, 10, 30);
+        if (start && start.getTime() > Date.now()) upcoming.push([start, event.name]);
       });
       (discordEvents || []).forEach((event) => {
         const start = tickerDate(event.startTime);
-        if (start && start.valueOf() >= Date.now() - 24 * 60 * 60 * 1000) {
-          upcoming.push([start.toLocaleDateString("en-CA"), event.name]);
-        }
+        if (start && start.getTime() > Date.now()) upcoming.push([start, event.name]);
       });
-      upcoming.sort((a, b) => a[0].localeCompare(b[0]));
+      upcoming.sort((a, b) => a[0] - b[0]);
       if (upcoming.length) {
-        const [key, name] = upcoming[0];
-        const label = new Date(`${key}T12:00:00`).toLocaleDateString("en-US", {
+        const [start, name] = upcoming[0];
+        const label = start.toLocaleDateString("en-US", {
           weekday: "long",
           month: "short",
-          day: "numeric"
+          day: "numeric",
+          timeZone: "America/New_York"
         });
         items.push(`Next up: ${name} — ${label}`);
       }
