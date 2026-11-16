@@ -92,15 +92,27 @@
         if (match) text += ` — most recently, ${match[1]} reached ${match[2]}`;
         items.push(text);
       }
+      // Counted like the Guild Photographer board: by Discord
+      // username, shown under the author's display name, with a
+      // deleted account unable to hold a spot.
       const shotCounts = new Map();
+      const shotCountsWeek = new Map();
+      const shotAuthors = new Map();
       ((screenshots && screenshots.screenshots) || []).forEach((shot) => {
-        if (shot.author && shot.author !== "Deleted User") {
-          shotCounts.set(shot.author, (shotCounts.get(shot.author) || 0) + 1);
+        if (!shot.username || shot.author === "Deleted User") return;
+        if (!shotAuthors.has(shot.username)) shotAuthors.set(shot.username, shot.author || shot.username);
+        shotCounts.set(shot.username, (shotCounts.get(shot.username) || 0) + 1);
+        if (inWeek(shot.postedAt)) {
+          shotCountsWeek.set(shot.username, (shotCountsWeek.get(shot.username) || 0) + 1);
         }
       });
       const photographer = topEntry(shotCounts);
       if (photographer) {
-        items.push(`Top photographer: ${photographer[0]} — ${formatCount(photographer[1])} screenshots`);
+        items.push(`Top photographer: ${shotAuthors.get(photographer[0])} — ${formatCount(photographer[1])} screenshots`);
+      }
+      const photographerWeek = topEntry(shotCountsWeek);
+      if (photographerWeek) {
+        items.push(`Most screenshots this week: ${shotAuthors.get(photographerWeek[0])} — ${formatCount(photographerWeek[1])} screenshot${photographerWeek[1] === 1 ? "" : "s"}`);
       }
       const benefactor = topEntry(totalsByAccount(deposits, () => 1));
       if (benefactor) {
