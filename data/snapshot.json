@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T14:40:12+00:00",
+  "generatedAt": "2026-11-16T15:50:48+00:00",
   "accountCount": 148,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -180,7 +180,7 @@
       "comment": "",
       "joinDate": "2025-01-21T09:21:41",
       "originalJoinDate": "2025-01-21T09:21:41",
-      "lastOnline": "2026-11-16T07:34:28",
+      "lastOnline": "2026-11-16T10:49:05",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -460,21 +460,21 @@
       "comment": "",
       "joinDate": "2025-05-08T16:30:02",
       "originalJoinDate": "2025-01-21T09:21:41",
-      "lastOnline": "2026-11-16T07:38:20",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
       "name": "MALK1N",
       "account": "@wolfraan",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Fighter",
       "level": "20",
       "comment": "",
       "joinDate": "2026-09-21T17:52:55",
       "originalJoinDate": "2026-05-30T20:24:59",
-      "lastOnline": "2026-11-16T05:54:28",
+      "lastOnline": "2026-11-16T10:31:45",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1188,8 +1188,8 @@
       "comment": "mjs/msod",
       "joinDate": "2026-07-04T19:27:26",
       "originalJoinDate": "2026-07-04T19:27:26",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-16T09:41:19",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -1230,8 +1230,8 @@
       "comment": "",
       "joinDate": "2024-06-12T12:09:06",
       "originalJoinDate": "2024-06-12T12:09:06",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-16T10:37:33",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -1370,7 +1370,7 @@
       "comment": "123k",
       "joinDate": "2026-07-31T21:15:45",
       "originalJoinDate": "2026-07-31T21:15:45",
-      "lastOnline": "2026-11-16T08:55:35",
+      "lastOnline": "2026-11-16T10:29:06",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1384,7 +1384,7 @@
       "comment": "crops off",
       "joinDate": "2026-02-01T16:51:52",
       "originalJoinDate": "2026-02-01T16:51:52",
-      "lastOnline": "2026-11-15T18:40:54",
+      "lastOnline": "2026-11-16T10:46:10",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1762,8 +1762,8 @@
       "comment": "",
       "joinDate": "2024-12-20T15:17:39",
       "originalJoinDate": "2024-12-20T15:17:39",
-      "lastOnline": "2026-11-15T07:11:17",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1832,7 +1832,7 @@
       "comment": "",
       "joinDate": "2026-05-17T15:37:46",
       "originalJoinDate": "2026-05-17T15:37:46",
-      "lastOnline": "2026-11-12T06:08:15",
+      "lastOnline": "2026-11-16T09:53:38",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1930,8 +1930,8 @@
       "comment": "MJS/MSOD/MSH/MLMD",
       "joinDate": "2026-09-20T16:29:31",
       "originalJoinDate": "2026-09-20T16:29:31",
-      "lastOnline": "2026-11-16T07:29:19",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2098,8 +2098,8 @@
       "comment": "",
       "joinDate": "2026-02-14T17:25:59",
       "originalJoinDate": "2026-02-14T17:25:59",
-      "lastOnline": "2026-11-16T09:08:33",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2266,8 +2266,8 @@
       "comment": "Main",
       "joinDate": "2026-11-03T12:52:27",
       "originalJoinDate": "2025-05-15T00:00:00",
-      "lastOnline": "2026-11-16T05:02:08",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2294,7 +2294,7 @@
       "comment": "+ ASH",
       "joinDate": "2026-11-03T12:56:28",
       "originalJoinDate": "2025-05-15T00:00:00",
-      "lastOnline": "2026-11-16T08:21:52",
+      "lastOnline": "2026-11-16T10:21:44",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2784,8 +2784,8 @@
       "comment": "+MSH",
       "joinDate": "2026-11-03T12:57:16",
       "originalJoinDate": "2025-05-15T00:00:00",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-16T09:51:05",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -3050,7 +3050,7 @@
       "comment": "",
       "joinDate": "2025-01-14T07:45:51",
       "originalJoinDate": "2024-12-20T15:17:39",
-      "lastOnline": "2026-11-15T06:32:39",
+      "lastOnline": "2026-11-16T10:10:08",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3190,7 +3190,7 @@
       "comment": "",
       "joinDate": "2026-07-14T20:02:24",
       "originalJoinDate": "2024-06-12T12:09:06",
-      "lastOnline": "2026-11-16T08:17:42",
+      "lastOnline": "2026-11-16T10:37:16",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3554,7 +3554,7 @@
       "comment": "Just your casual gamer",
       "joinDate": "2026-03-12T15:55:36",
       "originalJoinDate": "2026-03-12T15:55:36",
-      "lastOnline": "2026-11-13T15:29:36",
+      "lastOnline": "2026-11-16T10:26:33",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3750,7 +3750,7 @@
       "comment": "",
       "joinDate": "2026-09-29T21:23:41",
       "originalJoinDate": "2026-09-29T11:36:33",
-      "lastOnline": "2026-11-15T06:05:47",
+      "lastOnline": "2026-11-16T09:41:40",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3862,8 +3862,8 @@
       "comment": "DPS MJS",
       "joinDate": "2026-05-24T12:03:19",
       "originalJoinDate": "2026-05-24T12:03:19",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-16T10:24:00",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -3953,8 +3953,8 @@
     {
       "name": "DARTHIIR",
       "account": "@wolfraan",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Wizard",
       "level": "20",
       "comment": "+MJS",
@@ -4226,8 +4226,8 @@
       "comment": "",
       "joinDate": "2026-04-26T20:41:12",
       "originalJoinDate": "2024-06-12T12:09:06",
-      "lastOnline": "2026-11-16T08:16:25",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -4338,8 +4338,8 @@
       "comment": "",
       "joinDate": "2026-04-21T14:05:34",
       "originalJoinDate": "2025-01-20T07:32:12",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-16T10:12:21",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -4618,7 +4618,7 @@
       "comment": "",
       "joinDate": "2026-10-22T19:52:33",
       "originalJoinDate": "2026-06-04T15:29:23",
-      "lastOnline": "2026-11-16T09:38:02",
+      "lastOnline": "2026-11-16T10:20:03",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5052,7 +5052,7 @@
       "comment": "",
       "joinDate": "2026-07-09T16:44:50",
       "originalJoinDate": "2026-07-09T16:44:50",
-      "lastOnline": "2026-11-16T04:37:58",
+      "lastOnline": "2026-11-16T09:44:49",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5066,7 +5066,7 @@
       "comment": "",
       "joinDate": "2026-10-14T03:07:46",
       "originalJoinDate": "2026-10-14T03:07:46",
-      "lastOnline": "2026-11-16T09:38:13",
+      "lastOnline": "2026-11-16T10:38:00",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5108,7 +5108,7 @@
       "comment": "",
       "joinDate": "2026-08-14T10:47:27",
       "originalJoinDate": "2026-07-09T16:44:50",
-      "lastOnline": "2026-11-16T04:37:10",
+      "lastOnline": "2026-11-16T09:44:35",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5136,8 +5136,8 @@
       "comment": "",
       "joinDate": "2026-08-26T01:34:35",
       "originalJoinDate": "2026-08-26T01:34:35",
-      "lastOnline": "2026-11-12T07:40:36",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -5206,7 +5206,7 @@
       "comment": "",
       "joinDate": "2026-09-12T00:12:12",
       "originalJoinDate": "2026-06-04T15:29:23",
-      "lastOnline": "2026-11-16T09:38:46",
+      "lastOnline": "2026-11-16T10:21:05",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5332,7 +5332,7 @@
       "comment": "",
       "joinDate": "2026-09-19T23:22:05",
       "originalJoinDate": "2026-06-04T15:29:23",
-      "lastOnline": "2026-11-16T09:39:05",
+      "lastOnline": "2026-11-16T10:22:54",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5472,8 +5472,8 @@
       "comment": "",
       "joinDate": "2026-10-30T13:46:08",
       "originalJoinDate": "2026-10-30T13:46:08",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-16T10:01:52",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -5486,12 +5486,22 @@
       "comment": "",
       "joinDate": "2026-11-07T07:07:17",
       "originalJoinDate": "2026-10-14T03:07:46",
-      "lastOnline": "2026-11-16T09:37:35",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     }
   ],
   "events": [
+    {
+      "date": "2026-11-16T10:50:22",
+      "kind": "rank",
+      "text": "DARTHIIR@wolfraan's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-11-16T10:50:19",
+      "kind": "rank",
+      "text": "MALK1N@wolfraan's guild rank is now Veteran"
+    },
     {
       "date": "2026-11-16T09:39:48",
       "kind": "rank",
@@ -11004,6 +11014,15 @@
     }
   ],
   "bankEvents": [
+    {
+      "date": "2026-11-16T10:36:11",
+      "player": "Jeru",
+      "account": "@Jerusalem#41133",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Turmian Dagger",
+      "amount": 1
+    },
     {
       "date": "2026-11-16T09:27:50",
       "player": "Silverbead",
