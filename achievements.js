@@ -232,7 +232,7 @@ function buildNewBlood(snapshot) {
 // Discord accounts that cannot hold a photographer board spot:
 // former members who have left the guild. (A deleted account is
 // excluded separately, by its "Deleted User" author name.)
-const INELIGIBLE_PHOTOGRAPHERS = new Set(["palikka9904", "raumraktzatanhaag", ".maladroite"]);
+const INELIGIBLE_PHOTOGRAPHERS = new Set(["palikka9904", "raumraktzatanhaag", ".maladroite", "diskordal", "ilytbrbluu", "acyl_vrion1", "cal_cass", "k5oul", "sachi314159", "rafaelbruno021", "MEE6"]);
 
 function buildPhotographer(shotsData) {
   const byUser = new Map();
