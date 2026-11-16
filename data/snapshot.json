@@ -140,7 +140,7 @@
     "@vitamin#72769": "2026-03-07T02:58:14",
     "@vordayn": "2026-03-12T16:55:58",
     "@wellimreallybad#1789": "2026-09-29T12:12:43",
-    "@whomid#7073": "2026-07-24T12:29:26",
+    "@whomid#7073": "2026-01-15T00:00:00",
     "@wispling#1230": "2026-04-01T00:43:23",
     "@wizemonk#8095": "2025-09-23T20:27:44",
     "@wolfraan": "2026-05-30T20:24:59",
@@ -1495,7 +1495,7 @@
       "level": "20",
       "comment": "",
       "joinDate": "2026-07-25T09:07:31",
-      "originalJoinDate": "2026-07-24T12:29:26",
+      "originalJoinDate": "2026-01-15T00:00:00",
       "lastOnline": "2026-11-15T22:49:34",
       "onlineNow": false,
       "leaveOfAbsence": false
@@ -3721,7 +3721,7 @@
       "level": "20",
       "comment": "beep boop",
       "joinDate": "2026-07-25T14:43:15",
-      "originalJoinDate": "2026-07-24T12:29:26",
+      "originalJoinDate": "2026-01-15T00:00:00",
       "lastOnline": "2026-11-12T21:00:31",
       "onlineNow": false,
       "leaveOfAbsence": false
@@ -3735,7 +3735,7 @@
       "level": "20",
       "comment": "",
       "joinDate": "2026-07-24T12:29:26",
-      "originalJoinDate": "2026-07-24T12:29:26",
+      "originalJoinDate": "2026-01-15T00:00:00",
       "lastOnline": "2026-11-15T22:49:50",
       "onlineNow": false,
       "leaveOfAbsence": false
@@ -5219,7 +5219,7 @@
       "level": "20",
       "comment": "",
       "joinDate": "2026-09-19T23:21:26",
-      "originalJoinDate": "2026-07-24T12:29:26",
+      "originalJoinDate": "2026-01-15T00:00:00",
       "lastOnline": "2026-11-15T22:50:06",
       "onlineNow": false,
       "leaveOfAbsence": false
@@ -5233,7 +5233,7 @@
       "level": "20",
       "comment": "",
       "joinDate": "2026-09-06T20:17:34",
-      "originalJoinDate": "2026-07-24T12:29:26",
+      "originalJoinDate": "2026-01-15T00:00:00",
       "lastOnline": "2026-11-15T22:50:19",
       "onlineNow": false,
       "leaveOfAbsence": false
@@ -5401,7 +5401,7 @@
       "level": "20",
       "comment": "",
       "joinDate": "2026-10-09T17:51:50",
-      "originalJoinDate": "2026-07-24T12:29:26",
+      "originalJoinDate": "2026-01-15T00:00:00",
       "lastOnline": "2026-11-15T23:21:04",
       "onlineNow": false,
       "leaveOfAbsence": false
