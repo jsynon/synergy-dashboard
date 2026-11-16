@@ -1138,7 +1138,8 @@ footer {
     .ledger-recipe { min-width:0; border-left:1px solid var(--line); padding-bottom:16px; }
     .ledger-meta { padding:12px 17px 2px; display:flex; flex-wrap:wrap; align-items:center; gap:8px; }
     .ledger-counts { color:var(--muted); font-size:.78rem; margin-left:4px; }
-    .ledger-table { width:100%; border-collapse:collapse; margin-top:10px; }
+    .ledger-table { width:100%; border-collapse:collapse; margin-top:10px; table-layout:fixed; }
+    .ledger-table th:first-child { width:55%; }
     .ledger-table th { text-align:left; padding:10px 17px 6px; color:var(--muted); font-size:.69rem; font-weight:700; letter-spacing:.19em; text-transform:uppercase; }
     .ledger-table td { padding:9px 17px; border-top:1px solid rgba(190,204,215,.1); vertical-align:top; }
     .ledger-table tbody tr:first-child td { border-top:0; }
