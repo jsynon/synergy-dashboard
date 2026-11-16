@@ -82,10 +82,55 @@ function buildAltArmy(snapshot) {
   return rows.slice(0, BOARD_SIZE);
 }
 
+// Moving an item between bank tabs logs a withdrawal and then a
+// deposit of the same item and amount by the same account moments
+// apart. The deposit side of such a pair is not a new contribution,
+// so it never counts toward the deposit-count board. Pairs are
+// matched one-to-one in time order; a deposit that comes BEFORE a
+// withdrawal is a real deposit and always counts.
+const MOVE_WINDOW_MS = 5000;
+
+function bankMoveDeposits(events) {
+  const keyOf = (event) => [String(event.account || "").trim().toLowerCase(), event.item, event.amount].join("|");
+  const withdrawals = new Map();
+  for (const event of events) {
+    if (event.action !== "withdraw") continue;
+    const when = parseDate(event.date);
+    if (!when) continue;
+    const key = keyOf(event);
+    if (!withdrawals.has(key)) withdrawals.set(key, []);
+    withdrawals.get(key).push(when.getTime());
+  }
+  for (const list of withdrawals.values()) list.sort((a, b) => a - b);
+  const pointers = new Map();
+  const moves = new Set();
+  const deposits = events
+    .filter((event) => event.action === "deposit")
+    .map((event) => [event, parseDate(event.date)])
+    .filter((pair) => pair[1])
+    .sort((a, b) => a[1] - b[1]);
+  for (const [event, when] of deposits) {
+    const key = keyOf(event);
+    const list = withdrawals.get(key);
+    if (!list) continue;
+    const t = when.getTime();
+    let i = pointers.get(key) || 0;
+    while (i < list.length && list[i] < t - MOVE_WINDOW_MS) i += 1;
+    if (i < list.length && list[i] <= t) {
+      moves.add(event);
+      i += 1;
+    }
+    pointers.set(key, i);
+  }
+  return moves;
+}
+
 function buildBenefactor(snapshot) {
+  const moves = bankMoveDeposits(snapshot.bankEvents || []);
   const depositsByAccount = new Map();
   for (const event of snapshot.bankEvents || []) {
     if (event.action !== "deposit") continue;
+    if (moves.has(event)) continue;
     const key = String(event.account || "").trim().toLowerCase();
     if (!key) continue;
     // The guild leader stocks the bank with donated funds, so his

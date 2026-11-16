@@ -56,6 +56,48 @@
         const entry = displayNames.get(account);
         return entry ? entry.name : account;
       };
+      // Moving an item between bank tabs logs a withdrawal and
+      // then a deposit of the same item and amount by the same
+      // account moments apart. The deposit side of such a pair is
+      // not a new contribution, so the deposit-count items use
+      // countedDeposits, with those moves left out. (The gold
+      // items are unaffected: gold is not held in tabs.) Pairs are
+      // matched one-to-one in time order; a deposit that comes
+      // BEFORE a withdrawal is a real deposit and always counts.
+      const bankMoveDeposits = (events) => {
+        const keyOf = (event) => [String(event.account || "").trim().toLowerCase(), event.item, event.amount].join("|");
+        const withdrawals = new Map();
+        events.forEach((event) => {
+          if (event.action !== "withdraw") return;
+          const when = tickerDate(event.date);
+          if (!when) return;
+          const key = keyOf(event);
+          if (!withdrawals.has(key)) withdrawals.set(key, []);
+          withdrawals.get(key).push(when.getTime());
+        });
+        withdrawals.forEach((list) => list.sort((a, b) => a - b));
+        const pointers = new Map();
+        const moves = new Set();
+        events
+          .filter((event) => event.action === "deposit")
+          .map((event) => [event, tickerDate(event.date)])
+          .filter((pair) => pair[1])
+          .sort((a, b) => a[1] - b[1])
+          .forEach(([event, when]) => {
+            const key = keyOf(event);
+            const list = withdrawals.get(key);
+            if (!list) return;
+            const t = when.getTime();
+            let i = pointers.get(key) || 0;
+            while (i < list.length && list[i] < t - 5000) i += 1;
+            if (i < list.length && list[i] <= t) {
+              moves.add(event);
+              i += 1;
+            }
+            pointers.set(key, i);
+          });
+        return moves;
+      };
       const bank = snapshot.bankEvents || [];
       // The guild leader's deposits stock the bank with donated
       // funds, so his account is left out of the bank rankings
@@ -63,6 +105,8 @@
       const deposits = bank.filter(
         (event) => event.action === "deposit" && String(event.account || "").trim().toLowerCase() !== "@zorlonix"
       );
+      const moveDeposits = bankMoveDeposits(bank);
+      const countedDeposits = deposits.filter((event) => !moveDeposits.has(event));
       const goldDeposited = (event) => (event.item === "Copper" ? (event.amount || 0) / 10000 : 0);
       const totalsByAccount = (events, measure) => {
         const totals = new Map();
@@ -75,7 +119,7 @@
       if (goldWeek && goldWeek[1] > 0) {
         items.push(`Most gold deposited this week: ${displayName(goldWeek[0])} — ${formatCount(goldWeek[1])} gold`);
       }
-      const depositsWeek = topEntry(totalsByAccount(deposits.filter((event) => inWeek(event.date)), () => 1));
+      const depositsWeek = topEntry(totalsByAccount(countedDeposits.filter((event) => inWeek(event.date)), () => 1));
       if (depositsWeek) {
         items.push(`Most bank deposits this week: ${displayName(depositsWeek[0])} — ${formatCount(depositsWeek[1])} deposits`);
       }
@@ -120,7 +164,7 @@
       if (photographerWeek) {
         items.push(`Most screenshots this week: ${shotAuthors.get(photographerWeek[0])} — ${formatCount(photographerWeek[1])} screenshot${photographerWeek[1] === 1 ? "" : "s"}`);
       }
-      const benefactor = topEntry(totalsByAccount(deposits, () => 1));
+      const benefactor = topEntry(totalsByAccount(countedDeposits, () => 1));
       if (benefactor) {
         items.push(`Guild Benefactor: ${displayName(benefactor[0])} — ${formatCount(benefactor[1])} deposits on record`);
       }
