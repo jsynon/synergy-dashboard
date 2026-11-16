@@ -57,7 +57,12 @@
         return entry ? entry.name : account;
       };
       const bank = snapshot.bankEvents || [];
-      const deposits = bank.filter((event) => event.action === "deposit");
+      // The guild leader's deposits stock the bank with donated
+      // funds, so his account is left out of the bank rankings
+      // here, just as on the Achievements boards.
+      const deposits = bank.filter(
+        (event) => event.action === "deposit" && String(event.account || "").trim().toLowerCase() !== "@zorlonix"
+      );
       const goldDeposited = (event) => (event.item === "Copper" ? (event.amount || 0) / 10000 : 0);
       const totalsByAccount = (events, measure) => {
         const totals = new Map();
