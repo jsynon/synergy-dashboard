@@ -229,12 +229,17 @@ function buildNewBlood(snapshot) {
   return rows.slice(0, BOARD_SIZE);
 }
 
+// Discord accounts that cannot hold a photographer board spot:
+// former members who have left the guild. (A deleted account is
+// excluded separately, by its "Deleted User" author name.)
+const INELIGIBLE_PHOTOGRAPHERS = new Set(["palikka9904", "raumraktzatanhaag", ".maladroite"]);
+
 function buildPhotographer(shotsData) {
   const byUser = new Map();
   for (const shot of shotsData.screenshots || []) {
     // A deleted Discord account cannot hold a board spot, and
-    // Palikka (Sakuya) is no longer in the guild.
-    if (!shot.username || shot.author === "Deleted User" || shot.username === "palikka9904") continue;
+    // neither can a former member who has left the guild.
+    if (!shot.username || shot.author === "Deleted User" || INELIGIBLE_PHOTOGRAPHERS.has(shot.username)) continue;
     if (!byUser.has(shot.username)) {
       byUser.set(shot.username, { author: shot.author || shot.username, count: 0, first: null, latest: null });
     }
