@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-15T23:52:25+00:00",
-  "accountCount": 148,
+  "generatedAt": "2026-11-16T00:18:14+00:00",
+  "accountCount": 149,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
     "@acckund": "2026-08-26T01:34:35",
@@ -40,6 +40,7 @@
     "@eastpakistcool": "2026-03-25T20:40:51",
     "@eatsomewaffles": "2025-03-28T05:27:03",
     "@eeirtis#4047": "2026-10-25T17:13:32",
+    "@elipa#5429": "2026-11-15T19:14:58",
     "@ellenaro": "2026-02-15T01:41:00",
     "@epc86#8640": "2026-02-14T17:25:59",
     "@fatfack#4422": "2026-10-10T17:44:05",
@@ -795,7 +796,7 @@
       "comment": "",
       "joinDate": "2026-09-29T21:20:52",
       "originalJoinDate": "2026-09-29T11:36:33",
-      "lastOnline": "2026-11-14T10:12:22",
+      "lastOnline": "2026-11-15T19:10:23",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1075,8 +1076,8 @@
       "comment": "",
       "joinDate": "2026-07-13T16:38:06",
       "originalJoinDate": "2026-07-13T16:38:06",
-      "lastOnline": "2026-11-15T17:56:09",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1425,7 +1426,7 @@
       "comment": "",
       "joinDate": "2026-08-13T00:06:00",
       "originalJoinDate": "2026-01-18T14:34:53",
-      "lastOnline": "2026-11-15T17:07:17",
+      "lastOnline": "2026-11-15T19:05:59",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2111,8 +2112,8 @@
       "comment": "",
       "joinDate": "2026-02-14T17:25:59",
       "originalJoinDate": "2026-02-14T17:25:59",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-15T18:59:42",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2125,8 +2126,8 @@
       "comment": "MSH / MJS DPS",
       "joinDate": "2026-09-14T19:55:31",
       "originalJoinDate": "2026-09-14T19:55:31",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-15T19:05:03",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2746,6 +2747,20 @@
       "leaveOfAbsence": false
     },
     {
+      "name": "Lucinda Marinca",
+      "account": "@elipa#5429",
+      "rank": "Initiate",
+      "rankOrder": 1,
+      "class": "Warlock",
+      "level": "20",
+      "comment": "",
+      "joinDate": "2026-11-15T19:14:58",
+      "originalJoinDate": "2026-11-15T19:14:58",
+      "lastOnline": null,
+      "onlineNow": true,
+      "leaveOfAbsence": false
+    },
+    {
       "name": "Gaia Renegade",
       "account": "@gaia#9610",
       "rank": "Elder",
@@ -3007,8 +3022,8 @@
       "comment": "",
       "joinDate": "2026-07-05T16:48:06",
       "originalJoinDate": "2026-01-20T20:54:47",
-      "lastOnline": "2026-11-15T14:50:45",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -5443,7 +5458,7 @@
       "comment": "ASH/MJS",
       "joinDate": "2026-10-19T20:10:59",
       "originalJoinDate": "2026-10-19T20:10:59",
-      "lastOnline": "2026-11-14T11:59:09",
+      "lastOnline": "2026-11-15T19:14:26",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5471,8 +5486,8 @@
       "comment": "",
       "joinDate": "2026-10-30T21:40:33",
       "originalJoinDate": "2026-10-13T20:53:40",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-15T19:01:54",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -5519,6 +5534,11 @@
     }
   ],
   "events": [
+    {
+      "date": "2026-11-15T19:14:58",
+      "kind": "join",
+      "text": "Lucinda Marinca@elipa#5429 has joined the guild after being invited by Elanor@zorlonix"
+    },
     {
       "date": "2026-11-15T15:39:03",
       "kind": "rank",
@@ -10996,6 +11016,24 @@
     }
   ],
   "bankEvents": [
+    {
+      "date": "2026-11-15T19:09:02",
+      "player": "Hallebooyah",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Mounts",
+      "item": "Sunite Steed",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-15T19:08:56",
+      "player": "Hallebooyah",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Mounts",
+      "item": "Apparatus of Kwalish",
+      "amount": 1
+    },
     {
       "date": "2026-11-15T18:33:27",
       "player": "Elanor",
