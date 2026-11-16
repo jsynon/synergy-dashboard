@@ -183,8 +183,9 @@ function buildNewBlood(snapshot) {
 function buildPhotographer(shotsData) {
   const byUser = new Map();
   for (const shot of shotsData.screenshots || []) {
-    // A deleted Discord account cannot hold a board spot.
-    if (!shot.username || shot.author === "Deleted User") continue;
+    // A deleted Discord account cannot hold a board spot, and
+    // Palikka (Sakuya) is no longer in the guild.
+    if (!shot.username || shot.author === "Deleted User" || shot.username === "palikka9904") continue;
     if (!byUser.has(shot.username)) {
       byUser.set(shot.username, { author: shot.author || shot.username, count: 0, first: null, latest: null });
     }

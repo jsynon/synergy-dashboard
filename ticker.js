@@ -94,12 +94,13 @@
       }
       // Counted like the Guild Photographer board: by Discord
       // username, shown under the author's display name, with a
-      // deleted account unable to hold a spot.
+      // deleted account unable to hold a spot and Palikka
+      // (Sakuya), who has left the guild, ineligible.
       const shotCounts = new Map();
       const shotCountsWeek = new Map();
       const shotAuthors = new Map();
       ((screenshots && screenshots.screenshots) || []).forEach((shot) => {
-        if (!shot.username || shot.author === "Deleted User") return;
+        if (!shot.username || shot.author === "Deleted User" || shot.username === "palikka9904") return;
         if (!shotAuthors.has(shot.username)) shotAuthors.set(shot.username, shot.author || shot.username);
         shotCounts.set(shot.username, (shotCounts.get(shot.username) || 0) + 1);
         if (inWeek(shot.postedAt)) {
