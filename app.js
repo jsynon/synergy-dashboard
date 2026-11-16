@@ -58,6 +58,7 @@
       const eventMentionPattern=escapedActivityName?new RegExp('(^|[^\\p{L}\\p{N}_@])('+escapedActivityName+')(?=$|[^\\p{L}\\p{N}_])','giu'):null;
       const mentionsCharacter=text=>{
         if(!eventMentionPattern)return false;
+        eventMentionPattern.lastIndex=0;
         const value=String(text||'');
         let match;
         while((match=eventMentionPattern.exec(value))){
