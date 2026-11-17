@@ -289,8 +289,10 @@
       const hostAliases = new Map([
         ["Reinds/sojo/sojo1", "Reinds"],
         ["Elanor/Rydark", "Elanor"],
-        ["Azazel@eatsomewaf", "Azazel@eatsomewaffles"],
-        ["MrZenigata / Ayar", "MrZenigata / Ayara"]
+        ["Azazel@eatsomewaf", "Azazel"],
+        ["Azazel@eatsomewaffles", "Azazel"],
+        ["MrZenigata / Ayar", "Ayara"],
+        ["MrZenigata / Ayara", "Ayara"]
       ]);
       const ineligibleHosts = new Set(["Vega", "Vega ~ Soul", "Elenara", "Andealous", "Micioarancio"]);
       const hostCounts = new Map();
@@ -316,12 +318,14 @@
         ["Sojo", "Reinds"],
         ["Elanor/Rydark", "Elanor"],
         ["Elanor/Rydar", "Elanor"],
-        ["MrZenigata/A", "MrZenigata/Ayara"],
+        ["MrZenigata/A", "Ayara"],
+        ["MrZenigata/Ayara", "Ayara"],
         ["Vega~Soul", "Vega"],
         ["Sakuya@aksa0", "Sakuya@aksa07"],
         ["Amaya/Andromed", "Amaya"],
-        ["Azazel@eatsomewa", "Azazel@eatsomewaffles"],
-        ["Azazel@eatso", "Azazel@eatsomewaffles"],
+        ["Azazel@eatsomewa", "Azazel"],
+        ["Azazel@eatsomewaffles", "Azazel"],
+        ["Azazel@eatso", "Azazel"],
         ["HenryTheHors", "HenryTheHorse"],
         ["Mio-Avatonk(Michael-DK/EU)", "Mio-Avatonk"],
         ["TimtheEnchan", "TimtheEnchanter"],

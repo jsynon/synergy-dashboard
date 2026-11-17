@@ -309,13 +309,15 @@ function buildPhotographer(shotsData) {
 // Organizer names in Raid-Helper posts are Discord display names, and
 // the same host can appear under more than one spelling: these are one
 // person, counted together under the plainer name. The Leader field
-// also cuts long names off at 17 characters, so Azazel and Ayara are
-// completed here to their full names.
+// also cuts long names off at 17 characters; Azazel and Ayara are
+// shown by their short names, as the guild leader prefers.
 const HOST_NAME_ALIASES = new Map([
   ["Reinds/sojo/sojo1", "Reinds"],
   ["Elanor/Rydark", "Elanor"],
-  ["Azazel@eatsomewaf", "Azazel@eatsomewaffles"],
-  ["MrZenigata / Ayar", "MrZenigata / Ayara"],
+  ["Azazel@eatsomewaf", "Azazel"],
+  ["Azazel@eatsomewaffles", "Azazel"],
+  ["MrZenigata / Ayar", "Ayara"],
+  ["MrZenigata / Ayara", "Ayara"],
 ]);
 
 // Organizers who cannot hold an event host board spot: former members
@@ -361,7 +363,8 @@ function buildEventHost(raidData) {
 // Sign-up names in Raid-Helper posts are Discord display names that
 // the bot cuts off at different lengths in different posts, so one
 // member appears under several truncated spellings. These variants
-// are one person, counted together under the fullest spelling.
+// are one person, counted together under the fullest spelling —
+// except Azazel and Ayara, who show by their short names.
 const PARTICIPANT_NAME_ALIASES = new Map([
   ["Reinds/sojo/sojo12", "Reinds"],
   ["Reinds/sojo12", "Reinds"],
@@ -369,12 +372,14 @@ const PARTICIPANT_NAME_ALIASES = new Map([
   ["Sojo", "Reinds"],
   ["Elanor/Rydark", "Elanor"],
   ["Elanor/Rydar", "Elanor"],
-  ["MrZenigata/A", "MrZenigata/Ayara"],
+  ["MrZenigata/A", "Ayara"],
+  ["MrZenigata/Ayara", "Ayara"],
   ["Vega~Soul", "Vega"],
   ["Sakuya@aksa0", "Sakuya@aksa07"],
   ["Amaya/Andromed", "Amaya"],
-  ["Azazel@eatsomewa", "Azazel@eatsomewaffles"],
-  ["Azazel@eatso", "Azazel@eatsomewaffles"],
+  ["Azazel@eatsomewa", "Azazel"],
+  ["Azazel@eatsomewaffles", "Azazel"],
+  ["Azazel@eatso", "Azazel"],
   ["HenryTheHors", "HenryTheHorse"],
   ["Mio-Avatonk(Michael-DK/EU)", "Mio-Avatonk"],
   ["TimtheEnchan", "TimtheEnchanter"],
