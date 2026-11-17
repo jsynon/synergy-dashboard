@@ -354,6 +354,86 @@ function buildEventHost(raidData) {
   return rows.slice(0, BOARD_SIZE);
 }
 
+// Sign-up names in Raid-Helper posts are Discord display names that
+// the bot cuts off at different lengths in different posts, so one
+// member appears under several truncated spellings. These variants
+// are one person, counted together under the fullest spelling.
+const PARTICIPANT_NAME_ALIASES = new Map([
+  ["Reinds/sojo/sojo12", "Reinds"],
+  ["Reinds/sojo12", "Reinds"],
+  ["Reinds/sojo/so", "Reinds"],
+  ["Sojo", "Reinds"],
+  ["Elanor/Rydark", "Elanor"],
+  ["Elanor/Rydar", "Elanor"],
+  ["MrZenigata/A", "MrZenigata/Ayara"],
+  ["Vega~Soul", "Vega"],
+  ["Sakuya@aksa0", "Sakuya@aksa07"],
+  ["Amaya/Andromed", "Amaya"],
+  ["Azazel@eatsomewa", "Azazel@eatsomewaffles"],
+  ["Azazel@eatso", "Azazel@eatsomewaffles"],
+  ["HenryTheHors", "HenryTheHorse"],
+  ["Mio-Avatonk(Michael-DK/EU)", "Mio-Avatonk"],
+  ["TimtheEnchan", "TimtheEnchanter"],
+  ["JadeProvidanc", "JadeProvidance"],
+  ["JadeProvidance/J", "JadeProvidance"],
+  ["JadeProvidance/Ja", "JadeProvidance"],
+  ["BalidorElRen", "BalidorElRenon"],
+  ["BalidorElReno", "BalidorElRenon"],
+  ["BalidorElRenon🇮🇱", "BalidorElRenon"],
+  ["BalidorElRenon🇮🇱🇺🇦", "BalidorElRenon"],
+  ["IncantationSt", "IncantationStation"],
+  ["CALCASS(CK", "CALCASS(CKU)"],
+  ["Yukki", "Yukki/Steve"],
+  ["DrewSilverkin/Radi", "DrewSilverkin/RadiantRandy"],
+  ["GORO/Hamme", "GORO/HammerofJ"],
+  ["GirthQuake/J", "GirthQuake/Jaskie"],
+  ["piggo/clanker", "clanker/piggo"],
+  ["leggylass/shan", "leggylass/shaniatw"],
+  ["Psyche.", "Psyche"],
+  ["Aurfelthe\"Wel", "Aurfelthe\"Welostdemo\""],
+  ["Aurfelthe\"We", "Aurfelthe\"Welostdemo\""],
+  ["DarkWenDigo", "DarkWenDigo666"],
+  ["OynxBlaze", "OnyxBlaze"],
+]);
+
+// Members who cannot hold a participation board spot: former members
+// who have left the guild, per the guild leader's audit of the
+// records. (Ayara is deliberately not here: he stays eligible.)
+const INELIGIBLE_PARTICIPANTS = new Set(["Vega", "Sakuya@aksa07", "HenryTheHorse"]);
+
+function buildParticipants(raidData) {
+  const byMember = new Map();
+  for (const event of raidData.events || []) {
+    const names = new Set();
+    for (const raw of event.participants || []) {
+      const trimmed = String(raw || "").trim();
+      if (!trimmed) continue;
+      names.add(PARTICIPANT_NAME_ALIASES.get(trimmed) || trimmed);
+    }
+    const when = parseDateOnly(event.eventDate) || parseDate(event.postedAt);
+    for (const name of names) {
+      if (INELIGIBLE_PARTICIPANTS.has(name)) continue;
+      if (!byMember.has(name)) byMember.set(name, { name, count: 0, first: null, latest: null });
+      const entry = byMember.get(name);
+      entry.count += 1;
+      if (when && (!entry.first || when < entry.first)) entry.first = when;
+      if (when && (!entry.latest || when > entry.latest)) entry.latest = when;
+    }
+  }
+  const rows = [];
+  for (const entry of byMember.values()) {
+    rows.push({
+      name: entry.name,
+      sub: entry.latest ? `Latest run ${formatDate(entry.latest)}` : "Raid-Helper sign-up posts",
+      value: `${entry.count} run${entry.count === 1 ? "" : "s"} attended`,
+      sort: -entry.count,
+      tie: entry.first ? entry.first.getTime() : Number.MAX_SAFE_INTEGER,
+    });
+  }
+  rows.sort((a, b) => a.sort - b.sort || a.tie - b.tie || a.name.localeCompare(b.name));
+  return rows.slice(0, BOARD_SIZE);
+}
+
 function renderBoard(listId, rows) {
   const list = document.getElementById(listId);
   if (!list) return;
@@ -459,8 +539,9 @@ async function init() {
   try {
     const raid = await loadJson("data/raid-helper-events.json");
     renderBoard("board-event-host", buildEventHost(raid));
+    renderBoard("board-participants", buildParticipants(raid));
   } catch (error) {
-    renderUnavailable(["board-event-host"]);
+    renderUnavailable(["board-event-host", "board-participants"]);
   }
 }
 
