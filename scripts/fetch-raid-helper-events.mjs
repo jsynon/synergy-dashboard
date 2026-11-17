@@ -51,12 +51,20 @@ const MONTHS = {
   november: "11", december: "12"
 };
 
-// A Raid-Helper embed names the organizer on its first description line,
-// beside a flag: "🏳 vhorsmam". Some templates crown the leader instead, or
-// label the line; accept those too. A leading mention (<@123>) is kept raw —
-// the audit output shows it, so it can be resolved by hand if it ever occurs.
-const parseOrganizer = (description) => {
-  if (!description) return null;
+// The organizer is named in the embed's first field, on the line carrying
+// the Leader custom emoji: "<:LeaderX:1124529969926779050> Elenara". (In the
+// rendered post that emoji is the little flag beside the name.) Older or
+// alternate templates may put a flag/crown/label line in the description
+// instead, so those are accepted as a fallback.
+const parseOrganizer = (embed) => {
+  if (!embed) return null;
+  const fields = Array.isArray(embed.fields) ? embed.fields : [];
+  for (const field of fields) {
+    const value = typeof field.value === "string" ? field.value : "";
+    const leader = value.match(/<:Leader[^:>\s]*:\d+>\s*([^\n]+)/);
+    if (leader) return leader[1].trim();
+  }
+  const description = typeof embed.description === "string" ? embed.description : "";
   for (const line of description.split("\n")) {
     const flag = line.match(/^\s*(?:🏳|🏴)\uFE0F?\s+(.+?)\s*$/u);
     if (flag) return flag[1];
@@ -68,14 +76,40 @@ const parseOrganizer = (description) => {
   return null;
 };
 
-// The same description carries the run's date: "📅 October 3, 2026".
-const parseEventDate = (description) => {
-  if (!description) return null;
+// The same first field carries the run's moment as a Discord timestamp
+// ("<t:1785466800:D>"); the board dates it in Eastern, like the calendar.
+const parseEventDate = (embed) => {
+  if (!embed) return null;
+  const fields = Array.isArray(embed.fields) ? embed.fields : [];
+  for (const field of fields) {
+    const value = typeof field.value === "string" ? field.value : "";
+    const stamp = value.match(/<t:(\d+):[A-Za-z]>/);
+    if (stamp) {
+      const parts = new Intl.DateTimeFormat("en-CA", {
+        year: "numeric", month: "2-digit", day: "2-digit", timeZone: "America/New_York"
+      }).formatToParts(new Date(Number(stamp[1]) * 1000));
+      const part = (type) => parts.find((item) => item.type === type)?.value;
+      return `${part("year")}-${part("month")}-${part("day")}`;
+    }
+  }
+  const description = typeof embed.description === "string" ? embed.description : "";
   const match = description.match(/📅\s*([A-Za-z]+)\s+(\d{1,2}),\s*(\d{4})/u);
   if (!match) return null;
   const month = MONTHS[match[1].toLowerCase()];
   if (!month) return null;
   return `${match[3]}-${month}-${match[2].padStart(2, "0")}`;
+};
+
+// Posts without an embed title spell it in letter emojis on the
+// description's first line: "**<:M:…> <:D:…> <:empty:…> … **" = "MD …".
+const decodeEmojiTitle = (description) => {
+  if (!description) return null;
+  const firstLine = description.split("\n")[0].replace(/\*\*/g, "").trim();
+  if (!firstLine || !/^(\s*<:[A-Za-z0-9_]+:\d+>\s*)+$/.test(firstLine)) return null;
+  const letters = [...firstLine.matchAll(/<:([A-Za-z0-9_]+):\d+>/g)]
+    .map((token) => (token[1] === "empty" ? " " : token[1]));
+  const title = letters.join("").replace(/\s+/g, " ").trim();
+  return title || null;
 };
 
 const main = async () => {
@@ -143,9 +177,9 @@ const main = async () => {
           channelId: channel.id,
           channel: channel.name || "",
           postedAt: message.timestamp || null,
-          title: embed && embed.title ? String(embed.title) : null,
-          eventDate: parseEventDate(description),
-          organizer: parseOrganizer(description)
+          title: embed && embed.title ? String(embed.title) : decodeEmojiTitle(description),
+          eventDate: parseEventDate(embed),
+          organizer: parseOrganizer(embed)
         });
       }
       if (messages.length < 100) break;
