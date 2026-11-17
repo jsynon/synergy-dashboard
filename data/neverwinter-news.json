@@ -1,9 +1,29 @@
 {
   "source": "https://www.playneverwinter.com/en/news",
   "api": "https://api.arcgames.com/v1.0/games/nw/news",
-  "generatedAt": "2026-11-16T22:26:46.823Z",
+  "generatedAt": "2026-11-17T16:25:14.837Z",
   "count": 100,
   "articles": [
+    {
+      "id": "11583995",
+      "title": "Release: M34 - Sleeping Gods Lie",
+      "summary": "The Cult of the Elder Elemental Eye had been sighted near Icewind Dale, and them cultists move fast! Let's start making sense of this mess!",
+      "date": "2026-11-17",
+      "url": "https://www.playneverwinter.com/en/news-details/11583995",
+      "image": "https://pwimages-a.akamaihd.net/arc/ae/61/ae61881716e5d7c08865bc3927c94ac51794582351.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
     {
       "id": "11584073",
       "title": "25% Bonus Zen & Zen Sale",
@@ -1997,25 +2017,6 @@
         "nw-news",
         "neverwinter",
         "nw-events"
-      ]
-    },
-    {
-      "id": "11578770",
-      "title": "Claim your Arena prizes before December 10",
-      "summary": "While we don’t have any details yet, we plan to return to the Arena later in the form of a temporary event.",
-      "date": "2025-11-20",
-      "url": "https://www.playneverwinter.com/en/news-details/11578770",
-      "image": "https://pwimages-a.akamaihd.net/arc/98/3c/983c21542831f23ad6bb6dde9ffcc6b51763647021.jpg",
-      "platforms": [
-        "pc",
-        "ps",
-        "xbox"
-      ],
-      "tags": [
-        "nw-launcher",
-        "nw-events",
-        "nw-xbox",
-        "nw-playstation"
       ]
     }
   ]
