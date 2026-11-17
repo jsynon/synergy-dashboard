@@ -144,7 +144,12 @@
       });
       if (newest) items.push(`Welcome our newest member: ${displayName(newest[0])}`);
       const guildEvents = snapshot.events || [];
-      const joinsWeek = guildEvents.filter((event) => event.kind === "join" && inWeek(event.date)).length;
+      // New members means new accounts: every alt that joins on
+      // an existing account fires its own join event, so the join
+      // events are not what is counted — an account counts when
+      // its own join date (its first character's arrival) falls
+      // this week.
+      const joinsWeek = Object.entries(joinDates).filter(([account, date]) => displayNames.has(account) && inWeek(date)).length;
       if (joinsWeek) items.push(`${joinsWeek} new member${joinsWeek === 1 ? "" : "s"} joined this week`);
       // A rank change in the first two weeks after a character
       // joins is the guild leader matching a new alt to its
