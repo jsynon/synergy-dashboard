@@ -98,6 +98,9 @@ const main = async () => {
   const events = [];
   const unreadable = [];
   const botAuthors = new Set();
+  // Raw copies of a few posts, kept so the embed layout can be inspected if
+  // the parser misses: the first posts seen, plus the first titled ones.
+  const samples = [];
   let channelsScanned = 0;
   let messagesScanned = 0;
 
@@ -124,6 +127,17 @@ const main = async () => {
         botAuthors.add(`${author.username} (${author.id})`);
         const embed = Array.isArray(message.embeds) ? message.embeds[0] : null;
         const description = embed && typeof embed.description === "string" ? embed.description : "";
+        const titled = Boolean(embed && embed.title);
+        if (samples.length < 5 || (titled && samples.filter((sample) => sample.titled).length < 2)) {
+          samples.push({
+            id: message.id,
+            channel: channel.name || "",
+            titled,
+            content: message.content || "",
+            embeds: message.embeds || [],
+            components: message.components || []
+          });
+        }
         events.push({
           id: message.id,
           channelId: channel.id,
@@ -150,6 +164,7 @@ const main = async () => {
     postsFound: events.length,
     unparsedPosts: events.filter((event) => !event.organizer).length,
     botAuthors: [...botAuthors],
+    samples: samples.map(({ titled, ...rest }) => rest),
     events
   };
 
