@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-17T04:37:27.441Z",
-  "channelsScanned": 95,
+  "generatedAt": "2026-11-17T04:49:08.703Z",
+  "channelsScanned": 96,
   "channelsUnreadable": [],
-  "messagesScanned": 21990,
-  "postsFound": 111,
-  "unparsedPosts": 111,
+  "messagesScanned": 22495,
+  "postsFound": 130,
+  "unparsedPosts": 4,
   "botAuthors": [
     "Raid-Helper (579155972115660803)"
   ],
@@ -463,36 +463,54 @@
       "channelId": "1499641964243452025",
       "channel": "🧊│𝙹𝚘𝚝𝚞𝚗𝚜𝚔𝚊𝚛",
       "postedAt": "2026-11-09T02:07:44.242000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MJS FARM",
+      "eventDate": "2026-11-14",
+      "organizer": "Alune"
+    },
+    {
+      "id": "1568918896285581363",
+      "channelId": "1470322933766426715",
+      "channel": "🎓│𝙰𝚕𝚞𝚖𝚗𝚒-𝙷𝚊𝚕𝚕",
+      "postedAt": "2026-11-08T09:23:33.978000+00:00",
+      "title": "MSOD",
+      "eventDate": "2026-11-11",
+      "organizer": "crisem97"
     },
     {
       "id": "1567388059375378475",
       "channelId": "1499641964243452025",
       "channel": "🧊│𝙹𝚘𝚝𝚞𝚗𝚜𝚔𝚊𝚛",
       "postedAt": "2026-11-04T04:00:34.017000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "AJSMJS TRAINING",
+      "eventDate": "2026-11-07",
+      "organizer": "Alune"
     },
     {
       "id": "1554661072152174697",
       "channelId": "1450570265359548436",
       "channel": "🔗│𝚂𝚑𝚊𝚌𝚔𝚕𝚎𝚜",
       "postedAt": "2026-09-30T01:08:03.807000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MSOD RUN",
+      "eventDate": "2026-10-03",
+      "organizer": "vhorsmam"
     },
     {
       "id": "1548737398375063613",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-09-13T16:49:29.922000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH RUN",
+      "eventDate": "2026-09-13",
+      "organizer": "vhorsmam"
+    },
+    {
+      "id": "1547835501812121682",
+      "channelId": "1470322933766426715",
+      "channel": "🎓│𝙰𝚕𝚞𝚖𝚗𝚒-𝙷𝚊𝚕𝚕",
+      "postedAt": "2026-09-11T05:05:41.025000+00:00",
+      "title": "MSOD",
+      "eventDate": "2026-09-11",
+      "organizer": "Elanor"
     },
     {
       "id": "1547011107523133505",
@@ -500,8 +518,8 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-09-08T22:29:50.110000+00:00",
       "title": "NEW Weekly ASH Farm!!",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-09-10",
+      "organizer": "NEIDORTH (Rob)"
     },
     {
       "id": "1543768550546870327",
@@ -517,18 +535,18 @@
       "channelId": "1450567085666074766",
       "channel": "🐉│𝙼𝚊𝚍-𝙳𝚛𝚊𝚐𝚘𝚗",
       "postedAt": "2026-08-26T01:16:55.003000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MLMD FARM",
+      "eventDate": "2026-08-30",
+      "organizer": "Amaya"
     },
     {
       "id": "1541616464467853425",
       "channelId": "1450567085666074766",
       "channel": "🐉│𝙼𝚊𝚍-𝙳𝚛𝚊𝚐𝚘𝚗",
       "postedAt": "2026-08-25T01:13:26.978000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MLMD FARM",
+      "eventDate": "2026-08-25",
+      "organizer": "Ivydora"
     },
     {
       "id": "1541514681775292509",
@@ -536,8 +554,8 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-08-24T18:29:00.093000+00:00",
       "title": "ASH farm/ MSH training",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-08-28",
+      "organizer": "Elenara"
     },
     {
       "id": "1538651501054926931",
@@ -545,17 +563,17 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-08-16T20:51:44.614000+00:00",
       "title": "MSH - FARMING! MULTI-RUN 👨🏻‍🌾",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-08-16",
+      "organizer": "Ivydora"
     },
     {
       "id": "1537663696791150633",
       "channelId": "1450570103837167770",
       "channel": "🌙│𝙼𝚘𝚘𝚗𝚍𝚊𝚗𝚌𝚎𝚛",
       "postedAt": "2026-08-14T03:26:33.725000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ADOM FARM",
+      "eventDate": "2026-08-23",
+      "organizer": "Elenara"
     },
     {
       "id": "1537662726409556071",
@@ -563,44 +581,71 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-08-14T03:22:42.368000+00:00",
       "title": "ASH farm/ MSH if we get ASH down",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-08-21",
+      "organizer": "Elenara"
     },
     {
       "id": "1537577842186133505",
       "channelId": "1499641964243452025",
       "channel": "🧊│𝙹𝚘𝚝𝚞𝚗𝚜𝚔𝚊𝚛",
       "postedAt": "2026-08-13T21:45:24.392000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MJS FARM",
+      "eventDate": "2026-08-16",
+      "organizer": "vhorsmam"
     },
     {
       "id": "1535067713276485633",
       "channelId": "1450569518337360082",
       "channel": "👑│𝙺𝚎𝚕𝚍𝚎𝚐𝚘𝚗𝚗",
       "postedAt": "2026-08-06T23:31:03.024000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MCOK FARMING",
+      "eventDate": "2026-08-08",
+      "organizer": "Rilay"
+    },
+    {
+      "id": "1534802704268923032",
+      "channelId": "1470322933766426715",
+      "channel": "🎓│𝙰𝚕𝚞𝚖𝚗𝚒-𝙷𝚊𝚕𝚕",
+      "postedAt": "2026-08-06T05:57:59.953000+00:00",
+      "title": "MJS - Training - \"Tempus! We who are about to die, Salute you!\"",
+      "eventDate": "2026-08-09",
+      "organizer": "Mio-Ava tonk"
     },
     {
       "id": "1534709425883840573",
       "channelId": "1450567085666074766",
       "channel": "🐉│𝙼𝚊𝚍-𝙳𝚛𝚊𝚐𝚘𝚗",
       "postedAt": "2026-08-05T23:47:20.653000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MLMD",
+      "eventDate": "2026-08-11",
+      "organizer": "Amaya"
+    },
+    {
+      "id": "1534121818594742413",
+      "channelId": "1470322933766426715",
+      "channel": "🎓│𝙰𝚕𝚞𝚖𝚗𝚒-𝙷𝚊𝚕𝚕",
+      "postedAt": "2026-08-04T08:52:24.158000+00:00",
+      "title": "MJS RUNS",
+      "eventDate": "2026-08-08",
+      "organizer": "Azazel@eatsomewaf"
     },
     {
       "id": "1532949543006502983",
       "channelId": "1450570103837167770",
       "channel": "🌙│𝙼𝚘𝚘𝚗𝚍𝚊𝚗𝚌𝚎𝚛",
       "postedAt": "2026-08-01T03:14:11.878000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ADOM RUNS",
+      "eventDate": "2026-08-08",
+      "organizer": "Elenara"
+    },
+    {
+      "id": "1531542345441480901",
+      "channelId": "1470322933766426715",
+      "channel": "🎓│𝙰𝚕𝚞𝚖𝚗𝚒-𝙷𝚊𝚕𝚕",
+      "postedAt": "2026-07-28T06:02:29.834000+00:00",
+      "title": "MJS TRAINING",
+      "eventDate": "2026-07-29",
+      "organizer": "Rilay"
     },
     {
       "id": "1531519235627683911",
@@ -608,8 +653,17 @@
       "channel": "🕸️│𝙳𝚎𝚖𝚘𝚗𝚠𝚎𝚋",
       "postedAt": "2026-07-28T04:30:40.025000+00:00",
       "title": "MDWP first clear/farm",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-07-30",
+      "organizer": "Elenara"
+    },
+    {
+      "id": "1530704862663282834",
+      "channelId": "1470322933766426715",
+      "channel": "🎓│𝙰𝚕𝚞𝚖𝚗𝚒-𝙷𝚊𝚕𝚕",
+      "postedAt": "2026-07-25T22:34:38.380000+00:00",
+      "title": "MJS RUNS",
+      "eventDate": "2026-07-30",
+      "organizer": "Azazel@eatsomewaf"
     },
     {
       "id": "1530694739186286643",
@@ -617,8 +671,8 @@
       "channel": "🔗│𝚂𝚑𝚊𝚌𝚔𝚕𝚎𝚜",
       "postedAt": "2026-07-25T21:54:24.755000+00:00",
       "title": "A/M SoD Training/1st Complete",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-08-01",
+      "organizer": "Azazel@eatsomewaf"
     },
     {
       "id": "1530443174726860944",
@@ -626,89 +680,107 @@
       "channel": "🐉│𝙼𝚊𝚍-𝙳𝚛𝚊𝚐𝚘𝚗",
       "postedAt": "2026-07-25T05:14:47.114000+00:00",
       "title": "A/MLMD first clear- gear farm",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-07-28",
+      "organizer": "Elenara"
+    },
+    {
+      "id": "1529627236582428815",
+      "channelId": "1470322933766426715",
+      "channel": "🎓│𝙰𝚕𝚞𝚖𝚗𝚒-𝙷𝚊𝚕𝚕",
+      "postedAt": "2026-07-22T23:12:32.301000+00:00",
+      "title": "GUILD 1st - MSH COMPLETE (GUILD ONLY)!",
+      "eventDate": "2026-07-22",
+      "organizer": "Ivydora"
     },
     {
       "id": "1529052508591230999",
       "channelId": "1499641964243452025",
       "channel": "🧊│𝙹𝚘𝚝𝚞𝚗𝚜𝚔𝚊𝚛",
       "postedAt": "2026-07-21T09:08:46.470000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "AJS TRAINING",
+      "eventDate": "2026-07-22",
+      "organizer": "MrZenigata / Ayar"
     },
     {
       "id": "1528901801795916030",
       "channelId": "1450570265359548436",
       "channel": "🔗│𝚂𝚑𝚊𝚌𝚔𝚕𝚎𝚜",
       "postedAt": "2026-07-20T23:09:55.170000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MSOD GUILD RUNS",
+      "eventDate": "2026-07-25",
+      "organizer": "Azazel@eatsomewaf"
     },
     {
       "id": "1528534355784503508",
       "channelId": "1499641964243452025",
       "channel": "🧊│𝙹𝚘𝚝𝚞𝚗𝚜𝚔𝚊𝚛",
       "postedAt": "2026-07-19T22:49:49.214000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "AJS TRAINING",
+      "eventDate": "2026-07-23",
+      "organizer": "Elenara"
     },
     {
       "id": "1528532276806156359",
       "channelId": "1450566544575959210",
       "channel": "🕸️│𝙳𝚎𝚖𝚘𝚗𝚠𝚎𝚋",
       "postedAt": "2026-07-19T22:41:33.547000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MDWP FIRST BOSS FARM",
+      "eventDate": "2026-07-21",
+      "organizer": "Elenara"
     },
     {
       "id": "1528530965851537599",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-07-19T22:36:20.991000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH TRAINING WEEKLY",
+      "eventDate": "2026-07-25",
+      "organizer": "Elenara"
     },
     {
       "id": "1528460886489042975",
       "channelId": "1499641964243452025",
       "channel": "🧊│𝙹𝚘𝚝𝚞𝚗𝚜𝚔𝚊𝚛",
       "postedAt": "2026-07-19T17:57:52.769000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MJSEXPMJSEXPMJS",
+      "eventDate": "2026-07-20",
+      "organizer": "Ellenaro"
+    },
+    {
+      "id": "1528125595710390496",
+      "channelId": "1470322933766426715",
+      "channel": "🎓│𝙰𝚕𝚞𝚖𝚗𝚒-𝙷𝚊𝚕𝚕",
+      "postedAt": "2026-07-18T19:45:33.218000+00:00",
+      "title": "MJS FARM",
+      "eventDate": "2026-07-18",
+      "organizer": "Ivydora"
     },
     {
       "id": "1527701746334306504",
       "channelId": "1499641964243452025",
       "channel": "🧊│𝙹𝚘𝚝𝚞𝚗𝚜𝚔𝚊𝚛",
       "postedAt": "2026-07-17T15:41:19.652000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MJS",
+      "eventDate": "2026-07-17",
+      "organizer": "Ivydora"
     },
     {
       "id": "1526089894815072327",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-07-13T04:56:24.303000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH TRAINING",
+      "eventDate": "2026-07-19",
+      "organizer": "Elenara"
     },
     {
       "id": "1526085472101728267",
       "channelId": "1499641964243452025",
       "channel": "🧊│𝙹𝚘𝚝𝚞𝚗𝚜𝚔𝚊𝚛",
       "postedAt": "2026-07-13T04:38:49.846000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "AJS TRAINING",
+      "eventDate": "2026-07-16",
+      "organizer": "Elenara"
     },
     {
       "id": "1524806997005045976",
@@ -716,17 +788,35 @@
       "channel": "🔗│𝚂𝚑𝚊𝚌𝚔𝚕𝚎𝚜",
       "postedAt": "2026-07-09T15:58:37.630000+00:00",
       "title": "Breaking the shackles! MSOD",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-07-10",
+      "organizer": "Mio-Ava tonk"
     },
     {
       "id": "1523907640848023724",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-07-07T04:24:54.413000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH",
+      "eventDate": "2026-07-11",
+      "organizer": "Azazel@eatsomewaf"
+    },
+    {
+      "id": "1523907020502208616",
+      "channelId": "1470322933766426715",
+      "channel": "🎓│𝙰𝚕𝚞𝚖𝚗𝚒-𝙷𝚊𝚕𝚕",
+      "postedAt": "2026-07-07T04:22:26.511000+00:00",
+      "title": "MJS",
+      "eventDate": "2026-07-11",
+      "organizer": "Azazel@eatsomewaf"
+    },
+    {
+      "id": "1511489179283099678",
+      "channelId": "1470322933766426715",
+      "channel": "🎓│𝙰𝚕𝚞𝚖𝚗𝚒-𝙷𝚊𝚕𝚕",
+      "postedAt": "2026-06-02T21:58:22.452000+00:00",
+      "title": "MSOD",
+      "eventDate": "2026-06-06",
+      "organizer": "Azazel@eatsomewaf"
     },
     {
       "id": "1511353712256487515",
@@ -742,9 +832,9 @@
       "channelId": "1499641964243452025",
       "channel": "🧊│𝙹𝚘𝚝𝚞𝚗𝚜𝚔𝚊𝚛",
       "postedAt": "2026-05-31T10:24:22.133000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "AJS RUNS",
+      "eventDate": "2026-05-31",
+      "organizer": "Andealous"
     },
     {
       "id": "1510348286878290102",
@@ -752,8 +842,8 @@
       "channel": "☠️│𝙳𝚛𝚎𝚊𝚍-𝚂𝚊𝚗𝚌𝚝𝚞𝚖",
       "postedAt": "2026-05-30T18:24:52.506000+00:00",
       "title": "MTDS FIRST BOSS FARMING",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-06-02",
+      "organizer": "Reinds/sojo/sojo1"
     },
     {
       "id": "1509906187427254313",
@@ -761,17 +851,26 @@
       "channel": "🧊│𝙹𝚘𝚝𝚞𝚗𝚜𝚔𝚊𝚛",
       "postedAt": "2026-05-29T13:08:07.783000+00:00",
       "title": "Ajs farming for materials and loot",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-05-30",
+      "organizer": "Reinds/sojo/sojo1"
+    },
+    {
+      "id": "1509830299414954076",
+      "channelId": "1470322933766426715",
+      "channel": "🎓│𝙰𝚕𝚞𝚖𝚗𝚒-𝙷𝚊𝚕𝚕",
+      "postedAt": "2026-05-29T08:06:34.671000+00:00",
+      "title": "MJSXP",
+      "eventDate": "2026-05-30",
+      "organizer": "Ellenaro"
     },
     {
       "id": "1509496498675777556",
       "channelId": "1450566544575959210",
       "channel": "🕸️│𝙳𝚎𝚖𝚘𝚗𝚠𝚎𝚋",
       "postedAt": "2026-05-28T10:00:10.373000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MDWP FULL RUN",
+      "eventDate": "2026-05-28",
+      "organizer": "Mio-Ava tonk"
     },
     {
       "id": "1509221077673447455",
@@ -779,53 +878,53 @@
       "channel": "🌙│𝙼𝚘𝚘𝚗𝚍𝚊𝚗𝚌𝚎𝚛",
       "postedAt": "2026-05-27T15:45:44.889000+00:00",
       "title": "MOONDANCER !!!!! ofcurse advanced 🎉",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-05-29",
+      "organizer": "Vega ~ Soul"
     },
     {
       "id": "1508830881417003018",
       "channelId": "1499641964243452025",
       "channel": "🧊│𝙹𝚘𝚝𝚞𝚗𝚜𝚔𝚊𝚛",
       "postedAt": "2026-05-26T13:55:14.852000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "AJS TRAIING",
+      "eventDate": "2026-05-27",
+      "organizer": "Reinds/sojo/sojo1"
     },
     {
       "id": "1508320941564756110",
       "channelId": "1499641964243452025",
       "channel": "🧊│𝙹𝚘𝚝𝚞𝚗𝚜𝚔𝚊𝚛",
       "postedAt": "2026-05-25T04:08:55.717000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "AJS TRAINING RUN",
+      "eventDate": "2026-05-26",
+      "organizer": "Reinds/sojo/sojo1"
     },
     {
       "id": "1508212955366428702",
       "channelId": "1499641964243452025",
       "channel": "🧊│𝙹𝚘𝚝𝚞𝚗𝚜𝚔𝚊𝚛",
       "postedAt": "2026-05-24T20:59:49.801000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "AJS TRAINING RUN",
+      "eventDate": "2026-05-25",
+      "organizer": "Andealous"
     },
     {
       "id": "1508182337018531961",
       "channelId": "1450567085666074766",
       "channel": "🐉│𝙼𝚊𝚍-𝙳𝚛𝚊𝚐𝚘𝚗",
       "postedAt": "2026-05-24T18:58:09.818000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MLMD",
+      "eventDate": "2026-05-25",
+      "organizer": "Reinds/sojo/sojo1"
     },
     {
       "id": "1507763421490450483",
       "channelId": "1450567085666074766",
       "channel": "🐉│𝙼𝚊𝚍-𝙳𝚛𝚊𝚐𝚘𝚗",
       "postedAt": "2026-05-23T15:13:32.573000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MLMD GEAR FARMING",
+      "eventDate": "2026-05-24",
+      "organizer": "Reinds/sojo/sojo1"
     },
     {
       "id": "1507406059193499680",
@@ -833,8 +932,8 @@
       "channel": "🕸️│𝙳𝚎𝚖𝚘𝚗𝚠𝚎𝚋",
       "postedAt": "2026-05-22T15:33:30.762000+00:00",
       "title": "MDWP FIRST BOSS FARM FOR ORE AND MARLITH HAIR",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-05-22",
+      "organizer": "Reinds/sojo/sojo1"
     },
     {
       "id": "1507398706456957092",
@@ -842,26 +941,26 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-05-22T15:04:17.733000+00:00",
       "title": "ASH farming exp for rings and gear",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-05-23",
+      "organizer": "Reinds/sojo/sojo1"
     },
     {
       "id": "1507305473815216218",
       "channelId": "1499641964243452025",
       "channel": "🧊│𝙹𝚘𝚝𝚞𝚗𝚜𝚔𝚊𝚛",
       "postedAt": "2026-05-22T08:53:49.339000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "AJS TRAINING",
+      "eventDate": "2026-05-26",
+      "organizer": "MrZenigata / Ayar"
     },
     {
       "id": "1507230559112396891",
       "channelId": "1499641964243452025",
       "channel": "🧊│𝙹𝚘𝚝𝚞𝚗𝚜𝚔𝚊𝚛",
       "postedAt": "2026-05-22T03:56:08.282000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "AJS TRAINING RUN",
+      "eventDate": "2026-05-25",
+      "organizer": "Azazel@eatsomewaf"
     },
     {
       "id": "1507045050499072033",
@@ -869,8 +968,8 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-05-21T15:38:59.582000+00:00",
       "title": "ASH FARMING EXP PLAYERS",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-05-22",
+      "organizer": "Reinds/sojo/sojo1"
     },
     {
       "id": "1506853249532035082",
@@ -878,17 +977,17 @@
       "channel": "🕸️│𝙳𝚎𝚖𝚘𝚗𝚠𝚎𝚋",
       "postedAt": "2026-05-21T02:56:50.668000+00:00",
       "title": "MDWP first boss for resources and money",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-05-20",
+      "organizer": "Reinds/sojo/sojo1"
     },
     {
       "id": "1506666292843647050",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-05-20T14:33:56.720000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH EXP FARMING",
+      "eventDate": "2026-05-21",
+      "organizer": "Reinds/sojo/sojo1"
     },
     {
       "id": "1506536071364870255",
@@ -896,8 +995,8 @@
       "channel": "🕸️│𝙳𝚎𝚖𝚘𝚗𝚠𝚎𝚋",
       "postedAt": "2026-05-20T05:56:29.500000+00:00",
       "title": "MDWP  FIRST BOSS FARM for materials and money",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-05-20",
+      "organizer": "Reinds/sojo/sojo1"
     },
     {
       "id": "1505496986667712534",
@@ -905,8 +1004,8 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-05-17T09:07:32.403000+00:00",
       "title": "Last ASH training before Mod33",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-05-17",
+      "organizer": "Vega ~ Soul"
     },
     {
       "id": "1505496338446422087",
@@ -914,62 +1013,89 @@
       "channel": "🔗│𝚂𝚑𝚊𝚌𝚔𝚕𝚎𝚜",
       "postedAt": "2026-05-17T09:04:57.855000+00:00",
       "title": "Last ASOD training before Mod33",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-05-18",
+      "organizer": "Vega ~ Soul"
     },
     {
       "id": "1503728078503940217",
       "channelId": "1450570265359548436",
       "channel": "🔗│𝚂𝚑𝚊𝚌𝚔𝚕𝚎𝚜",
       "postedAt": "2026-05-12T11:58:31.832000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASOD TRAINING",
+      "eventDate": "2026-05-14",
+      "organizer": "Azazel@eatsomewaf"
+    },
+    {
+      "id": "1501008714017275995",
+      "channelId": "1470322933766426715",
+      "channel": "🎓│𝙰𝚕𝚞𝚖𝚗𝚒-𝙷𝚊𝚕𝚕",
+      "postedAt": "2026-05-04T23:52:44.815000+00:00",
+      "title": "MSOD",
+      "eventDate": "2026-05-09",
+      "organizer": "Asura"
+    },
+    {
+      "id": "1499961538818216036",
+      "channelId": "1470322933766426715",
+      "channel": "🎓│𝙰𝚕𝚞𝚖𝚗𝚒-𝙷𝚊𝚕𝚕",
+      "postedAt": "2026-05-02T02:31:38.792000+00:00",
+      "title": "MSOD",
+      "eventDate": "2026-05-04",
+      "organizer": "Azazel@eatsomewaf"
     },
     {
       "id": "1499758800666624090",
       "channelId": "1450570265359548436",
       "channel": "🔗│𝚂𝚑𝚊𝚌𝚔𝚕𝚎𝚜",
       "postedAt": "2026-05-01T13:06:02.250000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASOD FARM",
+      "eventDate": "2026-05-02",
+      "organizer": "Vega"
     },
     {
       "id": "1498864494229717084",
       "channelId": "1450569307171065856",
       "channel": "👹│𝙳𝚎𝚖𝚘𝚐𝚘𝚛𝚐𝚘𝚗",
       "postedAt": "2026-04-29T01:52:22.980000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "DEMO FARM",
+      "eventDate": "2026-04-30",
+      "organizer": "Vega"
+    },
+    {
+      "id": "1497642716522352773",
+      "channelId": "1470322933766426715",
+      "channel": "🎓│𝙰𝚕𝚞𝚖𝚗𝚒-𝙷𝚊𝚕𝚕",
+      "postedAt": "2026-04-25T16:57:28.475000+00:00",
+      "title": "MSOD",
+      "eventDate": "2026-04-28",
+      "organizer": "MrZenigata / Ayar"
     },
     {
       "id": "1496860728865329295",
       "channelId": "1450570265359548436",
       "channel": "🔗│𝚂𝚑𝚊𝚌𝚔𝚕𝚎𝚜",
       "postedAt": "2026-04-23T13:10:08.089000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASOD X5 FARM",
+      "eventDate": "2026-04-24",
+      "organizer": "Vega"
     },
     {
       "id": "1495111829012349041",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-04-18T17:20:37.871000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH TRAINING",
+      "eventDate": "2026-04-21",
+      "organizer": "MrZenigata / Ayar"
     },
     {
       "id": "1495110968756142211",
       "channelId": "1450570103837167770",
       "channel": "🌙│𝙼𝚘𝚘𝚗𝚍𝚊𝚗𝚌𝚎𝚛",
       "postedAt": "2026-04-18T17:17:12.770000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ADOM FOR EVERYONE",
+      "eventDate": "2026-04-23",
+      "organizer": "MrZenigata / Ayar"
     },
     {
       "id": "1495088150257733854",
@@ -977,26 +1103,26 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-04-18T15:46:32.416000+00:00",
       "title": "ASH FARMING EXP Players",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-04-20",
+      "organizer": "Reinds"
     },
     {
       "id": "1494728621858754654",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-04-17T15:57:54.166000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH TRAINIG RUN",
+      "eventDate": "2026-04-18",
+      "organizer": "Reinds"
     },
     {
       "id": "1494337636423303329",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-04-16T14:04:15.974000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH FARMING",
+      "eventDate": "2026-04-17",
+      "organizer": "Reinds"
     },
     {
       "id": "1493970498294386923",
@@ -1004,8 +1130,8 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-04-15T13:45:23.423000+00:00",
       "title": "ASH FARMING FOR EXP PLAYERS",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-04-15",
+      "organizer": "Reinds"
     },
     {
       "id": "1493969527497691217",
@@ -1013,8 +1139,8 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-04-15T13:41:31.967000+00:00",
       "title": "ASH FARMING RUN FOR exp players",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-04-16",
+      "organizer": "Reinds"
     },
     {
       "id": "1493601388935254016",
@@ -1022,8 +1148,8 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-04-14T13:18:40.894000+00:00",
       "title": "ASH Farming x3 exp players only",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-04-15",
+      "organizer": "Reinds"
     },
     {
       "id": "1493286695930564669",
@@ -1031,53 +1157,62 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-04-13T16:28:12.235000+00:00",
       "title": "ASH FARM FOR Exp players 3x runs for 1 hr",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-04-14",
+      "organizer": "Reinds"
     },
     {
       "id": "1492779697191387278",
       "channelId": "1450570265359548436",
       "channel": "🔗│𝚂𝚑𝚊𝚌𝚔𝚕𝚎𝚜",
       "postedAt": "2026-04-12T06:53:34.316000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASOD TRAINING",
+      "eventDate": "2026-04-17",
+      "organizer": "Asura"
+    },
+    {
+      "id": "1492066899972853800",
+      "channelId": "1470322933766426715",
+      "channel": "🎓│𝙰𝚕𝚞𝚖𝚗𝚒-𝙷𝚊𝚕𝚕",
+      "postedAt": "2026-04-10T07:41:10.216000+00:00",
+      "title": "MSOD",
+      "eventDate": "2026-04-18",
+      "organizer": "Azazel@eatsomewaf"
     },
     {
       "id": "1492061967937048640",
       "channelId": "1450566544575959210",
       "channel": "🕸️│𝙳𝚎𝚖𝚘𝚗𝚠𝚎𝚋",
       "postedAt": "2026-04-10T07:21:34.327000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MDWP 1ST BOSS FARM",
+      "eventDate": "2026-04-13",
+      "organizer": "Azazel@eatsomewaf"
     },
     {
       "id": "1492060778797203458",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-04-10T07:16:50.814000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH FARM 3Xplus",
+      "eventDate": "2026-04-14",
+      "organizer": "Azazel@eatsomewaf"
     },
     {
       "id": "1491755264351801499",
       "channelId": "1450570265359548436",
       "channel": "🔗│𝚂𝚑𝚊𝚌𝚔𝚕𝚎𝚜",
       "postedAt": "2026-04-09T11:02:50.494000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASOD FARM X5",
+      "eventDate": "2026-04-09",
+      "organizer": "Vega"
     },
     {
       "id": "1491059036748124332",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-04-07T12:56:16.898000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH FARM EXP PLS X3",
+      "eventDate": "2026-04-08",
+      "organizer": "Reinds"
     },
     {
       "id": "1490707872722718791",
@@ -1085,26 +1220,26 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-04-06T13:40:52.870000+00:00",
       "title": "ASH FARM not bugg pls",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-04-07",
+      "organizer": "Reinds"
     },
     {
       "id": "1488901106074652704",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-04-01T14:01:26.133000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH FARMING",
+      "eventDate": "2026-04-04",
+      "organizer": "Reinds"
     },
     {
       "id": "1488898572744392775",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-04-01T13:51:22.140000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH FARMING X3",
+      "eventDate": "2026-04-06",
+      "organizer": "Reinds"
     },
     {
       "id": "1488569055853154315",
@@ -1112,8 +1247,8 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-03-31T16:01:59.191000+00:00",
       "title": "ASH Farming MAX 3 Runs",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-04-01",
+      "organizer": "Reinds"
     },
     {
       "id": "1488146835821433012",
@@ -1121,8 +1256,8 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-03-30T12:04:14.091000+00:00",
       "title": null,
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-03-31",
+      "organizer": "Reinds"
     },
     {
       "id": "1488029433183862876",
@@ -1130,8 +1265,8 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-03-30T04:17:43.121000+00:00",
       "title": "ASH FARMING AND TRAINING",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-03-30",
+      "organizer": "Reinds"
     },
     {
       "id": "1486642811410321500",
@@ -1139,17 +1274,35 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-03-26T08:27:46.728000+00:00",
       "title": null,
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-03-26",
+      "organizer": "oTaffyo"
     },
     {
       "id": "1486621440550764574",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-03-26T07:02:51.518000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH TRAINING RUNS",
+      "eventDate": "2026-03-31",
+      "organizer": "Azazel@eatsomewaf"
+    },
+    {
+      "id": "1483722360115695677",
+      "channelId": "1470322933766426715",
+      "channel": "🎓│𝙰𝚕𝚞𝚖𝚗𝚒-𝙷𝚊𝚕𝚕",
+      "postedAt": "2026-03-18T07:02:56.880000+00:00",
+      "title": "MSOD",
+      "eventDate": "2026-03-18",
+      "organizer": "oTaffyo"
+    },
+    {
+      "id": "1482131384947576843",
+      "channelId": "1470322933766426715",
+      "channel": "🎓│𝙰𝚕𝚞𝚖𝚗𝚒-𝙷𝚊𝚕𝚕",
+      "postedAt": "2026-03-13T21:40:58.841000+00:00",
+      "title": "MSOD",
+      "eventDate": "2026-03-17",
+      "organizer": "MrZenigata / Ayar"
     },
     {
       "id": "1481825543232950413",
@@ -1157,8 +1310,8 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-03-13T01:25:40.494000+00:00",
       "title": null,
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-03-13",
+      "organizer": "oTaffyo"
     },
     {
       "id": "1481424574741483611",
@@ -1166,35 +1319,35 @@
       "channel": "🔗│𝚂𝚑𝚊𝚌𝚔𝚕𝚎𝚜",
       "postedAt": "2026-03-11T22:52:22.156000+00:00",
       "title": null,
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-03-15",
+      "organizer": "oTaffyo"
     },
     {
       "id": "1480529768238551122",
       "channelId": "1450566544575959210",
       "channel": "🕸️│𝙳𝚎𝚖𝚘𝚗𝚠𝚎𝚋",
       "postedAt": "2026-03-09T11:36:43.661000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MDWP TRAINING",
+      "eventDate": "2026-03-11",
+      "organizer": "Azazel@eatsomewaf"
     },
     {
       "id": "1478096457360736286",
       "channelId": "1450567085666074766",
       "channel": "🐉│𝙼𝚊𝚍-𝙳𝚛𝚊𝚐𝚘𝚗",
       "postedAt": "2026-03-02T18:27:37.139000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MLMD",
+      "eventDate": "2026-03-06",
+      "organizer": "Asura"
     },
     {
       "id": "1477360363250126968",
       "channelId": "1450566788122153061",
       "channel": "🕷️│𝚃𝚎𝚖𝚙𝚕𝚎-𝚘𝚏-𝚂𝚙𝚒𝚍𝚎𝚛",
       "postedAt": "2026-02-28T17:42:38.627000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MTOS RING FARM",
+      "eventDate": "2026-03-01",
+      "organizer": "Micioarancio"
     },
     {
       "id": "1477331785019817985",
@@ -1211,89 +1364,89 @@
       "channel": "🕷️│𝚃𝚎𝚖𝚙𝚕𝚎-𝚘𝚏-𝚂𝚙𝚒𝚍𝚎𝚛",
       "postedAt": "2026-02-28T08:42:24.887000+00:00",
       "title": null,
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-02-28",
+      "organizer": "Micioarancio"
     },
     {
       "id": "1476545619567972412",
       "channelId": "1450566544575959210",
       "channel": "🕸️│𝙳𝚎𝚖𝚘𝚗𝚠𝚎𝚋",
       "postedAt": "2026-02-26T11:45:08.596000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MDWP FARM",
+      "eventDate": "2026-02-27",
+      "organizer": "Asura"
     },
     {
       "id": "1476185044480430228",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-02-25T11:52:20.796000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH FARMING",
+      "eventDate": "2026-02-25",
+      "organizer": "oTaffyo"
     },
     {
       "id": "1475487196025979082",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-02-23T13:39:20.759000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH FARM",
+      "eventDate": "2026-02-23",
+      "organizer": "oTaffyo"
     },
     {
       "id": "1474891054997307606",
       "channelId": "1450570265359548436",
       "channel": "🔗│𝚂𝚑𝚊𝚌𝚔𝚕𝚎𝚜",
       "postedAt": "2026-02-21T22:10:29.662000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASOD X5 FARM",
+      "eventDate": "2026-02-22",
+      "organizer": "Vega"
     },
     {
       "id": "1474735536152383499",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-02-21T11:52:31.080000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH FARM",
+      "eventDate": "2026-02-21",
+      "organizer": "Elanor/Rydark"
     },
     {
       "id": "1474349148353335377",
       "channelId": "1450566944951632046",
       "channel": "🏰│𝙸𝚖𝚙𝚎𝚛𝚒𝚊𝚕-𝙲𝚒𝚝𝚊𝚍𝚎𝚕",
       "postedAt": "2026-02-20T10:17:09.050000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ATIC SEMIminusTRAINING",
+      "eventDate": "2026-02-20",
+      "organizer": "Vega"
     },
     {
       "id": "1474184890235883716",
       "channelId": "1450566544575959210",
       "channel": "🕸️│𝙳𝚎𝚖𝚘𝚗𝚠𝚎𝚋",
       "postedAt": "2026-02-19T23:24:26.863000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MDWP FARM",
+      "eventDate": "2026-02-20",
+      "organizer": "Asura"
     },
     {
       "id": "1472846578350821473",
       "channelId": "1450567085666074766",
       "channel": "🐉│𝙼𝚊𝚍-𝙳𝚛𝚊𝚐𝚘𝚗",
       "postedAt": "2026-02-16T06:46:28.445000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MLMD",
+      "eventDate": "2026-02-18",
+      "organizer": "Azazel@eatsomewaf"
     },
     {
       "id": "1472845035950178439",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-02-16T06:40:20.708000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH TRAINING",
+      "eventDate": "2026-02-17",
+      "organizer": "Azazel@eatsomewaf"
     },
     {
       "id": "1471987354205163561",
@@ -1301,8 +1454,8 @@
       "channel": "🔗│𝚂𝚑𝚊𝚌𝚔𝚕𝚎𝚜",
       "postedAt": "2026-02-13T21:52:13.445000+00:00",
       "title": "ASOD x5 farm exp players",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-02-15",
+      "organizer": "Vega"
     },
     {
       "id": "1471592245579874394",
@@ -1310,62 +1463,80 @@
       "channel": "🔗│𝚂𝚑𝚊𝚌𝚔𝚕𝚎𝚜",
       "postedAt": "2026-02-12T19:42:12.208000+00:00",
       "title": "ASOD x5 farm exp players",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-02-13",
+      "organizer": "Vega"
+    },
+    {
+      "id": "1470709391505494180",
+      "channelId": "1470322933766426715",
+      "channel": "🎓│𝙰𝚕𝚞𝚖𝚗𝚒-𝙷𝚊𝚕𝚕",
+      "postedAt": "2026-02-10T09:14:03.394000+00:00",
+      "title": "MSOD GUILD COMPLETE",
+      "eventDate": "2026-02-13",
+      "organizer": "crisem97"
+    },
+    {
+      "id": "1470664724441075764",
+      "channelId": "1470322933766426715",
+      "channel": "🎓│𝙰𝚕𝚞𝚖𝚗𝚒-𝙷𝚊𝚕𝚕",
+      "postedAt": "2026-02-10T06:16:33.936000+00:00",
+      "title": "MSHRUNORRUNS",
+      "eventDate": "2026-02-11",
+      "organizer": "Ellenaro"
     },
     {
       "id": "1469610258136698922",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-02-07T08:26:29.578000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH",
+      "eventDate": "2026-02-10",
+      "organizer": "MrZenigata / Ayar"
     },
     {
       "id": "1469443782784061604",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-02-06T21:24:58.761000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH TRAINING",
+      "eventDate": "2026-02-11",
+      "organizer": "Azazel@eatsomewaf"
     },
     {
       "id": "1469442458965512315",
       "channelId": "1450566544575959210",
       "channel": "🕸️│𝙳𝚎𝚖𝚘𝚗𝚠𝚎𝚋",
       "postedAt": "2026-02-06T21:19:43.138000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MDWP FARM",
+      "eventDate": "2026-02-13",
+      "organizer": "Azazel@eatsomewaf"
     },
     {
       "id": "1467822891159519275",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-02-02T10:04:08.083000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MSHRUNEXPONLY",
+      "eventDate": "2026-02-03",
+      "organizer": "Ellenaro"
     },
     {
       "id": "1467295181907689472",
       "channelId": "1450567085666074766",
       "channel": "🐉│𝙼𝚊𝚍-𝙳𝚛𝚊𝚐𝚘𝚗",
       "postedAt": "2026-01-31T23:07:12.393000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MLOMD FARM GEAR",
+      "eventDate": "2026-02-05",
+      "organizer": "crisem97"
     },
     {
       "id": "1467270166256812204",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-01-31T21:27:48.197000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH FARMING",
+      "eventDate": "2026-02-01",
+      "organizer": "crisem97"
     },
     {
       "id": "1466991394991112325",
@@ -1373,26 +1544,26 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-01-31T03:00:03.948000+00:00",
       "title": null,
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-01-31",
+      "organizer": "crisem97"
     },
     {
       "id": "1466687875587379232",
       "channelId": "1450566544575959210",
       "channel": "🕸️│𝙳𝚎𝚖𝚘𝚗𝚠𝚎𝚋",
       "postedAt": "2026-01-30T06:53:59.283000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MDWP FARM 3Xplus",
+      "eventDate": "2026-02-04",
+      "organizer": "Azazel@eatsomewaf"
     },
     {
       "id": "1465827844742709414",
       "channelId": "1450570265359548436",
       "channel": "🔗│𝚂𝚑𝚊𝚌𝚔𝚕𝚎𝚜",
       "postedAt": "2026-01-27T21:56:31.951000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASOD X5",
+      "eventDate": "2026-01-29",
+      "organizer": "MrZenigata / Ayar"
     },
     {
       "id": "1465328376838619269",
@@ -1400,53 +1571,53 @@
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2026-01-26T12:51:49.523000+00:00",
       "title": "ASH farm/training all welcome",
-      "eventDate": null,
-      "organizer": null
+      "eventDate": "2026-01-27",
+      "organizer": "oTaffyo"
     },
     {
       "id": "1453774715725283348",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2025-12-25T15:41:42.057000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH FARM",
+      "eventDate": "2025-12-25",
+      "organizer": "oTaffyo"
     },
     {
       "id": "1452958248251687013",
       "channelId": "1450569649199513651",
       "channel": "🐲│𝚃𝚒𝚊𝚖𝚊𝚝",
       "postedAt": "2025-12-23T09:37:21.042000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "M TIAMAT",
+      "eventDate": "2025-12-26",
+      "organizer": "MrZenigata / Ayar"
     },
     {
       "id": "1452579727754919936",
       "channelId": "1450570103837167770",
       "channel": "🌙│𝙼𝚘𝚘𝚗𝚍𝚊𝚗𝚌𝚎𝚛",
       "postedAt": "2025-12-22T08:33:14.723000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ADOM",
+      "eventDate": "2025-12-23",
+      "organizer": "oTaffyo"
     },
     {
       "id": "1452578633846882347",
       "channelId": "1450569649199513651",
       "channel": "🐲│𝚃𝚒𝚊𝚖𝚊𝚝",
       "postedAt": "2025-12-22T08:28:53.915000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "MTIA",
+      "eventDate": "2025-12-22",
+      "organizer": "oTaffyo"
     },
     {
       "id": "1450592049660301394",
       "channelId": "1450570383999766740",
       "channel": "💀│𝚂𝚘𝚞𝚕-𝙷𝚊𝚛𝚟𝚎𝚜𝚝",
       "postedAt": "2025-12-16T20:54:55.336000+00:00",
-      "title": null,
-      "eventDate": null,
-      "organizer": null
+      "title": "ASH FARM",
+      "eventDate": "2025-12-17",
+      "organizer": "MrZenigata / Ayar"
     },
     {
       "id": "1069451706041118820",
