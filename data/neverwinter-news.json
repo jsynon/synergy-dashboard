@@ -1,9 +1,49 @@
 {
   "source": "https://www.playneverwinter.com/en/news",
   "api": "https://api.arcgames.com/v1.0/games/nw/news",
-  "generatedAt": "2026-11-12T19:02:35.825Z",
+  "generatedAt": "2026-11-16T22:26:46.823Z",
   "count": 100,
   "articles": [
+    {
+      "id": "11584073",
+      "title": "25% Bonus Zen & Zen Sale",
+      "summary": "Adventurers that are always looking to make a good deal can now profit from 25% Bonus Zen on PC and from 25% off select Zen packs on Xbox and PlayStation!",
+      "date": "2026-11-16",
+      "url": "https://www.playneverwinter.com/en/news-details/11584073",
+      "image": "https://pwimages-a.akamaihd.net/arc/25/82/2582c93f102854d93c316bbe5231202e1794577326.jpg",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
+    {
+      "id": "11584016",
+      "title": "The Unfathomed Lockbox",
+      "summary": "Get rattled or shocked with Neverwinter's latest Lockbox!",
+      "date": "2026-11-16",
+      "url": "https://www.playneverwinter.com/en/news-details/11584016",
+      "image": "https://pwimages-a.akamaihd.net/arc/ec/e1/ece1c7be9192f185b6d12f49652af4a51794486354.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
     {
       "id": "11583917",
       "title": "Beneath Sleeping Ice Battle Pass",
@@ -1974,48 +2014,6 @@
       "tags": [
         "nw-launcher",
         "nw-events",
-        "nw-xbox",
-        "nw-playstation"
-      ]
-    },
-    {
-      "id": "11578710",
-      "title": "Patch Notes For 11/18/25",
-      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
-      "date": "2025-11-18",
-      "url": "https://www.playneverwinter.com/en/news-details/11578710",
-      "image": "https://pwimages-a.akamaihd.net/arc/35/52/355203740748fcc954a002583299a4591763461000.jpg",
-      "platforms": [
-        "pc",
-        "ps",
-        "xbox"
-      ],
-      "tags": [
-        "nw-launcher",
-        "nw-patch-notes",
-        "nw-news",
-        "neverwinter",
-        "patch-notes",
-        "nw-xbox",
-        "nw-playstation"
-      ]
-    },
-    {
-      "id": "11578668",
-      "title": "2x Path of the Fallen Campaign Currency",
-      "summary": "Help restore a fallen angel’s divinity with 2x Path of the Fallen Campaign Currency.",
-      "date": "2025-11-17",
-      "url": "https://www.playneverwinter.com/en/news-details/11578668",
-      "image": "https://pwimages-a.akamaihd.net/arc/e8/47/e847bf99b62433520598fa276a4abdf31763114302.jpg",
-      "platforms": [
-        "pc",
-        "ps",
-        "xbox"
-      ],
-      "tags": [
-        "nw-launcher",
-        "nw-news",
-        "neverwinter",
         "nw-xbox",
         "nw-playstation"
       ]
