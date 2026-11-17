@@ -83,14 +83,22 @@ function buildAltArmy(snapshot) {
   return rows.slice(0, BOARD_SIZE);
 }
 
-// Taking an item out and putting it back — moving it between bank
-// tabs, or withdrawing it and re-depositing it moments later — logs
-// a withdrawal and then a deposit of the same item and amount by
-// the same account. The deposit side of such a pair is not a new
-// contribution, so it never counts toward the deposit-count board.
-// Pairs are matched one-to-one in time order within a minute; a
-// deposit that comes BEFORE a withdrawal is a real deposit and
-// always counts.
+// Two patterns keep a deposit out of the deposit-count board,
+// because neither leaves the bank better off:
+//
+// Put-backs: taking an item out and putting it back — moving it
+// between bank tabs, or withdrawing it and re-depositing it
+// moments later — logs a withdrawal and then a deposit of the
+// same item and amount by the same account. The deposit side of
+// such a pair is not a new contribution. Pairs are matched
+// one-to-one in time order within a minute; a deposit that comes
+// BEFORE a withdrawal is a real deposit and always counts.
+//
+// Take-backs: a deposit whose item the same account withdraws
+// again later — whenever that happens — did not stay given, so
+// it stops counting. Each withdrawal cancels the most recent
+// deposit before it, and a withdrawal already spent on a
+// put-back pair is not spent twice.
 const MOVE_WINDOW_MS = 60000;
 
 function bankMoveDeposits(events) {
@@ -102,28 +110,51 @@ function bankMoveDeposits(events) {
     if (!when) continue;
     const key = keyOf(event);
     if (!withdrawals.has(key)) withdrawals.set(key, []);
-    withdrawals.get(key).push(when.getTime());
+    withdrawals.get(key).push([when.getTime(), event]);
   }
-  for (const list of withdrawals.values()) list.sort((a, b) => a - b);
-  const pointers = new Map();
-  const moves = new Set();
+  for (const list of withdrawals.values()) list.sort((a, b) => a[0] - b[0]);
   const deposits = events
     .filter((event) => event.action === "deposit")
     .map((event) => [event, parseDate(event.date)])
     .filter((pair) => pair[1])
     .sort((a, b) => a[1] - b[1]);
+  const moves = new Set();
+  const spentWithdrawals = new Set();
+  const pointers = new Map();
   for (const [event, when] of deposits) {
     const key = keyOf(event);
     const list = withdrawals.get(key);
     if (!list) continue;
     const t = when.getTime();
     let i = pointers.get(key) || 0;
-    while (i < list.length && list[i] < t - MOVE_WINDOW_MS) i += 1;
-    if (i < list.length && list[i] <= t) {
+    while (i < list.length && list[i][0] < t - MOVE_WINDOW_MS) i += 1;
+    if (i < list.length && list[i][0] <= t) {
       moves.add(event);
+      spentWithdrawals.add(list[i][1]);
       i += 1;
     }
     pointers.set(key, i);
+  }
+  const countedByKey = new Map();
+  for (const [event, when] of deposits) {
+    if (moves.has(event)) continue;
+    const key = keyOf(event);
+    if (!countedByKey.has(key)) countedByKey.set(key, []);
+    countedByKey.get(key).push([event, when.getTime()]);
+  }
+  for (const [key, list] of withdrawals) {
+    const counted = countedByKey.get(key);
+    if (!counted) continue;
+    for (const [t, withdrawal] of list) {
+      if (spentWithdrawals.has(withdrawal)) continue;
+      for (let i = counted.length - 1; i >= 0; i -= 1) {
+        if (counted[i][1] < t) {
+          moves.add(counted[i][0]);
+          counted.splice(i, 1);
+          break;
+        }
+      }
+    }
   }
   return moves;
 }
@@ -173,9 +204,16 @@ function formatGold(copper) {
 }
 
 function buildHighRoller(snapshot) {
+  // Gold is reported net: a withdrawal of gold cancels gold the
+  // same account deposited earlier, so what an account took back
+  // out is not counted as given. Withdrawing gold the account
+  // never deposited changes nothing.
   const totalsByAccount = new Map();
-  for (const event of snapshot.bankEvents || []) {
-    if (event.action !== "deposit") continue;
+  const ordered = (snapshot.bankEvents || [])
+    .map((event) => [event, parseDate(event.date)])
+    .filter((pair) => pair[1])
+    .sort((a, b) => a[1] - b[1]);
+  for (const [event, when] of ordered) {
     if (String(event.item || "").trim().toLowerCase() !== "copper") continue;
     const key = String(event.account || "").trim().toLowerCase();
     if (!key) continue;
@@ -186,16 +224,18 @@ function buildHighRoller(snapshot) {
       totalsByAccount.set(key, { account: event.account, total: 0, players: new Map(), first: null });
     }
     const entry = totalsByAccount.get(key);
-    entry.total += amount;
-    const player = String(event.player || "").trim();
-    if (player) entry.players.set(player, (entry.players.get(player) || 0) + amount);
-    const when = parseDate(event.date);
-    if (when) {
+    if (event.action === "deposit") {
+      entry.total += amount;
+      const player = String(event.player || "").trim();
+      if (player) entry.players.set(player, (entry.players.get(player) || 0) + amount);
       if (!entry.first || when < entry.first) entry.first = when;
+    } else if (event.action === "withdraw") {
+      entry.total = Math.max(0, entry.total - amount);
     }
   }
   const rows = [];
   for (const entry of totalsByAccount.values()) {
+    if (entry.total <= 0) continue;
     const leadPlayer = [...entry.players.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0];
     rows.push({
       name: leadPlayer ? leadPlayer[0] : entry.account,
