@@ -3,10 +3,10 @@
 
   // Guild ticker: loaded by every page, it fills the strip under the
   // main menu. Highlights are computed from the roster snapshot, the
-  // screenshots feed, and the events files. Items with nothing to show
-  // are skipped, except the next join anniversary, which always shows
-  // the nearest upcoming one. If the snapshot cannot be loaded, the
-  // ticker stays hidden.
+  // screenshots feed, the Raid-Helper posts file, and the events
+  // files. Items with nothing to show are skipped, except the next
+  // join anniversary, which always shows the nearest upcoming one.
+  // If the snapshot cannot be loaded, the ticker stays hidden.
   const tickerRoot = document.getElementById("guild-ticker");
   const tickerTrack = document.getElementById("ticker-track");
   if (tickerRoot && tickerTrack) {
@@ -32,7 +32,7 @@
       });
       return bestAccount === null ? null : [bestAccount, bestValue];
     };
-    const buildTickerItems = (snapshot, screenshots, manualEvents, discordEvents) => {
+    const buildTickerItems = (snapshot, screenshots, manualEvents, discordEvents, raidEvents) => {
       const items = [];
       const generatedAt = tickerDate(snapshot.generatedAt) || new Date();
       const weekStart = generatedAt.valueOf() - WEEK_MS;
@@ -172,6 +172,26 @@
       const highRoller = topEntry(totalsByAccount(deposits, goldDeposited));
       if (highRoller && highRoller[1] > 0) {
         items.push(`High Roller: ${displayName(highRoller[0])} — ${formatCount(highRoller[1])} gold deposited`);
+      }
+      // Counted like the Event Host board: one hosted run per
+      // Raid-Helper sign-up post, credited to the organizer the post
+      // names, with the guild leader's audited name merges and
+      // exclusions applied.
+      const hostAliases = new Map([
+        ["Reinds/sojo/sojo1", "Reinds"],
+        ["Elanor/Rydark", "Elanor"]
+      ]);
+      const ineligibleHosts = new Set(["Vega", "Vega ~ Soul", "Elenara", "Andealous", "Micioarancio"]);
+      const hostCounts = new Map();
+      (raidEvents || []).forEach((event) => {
+        const raw = String(event.organizer || "").trim();
+        if (!raw || ineligibleHosts.has(raw)) return;
+        const name = hostAliases.get(raw) || raw;
+        hostCounts.set(name, (hostCounts.get(name) || 0) + 1);
+      });
+      const eventHost = topEntry(hostCounts);
+      if (eventHost) {
+        items.push(`Top event host: ${eventHost[0]} — ${formatCount(eventHost[1])} run${eventHost[1] === 1 ? "" : "s"} hosted`);
       }
       const todayKey = new Date().toLocaleDateString("en-CA");
       // "Next up" is the soonest event that has not started yet. A
@@ -320,10 +340,11 @@
       fetchJson("data/snapshot.json"),
       fetchJson("data/screenshots.json").catch(() => null),
       fetchJson("data/manual-events.json").catch(() => null),
-      fetchJson("data/discord-events.json").catch(() => null)
+      fetchJson("data/discord-events.json").catch(() => null),
+      fetchJson("data/raid-helper-events.json").catch(() => null)
     ])
-      .then(([snapshot, screenshots, manual, discord]) => {
-        renderTicker(buildTickerItems(snapshot, screenshots, (manual && manual.events) || [], (discord && discord.events) || []));
+      .then(([snapshot, screenshots, manual, discord, raid]) => {
+        renderTicker(buildTickerItems(snapshot, screenshots, (manual && manual.events) || [], (discord && discord.events) || [], (raid && raid.events) || []));
       })
       .catch(() => {
         // The ticker stays hidden if the snapshot cannot be loaded.
