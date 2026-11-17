@@ -288,7 +288,9 @@
       // exclusions applied.
       const hostAliases = new Map([
         ["Reinds/sojo/sojo1", "Reinds"],
-        ["Elanor/Rydark", "Elanor"]
+        ["Elanor/Rydark", "Elanor"],
+        ["Azazel@eatsomewaf", "Azazel@eatsomewaffles"],
+        ["MrZenigata / Ayar", "MrZenigata / Ayara"]
       ]);
       const ineligibleHosts = new Set(["Vega", "Vega ~ Soul", "Elenara", "Andealous", "Micioarancio"]);
       const hostCounts = new Map();
