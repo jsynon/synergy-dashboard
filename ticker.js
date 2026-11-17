@@ -355,8 +355,11 @@
         });
         items.push(`Next up: ${name} — ${label}`);
       }
-      // Ending soon: events already running whose end date is the
-      // nearest one, today through the next two days.
+      // Ending soon: events already running whose end is the
+      // nearest one, today through the next two days. An event
+      // counts until the moment it actually ends — the calendar's
+      // rule: 10:30 AM Eastern on its end date, or its endTime
+      // when it carries one — not until midnight.
       const soon = new Date();
       soon.setDate(soon.getDate() + 2);
       const soonKey = soon.toLocaleDateString("en-CA");
@@ -371,7 +374,15 @@
         // read as ending on its launch day. It never appears here.
         if (event.name === "Mod 34: Sleeping Gods Lie") return;
         const endDate = event.endDate || event.startDate;
-        if (event.startDate && event.startDate <= todayKey && endDate && endDate >= todayKey && endDate <= soonKey) {
+        if (!event.startDate || !endDate) return;
+        if (event.startDate > todayKey || endDate < todayKey || endDate > soonKey) return;
+        const override = /^(\d{1,2}):(\d{2})$/.exec(event.endTime || "");
+        const valid = override && Number(override[1]) <= 23 && Number(override[2]) <= 59;
+        const hour = valid ? Number(override[1]) : 10;
+        const minute = valid ? Number(override[2]) : 30;
+        const start = easternInstant(event.startDate, hour, minute);
+        const end = easternInstant(endDate, hour, minute);
+        if (start && end && start.getTime() <= Date.now() && end.getTime() >= Date.now() - 60000) {
           addEnding(endDate, event.name);
         }
       });
