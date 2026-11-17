@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T05:13:34+00:00",
+  "generatedAt": "2026-11-17T06:07:42+00:00",
   "accountCount": 149,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -517,8 +517,8 @@
       "comment": "ash/msh/mjs/msod/mtos",
       "joinDate": "2026-03-12T16:55:58",
       "originalJoinDate": "2026-03-12T16:55:58",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-17T00:58:21",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -1091,8 +1091,8 @@
       "comment": "",
       "joinDate": "2026-07-13T16:38:06",
       "originalJoinDate": "2026-07-13T16:38:06",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-17T00:53:38",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -1175,7 +1175,7 @@
       "comment": "Nightmare",
       "joinDate": "2026-11-07T01:15:55",
       "originalJoinDate": "2026-04-25T21:27:06",
-      "lastOnline": "2026-11-16T05:09:10",
+      "lastOnline": "2026-11-17T00:58:25",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2421,7 +2421,7 @@
       "comment": "heal on demand :) +ajs/mjs",
       "joinDate": "2026-04-25T21:27:06",
       "originalJoinDate": "2026-04-25T21:27:06",
-      "lastOnline": "2026-11-16T05:10:08",
+      "lastOnline": "2026-11-17T00:59:27",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2449,8 +2449,8 @@
       "comment": "",
       "joinDate": "2026-10-13T22:06:13",
       "originalJoinDate": "2026-10-13T22:06:13",
-      "lastOnline": "2026-11-16T23:19:33",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2491,7 +2491,7 @@
       "comment": "heal on demand number 2 :) +mjs",
       "joinDate": "2026-06-06T16:31:14",
       "originalJoinDate": "2026-04-25T21:27:06",
-      "lastOnline": "2026-11-16T08:22:01",
+      "lastOnline": "2026-11-17T01:03:47",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2659,7 +2659,7 @@
       "comment": "",
       "joinDate": "2026-11-09T21:27:20",
       "originalJoinDate": "2026-10-13T22:06:13",
-      "lastOnline": "2026-11-16T22:56:48",
+      "lastOnline": "2026-11-17T00:21:59",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3177,7 +3177,7 @@
       "comment": "MSOD/MJS",
       "joinDate": "2026-09-29T12:12:43",
       "originalJoinDate": "2026-09-29T12:12:43",
-      "lastOnline": "2026-11-16T23:12:40",
+      "lastOnline": "2026-11-17T00:43:32",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3807,7 +3807,7 @@
       "comment": "Dungeon novice",
       "joinDate": "2026-01-11T14:32:09",
       "originalJoinDate": "2026-01-11T14:32:09",
-      "lastOnline": "2026-11-16T05:47:48",
+      "lastOnline": "2026-11-17T00:56:28",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -3877,7 +3877,7 @@
       "comment": "",
       "joinDate": "2026-06-27T20:20:48",
       "originalJoinDate": "2026-04-01T00:43:23",
-      "lastOnline": "2026-11-15T23:33:41",
+      "lastOnline": "2026-11-17T00:56:16",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4521,7 +4521,7 @@
       "comment": "Nightmare dps :)+ ajs/mjs",
       "joinDate": "2026-08-01T11:47:28",
       "originalJoinDate": "2026-04-25T21:27:06",
-      "lastOnline": "2026-11-16T08:07:07",
+      "lastOnline": "2026-11-17T00:59:58",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4563,8 +4563,8 @@
       "comment": "",
       "joinDate": "2026-05-02T14:13:43",
       "originalJoinDate": "2026-05-02T14:13:43",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-17T00:21:11",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -11063,6 +11063,78 @@
     }
   ],
   "bankEvents": [
+    {
+      "date": "2026-11-17T00:47:28",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Misc",
+      "item": "Small Party Popper",
+      "amount": 4
+    },
+    {
+      "date": "2026-11-17T00:47:24",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Small Iceworks",
+      "amount": 4
+    },
+    {
+      "date": "2026-11-17T00:47:09",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Boxes",
+      "item": "Encroaching Frost Lockbox",
+      "amount": 4
+    },
+    {
+      "date": "2026-11-17T00:38:32",
+      "player": "Emerald Acrux",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Small Iceworks",
+      "amount": 4
+    },
+    {
+      "date": "2026-11-17T00:38:09",
+      "player": "Emerald Acrux",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Greengrass Blossom Top",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-17T00:37:37",
+      "player": "Emerald Acrux",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Bottle of Basilisk Blue Dye",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-17T00:36:58",
+      "player": "Emerald Acrux",
+      "account": "@wispling#1230",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Ancient Trapper's Ornate Blades",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-17T00:36:46",
+      "player": "Emerald Acrux",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Misc",
+      "item": "Small Party Popper",
+      "amount": 4
+    },
     {
       "date": "2026-11-16T23:46:28",
       "player": "Vicious Helltalon",
