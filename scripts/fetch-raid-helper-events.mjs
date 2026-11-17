@@ -3,7 +3,8 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 // Collects Raid-Helper event posts from every text channel in the guild and
-// records who organized each run, for the Event Host audit/leaderboard.
+// records who organized each run and who signed up for it, for the Event
+// Host audit/leaderboard and a participation tally.
 //
 // Fail-soft by design: this data feeds an audit, never the live site, so any
 // failure logs a warning and exits 0 without touching the data file — a bad
@@ -100,6 +101,36 @@ const parseEventDate = (embed) => {
   return `${match[3]}-${month}-${match[2].padStart(2, "0")}`;
 };
 
+// Sign-ups live in the embed's role fields: a header line names the
+// section ("**__Tank__ (1)**", "**__Support__ (2)**", …) and each entry
+// line carries a slot number in backticks followed by the member's name
+// in bold: "`2` **Ragnar@Dokrahm#9**". Tentative and benched sections
+// list people who did not take part, so a field whose header names one
+// of those never counts; every other role field does, Support included.
+// Names are stored as written; merging spelling variants of the same
+// member happens where the tally is presented, not here.
+const parseParticipants = (embed) => {
+  if (!embed) return [];
+  const fields = Array.isArray(embed.fields) ? embed.fields : [];
+  const names = [];
+  const seen = new Set();
+  for (const field of fields) {
+    const value = typeof field.value === "string" ? field.value : "";
+    const entries = [...value.matchAll(/`(\d+)`\s*\*\*([^*]+)\*\*/g)];
+    if (!entries.length) continue;
+    const header = value.slice(0, entries[0].index);
+    if (/tentative|bench/i.test(header)) continue;
+    for (const entry of entries) {
+      const name = entry[2].trim();
+      if (name && !seen.has(name)) {
+        seen.add(name);
+        names.push(name);
+      }
+    }
+  }
+  return names;
+};
+
 // Posts without an embed title spell it in letter emojis on the
 // description's first line: "**<:M:…> <:D:…> <:empty:…> … **" = "MD …".
 const decodeEmojiTitle = (description) => {
@@ -179,7 +210,8 @@ const main = async () => {
           postedAt: message.timestamp || null,
           title: embed && embed.title ? String(embed.title) : decodeEmojiTitle(description),
           eventDate: parseEventDate(embed),
-          organizer: parseOrganizer(embed)
+          organizer: parseOrganizer(embed),
+          participants: parseParticipants(embed)
         });
       }
       if (messages.length < 100) break;
