@@ -48,13 +48,18 @@ jobs:
           DISCORD_GUILD_ID: ${{ vars.DISCORD_GUILD_ID }}
         run: node scripts/fetch-discord-screenshots.mjs
 
+      - name: Fetch Raid-Helper hosted events
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_GUILD_ID: ${{ vars.DISCORD_GUILD_ID }}
+        run: node scripts/fetch-raid-helper-events.mjs
 
       - name: Commit feed changes
         id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/neverwinter-news.json data/discord-events.json data/suno-music.json index.html data/screenshots.json assets/screenshots
+          git add data/neverwinter-news.json data/discord-events.json data/suno-music.json index.html data/screenshots.json assets/screenshots data/raid-helper-events.json
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "The official news feed has no new changes."
