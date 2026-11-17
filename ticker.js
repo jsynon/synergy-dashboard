@@ -70,17 +70,23 @@
           mainCharacters.set(accountKey, { joined, name: member.name });
         }
       });
-      // Taking an item out and putting it back — moving it
-      // between bank tabs, or withdrawing it and re-depositing
-      // it moments later — logs a withdrawal and then a deposit
-      // of the same item and amount by the same account. The
-      // deposit side of such a pair is not a new contribution,
-      // so the deposit-count items use countedDeposits, with
-      // those put-backs left out. (The gold items are
-      // unaffected: gold is not held in tabs.) Pairs are matched
-      // one-to-one in time order within a minute; a deposit that
-      // comes BEFORE a withdrawal is a real deposit and always
-      // counts.
+      // Two patterns keep a deposit out of the deposit-count
+      // items, because neither leaves the bank better off.
+      // Put-backs: taking an item out and putting it back —
+      // moving it between bank tabs, or withdrawing it and
+      // re-depositing it moments later — logs a withdrawal and
+      // then a deposit of the same item and amount by the same
+      // account; the deposit side of such a pair is not a new
+      // contribution. Pairs are matched one-to-one in time
+      // order within a minute; a deposit that comes BEFORE a
+      // withdrawal is a real deposit and always counts.
+      // Take-backs: a deposit whose item the same account
+      // withdraws again later — whenever that happens — did not
+      // stay given, so it stops counting; each withdrawal
+      // cancels the most recent deposit before it, and a
+      // withdrawal already spent on a put-back pair is not
+      // spent twice. (Gold totals are computed separately
+      // below, net of withdrawals.)
       const bankMoveDeposits = (events) => {
         const keyOf = (event) => [String(event.account || "").trim().toLowerCase(), event.item, event.amount].join("|");
         const withdrawals = new Map();
@@ -90,29 +96,52 @@
           if (!when) return;
           const key = keyOf(event);
           if (!withdrawals.has(key)) withdrawals.set(key, []);
-          withdrawals.get(key).push(when.getTime());
+          withdrawals.get(key).push([when.getTime(), event]);
         });
-        withdrawals.forEach((list) => list.sort((a, b) => a - b));
-        const pointers = new Map();
-        const moves = new Set();
-        events
+        withdrawals.forEach((list) => list.sort((a, b) => a[0] - b[0]));
+        const timedDeposits = events
           .filter((event) => event.action === "deposit")
           .map((event) => [event, tickerDate(event.date)])
           .filter((pair) => pair[1])
-          .sort((a, b) => a[1] - b[1])
-          .forEach(([event, when]) => {
-            const key = keyOf(event);
-            const list = withdrawals.get(key);
-            if (!list) return;
-            const t = when.getTime();
-            let i = pointers.get(key) || 0;
-            while (i < list.length && list[i] < t - 60000) i += 1;
-            if (i < list.length && list[i] <= t) {
-              moves.add(event);
-              i += 1;
+          .sort((a, b) => a[1] - b[1]);
+        const moves = new Set();
+        const spentWithdrawals = new Set();
+        const pointers = new Map();
+        timedDeposits.forEach(([event, when]) => {
+          const key = keyOf(event);
+          const list = withdrawals.get(key);
+          if (!list) return;
+          const t = when.getTime();
+          let i = pointers.get(key) || 0;
+          while (i < list.length && list[i][0] < t - 60000) i += 1;
+          if (i < list.length && list[i][0] <= t) {
+            moves.add(event);
+            spentWithdrawals.add(list[i][1]);
+            i += 1;
+          }
+          pointers.set(key, i);
+        });
+        const countedByKey = new Map();
+        timedDeposits.forEach(([event, when]) => {
+          if (moves.has(event)) return;
+          const key = keyOf(event);
+          if (!countedByKey.has(key)) countedByKey.set(key, []);
+          countedByKey.get(key).push([event, when.getTime()]);
+        });
+        withdrawals.forEach((list, key) => {
+          const counted = countedByKey.get(key);
+          if (!counted) return;
+          list.forEach(([t, withdrawal]) => {
+            if (spentWithdrawals.has(withdrawal)) return;
+            for (let i = counted.length - 1; i >= 0; i -= 1) {
+              if (counted[i][1] < t) {
+                moves.add(counted[i][0]);
+                counted.splice(i, 1);
+                break;
+              }
             }
-            pointers.set(key, i);
           });
+        });
         return moves;
       };
       const bank = snapshot.bankEvents || [];
@@ -124,7 +153,6 @@
       );
       const moveDeposits = bankMoveDeposits(bank);
       const countedDeposits = deposits.filter((event) => !moveDeposits.has(event));
-      const goldDeposited = (event) => (event.item === "Copper" ? (event.amount || 0) / 10000 : 0);
       const totalsByAccount = (events, measure) => {
         const totals = new Map();
         events.forEach((event) => {
@@ -132,7 +160,44 @@
         });
         return totals;
       };
-      const goldWeek = topEntry(totalsByAccount(deposits.filter((event) => inWeek(event.date)), goldDeposited));
+      // Gold is reported net, here as on the High Roller board:
+      // a withdrawal of gold cancels gold the same account
+      // deposited earlier, so what an account took back out is
+      // not counted as given. Withdrawing gold the account never
+      // deposited changes nothing. Balances are tracked in
+      // copper, at the week boundary and at the snapshot date,
+      // so the weekly figure is the week's change in net gold.
+      const goldNet = new Map();
+      bank
+        .filter((event) => event.item === "Copper" && String(event.account || "").trim().toLowerCase() !== "@zorlonix")
+        .map((event) => [event, tickerDate(event.date)])
+        .filter((pair) => pair[1])
+        .sort((a, b) => a[1] - b[1])
+        .forEach(([event, when]) => {
+          if (!goldNet.has(event.account)) goldNet.set(event.account, { before: 0, now: 0 });
+          const entry = goldNet.get(event.account);
+          const amount = event.amount || 0;
+          const apply = (balance) => (event.action === "deposit" ? balance + amount : Math.max(0, balance - amount));
+          if (when.getTime() < weekStart) entry.before = apply(entry.before);
+          entry.now = apply(entry.now);
+        });
+      // Ties go to the account whose gold deposit appears first
+      // in the bank log, as the plain totals did before netting.
+      const goldTotalsInLogOrder = (valueOf, weekOnly) => {
+        const totals = new Map();
+        bank.forEach((event) => {
+          if (event.item !== "Copper" || event.action !== "deposit") return;
+          if (String(event.account || "").trim().toLowerCase() === "@zorlonix") return;
+          if (weekOnly && !inWeek(event.date)) return;
+          const entry = goldNet.get(event.account);
+          if (entry && !totals.has(event.account)) totals.set(event.account, valueOf(entry));
+        });
+        goldNet.forEach((entry, account) => {
+          if (!totals.has(account)) totals.set(account, valueOf(entry));
+        });
+        return totals;
+      };
+      const goldWeek = topEntry(goldTotalsInLogOrder((entry) => (entry.now - entry.before) / 10000, true));
       if (goldWeek && goldWeek[1] > 0) {
         items.push(`Most gold deposited this week: ${displayName(goldWeek[0])} — ${formatCount(goldWeek[1])} gold`);
       }
@@ -213,7 +278,7 @@
       if (benefactor) {
         items.push(`Guild Benefactor: ${displayName(benefactor[0])} — ${formatCount(benefactor[1])} deposits on record`);
       }
-      const highRoller = topEntry(totalsByAccount(deposits, goldDeposited));
+      const highRoller = topEntry(goldTotalsInLogOrder((entry) => entry.now / 10000, false));
       if (highRoller && highRoller[1] > 0) {
         items.push(`High Roller: ${displayName(highRoller[0])} — ${formatCount(highRoller[1])} gold deposited`);
       }
