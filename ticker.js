@@ -70,14 +70,17 @@
           mainCharacters.set(accountKey, { joined, name: member.name });
         }
       });
-      // Moving an item between bank tabs logs a withdrawal and
-      // then a deposit of the same item and amount by the same
-      // account moments apart. The deposit side of such a pair is
-      // not a new contribution, so the deposit-count items use
-      // countedDeposits, with those moves left out. (The gold
-      // items are unaffected: gold is not held in tabs.) Pairs are
-      // matched one-to-one in time order; a deposit that comes
-      // BEFORE a withdrawal is a real deposit and always counts.
+      // Taking an item out and putting it back — moving it
+      // between bank tabs, or withdrawing it and re-depositing
+      // it moments later — logs a withdrawal and then a deposit
+      // of the same item and amount by the same account. The
+      // deposit side of such a pair is not a new contribution,
+      // so the deposit-count items use countedDeposits, with
+      // those put-backs left out. (The gold items are
+      // unaffected: gold is not held in tabs.) Pairs are matched
+      // one-to-one in time order within a minute; a deposit that
+      // comes BEFORE a withdrawal is a real deposit and always
+      // counts.
       const bankMoveDeposits = (events) => {
         const keyOf = (event) => [String(event.account || "").trim().toLowerCase(), event.item, event.amount].join("|");
         const withdrawals = new Map();
@@ -103,7 +106,7 @@
             if (!list) return;
             const t = when.getTime();
             let i = pointers.get(key) || 0;
-            while (i < list.length && list[i] < t - 5000) i += 1;
+            while (i < list.length && list[i] < t - 60000) i += 1;
             if (i < list.length && list[i] <= t) {
               moves.add(event);
               i += 1;

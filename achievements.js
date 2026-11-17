@@ -83,13 +83,15 @@ function buildAltArmy(snapshot) {
   return rows.slice(0, BOARD_SIZE);
 }
 
-// Moving an item between bank tabs logs a withdrawal and then a
-// deposit of the same item and amount by the same account moments
-// apart. The deposit side of such a pair is not a new contribution,
-// so it never counts toward the deposit-count board. Pairs are
-// matched one-to-one in time order; a deposit that comes BEFORE a
-// withdrawal is a real deposit and always counts.
-const MOVE_WINDOW_MS = 5000;
+// Taking an item out and putting it back — moving it between bank
+// tabs, or withdrawing it and re-depositing it moments later — logs
+// a withdrawal and then a deposit of the same item and amount by
+// the same account. The deposit side of such a pair is not a new
+// contribution, so it never counts toward the deposit-count board.
+// Pairs are matched one-to-one in time order within a minute; a
+// deposit that comes BEFORE a withdrawal is a real deposit and
+// always counts.
+const MOVE_WINDOW_MS = 60000;
 
 function bankMoveDeposits(events) {
   const keyOf = (event) => [String(event.account || "").trim().toLowerCase(), event.item, event.amount].join("|");
