@@ -257,6 +257,10 @@
         endGroups.get(key).push(name);
       };
       (manualEvents || []).forEach((event) => {
+        // The Mod 34 launch is a release date, not an event with an
+        // end: its entry carries no end date, so it would otherwise
+        // read as ending on its launch day. It never appears here.
+        if (event.name === "Mod 34: Sleeping Gods Lie") return;
         const endDate = event.endDate || event.startDate;
         if (event.startDate && event.startDate <= todayKey && endDate && endDate >= todayKey && endDate <= soonKey) {
           addEnding(endDate, event.name);
