@@ -56,6 +56,20 @@
         const entry = displayNames.get(account);
         return entry ? entry.name : account;
       };
+      // Per-character join dates, and each account's main
+      // character: its oldest character, by join date.
+      const characterJoins = new Map();
+      const mainCharacters = new Map();
+      (snapshot.roster || []).forEach((member) => {
+        const accountKey = String(member.account || "").trim().toLowerCase();
+        const joined = tickerDate(member.joinDate);
+        characterJoins.set(`${String(member.name || "").trim().toLowerCase()}|${accountKey}`, joined);
+        if (!joined) return;
+        const current = mainCharacters.get(accountKey);
+        if (!current || joined < current.joined || (joined.valueOf() === current.joined.valueOf() && String(member.name).localeCompare(current.name) < 0)) {
+          mainCharacters.set(accountKey, { joined, name: member.name });
+        }
+      });
       // Moving an item between bank tabs logs a withdrawal and
       // then a deposit of the same item and amount by the same
       // account moments apart. The deposit side of such a pair is
@@ -132,13 +146,35 @@
       const guildEvents = snapshot.events || [];
       const joinsWeek = guildEvents.filter((event) => event.kind === "join" && inWeek(event.date)).length;
       if (joinsWeek) items.push(`${joinsWeek} new member${joinsWeek === 1 ? "" : "s"} joined this week`);
+      // A rank change in the first two weeks after a character
+      // joins is the guild leader matching a new alt to its
+      // account's rank, not a promotion the character earned, so
+      // it never counts here. (Earned promotions begin at about a
+      // month in, when the first rank comes due.)
+      const MATCH_WINDOW_MS = 14 * 24 * 60 * 60 * 1000;
+      const rankEventParts = (event) => /^(.+?)@(.+?)'s guild rank is now (.+)$/.exec(event.text || "");
+      const isJoinMatch = (event) => {
+        const parts = rankEventParts(event);
+        if (!parts) return false;
+        const joined = characterJoins.get(`${parts[1].trim().toLowerCase()}|@${parts[2].trim().toLowerCase()}`);
+        const when = tickerDate(event.date);
+        if (!joined || !when) return false;
+        const gap = when.valueOf() - joined.valueOf();
+        return gap >= 0 && gap <= MATCH_WINDOW_MS;
+      };
       const promosWeek = guildEvents
-        .filter((event) => event.kind === "rank" && inWeek(event.date))
+        .filter((event) => event.kind === "rank" && inWeek(event.date) && !isJoinMatch(event))
         .sort((a, b) => String(b.date).localeCompare(String(a.date)));
       if (promosWeek.length) {
         let text = `${promosWeek.length} promotion${promosWeek.length === 1 ? "" : "s"} this week`;
-        const match = /^(.+?)@.+?'s guild rank is now (.+)$/.exec(promosWeek[0].text || "");
-        if (match) text += ` — most recently, ${match[1]} reached ${match[2]}`;
+        const parts = rankEventParts(promosWeek[0]);
+        if (parts) {
+          // The item names the account's main character — its
+          // oldest character — not whichever character the log
+          // entry happens to name.
+          const main = mainCharacters.get(`@${parts[2].trim().toLowerCase()}`);
+          text += ` — most recently, ${main ? main.name : parts[1]} reached ${parts[3]}`;
+        }
         items.push(text);
       }
       // Counted like the Guild Photographer board: by Discord
