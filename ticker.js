@@ -302,6 +302,65 @@
       if (eventHost) {
         items.push(`Top event host: ${eventHost[0]} — ${formatCount(eventHost[1])} run${eventHost[1] === 1 ? "" : "s"} hosted`);
       }
+      // Counted like the Top Participants board: one attended run
+      // per Raid-Helper sign-up post (Support sign-ups included),
+      // with the guild leader's audited name merges — sign-up names
+      // are truncated at different lengths in different posts — and
+      // exclusions applied.
+      const participantAliases = new Map([
+        ["Reinds/sojo/sojo12", "Reinds"],
+        ["Reinds/sojo12", "Reinds"],
+        ["Reinds/sojo/so", "Reinds"],
+        ["Sojo", "Reinds"],
+        ["Elanor/Rydark", "Elanor"],
+        ["Elanor/Rydar", "Elanor"],
+        ["MrZenigata/A", "MrZenigata/Ayara"],
+        ["Vega~Soul", "Vega"],
+        ["Sakuya@aksa0", "Sakuya@aksa07"],
+        ["Amaya/Andromed", "Amaya"],
+        ["Azazel@eatsomewa", "Azazel@eatsomewaffles"],
+        ["Azazel@eatso", "Azazel@eatsomewaffles"],
+        ["HenryTheHors", "HenryTheHorse"],
+        ["Mio-Avatonk(Michael-DK/EU)", "Mio-Avatonk"],
+        ["TimtheEnchan", "TimtheEnchanter"],
+        ["JadeProvidanc", "JadeProvidance"],
+        ["JadeProvidance/J", "JadeProvidance"],
+        ["JadeProvidance/Ja", "JadeProvidance"],
+        ["BalidorElRen", "BalidorElRenon"],
+        ["BalidorElReno", "BalidorElRenon"],
+        ["BalidorElRenon🇮🇱", "BalidorElRenon"],
+        ["BalidorElRenon🇮🇱🇺🇦", "BalidorElRenon"],
+        ["IncantationSt", "IncantationStation"],
+        ["CALCASS(CK", "CALCASS(CKU)"],
+        ["Yukki", "Yukki/Steve"],
+        ["DrewSilverkin/Radi", "DrewSilverkin/RadiantRandy"],
+        ["GORO/Hamme", "GORO/HammerofJ"],
+        ["GirthQuake/J", "GirthQuake/Jaskie"],
+        ["piggo/clanker", "clanker/piggo"],
+        ["leggylass/shan", "leggylass/shaniatw"],
+        ["Psyche.", "Psyche"],
+        ["Aurfelthe\"Wel", "Aurfelthe\"Welostdemo\""],
+        ["Aurfelthe\"We", "Aurfelthe\"Welostdemo\""],
+        ["DarkWenDigo", "DarkWenDigo666"],
+        ["OynxBlaze", "OnyxBlaze"]
+      ]);
+      const ineligibleParticipants = new Set(["Vega", "Sakuya@aksa07", "HenryTheHorse"]);
+      const participantCounts = new Map();
+      (raidEvents || []).forEach((event) => {
+        const names = new Set();
+        (event.participants || []).forEach((rawName) => {
+          const trimmed = String(rawName || "").trim();
+          if (trimmed) names.add(participantAliases.get(trimmed) || trimmed);
+        });
+        names.forEach((name) => {
+          if (ineligibleParticipants.has(name)) return;
+          participantCounts.set(name, (participantCounts.get(name) || 0) + 1);
+        });
+      });
+      const topParticipant = topEntry(participantCounts);
+      if (topParticipant) {
+        items.push(`Top participant: ${topParticipant[0]} — ${formatCount(topParticipant[1])} run${topParticipant[1] === 1 ? "" : "s"} attended`);
+      }
       const todayKey = new Date().toLocaleDateString("en-CA");
       // "Next up" is the soonest event that has not started yet. A
       // manual event starts at 10:30 AM Eastern on its start date —
