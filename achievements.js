@@ -308,10 +308,14 @@ function buildPhotographer(shotsData) {
 
 // Organizer names in Raid-Helper posts are Discord display names, and
 // the same host can appear under more than one spelling: these are one
-// person, counted together under the plainer name.
+// person, counted together under the plainer name. The Leader field
+// also cuts long names off at 17 characters, so Azazel and Ayara are
+// completed here to their full names.
 const HOST_NAME_ALIASES = new Map([
   ["Reinds/sojo/sojo1", "Reinds"],
   ["Elanor/Rydark", "Elanor"],
+  ["Azazel@eatsomewaf", "Azazel@eatsomewaffles"],
+  ["MrZenigata / Ayar", "MrZenigata / Ayara"],
 ]);
 
 // Organizers who cannot hold an event host board spot: former members
