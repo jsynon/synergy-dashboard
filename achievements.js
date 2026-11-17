@@ -1,8 +1,9 @@
 "use strict";
 
-// Achievements tab: six top-ten boards computed from the guild's own
-// published records — data/snapshot.json (roster + bank log) and
-// data/screenshots.json (the Discord screenshot gallery index).
+// Achievements tab: seven top-ten boards computed from the guild's own
+// published records — data/snapshot.json (roster + bank log),
+// data/screenshots.json (the Discord screenshot gallery index), and
+// data/raid-helper-events.json (Raid-Helper sign-up posts).
 
 const BOARD_SIZE = 10;
 
@@ -263,6 +264,54 @@ function buildPhotographer(shotsData) {
   return rows.slice(0, BOARD_SIZE);
 }
 
+// Organizer names in Raid-Helper posts are Discord display names, and
+// the same host can appear under more than one spelling: these are one
+// person, counted together under the plainer name.
+const HOST_NAME_ALIASES = new Map([
+  ["Reinds/sojo/sojo1", "Reinds"],
+  ["Elanor/Rydark", "Elanor"],
+]);
+
+// Organizers who cannot hold an event host board spot: former members
+// who have left the guild, per the guild leader's audit of the records.
+const INELIGIBLE_HOSTS = new Set(["Vega", "Vega ~ Soul", "Elenara", "Andealous", "Micioarancio"]);
+
+// The collector stores each run's date as an Eastern calendar date
+// ("2026-11-11"); read it as a plain date, not a UTC-midnight instant,
+// so the board shows the same day in every visitor's timezone.
+function parseDateOnly(value) {
+  const match = String(value || "").match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (!match) return null;
+  return new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
+}
+
+function buildEventHost(raidData) {
+  const byHost = new Map();
+  for (const event of raidData.events || []) {
+    const raw = String(event.organizer || "").trim();
+    if (!raw || INELIGIBLE_HOSTS.has(raw)) continue;
+    const name = HOST_NAME_ALIASES.get(raw) || raw;
+    if (!byHost.has(name)) byHost.set(name, { name, count: 0, first: null, latest: null });
+    const entry = byHost.get(name);
+    entry.count += 1;
+    const when = parseDateOnly(event.eventDate) || parseDate(event.postedAt);
+    if (when && (!entry.first || when < entry.first)) entry.first = when;
+    if (when && (!entry.latest || when > entry.latest)) entry.latest = when;
+  }
+  const rows = [];
+  for (const entry of byHost.values()) {
+    rows.push({
+      name: entry.name,
+      sub: entry.latest ? `Latest run ${formatDate(entry.latest)}` : "Raid-Helper sign-up posts",
+      value: `${entry.count} run${entry.count === 1 ? "" : "s"} hosted`,
+      sort: -entry.count,
+      tie: entry.first ? entry.first.getTime() : Number.MAX_SAFE_INTEGER,
+    });
+  }
+  rows.sort((a, b) => a.sort - b.sort || a.tie - b.tie || a.name.localeCompare(b.name));
+  return rows.slice(0, BOARD_SIZE);
+}
+
 function renderBoard(listId, rows) {
   const list = document.getElementById(listId);
   if (!list) return;
@@ -363,6 +412,13 @@ async function init() {
     renderBoard("board-photographer", buildPhotographer(shots));
   } catch (error) {
     renderUnavailable(["board-photographer"]);
+  }
+
+  try {
+    const raid = await loadJson("data/raid-helper-events.json");
+    renderBoard("board-event-host", buildEventHost(raid));
+  } catch (error) {
+    renderUnavailable(["board-event-host"]);
   }
 }
 
