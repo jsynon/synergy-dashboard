@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T15:12:11+00:00",
+  "generatedAt": "2026-11-18T15:18:51+00:00",
   "accountCount": 150,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -182,8 +182,8 @@
       "comment": "",
       "joinDate": "2025-01-21T09:21:41",
       "originalJoinDate": "2025-01-21T09:21:41",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-18T10:17:16",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -1190,8 +1190,8 @@
       "comment": "Nightmare",
       "joinDate": "2026-11-07T01:15:55",
       "originalJoinDate": "2026-04-25T21:27:06",
-      "lastOnline": "2026-11-18T09:49:16",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2205,8 +2205,8 @@
     {
       "name": "Ruzzy",
       "account": "@djscooter12#8602",
-      "rank": "Wayfarer",
-      "rankOrder": 2,
+      "rank": "Stalwart",
+      "rankOrder": 3,
       "class": "Wizard",
       "level": "20",
       "comment": "",
@@ -2506,8 +2506,8 @@
       "comment": "heal on demand number 2 :) +mjs",
       "joinDate": "2026-06-06T16:31:14",
       "originalJoinDate": "2026-04-25T21:27:06",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-18T10:11:53",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -3962,8 +3962,8 @@
       "comment": "MJS / MSH / MSOD",
       "joinDate": "2026-02-21T09:28:05",
       "originalJoinDate": "2026-02-21T09:28:05",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-18T10:18:14",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -5536,6 +5536,11 @@
     }
   ],
   "events": [
+    {
+      "date": "2026-11-18T10:18:33",
+      "kind": "rank",
+      "text": "Ruzzy@djscooter12#8602's guild rank is now Stalwart"
+    },
     {
       "date": "2026-11-18T09:40:26",
       "kind": "join",
