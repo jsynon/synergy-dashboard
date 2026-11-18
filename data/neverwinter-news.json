@@ -1,14 +1,33 @@
 {
   "source": "https://www.playneverwinter.com/en/news",
   "api": "https://api.arcgames.com/v1.0/games/nw/news",
-  "generatedAt": "2026-11-17T16:25:14.837Z",
+  "generatedAt": "2026-11-18T20:50:38.642Z",
   "count": 100,
   "articles": [
+    {
+      "id": "11582595",
+      "title": "Neverwinter Roadmap",
+      "summary": "A look ahead!",
+      "date": "2026-11-18",
+      "url": "https://www.playneverwinter.com/en/news-details/11582595",
+      "image": "https://pwimages-a.akamaihd.net/arc/89/bd/89bdacae0692b65a9059ace7aa2653ba1795005903.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-news",
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
     {
       "id": "11583995",
       "title": "Release: M34 - Sleeping Gods Lie",
       "summary": "The Cult of the Elder Elemental Eye had been sighted near Icewind Dale, and them cultists move fast! Let's start making sense of this mess!",
-      "date": "2026-11-17",
+      "date": "2026-11-18",
       "url": "https://www.playneverwinter.com/en/news-details/11583995",
       "image": "https://pwimages-a.akamaihd.net/arc/ae/61/ae61881716e5d7c08865bc3927c94ac51794582351.png",
       "platforms": [
@@ -325,25 +344,6 @@
         "nw-news",
         "neverwinter",
         "patch-notes",
-        "nw-xbox",
-        "nw-playstation"
-      ]
-    },
-    {
-      "id": "11582595",
-      "title": "Neverwinter Roadmap - Beyond Monoliths of Madness",
-      "summary": "A look ahead!",
-      "date": "2026-09-02",
-      "url": "https://www.playneverwinter.com/en/news-details/11582595",
-      "image": "https://pwimages-a.akamaihd.net/arc/3e/09/3e09649af4e294eb5fedda96f74096c01779267760.png",
-      "platforms": [
-        "pc",
-        "ps",
-        "xbox"
-      ],
-      "tags": [
-        "nw-news",
-        "neverwinter",
         "nw-xbox",
         "nw-playstation"
       ]
