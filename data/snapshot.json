@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T16:35:14+00:00",
+  "generatedAt": "2026-11-19T16:44:52+00:00",
   "accountCount": 150,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -11178,6 +11178,186 @@
     }
   ],
   "bankEvents": [
+    {
+      "date": "2026-11-19T11:39:07",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Events",
+      "item": "Coalescent Mote",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-19T11:37:50",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Events",
+      "item": "Coalescent Mote",
+      "amount": 2
+    },
+    {
+      "date": "2026-11-19T11:37:50",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Events",
+      "item": "Preservation Ward",
+      "amount": 5
+    },
+    {
+      "date": "2026-11-19T08:46:49",
+      "player": "Vicious Helltalon",
+      "account": "@hellscrye",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Damaran Shepherd",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-18T21:58:33",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Boxes",
+      "item": "Encroaching Frost Lockbox",
+      "amount": 4
+    },
+    {
+      "date": "2026-11-18T21:57:34",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Misc",
+      "item": "Small Party Popper",
+      "amount": 4
+    },
+    {
+      "date": "2026-11-18T21:57:28",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Small Iceworks",
+      "amount": 4
+    },
+    {
+      "date": "2026-11-18T21:32:28",
+      "player": "Emerald Acrux",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Boxes",
+      "item": "Encroaching Frost Lockbox",
+      "amount": 4
+    },
+    {
+      "date": "2026-11-18T21:32:10",
+      "player": "Emerald Acrux",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Misc",
+      "item": "Small Party Popper",
+      "amount": 4
+    },
+    {
+      "date": "2026-11-18T21:32:06",
+      "player": "Emerald Acrux",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Crafted Potion of Power Rank 4, +1",
+      "amount": 4
+    },
+    {
+      "date": "2026-11-18T18:49:01",
+      "player": "Vicious Helltalon",
+      "account": "@hellscrye",
+      "action": "deposit",
+      "category": "Artifacts",
+      "item": "Frost Mimic",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-18T18:48:56",
+      "player": "Vicious Helltalon",
+      "account": "@hellscrye",
+      "action": "deposit",
+      "category": "Artifacts",
+      "item": "Fawn of Shiallia",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-18T15:17:55",
+      "player": "PegLeg Paddy",
+      "account": "@wellimreallybad#1789",
+      "action": "withdraw",
+      "category": "Other",
+      "item": "Copper",
+      "amount": 200000
+    },
+    {
+      "date": "2026-11-18T14:52:14",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Other",
+      "item": "Copper",
+      "amount": 500000
+    },
+    {
+      "date": "2026-11-18T14:44:40",
+      "player": "Sulva",
+      "account": "@sullivanwarmonk1#5131",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Slyblade Kobold",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-18T13:28:17",
+      "player": "IGLWarlock",
+      "account": "@wellimreallybad#1789",
+      "action": "withdraw",
+      "category": "Other",
+      "item": "Copper",
+      "amount": 200000
+    },
+    {
+      "date": "2026-11-18T11:30:16",
+      "player": "Silverbead",
+      "account": "@n00b#52235",
+      "action": "withdraw",
+      "category": "Artifacts",
+      "item": "Lliira's Bell",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-18T11:30:01",
+      "player": "Silverbead",
+      "account": "@n00b#52235",
+      "action": "deposit",
+      "category": "Artifacts",
+      "item": "Heavy Howler",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-18T11:29:55",
+      "player": "Silverbead",
+      "account": "@n00b#52235",
+      "action": "deposit",
+      "category": "Artifacts",
+      "item": "Small Forest Stag",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-18T11:29:25",
+      "player": "Silverbead",
+      "account": "@n00b#52235",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Potion of Healing Rank 10",
+      "amount": 3
+    },
     {
       "date": "2026-11-18T00:56:12",
       "player": "Shadowheart",
