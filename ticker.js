@@ -254,7 +254,7 @@
       // username, shown under the author's display name, with a
       // deleted account unable to hold a spot and former members
       // who have left the guild ineligible.
-      const ineligiblePhotographers = new Set(["palikka9904", "raumraktzatanhaag", ".maladroite", "diskordal", "ilytbrbluu", "acyl_vrion1", "cal_cass", "k5oul", "sachi314159", "rafaelbruno021", "MEE6"]);
+      const ineligiblePhotographers = new Set(["palikka9904", "raumraktzatanhaag", ".maladroite", "diskordal", "ilytbrbluu", "acyl_vrion1", "cal_cass", "sachi314159", "rafaelbruno021", "MEE6"]);
       const shotCounts = new Map();
       const shotCountsWeek = new Map();
       const shotAuthors = new Map();
