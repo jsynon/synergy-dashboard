@@ -275,6 +275,11 @@ function buildNewBlood(snapshot) {
 // Discord accounts that cannot hold a photographer board spot:
 // former members who have left the guild. (A deleted account is
 // excluded separately, by its "Deleted User" author name.)
+// Photographers shown by their Discord username rather than their
+// display name: Sora's display name is just "k", and the guild
+// leader asked for his username to be shown instead.
+const PHOTOGRAPHER_SHOW_USERNAME = new Set(["k5oul"]);
+
 const INELIGIBLE_PHOTOGRAPHERS = new Set(["palikka9904", "raumraktzatanhaag", ".maladroite", "diskordal", "ilytbrbluu", "acyl_vrion1", "cal_cass", "sachi314159", "rafaelbruno021", "MEE6"]);
 
 function buildPhotographer(shotsData) {
@@ -284,7 +289,7 @@ function buildPhotographer(shotsData) {
     // neither can a former member who has left the guild.
     if (!shot.username || shot.author === "Deleted User" || INELIGIBLE_PHOTOGRAPHERS.has(shot.username)) continue;
     if (!byUser.has(shot.username)) {
-      byUser.set(shot.username, { author: shot.author || shot.username, count: 0, first: null, latest: null });
+      byUser.set(shot.username, { author: PHOTOGRAPHER_SHOW_USERNAME.has(shot.username) ? shot.username : (shot.author || shot.username), count: 0, first: null, latest: null });
     }
     const entry = byUser.get(shot.username);
     entry.count += 1;
