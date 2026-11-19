@@ -1,7 +1,7 @@
 {
   "source": "https://www.playneverwinter.com/en/news",
   "api": "https://api.arcgames.com/v1.0/games/nw/news",
-  "generatedAt": "2026-11-18T20:50:38.642Z",
+  "generatedAt": "2026-11-19T20:54:44.736Z",
   "count": 100,
   "articles": [
     {
@@ -27,7 +27,7 @@
       "id": "11583995",
       "title": "Release: M34 - Sleeping Gods Lie",
       "summary": "The Cult of the Elder Elemental Eye had been sighted near Icewind Dale, and them cultists move fast! Let's start making sense of this mess!",
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "url": "https://www.playneverwinter.com/en/news-details/11583995",
       "image": "https://pwimages-a.akamaihd.net/arc/ae/61/ae61881716e5d7c08865bc3927c94ac51794582351.png",
       "platforms": [
