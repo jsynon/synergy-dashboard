@@ -9,6 +9,11 @@
   const lightboxByline = document.getElementById("gallery-lightbox-byline");
   if (!grid || !status || !message) return;
 
+  // Photographers shown by their Discord username rather than their
+  // display name: Sora's display name is just "k", and the guild
+  // leader asked for his username (k5oul) to be shown instead.
+  const PHOTOGRAPHER_SHOW_USERNAME = new Set(["k5oul"]);
+
   let items = [];
   let current = 0;
   const PAGE_SIZE = 60;
@@ -203,7 +208,9 @@
   fetch("data/screenshots.json", { cache: "no-store" })
     .then((response) => { if (!response.ok) throw new Error(`HTTP ${response.status}`); return response.json(); })
     .then((data) => {
-      items = Array.isArray(data?.screenshots) ? data.screenshots : [];
+      items = (Array.isArray(data?.screenshots) ? data.screenshots : []).map((shot) => (
+        PHOTOGRAPHER_SHOW_USERNAME.has(shot.username) ? { ...shot, author: shot.username } : shot
+      ));
       status.textContent = `${items.length} screenshot${items.length === 1 ? "" : "s"}`;
       if (!items.length) {
         message.textContent = "No screenshots yet — post one in the 📸 Screenshots channel on Discord and it will appear here after the next refresh.";

@@ -255,12 +255,15 @@
       // deleted account unable to hold a spot and former members
       // who have left the guild ineligible.
       const ineligiblePhotographers = new Set(["palikka9904", "raumraktzatanhaag", ".maladroite", "diskordal", "ilytbrbluu", "acyl_vrion1", "cal_cass", "sachi314159", "rafaelbruno021", "MEE6"]);
+      // Shown by username, not display name: Sora's display name is
+      // just "k", and the guild leader asked for k5oul instead.
+      const photographerShowUsername = new Set(["k5oul"]);
       const shotCounts = new Map();
       const shotCountsWeek = new Map();
       const shotAuthors = new Map();
       ((screenshots && screenshots.screenshots) || []).forEach((shot) => {
         if (!shot.username || shot.author === "Deleted User" || ineligiblePhotographers.has(shot.username)) return;
-        if (!shotAuthors.has(shot.username)) shotAuthors.set(shot.username, shot.author || shot.username);
+        if (!shotAuthors.has(shot.username)) shotAuthors.set(shot.username, photographerShowUsername.has(shot.username) ? shot.username : (shot.author || shot.username));
         shotCounts.set(shot.username, (shotCounts.get(shot.username) || 0) + 1);
         if (inWeek(shot.postedAt)) {
           shotCountsWeek.set(shot.username, (shotCountsWeek.get(shot.username) || 0) + 1);
