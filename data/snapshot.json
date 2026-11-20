@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-20T14:27:43+00:00",
-  "accountCount": 150,
+  "generatedAt": "2026-11-20T14:45:23+00:00",
+  "accountCount": 149,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
     "@acckund": "2026-08-26T01:34:35",
@@ -1280,20 +1280,6 @@
       "leaveOfAbsence": false
     },
     {
-      "name": "Kojii",
-      "account": "@lyyten#4513",
-      "rank": "Stalwart",
-      "rankOrder": 3,
-      "class": "Ranger",
-      "level": "20",
-      "comment": "",
-      "joinDate": "2026-06-11T13:18:00",
-      "originalJoinDate": "2026-06-11T13:18:00",
-      "lastOnline": "2026-10-21T03:43:53",
-      "onlineNow": false,
-      "leaveOfAbsence": false
-    },
-    {
       "name": "Renids",
       "account": "@richest11",
       "rank": "Veteran",
@@ -2017,8 +2003,8 @@
       "comment": "",
       "joinDate": "2024-07-27T14:12:08",
       "originalJoinDate": "2024-07-27T14:12:08",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-20T09:28:24",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2353,8 +2339,8 @@
       "comment": "+ ASH",
       "joinDate": "2026-11-03T12:56:28",
       "originalJoinDate": "2025-05-15T00:00:00",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-20T09:28:03",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2843,8 +2829,8 @@
       "comment": "+MSH",
       "joinDate": "2026-11-03T12:57:16",
       "originalJoinDate": "2025-05-15T00:00:00",
-      "lastOnline": "2026-11-20T07:10:44",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -4677,8 +4663,8 @@
       "comment": "",
       "joinDate": "2026-10-22T19:52:33",
       "originalJoinDate": "2026-06-04T15:29:23",
-      "lastOnline": "2026-11-20T09:18:49",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -4850,20 +4836,6 @@
       "leaveOfAbsence": false
     },
     {
-      "name": "JiiKo",
-      "account": "@lyyten#4513",
-      "rank": "Stalwart",
-      "rankOrder": 3,
-      "class": "Cleric",
-      "level": "20",
-      "comment": "",
-      "joinDate": "2026-06-11T14:57:22",
-      "originalJoinDate": "2026-06-11T13:18:00",
-      "lastOnline": "2026-09-18T23:25:25",
-      "onlineNow": false,
-      "leaveOfAbsence": false
-    },
-    {
       "name": "Sunrise",
       "account": "@noobynut",
       "rank": "Stalwart",
@@ -4902,20 +4874,6 @@
       "joinDate": "2026-06-19T10:26:27",
       "originalJoinDate": "2026-03-25T20:40:51",
       "lastOnline": "2026-11-10T14:56:10",
-      "onlineNow": false,
-      "leaveOfAbsence": false
-    },
-    {
-      "name": "Ado",
-      "account": "@lyyten#4513",
-      "rank": "Stalwart",
-      "rankOrder": 3,
-      "class": "Bard",
-      "level": "20",
-      "comment": "",
-      "joinDate": "2026-06-11T20:44:59",
-      "originalJoinDate": "2026-06-11T13:18:00",
-      "lastOnline": "2026-09-24T12:16:20",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5125,8 +5083,8 @@
       "comment": "",
       "joinDate": "2026-10-14T03:07:46",
       "originalJoinDate": "2026-10-14T03:07:46",
-      "lastOnline": "2026-11-20T09:17:47",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -5265,7 +5223,7 @@
       "comment": "",
       "joinDate": "2026-09-12T00:12:12",
       "originalJoinDate": "2026-06-04T15:29:23",
-      "lastOnline": "2026-11-20T09:19:47",
+      "lastOnline": "2026-11-20T09:31:07",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5377,7 +5335,7 @@
       "comment": "",
       "joinDate": "2026-09-19T23:22:05",
       "originalJoinDate": "2026-06-04T15:29:23",
-      "lastOnline": "2026-11-20T09:20:04",
+      "lastOnline": "2026-11-20T09:31:47",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5531,12 +5489,27 @@
       "comment": "",
       "joinDate": "2026-11-07T07:07:17",
       "originalJoinDate": "2026-10-14T03:07:46",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-20T09:27:36",
+      "onlineNow": false,
       "leaveOfAbsence": false
     }
   ],
   "events": [
+    {
+      "date": "2026-11-20T09:37:36",
+      "kind": "exit",
+      "text": "Kojii@lyyten#4513 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-11-20T09:37:34",
+      "kind": "exit",
+      "text": "JiiKo@lyyten#4513 was kicked from the guild by Elanor@zorlonix"
+    },
+    {
+      "date": "2026-11-20T09:37:32",
+      "kind": "exit",
+      "text": "Ado@lyyten#4513 was kicked from the guild by Elanor@zorlonix"
+    },
     {
       "date": "2026-11-19T20:00:57",
       "kind": "rank",
@@ -11209,6 +11182,33 @@
     }
   ],
   "bankEvents": [
+    {
+      "date": "2026-11-20T05:42:50",
+      "player": "TiTuS",
+      "account": "@mariotitosteam#12335",
+      "action": "withdraw",
+      "category": "Other",
+      "item": "Copper",
+      "amount": 500000
+    },
+    {
+      "date": "2026-11-20T02:58:08",
+      "player": "Rydark",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Events",
+      "item": "Teal Diamond",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T02:21:37",
+      "player": "Rydark",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Events",
+      "item": "Preservation Ward",
+      "amount": 3
+    },
     {
       "date": "2026-11-20T01:46:50",
       "player": "Sulva",
