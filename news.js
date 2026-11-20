@@ -89,6 +89,131 @@
     }
   };
 
+  const endTimeOverride = (event) => {
+    const override = /^(\d{1,2}):(\d{2})$/.exec(event.endTime || "");
+    return override && Number(override[1]) <= 23 && Number(override[2]) <= 59
+      ? { hour: Number(override[1]), minute: Number(override[2]) }
+      : null;
+  };
+
+  const eventStart = (event) => {
+    if (event.source === "discord") {
+      const start = new Date(event.startTime);
+      return Number.isNaN(start.valueOf()) ? null : start;
+    }
+    if (event.startDate) {
+      // An event carrying an endTime starts at that time on its start
+      // date (the Mysterious Merchant runs from when its structure was
+      // built); other in-game events start at 10:30 AM Eastern.
+      const override = endTimeOverride(event);
+      return easternInstant(event.startDate, override ? override.hour : 10, override ? override.minute : 30);
+    }
+    return null;
+  };
+
+  const eventEnd = (event) => {
+    if (event.source === "discord") {
+      const end = new Date(event.endTime || event.startTime);
+      return Number.isNaN(end.valueOf()) ? null : end;
+    }
+    if (event.endDate) {
+      const override = endTimeOverride(event);
+      return easternInstant(event.endDate, override ? override.hour : 10, override ? override.minute : 30);
+    }
+    return null;
+  };
+
+  const dayParts = (instant, timeZone) => {
+    const parts = new Intl.DateTimeFormat("en-US", {
+      year: "numeric", month: "numeric", day: "numeric", timeZone
+    }).formatToParts(instant);
+    const part = (type) => Number(parts.find((item) => item.type === type)?.value);
+    return { year: part("year"), month: part("month"), day: part("day") };
+  };
+
+  // Whole calendar days between two instants, reckoned in the given
+  // timezone (Eastern for in-game events, the viewer's for Discord ones).
+  const calendarDaysBetween = (from, to, timeZone) => {
+    const a = dayParts(from, timeZone);
+    const b = dayParts(to, timeZone);
+    return Math.round((Date.UTC(b.year, b.month - 1, b.day) - Date.UTC(a.year, a.month - 1, a.day)) / 86400000);
+  };
+
+  const dayLabel = (instant, timeZone) => new Intl.DateTimeFormat("en-US", {
+    weekday: "short", month: "short", day: "numeric", timeZone
+  }).format(instant);
+
+  const buildEventRow = ({ event, start, end, timeZone }, happeningNow, now) => {
+    const row = document.createElement("li");
+    row.className = "news-event-row";
+    const target = happeningNow ? end : start;
+    const dateCell = document.createElement("span");
+    dateCell.className = "news-event-date";
+    dateCell.append(`${happeningNow ? "Ends" : "Starts"} `);
+    const day = document.createElement("strong");
+    day.textContent = target ? dayLabel(target, timeZone) : "Date unavailable";
+    dateCell.append(day);
+    row.append(dateCell);
+
+    const details = document.createElement("div");
+    details.className = "news-event-copy";
+    const discordEvent = event.source === "discord";
+    if (discordEvent) {
+      const title = document.createElement("a");
+      title.className = "news-event-name";
+      title.href = `https://discord.com/events/${encodeURIComponent(event.guildId)}/${encodeURIComponent(event.id)}`;
+      title.target = "_blank";
+      title.rel = "noopener noreferrer";
+      const eventName = document.createElement("span");
+      eventName.textContent = event.name;
+      const destination = document.createElement("span");
+      destination.className = "news-event-name-destination";
+      destination.textContent = "Discord event ↗";
+      title.append(eventName, destination);
+      details.append(title);
+    } else {
+      addText(details, "span", "news-event-name", event.name);
+    }
+
+    let rangeLabel = formatEventDateRange(event);
+    if (discordEvent && start) {
+      const localTime = new Intl.DateTimeFormat(undefined, {
+        hour: "numeric",
+        minute: "2-digit",
+        timeZoneName: "short"
+      }).format(start);
+      rangeLabel = `${rangeLabel} · ${localTime}`;
+    }
+    addText(details, "span", "news-event-range", rangeLabel);
+
+    const links = document.createElement("div");
+    links.className = "news-event-links";
+    if (event.recurring) addText(links, "span", "news-event-repeat", "Recurring");
+    const eventUrl = safeHttpsUrl(event.url || event.location);
+    if (eventUrl) {
+      const linkLabel = /raid[-.]?helper/i.test(eventUrl) ? "Raid-Helper signup ↗" : "Location / details ↗";
+      const eventLink = addText(links, "a", "news-event-link", linkLabel);
+      eventLink.href = eventUrl;
+      eventLink.target = "_blank";
+      eventLink.rel = "noopener noreferrer";
+    } else if (event.location) {
+      addText(links, "span", "news-event-location", event.location);
+    }
+    if (links.childElementCount) details.append(links);
+    row.append(details);
+
+    if (target) {
+      const days = calendarDaysBetween(now, target, timeZone);
+      const chipText = happeningNow
+        ? (days <= 0 ? "Ends today" : days === 1 ? "1 day left" : `${days} days left`)
+        : (days <= 0 ? "Starts today" : days === 1 ? "Starts in 1 day" : `Starts in ${days} days`);
+      const chip = addText(row, "span", "news-event-chip", chipText);
+      if (days <= 6) chip.classList.add("soon");
+      else if (days > 20) chip.classList.add("later");
+    }
+    return row;
+  };
+
   const renderGuildEvents = (events) => {
     eventList.replaceChildren();
     const todayParts = new Intl.DateTimeFormat("en-US", {
@@ -123,8 +248,7 @@
         const lastDate = event.endDate || event.endTime || event.startDate || event.startTime;
         const key = dateKey(lastDate);
         return key && key >= today;
-      })
-      .sort((a, b) => dateKey(a.startDate || a.startTime).localeCompare(dateKey(b.startDate || b.startTime)));
+      });
 
     if (!upcomingEvents.length) {
       addText(eventList, "li", "news-event-empty", "No upcoming events are scheduled.");
@@ -132,59 +256,66 @@
       return;
     }
 
-    for (const event of upcomingEvents) {
-      const row = document.createElement("li");
-      row.className = "news-event-row";
-      const dateLabel = formatEventDateRange(event);
-      const startTime = event.source === "discord" && event.startTime ? new Date(event.startTime) : null;
-      if (startTime && !Number.isNaN(startTime.valueOf())) {
-        const localTime = new Intl.DateTimeFormat(undefined, {
-          hour: "numeric",
-          minute: "2-digit",
-          timeZoneName: "short"
-        }).format(startTime);
-        addText(row, "span", "news-event-date", `${dateLabel} · ${localTime}`);
-      } else {
-        addText(row, "span", "news-event-date", dateLabel);
+    // Group the survivors: everything already running goes first, sorted
+    // by when it ends; the rest are grouped by the month they start.
+    const decorated = upcomingEvents.map((event) => {
+      const start = eventStart(event);
+      const end = eventEnd(event);
+      const timeZone = event.source === "discord" ? undefined : "America/New_York";
+      return { event, start, end, timeZone, started: start ? start <= now : false };
+    });
+    const nowGroup = { id: "now", title: "Happening now", items: [] };
+    const monthGroups = new Map();
+    for (const item of decorated) {
+      if (item.started) {
+        nowGroup.items.push(item);
+        continue;
       }
-
-      const details = document.createElement("div");
-      details.className = "news-event-copy";
-      const discordEvent = event.source === "discord";
-      if (discordEvent) {
-        const title = document.createElement("a");
-        title.className = "news-event-name";
-        title.href = `https://discord.com/events/${encodeURIComponent(event.guildId)}/${encodeURIComponent(event.id)}`;
-        title.target = "_blank";
-        title.rel = "noopener noreferrer";
-        const eventName = document.createElement("span");
-        eventName.textContent = event.name;
-        const destination = document.createElement("span");
-        destination.className = "news-event-name-destination";
-        destination.textContent = "Discord event ↗";
-        title.append(eventName, destination);
-        details.append(title);
-      } else {
-        addText(details, "span", "news-event-name", event.name);
+      const parts = item.start ? dayParts(item.start, item.timeZone) : null;
+      const key = parts ? `${parts.year}-${String(parts.month).padStart(2, "0")}` : "unknown";
+      if (!monthGroups.has(key)) {
+        const monthName = item.start ? new Intl.DateTimeFormat("en-US", { month: "long", timeZone: item.timeZone }).format(item.start) : "";
+        const yearSuffix = parts && parts.year !== dayParts(now, item.timeZone).year ? ` ${parts.year}` : "";
+        monthGroups.set(key, { id: key, title: monthName ? `Starting in ${monthName}${yearSuffix}` : "Starting soon", items: [] });
       }
-
-      const links = document.createElement("div");
-      links.className = "news-event-links";
-      if (event.recurring) addText(links, "span", "news-event-repeat", "Recurring");
-      const eventUrl = safeHttpsUrl(event.url || event.location);
-      if (eventUrl) {
-        const linkLabel = /raid[-.]?helper/i.test(eventUrl) ? "Raid-Helper signup ↗" : "Location / details ↗";
-        const eventLink = addText(links, "a", "news-event-link", linkLabel);
-        eventLink.href = eventUrl;
-        eventLink.target = "_blank";
-        eventLink.rel = "noopener noreferrer";
-      } else if (event.location) {
-        addText(links, "span", "news-event-location", event.location);
-      }
-      if (links.childElementCount) details.append(links);
-      row.append(details);
-      eventList.append(row);
+      monthGroups.get(key).items.push(item);
     }
+    nowGroup.items.sort((a, b) => (a.end - b.end) || a.event.name.localeCompare(b.event.name));
+    const groups = [];
+    if (nowGroup.items.length) groups.push(nowGroup);
+    for (const group of [...monthGroups.values()].sort((a, b) => a.id.localeCompare(b.id))) {
+      group.items.sort((a, b) => (a.start - b.start) || a.event.name.localeCompare(b.event.name));
+      groups.push(group);
+    }
+
+    groups.forEach((group, groupIndex) => {
+      const groupItem = document.createElement("li");
+      groupItem.className = "news-event-group";
+      const details = document.createElement("details");
+      details.className = "news-group";
+      if (groupIndex === 0) details.open = true;
+      const summary = document.createElement("summary");
+      summary.className = "news-group-head";
+      if (group.id === "now") {
+        const dot = document.createElement("span");
+        dot.className = "news-group-live";
+        dot.setAttribute("aria-hidden", "true");
+        summary.append(dot);
+      }
+      addText(summary, "span", "news-group-title", group.title);
+      const count = group.items.length;
+      addText(summary, "span", "news-group-count", group.id === "now"
+        ? `${count} ${count === 1 ? "event" : "events"} · soonest ending first`
+        : `${count} ${count === 1 ? "event" : "events"}`);
+      addText(summary, "span", "news-group-preview", group.items.map((item) => item.event.name).join(" · "));
+      details.append(summary);
+      const list = document.createElement("ul");
+      list.className = "news-group-list";
+      for (const item of group.items) list.append(buildEventRow(item, group.id === "now", now));
+      details.append(list);
+      groupItem.append(details);
+      eventList.append(groupItem);
+    });
     eventStatus.textContent = `${upcomingEvents.length} upcoming ${upcomingEvents.length === 1 ? "event" : "events"}`;
   };
 
@@ -316,6 +447,11 @@
     status.textContent = "News feed temporarily unavailable";
   };
 
+  const setAllEventGroups = (open) => {
+    eventList.querySelectorAll("details.news-group").forEach((group) => { group.open = open; });
+  };
+  document.getElementById("news-events-expand")?.addEventListener("click", () => setAllEventGroups(true));
+  document.getElementById("news-events-collapse")?.addEventListener("click", () => setAllEventGroups(false));
   moreButton.addEventListener("click", renderMore);
   loadGuildEvents();
 
