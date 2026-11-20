@@ -304,9 +304,7 @@
       }
       addText(summary, "span", "news-group-title", group.title);
       const count = group.items.length;
-      addText(summary, "span", "news-group-count", group.id === "now"
-        ? `${count} ${count === 1 ? "event" : "events"} · soonest ending first`
-        : `${count} ${count === 1 ? "event" : "events"}`);
+      addText(summary, "span", "news-group-count", `${count} ${count === 1 ? "event" : "events"}`);
       addText(summary, "span", "news-group-preview", group.items.map((item) => item.event.name).join(" · "));
       details.append(summary);
       const list = document.createElement("ul");
