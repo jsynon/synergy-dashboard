@@ -1418,8 +1418,9 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
 .news-feed-heading h2 { margin:0; color:var(--gold-bright); font:600 clamp(21px,3vw,28px)/1.2 var(--serif); }
 .news-feed-heading .kicker { margin-bottom:4px; }
 .news-event-list { margin:0; padding:0; list-style:none; }
-.news-event-row { display:grid; grid-template-columns:minmax(125px,185px) minmax(0,1fr); align-items:center; gap:14px; padding:7px 2px; border-top:1px solid rgba(190,160,103,.18); }
-.news-event-date { color:var(--teal); font-size:.68rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+.news-event-row { display:grid; grid-template-columns:118px minmax(0,1fr) auto; align-items:center; gap:14px; padding:7px 2px; border-top:1px solid rgba(190,160,103,.18); }
+.news-event-date { color:var(--muted); font-size:.8rem; white-space:nowrap; }
+.news-event-date strong { color:var(--text); font-weight:600; }
 .news-event-name { color:var(--gold-bright); font:500 .9rem/1.35 var(--serif); }
 .news-feed-status { color:var(--muted); font-size:.76rem; text-align:right; }
 .news-feed-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
@@ -1443,8 +1444,9 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
 @media(max-width:520px) {
   .news-feed-panel { padding:12px; }
   .news-feed-heading { align-items:flex-start; flex-direction:column; gap:4px; }
-  .news-event-row { grid-template-columns:108px minmax(0,1fr); gap:9px; padding:7px 0; }
-  .news-event-date { font-size:.62rem; letter-spacing:.04em; }
+  .news-event-row { grid-template-columns:100px minmax(0,1fr); gap:9px; padding:7px 0; }
+  .news-event-chip,.news-group-preview { display:none; }
+  .news-event-range { white-space:normal; }
   .news-event-name { font-size:.8rem; }
   .news-feed-status { text-align:left; }
   .news-card { grid-template-columns:1fr; gap:9px; }
@@ -1522,10 +1524,10 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
 
 
 /* Compact Discord event rows on the News page. */
-.news-event-copy { display:flex; min-width:0; flex-direction:column; gap:2px; }
+.news-event-copy { display:flex; min-width:0; flex-direction:row; flex-wrap:wrap; align-items:baseline; column-gap:10px; row-gap:2px; }
 .news-event-name { align-self:flex-start; color:var(--gold-bright); font:500 .9rem/1.35 var(--serif); text-decoration:none; text-underline-offset:3px; }
 a.news-event-name:hover,a.news-event-name:focus-visible { color:#fff0c3; text-decoration:underline; }
-.news-event-links { display:flex; flex-wrap:wrap; align-items:center; gap:8px; min-height:14px; }
+.news-event-links { display:flex; flex-basis:100%; flex-wrap:wrap; align-items:center; gap:8px; min-height:14px; }
 .news-event-link { color:var(--teal); font-size:.68rem; font-weight:600; text-decoration:none; }
 .news-event-link:hover,.news-event-link:focus-visible { color:var(--gold-bright); text-decoration:underline; text-underline-offset:3px; }
 .news-event-repeat { color:var(--muted); font-size:.64rem; letter-spacing:.04em; text-transform:uppercase; }
@@ -1536,6 +1538,28 @@ a.news-event-name:hover,a.news-event-name:focus-visible { color:#fff0c3; text-de
 /* Make the Discord event destination explicit beside linked titles. */
 a.news-event-name { display:inline-flex; flex-wrap:wrap; align-items:baseline; gap:3px 8px; }
 .news-event-name-destination { color:var(--teal); font:600 .64rem/1.35 var(--body); letter-spacing:.02em; }
+
+.news-event-actions { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+.news-events-toggle { appearance:none; border:1px solid rgba(89,201,232,.4); background:rgba(89,201,232,.07); color:var(--teal); font:600 .72rem var(--body); padding:5px 11px; border-radius:999px; cursor:pointer; }
+.news-events-toggle:hover { color:var(--gold-bright); border-color:var(--gold); }
+.news-event-group { list-style:none; }
+summary.news-group-head { position:sticky; top:0; z-index:5; display:flex; align-items:baseline; gap:12px; padding:11px 2px 9px; background:#071925; border-bottom:1px solid rgba(216,168,78,.22); cursor:pointer; list-style:none; container-type:scroll-state; container-name:news-group-head; }
+summary.news-group-head::-webkit-details-marker { display:none; }
+summary.news-group-head::marker { content:none; }
+summary.news-group-head::after { content:"\u25be"; margin-left:auto; color:var(--gold); font-size:.85rem; flex:none; transition:transform .2s; }
+details.news-group[open ] > summary.news-group-head::after { transform:rotate(180deg); }
+.news-group-title { color:var(--teal); font:700 .8rem var(--body); letter-spacing:.16em; text-transform:uppercase; transition:color .25s; }
+@container news-group-head scroll-state(stuck: top) { .news-group-title { color:var(--gold-bright); } }
+.news-group-count { color:var(--muted); font-size:.72rem; white-space:nowrap; }
+.news-group-preview { color:var(--muted); font-size:.72rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; min-width:0; }
+details.news-group[open ] .news-group-preview { display:none; }
+.news-group-live { align-self:center; width:8px; height:8px; border-radius:50%; background:#6fe3a5; box-shadow:0 0 8px rgba(111,227,165,.9); flex:none; }
+.news-group-list { margin:0; padding:0; list-style:none; }
+.news-group-list .news-event-row:first-child { border-top:0; }
+.news-event-range { color:var(--muted); font-size:.78rem; white-space:nowrap; }
+.news-event-chip { flex:none; align-self:center; padding:3px 9px; border:1px solid rgba(89,201,232,.4); border-radius:999px; color:var(--teal); background:rgba(89,201,232,.07); font-size:.68rem; font-weight:600; white-space:nowrap; }
+.news-event-chip.soon { border-color:rgba(245,216,142,.55); color:var(--gold-bright); background:rgba(212,154,66,.1); }
+.news-event-chip.later { border-color:rgba(168,183,197,.3); color:var(--muted); background:transparent; }
 a.news-event-name:hover .news-event-name-destination,a.news-event-name:focus-visible .news-event-name-destination { color:var(--gold-bright); }
 
 
