@@ -5,6 +5,7 @@
 
   const eventList = document.getElementById("news-event-list");
   const eventStatus = document.getElementById("news-event-status");
+  const spotlightRoot = document.getElementById("news-event-spotlight");
 
   const dateParts = (value) => {
     if (!value) return null;
@@ -143,9 +144,21 @@
     weekday: "short", month: "short", day: "numeric", timeZone
   }).format(instant);
 
-  const buildEventRow = ({ event, start, end, timeZone }, happeningNow, now) => {
+  const appendChip = (parent, target, happeningNow, now, timeZone) => {
+    if (!target) return;
+    const days = calendarDaysBetween(now, target, timeZone);
+    const chipText = happeningNow
+      ? (days <= 0 ? "Ends today" : days === 1 ? "1 day left" : `${days} days left`)
+      : (days <= 0 ? "Starts today" : days === 1 ? "Starts in 1 day" : `Starts in ${days} days`);
+    const chip = addText(parent, "span", "news-event-chip", chipText);
+    if (days <= 6) chip.classList.add("soon");
+    else if (days > 20) chip.classList.add("later");
+  };
+
+  const buildEventRow = ({ event, start, end, timeZone, started }, now) => {
     const row = document.createElement("li");
     row.className = "news-event-row";
+    const happeningNow = started;
     const target = happeningNow ? end : start;
     const dateCell = document.createElement("span");
     dateCell.className = "news-event-date";
@@ -202,20 +215,59 @@
     if (links.childElementCount) details.append(links);
     row.append(details);
 
-    if (target) {
-      const days = calendarDaysBetween(now, target, timeZone);
-      const chipText = happeningNow
-        ? (days <= 0 ? "Ends today" : days === 1 ? "1 day left" : `${days} days left`)
-        : (days <= 0 ? "Starts today" : days === 1 ? "Starts in 1 day" : `Starts in ${days} days`);
-      const chip = addText(row, "span", "news-event-chip", chipText);
-      if (days <= 6) chip.classList.add("soon");
-      else if (days > 20) chip.classList.add("later");
-    }
+    appendChip(row, target, happeningNow, now, timeZone);
     return row;
+  };
+
+  const buildSpotlight = ({ event, start, end, started }, now) => {
+    const wrap = document.createElement("div");
+    wrap.className = "news-spotlight";
+    const main = document.createElement("div");
+    main.className = "news-spotlight-main";
+    const kicker = document.createElement("p");
+    kicker.className = "news-spotlight-kicker";
+    const dot = document.createElement("span");
+    dot.className = "news-spotlight-dot";
+    dot.setAttribute("aria-hidden", "true");
+    kicker.append(dot, started ? "Guild event · Live now" : "Next guild event · Discord");
+    main.append(kicker);
+    const discordUrl = `https://discord.com/events/${encodeURIComponent(event.guildId)}/${encodeURIComponent(event.id)}`;
+    const name = document.createElement("a");
+    name.className = "news-spotlight-name";
+    name.href = discordUrl;
+    name.target = "_blank";
+    name.rel = "noopener noreferrer";
+    name.textContent = event.name;
+    main.append(name);
+    const timeFormat = new Intl.DateTimeFormat(undefined, { hour: "numeric", minute: "2-digit" });
+    const tzName = start ? new Intl.DateTimeFormat(undefined, { timeZoneName: "short" }).formatToParts(start).find((part) => part.type === "timeZoneName")?.value : "";
+    let meta = start ? `${dayLabel(start, undefined)} · ${timeFormat.format(start)}` : "";
+    if (start && end && end > start) meta += ` – ${timeFormat.format(end)}`;
+    if (tzName) meta += ` ${tzName}`;
+    const eventUrl = safeHttpsUrl(event.url || event.location);
+    if (!eventUrl && event.location) meta += ` · ${event.location}`;
+    addText(main, "p", "news-spotlight-meta", meta);
+    wrap.append(main);
+    const side = document.createElement("div");
+    side.className = "news-spotlight-side";
+    appendChip(side, started ? end : start, started, now, undefined);
+    const openLink = addText(side, "a", "news-spotlight-link", "Open in Discord ↗");
+    openLink.href = discordUrl;
+    openLink.target = "_blank";
+    openLink.rel = "noopener noreferrer";
+    if (eventUrl) {
+      const extra = addText(side, "a", "news-spotlight-link alt", /raid[-.]?helper/i.test(eventUrl) ? "Raid-Helper signup ↗" : "Location / details ↗");
+      extra.href = eventUrl;
+      extra.target = "_blank";
+      extra.rel = "noopener noreferrer";
+    }
+    wrap.append(side);
+    return wrap;
   };
 
   const renderGuildEvents = (events) => {
     eventList.replaceChildren();
+    if (spotlightRoot) spotlightRoot.replaceChildren();
     const todayParts = new Intl.DateTimeFormat("en-US", {
       year: "numeric",
       month: "2-digit",
@@ -264,9 +316,24 @@
       const timeZone = event.source === "discord" ? undefined : "America/New_York";
       return { event, start, end, timeZone, started: start ? start <= now : false };
     });
+    // Discord events are featured above the in-game groups: the next
+    // one (or one live now) gets the spotlight, the rest form a Guild
+    // events group. In-game events group exactly as before.
+    const discordItems = decorated.filter((item) => item.event.source === "discord" && item.start);
+    const gameItems = decorated.filter((item) => !(item.event.source === "discord" && item.start));
+    let guildItems = [];
+    if (discordItems.length) {
+      const ranked = [...discordItems].sort((a, b) => {
+        if (a.started !== b.started) return a.started ? -1 : 1;
+        return a.started ? a.end - b.end : a.start - b.start;
+      });
+      if (spotlightRoot) spotlightRoot.append(buildSpotlight(ranked[0], now));
+      guildItems = ranked.slice(1).sort((a, b) => (a.start - b.start) || a.event.name.localeCompare(b.event.name));
+    }
+
     const nowGroup = { id: "now", title: "Happening now", items: [] };
     const monthGroups = new Map();
-    for (const item of decorated) {
+    for (const item of gameItems) {
       if (item.started) {
         nowGroup.items.push(item);
         continue;
@@ -282,21 +349,27 @@
     }
     nowGroup.items.sort((a, b) => (a.end - b.end) || a.event.name.localeCompare(b.event.name));
     const groups = [];
-    if (nowGroup.items.length) groups.push(nowGroup);
+    if (guildItems.length) groups.push({ id: "guild", title: "Guild events", items: guildItems, openByDefault: true });
+    let firstGameGroup = true;
+    if (nowGroup.items.length) {
+      groups.push({ ...nowGroup, openByDefault: true });
+      firstGameGroup = false;
+    }
     for (const group of [...monthGroups.values()].sort((a, b) => a.id.localeCompare(b.id))) {
       group.items.sort((a, b) => (a.start - b.start) || a.event.name.localeCompare(b.event.name));
-      groups.push(group);
+      groups.push({ ...group, openByDefault: firstGameGroup });
+      firstGameGroup = false;
     }
 
-    groups.forEach((group, groupIndex) => {
+    groups.forEach((group) => {
       const groupItem = document.createElement("li");
       groupItem.className = "news-event-group";
       const details = document.createElement("details");
-      details.className = "news-group";
-      if (groupIndex === 0) details.open = true;
+      details.className = group.id === "guild" ? "news-group guild" : "news-group";
+      if (group.openByDefault) details.open = true;
       const summary = document.createElement("summary");
       summary.className = "news-group-head";
-      if (group.id === "now") {
+      if (group.id === "now" || group.id === "guild") {
         const dot = document.createElement("span");
         dot.className = "news-group-live";
         dot.setAttribute("aria-hidden", "true");
@@ -309,7 +382,7 @@
       details.append(summary);
       const list = document.createElement("ul");
       list.className = "news-group-list";
-      for (const item of group.items) list.append(buildEventRow(item, group.id === "now", now));
+      for (const item of group.items) list.append(buildEventRow(item, now));
       details.append(list);
       groupItem.append(details);
       eventList.append(groupItem);
