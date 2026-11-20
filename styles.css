@@ -1449,8 +1449,6 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
   .news-event-range { white-space:normal; }
   .news-event-date { white-space:normal; }
   .news-event-date strong { white-space:nowrap; }
-  .news-event-actions { flex-direction:column; align-items:flex-start; }
-  .news-event-buttons { display:flex; gap:10px; }
   .news-event-name { font-size:.8rem; }
   .news-feed-status { text-align:left; }
   .news-card { grid-template-columns:1fr; gap:9px; }
@@ -1582,6 +1580,11 @@ details.news-group.guild .news-group-live { background:#8ea1f2; box-shadow:0 0 8
   .news-spotlight { padding:11px 12px; }
   .news-spotlight-name { font-size:1rem; }
   .news-spotlight-link.alt { display:none; }
+}
+
+@media (max-width:520px) {
+  .news-event-actions { flex-direction:column; align-items:flex-start; }
+  .news-event-buttons { display:flex; gap:10px; }
 }
 a.news-event-name:hover .news-event-name-destination,a.news-event-name:focus-visible .news-event-name-destination { color:var(--gold-bright); }
 
