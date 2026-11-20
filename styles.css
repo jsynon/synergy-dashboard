@@ -1449,6 +1449,7 @@ dialog.popup-shell::backdrop { background:rgba(0,7,13,.76); backdrop-filter:blur
   .news-event-range { white-space:normal; }
   .news-event-date { white-space:normal; }
   .news-event-date strong { white-space:nowrap; }
+  .news-event-actions .news-feed-status { flex-basis:100%; }
   .news-event-name { font-size:.8rem; }
   .news-feed-status { text-align:left; }
   .news-card { grid-template-columns:1fr; gap:9px; }
