@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T00:55:19+00:00",
+  "generatedAt": "2026-11-20T01:01:30+00:00",
   "accountCount": 150,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -1471,8 +1471,8 @@
       "comment": "",
       "joinDate": "2026-08-13T00:06:00",
       "originalJoinDate": "2026-01-18T14:34:53",
-      "lastOnline": "2026-11-19T19:50:03",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1912,8 +1912,8 @@
     {
       "name": "Shinbikyn",
       "account": "@thekatre",
-      "rank": "Veteran",
-      "rankOrder": 4,
+      "rank": "Elder",
+      "rankOrder": 5,
       "class": "Bard",
       "level": "20",
       "comment": "",
@@ -1989,8 +1989,8 @@
       "comment": "MSH/AJS/MJS",
       "joinDate": "2025-09-23T15:27:33",
       "originalJoinDate": "2025-09-23T15:27:33",
-      "lastOnline": "2026-11-19T19:25:18",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2031,7 +2031,7 @@
       "comment": "Evilyn's baby boy ^^",
       "joinDate": "2026-07-02T13:21:49",
       "originalJoinDate": "2026-02-13T09:40:40",
-      "lastOnline": "2026-11-18T16:24:11",
+      "lastOnline": "2026-11-19T20:00:09",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2171,8 +2171,8 @@
       "comment": "+msh +mjs",
       "joinDate": "2026-02-13T09:40:40",
       "originalJoinDate": "2026-02-13T09:40:40",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-19T19:59:48",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2479,8 +2479,8 @@
       "comment": "",
       "joinDate": "2026-10-13T22:06:13",
       "originalJoinDate": "2026-10-13T22:06:13",
-      "lastOnline": "2026-11-19T00:38:34",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2689,8 +2689,8 @@
       "comment": "",
       "joinDate": "2026-11-09T21:27:20",
       "originalJoinDate": "2026-10-13T22:06:13",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-19T19:55:15",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2983,8 +2983,8 @@
       "comment": "",
       "joinDate": "2026-01-20T20:54:47",
       "originalJoinDate": "2026-01-20T20:54:47",
-      "lastOnline": "2026-11-19T16:23:16",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -3039,8 +3039,8 @@
       "comment": "",
       "joinDate": "2026-07-05T16:48:06",
       "originalJoinDate": "2026-01-20T20:54:47",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-19T20:00:02",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -3914,8 +3914,8 @@
     {
       "name": "Thanatos",
       "account": "@niggi-1997#85685",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Wizard",
       "level": "20",
       "comment": "DPS MJS",
@@ -4411,8 +4411,8 @@
       "comment": "Amaya's alt",
       "joinDate": "2026-05-04T14:15:50",
       "originalJoinDate": "2025-09-23T15:27:33",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-19T19:56:19",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -4572,8 +4572,8 @@
     {
       "name": "Anubis",
       "account": "@niggi-1997#85685",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Fighter",
       "level": "20",
       "comment": "",
@@ -4838,8 +4838,8 @@
     {
       "name": "Hermes",
       "account": "@niggi-1997#85685",
-      "rank": "Stalwart",
-      "rankOrder": 3,
+      "rank": "Veteran",
+      "rankOrder": 4,
       "class": "Rogue",
       "level": "20",
       "comment": "",
@@ -5537,6 +5537,26 @@
     }
   ],
   "events": [
+    {
+      "date": "2026-11-19T20:00:57",
+      "kind": "rank",
+      "text": "Thanatos@niggi-1997#85685's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-11-19T20:00:55",
+      "kind": "rank",
+      "text": "Hermes@niggi-1997#85685's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-11-19T20:00:52",
+      "kind": "rank",
+      "text": "Anubis@niggi-1997#85685's guild rank is now Veteran"
+    },
+    {
+      "date": "2026-11-19T20:00:42",
+      "kind": "rank",
+      "text": "Shinbikyn@thekatre's guild rank is now Elder"
+    },
     {
       "date": "2026-11-19T19:53:49",
       "kind": "join",
