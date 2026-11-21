@@ -303,6 +303,9 @@
         const raw = String(event.organizer || "").trim();
         if (!raw || ineligibleHosts.has(raw)) return;
         const name = hostAliases.get(raw) || raw;
+        // Like the Event Host board: a run counts only when it drew
+        // at least 5 sign-ups in total (standing rule, 2026-11-21).
+        if ((event.participants || []).length < 5) return;
         hostCounts.set(name, (hostCounts.get(name) || 0) + 1);
       });
       const eventHost = topEntry(hostCounts);
@@ -363,6 +366,9 @@
         });
         names.forEach((name) => {
           if (ineligibleParticipants.has(name)) return;
+          // Like the Top Participants board: 5+ total sign-ups or
+          // the run does not count (standing rule, 2026-11-21).
+          if ((event.participants || []).length < 5) return;
           participantCounts.set(name, (participantCounts.get(name) || 0) + 1);
         });
       });

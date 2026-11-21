@@ -329,6 +329,12 @@ const HOST_NAME_ALIASES = new Map([
 // who have left the guild, per the guild leader's audit of the records.
 const INELIGIBLE_HOSTS = new Set(["Vega", "Vega ~ Soul", "Elenara", "Andealous", "Micioarancio"]);
 
+// Standing rule (guild leader, 2026-11-21): a run only counts —
+// hosted or attended, for anyone — when it drew at least this many
+// sign-ups in total. Runs posted with fewer sometimes never actually
+// happen, so the boards only credit runs that filled.
+const MIN_RUN_SIGNUPS = 5;
+
 // The collector stores each run's date as an Eastern calendar date
 // ("2026-11-11"); read it as a plain date, not a UTC-midnight instant,
 // so the board shows the same day in every visitor's timezone.
@@ -344,6 +350,7 @@ function buildEventHost(raidData) {
     const raw = String(event.organizer || "").trim();
     if (!raw || INELIGIBLE_HOSTS.has(raw)) continue;
     const name = HOST_NAME_ALIASES.get(raw) || raw;
+    if ((event.participants || []).length < MIN_RUN_SIGNUPS) continue;
     if (!byHost.has(name)) byHost.set(name, { name, count: 0, first: null, latest: null });
     const entry = byHost.get(name);
     entry.count += 1;
@@ -427,6 +434,7 @@ function buildParticipants(raidData) {
     const when = parseDateOnly(event.eventDate) || parseDate(event.postedAt);
     for (const name of names) {
       if (INELIGIBLE_PARTICIPANTS.has(name)) continue;
+      if ((event.participants || []).length < MIN_RUN_SIGNUPS) continue;
       if (!byMember.has(name)) byMember.set(name, { name, count: 0, first: null, latest: null });
       const entry = byMember.get(name);
       entry.count += 1;
