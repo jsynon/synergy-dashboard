@@ -303,6 +303,9 @@
         const raw = String(event.organizer || "").trim();
         if (!raw || ineligibleHosts.has(raw)) return;
         const name = hostAliases.get(raw) || raw;
+        // Like the Event Host board: Reinds' runs count only when
+        // the run drew at least 5 sign-ups in total (2026-11-21 audit).
+        if (name === "Reinds" && (event.participants || []).length < 5) return;
         hostCounts.set(name, (hostCounts.get(name) || 0) + 1);
       });
       const eventHost = topEntry(hostCounts);
@@ -363,6 +366,9 @@
         });
         names.forEach((name) => {
           if (ineligibleParticipants.has(name)) return;
+          // Like the Top Participants board: Reinds' attended runs
+          // count only at 5+ total sign-ups (2026-11-21 audit).
+          if (name === "Reinds" && (event.participants || []).length < 5) return;
           participantCounts.set(name, (participantCounts.get(name) || 0) + 1);
         });
       });
