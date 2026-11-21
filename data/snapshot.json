@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T05:00:58+00:00",
+  "generatedAt": "2026-11-21T06:13:40+00:00",
   "accountCount": 149,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -323,8 +323,8 @@
       "comment": "ugur/orko/43/Himen/",
       "joinDate": "2026-06-06T06:13:56",
       "originalJoinDate": "2026-06-06T06:13:56",
-      "lastOnline": "2026-11-20T12:49:36",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -337,8 +337,8 @@
       "comment": "+T for anything",
       "joinDate": "2025-03-28T05:27:03",
       "originalJoinDate": "2025-03-28T05:27:03",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-21T00:15:38",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -365,7 +365,7 @@
       "comment": "",
       "joinDate": "2026-04-21T13:37:22",
       "originalJoinDate": "2025-05-10T16:53:52",
-      "lastOnline": "2026-11-12T05:08:03",
+      "lastOnline": "2026-11-21T00:32:08",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -393,7 +393,7 @@
       "comment": "",
       "joinDate": "2025-07-18T05:23:12",
       "originalJoinDate": "2025-05-10T16:53:52",
-      "lastOnline": "2026-11-12T05:07:41",
+      "lastOnline": "2026-11-21T00:33:29",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -519,8 +519,8 @@
       "comment": "ash/msh/mjs/msod/mtos",
       "joinDate": "2026-03-12T16:55:58",
       "originalJoinDate": "2026-03-12T16:55:58",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-21T00:53:36",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -645,7 +645,7 @@
       "comment": "",
       "joinDate": "2026-08-06T20:40:08",
       "originalJoinDate": "2026-02-25T16:04:03",
-      "lastOnline": "2026-11-20T01:27:01",
+      "lastOnline": "2026-11-21T00:53:59",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -659,7 +659,7 @@
       "comment": "",
       "joinDate": "2026-02-25T16:04:03",
       "originalJoinDate": "2026-02-25T16:04:03",
-      "lastOnline": "2026-11-20T05:27:50",
+      "lastOnline": "2026-11-21T01:09:31",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1051,8 +1051,8 @@
       "comment": "",
       "joinDate": "2026-10-25T13:11:02",
       "originalJoinDate": "2026-04-27T23:26:27",
-      "lastOnline": "2026-11-18T06:10:10",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1093,7 +1093,7 @@
       "comment": "",
       "joinDate": "2026-09-16T07:03:58",
       "originalJoinDate": "2026-04-27T23:26:27",
-      "lastOnline": "2026-11-18T04:16:55",
+      "lastOnline": "2026-11-21T00:54:57",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1121,8 +1121,8 @@
       "comment": "",
       "joinDate": "2026-07-13T16:38:06",
       "originalJoinDate": "2026-07-13T16:38:06",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-21T00:14:37",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -1191,7 +1191,7 @@
       "comment": "",
       "joinDate": "2026-08-06T20:41:07",
       "originalJoinDate": "2026-02-25T16:04:03",
-      "lastOnline": "2026-11-20T01:27:51",
+      "lastOnline": "2026-11-21T00:54:56",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1219,8 +1219,8 @@
       "comment": "",
       "joinDate": "2026-01-06T09:12:02",
       "originalJoinDate": "2026-01-06T09:07:01",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-21T00:08:33",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -1331,7 +1331,7 @@
       "comment": "---------->MJS<----------",
       "joinDate": "2026-07-07T04:12:05",
       "originalJoinDate": "2026-07-07T04:12:05",
-      "lastOnline": "2026-11-20T13:22:19",
+      "lastOnline": "2026-11-21T00:00:52",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2227,7 +2227,7 @@
       "comment": "",
       "joinDate": "2026-09-02T21:33:01",
       "originalJoinDate": "2026-04-27T23:26:27",
-      "lastOnline": "2026-11-18T04:16:00",
+      "lastOnline": "2026-11-21T00:58:44",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2241,7 +2241,7 @@
       "comment": "",
       "joinDate": "2026-09-03T00:59:28",
       "originalJoinDate": "2026-04-27T23:26:27",
-      "lastOnline": "2026-11-18T04:15:10",
+      "lastOnline": "2026-11-21T00:56:38",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2255,8 +2255,8 @@
       "comment": "",
       "joinDate": "2026-09-03T00:54:09",
       "originalJoinDate": "2026-04-27T23:26:27",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-21T00:49:01",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -2269,7 +2269,7 @@
       "comment": "",
       "joinDate": "2026-09-03T01:03:28",
       "originalJoinDate": "2026-04-27T23:26:27",
-      "lastOnline": "2026-11-18T04:16:23",
+      "lastOnline": "2026-11-21T00:51:00",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2465,7 +2465,7 @@
       "comment": "",
       "joinDate": "2026-10-13T22:06:13",
       "originalJoinDate": "2026-10-13T22:06:13",
-      "lastOnline": "2026-11-20T23:54:06",
+      "lastOnline": "2026-11-21T00:29:07",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2605,7 +2605,7 @@
       "comment": "",
       "joinDate": "2026-01-06T09:12:24",
       "originalJoinDate": "2026-01-06T09:07:01",
-      "lastOnline": "2026-11-20T22:03:19",
+      "lastOnline": "2026-11-21T01:12:03",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2619,8 +2619,8 @@
       "comment": "",
       "joinDate": "2025-05-10T16:53:52",
       "originalJoinDate": "2025-05-10T16:53:52",
-      "lastOnline": "2026-11-20T23:58:05",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2675,7 +2675,7 @@
       "comment": "",
       "joinDate": "2026-11-09T21:27:20",
       "originalJoinDate": "2026-10-13T22:06:13",
-      "lastOnline": "2026-11-20T22:46:35",
+      "lastOnline": "2026-11-21T01:08:30",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2703,8 +2703,8 @@
       "comment": "",
       "joinDate": "2025-05-19T16:07:13",
       "originalJoinDate": "2025-05-10T16:53:52",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-21T00:30:37",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -4313,7 +4313,7 @@
       "comment": "",
       "joinDate": "2026-04-21T13:37:04",
       "originalJoinDate": "2025-05-10T16:53:52",
-      "lastOnline": "2026-11-12T05:07:01",
+      "lastOnline": "2026-11-21T00:35:06",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4621,7 +4621,7 @@
       "comment": "",
       "joinDate": "2026-07-20T05:12:09",
       "originalJoinDate": "2026-07-20T05:12:09",
-      "lastOnline": "2026-11-20T04:13:40",
+      "lastOnline": "2026-11-21T00:14:52",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -4943,7 +4943,7 @@
       "comment": "",
       "joinDate": "2026-11-03T22:53:50",
       "originalJoinDate": "2026-06-15T21:39:37",
-      "lastOnline": "2026-11-20T23:56:21",
+      "lastOnline": "2026-11-21T00:24:23",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5195,8 +5195,8 @@
       "comment": "",
       "joinDate": "2026-08-31T20:20:29",
       "originalJoinDate": "2026-07-07T04:12:05",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-21T00:00:33",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -11182,6 +11182,186 @@
     }
   ],
   "bankEvents": [
+    {
+      "date": "2026-11-21T00:49:49",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Lightwine",
+      "amount": 99
+    },
+    {
+      "date": "2026-11-21T00:49:17",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Crafted Potion of Power Rank 4, +1",
+      "amount": 19
+    },
+    {
+      "date": "2026-11-21T00:49:13",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Crafted Potion of Power Rank 4, +1",
+      "amount": 61
+    },
+    {
+      "date": "2026-11-21T00:48:35",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Flask of Potency Rank 3, +1",
+      "amount": 99
+    },
+    {
+      "date": "2026-11-21T00:47:52",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Anniversary Ham",
+      "amount": 97
+    },
+    {
+      "date": "2026-11-21T00:42:43",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Brilliant Diamond",
+      "amount": 6
+    },
+    {
+      "date": "2026-11-21T00:42:33",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Violet Diamond",
+      "amount": 2
+    },
+    {
+      "date": "2026-11-21T00:42:24",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Violet Diamond",
+      "amount": 8
+    },
+    {
+      "date": "2026-11-21T00:42:24",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Events",
+      "item": "Violet Diamond",
+      "amount": 8
+    },
+    {
+      "date": "2026-11-21T00:41:55",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Lliira's Fare",
+      "amount": 6
+    },
+    {
+      "date": "2026-11-21T00:40:17",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Brilliant Diamond",
+      "amount": 47
+    },
+    {
+      "date": "2026-11-21T00:40:17",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Events",
+      "item": "Brilliant Diamond",
+      "amount": 47
+    },
+    {
+      "date": "2026-11-21T00:39:24",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Brilliant Diamond",
+      "amount": 99
+    },
+    {
+      "date": "2026-11-21T00:39:24",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Events",
+      "item": "Brilliant Diamond",
+      "amount": 99
+    },
+    {
+      "date": "2026-11-21T00:39:21",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Shard of Empowerment",
+      "amount": 999
+    },
+    {
+      "date": "2026-11-21T00:39:21",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Shard of Empowerment",
+      "amount": 999
+    },
+    {
+      "date": "2026-11-21T00:39:19",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Brilliant Diamond",
+      "amount": 99
+    },
+    {
+      "date": "2026-11-21T00:39:19",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Events",
+      "item": "Brilliant Diamond",
+      "amount": 99
+    },
+    {
+      "date": "2026-11-20T23:54:52",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "deposit",
+      "category": "Companions",
+      "item": "Dancing Shield",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T23:54:48",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Artifacts",
+      "item": "Dancing Shield",
+      "amount": 1
+    },
     {
       "date": "2026-11-20T23:15:17",
       "player": "Durance Critus",
