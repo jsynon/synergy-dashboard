@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T18:33:33+00:00",
+  "generatedAt": "2026-11-21T19:04:56+00:00",
   "accountCount": 149,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -323,7 +323,7 @@
       "comment": "ugur/orko/43/Himen/",
       "joinDate": "2026-06-06T06:13:56",
       "originalJoinDate": "2026-06-06T06:13:56",
-      "lastOnline": "2026-11-21T13:29:04",
+      "lastOnline": "2026-11-21T13:56:30",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -967,8 +967,8 @@
       "comment": "",
       "joinDate": "2024-06-28T15:43:16",
       "originalJoinDate": "2024-02-28T14:35:54",
-      "lastOnline": "2026-11-21T10:44:43",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -1121,8 +1121,8 @@
       "comment": "",
       "joinDate": "2026-07-13T16:38:06",
       "originalJoinDate": "2026-07-13T16:38:06",
-      "lastOnline": null,
-      "onlineNow": true,
+      "lastOnline": "2026-11-21T13:57:39",
+      "onlineNow": false,
       "leaveOfAbsence": false
     },
     {
@@ -1401,7 +1401,7 @@
       "comment": "123k",
       "joinDate": "2026-07-31T21:15:45",
       "originalJoinDate": "2026-07-31T21:15:45",
-      "lastOnline": "2026-11-20T09:14:14",
+      "lastOnline": "2026-11-21T13:54:11",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2129,8 +2129,8 @@
       "comment": "",
       "joinDate": "2026-02-14T17:25:59",
       "originalJoinDate": "2026-02-14T17:25:59",
-      "lastOnline": "2026-11-21T11:22:44",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2451,8 +2451,8 @@
       "comment": "need chipped kris for lure :)",
       "joinDate": "2024-04-03T08:02:10",
       "originalJoinDate": "2024-04-03T08:02:10",
-      "lastOnline": "2026-11-20T19:33:14",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2465,8 +2465,8 @@
       "comment": "",
       "joinDate": "2026-10-13T22:06:13",
       "originalJoinDate": "2026-10-13T22:06:13",
-      "lastOnline": "2026-11-21T02:28:25",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -2675,7 +2675,7 @@
       "comment": "",
       "joinDate": "2026-11-09T21:27:20",
       "originalJoinDate": "2026-10-13T22:06:13",
-      "lastOnline": "2026-11-21T03:21:24",
+      "lastOnline": "2026-11-21T13:52:59",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -2759,8 +2759,8 @@
       "comment": "mjs/msh",
       "joinDate": "2026-11-15T19:14:58",
       "originalJoinDate": "2026-11-15T19:14:58",
-      "lastOnline": "2026-11-20T16:10:53",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -4803,8 +4803,8 @@
       "comment": "",
       "joinDate": "2026-09-22T17:52:45",
       "originalJoinDate": "2026-09-22T17:52:45",
-      "lastOnline": "2026-11-21T10:17:30",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -4915,7 +4915,7 @@
       "comment": "",
       "joinDate": "2026-06-14T22:53:46",
       "originalJoinDate": "2026-06-14T22:53:46",
-      "lastOnline": "2026-11-20T23:51:26",
+      "lastOnline": "2026-11-21T14:03:53",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5041,7 +5041,7 @@
       "comment": "",
       "joinDate": "2026-11-07T18:17:39",
       "originalJoinDate": "2026-06-14T22:53:46",
-      "lastOnline": "2026-11-20T23:51:47",
+      "lastOnline": "2026-11-21T14:04:17",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -5279,8 +5279,8 @@
       "comment": "",
       "joinDate": "2026-10-13T21:57:23",
       "originalJoinDate": "2026-10-13T21:57:23",
-      "lastOnline": "2026-11-21T07:27:39",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -5433,8 +5433,8 @@
       "comment": "",
       "joinDate": "2026-11-07T18:18:20",
       "originalJoinDate": "2026-06-14T22:53:46",
-      "lastOnline": "2026-11-20T23:54:22",
-      "onlineNow": false,
+      "lastOnline": null,
+      "onlineNow": true,
       "leaveOfAbsence": false
     },
     {
@@ -11183,6 +11183,204 @@
   ],
   "bankEvents": [
     {
+      "date": "2026-11-21T13:40:05",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Elixir of Corellon's Blood",
+      "amount": 99
+    },
+    {
+      "date": "2026-11-21T13:39:02",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Sunlord's Gift Elixir",
+      "amount": 99
+    },
+    {
+      "date": "2026-11-21T13:31:27",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Brilliant Diamond",
+      "amount": 99
+    },
+    {
+      "date": "2026-11-21T13:31:27",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Events",
+      "item": "Brilliant Diamond",
+      "amount": 99
+    },
+    {
+      "date": "2026-11-21T13:31:22",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Misc",
+      "item": "Wererat Thief",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-21T13:31:08",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Preservation Ward",
+      "amount": 100
+    },
+    {
+      "date": "2026-11-21T13:31:08",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Events",
+      "item": "Preservation Ward",
+      "amount": 100
+    },
+    {
+      "date": "2026-11-21T13:31:07",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Scroll of Life",
+      "amount": 100
+    },
+    {
+      "date": "2026-11-21T13:31:07",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Events",
+      "item": "Scroll of Life",
+      "amount": 100
+    },
+    {
+      "date": "2026-11-21T13:31:03",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Watermelon Sorbet",
+      "amount": 99
+    },
+    {
+      "date": "2026-11-21T13:30:57",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Fiend Remains",
+      "amount": 53
+    },
+    {
+      "date": "2026-11-21T13:29:24",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Violet Diamond",
+      "amount": 30
+    },
+    {
+      "date": "2026-11-21T13:27:40",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Sunlord's Gift Elixir",
+      "amount": 99
+    },
+    {
+      "date": "2026-11-21T13:27:40",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Goat",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-21T13:27:22",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Sunlord's Gift Elixir",
+      "amount": 75
+    },
+    {
+      "date": "2026-11-21T13:26:59",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Wild Storm Elixir",
+      "amount": 25
+    },
+    {
+      "date": "2026-11-21T13:26:26",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Wild Storm Elixir",
+      "amount": 74
+    },
+    {
+      "date": "2026-11-21T13:26:25",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Cave Bear",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-21T13:26:18",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Sunlord's Gift Elixir",
+      "amount": 24
+    },
+    {
+      "date": "2026-11-21T13:26:09",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Elixir of Steadfast Devotion",
+      "amount": 99
+    },
+    {
+      "date": "2026-11-21T13:26:06",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Potion of Rejuvenation Rank 10",
+      "amount": 22
+    },
+    {
+      "date": "2026-11-21T13:26:05",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Potion of Healing Rank 10",
+      "amount": 5
+    },
+    {
       "date": "2026-11-21T13:24:36",
       "player": "Elanor",
       "account": "@zorlonix",
@@ -11612,6 +11810,168 @@
       "action": "withdraw",
       "category": "Artifacts",
       "item": "Dancing Shield",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T23:53:43",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Armored Orc Wolf",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T23:53:27",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "deposit",
+      "category": "Companions",
+      "item": "Aranea",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T23:53:22",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Aranea",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T23:53:05",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "deposit",
+      "category": "Mounts",
+      "item": "Fey Wolf",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T23:53:01",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Fey Wolf",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T23:52:54",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "deposit",
+      "category": "Mounts",
+      "item": "Winter Wolf",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T23:52:50",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Winter Wolf",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T23:52:13",
+      "player": "Amethyst Felis-Koit",
+      "account": "@wispling#1230",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Polar Bear",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T23:31:15",
+      "player": "Amadeus",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Companions",
+      "item": "Dancing Shield",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T23:31:13",
+      "player": "Amadeus",
+      "account": "@kyo#1079",
+      "action": "deposit",
+      "category": "Companions",
+      "item": "Black Ice Ioun Stone",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T23:31:11",
+      "player": "Amadeus",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Companions",
+      "item": "Black Ice Ioun Stone",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T23:31:02",
+      "player": "Amadeus",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Misc",
+      "item": "Purple Owlbear",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T23:30:46",
+      "player": "Amadeus",
+      "account": "@kyo#1079",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Water Archon",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T23:30:41",
+      "player": "Amadeus",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Misc",
+      "item": "Water Archon",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T23:30:34",
+      "player": "Amadeus",
+      "account": "@kyo#1079",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Damaran Shepherd",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T23:30:32",
+      "player": "Amadeus",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Damaran Shepherd",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T23:30:29",
+      "player": "Amadeus",
+      "account": "@kyo#1079",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Heavy Twilight Nightmare",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-20T23:30:27",
+      "player": "Amadeus",
+      "account": "@kyo#1079",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Heavy Twilight Nightmare",
       "amount": 1
     },
     {
@@ -12308,6 +12668,87 @@
       "amount": 1
     },
     {
+      "date": "2026-11-19T16:09:39",
+      "player": "Eliza",
+      "account": "@leo#4323",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Calimshan Horse",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-19T16:09:28",
+      "player": "Eliza",
+      "account": "@leo#4323",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Intellect Devourer",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-19T16:09:25",
+      "player": "Eliza",
+      "account": "@leo#4323",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Goldfish",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-19T16:09:23",
+      "player": "Eliza",
+      "account": "@leo#4323",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Ice Sprite",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-19T16:09:20",
+      "player": "Eliza",
+      "account": "@leo#4323",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Ice Sprite",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-19T16:09:18",
+      "player": "Eliza",
+      "account": "@leo#4323",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Snowy Fawn",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-19T16:09:15",
+      "player": "Eliza",
+      "account": "@leo#4323",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Snowy Fawn",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-19T16:09:13",
+      "player": "Eliza",
+      "account": "@leo#4323",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Fey Wolf",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-19T16:09:09",
+      "player": "Eliza",
+      "account": "@leo#4323",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Winter Wolf",
+      "amount": 1
+    },
+    {
       "date": "2026-11-19T13:43:46",
       "player": "Elanor",
       "account": "@zorlonix",
@@ -12522,6 +12963,33 @@
       "category": "Supplies",
       "item": "Potion of Healing Rank 10",
       "amount": 3
+    },
+    {
+      "date": "2026-11-18T11:29:22",
+      "player": "Silverbead",
+      "account": "@n00b#52235",
+      "action": "withdraw",
+      "category": "Other",
+      "item": "Copper",
+      "amount": 300000
+    },
+    {
+      "date": "2026-11-18T11:00:18",
+      "player": "Silverbead",
+      "account": "@n00b#52235",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Sunite Headwear",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-18T11:00:09",
+      "player": "Silverbead",
+      "account": "@n00b#52235",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Sunite Headwear",
+      "amount": 1
     },
     {
       "date": "2026-11-18T00:56:12",
