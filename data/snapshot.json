@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T06:13:40+00:00",
+  "generatedAt": "2026-11-21T06:17:44+00:00",
   "accountCount": 149,
   "accountJoinDates": {
     "@12thluigi#56765": "2026-03-19T11:34:57",
@@ -1107,7 +1107,7 @@
       "comment": "",
       "joinDate": "2026-01-06T09:07:01",
       "originalJoinDate": "2026-01-06T09:07:01",
-      "lastOnline": "2026-11-20T22:04:06",
+      "lastOnline": "2026-11-21T01:16:47",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1149,7 +1149,7 @@
       "comment": "",
       "joinDate": "2026-01-06T09:11:29",
       "originalJoinDate": "2026-01-06T09:07:01",
-      "lastOnline": "2026-11-20T23:16:40",
+      "lastOnline": "2026-11-21T01:16:37",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -1219,7 +1219,7 @@
       "comment": "",
       "joinDate": "2026-01-06T09:12:02",
       "originalJoinDate": "2026-01-06T09:07:01",
-      "lastOnline": "2026-11-21T00:08:33",
+      "lastOnline": "2026-11-21T01:16:25",
       "onlineNow": false,
       "leaveOfAbsence": false
     },
@@ -11182,6 +11182,186 @@
     }
   ],
   "bankEvents": [
+    {
+      "date": "2026-11-21T01:10:17",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Sunite Pants",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-21T01:10:16",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Fashion",
+      "item": "Sunite Garb",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-21T01:01:17",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Boxes",
+      "item": "Lockbox of the Lost",
+      "amount": 58
+    },
+    {
+      "date": "2026-11-21T01:01:17",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Boxes",
+      "item": "Merchant Prince Lockbox",
+      "amount": 20
+    },
+    {
+      "date": "2026-11-21T01:01:16",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Boxes",
+      "item": "Undying Lockbox",
+      "amount": 117
+    },
+    {
+      "date": "2026-11-21T01:01:15",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Boxes",
+      "item": "Starlight Armaments Lockbox",
+      "amount": 80
+    },
+    {
+      "date": "2026-11-21T01:01:14",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Boxes",
+      "item": "Many-Starred Lockbox",
+      "amount": 50
+    },
+    {
+      "date": "2026-11-21T00:58:04",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Boxes",
+      "item": "Wild Adventure Lockbox",
+      "amount": 404
+    },
+    {
+      "date": "2026-11-21T00:53:40",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Potion of Dragon Slaying, Rank 4",
+      "amount": 50
+    },
+    {
+      "date": "2026-11-21T00:53:40",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Supplies",
+      "item": "Potion of Dragon Slaying, Rank 3",
+      "amount": 32
+    },
+    {
+      "date": "2026-11-21T00:53:00",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Legendary Scroll of Protection from Dragons",
+      "amount": 5
+    },
+    {
+      "date": "2026-11-21T00:51:39",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Wererat Thief",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-21T00:51:39",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Fashion",
+      "item": "Wererat Thief",
+      "amount": 1
+    },
+    {
+      "date": "2026-11-21T00:51:25",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Misc",
+      "item": "Teal Diamond",
+      "amount": 2
+    },
+    {
+      "date": "2026-11-21T00:51:25",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Events",
+      "item": "Teal Diamond",
+      "amount": 2
+    },
+    {
+      "date": "2026-11-21T00:51:05",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Watermelon Sorbet",
+      "amount": 68
+    },
+    {
+      "date": "2026-11-21T00:50:57",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Misc",
+      "item": "Watermelon Sorbet",
+      "amount": 71
+    },
+    {
+      "date": "2026-11-21T00:50:43",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Potion of Rejuvenation Rank 10",
+      "amount": 14
+    },
+    {
+      "date": "2026-11-21T00:50:43",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "withdraw",
+      "category": "Misc",
+      "item": "Potion of Rejuvenation Rank 10",
+      "amount": 14
+    },
+    {
+      "date": "2026-11-21T00:50:07",
+      "player": "Elanor",
+      "account": "@zorlonix",
+      "action": "deposit",
+      "category": "Supplies",
+      "item": "Squash Soup",
+      "amount": 99
+    },
     {
       "date": "2026-11-21T00:49:49",
       "player": "Elanor",
