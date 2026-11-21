@@ -131,6 +131,31 @@
       "name": "Winter Festival's Zenith!",
       "startDate": "2026-12-31",
       "endDate": "2027-01-07"
+    },
+    {
+      "name": "Wonders of Gond",
+      "startDate": "2026-12-01",
+      "endDate": "2026-12-08"
+    },
+    {
+      "name": "2x Refining Stones",
+      "startDate": "2026-12-10",
+      "endDate": "2026-12-17"
+    },
+    {
+      "name": "Zone Expansion",
+      "startDate": "2027-01-11",
+      "endDate": "2027-01-11"
+    },
+    {
+      "name": "Feast of Lanterns",
+      "startDate": "2027-02-04",
+      "endDate": "2027-02-11"
+    },
+    {
+      "name": "April Fowls",
+      "startDate": "2027-03-25",
+      "endDate": "2027-04-08"
     }
   ]
 }
