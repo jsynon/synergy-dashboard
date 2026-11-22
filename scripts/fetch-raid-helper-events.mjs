@@ -1,10 +1,19 @@
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 // Collects Raid-Helper event posts from every text channel in the guild and
 // records who organized each run and who signed up for it, for the Event
 // Host audit/leaderboard and a participation tally.
+//
+// Incremental by design: the previous run's output file carries a per-channel
+// watermark (the newest message ID seen), so a normal run only re-reads
+// messages newer than that watermark — plus a rolling 7-day overlap, because
+// Raid-Helper edits a post's embed as members sign up, and an edit does not
+// change the message ID. Once a week (or whenever the saved state is missing
+// or unusable) the collector falls back to a full scan of every channel,
+// which also prunes posts that were deleted since they were recorded.
+// Progress is logged per channel so a long run never looks stuck.
 //
 // Fail-soft by design: this data feeds an audit, never the live site, so any
 // failure logs a warning and exits 0 without touching the data file — a bad
@@ -45,6 +54,21 @@ const api = async (path) => {
   }
   return null;
 };
+
+// Discord message IDs are snowflakes: the creation time, in milliseconds,
+// sits in the high bits above a fixed epoch, so a timestamp converts to the
+// smallest possible ID for that moment and IDs compare chronologically.
+const DISCORD_EPOCH = 1420070400000n;
+const DAY_MS = 24 * 60 * 60 * 1000;
+const snowflakeForTime = (ms) => ((BigInt(Math.floor(ms)) - DISCORD_EPOCH) << 22n).toString();
+const idValue = (id) => {
+  try { return BigInt(id); } catch { return 0n; }
+};
+
+// How far back every run re-reads even in incremental mode, so sign-up edits
+// to recent posts are picked up, and how often a full rescan happens anyway.
+const OVERLAP_MS = 7 * DAY_MS;
+const FULL_SCAN_INTERVAL_MS = 7 * DAY_MS;
 
 const MONTHS = {
   january: "01", february: "02", march: "03", april: "04", may: "05",
@@ -143,6 +167,21 @@ const decodeEmojiTitle = (description) => {
   return title || null;
 };
 
+const outputPath = resolve(dirname(fileURLToPath(import.meta.url)), "..", "data", "raid-helper-events.json");
+
+// The previous run's output, if it exists and parses. Anything unusable is
+// treated as "no previous run", which simply means the next scan is a full
+// one — the safe direction to fall back.
+const loadPrevious = async () => {
+  try {
+    const parsed = JSON.parse(await readFile(outputPath, "utf8"));
+    if (!parsed || !Array.isArray(parsed.events)) return null;
+    return parsed;
+  } catch {
+    return null;
+  }
+};
+
 const main = async () => {
   const channelsResponse = await api(`/guilds/${guildId}/channels`);
   if (!channelsResponse || !channelsResponse.ok) {
@@ -160,19 +199,80 @@ const main = async () => {
   // regular channels.
   const textChannels = channels.filter((channel) => channel.type === 0 || channel.type === 5);
 
-  const events = [];
-  const unreadable = [];
-  const botAuthors = new Set();
+  const now = Date.now();
+  const previous = await loadPrevious();
+  const previousState = previous && previous.scanState && typeof previous.scanState === "object"
+    ? previous.scanState
+    : null;
+  const previousChannels = previousState && previousState.channels && typeof previousState.channels === "object"
+    ? previousState.channels
+    : {};
+  const lastFullScanAt = previousState && Number.isFinite(Date.parse(previousState.lastFullScanAt))
+    ? Date.parse(previousState.lastFullScanAt)
+    : null;
+
+  // A full scan rebuilds the event list from scratch. It is due when there is
+  // no usable saved state, when the saved state predates this incremental
+  // format but the last run left channels unreadable (so its coverage is
+  // unknown), or when the last full scan is over a week old.
+  let fullScan = !previous;
+  if (previous && !previousState) {
+    if (!Array.isArray(previous.channelsUnreadable) || previous.channelsUnreadable.length > 0
+      || !Number.isFinite(Date.parse(previous.generatedAt))) {
+      fullScan = true;
+    }
+  }
+  if (lastFullScanAt !== null && now - lastFullScanAt > FULL_SCAN_INTERVAL_MS) fullScan = true;
+  const seededWatermark = !fullScan && previous && !previousState
+    ? snowflakeForTime(Date.parse(previous.generatedAt))
+    : null;
+  const effectiveLastFullScanAt = fullScan
+    ? now
+    : (lastFullScanAt !== null ? lastFullScanAt : (previous ? Date.parse(previous.generatedAt) : now));
+
+  // Every incremental run re-reads at least the overlap window, so edits to
+  // recent posts (sign-ups) land even though their message IDs are old.
+  const overlapFloor = snowflakeForTime(now - OVERLAP_MS);
+
+  console.log(fullScan
+    ? "[raid-helper] Full scan: reading the complete history of every channel."
+    : `[raid-helper] Incremental scan: re-checking new messages plus the last ${OVERLAP_MS / DAY_MS} days per channel (last full scan ${new Date(effectiveLastFullScanAt).toISOString()}).`);
+
+  // Start from the recorded events; freshly fetched posts replace their
+  // stored versions by message ID. A full scan starts empty, which is what
+  // prunes posts deleted since they were recorded.
+  const eventsById = new Map();
+  if (!fullScan && previous) {
+    for (const event of previous.events) {
+      if (event && event.id) eventsById.set(String(event.id), event);
+    }
+  }
+  const botAuthors = new Set(fullScan || !previous ? [] : (previous.botAuthors || []));
   // Raw copies of a few posts, kept so the embed layout can be inspected if
   // the parser misses: the first posts seen, plus the first titled ones.
+  // Carried over from the previous run when nothing new is fetched.
   const samples = [];
+  const unreadable = [];
+  const scanChannels = {};
   let channelsScanned = 0;
   let messagesScanned = 0;
 
   for (const channel of textChannels) {
+    const channelState = previousChannels[channel.id];
+    let watermark = 0n;
+    if (!fullScan) {
+      if (channelState && channelState.newestMessageId) watermark = idValue(channelState.newestMessageId);
+      else if (seededWatermark) watermark = idValue(seededWatermark);
+      const floor = idValue(overlapFloor);
+      if (floor < watermark) watermark = floor;
+    }
+
     let before = null;
     let channelFailed = false;
     let readAnyPage = false;
+    let newestSeen = 0n;
+    let channelMessages = 0;
+    let channelPosts = 0;
     for (;;) {
       const query = before ? `?limit=100&before=${before}` : "?limit=100";
       const response = await api(`/channels/${channel.id}/messages${query}`);
@@ -186,7 +286,12 @@ const main = async () => {
       const messages = await response.json();
       if (!Array.isArray(messages) || messages.length === 0) break;
       messagesScanned += messages.length;
+      channelMessages += messages.length;
+      let crossedWatermark = false;
       for (const message of messages) {
+        const messageId = idValue(message.id);
+        if (messageId > newestSeen) newestSeen = messageId;
+        if (messageId <= watermark) { crossedWatermark = true; continue; }
         const author = message.author || {};
         if (!author.bot || !/raid-helper/i.test(author.username || "")) continue;
         botAuthors.add(`${author.username} (${author.id})`);
@@ -203,7 +308,7 @@ const main = async () => {
             components: message.components || []
           });
         }
-        events.push({
+        eventsById.set(String(message.id), {
           id: message.id,
           channelId: channel.id,
           channel: channel.name || "",
@@ -213,13 +318,28 @@ const main = async () => {
           organizer: parseOrganizer(embed),
           participants: parseParticipants(embed)
         });
+        channelPosts += 1;
       }
-      if (messages.length < 100) break;
+      if (crossedWatermark || messages.length < 100) break;
       before = messages[messages.length - 1].id;
     }
-    if (!channelFailed) channelsScanned += 1;
+    if (!channelFailed) {
+      channelsScanned += 1;
+      // The watermark only ever moves forward, and only on a clean scan: a
+      // failed channel keeps its old watermark so the next run retries the
+      // stretch this one could not read.
+      const previousWatermark = channelState && channelState.newestMessageId
+        ? idValue(channelState.newestMessageId)
+        : 0n;
+      const watermarkNow = newestSeen > previousWatermark ? newestSeen : previousWatermark;
+      scanChannels[channel.id] = { newestMessageId: watermarkNow > 0n ? watermarkNow.toString() : null };
+    } else if (channelState) {
+      scanChannels[channel.id] = channelState;
+    }
+    console.log(`[raid-helper] #${channel.name || channel.id}: ${channelMessages} messages checked, ${channelPosts} event posts found${channelFailed ? " (read failed; kept previous data)" : ""}.`);
   }
 
+  const events = [...eventsById.values()];
   events.sort((a, b) => String(b.postedAt || "").localeCompare(String(a.postedAt || "")));
 
   const output = {
@@ -230,14 +350,19 @@ const main = async () => {
     postsFound: events.length,
     unparsedPosts: events.filter((event) => !event.organizer).length,
     botAuthors: [...botAuthors],
-    samples: samples.map(({ titled, ...rest }) => rest),
-    events
+    samples: (samples.length > 0 || fullScan || !previous
+      ? samples
+      : (previous.samples || [])).map(({ titled, ...rest }) => rest),
+    events,
+    scanState: {
+      lastFullScanAt: new Date(effectiveLastFullScanAt).toISOString(),
+      channels: scanChannels
+    }
   };
 
-  const outputPath = resolve(dirname(fileURLToPath(import.meta.url)), "..", "data", "raid-helper-events.json");
   await mkdir(dirname(outputPath), { recursive: true });
   await writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`, "utf8");
-  console.log(`[raid-helper] ${events.length} event posts across ${channelsScanned} channels (${messagesScanned} messages scanned, ${output.unparsedPosts} unparsed).`);
+  console.log(`[raid-helper] ${events.length} event posts across ${channelsScanned} channels (${messagesScanned} messages scanned, ${output.unparsedPosts} unparsed, ${fullScan ? "full scan" : "incremental scan"}).`);
 };
 
 try {
