@@ -1,9 +1,31 @@
 {
   "source": "https://www.playneverwinter.com/en/news",
   "api": "https://api.arcgames.com/v1.0/games/nw/news",
-  "generatedAt": "2026-11-19T20:54:44.736Z",
+  "generatedAt": "2026-11-24T22:42:26.536Z",
   "count": 100,
   "articles": [
+    {
+      "id": "11584181",
+      "title": "Patch Notes for 11/24/2026",
+      "summary": "Check out all the exciting changes coming to Neverwinter in our latest patch notes!",
+      "date": "2026-11-24",
+      "url": "https://www.playneverwinter.com/en/news-details/11584181",
+      "image": "https://pwimages-a.akamaihd.net/arc/3d/94/3d94ddae47e8502ca2521258ba0c78fb1795430082.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-patch-notes",
+        "nw-news",
+        "neverwinter",
+        "patch-notes",
+        "nw-xbox",
+        "nw-playstation"
+      ]
+    },
     {
       "id": "11582595",
       "title": "Neverwinter Roadmap",
@@ -1998,25 +2020,6 @@
         "neverwinter",
         "nw-xbox",
         "nw-playstation"
-      ]
-    },
-    {
-      "id": "11578650",
-      "title": "Bodies and Souls Battlepass",
-      "summary": "Unleash your spirit and steel your resolve with Neverwinter’s new Battle Pass!",
-      "date": "2025-11-21",
-      "url": "https://www.playneverwinter.com/en/news-details/11578650",
-      "image": "https://pwimages-a.akamaihd.net/arc/e8/c5/e8c597587a6b7927bafda3a75a1384781763042809.png",
-      "platforms": [
-        "pc",
-        "ps",
-        "xbox"
-      ],
-      "tags": [
-        "nw-launcher",
-        "nw-news",
-        "neverwinter",
-        "nw-events"
       ]
     }
   ]

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-24T10:20:36.070Z",
+  "generatedAt": "2026-11-24T22:43:26.767Z",
   "channelsScanned": 97,
   "channelsUnreadable": [],
-  "messagesScanned": 3427,
+  "messagesScanned": 3328,
   "postsFound": 130,
   "unparsedPosts": 4,
   "botAuthors": [
@@ -2763,7 +2763,7 @@
     "lastFullScanAt": "2026-11-22T07:05:06.294Z",
     "channels": {
       "964991521524944959": {
-        "newestMessageId": "1574728288541347863"
+        "newestMessageId": "1574906095221350495"
       },
       "1056342825882624030": {
         "newestMessageId": "1422053821554753667"
@@ -2784,7 +2784,7 @@
         "newestMessageId": "1404436089262833764"
       },
       "1201999851802591273": {
-        "newestMessageId": "1574728648454443029"
+        "newestMessageId": "1574836962475643036"
       },
       "1202325116147740743": {
         "newestMessageId": "1573024449609994310"
@@ -2811,7 +2811,7 @@
         "newestMessageId": "1221563335489884321"
       },
       "1221578189697060987": {
-        "newestMessageId": "1574555955629129830"
+        "newestMessageId": "1574808463425409126"
       },
       "1221582518784884819": {
         "newestMessageId": "1225426527349379174"
@@ -3030,7 +3030,7 @@
         "newestMessageId": "1565571928775721063"
       },
       "1555587717201403954": {
-        "newestMessageId": "1574459398179528766"
+        "newestMessageId": "1574834380239544453"
       },
       "1556404759613935718": {
         "newestMessageId": "1556406147022458890"
