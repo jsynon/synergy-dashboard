@@ -45,15 +45,16 @@
       // highest-ranked character, then the earliest to join.
       const displayNames = new Map();
       (snapshot.roster || []).forEach((member) => {
-        const current = displayNames.get(member.account);
+        const accountKey = String(member.account || "").trim().toLowerCase();
+        const current = displayNames.get(accountKey);
         const rank = member.rankOrder || 0;
         const joined = member.joinDate || "9999";
         if (!current || rank > current.rank || (rank === current.rank && joined < current.joined)) {
-          displayNames.set(member.account, { rank, joined, name: member.name });
+          displayNames.set(accountKey, { rank, joined, name: member.name });
         }
       });
       const displayName = (account) => {
-        const entry = displayNames.get(account);
+        const entry = displayNames.get(String(account || "").trim().toLowerCase());
         return entry ? entry.name : account;
       };
       // Per-character join dates, and each account's main
