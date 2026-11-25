@@ -3,8 +3,8 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 // Collects Raid-Helper event posts from every text channel in the guild and
-// records who organized each run and who signed up for it, for the Event
-// Host audit/leaderboard and a participation tally.
+// records who organized each run, who signed up for it, and when the run
+// starts, for the Event Host audit/leaderboard and a participation tally.
 //
 // Incremental by design: the previous run's output file carries a per-channel
 // watermark (the newest message ID seen), so a normal run only re-reads
@@ -103,19 +103,26 @@ const parseOrganizer = (embed) => {
 
 // The same first field carries the run's moment as a Discord timestamp
 // ("<t:1785466800:D>"); the board dates it in Eastern, like the calendar.
-const parseEventDate = (embed) => {
+const parseEventStamp = (embed) => {
   if (!embed) return null;
   const fields = Array.isArray(embed.fields) ? embed.fields : [];
   for (const field of fields) {
     const value = typeof field.value === "string" ? field.value : "";
     const stamp = value.match(/<t:(\d+):[A-Za-z]>/);
-    if (stamp) {
-      const parts = new Intl.DateTimeFormat("en-CA", {
-        year: "numeric", month: "2-digit", day: "2-digit", timeZone: "America/New_York"
-      }).formatToParts(new Date(Number(stamp[1]) * 1000));
-      const part = (type) => parts.find((item) => item.type === type)?.value;
-      return `${part("year")}-${part("month")}-${part("day")}`;
-    }
+    if (stamp) return Number(stamp[1]);
+  }
+  return null;
+};
+
+const parseEventDate = (embed) => {
+  if (!embed) return null;
+  const stamp = parseEventStamp(embed);
+  if (stamp !== null) {
+    const parts = new Intl.DateTimeFormat("en-CA", {
+      year: "numeric", month: "2-digit", day: "2-digit", timeZone: "America/New_York"
+    }).formatToParts(new Date(stamp * 1000));
+    const part = (type) => parts.find((item) => item.type === type)?.value;
+    return `${part("year")}-${part("month")}-${part("day")}`;
   }
   const description = typeof embed.description === "string" ? embed.description : "";
   const match = description.match(/📅\s*([A-Za-z]+)\s+(\d{1,2}),\s*(\d{4})/u);
@@ -123,6 +130,16 @@ const parseEventDate = (embed) => {
   const month = MONTHS[match[1].toLowerCase()];
   if (!month) return null;
   return `${match[3]}-${month}-${match[2].padStart(2, "0")}`;
+};
+
+// The run's full start moment, kept alongside its date so turnout can be
+// analysed by time of day. A post whose date came from the description
+// fallback carries no moment, so this is null for such posts — the field
+// itself is always written, which is how the backfill check below tells a
+// post recorded before start times were kept from one that has none.
+const parseEventStart = (embed) => {
+  const stamp = parseEventStamp(embed);
+  return stamp === null ? null : new Date(stamp * 1000).toISOString();
 };
 
 // Sign-ups live in the embed's role fields: a header line names the
@@ -214,7 +231,9 @@ const main = async () => {
   // A full scan rebuilds the event list from scratch. It is due when there is
   // no usable saved state, when the saved state predates this incremental
   // format but the last run left channels unreadable (so its coverage is
-  // unknown), or when the last full scan is over a week old.
+  // unknown), when the recorded posts predate the eventStart field (so their
+  // start times still need backfilling), or when the last full scan is over
+  // a week old.
   let fullScan = !previous;
   if (previous && !previousState) {
     if (!Array.isArray(previous.channelsUnreadable) || previous.channelsUnreadable.length > 0
@@ -223,6 +242,7 @@ const main = async () => {
     }
   }
   if (lastFullScanAt !== null && now - lastFullScanAt > FULL_SCAN_INTERVAL_MS) fullScan = true;
+  if (previous && previous.events.some((event) => event && typeof event === "object" && !("eventStart" in event))) fullScan = true;
   const seededWatermark = !fullScan && previous && !previousState
     ? snowflakeForTime(Date.parse(previous.generatedAt))
     : null;
@@ -315,6 +335,7 @@ const main = async () => {
           postedAt: message.timestamp || null,
           title: embed && embed.title ? String(embed.title) : decodeEmojiTitle(description),
           eventDate: parseEventDate(embed),
+          eventStart: parseEventStart(embed),
           organizer: parseOrganizer(embed),
           participants: parseParticipants(embed)
         });
