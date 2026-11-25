@@ -299,6 +299,12 @@
         ["MrZenigata / Ayara", "Ayara"]
       ]);
       const ineligibleHosts = new Set(["Vega", "Vega ~ Soul", "Elenara", "Andealous", "Micioarancio"]);
+      // A restored run (data/raid-helper-supplement.json) has no
+      // surviving roster; its organizer attests it filled, so it
+      // counts at the 5-sign-up minimum, like the boards do.
+      const signupTotal = (event) => event.attestedFilled
+        ? Math.max(5, (event.participants || []).length)
+        : (event.participants || []).length;
       const hostCounts = new Map();
       (raidEvents || []).forEach((event) => {
         const raw = String(event.organizer || "").trim();
@@ -306,7 +312,7 @@
         const name = hostAliases.get(raw) || raw;
         // Like the Event Host board: a run counts only when it drew
         // at least 5 sign-ups in total (standing rule, 2026-11-21).
-        if ((event.participants || []).length < 5) return;
+        if (signupTotal(event) < 5) return;
         hostCounts.set(name, (hostCounts.get(name) || 0) + 1);
       });
       const eventHost = topEntry(hostCounts);
@@ -369,7 +375,7 @@
           if (ineligibleParticipants.has(name)) return;
           // Like the Top Participants board: 5+ total sign-ups or
           // the run does not count (standing rule, 2026-11-21).
-          if ((event.participants || []).length < 5) return;
+          if (signupTotal(event) < 5) return;
           participantCounts.set(name, (participantCounts.get(name) || 0) + 1);
         });
       });
@@ -540,10 +546,19 @@
       fetchJson("data/screenshots.json").catch(() => null),
       fetchJson("data/manual-events.json").catch(() => null),
       fetchJson("data/discord-events.json").catch(() => null),
-      fetchJson("data/raid-helper-events.json").catch(() => null)
+      fetchJson("data/raid-helper-events.json").catch(() => null),
+      fetchJson("data/raid-helper-supplement.json").catch(() => null)
     ])
-      .then(([snapshot, screenshots, manual, discord, raid]) => {
-        renderTicker(buildTickerItems(snapshot, screenshots, (manual && manual.events) || [], (discord && discord.events) || [], (raid && raid.events) || []));
+      .then(([snapshot, screenshots, manual, discord, raid, supplement]) => {
+        // Restored runs (posts lost when their channels were deleted)
+        // join the collected ones; a collected post wins over a
+        // supplement entry with the same event ID.
+        const raidEvents = (raid && raid.events) || [];
+        const knownIds = new Set(raidEvents.map((event) => String(event && event.id)));
+        const restored = supplement && Array.isArray(supplement.events)
+          ? supplement.events.filter((event) => event && !knownIds.has(String(event.id)))
+          : [];
+        renderTicker(buildTickerItems(snapshot, screenshots, (manual && manual.events) || [], (discord && discord.events) || [], [...raidEvents, ...restored]));
       })
       .catch(() => {
         // The ticker stays hidden if the snapshot cannot be loaded.
