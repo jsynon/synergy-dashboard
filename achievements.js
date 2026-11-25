@@ -3,7 +3,8 @@
 // Achievements tab: seven top-ten boards computed from the guild's own
 // published records — data/snapshot.json (roster + bank log),
 // data/screenshots.json (the Discord screenshot gallery index), and
-// data/raid-helper-events.json (Raid-Helper sign-up posts).
+// data/raid-helper-events.json (Raid-Helper sign-up posts), plus any
+// runs restored in data/raid-helper-supplement.json.
 
 const BOARD_SIZE = 10;
 
@@ -344,13 +345,35 @@ function parseDateOnly(value) {
   return new Date(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
 }
 
+// A run's sign-up total for the standing rule above. A restored run
+// (see mergeRaidSupplement) has no surviving roster — only its
+// organizer is recorded as a participant — but the organizer attests
+// the run filled, so it counts at the minimum.
+function signupTotal(event) {
+  const count = (event.participants || []).length;
+  return event.attestedFilled ? Math.max(count, MIN_RUN_SIGNUPS) : count;
+}
+
+// Runs restored from an organizer's own Raid-Helper records, for
+// sign-up posts that no longer exist (their channels were deleted in
+// the late-2025 reorganization). The collector never writes the
+// supplement file, so restored runs survive every refresh; a
+// collected post wins over a supplement entry with the same event ID.
+function mergeRaidSupplement(raid, supplement) {
+  if (!raid || !supplement || !Array.isArray(supplement.events)) return raid;
+  const known = new Set((raid.events || []).map((event) => String(event && event.id)));
+  const restored = supplement.events.filter((event) => event && !known.has(String(event.id)));
+  if (!restored.length) return raid;
+  return { ...raid, events: [...(raid.events || []), ...restored] };
+}
+
 function buildEventHost(raidData) {
   const byHost = new Map();
   for (const event of raidData.events || []) {
     const raw = String(event.organizer || "").trim();
     if (!raw || INELIGIBLE_HOSTS.has(raw)) continue;
     const name = HOST_NAME_ALIASES.get(raw) || raw;
-    if ((event.participants || []).length < MIN_RUN_SIGNUPS) continue;
+    if (signupTotal(event) < MIN_RUN_SIGNUPS) continue;
     if (!byHost.has(name)) byHost.set(name, { name, count: 0, first: null, latest: null });
     const entry = byHost.get(name);
     entry.count += 1;
@@ -434,7 +457,7 @@ function buildParticipants(raidData) {
     const when = parseDateOnly(event.eventDate) || parseDate(event.postedAt);
     for (const name of names) {
       if (INELIGIBLE_PARTICIPANTS.has(name)) continue;
-      if ((event.participants || []).length < MIN_RUN_SIGNUPS) continue;
+      if (signupTotal(event) < MIN_RUN_SIGNUPS) continue;
       if (!byMember.has(name)) byMember.set(name, { name, count: 0, first: null, latest: null });
       const entry = byMember.get(name);
       entry.count += 1;
@@ -560,8 +583,10 @@ async function init() {
 
   try {
     const raid = await loadJson("data/raid-helper-events.json");
-    renderBoard("board-event-host", buildEventHost(raid));
-    renderBoard("board-participants", buildParticipants(raid));
+    const supplement = await loadJson("data/raid-helper-supplement.json").catch(() => null);
+    const merged = mergeRaidSupplement(raid, supplement);
+    renderBoard("board-event-host", buildEventHost(merged));
+    renderBoard("board-participants", buildParticipants(merged));
   } catch (error) {
     renderUnavailable(["board-event-host", "board-participants"]);
   }

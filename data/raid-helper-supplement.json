@@ -1,0 +1,148 @@
+{
+  "note": "Runs restored from the organizer's own Raid-Helper DM records. Their sign-up posts stood in channels deleted during the late-2025 reorganization, so the collector can no longer read them, and their rosters did not survive. attestedFilled records that the organizer attests the run filled (at least 5 sign-ups); participants lists only the organizer, the one attendee the record proves. Event IDs are the original Raid-Helper event IDs. The collector never writes this file.",
+  "events": [
+    {
+      "id": "1436808872101679224",
+      "title": "ASOD",
+      "organizer": "Elanor",
+      "eventDate": "2025-11-09",
+      "eventStart": "2025-11-09T19:00:00.000Z",
+      "participants": [
+        "Elanor"
+      ],
+      "attestedFilled": true
+    },
+    {
+      "id": "1438953299783979129",
+      "title": "Dragonflight",
+      "organizer": "Elanor",
+      "eventDate": "2025-11-16",
+      "eventStart": "2025-11-16T17:30:00.000Z",
+      "participants": [
+        "Elanor"
+      ],
+      "attestedFilled": true
+    },
+    {
+      "id": "1441542197425078443",
+      "title": "ASOD",
+      "organizer": "Elanor",
+      "eventDate": "2025-11-22",
+      "eventStart": "2025-11-22T19:00:00.000Z",
+      "participants": [
+        "Elanor"
+      ],
+      "attestedFilled": true
+    },
+    {
+      "id": "1442041234007785472",
+      "title": "Marauders + Dragonflight",
+      "organizer": "Elanor",
+      "eventDate": "2025-11-23",
+      "eventStart": "2025-11-23T18:30:00.000Z",
+      "participants": [
+        "Elanor"
+      ],
+      "attestedFilled": true
+    },
+    {
+      "id": "1445187825095020708",
+      "title": "ASH Training",
+      "organizer": "Elanor",
+      "eventDate": "2025-12-02",
+      "eventStart": "2025-12-02T20:00:00.000Z",
+      "participants": [
+        "Elanor"
+      ],
+      "attestedFilled": true
+    },
+    {
+      "id": "1445542171326415002",
+      "title": "ASH Training",
+      "organizer": "Elanor",
+      "eventDate": "2025-12-03",
+      "eventStart": "2025-12-03T20:00:00.000Z",
+      "participants": [
+        "Elanor"
+      ],
+      "attestedFilled": true
+    },
+    {
+      "id": "1445911632202039498",
+      "title": "ASH Training",
+      "organizer": "Elanor",
+      "eventDate": "2025-12-04",
+      "eventStart": "2025-12-04T20:00:00.000Z",
+      "participants": [
+        "Elanor"
+      ],
+      "attestedFilled": true
+    },
+    {
+      "id": "1446265207641866363",
+      "title": "ASH Training",
+      "organizer": "Elanor",
+      "eventDate": "2025-12-05",
+      "eventStart": "2025-12-05T20:00:00.000Z",
+      "participants": [
+        "Elanor"
+      ],
+      "attestedFilled": true
+    },
+    {
+      "id": "1445607339536154664",
+      "title": "ASOD Training",
+      "organizer": "Elanor",
+      "eventDate": "2025-12-06",
+      "eventStart": "2025-12-06T20:00:00.000Z",
+      "participants": [
+        "Elanor"
+      ],
+      "attestedFilled": true
+    },
+    {
+      "id": "1447008862304473138",
+      "title": "Marauders + Dragonflight",
+      "organizer": "Elanor",
+      "eventDate": "2025-12-07",
+      "eventStart": "2025-12-07T18:30:00.000Z",
+      "participants": [
+        "Elanor"
+      ],
+      "attestedFilled": true
+    },
+    {
+      "id": "1448939908441047193",
+      "title": "ASH Training",
+      "organizer": "Elanor",
+      "eventDate": "2025-12-12",
+      "eventStart": "2025-12-12T20:00:00.000Z",
+      "participants": [
+        "Elanor"
+      ],
+      "attestedFilled": true
+    },
+    {
+      "id": "1449188839712096399",
+      "title": "MSOD",
+      "organizer": "Elanor",
+      "eventDate": "2025-12-13",
+      "eventStart": "2025-12-13T20:00:00.000Z",
+      "participants": [
+        "Elanor"
+      ],
+      "attestedFilled": true
+    },
+    {
+      "id": "1449563448101834822",
+      "title": "Marauders + Dragonflight",
+      "organizer": "Elanor",
+      "eventDate": "2025-12-14",
+      "eventStart": "2025-12-14T18:30:00.000Z",
+      "participants": [
+        "Elanor"
+      ],
+      "attestedFilled": true
+    }
+  ]
+}
