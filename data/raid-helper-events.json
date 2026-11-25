@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-24T22:43:26.767Z",
+  "generatedAt": "2026-11-25T01:50:55.620Z",
   "channelsScanned": 97,
   "channelsUnreadable": [],
-  "messagesScanned": 3328,
+  "messagesScanned": 22736,
   "postsFound": 130,
   "unparsedPosts": 4,
   "botAuthors": [
@@ -465,6 +465,7 @@
       "postedAt": "2026-11-09T02:07:44.242000+00:00",
       "title": "MJS FARM",
       "eventDate": "2026-11-14",
+      "eventStart": "2026-11-14T20:00:00.000Z",
       "organizer": "Alune",
       "participants": [
         "Yoit'sDenis",
@@ -478,6 +479,7 @@
       "postedAt": "2026-11-08T09:23:33.978000+00:00",
       "title": "MSOD",
       "eventDate": "2026-11-11",
+      "eventStart": "2026-11-11T23:00:00.000Z",
       "organizer": "crisem97",
       "participants": [
         "crisem97",
@@ -496,6 +498,7 @@
       "postedAt": "2026-11-04T04:00:34.017000+00:00",
       "title": "AJSMJS TRAINING",
       "eventDate": "2026-11-07",
+      "eventStart": "2026-11-07T20:00:00.000Z",
       "organizer": "Alune",
       "participants": [
         "UnknownOath",
@@ -512,6 +515,7 @@
       "postedAt": "2026-09-30T01:08:03.807000+00:00",
       "title": "MSOD RUN",
       "eventDate": "2026-10-03",
+      "eventStart": "2026-10-03T15:00:00.000Z",
       "organizer": "vhorsmam",
       "participants": [
         "Tib",
@@ -533,6 +537,7 @@
       "postedAt": "2026-09-13T16:49:29.922000+00:00",
       "title": "ASH RUN",
       "eventDate": "2026-09-13",
+      "eventStart": "2026-09-13T18:00:00.000Z",
       "organizer": "vhorsmam",
       "participants": [
         "HolyCrepe",
@@ -549,6 +554,7 @@
       "postedAt": "2026-09-11T05:05:41.025000+00:00",
       "title": "MSOD",
       "eventDate": "2026-09-11",
+      "eventStart": "2026-09-12T01:00:00.000Z",
       "organizer": "Elanor",
       "participants": [
         "clanker/piggo",
@@ -569,6 +575,7 @@
       "postedAt": "2026-09-08T22:29:50.110000+00:00",
       "title": "NEW Weekly ASH Farm!!",
       "eventDate": "2026-09-10",
+      "eventStart": "2026-09-11T00:00:00.000Z",
       "organizer": "NEIDORTH (Rob)",
       "participants": [
         "Sakuya@aksa07",
@@ -588,6 +595,7 @@
       "postedAt": "2026-08-30T23:45:04.283000+00:00",
       "title": "MLMD farm",
       "eventDate": null,
+      "eventStart": null,
       "organizer": null,
       "participants": []
     },
@@ -598,6 +606,7 @@
       "postedAt": "2026-08-26T01:16:55.003000+00:00",
       "title": "MLMD FARM",
       "eventDate": "2026-08-30",
+      "eventStart": "2026-08-31T00:00:00.000Z",
       "organizer": "Amaya",
       "participants": [
         "Rilay",
@@ -616,6 +625,7 @@
       "postedAt": "2026-08-25T01:13:26.978000+00:00",
       "title": "MLMD FARM",
       "eventDate": "2026-08-25",
+      "eventStart": "2026-08-26T01:00:00.000Z",
       "organizer": "Ivydora",
       "participants": [
         "Alune",
@@ -633,6 +643,7 @@
       "postedAt": "2026-08-24T18:29:00.093000+00:00",
       "title": "ASH farm/ MSH training",
       "eventDate": "2026-08-28",
+      "eventStart": "2026-08-29T03:00:00.000Z",
       "organizer": "Elenara",
       "participants": [
         "sora",
@@ -649,6 +660,7 @@
       "postedAt": "2026-08-16T20:51:44.614000+00:00",
       "title": "MSH - FARMING! MULTI-RUN 👨🏻‍🌾",
       "eventDate": "2026-08-16",
+      "eventStart": "2026-08-17T01:00:00.000Z",
       "organizer": "Ivydora",
       "participants": [
         "clanker/piggo",
@@ -671,6 +683,7 @@
       "postedAt": "2026-08-14T03:26:33.725000+00:00",
       "title": "ADOM FARM",
       "eventDate": "2026-08-23",
+      "eventStart": "2026-08-23T17:00:00.000Z",
       "organizer": "Elenara",
       "participants": [
         "SullivanWarmonk",
@@ -691,6 +704,7 @@
       "postedAt": "2026-08-14T03:22:42.368000+00:00",
       "title": "ASH farm/ MSH if we get ASH down",
       "eventDate": "2026-08-21",
+      "eventStart": "2026-08-22T03:00:00.000Z",
       "organizer": "Elenara",
       "participants": [
         "Tib",
@@ -707,6 +721,7 @@
       "postedAt": "2026-08-13T21:45:24.392000+00:00",
       "title": "MJS FARM",
       "eventDate": "2026-08-16",
+      "eventStart": "2026-08-16T15:00:00.000Z",
       "organizer": "vhorsmam",
       "participants": [
         "GORO/HammerofJ",
@@ -724,6 +739,7 @@
       "postedAt": "2026-08-06T23:31:03.024000+00:00",
       "title": "MCOK FARMING",
       "eventDate": "2026-08-08",
+      "eventStart": "2026-08-09T00:00:00.000Z",
       "organizer": "Rilay",
       "participants": [
         "piggo/clanker",
@@ -737,6 +753,7 @@
       "postedAt": "2026-08-06T05:57:59.953000+00:00",
       "title": "MJS - Training - \"Tempus! We who are about to die, Salute you!\"",
       "eventDate": "2026-08-09",
+      "eventStart": "2026-08-09T09:00:00.000Z",
       "organizer": "Mio-Ava tonk",
       "participants": [
         "Mio-Avatonk",
@@ -753,6 +770,7 @@
       "postedAt": "2026-08-05T23:47:20.653000+00:00",
       "title": "MLMD",
       "eventDate": "2026-08-11",
+      "eventStart": "2026-08-12T00:00:00.000Z",
       "organizer": "Amaya",
       "participants": [
         "piggo/clanker",
@@ -770,6 +788,7 @@
       "postedAt": "2026-08-04T08:52:24.158000+00:00",
       "title": "MJS RUNS",
       "eventDate": "2026-08-08",
+      "eventStart": "2026-08-08T18:00:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatso",
@@ -786,6 +805,7 @@
       "postedAt": "2026-08-01T03:14:11.878000+00:00",
       "title": "ADOM RUNS",
       "eventDate": "2026-08-08",
+      "eventStart": "2026-08-08T17:00:00.000Z",
       "organizer": "Elenara",
       "participants": [
         "GirthQuake/Jaskie",
@@ -803,6 +823,7 @@
       "postedAt": "2026-07-28T06:02:29.834000+00:00",
       "title": "MJS TRAINING",
       "eventDate": "2026-07-29",
+      "eventStart": "2026-07-29T17:00:00.000Z",
       "organizer": "Rilay",
       "participants": [
         "Optimus",
@@ -818,6 +839,7 @@
       "postedAt": "2026-07-28T04:30:40.025000+00:00",
       "title": "MDWP first clear/farm",
       "eventDate": "2026-07-30",
+      "eventStart": "2026-07-31T03:00:00.000Z",
       "organizer": "Elenara",
       "participants": [
         "Ragnar@Dokrahm#9",
@@ -831,6 +853,7 @@
       "postedAt": "2026-07-25T22:34:38.380000+00:00",
       "title": "MJS RUNS",
       "eventDate": "2026-07-30",
+      "eventStart": "2026-07-30T20:00:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatso",
@@ -846,6 +869,7 @@
       "postedAt": "2026-07-25T21:54:24.755000+00:00",
       "title": "A/M SoD Training/1st Complete",
       "eventDate": "2026-08-01",
+      "eventStart": "2026-08-01T20:00:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatso",
@@ -868,6 +892,7 @@
       "postedAt": "2026-07-25T05:14:47.114000+00:00",
       "title": "A/MLMD first clear- gear farm",
       "eventDate": "2026-07-28",
+      "eventStart": "2026-07-28T16:45:00.000Z",
       "organizer": "Elenara",
       "participants": [
         "Alune",
@@ -882,6 +907,7 @@
       "postedAt": "2026-07-22T23:12:32.301000+00:00",
       "title": "GUILD 1st - MSH COMPLETE (GUILD ONLY)!",
       "eventDate": "2026-07-22",
+      "eventStart": "2026-07-23T01:00:00.000Z",
       "organizer": "Ivydora",
       "participants": [
         "Rilay",
@@ -901,6 +927,7 @@
       "postedAt": "2026-07-21T09:08:46.470000+00:00",
       "title": "AJS TRAINING",
       "eventDate": "2026-07-22",
+      "eventStart": "2026-07-22T19:00:00.000Z",
       "organizer": "MrZenigata / Ayar",
       "participants": [
         "Mio-Avatonk",
@@ -915,6 +942,7 @@
       "postedAt": "2026-07-20T23:09:55.170000+00:00",
       "title": "MSOD GUILD RUNS",
       "eventDate": "2026-07-25",
+      "eventStart": "2026-07-25T20:00:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatsomewa",
@@ -938,6 +966,7 @@
       "postedAt": "2026-07-19T22:49:49.214000+00:00",
       "title": "AJS TRAINING",
       "eventDate": "2026-07-23",
+      "eventStart": "2026-07-24T02:45:00.000Z",
       "organizer": "Elenara",
       "participants": [
         "Elanor",
@@ -953,6 +982,7 @@
       "postedAt": "2026-07-19T22:41:33.547000+00:00",
       "title": "MDWP FIRST BOSS FARM",
       "eventDate": "2026-07-21",
+      "eventStart": "2026-07-21T16:45:00.000Z",
       "organizer": "Elenara",
       "participants": [
         "Elanor",
@@ -966,6 +996,7 @@
       "postedAt": "2026-07-19T22:36:20.991000+00:00",
       "title": "ASH TRAINING WEEKLY",
       "eventDate": "2026-07-25",
+      "eventStart": "2026-07-25T18:00:00.000Z",
       "organizer": "Elenara",
       "participants": [
         "GORO/HammerofJ",
@@ -984,6 +1015,7 @@
       "postedAt": "2026-07-19T17:57:52.769000+00:00",
       "title": "MJSEXPMJSEXPMJS",
       "eventDate": "2026-07-20",
+      "eventStart": "2026-07-20T08:00:00.000Z",
       "organizer": "Ellenaro",
       "participants": [
         "Ellenaro"
@@ -996,6 +1028,7 @@
       "postedAt": "2026-07-18T19:45:33.218000+00:00",
       "title": "MJS FARM",
       "eventDate": "2026-07-18",
+      "eventStart": "2026-07-19T02:00:00.000Z",
       "organizer": "Ivydora",
       "participants": [
         "Balasore",
@@ -1013,6 +1046,7 @@
       "postedAt": "2026-07-17T15:41:19.652000+00:00",
       "title": "MJS",
       "eventDate": "2026-07-17",
+      "eventStart": "2026-07-18T02:00:00.000Z",
       "organizer": "Ivydora",
       "participants": [
         "Rilay",
@@ -1029,6 +1063,7 @@
       "postedAt": "2026-07-13T04:56:24.303000+00:00",
       "title": "ASH TRAINING",
       "eventDate": "2026-07-19",
+      "eventStart": "2026-07-19T19:00:00.000Z",
       "organizer": "Elenara",
       "participants": [
         "Theholypickle",
@@ -1048,6 +1083,7 @@
       "postedAt": "2026-07-13T04:38:49.846000+00:00",
       "title": "AJS TRAINING",
       "eventDate": "2026-07-16",
+      "eventStart": "2026-07-17T03:00:00.000Z",
       "organizer": "Elenara",
       "participants": [
         "Optimus",
@@ -1063,6 +1099,7 @@
       "postedAt": "2026-07-09T15:58:37.630000+00:00",
       "title": "Breaking the shackles! MSOD",
       "eventDate": "2026-07-10",
+      "eventStart": "2026-07-10T17:30:00.000Z",
       "organizer": "Mio-Ava tonk",
       "participants": [
         "Mio-Avatonk",
@@ -1086,6 +1123,7 @@
       "postedAt": "2026-07-07T04:24:54.413000+00:00",
       "title": "ASH",
       "eventDate": "2026-07-11",
+      "eventStart": "2026-07-11T20:00:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatsomewa",
@@ -1104,6 +1142,7 @@
       "postedAt": "2026-07-07T04:22:26.511000+00:00",
       "title": "MJS",
       "eventDate": "2026-07-11",
+      "eventStart": "2026-07-11T17:00:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatsomewa",
@@ -1120,6 +1159,7 @@
       "postedAt": "2026-06-02T21:58:22.452000+00:00",
       "title": "MSOD",
       "eventDate": "2026-06-06",
+      "eventStart": "2026-06-06T19:00:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatsomewa",
@@ -1140,6 +1180,7 @@
       "postedAt": "2026-06-02T13:00:04.596000+00:00",
       "title": "MTDS FIRST BOSS FARMING",
       "eventDate": null,
+      "eventStart": null,
       "organizer": null,
       "participants": []
     },
@@ -1150,6 +1191,7 @@
       "postedAt": "2026-05-31T10:24:22.133000+00:00",
       "title": "AJS RUNS",
       "eventDate": "2026-05-31",
+      "eventStart": "2026-05-31T18:00:00.000Z",
       "organizer": "Andealous",
       "participants": [
         "BalvorFordragon",
@@ -1168,6 +1210,7 @@
       "postedAt": "2026-05-30T18:24:52.506000+00:00",
       "title": "MTDS FIRST BOSS FARMING",
       "eventDate": "2026-06-02",
+      "eventStart": "2026-06-02T13:30:00.000Z",
       "organizer": "Reinds/sojo/sojo1",
       "participants": [
         "Reinds/sojo/sojo12"
@@ -1180,6 +1223,7 @@
       "postedAt": "2026-05-29T13:08:07.783000+00:00",
       "title": "Ajs farming for materials and loot",
       "eventDate": "2026-05-30",
+      "eventStart": "2026-05-30T13:30:00.000Z",
       "organizer": "Reinds/sojo/sojo1",
       "participants": [
         "Reinds/sojo/sojo12",
@@ -1195,6 +1239,7 @@
       "postedAt": "2026-05-29T08:06:34.671000+00:00",
       "title": "MJSXP",
       "eventDate": "2026-05-30",
+      "eventStart": "2026-05-30T19:00:00.000Z",
       "organizer": "Ellenaro",
       "participants": [
         "Vega~Soul",
@@ -1211,6 +1256,7 @@
       "postedAt": "2026-05-28T10:00:10.373000+00:00",
       "title": "MDWP FULL RUN",
       "eventDate": "2026-05-28",
+      "eventStart": "2026-05-28T18:00:00.000Z",
       "organizer": "Mio-Ava tonk",
       "participants": [
         "Mio-Avatonk",
@@ -1227,6 +1273,7 @@
       "postedAt": "2026-05-27T15:45:44.889000+00:00",
       "title": "MOONDANCER !!!!! ofcurse advanced 🎉",
       "eventDate": "2026-05-29",
+      "eventStart": "2026-05-29T19:30:00.000Z",
       "organizer": "Vega ~ Soul",
       "participants": [
         "ZombieSensei",
@@ -1245,6 +1292,7 @@
       "postedAt": "2026-05-26T13:55:14.852000+00:00",
       "title": "AJS TRAIING",
       "eventDate": "2026-05-27",
+      "eventStart": "2026-05-27T12:30:00.000Z",
       "organizer": "Reinds/sojo/sojo1",
       "participants": [
         "Reinds/sojo/sojo12",
@@ -1260,6 +1308,7 @@
       "postedAt": "2026-05-25T04:08:55.717000+00:00",
       "title": "AJS TRAINING RUN",
       "eventDate": "2026-05-26",
+      "eventStart": "2026-05-26T12:30:00.000Z",
       "organizer": "Reinds/sojo/sojo1",
       "participants": [
         "12thdennis",
@@ -1277,6 +1326,7 @@
       "postedAt": "2026-05-24T20:59:49.801000+00:00",
       "title": "AJS TRAINING RUN",
       "eventDate": "2026-05-25",
+      "eventStart": "2026-05-25T19:00:00.000Z",
       "organizer": "Andealous",
       "participants": [
         "Andealous",
@@ -1291,6 +1341,7 @@
       "postedAt": "2026-05-24T18:58:09.818000+00:00",
       "title": "MLMD",
       "eventDate": "2026-05-25",
+      "eventStart": "2026-05-25T12:30:00.000Z",
       "organizer": "Reinds/sojo/sojo1",
       "participants": [
         "TheeDirk",
@@ -1305,6 +1356,7 @@
       "postedAt": "2026-05-23T15:13:32.573000+00:00",
       "title": "MLMD GEAR FARMING",
       "eventDate": "2026-05-24",
+      "eventStart": "2026-05-24T16:30:00.000Z",
       "organizer": "Reinds/sojo/sojo1",
       "participants": [
         "Ͼʀɛɛɒĸɑ(͝°͜ʖ͡°)",
@@ -1324,6 +1376,7 @@
       "postedAt": "2026-05-22T15:33:30.762000+00:00",
       "title": "MDWP FIRST BOSS FARM FOR ORE AND MARLITH HAIR",
       "eventDate": "2026-05-22",
+      "eventStart": "2026-05-23T03:30:00.000Z",
       "organizer": "Reinds/sojo/sojo1",
       "participants": [
         "Reinds/sojo/sojo12"
@@ -1336,6 +1389,7 @@
       "postedAt": "2026-05-22T15:04:17.733000+00:00",
       "title": "ASH farming exp for rings and gear",
       "eventDate": "2026-05-23",
+      "eventStart": "2026-05-23T14:30:00.000Z",
       "organizer": "Reinds/sojo/sojo1",
       "participants": [
         "Ͼʀɛɛɒĸɑ(͝°͜ʖ͡°)",
@@ -1351,6 +1405,7 @@
       "postedAt": "2026-05-22T08:53:49.339000+00:00",
       "title": "AJS TRAINING",
       "eventDate": "2026-05-26",
+      "eventStart": "2026-05-26T18:30:00.000Z",
       "organizer": "MrZenigata / Ayar",
       "participants": [
         "Mio-Avatonk",
@@ -1369,6 +1424,7 @@
       "postedAt": "2026-05-22T03:56:08.282000+00:00",
       "title": "AJS TRAINING RUN",
       "eventDate": "2026-05-25",
+      "eventStart": "2026-05-25T19:00:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatsomewa",
@@ -1386,6 +1442,7 @@
       "postedAt": "2026-05-21T15:38:59.582000+00:00",
       "title": "ASH FARMING EXP PLAYERS",
       "eventDate": "2026-05-22",
+      "eventStart": "2026-05-22T14:30:00.000Z",
       "organizer": "Reinds/sojo/sojo1",
       "participants": [
         "Tuldar",
@@ -1401,6 +1458,7 @@
       "postedAt": "2026-05-21T02:56:50.668000+00:00",
       "title": "MDWP first boss for resources and money",
       "eventDate": "2026-05-20",
+      "eventStart": "2026-05-21T03:30:00.000Z",
       "organizer": "Reinds/sojo/sojo1",
       "participants": [
         "Reinds/sojo/sojo12",
@@ -1414,6 +1472,7 @@
       "postedAt": "2026-05-20T14:33:56.720000+00:00",
       "title": "ASH EXP FARMING",
       "eventDate": "2026-05-21",
+      "eventStart": "2026-05-21T14:30:00.000Z",
       "organizer": "Reinds/sojo/sojo1",
       "participants": [
         "Coda",
@@ -1436,6 +1495,7 @@
       "postedAt": "2026-05-20T05:56:29.500000+00:00",
       "title": "MDWP  FIRST BOSS FARM for materials and money",
       "eventDate": "2026-05-20",
+      "eventStart": "2026-05-20T12:30:00.000Z",
       "organizer": "Reinds/sojo/sojo1",
       "participants": [
         "Mio-Avatonk",
@@ -1450,6 +1510,7 @@
       "postedAt": "2026-05-17T09:07:32.403000+00:00",
       "title": "Last ASH training before Mod33",
       "eventDate": "2026-05-17",
+      "eventStart": "2026-05-17T20:30:00.000Z",
       "organizer": "Vega ~ Soul",
       "participants": [
         "SaNdOkN",
@@ -1478,6 +1539,7 @@
       "postedAt": "2026-05-17T09:04:57.855000+00:00",
       "title": "Last ASOD training before Mod33",
       "eventDate": "2026-05-18",
+      "eventStart": "2026-05-18T20:30:00.000Z",
       "organizer": "Vega ~ Soul",
       "participants": [
         "Yukki/Steve",
@@ -1501,6 +1563,7 @@
       "postedAt": "2026-05-12T11:58:31.832000+00:00",
       "title": "ASOD TRAINING",
       "eventDate": "2026-05-14",
+      "eventStart": "2026-05-14T18:00:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatsomewa",
@@ -1522,6 +1585,7 @@
       "postedAt": "2026-05-04T23:52:44.815000+00:00",
       "title": "MSOD",
       "eventDate": "2026-05-09",
+      "eventStart": "2026-05-09T19:00:00.000Z",
       "organizer": "Asura",
       "participants": [
         "Asura",
@@ -1538,6 +1602,7 @@
       "postedAt": "2026-05-02T02:31:38.792000+00:00",
       "title": "MSOD",
       "eventDate": "2026-05-04",
+      "eventStart": "2026-05-04T18:00:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatsomewa",
@@ -1558,6 +1623,7 @@
       "postedAt": "2026-05-01T13:06:02.250000+00:00",
       "title": "ASOD FARM",
       "eventDate": "2026-05-02",
+      "eventStart": "2026-05-02T20:30:00.000Z",
       "organizer": "Vega",
       "participants": [
         "Mio-Avatonk",
@@ -1579,6 +1645,7 @@
       "postedAt": "2026-04-29T01:52:22.980000+00:00",
       "title": "DEMO FARM",
       "eventDate": "2026-04-30",
+      "eventStart": "2026-04-30T20:00:00.000Z",
       "organizer": "Vega",
       "participants": [
         "Vega",
@@ -1598,6 +1665,7 @@
       "postedAt": "2026-04-25T16:57:28.475000+00:00",
       "title": "MSOD",
       "eventDate": "2026-04-28",
+      "eventStart": "2026-04-28T18:30:00.000Z",
       "organizer": "MrZenigata / Ayar",
       "participants": [
         "Asura",
@@ -1617,6 +1685,7 @@
       "postedAt": "2026-04-23T13:10:08.089000+00:00",
       "title": "ASOD X5 FARM",
       "eventDate": "2026-04-24",
+      "eventStart": "2026-04-24T19:30:00.000Z",
       "organizer": "Vega",
       "participants": [
         "mjaumjau",
@@ -1642,6 +1711,7 @@
       "postedAt": "2026-04-18T17:20:37.871000+00:00",
       "title": "ASH TRAINING",
       "eventDate": "2026-04-21",
+      "eventStart": "2026-04-21T18:30:00.000Z",
       "organizer": "MrZenigata / Ayar",
       "participants": [
         "Asura",
@@ -1667,6 +1737,7 @@
       "postedAt": "2026-04-18T17:17:12.770000+00:00",
       "title": "ADOM FOR EVERYONE",
       "eventDate": "2026-04-23",
+      "eventStart": "2026-04-23T18:30:00.000Z",
       "organizer": "MrZenigata / Ayar",
       "participants": [
         "Asura",
@@ -1693,6 +1764,7 @@
       "postedAt": "2026-04-18T15:46:32.416000+00:00",
       "title": "ASH FARMING EXP Players",
       "eventDate": "2026-04-20",
+      "eventStart": "2026-04-20T12:00:00.000Z",
       "organizer": "Reinds",
       "participants": [
         "Reinds",
@@ -1707,6 +1779,7 @@
       "postedAt": "2026-04-17T15:57:54.166000+00:00",
       "title": "ASH TRAINIG RUN",
       "eventDate": "2026-04-18",
+      "eventStart": "2026-04-18T12:00:00.000Z",
       "organizer": "Reinds",
       "participants": [
         "Marianna@marsnop",
@@ -1724,6 +1797,7 @@
       "postedAt": "2026-04-16T14:04:15.974000+00:00",
       "title": "ASH FARMING",
       "eventDate": "2026-04-17",
+      "eventStart": "2026-04-17T12:00:00.000Z",
       "organizer": "Reinds",
       "participants": [
         "Reinds",
@@ -1737,6 +1811,7 @@
       "postedAt": "2026-04-15T13:45:23.423000+00:00",
       "title": "ASH FARMING FOR EXP PLAYERS",
       "eventDate": "2026-04-15",
+      "eventStart": "2026-04-15T16:30:00.000Z",
       "organizer": "Reinds",
       "participants": [
         "Reinds",
@@ -1752,6 +1827,7 @@
       "postedAt": "2026-04-15T13:41:31.967000+00:00",
       "title": "ASH FARMING RUN FOR exp players",
       "eventDate": "2026-04-16",
+      "eventStart": "2026-04-16T12:00:00.000Z",
       "organizer": "Reinds",
       "participants": [
         "felixthebig",
@@ -1766,6 +1842,7 @@
       "postedAt": "2026-04-14T13:18:40.894000+00:00",
       "title": "ASH Farming x3 exp players only",
       "eventDate": "2026-04-15",
+      "eventStart": "2026-04-15T12:00:00.000Z",
       "organizer": "Reinds",
       "participants": [
         "felixthebig",
@@ -1782,6 +1859,7 @@
       "postedAt": "2026-04-13T16:28:12.235000+00:00",
       "title": "ASH FARM FOR Exp players 3x runs for 1 hr",
       "eventDate": "2026-04-14",
+      "eventStart": "2026-04-14T12:00:00.000Z",
       "organizer": "Reinds",
       "participants": [
         "felixthebig",
@@ -1799,6 +1877,7 @@
       "postedAt": "2026-04-12T06:53:34.316000+00:00",
       "title": "ASOD TRAINING",
       "eventDate": "2026-04-17",
+      "eventStart": "2026-04-17T21:00:00.000Z",
       "organizer": "Asura",
       "participants": [
         "Asura",
@@ -1818,6 +1897,7 @@
       "postedAt": "2026-04-10T07:41:10.216000+00:00",
       "title": "MSOD",
       "eventDate": "2026-04-18",
+      "eventStart": "2026-04-18T18:30:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatsomewa",
@@ -1839,6 +1919,7 @@
       "postedAt": "2026-04-10T07:21:34.327000+00:00",
       "title": "MDWP 1ST BOSS FARM",
       "eventDate": "2026-04-13",
+      "eventStart": "2026-04-13T16:30:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatsomewa",
@@ -1858,6 +1939,7 @@
       "postedAt": "2026-04-10T07:16:50.814000+00:00",
       "title": "ASH FARM 3Xplus",
       "eventDate": "2026-04-14",
+      "eventStart": "2026-04-14T16:30:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatsomewa",
@@ -1875,6 +1957,7 @@
       "postedAt": "2026-04-09T11:02:50.494000+00:00",
       "title": "ASOD FARM X5",
       "eventDate": "2026-04-09",
+      "eventStart": "2026-04-09T19:00:00.000Z",
       "organizer": "Vega",
       "participants": [
         "Balvor",
@@ -1901,6 +1984,7 @@
       "postedAt": "2026-04-07T12:56:16.898000+00:00",
       "title": "ASH FARM EXP PLS X3",
       "eventDate": "2026-04-08",
+      "eventStart": "2026-04-08T12:00:00.000Z",
       "organizer": "Reinds",
       "participants": [
         "felixthebig",
@@ -1917,6 +2001,7 @@
       "postedAt": "2026-04-06T13:40:52.870000+00:00",
       "title": "ASH FARM not bugg pls",
       "eventDate": "2026-04-07",
+      "eventStart": "2026-04-07T12:00:00.000Z",
       "organizer": "Reinds",
       "participants": [
         "Reinds",
@@ -1934,6 +2019,7 @@
       "postedAt": "2026-04-01T14:01:26.133000+00:00",
       "title": "ASH FARMING",
       "eventDate": "2026-04-04",
+      "eventStart": "2026-04-04T12:00:00.000Z",
       "organizer": "Reinds",
       "participants": [
         "Asura",
@@ -1949,6 +2035,7 @@
       "postedAt": "2026-04-01T13:51:22.140000+00:00",
       "title": "ASH FARMING X3",
       "eventDate": "2026-04-06",
+      "eventStart": "2026-04-06T12:00:00.000Z",
       "organizer": "Reinds",
       "participants": [
         "Reinds",
@@ -1964,6 +2051,7 @@
       "postedAt": "2026-03-31T16:01:59.191000+00:00",
       "title": "ASH Farming MAX 3 Runs",
       "eventDate": "2026-04-01",
+      "eventStart": "2026-04-01T10:00:00.000Z",
       "organizer": "Reinds",
       "participants": [
         "Reinds",
@@ -1980,6 +2068,7 @@
       "postedAt": "2026-03-30T12:04:14.091000+00:00",
       "title": null,
       "eventDate": "2026-03-31",
+      "eventStart": "2026-03-31T10:00:00.000Z",
       "organizer": "Reinds",
       "participants": [
         "Reinds",
@@ -1994,6 +2083,7 @@
       "postedAt": "2026-03-30T04:17:43.121000+00:00",
       "title": "ASH FARMING AND TRAINING",
       "eventDate": "2026-03-30",
+      "eventStart": "2026-03-30T10:00:00.000Z",
       "organizer": "Reinds",
       "participants": [
         "Vas612",
@@ -2011,6 +2101,7 @@
       "postedAt": "2026-03-26T08:27:46.728000+00:00",
       "title": null,
       "eventDate": "2026-03-26",
+      "eventStart": "2026-03-26T20:00:00.000Z",
       "organizer": "oTaffyo",
       "participants": [
         "Tuldar",
@@ -2026,6 +2117,7 @@
       "postedAt": "2026-03-26T07:02:51.518000+00:00",
       "title": "ASH TRAINING RUNS",
       "eventDate": "2026-03-31",
+      "eventStart": "2026-03-31T17:00:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatsomewa",
@@ -2044,6 +2136,7 @@
       "postedAt": "2026-03-18T07:02:56.880000+00:00",
       "title": "MSOD",
       "eventDate": "2026-03-18",
+      "eventStart": "2026-03-18T20:00:00.000Z",
       "organizer": "oTaffyo",
       "participants": [
         "Ellenaro",
@@ -2066,6 +2159,7 @@
       "postedAt": "2026-03-13T21:40:58.841000+00:00",
       "title": "MSOD",
       "eventDate": "2026-03-17",
+      "eventStart": "2026-03-17T19:30:00.000Z",
       "organizer": "MrZenigata / Ayar",
       "participants": [
         "Ellenaro",
@@ -2085,6 +2179,7 @@
       "postedAt": "2026-03-13T01:25:40.494000+00:00",
       "title": null,
       "eventDate": "2026-03-13",
+      "eventStart": "2026-03-13T20:00:00.000Z",
       "organizer": "oTaffyo",
       "participants": [
         "oTaffyo",
@@ -2108,6 +2203,7 @@
       "postedAt": "2026-03-11T22:52:22.156000+00:00",
       "title": null,
       "eventDate": "2026-03-15",
+      "eventStart": "2026-03-15T18:00:00.000Z",
       "organizer": "oTaffyo",
       "participants": [
         "kelek",
@@ -2133,6 +2229,7 @@
       "postedAt": "2026-03-09T11:36:43.661000+00:00",
       "title": "MDWP TRAINING",
       "eventDate": "2026-03-11",
+      "eventStart": "2026-03-12T00:30:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatsomewa"
@@ -2145,6 +2242,7 @@
       "postedAt": "2026-03-02T18:27:37.139000+00:00",
       "title": "MLMD",
       "eventDate": "2026-03-06",
+      "eventStart": "2026-03-06T22:00:00.000Z",
       "organizer": "Asura",
       "participants": [
         "Asura",
@@ -2167,6 +2265,7 @@
       "postedAt": "2026-02-28T17:42:38.627000+00:00",
       "title": "MTOS RING FARM",
       "eventDate": "2026-03-01",
+      "eventStart": "2026-03-01T17:00:00.000Z",
       "organizer": "Micioarancio",
       "participants": [
         "Bababullet",
@@ -2183,6 +2282,7 @@
       "postedAt": "2026-02-28T15:49:05.046000+00:00",
       "title": "unnamed",
       "eventDate": null,
+      "eventStart": null,
       "organizer": null,
       "participants": []
     },
@@ -2193,6 +2293,7 @@
       "postedAt": "2026-02-28T08:42:24.887000+00:00",
       "title": null,
       "eventDate": "2026-02-28",
+      "eventStart": "2026-02-28T16:00:00.000Z",
       "organizer": "Micioarancio",
       "participants": [
         "MrZenigata/Ayara",
@@ -2207,6 +2308,7 @@
       "postedAt": "2026-02-26T11:45:08.596000+00:00",
       "title": "MDWP FARM",
       "eventDate": "2026-02-27",
+      "eventStart": "2026-02-27T22:00:00.000Z",
       "organizer": "Asura",
       "participants": [
         "Asura",
@@ -2224,6 +2326,7 @@
       "postedAt": "2026-02-25T11:52:20.796000+00:00",
       "title": "ASH FARMING",
       "eventDate": "2026-02-25",
+      "eventStart": "2026-02-25T19:00:00.000Z",
       "organizer": "oTaffyo",
       "participants": [
         "oTaffyo",
@@ -2246,6 +2349,7 @@
       "postedAt": "2026-02-23T13:39:20.759000+00:00",
       "title": "ASH FARM",
       "eventDate": "2026-02-23",
+      "eventStart": "2026-02-23T19:00:00.000Z",
       "organizer": "oTaffyo",
       "participants": [
         "Psyche.",
@@ -2267,6 +2371,7 @@
       "postedAt": "2026-02-21T22:10:29.662000+00:00",
       "title": "ASOD X5 FARM",
       "eventDate": "2026-02-22",
+      "eventStart": "2026-02-22T19:00:00.000Z",
       "organizer": "Vega",
       "participants": [
         "Rilay",
@@ -2302,6 +2407,7 @@
       "postedAt": "2026-02-21T11:52:31.080000+00:00",
       "title": "ASH FARM",
       "eventDate": "2026-02-21",
+      "eventStart": "2026-02-21T19:00:00.000Z",
       "organizer": "Elanor/Rydark",
       "participants": [
         "besttankinnv",
@@ -2323,6 +2429,7 @@
       "postedAt": "2026-02-20T10:17:09.050000+00:00",
       "title": "ATIC SEMIminusTRAINING",
       "eventDate": "2026-02-20",
+      "eventStart": "2026-02-20T19:00:00.000Z",
       "organizer": "Vega",
       "participants": [
         "Coda",
@@ -2339,6 +2446,7 @@
       "postedAt": "2026-02-19T23:24:26.863000+00:00",
       "title": "MDWP FARM",
       "eventDate": "2026-02-20",
+      "eventStart": "2026-02-20T22:00:00.000Z",
       "organizer": "Asura",
       "participants": [
         "Asura",
@@ -2359,6 +2467,7 @@
       "postedAt": "2026-02-16T06:46:28.445000+00:00",
       "title": "MLMD",
       "eventDate": "2026-02-18",
+      "eventStart": "2026-02-19T04:30:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatsomewa",
@@ -2376,6 +2485,7 @@
       "postedAt": "2026-02-16T06:40:20.708000+00:00",
       "title": "ASH TRAINING",
       "eventDate": "2026-02-17",
+      "eventStart": "2026-02-17T19:00:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatsomewa",
@@ -2394,6 +2504,7 @@
       "postedAt": "2026-02-13T21:52:13.445000+00:00",
       "title": "ASOD x5 farm exp players",
       "eventDate": "2026-02-15",
+      "eventStart": "2026-02-15T17:00:00.000Z",
       "organizer": "Vega",
       "participants": [
         "FlyLeaf69",
@@ -2419,6 +2530,7 @@
       "postedAt": "2026-02-12T19:42:12.208000+00:00",
       "title": "ASOD x5 farm exp players",
       "eventDate": "2026-02-13",
+      "eventStart": "2026-02-13T17:00:00.000Z",
       "organizer": "Vega",
       "participants": [
         "Bababullet",
@@ -2442,6 +2554,7 @@
       "postedAt": "2026-02-10T09:14:03.394000+00:00",
       "title": "MSOD GUILD COMPLETE",
       "eventDate": "2026-02-13",
+      "eventStart": "2026-02-13T20:00:00.000Z",
       "organizer": "crisem97",
       "participants": [
         "Vas612",
@@ -2465,6 +2578,7 @@
       "postedAt": "2026-02-10T06:16:33.936000+00:00",
       "title": "MSHRUNORRUNS",
       "eventDate": "2026-02-11",
+      "eventStart": "2026-02-11T13:00:00.000Z",
       "organizer": "Ellenaro",
       "participants": [
         "Elanor/Rydark",
@@ -2479,6 +2593,7 @@
       "postedAt": "2026-02-07T08:26:29.578000+00:00",
       "title": "ASH",
       "eventDate": "2026-02-10",
+      "eventStart": "2026-02-10T20:00:00.000Z",
       "organizer": "MrZenigata / Ayar",
       "participants": [
         "Ruru",
@@ -2500,6 +2615,7 @@
       "postedAt": "2026-02-06T21:24:58.761000+00:00",
       "title": "ASH TRAINING",
       "eventDate": "2026-02-11",
+      "eventStart": "2026-02-12T00:30:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatsomewa",
@@ -2518,6 +2634,7 @@
       "postedAt": "2026-02-06T21:19:43.138000+00:00",
       "title": "MDWP FARM",
       "eventDate": "2026-02-13",
+      "eventStart": "2026-02-13T22:00:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatsomewa",
@@ -2532,6 +2649,7 @@
       "postedAt": "2026-02-02T10:04:08.083000+00:00",
       "title": "MSHRUNEXPONLY",
       "eventDate": "2026-02-03",
+      "eventStart": "2026-02-03T05:30:00.000Z",
       "organizer": "Ellenaro",
       "participants": [
         "Ellenaro",
@@ -2547,6 +2665,7 @@
       "postedAt": "2026-01-31T23:07:12.393000+00:00",
       "title": "MLOMD FARM GEAR",
       "eventDate": "2026-02-05",
+      "eventStart": "2026-02-05T23:00:00.000Z",
       "organizer": "crisem97",
       "participants": [
         "HenryTheHorse",
@@ -2561,6 +2680,7 @@
       "postedAt": "2026-01-31T21:27:48.197000+00:00",
       "title": "ASH FARMING",
       "eventDate": "2026-02-01",
+      "eventStart": "2026-02-01T20:00:00.000Z",
       "organizer": "crisem97",
       "participants": [
         "d00fus",
@@ -2585,6 +2705,7 @@
       "postedAt": "2026-01-31T03:00:03.948000+00:00",
       "title": null,
       "eventDate": "2026-01-31",
+      "eventStart": "2026-01-31T19:00:00.000Z",
       "organizer": "crisem97",
       "participants": [
         "d00fus",
@@ -2608,6 +2729,7 @@
       "postedAt": "2026-01-30T06:53:59.283000+00:00",
       "title": "MDWP FARM 3Xplus",
       "eventDate": "2026-02-04",
+      "eventStart": "2026-02-05T02:00:00.000Z",
       "organizer": "Azazel@eatsomewaf",
       "participants": [
         "Azazel@eatsomewa",
@@ -2629,6 +2751,7 @@
       "postedAt": "2026-01-27T21:56:31.951000+00:00",
       "title": "ASOD X5",
       "eventDate": "2026-01-29",
+      "eventStart": "2026-01-29T19:00:00.000Z",
       "organizer": "MrZenigata / Ayar",
       "participants": [
         "Isthaz/Isthina",
@@ -2649,6 +2772,7 @@
       "postedAt": "2026-01-26T12:51:49.523000+00:00",
       "title": "ASH farm/training all welcome",
       "eventDate": "2026-01-27",
+      "eventStart": "2026-01-27T20:00:00.000Z",
       "organizer": "oTaffyo",
       "participants": [
         "Tatanka",
@@ -2668,6 +2792,7 @@
       "postedAt": "2025-12-25T15:41:42.057000+00:00",
       "title": "ASH FARM",
       "eventDate": "2025-12-25",
+      "eventStart": "2025-12-25T20:00:00.000Z",
       "organizer": "oTaffyo",
       "participants": [
         "Rilay",
@@ -2685,6 +2810,7 @@
       "postedAt": "2025-12-23T09:37:21.042000+00:00",
       "title": "M TIAMAT",
       "eventDate": "2025-12-26",
+      "eventStart": "2025-12-26T14:00:00.000Z",
       "organizer": "MrZenigata / Ayar",
       "participants": [
         "Rilay",
@@ -2702,6 +2828,7 @@
       "postedAt": "2025-12-22T08:33:14.723000+00:00",
       "title": "ADOM",
       "eventDate": "2025-12-23",
+      "eventStart": "2025-12-23T19:00:00.000Z",
       "organizer": "oTaffyo",
       "participants": [
         "Bane",
@@ -2717,6 +2844,7 @@
       "postedAt": "2025-12-22T08:28:53.915000+00:00",
       "title": "MTIA",
       "eventDate": "2025-12-22",
+      "eventStart": "2025-12-22T20:00:00.000Z",
       "organizer": "oTaffyo",
       "participants": [
         "oTaffyo",
@@ -2734,6 +2862,7 @@
       "postedAt": "2025-12-16T20:54:55.336000+00:00",
       "title": "ASH FARM",
       "eventDate": "2025-12-17",
+      "eventStart": "2025-12-17T20:00:00.000Z",
       "organizer": "MrZenigata / Ayar",
       "participants": [
         "Elle",
@@ -2755,15 +2884,16 @@
       "postedAt": "2023-01-30T02:59:16.172000+00:00",
       "title": null,
       "eventDate": null,
+      "eventStart": null,
       "organizer": null,
       "participants": []
     }
   ],
   "scanState": {
-    "lastFullScanAt": "2026-11-22T07:05:06.294Z",
+    "lastFullScanAt": "2026-11-25T01:47:24.211Z",
     "channels": {
       "964991521524944959": {
-        "newestMessageId": "1574906095221350495"
+        "newestMessageId": "1574957986214977609"
       },
       "1056342825882624030": {
         "newestMessageId": "1422053821554753667"
@@ -2949,7 +3079,7 @@
         "newestMessageId": "1457742376045908142"
       },
       "1466082960930504745": {
-        "newestMessageId": "1559517524826001530"
+        "newestMessageId": "1574953495893770253"
       },
       "1466083239440683176": {
         "newestMessageId": "1560786166121373738"
@@ -3048,7 +3178,7 @@
         "newestMessageId": "1564331521735659601"
       },
       "1573157766456152145": {
-        "newestMessageId": "1573791455288229919"
+        "newestMessageId": "1574927061456257148"
       },
       "1573158415876755486": {
         "newestMessageId": "1574171556488413326"
