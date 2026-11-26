@@ -1,9 +1,28 @@
 {
   "source": "https://www.playneverwinter.com/en/news",
   "api": "https://api.arcgames.com/v1.0/games/nw/news",
-  "generatedAt": "2026-11-24T22:42:26.536Z",
+  "generatedAt": "2026-11-26T21:50:06.641Z",
   "count": 100,
   "articles": [
+    {
+      "id": "11584256",
+      "title": "Black Friday is here!",
+      "summary": "It's time for Black Friday, and that means that Neverwinter has some good deals in store for you!",
+      "date": "2026-11-26",
+      "url": "https://www.playneverwinter.com/en/news-details/11584256",
+      "image": "https://pwimages-a.akamaihd.net/arc/2d/9f/2d9ff99bd8b907cd2649bd4b79fb28781795699704.png",
+      "platforms": [
+        "pc",
+        "ps",
+        "xbox"
+      ],
+      "tags": [
+        "neverwinter",
+        "nw-xbox",
+        "nw-playstation",
+        "nw-news-nw-launcher"
+      ]
+    },
     {
       "id": "11584181",
       "title": "Patch Notes for 11/24/2026",
@@ -2000,26 +2019,6 @@
       "tags": [
         "nw-news",
         "neverwinter"
-      ]
-    },
-    {
-      "id": "11578809",
-      "title": "20% Bonus Zen & Zen Sale",
-      "summary": "Adventurers that are always looking to make a good deal can now profit from 20% Bonus Zen on PC and from 20% off Zen packs on Xbox and PlayStation!",
-      "date": "2025-11-21",
-      "url": "https://www.playneverwinter.com/en/news-details/11578809",
-      "image": "https://pwimages-a.akamaihd.net/arc/37/d1/37d1c646d84f472d47e8b31796d46f3f1763729718.jpg",
-      "platforms": [
-        "pc",
-        "ps",
-        "xbox"
-      ],
-      "tags": [
-        "nw-launcher",
-        "nw-news",
-        "neverwinter",
-        "nw-xbox",
-        "nw-playstation"
       ]
     }
   ]
