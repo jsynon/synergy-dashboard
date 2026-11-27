@@ -48,6 +48,11 @@
       "endTime": "15:00"
     },
     {
+      "name": "Black Friday Sale",
+      "startDate": "2026-11-26",
+      "endDate": "2026-12-03"
+    },
+    {
       "name": "The Unfathomed Lockbox",
       "startDate": "2026-11-17",
       "endDate": "2027-01-20"
