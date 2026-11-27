@@ -1,9 +1,26 @@
 {
   "source": "https://www.playneverwinter.com/en/news",
   "api": "https://api.arcgames.com/v1.0/games/nw/news",
-  "generatedAt": "2026-11-26T21:50:06.641Z",
+  "generatedAt": "2026-11-27T16:16:39.701Z",
   "count": 100,
   "articles": [
+    {
+      "id": "11584187",
+      "title": "Ascendant Mode Preview",
+      "summary": "Ascendant Mode is approaching!",
+      "date": "2026-11-27",
+      "url": "https://www.playneverwinter.com/en/news-details/11584187",
+      "image": "https://pwimages-a.akamaihd.net/arc/fe/70/fe701a0cdc74782d5ea05c43727baeea1795446935.png",
+      "platforms": [
+        "pc"
+      ],
+      "tags": [
+        "nw-launcher",
+        "nw-news",
+        "neverwinter",
+        "nw-events"
+      ]
+    },
     {
       "id": "11584256",
       "title": "Black Friday is here!",
@@ -2004,21 +2021,6 @@
         "neverwinter",
         "nw-xbox",
         "nw-playstation"
-      ]
-    },
-    {
-      "id": "11578836",
-      "title": "VAT Update",
-      "summary": "",
-      "date": "2025-11-21",
-      "url": "https://www.playneverwinter.com/en/news-details/11578836",
-      "image": "https://pwimages-a.akamaihd.net/arc/c7/bc/c7bc008297386992d4c21e5677db79b01763775128.jpg",
-      "platforms": [
-        "pc"
-      ],
-      "tags": [
-        "nw-news",
-        "neverwinter"
       ]
     }
   ]

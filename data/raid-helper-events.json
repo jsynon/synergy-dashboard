@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T08:59:15.246Z",
+  "generatedAt": "2026-11-27T16:17:34.188Z",
   "channelsScanned": 97,
   "channelsUnreadable": [],
   "messagesScanned": 3329,
@@ -2893,7 +2893,7 @@
     "lastFullScanAt": "2026-11-25T01:47:24.211Z",
     "channels": {
       "964991521524944959": {
-        "newestMessageId": "1575788413204824097"
+        "newestMessageId": "1575906829861392415"
       },
       "1056342825882624030": {
         "newestMessageId": "1422053821554753667"
@@ -2914,7 +2914,7 @@
         "newestMessageId": "1404436089262833764"
       },
       "1201999851802591273": {
-        "newestMessageId": "1575505716515577917"
+        "newestMessageId": "1575894287701377037"
       },
       "1202325116147740743": {
         "newestMessageId": "1573024449609994310"
@@ -3079,7 +3079,7 @@
         "newestMessageId": "1457742376045908142"
       },
       "1466082960930504745": {
-        "newestMessageId": "1575739332634083361"
+        "newestMessageId": "1575905144535515156"
       },
       "1466083239440683176": {
         "newestMessageId": "1560786166121373738"
