@@ -1,74 +1,70 @@
 {
-  "generatedAt": "2026-11-27T16:17:34.188Z",
+  "generatedAt": "2026-11-27T21:34:46.492Z",
   "channelsScanned": 97,
   "channelsUnreadable": [],
-  "messagesScanned": 3329,
-  "postsFound": 130,
+  "messagesScanned": 3331,
+  "postsFound": 131,
   "unparsedPosts": 4,
   "botAuthors": [
     "Raid-Helper (579155972115660803)"
   ],
   "samples": [
     {
-      "id": "1069451706041118820",
-      "channel": "💬│𝙶𝚎𝚗𝚎𝚛𝚊𝚕-𝙲𝚑𝚊𝚝",
-      "content": "",
-      "embeds": [],
-      "components": []
-    },
-    {
-      "id": "1531519235627683911",
-      "channel": "🕸️│𝙳𝚎𝚖𝚘𝚗𝚠𝚎𝚋",
+      "id": "1575970894231109693",
+      "channel": "🔥│𝙳𝚎𝚟𝚘𝚞𝚛𝚎𝚛𝚜-𝙿𝚒𝚝",
       "content": "",
       "embeds": [
         {
           "type": "rich",
-          "url": "https://discord.com/channels/964991521524944956/1450566544575959210/1531519235627683911",
-          "title": "MDWP first clear/farm",
-          "description": "just switching things up from AJS/MJS this week. lets have some fun",
-          "color": 16711680,
+          "description": "**<:A:675573195029479424> <:D:675573194890936341> <:P:675573195797037057> <:empty:592384590375550976> <:T:675573195436326923> <:R:675573195859820555> <:A:675573195029479424> <:I:675573195008507916> <:N:675573195796906005> <:I:675573195008507916> <:N:675573195796906005> <:G:675573195553636352> **\n\n🛡️ TRAINING RUN: free to join, everyone welcome!\n\nRules\n• Be on time, arrive at least 10 min early\n• Respect everyone",
+          "color": 7419530,
           "fields": [
             {
               "name": "‎",
-              "value": "<:LeaderX:1124529969926779050> Elenara\n<:Date:593930359985405983> __<t:1785466800:D>__",
+              "value": "<:LeaderX:1124529969926779050> Rilay\n<:DateX:1124529967611523272> __<t:1795892400:D>__",
               "inline": true
             },
             {
               "name": "‎",
-              "value": "<:SignUps:593930418932285440> **2** (+1)\n<:Time:593930235658108939> __<t:1785466800:t>__",
+              "value": "<:SignUpsX:1124529971428339752> **5**\n<:TimeX:1124529972883767398> __<t:1795892400:t>__",
               "inline": true
             },
             {
               "name": "‎",
-              "value": "⠀\n<:Countdown:858794526176444467> __<t:1785466800:R>__",
+              "value": "⠀\n<:CountdownX:1124530049329139772> __<t:1795892400:R>__",
               "inline": true
             },
             {
               "name": "‎",
-              "value": "<:Tank:878310168289505301>   **__Tank__ (1)**\n<:Tank:878310168289505301> `2` **Ragnar@Dokrahm#9**",
+              "value": "<:Ranged:592446395596931072>   **__Ranged__ (3)**\n<:Ranged:592446395596931072> `2` **Sakuya@aksa0**\n<:Ranged:592446395596931072> `3` **Alune**\n<:Ranged:592446395596931072> `5` **Evilyn**",
               "inline": true
             },
             {
               "name": "‎",
-              "value": "<:Healer:898011741735235645>   **__Healer__ (1)**\n<:Healer:898011741735235645> `1` **Elenara**",
+              "value": "<:Healer:898011741735235645>   **__Healer__ (1)**\n<:Healer:898011741735235645> `4` **☠️BloodyVoid6**",
               "inline": true
             },
             {
               "name": "‎",
-              "value": "‎",
+              "value": "<:Support:878310168344035338>   **__Support__ (1)**\n<:Support:878310168344035338> `1` **Rilay**",
               "inline": true
             },
             {
               "name": "‎",
-              "value": "<:Tentative:676284492754976788> Tentative (1) : <:Ranged:592446395596931072> `3` **Rilay**",
-              "inline": false
-            },
-            {
-              "name": "‎",
-              "value": "-# **[Web View](https://raid-helper.xyz/event/1531519235627683911)** | **[Comp](https://raid-helper.xyz/raidplan/1531519235627683911)** | **[Gcal](https://www.google.com/calendar/event?action=TEMPLATE&dates=20260731T030000Z%2F20260731T030000Z&text=MDWP%20first%20clear/farm)** | [Premium](https://raid-helper.xyz/premium/)",
+              "value": "-# **[Web View](https://raid-helper.xyz/event/1575970894231109693)** | **[Comp](https://raid-helper.xyz/raidplan/1575970894231109693)** | **[Gcal](https://www.google.com/calendar/event?action=TEMPLATE&dates=20261128T190000Z%2F20261128T190000Z&text=ADP%20training)** | [Premium](https://raid-helper.xyz/premium/)",
               "inline": false
             }
           ],
+          "image": {
+            "url": "https://cdn.discordapp.com/attachments/1388380307912392726/1575970875042177144/21B0661A-2C35-40A5-B8B4-3AE9A6192EFD.png?ex=6b0b38c0&is=6b09e740&hm=f39130b3d82cd65b69bfc62fd64252620a46e2f3f88309797f02c7916a6abaa9&",
+            "proxy_url": "https://media.discordapp.net/attachments/1388380307912392726/1575970875042177144/21B0661A-2C35-40A5-B8B4-3AE9A6192EFD.png?ex=6b0b38c0&is=6b09e740&hm=f39130b3d82cd65b69bfc62fd64252620a46e2f3f88309797f02c7916a6abaa9&",
+            "width": 1822,
+            "height": 863,
+            "content_type": "image/png",
+            "placeholder": "DWkGI4S/izWCiXeIr4T3Onk=",
+            "placeholder_version": 1,
+            "flags": 0
+          },
           "content_scan_version": 4
         }
       ],
@@ -78,379 +74,119 @@
           "id": 1,
           "components": [
             {
-              "type": 3,
+              "type": 2,
               "id": 2,
-              "custom_id": "event-1531519235627683911",
-              "placeholder": "This event is closed.",
-              "min_values": 1,
-              "max_values": 1,
-              "disabled": true,
-              "options": [
-                {
-                  "label": "Tank",
-                  "value": "878310168289505301-1",
-                  "emoji": {
-                    "id": "878310168289505301",
-                    "name": "Tank"
-                  }
-                },
-                {
-                  "label": "Melee",
-                  "value": "734439523328720913-2",
-                  "emoji": {
-                    "id": "734439523328720913",
-                    "name": "Melee"
-                  }
-                },
-                {
-                  "label": "Ranged",
-                  "value": "592446395596931072-3",
-                  "emoji": {
-                    "id": "592446395596931072",
-                    "name": "Ranged"
-                  }
-                },
-                {
-                  "label": "Healer",
-                  "value": "898011741735235645-4",
-                  "emoji": {
-                    "id": "898011741735235645",
-                    "name": "Healer"
-                  }
-                },
-                {
-                  "label": "Support",
-                  "value": "878310168344035338-5",
-                  "emoji": {
-                    "id": "878310168344035338",
-                    "name": "Support"
-                  }
-                }
-              ]
+              "custom_id": "event-878310168289505301-1",
+              "style": 1,
+              "label": "Tank",
+              "emoji": {
+                "id": "878310168289505301",
+                "name": "Tank"
+              }
+            },
+            {
+              "type": 2,
+              "id": 3,
+              "custom_id": "event-734439523328720913-2",
+              "style": 1,
+              "label": "Melee",
+              "emoji": {
+                "id": "734439523328720913",
+                "name": "Melee"
+              }
+            },
+            {
+              "type": 2,
+              "id": 4,
+              "custom_id": "event-592446395596931072-3",
+              "style": 1,
+              "label": "Ranged",
+              "emoji": {
+                "id": "592446395596931072",
+                "name": "Ranged"
+              }
+            },
+            {
+              "type": 2,
+              "id": 5,
+              "custom_id": "event-898011741735235645-4",
+              "style": 1,
+              "label": "Healer",
+              "emoji": {
+                "id": "898011741735235645",
+                "name": "Healer"
+              }
+            },
+            {
+              "type": 2,
+              "id": 6,
+              "custom_id": "event-878310168344035338-5",
+              "style": 1,
+              "label": "Support",
+              "emoji": {
+                "id": "878310168344035338",
+                "name": "Support"
+              }
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "1528532276806156359",
-      "channel": "🕸️│𝙳𝚎𝚖𝚘𝚗𝚠𝚎𝚋",
-      "content": "",
-      "embeds": [
-        {
-          "type": "rich",
-          "description": "**<:M:675573195826397195> <:D:675573194890936341> <:W:675573196128256003> <:P:675573195797037057> <:empty:592384590375550976> <:F:675573195465555979> <:I:675573195008507916> <:R:675573195859820555> <:S:675573196396691496> <:T:675573195436326923> <:empty:592384590375550976> <:B:675573195138662420> <:O:675573195885248512> <:S:675573196396691496> <:S:675573196396691496> <:empty:592384590375550976> <:F:675573195465555979> <:A:675573195029479424> <:R:675573195859820555> <:M:675573195826397195> **\n\nlet's get lucky 🙂",
-          "color": 16711680,
-          "fields": [
-            {
-              "name": "‎",
-              "value": "<:LeaderX:1124529969926779050> Elenara\n<:Date:593930359985405983> __<t:1784652300:D>__",
-              "inline": true
-            },
-            {
-              "name": "‎",
-              "value": "<:SignUps:593930418932285440> **2**\n<:Time:593930235658108939> __<t:1784652300:t>__",
-              "inline": true
-            },
-            {
-              "name": "‎",
-              "value": "⠀\n<:Countdown:858794526176444467> __<t:1784652300:R>__",
-              "inline": true
-            },
-            {
-              "name": "‎",
-              "value": "<:Ranged:592446395596931072>   **__Ranged__ (1)**\n<:Ranged:592446395596931072> `2` **Elanor**",
-              "inline": true
-            },
-            {
-              "name": "‎",
-              "value": "<:Healer:898011741735235645>   **__Healer__ (1)**\n<:Healer:898011741735235645> `1` **Elenara**",
-              "inline": true
-            },
-            {
-              "name": "‎",
-              "value": "‎",
-              "inline": true
-            },
-            {
-              "name": "‎",
-              "value": "-# **[Web View](https://raid-helper.xyz/event/1528532276806156359)** | **[Comp](https://raid-helper.xyz/raidplan/1528532276806156359)** | **[Gcal](https://www.google.com/calendar/event?action=TEMPLATE&dates=20260721T164500Z%2F20260721T164500Z&text=MDWP%20first%20boss%20farm)** | [Premium](https://raid-helper.xyz/premium/)",
-              "inline": false
-            }
-          ],
-          "content_scan_version": 4
-        }
-      ],
-      "components": [
+        },
         {
           "type": 1,
-          "id": 1,
+          "id": 7,
           "components": [
             {
-              "type": 3,
-              "id": 2,
-              "custom_id": "event-1528532276806156359",
-              "placeholder": "This event is closed.",
-              "min_values": 1,
-              "max_values": 1,
-              "disabled": true,
-              "options": [
-                {
-                  "label": "Tank",
-                  "value": "878310168289505301-1",
-                  "emoji": {
-                    "id": "878310168289505301",
-                    "name": "Tank"
-                  }
-                },
-                {
-                  "label": "Melee",
-                  "value": "734439523328720913-2",
-                  "emoji": {
-                    "id": "734439523328720913",
-                    "name": "Melee"
-                  }
-                },
-                {
-                  "label": "Ranged",
-                  "value": "592446395596931072-3",
-                  "emoji": {
-                    "id": "592446395596931072",
-                    "name": "Ranged"
-                  }
-                },
-                {
-                  "label": "Healer",
-                  "value": "898011741735235645-4",
-                  "emoji": {
-                    "id": "898011741735235645",
-                    "name": "Healer"
-                  }
-                },
-                {
-                  "label": "Support",
-                  "value": "878310168344035338-5",
-                  "emoji": {
-                    "id": "878310168344035338",
-                    "name": "Support"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "1509496498675777556",
-      "channel": "🕸️│𝙳𝚎𝚖𝚘𝚗𝚠𝚎𝚋",
-      "content": "",
-      "embeds": [
-        {
-          "type": "rich",
-          "description": "**<:M:675573195826397195> <:D:675573194890936341> <:W:675573196128256003> <:P:675573195797037057> <:empty:592384590375550976> <:F:675573195465555979> <:U:675573195486789643> <:L:675573195704631296> <:L:675573195704631296> <:empty:592384590375550976> <:R:675573195859820555> <:U:675573195486789643> <:N:675573195796906005> **\n\nDo it and do it and do it and do it and do it all again! Demonweb invaders must die!  https://www.youtube.com/watch?v=EiqFcc_l_Kk",
-          "color": 16711680,
-          "fields": [
-            {
-              "name": "‎",
-              "value": "<:LeaderX:1124529969926779050> Mio-Ava tonk\n<:Date:593930359985405983> __<t:1779991200:D>__",
-              "inline": true
+              "type": 2,
+              "id": 8,
+              "custom_id": "event-1551909915155767378-6",
+              "style": 2,
+              "label": "Bench",
+              "emoji": {
+                "id": "1551909915155767378",
+                "name": "Bench"
+              }
             },
             {
-              "name": "‎",
-              "value": "<:SignUps:593930418932285440> **5**\n<:Time:593930235658108939> __<t:1779991200:t>__",
-              "inline": true
+              "type": 2,
+              "id": 9,
+              "custom_id": "event-1551909947820998698-7",
+              "style": 2,
+              "label": "Late",
+              "emoji": {
+                "id": "1551909947820998698",
+                "name": "Late"
+              }
             },
             {
-              "name": "‎",
-              "value": "⠀\n<:Countdown:858794526176444467> __<t:1779991200:R>__",
-              "inline": true
+              "type": 2,
+              "id": 10,
+              "custom_id": "event-1551909992901378171-8",
+              "style": 2,
+              "label": "Tentative",
+              "emoji": {
+                "id": "1551909992901378171",
+                "name": "Tentative"
+              }
             },
             {
-              "name": "‎",
-              "value": "<:Tank:878310168289505301>   **__Tank__ (1)**\n<:Tank:878310168289505301> `1` **Mio-Avatonk**",
-              "inline": true
+              "type": 2,
+              "id": 11,
+              "custom_id": "event-1551910028926124052-9",
+              "style": 2,
+              "label": "Absence",
+              "emoji": {
+                "id": "1551910028926124052",
+                "name": "Absence"
+              }
             },
             {
-              "name": "‎",
-              "value": "<:Melee:734439523328720913>   **__Melee__ (2)**\n<:Melee:734439523328720913> `4` **Reinds/sojo/sojo12**\n<:Melee:734439523328720913> `5` **BalvorFordragon**",
-              "inline": true
-            },
-            {
-              "name": "‎",
-              "value": "<:Ranged:592446395596931072>   **__Ranged__ (1)**\n<:Ranged:592446395596931072> `2` **Andealous**",
-              "inline": true
-            },
-            {
-              "name": "‎",
-              "value": "<:Healer:898011741735235645>   **__Healer__ (1)**\n<:Healer:898011741735235645> `3` **Zagnafein**",
-              "inline": true
-            },
-            {
-              "name": "‎",
-              "value": "-# **[Web View](https://raid-helper.xyz/event/1509496498675777556)** | **[Comp](https://raid-helper.xyz/raidplan/1509496498675777556)** | **[Gcal](https://www.google.com/calendar/event?action=TEMPLATE&dates=20260528T180000Z%2F20260528T180000Z&text=MDWP%20full%20run)** | [Premium](https://raid-helper.xyz/premium/)",
-              "inline": false
-            }
-          ],
-          "content_scan_version": 4
-        }
-      ],
-      "components": [
-        {
-          "type": 1,
-          "id": 1,
-          "components": [
-            {
-              "type": 3,
-              "id": 2,
-              "custom_id": "event-1509496498675777556",
-              "placeholder": "This event is closed.",
-              "min_values": 1,
-              "max_values": 1,
-              "disabled": true,
-              "options": [
-                {
-                  "label": "Tank",
-                  "value": "878310168289505301-1",
-                  "emoji": {
-                    "id": "878310168289505301",
-                    "name": "Tank"
-                  }
-                },
-                {
-                  "label": "Melee",
-                  "value": "734439523328720913-2",
-                  "emoji": {
-                    "id": "734439523328720913",
-                    "name": "Melee"
-                  }
-                },
-                {
-                  "label": "Ranged",
-                  "value": "592446395596931072-3",
-                  "emoji": {
-                    "id": "592446395596931072",
-                    "name": "Ranged"
-                  }
-                },
-                {
-                  "label": "Healer",
-                  "value": "898011741735235645-4",
-                  "emoji": {
-                    "id": "898011741735235645",
-                    "name": "Healer"
-                  }
-                },
-                {
-                  "label": "Support",
-                  "value": "878310168344035338-5",
-                  "emoji": {
-                    "id": "878310168344035338",
-                    "name": "Support"
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "1507406059193499680",
-      "channel": "🕸️│𝙳𝚎𝚖𝚘𝚗𝚠𝚎𝚋",
-      "content": "",
-      "embeds": [
-        {
-          "type": "rich",
-          "url": "https://discord.com/channels/964991521524944956/1450566544575959210/1507406059193499680",
-          "title": "MDWP FIRST BOSS FARM FOR ORE AND MARLITH HAIR",
-          "description": "Mdwp",
-          "color": 16711680,
-          "fields": [
-            {
-              "name": "‎",
-              "value": "<:LeaderX:1124529969926779050> Reinds/sojo/sojo1\n<:Date:593930359985405983> __<t:1779507000:D>__",
-              "inline": true
-            },
-            {
-              "name": "‎",
-              "value": "<:SignUps:593930418932285440> **1**\n<:Time:593930235658108939> __<t:1779507000:t>__",
-              "inline": true
-            },
-            {
-              "name": "‎",
-              "value": "⠀\n<:Countdown:858794526176444467> __<t:1779507000:R>__",
-              "inline": true
-            },
-            {
-              "name": "‎",
-              "value": "<:Melee:734439523328720913>   **__Melee__ (1)**\n<:Melee:734439523328720913> `1` **Reinds/sojo/sojo12**",
-              "inline": true
-            },
-            {
-              "name": "‎",
-              "value": "-# **[Web View](https://raid-helper.xyz/event/1507406059193499680)** | **[Comp](https://raid-helper.xyz/raidplan/1507406059193499680)** | **[Gcal](https://www.google.com/calendar/event?action=TEMPLATE&dates=20260523T033000Z%2F20260523T033000Z&text=MDWP%20FIRST%20BOSS%20FARM%20FOR%20ORE%20AND%20MARLITH%20HAIR)** | [Premium](https://raid-helper.xyz/premium/)",
-              "inline": false
-            }
-          ],
-          "content_scan_version": 4
-        }
-      ],
-      "components": [
-        {
-          "type": 1,
-          "id": 1,
-          "components": [
-            {
-              "type": 3,
-              "id": 2,
-              "custom_id": "event-1507406059193499680",
-              "placeholder": "This event is closed.",
-              "min_values": 1,
-              "max_values": 1,
-              "disabled": true,
-              "options": [
-                {
-                  "label": "Tank",
-                  "value": "878310168289505301-1",
-                  "emoji": {
-                    "id": "878310168289505301",
-                    "name": "Tank"
-                  }
-                },
-                {
-                  "label": "Melee",
-                  "value": "734439523328720913-2",
-                  "emoji": {
-                    "id": "734439523328720913",
-                    "name": "Melee"
-                  }
-                },
-                {
-                  "label": "Ranged",
-                  "value": "592446395596931072-3",
-                  "emoji": {
-                    "id": "592446395596931072",
-                    "name": "Ranged"
-                  }
-                },
-                {
-                  "label": "Healer",
-                  "value": "898011741735235645-4",
-                  "emoji": {
-                    "id": "898011741735235645",
-                    "name": "Healer"
-                  }
-                },
-                {
-                  "label": "Support",
-                  "value": "878310168344035338-5",
-                  "emoji": {
-                    "id": "878310168344035338",
-                    "name": "Support"
-                  }
-                }
-              ]
+              "type": 2,
+              "id": 12,
+              "custom_id": "signupsettings-1575970894231109693",
+              "style": 2,
+              "emoji": {
+                "id": "1199145171707772949",
+                "name": "Settings"
+              }
             }
           ]
         }
@@ -458,6 +194,23 @@
     }
   ],
   "events": [
+    {
+      "id": "1575970894231109693",
+      "channelId": "1573157766456152145",
+      "channel": "🔥│𝙳𝚎𝚟𝚘𝚞𝚛𝚎𝚛𝚜-𝙿𝚒𝚝",
+      "postedAt": "2026-11-27T20:25:41.308000+00:00",
+      "title": "ADP TRAINING",
+      "eventDate": "2026-11-28",
+      "eventStart": "2026-11-28T19:00:00.000Z",
+      "organizer": "Rilay",
+      "participants": [
+        "Sakuya@aksa0",
+        "Alune",
+        "Evilyn",
+        "☠️BloodyVoid6",
+        "Rilay"
+      ]
+    },
     {
       "id": "1569171604209016853",
       "channelId": "1499641964243452025",
@@ -2893,7 +2646,7 @@
     "lastFullScanAt": "2026-11-25T01:47:24.211Z",
     "channels": {
       "964991521524944959": {
-        "newestMessageId": "1575906829861392415"
+        "newestMessageId": "1575970756557406302"
       },
       "1056342825882624030": {
         "newestMessageId": "1422053821554753667"
@@ -3178,7 +2931,7 @@
         "newestMessageId": "1564331521735659601"
       },
       "1573157766456152145": {
-        "newestMessageId": "1574927061456257148"
+        "newestMessageId": "1575973109746376735"
       },
       "1573158415876755486": {
         "newestMessageId": "1574171556488413326"
