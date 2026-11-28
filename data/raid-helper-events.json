@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-28T00:56:37.364Z",
+  "generatedAt": "2026-11-28T08:20:32.240Z",
   "channelsScanned": 97,
   "channelsUnreadable": [],
   "messagesScanned": 3332,
@@ -26,12 +26,22 @@
             },
             {
               "name": "‎",
-              "value": "<:SignUpsX:1124529971428339752> **1**\n<:TimeX:1124529972883767398> __<t:1795978800:t>__",
+              "value": "<:SignUpsX:1124529971428339752> **4**\n<:TimeX:1124529972883767398> __<t:1795978800:t>__",
               "inline": true
             },
             {
               "name": "‎",
               "value": "⠀\n<:CountdownX:1124530049329139772> __<t:1795978800:R>__",
+              "inline": true
+            },
+            {
+              "name": "‎",
+              "value": "<:Melee:734439523328720913>   **__Melee__ (1)**\n<:Melee:734439523328720913> `2` **Gyda Thorunn**",
+              "inline": true
+            },
+            {
+              "name": "‎",
+              "value": "<:Ranged:592446395596931072>   **__Ranged__ (2)**\n<:Ranged:592446395596931072> `3` **Amaya**\n<:Ranged:592446395596931072> `4` **Jade Providan**",
               "inline": true
             },
             {
@@ -54,7 +64,8 @@
             "placeholder": "z0gGDIQ4dqmfhIeGepiokJULaA==",
             "placeholder_version": 1,
             "flags": 0
-          }
+          },
+          "content_scan_version": 4
         }
       ],
       "components": [
@@ -198,7 +209,7 @@
             },
             {
               "name": "‎",
-              "value": "<:SignUpsX:1124529971428339752> **9**\n<:TimeX:1124529972883767398> __<t:1795892400:t>__",
+              "value": "<:SignUpsX:1124529971428339752> **12**\n<:TimeX:1124529972883767398> __<t:1795892400:t>__",
               "inline": true
             },
             {
@@ -213,7 +224,12 @@
             },
             {
               "name": "‎",
-              "value": "<:Ranged:592446395596931072>   **__Ranged__ (5)**\n<:Ranged:592446395596931072> `1` **Sakuya@aksa0**\n<:Ranged:592446395596931072> `2` **Alune**\n<:Ranged:592446395596931072> `4` **Evilyn**\n<:Ranged:592446395596931072> `5` **Mr Formula 1**\n<:Ranged:592446395596931072> `8` **Regdar**",
+              "value": "<:Melee:734439523328720913>   **__Melee__ (1)**\n<:Melee:734439523328720913> `11` **Gyda Thorun**",
+              "inline": true
+            },
+            {
+              "name": "‎",
+              "value": "<:Ranged:592446395596931072>   **__Ranged__ (7)**\n<:Ranged:592446395596931072> `1` **Sakuya@aksa0**\n<:Ranged:592446395596931072> `2` **Alune**\n<:Ranged:592446395596931072> `4` **Evilyn**\n<:Ranged:592446395596931072> `5` **Mr Formula 1**\n<:Ranged:592446395596931072> `8` **Regdar**\n<:Ranged:592446395596931072> `12` **Jade Provida**\n<:Ranged:592446395596931072> `13` **Ivydora**",
               "inline": true
             },
             {
@@ -241,7 +257,8 @@
             "placeholder": "DWkGI4S/izWCiXeIr4T3Onk=",
             "placeholder_version": 1,
             "flags": 0
-          }
+          },
+          "content_scan_version": 4
         }
       ],
       "components": [
@@ -380,6 +397,9 @@
       "eventStart": "2026-11-29T19:00:00.000Z",
       "organizer": "Elanor",
       "participants": [
+        "Gyda Thorunn",
+        "Amaya",
+        "Jade Providan",
         "Elanor"
       ]
     },
@@ -395,11 +415,14 @@
       "participants": [
         "Ellena",
         "Rilay",
+        "Gyda Thorun",
         "Sakuya@aksa0",
         "Alune",
         "Evilyn",
         "Mr Formula 1",
         "Regdar",
+        "Jade Provida",
+        "Ivydora",
         "☠️BloodyVoid6",
         "Elanor",
         "crisem97"
@@ -2840,7 +2863,7 @@
     "lastFullScanAt": "2026-11-25T01:47:24.211Z",
     "channels": {
       "964991521524944959": {
-        "newestMessageId": "1576021471883431998"
+        "newestMessageId": "1576138155760033924"
       },
       "1056342825882624030": {
         "newestMessageId": "1422053821554753667"
@@ -2888,7 +2911,7 @@
         "newestMessageId": "1221563335489884321"
       },
       "1221578189697060987": {
-        "newestMessageId": "1575722926789894266"
+        "newestMessageId": "1576080719166443601"
       },
       "1221582518784884819": {
         "newestMessageId": "1225426527349379174"
@@ -2939,7 +2962,7 @@
         "newestMessageId": "1414027790038073354"
       },
       "1249849511103168573": {
-        "newestMessageId": "1574627790152667229"
+        "newestMessageId": "1576138277000450099"
       },
       "1309413801652650045": {
         "newestMessageId": "1309424181967847488"
