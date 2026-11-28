@@ -1581,7 +1581,6 @@ details.news-group[open ] .news-group-preview { display:none; }
 @media (max-width:520px) {
   .news-spotlight { padding:11px 12px; }
   .news-spotlight-name { font-size:1rem; }
-  .news-spotlight-link.alt { display:none; }
 }
 
 @media (max-width:520px) {
