@@ -1,14 +1,186 @@
 {
-  "generatedAt": "2026-11-27T21:34:46.492Z",
+  "generatedAt": "2026-11-28T00:56:37.364Z",
   "channelsScanned": 97,
   "channelsUnreadable": [],
-  "messagesScanned": 3331,
-  "postsFound": 131,
+  "messagesScanned": 3332,
+  "postsFound": 132,
   "unparsedPosts": 4,
   "botAuthors": [
     "Raid-Helper (579155972115660803)"
   ],
   "samples": [
+    {
+      "id": "1576033919155835014",
+      "channel": "🔥│𝙳𝚎𝚟𝚘𝚞𝚛𝚎𝚛𝚜-𝙿𝚒𝚝",
+      "content": "",
+      "embeds": [
+        {
+          "type": "rich",
+          "description": "**<:A:675573195029479424> <:D:675573194890936341> <:P:675573195797037057> <:empty:592384590375550976> <:T:675573195436326923> <:R:675573195859820555> <:A:675573195029479424> <:I:675573195008507916> <:N:675573195796906005> <:I:675573195008507916> <:N:675573195796906005> <:G:675573195553636352> **\n\nGrathmok is new to everyone, so come learn him with us. Everybody is welcome. Sign up below!",
+          "color": 7419530,
+          "fields": [
+            {
+              "name": "‎",
+              "value": "<:LeaderX:1124529969926779050> Elanor\n<:DateX:1124529967611523272> __<t:1795978800:D>__",
+              "inline": true
+            },
+            {
+              "name": "‎",
+              "value": "<:SignUpsX:1124529971428339752> **1**\n<:TimeX:1124529972883767398> __<t:1795978800:t>__",
+              "inline": true
+            },
+            {
+              "name": "‎",
+              "value": "⠀\n<:CountdownX:1124530049329139772> __<t:1795978800:R>__",
+              "inline": true
+            },
+            {
+              "name": "‎",
+              "value": "<:Healer:898011741735235645>   **__Healer__ (1)**\n<:Healer:898011741735235645> `1` **Elanor**",
+              "inline": true
+            },
+            {
+              "name": "‎",
+              "value": "-# **[Web View](https://raid-helper.xyz/event/1576033919155835014)** | **[Comp](https://raid-helper.xyz/raidplan/1576033919155835014)** | **[Gcal](https://www.google.com/calendar/event?action=TEMPLATE&dates=20261129T190000Z%2F20261129T190000Z&text=ADP%20Training)** | [Premium](https://raid-helper.xyz/premium/)",
+              "inline": false
+            }
+          ],
+          "image": {
+            "url": "https://cdn.discordapp.com/attachments/1430627174234460300/1576033904903586025/588a905c-9cd9-4391-8238-fc67887d018a.png?ex=6b0b7374&is=6b0a21f4&hm=a2ff11387673856cc171339aee0fcb19f9f972483710a6a8b8f96066fafcb29c&",
+            "proxy_url": "https://media.discordapp.net/attachments/1430627174234460300/1576033904903586025/588a905c-9cd9-4391-8238-fc67887d018a.png?ex=6b0b7374&is=6b0a21f4&hm=a2ff11387673856cc171339aee0fcb19f9f972483710a6a8b8f96066fafcb29c&",
+            "width": 2016,
+            "height": 1152,
+            "content_type": "image/png",
+            "placeholder": "z0gGDIQ4dqmfhIeGepiokJULaA==",
+            "placeholder_version": 1,
+            "flags": 0
+          }
+        }
+      ],
+      "components": [
+        {
+          "type": 1,
+          "id": 1,
+          "components": [
+            {
+              "type": 2,
+              "id": 2,
+              "custom_id": "event-878310168289505301-1",
+              "style": 1,
+              "label": "Tank",
+              "emoji": {
+                "id": "878310168289505301",
+                "name": "Tank"
+              }
+            },
+            {
+              "type": 2,
+              "id": 3,
+              "custom_id": "event-734439523328720913-2",
+              "style": 1,
+              "label": "Melee",
+              "emoji": {
+                "id": "734439523328720913",
+                "name": "Melee"
+              }
+            },
+            {
+              "type": 2,
+              "id": 4,
+              "custom_id": "event-592446395596931072-3",
+              "style": 1,
+              "label": "Ranged",
+              "emoji": {
+                "id": "592446395596931072",
+                "name": "Ranged"
+              }
+            },
+            {
+              "type": 2,
+              "id": 5,
+              "custom_id": "event-898011741735235645-4",
+              "style": 1,
+              "label": "Healer",
+              "emoji": {
+                "id": "898011741735235645",
+                "name": "Healer"
+              }
+            },
+            {
+              "type": 2,
+              "id": 6,
+              "custom_id": "event-878310168344035338-5",
+              "style": 1,
+              "label": "Support",
+              "emoji": {
+                "id": "878310168344035338",
+                "name": "Support"
+              }
+            }
+          ]
+        },
+        {
+          "type": 1,
+          "id": 7,
+          "components": [
+            {
+              "type": 2,
+              "id": 8,
+              "custom_id": "event-1551909915155767378-6",
+              "style": 2,
+              "label": "Bench",
+              "emoji": {
+                "id": "1551909915155767378",
+                "name": "Bench"
+              }
+            },
+            {
+              "type": 2,
+              "id": 9,
+              "custom_id": "event-1551909947820998698-7",
+              "style": 2,
+              "label": "Late",
+              "emoji": {
+                "id": "1551909947820998698",
+                "name": "Late"
+              }
+            },
+            {
+              "type": 2,
+              "id": 10,
+              "custom_id": "event-1551909992901378171-8",
+              "style": 2,
+              "label": "Tentative",
+              "emoji": {
+                "id": "1551909992901378171",
+                "name": "Tentative"
+              }
+            },
+            {
+              "type": 2,
+              "id": 11,
+              "custom_id": "event-1551910028926124052-9",
+              "style": 2,
+              "label": "Absence",
+              "emoji": {
+                "id": "1551910028926124052",
+                "name": "Absence"
+              }
+            },
+            {
+              "type": 2,
+              "id": 12,
+              "custom_id": "signupsettings-1576033919155835014",
+              "style": 2,
+              "emoji": {
+                "id": "1199145171707772949",
+                "name": "Settings"
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "1575970894231109693",
       "channel": "🔥│𝙳𝚎𝚟𝚘𝚞𝚛𝚎𝚛𝚜-𝙿𝚒𝚝",
@@ -26,7 +198,7 @@
             },
             {
               "name": "‎",
-              "value": "<:SignUpsX:1124529971428339752> **5**\n<:TimeX:1124529972883767398> __<t:1795892400:t>__",
+              "value": "<:SignUpsX:1124529971428339752> **9**\n<:TimeX:1124529972883767398> __<t:1795892400:t>__",
               "inline": true
             },
             {
@@ -36,18 +208,23 @@
             },
             {
               "name": "‎",
-              "value": "<:Ranged:592446395596931072>   **__Ranged__ (3)**\n<:Ranged:592446395596931072> `2` **Sakuya@aksa0**\n<:Ranged:592446395596931072> `3` **Alune**\n<:Ranged:592446395596931072> `5` **Evilyn**",
+              "value": "<:Tank:878310168289505301>   **__Tank__ (2)**\n<:Tank:878310168289505301> `7` **Ellena**\n<:Tank:878310168289505301> `10` **Rilay**",
               "inline": true
             },
             {
               "name": "‎",
-              "value": "<:Healer:898011741735235645>   **__Healer__ (1)**\n<:Healer:898011741735235645> `4` **☠️BloodyVoid6**",
+              "value": "<:Ranged:592446395596931072>   **__Ranged__ (5)**\n<:Ranged:592446395596931072> `1` **Sakuya@aksa0**\n<:Ranged:592446395596931072> `2` **Alune**\n<:Ranged:592446395596931072> `4` **Evilyn**\n<:Ranged:592446395596931072> `5` **Mr Formula 1**\n<:Ranged:592446395596931072> `8` **Regdar**",
               "inline": true
             },
             {
               "name": "‎",
-              "value": "<:Support:878310168344035338>   **__Support__ (1)**\n<:Support:878310168344035338> `1` **Rilay**",
+              "value": "<:Healer:898011741735235645>   **__Healer__ (2)**\n<:Healer:898011741735235645> `3` **☠️BloodyVoid6**\n<:Healer:898011741735235645> `9` **Elanor**",
               "inline": true
+            },
+            {
+              "name": "‎",
+              "value": "<:Absence:1551910028926124052> Absence (1) :  `6` **crisem97**",
+              "inline": false
             },
             {
               "name": "‎",
@@ -64,8 +241,7 @@
             "placeholder": "DWkGI4S/izWCiXeIr4T3Onk=",
             "placeholder_version": 1,
             "flags": 0
-          },
-          "content_scan_version": 4
+          }
         }
       ],
       "components": [
@@ -195,6 +371,19 @@
   ],
   "events": [
     {
+      "id": "1576033919155835014",
+      "channelId": "1573157766456152145",
+      "channel": "🔥│𝙳𝚎𝚟𝚘𝚞𝚛𝚎𝚛𝚜-𝙿𝚒𝚝",
+      "postedAt": "2026-11-28T00:36:07.621000+00:00",
+      "title": "ADP TRAINING",
+      "eventDate": "2026-11-29",
+      "eventStart": "2026-11-29T19:00:00.000Z",
+      "organizer": "Elanor",
+      "participants": [
+        "Elanor"
+      ]
+    },
+    {
       "id": "1575970894231109693",
       "channelId": "1573157766456152145",
       "channel": "🔥│𝙳𝚎𝚟𝚘𝚞𝚛𝚎𝚛𝚜-𝙿𝚒𝚝",
@@ -204,11 +393,16 @@
       "eventStart": "2026-11-28T19:00:00.000Z",
       "organizer": "Rilay",
       "participants": [
+        "Ellena",
+        "Rilay",
         "Sakuya@aksa0",
         "Alune",
         "Evilyn",
+        "Mr Formula 1",
+        "Regdar",
         "☠️BloodyVoid6",
-        "Rilay"
+        "Elanor",
+        "crisem97"
       ]
     },
     {
@@ -2646,7 +2840,7 @@
     "lastFullScanAt": "2026-11-25T01:47:24.211Z",
     "channels": {
       "964991521524944959": {
-        "newestMessageId": "1575970756557406302"
+        "newestMessageId": "1576021471883431998"
       },
       "1056342825882624030": {
         "newestMessageId": "1422053821554753667"
@@ -2931,7 +3125,7 @@
         "newestMessageId": "1564331521735659601"
       },
       "1573157766456152145": {
-        "newestMessageId": "1575973109746376735"
+        "newestMessageId": "1576033919155835014"
       },
       "1573158415876755486": {
         "newestMessageId": "1574171556488413326"
