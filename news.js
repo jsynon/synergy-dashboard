@@ -204,7 +204,7 @@
     if (event.recurring) addText(links, "span", "news-event-repeat", "Recurring");
     const eventUrl = safeHttpsUrl(event.url || event.location);
     if (eventUrl) {
-      const linkLabel = /raid[-.]?helper/i.test(eventUrl) ? "Raid-Helper signup ↗" : "Location / details ↗";
+      const linkLabel = "Raid-Helper post ↗";
       const eventLink = addText(links, "a", "news-event-link", linkLabel);
       eventLink.href = eventUrl;
       eventLink.target = "_blank";
@@ -219,7 +219,7 @@
     return row;
   };
 
-  const buildSpotlight = ({ event, start, end, started }, now) => {
+  const buildSpotlight = ({ event, start, end, started }, now, isNext) => {
     const wrap = document.createElement("div");
     wrap.className = "news-spotlight";
     const main = document.createElement("div");
@@ -229,7 +229,7 @@
     const dot = document.createElement("span");
     dot.className = "news-spotlight-dot";
     dot.setAttribute("aria-hidden", "true");
-    kicker.append(dot, started ? "Guild event · Live now" : "Next guild event · Discord");
+    kicker.append(dot, started ? "Guild event · Live now" : isNext ? "Next guild event · Discord" : "Guild event · Discord");
     main.append(kicker);
     const discordUrl = `https://discord.com/events/${encodeURIComponent(event.guildId)}/${encodeURIComponent(event.id)}`;
     const name = document.createElement("a");
@@ -251,12 +251,12 @@
     const side = document.createElement("div");
     side.className = "news-spotlight-side";
     appendChip(side, started ? end : start, started, now, undefined);
-    const openLink = addText(side, "a", "news-spotlight-link", "Open in Discord ↗");
+    const openLink = addText(side, "a", "news-spotlight-link", "Discord event ↗");
     openLink.href = discordUrl;
     openLink.target = "_blank";
     openLink.rel = "noopener noreferrer";
     if (eventUrl) {
-      const extra = addText(side, "a", "news-spotlight-link alt", /raid[-.]?helper/i.test(eventUrl) ? "Raid-Helper signup ↗" : "Location / details ↗");
+      const extra = addText(side, "a", "news-spotlight-link alt", "Raid-Helper post ↗");
       extra.href = eventUrl;
       extra.target = "_blank";
       extra.rel = "noopener noreferrer";
@@ -316,19 +316,26 @@
       const timeZone = event.source === "discord" ? undefined : "America/New_York";
       return { event, start, end, timeZone, started: start ? start <= now : false };
     });
-    // Discord events are featured above the in-game groups: the next
-    // one (or one live now) gets the spotlight, the rest form a Guild
-    // events group. In-game events group exactly as before.
+    // Discord events are featured above the in-game groups: every one
+    // gets a spotlight card under a single Guild events heading.
+    // In-game events group exactly as before.
     const discordItems = decorated.filter((item) => item.event.source === "discord" && item.start);
     const gameItems = decorated.filter((item) => !(item.event.source === "discord" && item.start));
-    let guildItems = [];
-    if (discordItems.length) {
+    if (discordItems.length && spotlightRoot) {
       const ranked = [...discordItems].sort((a, b) => {
         if (a.started !== b.started) return a.started ? -1 : 1;
         return a.started ? a.end - b.end : a.start - b.start;
       });
-      if (spotlightRoot) spotlightRoot.append(buildSpotlight(ranked[0], now));
-      guildItems = ranked.slice(1).sort((a, b) => (a.start - b.start) || a.event.name.localeCompare(b.event.name));
+      const heading = document.createElement("div");
+      heading.className = "news-guild-heading";
+      const dot = document.createElement("span");
+      dot.className = "news-guild-dot";
+      dot.setAttribute("aria-hidden", "true");
+      heading.append(dot);
+      addText(heading, "span", "news-guild-title", "Guild events");
+      addText(heading, "span", "news-guild-count", `${ranked.length} ${ranked.length === 1 ? "event" : "events"}`);
+      spotlightRoot.append(heading);
+      ranked.forEach((item, index) => spotlightRoot.append(buildSpotlight(item, now, index === 0)));
     }
 
     const nowGroup = { id: "now", title: "Happening now", items: [] };
@@ -349,7 +356,6 @@
     }
     nowGroup.items.sort((a, b) => (a.end - b.end) || a.event.name.localeCompare(b.event.name));
     const groups = [];
-    if (guildItems.length) groups.push({ id: "guild", title: "Guild events", items: guildItems, openByDefault: true });
     let firstGameGroup = true;
     if (nowGroup.items.length) {
       groups.push({ ...nowGroup, openByDefault: true });
@@ -365,11 +371,11 @@
       const groupItem = document.createElement("li");
       groupItem.className = "news-event-group";
       const details = document.createElement("details");
-      details.className = group.id === "guild" ? "news-group guild" : "news-group";
+      details.className = "news-group";
       if (group.openByDefault) details.open = true;
       const summary = document.createElement("summary");
       summary.className = "news-group-head";
-      if (group.id === "now" || group.id === "guild") {
+      if (group.id === "now") {
         const dot = document.createElement("span");
         dot.className = "news-group-live";
         dot.setAttribute("aria-hidden", "true");
